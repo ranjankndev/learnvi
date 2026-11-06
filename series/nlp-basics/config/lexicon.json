@@ -1,4 +1,7 @@
 {
+  "BiLSTMs": "bye L S T ems",
+  "BiLSTM": "bye L S T M",
+  "GRU": "G R U",
   "RNNs": "R N ens",
   "LSTMs": "L S T ems",
   "CBOW": "C BOW",

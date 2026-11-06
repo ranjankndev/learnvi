@@ -1,0 +1,2489 @@
+{
+  "version": 1,
+  "episode": "u4-04",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 4, lesson 4: LSTM networks.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 4, lesson 4: LSTM networks.",
+      "textHash": "c03b8fe181f9cca0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3c748530df74f3c8.wav",
+      "duration": 6.527,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.16
+        },
+        {
+          "w": "This",
+          "start": 2.96
+        },
+        {
+          "w": "is",
+          "start": 3.24
+        },
+        {
+          "w": "unit",
+          "start": 3.44
+        },
+        {
+          "w": "4,",
+          "start": 3.92
+        },
+        {
+          "w": "lesson",
+          "start": 4.4
+        },
+        {
+          "w": "4:",
+          "start": 4.88
+        },
+        {
+          "w": "LSTM",
+          "start": 5.36
+        },
+        {
+          "w": "networks.",
+          "start": 5.84
+        }
+      ],
+      "matchScore": 0.583
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time, plain RNNs forgot the start of long sentences. Today's network was designed to fix exactly that.",
+      "spoken": "Last time, plain R N ens forgot the start of long sentences. Today's network was designed to fix exactly that.",
+      "textHash": "1cc541f086780c61",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fe292f6dafde6010.wav",
+      "duration": 7.766,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time,",
+          "start": 0.4
+        },
+        {
+          "w": "plain",
+          "start": 1.04
+        },
+        {
+          "w": "RNNs",
+          "start": 1.68
+        },
+        {
+          "w": "forgot",
+          "start": 2.32
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "start",
+          "start": 2.88
+        },
+        {
+          "w": "of",
+          "start": 3.2
+        },
+        {
+          "w": "long",
+          "start": 3.36
+        },
+        {
+          "w": "sentences.",
+          "start": 3.68
+        },
+        {
+          "w": "Today's",
+          "start": 4.5
+        },
+        {
+          "w": "network",
+          "start": 5.32
+        },
+        {
+          "w": "was",
+          "start": 5.84
+        },
+        {
+          "w": "designed",
+          "start": 6
+        },
+        {
+          "w": "to",
+          "start": 6.44
+        },
+        {
+          "w": "fix",
+          "start": 6.6
+        },
+        {
+          "w": "exactly",
+          "start": 6.92
+        },
+        {
+          "w": "that.",
+          "start": 7.52
+        }
+      ],
+      "matchScore": 0.813
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. An LSTM keeps a separate, protected memory, and uses little gates to decide what to keep, what to forget, and what to use.",
+      "spoken": "Here's the idea. An LSTM keeps a separate, protected memory, and uses little gates to decide what to keep, what to forget, and what to use.",
+      "textHash": "dfb060d9ee99b199",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6209389fcbeb4558.wav",
+      "duration": 9.047,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "An",
+          "start": 1.2
+        },
+        {
+          "w": "LSTM",
+          "start": 1.84
+        },
+        {
+          "w": "keeps",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.76
+        },
+        {
+          "w": "separate,",
+          "start": 2.92
+        },
+        {
+          "w": "protected",
+          "start": 3.4
+        },
+        {
+          "w": "memory,",
+          "start": 4
+        },
+        {
+          "w": "and",
+          "start": 4.48
+        },
+        {
+          "w": "uses",
+          "start": 4.72
+        },
+        {
+          "w": "little",
+          "start": 5.16
+        },
+        {
+          "w": "gates",
+          "start": 5.44
+        },
+        {
+          "w": "to",
+          "start": 5.76
+        },
+        {
+          "w": "decide",
+          "start": 5.88
+        },
+        {
+          "w": "what",
+          "start": 6.32
+        },
+        {
+          "w": "to",
+          "start": 6.52
+        },
+        {
+          "w": "keep,",
+          "start": 6.68
+        },
+        {
+          "w": "what",
+          "start": 7.08
+        },
+        {
+          "w": "to",
+          "start": 7.28
+        },
+        {
+          "w": "forget,",
+          "start": 7.48
+        },
+        {
+          "w": "and",
+          "start": 7.96
+        },
+        {
+          "w": "what",
+          "start": 8.16
+        },
+        {
+          "w": "to",
+          "start": 8.4
+        },
+        {
+          "w": "use.",
+          "start": 8.6
+        }
+      ],
+      "matchScore": 0.95
+    },
+    "c04": {
+      "segment": "lstm",
+      "display": "LSTM stands for long short-term memory. It's an RNN with a separate memory cell, and gates that control what gets written into it, kept in it, and read from it.",
+      "spoken": "LSTM stands for long short-term memory. It's an RNN with a separate memory cell, and gates that control what gets written into it, kept in it, and read from it.",
+      "textHash": "f2838c364c97d91a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0577b1d807cc3e15.wav",
+      "duration": 10.376,
+      "marks": {},
+      "words": [
+        {
+          "w": "LSTM",
+          "start": 0.42
+        },
+        {
+          "w": "stands",
+          "start": 0.84
+        },
+        {
+          "w": "for",
+          "start": 1.2
+        },
+        {
+          "w": "long",
+          "start": 1.48
+        },
+        {
+          "w": "short-term",
+          "start": 1.98
+        },
+        {
+          "w": "memory.",
+          "start": 2.48
+        },
+        {
+          "w": "It's",
+          "start": 3.12
+        },
+        {
+          "w": "an",
+          "start": 3.533
+        },
+        {
+          "w": "RNN",
+          "start": 3.947
+        },
+        {
+          "w": "with",
+          "start": 4.36
+        },
+        {
+          "w": "a",
+          "start": 4.52
+        },
+        {
+          "w": "separate",
+          "start": 4.6
+        },
+        {
+          "w": "memory",
+          "start": 5.04
+        },
+        {
+          "w": "cell,",
+          "start": 5.48
+        },
+        {
+          "w": "and",
+          "start": 5.92
+        },
+        {
+          "w": "gates",
+          "start": 6.16
+        },
+        {
+          "w": "that",
+          "start": 6.56
+        },
+        {
+          "w": "control",
+          "start": 6.76
+        },
+        {
+          "w": "what",
+          "start": 7.28
+        },
+        {
+          "w": "gets",
+          "start": 7.44
+        },
+        {
+          "w": "written",
+          "start": 7.72
+        },
+        {
+          "w": "into",
+          "start": 8.04
+        },
+        {
+          "w": "it,",
+          "start": 8.28
+        },
+        {
+          "w": "kept",
+          "start": 8.56
+        },
+        {
+          "w": "in",
+          "start": 8.96
+        },
+        {
+          "w": "it,",
+          "start": 9.12
+        },
+        {
+          "w": "and",
+          "start": 9.36
+        },
+        {
+          "w": "read",
+          "start": 9.56
+        },
+        {
+          "w": "from",
+          "start": 9.92
+        },
+        {
+          "w": "it.",
+          "start": 10.16
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c05": {
+      "segment": "lstm",
+      "display": "In \"the keys that I left on the table are missing\", it can hold on to \"keys\" until it reaches \"are\".",
+      "spoken": "In \"the keys that I left on the table are missing\", it can hold on to \"keys\" until it reaches \"are\".",
+      "textHash": "10a5a54e803f3ca6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/92242d68b3e3b5e7.wav",
+      "duration": 5.791,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"the",
+          "start": 0.24
+        },
+        {
+          "w": "keys",
+          "start": 0.44
+        },
+        {
+          "w": "that",
+          "start": 0.84
+        },
+        {
+          "w": "I",
+          "start": 1
+        },
+        {
+          "w": "left",
+          "start": 1.2
+        },
+        {
+          "w": "on",
+          "start": 1.4
+        },
+        {
+          "w": "the",
+          "start": 1.56
+        },
+        {
+          "w": "table",
+          "start": 1.68
+        },
+        {
+          "w": "are",
+          "start": 2
+        },
+        {
+          "w": "missing\",",
+          "start": 2.16
+        },
+        {
+          "w": "it",
+          "start": 2.8
+        },
+        {
+          "w": "can",
+          "start": 3
+        },
+        {
+          "w": "hold",
+          "start": 3.2
+        },
+        {
+          "w": "on",
+          "start": 3.52
+        },
+        {
+          "w": "to",
+          "start": 3.64
+        },
+        {
+          "w": "\"keys\"",
+          "start": 3.84
+        },
+        {
+          "w": "until",
+          "start": 4.4
+        },
+        {
+          "w": "it",
+          "start": 4.72
+        },
+        {
+          "w": "reaches",
+          "start": 4.92
+        },
+        {
+          "w": "\"are\".",
+          "start": 5.44
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "lstm",
+      "display": "Think of a notebook with a careful editor. The editor crosses out old notes, adds new ones, and chooses what to read aloud right now.",
+      "spoken": "Think of a notebook with a careful editor. The editor crosses out old notes, adds new ones, and chooses what to read aloud right now.",
+      "textHash": "28154935eee0de73",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8ce96d378655cd21.wav",
+      "duration": 7.982,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.16
+        },
+        {
+          "w": "a",
+          "start": 0.28
+        },
+        {
+          "w": "notebook",
+          "start": 0.6
+        },
+        {
+          "w": "with",
+          "start": 0.92
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "careful",
+          "start": 1.44
+        },
+        {
+          "w": "editor.",
+          "start": 1.84
+        },
+        {
+          "w": "The",
+          "start": 2.24
+        },
+        {
+          "w": "editor",
+          "start": 2.64
+        },
+        {
+          "w": "crosses",
+          "start": 3.04
+        },
+        {
+          "w": "out",
+          "start": 3.56
+        },
+        {
+          "w": "old",
+          "start": 3.76
+        },
+        {
+          "w": "notes,",
+          "start": 4.04
+        },
+        {
+          "w": "adds",
+          "start": 4.52
+        },
+        {
+          "w": "new",
+          "start": 5
+        },
+        {
+          "w": "ones,",
+          "start": 5.24
+        },
+        {
+          "w": "and",
+          "start": 5.6
+        },
+        {
+          "w": "chooses",
+          "start": 5.84
+        },
+        {
+          "w": "what",
+          "start": 6.36
+        },
+        {
+          "w": "to",
+          "start": 6.56
+        },
+        {
+          "w": "read",
+          "start": 6.72
+        },
+        {
+          "w": "aloud",
+          "start": 6.96
+        },
+        {
+          "w": "right",
+          "start": 7.44
+        },
+        {
+          "w": "now.",
+          "start": 7.68
+        }
+      ],
+      "matchScore": 0.762
+    },
+    "c07": {
+      "segment": "gates",
+      "display": "There are three gates, each with one job.",
+      "spoken": "There are three gates, each with one job.",
+      "textHash": "ccf8d2709f11617c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/66dd08e1658a0e70.wav",
+      "duration": 2.358,
+      "marks": {},
+      "words": [
+        {
+          "w": "There",
+          "start": 0
+        },
+        {
+          "w": "are",
+          "start": 0.16
+        },
+        {
+          "w": "three",
+          "start": 0.32
+        },
+        {
+          "w": "gates,",
+          "start": 0.56
+        },
+        {
+          "w": "each",
+          "start": 1.08
+        },
+        {
+          "w": "with",
+          "start": 1.36
+        },
+        {
+          "w": "one",
+          "start": 1.6
+        },
+        {
+          "w": "job.",
+          "start": 1.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "gates",
+      "display": "The forget gate decides what to erase from memory, because it's no longer needed.",
+      "spoken": "The forget gate decides what to erase from memory, because it's no longer needed.",
+      "textHash": "6dd6df2cc60572c2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/11bf70e55247eedd.wav",
+      "duration": 4.514,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "forget",
+          "start": 0.12
+        },
+        {
+          "w": "gate",
+          "start": 0.52
+        },
+        {
+          "w": "decides",
+          "start": 0.84
+        },
+        {
+          "w": "what",
+          "start": 1.36
+        },
+        {
+          "w": "to",
+          "start": 1.56
+        },
+        {
+          "w": "erase",
+          "start": 1.68
+        },
+        {
+          "w": "from",
+          "start": 2.12
+        },
+        {
+          "w": "memory,",
+          "start": 2.32
+        },
+        {
+          "w": "because",
+          "start": 2.88
+        },
+        {
+          "w": "it's",
+          "start": 3.12
+        },
+        {
+          "w": "no",
+          "start": 3.48
+        },
+        {
+          "w": "longer",
+          "start": 3.72
+        },
+        {
+          "w": "needed.",
+          "start": 4.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "gates",
+      "display": "The input gate decides what new information from this word is worth writing down.",
+      "spoken": "The input gate decides what new information from this word is worth writing down.",
+      "textHash": "cbf2a2338103f477",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b7337793597fac3d.wav",
+      "duration": 5.154,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "input",
+          "start": 0.32
+        },
+        {
+          "w": "gate",
+          "start": 0.64
+        },
+        {
+          "w": "decides",
+          "start": 1.12
+        },
+        {
+          "w": "what",
+          "start": 1.76
+        },
+        {
+          "w": "new",
+          "start": 1.96
+        },
+        {
+          "w": "information",
+          "start": 2.16
+        },
+        {
+          "w": "from",
+          "start": 2.84
+        },
+        {
+          "w": "this",
+          "start": 3.04
+        },
+        {
+          "w": "word",
+          "start": 3.28
+        },
+        {
+          "w": "is",
+          "start": 3.56
+        },
+        {
+          "w": "worth",
+          "start": 3.84
+        },
+        {
+          "w": "writing",
+          "start": 4.3
+        },
+        {
+          "w": "down.",
+          "start": 4.76
+        }
+      ],
+      "matchScore": 0.846
+    },
+    "c10": {
+      "segment": "gates",
+      "display": "And the output gate decides which part of the memory to use right now.",
+      "spoken": "And the output gate decides which part of the memory to use right now.",
+      "textHash": "049b0e85274b0924",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1dbd3a6c440f6bff.wav",
+      "duration": 3.935,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "output",
+          "start": 0.28
+        },
+        {
+          "w": "gate",
+          "start": 0.8
+        },
+        {
+          "w": "decides",
+          "start": 1.24
+        },
+        {
+          "w": "which",
+          "start": 1.84
+        },
+        {
+          "w": "part",
+          "start": 2.04
+        },
+        {
+          "w": "of",
+          "start": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.32
+        },
+        {
+          "w": "memory",
+          "start": 2.44
+        },
+        {
+          "w": "to",
+          "start": 2.84
+        },
+        {
+          "w": "use",
+          "start": 3.04
+        },
+        {
+          "w": "right",
+          "start": 3.4
+        },
+        {
+          "w": "now.",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c11": {
+      "segment": "example",
+      "display": "Here's a simplified picture of the gates at work on our sentence.",
+      "spoken": "Here's a simplified picture of the gates at work on our sentence.",
+      "textHash": "c05f229b351b5d86",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/49254256a72a4623.wav",
+      "duration": 3.552,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "simplified",
+          "start": 0.44
+        },
+        {
+          "w": "picture",
+          "start": 1.16
+        },
+        {
+          "w": "of",
+          "start": 1.56
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "gates",
+          "start": 1.8
+        },
+        {
+          "w": "at",
+          "start": 2.2
+        },
+        {
+          "w": "work",
+          "start": 2.4
+        },
+        {
+          "w": "on",
+          "start": 2.64
+        },
+        {
+          "w": "our",
+          "start": 2.8
+        },
+        {
+          "w": "sentence.",
+          "start": 3
+        }
+      ],
+      "matchScore": 1
+    },
+    "c12": {
+      "segment": "example",
+      "display": "At \"keys\", the input gate writes a note: the subject is plural.",
+      "spoken": "At \"keys\", the input gate writes a note: the subject is plural.",
+      "textHash": "fdef6bbe1ddbb8fa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a4565926f8681976.wav",
+      "duration": 3.728,
+      "marks": {},
+      "words": [
+        {
+          "w": "At",
+          "start": 0
+        },
+        {
+          "w": "\"keys\",",
+          "start": 0.2
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "input",
+          "start": 0.92
+        },
+        {
+          "w": "gate",
+          "start": 1.2
+        },
+        {
+          "w": "writes",
+          "start": 1.48
+        },
+        {
+          "w": "a",
+          "start": 1.8
+        },
+        {
+          "w": "note:",
+          "start": 1.92
+        },
+        {
+          "w": "the",
+          "start": 2.24
+        },
+        {
+          "w": "subject",
+          "start": 2.4
+        },
+        {
+          "w": "is",
+          "start": 3
+        },
+        {
+          "w": "plural.",
+          "start": 3.2
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c13": {
+      "segment": "example",
+      "display": "Through \"that I left on the table\", the forget gate leaves that note alone, so it survives the detour.",
+      "spoken": "Through \"that I left on the table\", the forget gate leaves that note alone, so it survives the detour.",
+      "textHash": "e14da06819ffdae1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3a1c61394ee8b911.wav",
+      "duration": 5.493,
+      "marks": {},
+      "words": [
+        {
+          "w": "Through",
+          "start": 0
+        },
+        {
+          "w": "\"that",
+          "start": 0.36
+        },
+        {
+          "w": "I",
+          "start": 0.56
+        },
+        {
+          "w": "left",
+          "start": 0.76
+        },
+        {
+          "w": "on",
+          "start": 1
+        },
+        {
+          "w": "the",
+          "start": 1.16
+        },
+        {
+          "w": "table\",",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.76
+        },
+        {
+          "w": "forget",
+          "start": 1.96
+        },
+        {
+          "w": "gate",
+          "start": 2.4
+        },
+        {
+          "w": "leaves",
+          "start": 2.72
+        },
+        {
+          "w": "that",
+          "start": 3.04
+        },
+        {
+          "w": "note",
+          "start": 3.28
+        },
+        {
+          "w": "alone,",
+          "start": 3.56
+        },
+        {
+          "w": "so",
+          "start": 4
+        },
+        {
+          "w": "it",
+          "start": 4.16
+        },
+        {
+          "w": "survives",
+          "start": 4.32
+        },
+        {
+          "w": "the",
+          "start": 4.84
+        },
+        {
+          "w": "detour.",
+          "start": 5
+        }
+      ],
+      "matchScore": 1
+    },
+    "c14": {
+      "segment": "example",
+      "display": "At \"are\", the output gate reads the note: plural subject, so the verb should be \"are\".",
+      "spoken": "At \"are\", the output gate reads the note: plural subject, so the verb should be \"are\".",
+      "textHash": "1efd71fc6d065173",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f9759079df8fca48.wav",
+      "duration": 4.84,
+      "marks": {},
+      "words": [
+        {
+          "w": "At",
+          "start": 0.173
+        },
+        {
+          "w": "\"are\",",
+          "start": 0.347
+        },
+        {
+          "w": "the",
+          "start": 0.52
+        },
+        {
+          "w": "output",
+          "start": 0.72
+        },
+        {
+          "w": "gate",
+          "start": 1.12
+        },
+        {
+          "w": "reads",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.8
+        },
+        {
+          "w": "note:",
+          "start": 1.96
+        },
+        {
+          "w": "plural",
+          "start": 2.36
+        },
+        {
+          "w": "subject,",
+          "start": 2.92
+        },
+        {
+          "w": "so",
+          "start": 3.44
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "verb",
+          "start": 3.92
+        },
+        {
+          "w": "should",
+          "start": 4.16
+        },
+        {
+          "w": "be",
+          "start": 4.387
+        },
+        {
+          "w": "\"are\".",
+          "start": 4.613
+        }
+      ],
+      "matchScore": 0.692
+    },
+    "c15": {
+      "segment": "vs",
+      "display": "So what's really different?",
+      "spoken": "So what's really different?",
+      "textHash": "cdd2b0297e2fa1b7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/38f337ce1f9b345f.wav",
+      "duration": 1.4,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "what's",
+          "start": 0.16
+        },
+        {
+          "w": "really",
+          "start": 0.48
+        },
+        {
+          "w": "different?",
+          "start": 0.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "vs",
+      "display": "A plain RNN has one memory that gets completely rewritten at every step, so long-range details fade away.",
+      "spoken": "A plain RNN has one memory that gets completely rewritten at every step, so long-range details fade away.",
+      "textHash": "817674110f80b8f1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/793e5b7b242c927b.wav",
+      "duration": 7.107,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "plain",
+          "start": 0.16
+        },
+        {
+          "w": "RNN",
+          "start": 0.68
+        },
+        {
+          "w": "has",
+          "start": 1.2
+        },
+        {
+          "w": "one",
+          "start": 1.4
+        },
+        {
+          "w": "memory",
+          "start": 1.64
+        },
+        {
+          "w": "that",
+          "start": 2.12
+        },
+        {
+          "w": "gets",
+          "start": 2.32
+        },
+        {
+          "w": "completely",
+          "start": 2.64
+        },
+        {
+          "w": "rewritten",
+          "start": 3.2
+        },
+        {
+          "w": "at",
+          "start": 3.76
+        },
+        {
+          "w": "every",
+          "start": 3.92
+        },
+        {
+          "w": "step,",
+          "start": 4.24
+        },
+        {
+          "w": "so",
+          "start": 4.76
+        },
+        {
+          "w": "long-range",
+          "start": 5.3
+        },
+        {
+          "w": "details",
+          "start": 5.84
+        },
+        {
+          "w": "fade",
+          "start": 6.4
+        },
+        {
+          "w": "away.",
+          "start": 6.76
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c17": {
+      "segment": "vs",
+      "display": "An LSTM changes its memory cell carefully, only where the gates allow. That protects important information, and it lets the learning signal travel much further back without vanishing.",
+      "spoken": "An LSTM changes its memory cell carefully, only where the gates allow. That protects important information, and it lets the learning signal travel much further back without vanishing.",
+      "textHash": "51303b00d9bb680e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0c0e24fb7d0eef66.wav",
+      "duration": 11.639,
+      "marks": {},
+      "words": [
+        {
+          "w": "An",
+          "start": 0.347
+        },
+        {
+          "w": "LSTM",
+          "start": 0.693
+        },
+        {
+          "w": "changes",
+          "start": 1.04
+        },
+        {
+          "w": "its",
+          "start": 1.52
+        },
+        {
+          "w": "memory",
+          "start": 1.76
+        },
+        {
+          "w": "cell",
+          "start": 2.2
+        },
+        {
+          "w": "carefully,",
+          "start": 2.56
+        },
+        {
+          "w": "only",
+          "start": 3.36
+        },
+        {
+          "w": "where",
+          "start": 3.68
+        },
+        {
+          "w": "the",
+          "start": 3.84
+        },
+        {
+          "w": "gates",
+          "start": 4.04
+        },
+        {
+          "w": "allow.",
+          "start": 4.48
+        },
+        {
+          "w": "That",
+          "start": 5.12
+        },
+        {
+          "w": "protects",
+          "start": 5.52
+        },
+        {
+          "w": "important",
+          "start": 6.12
+        },
+        {
+          "w": "information,",
+          "start": 6.64
+        },
+        {
+          "w": "and",
+          "start": 7.44
+        },
+        {
+          "w": "it",
+          "start": 7.68
+        },
+        {
+          "w": "lets",
+          "start": 7.88
+        },
+        {
+          "w": "the",
+          "start": 8.16
+        },
+        {
+          "w": "learning",
+          "start": 8.32
+        },
+        {
+          "w": "signal",
+          "start": 8.76
+        },
+        {
+          "w": "travel",
+          "start": 9.24
+        },
+        {
+          "w": "much",
+          "start": 9.68
+        },
+        {
+          "w": "further",
+          "start": 9.92
+        },
+        {
+          "w": "back",
+          "start": 10.4
+        },
+        {
+          "w": "without",
+          "start": 10.68
+        },
+        {
+          "w": "vanishing.",
+          "start": 11
+        }
+      ],
+      "matchScore": 0.962
+    },
+    "c18": {
+      "segment": "bi",
+      "display": "One more trick: a bidirectional LSTM, or BiLSTM. It runs two LSTMs, one reading left to right, and one reading right to left. Together, every word gets to see what comes both before and after it.",
+      "spoken": "One more trick: a bidirectional LSTM, or bye L S T M. It runs two L S T ems, one reading left to right, and one reading right to left. Together, every word gets to see what comes both before and after it.",
+      "textHash": "ce3949e1c9bb9a27",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dbe402390fee14d8.wav",
+      "duration": 14.706,
+      "marks": {},
+      "words": [
+        {
+          "w": "One",
+          "start": 0
+        },
+        {
+          "w": "more",
+          "start": 0.28
+        },
+        {
+          "w": "trick:",
+          "start": 0.56
+        },
+        {
+          "w": "a",
+          "start": 1
+        },
+        {
+          "w": "bidirectional",
+          "start": 1.32
+        },
+        {
+          "w": "LSTM,",
+          "start": 2.08
+        },
+        {
+          "w": "or",
+          "start": 2.84
+        },
+        {
+          "w": "BiLSTM.",
+          "start": 3.72
+        },
+        {
+          "w": "It",
+          "start": 4.6
+        },
+        {
+          "w": "runs",
+          "start": 4.96
+        },
+        {
+          "w": "two",
+          "start": 5.653
+        },
+        {
+          "w": "LSTMs,",
+          "start": 6.347
+        },
+        {
+          "w": "one",
+          "start": 7.04
+        },
+        {
+          "w": "reading",
+          "start": 7.36
+        },
+        {
+          "w": "left",
+          "start": 7.8
+        },
+        {
+          "w": "to",
+          "start": 8.04
+        },
+        {
+          "w": "right,",
+          "start": 8.24
+        },
+        {
+          "w": "and",
+          "start": 8.56
+        },
+        {
+          "w": "one",
+          "start": 8.8
+        },
+        {
+          "w": "reading",
+          "start": 9.04
+        },
+        {
+          "w": "right",
+          "start": 9.52
+        },
+        {
+          "w": "to",
+          "start": 9.8
+        },
+        {
+          "w": "left.",
+          "start": 10.08
+        },
+        {
+          "w": "Together,",
+          "start": 10.56
+        },
+        {
+          "w": "every",
+          "start": 11.32
+        },
+        {
+          "w": "word",
+          "start": 11.68
+        },
+        {
+          "w": "gets",
+          "start": 12
+        },
+        {
+          "w": "to",
+          "start": 12.32
+        },
+        {
+          "w": "see",
+          "start": 12.48
+        },
+        {
+          "w": "what",
+          "start": 12.68
+        },
+        {
+          "w": "comes",
+          "start": 12.88
+        },
+        {
+          "w": "both",
+          "start": 13.2
+        },
+        {
+          "w": "before",
+          "start": 13.52
+        },
+        {
+          "w": "and",
+          "start": 13.92
+        },
+        {
+          "w": "after",
+          "start": 14.16
+        },
+        {
+          "w": "it.",
+          "start": 14.48
+        }
+      ],
+      "matchScore": 0.862
+    },
+    "c19": {
+      "segment": "bi",
+      "display": "To understand \"bank\" in \"she sat on the bank of the river\", the words after it, \"of the river\", matter a lot.",
+      "spoken": "To understand \"bank\" in \"she sat on the bank of the river\", the words after it, \"of the river\", matter a lot.",
+      "textHash": "00842599e2c17aa5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e984bee9b025f10a.wav",
+      "duration": 6.093,
+      "marks": {},
+      "words": [
+        {
+          "w": "To",
+          "start": 0
+        },
+        {
+          "w": "understand",
+          "start": 0.2
+        },
+        {
+          "w": "\"bank\"",
+          "start": 0.613
+        },
+        {
+          "w": "in",
+          "start": 1.027
+        },
+        {
+          "w": "\"she",
+          "start": 1.44
+        },
+        {
+          "w": "sat",
+          "start": 1.64
+        },
+        {
+          "w": "on",
+          "start": 1.88
+        },
+        {
+          "w": "the",
+          "start": 2
+        },
+        {
+          "w": "bank",
+          "start": 2.12
+        },
+        {
+          "w": "of",
+          "start": 2.4
+        },
+        {
+          "w": "the",
+          "start": 2.48
+        },
+        {
+          "w": "river\",",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "words",
+          "start": 3.36
+        },
+        {
+          "w": "after",
+          "start": 3.8
+        },
+        {
+          "w": "it,",
+          "start": 4.12
+        },
+        {
+          "w": "\"of",
+          "start": 4.36
+        },
+        {
+          "w": "the",
+          "start": 4.48
+        },
+        {
+          "w": "river\",",
+          "start": 4.68
+        },
+        {
+          "w": "matter",
+          "start": 5.16
+        },
+        {
+          "w": "a",
+          "start": 5.52
+        },
+        {
+          "w": "lot.",
+          "start": 5.68
+        }
+      ],
+      "matchScore": 0.933
+    },
+    "c20": {
+      "segment": "bi",
+      "display": "It's like reading a sentence twice: once forwards, and once backwards.",
+      "spoken": "It's like reading a sentence twice: once forwards, and once backwards.",
+      "textHash": "2806d2e71dbdb10a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a119652269ea0ad9.wav",
+      "duration": 3.947,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "like",
+          "start": 0.2
+        },
+        {
+          "w": "reading",
+          "start": 0.36
+        },
+        {
+          "w": "a",
+          "start": 0.68
+        },
+        {
+          "w": "sentence",
+          "start": 0.8
+        },
+        {
+          "w": "twice:",
+          "start": 1.32
+        },
+        {
+          "w": "once",
+          "start": 1.88
+        },
+        {
+          "w": "forwards,",
+          "start": 2.24
+        },
+        {
+          "w": "and",
+          "start": 2.76
+        },
+        {
+          "w": "once",
+          "start": 3
+        },
+        {
+          "w": "backwards.",
+          "start": 3.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "uses",
+      "display": "LSTMs had a big impact.",
+      "spoken": "L S T ems had a big impact.",
+      "textHash": "2207068bd8f81bd0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/df82c7b018ee4945.wav",
+      "duration": 2.024,
+      "marks": {},
+      "words": [
+        {
+          "w": "LSTMs",
+          "start": 0.44
+        },
+        {
+          "w": "had",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "big",
+          "start": 1.16
+        },
+        {
+          "w": "impact.",
+          "start": 1.4
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c22": {
+      "segment": "uses",
+      "display": "For several years they powered machine translation, speech recognition, and tagging.",
+      "spoken": "For several years they powered machine translation, speech recognition, and tagging.",
+      "textHash": "201bb8adb36fad18",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8b6b78e4fbbf4390.wav",
+      "duration": 4.714,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "several",
+          "start": 0.16
+        },
+        {
+          "w": "years",
+          "start": 0.64
+        },
+        {
+          "w": "they",
+          "start": 0.88
+        },
+        {
+          "w": "powered",
+          "start": 1.12
+        },
+        {
+          "w": "machine",
+          "start": 1.44
+        },
+        {
+          "w": "translation,",
+          "start": 1.88
+        },
+        {
+          "w": "speech",
+          "start": 2.68
+        },
+        {
+          "w": "recognition,",
+          "start": 3.2
+        },
+        {
+          "w": "and",
+          "start": 3.92
+        },
+        {
+          "w": "tagging.",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "uses",
+      "display": "A simpler cousin, the GRU, does a similar job with just two gates.",
+      "spoken": "A simpler cousin, the G R U, does a similar job with just two gates.",
+      "textHash": "d05c8b2519908ca2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e591a63804c2a960.wav",
+      "duration": 4.438,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "simpler",
+          "start": 0.12
+        },
+        {
+          "w": "cousin,",
+          "start": 0.56
+        },
+        {
+          "w": "the",
+          "start": 1.04
+        },
+        {
+          "w": "GRU,",
+          "start": 1.36
+        },
+        {
+          "w": "does",
+          "start": 2.04
+        },
+        {
+          "w": "a",
+          "start": 2.32
+        },
+        {
+          "w": "similar",
+          "start": 2.44
+        },
+        {
+          "w": "job",
+          "start": 2.96
+        },
+        {
+          "w": "with",
+          "start": 3.28
+        },
+        {
+          "w": "just",
+          "start": 3.44
+        },
+        {
+          "w": "two",
+          "start": 3.68
+        },
+        {
+          "w": "gates.",
+          "start": 3.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "uses",
+      "display": "In most tasks, they were later replaced by Transformers, which you'll meet with BERT in unit five.",
+      "spoken": "In most tasks, they were later replaced by Transformers, which you'll meet with BERT in unit five.",
+      "textHash": "d20a6fd7c4f0cdaf",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5e192aa13873673c.wav",
+      "duration": 5.513,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "most",
+          "start": 0.16
+        },
+        {
+          "w": "tasks,",
+          "start": 0.48
+        },
+        {
+          "w": "they",
+          "start": 1.04
+        },
+        {
+          "w": "were",
+          "start": 1.2
+        },
+        {
+          "w": "later",
+          "start": 1.36
+        },
+        {
+          "w": "replaced",
+          "start": 1.68
+        },
+        {
+          "w": "by",
+          "start": 2.16
+        },
+        {
+          "w": "Transformers,",
+          "start": 2.32
+        },
+        {
+          "w": "which",
+          "start": 3.4
+        },
+        {
+          "w": "you'll",
+          "start": 3.6
+        },
+        {
+          "w": "meet",
+          "start": 3.8
+        },
+        {
+          "w": "with",
+          "start": 4.08
+        },
+        {
+          "w": "BERT",
+          "start": 4.3
+        },
+        {
+          "w": "in",
+          "start": 4.52
+        },
+        {
+          "w": "unit",
+          "start": 4.72
+        },
+        {
+          "w": "five.",
+          "start": 5.08
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c25": {
+      "segment": "quiz",
+      "display": "Quick quiz. Which LSTM gate decides what to erase from memory?",
+      "spoken": "Quick quiz. Which LSTM gate decides what to erase from memory?",
+      "textHash": "fdeadbaf5657ff01",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/50c7e123484974fd.wav",
+      "duration": 4.061,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.267
+        },
+        {
+          "w": "quiz.",
+          "start": 0.533
+        },
+        {
+          "w": "Which",
+          "start": 0.8
+        },
+        {
+          "w": "LSTM",
+          "start": 1.253
+        },
+        {
+          "w": "gate",
+          "start": 1.707
+        },
+        {
+          "w": "decides",
+          "start": 2.16
+        },
+        {
+          "w": "what",
+          "start": 2.72
+        },
+        {
+          "w": "to",
+          "start": 2.88
+        },
+        {
+          "w": "erase",
+          "start": 3
+        },
+        {
+          "w": "from",
+          "start": 3.4
+        },
+        {
+          "w": "memory?",
+          "start": 3.6
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c26": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "It's the forget gate. It decides which parts of the memory are no longer needed.",
+      "spoken": "It's the forget gate. It decides which parts of the memory are no longer needed.",
+      "textHash": "46005ed9aa80f70d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/974929de5d1b6637.wav",
+      "duration": 4.643,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.24
+        },
+        {
+          "w": "forget",
+          "start": 0.4
+        },
+        {
+          "w": "gate.",
+          "start": 0.88
+        },
+        {
+          "w": "It",
+          "start": 1.4
+        },
+        {
+          "w": "decides",
+          "start": 1.6
+        },
+        {
+          "w": "which",
+          "start": 2.24
+        },
+        {
+          "w": "parts",
+          "start": 2.44
+        },
+        {
+          "w": "of",
+          "start": 2.76
+        },
+        {
+          "w": "the",
+          "start": 2.84
+        },
+        {
+          "w": "memory",
+          "start": 2.96
+        },
+        {
+          "w": "are",
+          "start": 3.4
+        },
+        {
+          "w": "no",
+          "start": 3.6
+        },
+        {
+          "w": "longer",
+          "start": 3.84
+        },
+        {
+          "w": "needed.",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "recap",
+      "display": "Let's recap. An LSTM keeps a separate, protected memory cell.",
+      "spoken": "Let's recap. An LSTM keeps a separate, protected memory cell.",
+      "textHash": "cd6c7c4cf5cc65b9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/db2fb54ac5043ead.wav",
+      "duration": 4.283,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "An",
+          "start": 0.947
+        },
+        {
+          "w": "LSTM",
+          "start": 1.533
+        },
+        {
+          "w": "keeps",
+          "start": 2.12
+        },
+        {
+          "w": "a",
+          "start": 2.36
+        },
+        {
+          "w": "separate,",
+          "start": 2.48
+        },
+        {
+          "w": "protected",
+          "start": 2.96
+        },
+        {
+          "w": "memory",
+          "start": 3.48
+        },
+        {
+          "w": "cell.",
+          "start": 3.92
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c29": {
+      "segment": "recap",
+      "display": "Three gates, forget, input and output, control what goes in and out.",
+      "spoken": "Three gates, forget, input and output, control what goes in and out.",
+      "textHash": "28a31e7977d6ae94",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ddd62e5f94a16b9f.wav",
+      "duration": 4.142,
+      "marks": {},
+      "words": [
+        {
+          "w": "Three",
+          "start": 0
+        },
+        {
+          "w": "gates,",
+          "start": 0.28
+        },
+        {
+          "w": "forget,",
+          "start": 0.68
+        },
+        {
+          "w": "input",
+          "start": 1.14
+        },
+        {
+          "w": "and",
+          "start": 1.6
+        },
+        {
+          "w": "output,",
+          "start": 1.98
+        },
+        {
+          "w": "control",
+          "start": 2.36
+        },
+        {
+          "w": "what",
+          "start": 2.96
+        },
+        {
+          "w": "goes",
+          "start": 3.16
+        },
+        {
+          "w": "in",
+          "start": 3.48
+        },
+        {
+          "w": "and",
+          "start": 3.64
+        },
+        {
+          "w": "out.",
+          "start": 3.84
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "That keeps long-range information alive, so it remembers \"keys\" until \"are\".",
+      "spoken": "That keeps long-range information alive, so it remembers \"keys\" until \"are\".",
+      "textHash": "d2c78b208a6a0426",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1723ecb9b3d8d2b3.wav",
+      "duration": 4.334,
+      "marks": {},
+      "words": [
+        {
+          "w": "That",
+          "start": 0
+        },
+        {
+          "w": "keeps",
+          "start": 0.16
+        },
+        {
+          "w": "long-range",
+          "start": 0.62
+        },
+        {
+          "w": "information",
+          "start": 1.08
+        },
+        {
+          "w": "alive,",
+          "start": 1.6
+        },
+        {
+          "w": "so",
+          "start": 2.12
+        },
+        {
+          "w": "it",
+          "start": 2.32
+        },
+        {
+          "w": "remembers",
+          "start": 2.48
+        },
+        {
+          "w": "\"keys\"",
+          "start": 3.04
+        },
+        {
+          "w": "until",
+          "start": 3.56
+        },
+        {
+          "w": "\"are\".",
+          "start": 3.947
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "And a BiLSTM reads in both directions, so every word sees its whole context.",
+      "spoken": "And a bye L S T M reads in both directions, so every word sees its whole context.",
+      "textHash": "0339f3df3756bdc6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8b4053ffdd6502e2.wav",
+      "duration": 5.554,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.16
+        },
+        {
+          "w": "BiLSTM",
+          "start": 0.88
+        },
+        {
+          "w": "reads",
+          "start": 1.6
+        },
+        {
+          "w": "in",
+          "start": 2
+        },
+        {
+          "w": "both",
+          "start": 2.16
+        },
+        {
+          "w": "directions,",
+          "start": 2.44
+        },
+        {
+          "w": "so",
+          "start": 3.2
+        },
+        {
+          "w": "every",
+          "start": 3.48
+        },
+        {
+          "w": "word",
+          "start": 3.76
+        },
+        {
+          "w": "sees",
+          "start": 4.08
+        },
+        {
+          "w": "its",
+          "start": 4.4
+        },
+        {
+          "w": "whole",
+          "start": 4.6
+        },
+        {
+          "w": "context.",
+          "start": 4.88
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "Next lesson: Contextual Embeddings. How can 'bank' get a different vector in different sentences?",
+      "spoken": "Next lesson: Contextual Embeddings. How can 'bank' get a different vector in different sentences?",
+      "textHash": "2e879307c3c74bbd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7d5a207b1c1d360c.wav",
+      "duration": 5.693,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.32
+        },
+        {
+          "w": "lesson:",
+          "start": 0.64
+        },
+        {
+          "w": "Contextual",
+          "start": 0.96
+        },
+        {
+          "w": "Embeddings.",
+          "start": 1.72
+        },
+        {
+          "w": "How",
+          "start": 2.68
+        },
+        {
+          "w": "can",
+          "start": 2.92
+        },
+        {
+          "w": "'bank'",
+          "start": 3.16
+        },
+        {
+          "w": "get",
+          "start": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.68
+        },
+        {
+          "w": "different",
+          "start": 3.933
+        },
+        {
+          "w": "vector",
+          "start": 4.187
+        },
+        {
+          "w": "in",
+          "start": 4.44
+        },
+        {
+          "w": "different",
+          "start": 4.6
+        },
+        {
+          "w": "sentences?",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 0.667
+    }
+  }
+}

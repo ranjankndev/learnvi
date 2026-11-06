@@ -1,0 +1,213 @@
+{
+  "id": "u4-04",
+  "thumbnail": {
+    "headline": "How AI learned to remember",
+    "big": "forget · input · output"
+  },
+  "tags": [
+    "LSTM",
+    "long short term memory",
+    "gates",
+    "BiLSTM",
+    "deep learning"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "LSTMs",
+        "subtitle": "Remembering what matters"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "An LSTM keeps a protected memory, and uses gates to decide what to keep, forget and use.",
+        "highlight": [
+          "gates"
+        ]
+      }
+    },
+    {
+      "id": "lstm",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is an LSTM?",
+      "props": {
+        "kicker": "Definition",
+        "term": "LSTM",
+        "definition": "Long short-term memory: an RNN with a separate memory cell, and gates that control what gets written, kept and read.",
+        "example": "keys … are: “keys” is kept until “are”",
+        "analogy": "A notebook with a careful editor who crosses out, adds, and chooses what to read aloud."
+      }
+    },
+    {
+      "id": "gates",
+      "kind": "core",
+      "component": "Steps",
+      "title": "Three gates",
+      "short": true,
+      "shortTitle": "The 3 gates that gave AI a memory",
+      "props": {
+        "kicker": "The gates",
+        "title": "Three gates, three jobs",
+        "steps": [
+          {
+            "label": "Forget gate",
+            "detail": "what to erase from memory"
+          },
+          {
+            "label": "Input gate",
+            "detail": "what new information to write"
+          },
+          {
+            "label": "Output gate",
+            "detail": "what to use right now"
+          }
+        ]
+      }
+    },
+    {
+      "id": "example",
+      "kind": "core",
+      "component": "Table",
+      "title": "Gates in action",
+      "props": {
+        "kicker": "Simplified",
+        "title": "“The keys that I left on the table are missing”",
+        "columns": [
+          "At the word…",
+          "The LSTM…"
+        ],
+        "rows": [
+          [
+            "keys",
+            "writes: subject is plural"
+          ],
+          [
+            "that I left on the table",
+            "keeps that note, ignores the detour"
+          ],
+          [
+            "are",
+            "reads it: plural, so “are”"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "vs",
+      "kind": "core",
+      "component": "Compare",
+      "title": "RNN versus LSTM",
+      "props": {
+        "kicker": "The difference",
+        "title": "Plain RNN versus LSTM",
+        "columns": [
+          {
+            "title": "Plain RNN",
+            "items": [
+              "one memory, rewritten every step",
+              "long-range details fade away"
+            ],
+            "tone": "bad"
+          },
+          {
+            "title": "LSTM",
+            "items": [
+              "a memory cell, changed carefully",
+              "gates protect what matters"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Gates let learning reach far back"
+        }
+      }
+    },
+    {
+      "id": "bi",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Reading both ways",
+      "props": {
+        "kicker": "Bidirectional",
+        "term": "BiLSTM",
+        "definition": "Two LSTMs, one reading left to right and one right to left, so every word sees what comes before and after it.",
+        "example": "“bank” … “of the river”: the words after help",
+        "analogy": "Reading a sentence twice: once forwards, once backwards."
+      }
+    },
+    {
+      "id": "uses",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Where LSTMs went",
+      "props": {
+        "kicker": "In practice",
+        "title": "LSTMs in the real world",
+        "items": [
+          {
+            "text": "Powered translation, speech and tagging"
+          },
+          {
+            "text": "GRU: a simpler cousin with two gates"
+          },
+          {
+            "text": "Later replaced in most tasks by Transformers"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: which gate forgets?",
+      "props": {
+        "question": "Which LSTM gate decides what to erase from memory?",
+        "options": [
+          "Input gate",
+          "Forget gate",
+          "Output gate"
+        ],
+        "answer": 1,
+        "explain": "The forget gate decides what's no longer needed."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "An LSTM keeps a protected memory cell",
+          "Forget, input and output gates control it",
+          "That keeps long-range information alive",
+          "BiLSTMs read in both directions"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
