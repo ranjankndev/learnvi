@@ -3186,53 +3186,69 @@
     },
     "c41": {
       "segment": "recap",
-      "display": "Next lesson: Morphology. Why is 'unbreakable' really three pieces?",
-      "spoken": "Next lesson: Morphology. Why is 'unbreakable' really three pieces?",
-      "textHash": "2eaae91b4c041c8c",
+      "display": "Next lesson: Language Models. How can a computer guess what word comes next?",
+      "spoken": "Next lesson: Language Models. How can a computer guess what word comes next?",
+      "textHash": "d69902f533681818",
       "source": "tts",
       "take": "tts",
-      "audio": ".cache/proc/f1ebeb21b0d3c9e3.wav",
-      "duration": 4.294,
+      "audio": ".cache/proc/8912d37944e8814c.wav",
+      "duration": 4.744,
       "marks": {},
       "words": [
         {
           "w": "Next",
-          "start": 0.293
+          "start": 0.32
         },
         {
           "w": "lesson:",
-          "start": 0.587
+          "start": 0.64
         },
         {
-          "w": "Morphology.",
-          "start": 0.88
+          "w": "Language",
+          "start": 0.96
         },
         {
-          "w": "Why",
-          "start": 1.92
+          "w": "Models.",
+          "start": 1.56
         },
         {
-          "w": "is",
-          "start": 2.16
+          "w": "How",
+          "start": 2.24
         },
         {
-          "w": "'unbreakable'",
+          "w": "can",
           "start": 2.4
         },
         {
-          "w": "really",
-          "start": 3.08
+          "w": "a",
+          "start": 2.6
         },
         {
-          "w": "three",
+          "w": "computer",
+          "start": 2.76
+        },
+        {
+          "w": "guess",
+          "start": 3.2
+        },
+        {
+          "w": "what",
           "start": 3.48
         },
         {
-          "w": "pieces?",
+          "w": "word",
           "start": 3.72
+        },
+        {
+          "w": "comes",
+          "start": 3.96
+        },
+        {
+          "w": "next?",
+          "start": 4.32
         }
       ],
-      "matchScore": 0.75
+      "matchScore": 0.833
     }
   }
 }

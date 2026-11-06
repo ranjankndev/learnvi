@@ -2765,76 +2765,76 @@
     "c33": {
       "segment": "recap",
       "display": "Next lesson: RNNs. How can a network read a sentence one word at a time?",
-      "spoken": "Next lesson: RNNs. How can a network read a sentence one word at a time?",
-      "textHash": "6025dfbdba196eb7",
+      "spoken": "Next lesson: R N ens. How can a network read a sentence one word at a time?",
+      "textHash": "27cc47abc88c17cc",
       "source": "tts",
       "take": "tts",
-      "audio": ".cache/proc/527f8ab091a50b42.wav",
-      "duration": 4.741,
+      "audio": ".cache/proc/b87ddee3d5a83aa5.wav",
+      "duration": 5.013,
       "marks": {},
       "words": [
         {
           "w": "Next",
-          "start": 0.47
+          "start": 0.53
         },
         {
           "w": "lesson:",
-          "start": 0.94
+          "start": 1.06
         },
         {
           "w": "RNNs.",
-          "start": 1.41
+          "start": 1.59
         },
         {
           "w": "How",
-          "start": 1.88
-        },
-        {
-          "w": "can",
           "start": 2.12
         },
         {
-          "w": "a",
+          "w": "can",
           "start": 2.32
         },
         {
+          "w": "a",
+          "start": 2.52
+        },
+        {
           "w": "network",
-          "start": 2.44
+          "start": 2.8
         },
         {
           "w": "read",
-          "start": 2.88
-        },
-        {
-          "w": "a",
           "start": 3.08
         },
         {
+          "w": "a",
+          "start": 3.28
+        },
+        {
           "w": "sentence",
-          "start": 3.2
+          "start": 3.4
         },
         {
           "w": "one",
-          "start": 3.6
+          "start": 3.88
         },
         {
           "w": "word",
-          "start": 3.84
+          "start": 4.12
         },
         {
           "w": "at",
-          "start": 4.08
+          "start": 4.36
         },
         {
           "w": "a",
-          "start": 4.28
+          "start": 4.56
         },
         {
           "w": "time?",
-          "start": 4.4
+          "start": 4.64
         }
       ],
-      "matchScore": 0.727
+      "matchScore": 0.636
     }
   }
 }

@@ -2865,64 +2865,64 @@
     "c33": {
       "segment": "recap",
       "display": "Next lesson: CRFs. How can a tagger use many clues at once?",
-      "spoken": "Next lesson: CRFs. How can a tagger use many clues at once?",
-      "textHash": "27dfe3113e0f8b92",
+      "spoken": "Next lesson: C R Fs. How can a tagger use many clues at once?",
+      "textHash": "4e9182dc38a99572",
       "source": "tts",
       "take": "tts",
-      "audio": ".cache/proc/53ad9553273d8aa3.wav",
-      "duration": 4.022,
+      "audio": ".cache/proc/dc3a96f97fe4c1cc.wav",
+      "duration": 4.313,
       "marks": {},
       "words": [
         {
           "w": "Next",
-          "start": 0.44
+          "start": 0.5
         },
         {
           "w": "lesson:",
-          "start": 0.88
+          "start": 1
         },
         {
           "w": "CRFs.",
-          "start": 1.32
+          "start": 1.5
         },
         {
           "w": "How",
-          "start": 1.76
+          "start": 2
         },
         {
           "w": "can",
-          "start": 2.04
+          "start": 2.32
         },
         {
           "w": "a",
-          "start": 2.24
+          "start": 2.52
         },
         {
           "w": "tagger",
-          "start": 2.48
+          "start": 2.68
         },
         {
           "w": "use",
-          "start": 2.72
+          "start": 3.04
         },
         {
           "w": "many",
-          "start": 2.96
+          "start": 3.24
         },
         {
           "w": "clues",
-          "start": 3.16
+          "start": 3.48
         },
         {
           "w": "at",
-          "start": 3.52
+          "start": 3.8
         },
         {
           "w": "once?",
-          "start": 3.68
+          "start": 3.96
         }
       ],
-      "matchScore": 0.6
+      "matchScore": 0.7
     }
   }
 }
