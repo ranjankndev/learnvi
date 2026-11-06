@@ -1,0 +1,259 @@
+{
+  "id": "u2-06",
+  "thumbnail": {
+    "headline": "How AI spots names in text",
+    "big": "Paris → PLACE"
+  },
+  "tags": [
+    "conditional random fields",
+    "CRF",
+    "named entity recognition",
+    "NER",
+    "sequence labeling"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Conditional Random Fields",
+        "subtitle": "Tagging with many clues at once"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "A CRF tags the whole sentence at once, using as many clues as you like.",
+        "highlight": [
+          "whole sentence",
+          "many clues"
+        ]
+      }
+    },
+    {
+      "id": "crf",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a CRF?",
+      "props": {
+        "kicker": "Definition",
+        "term": "CRF",
+        "definition": "Conditional random field: a discriminative model that scores a whole sequence of tags, using any clues you give it.",
+        "example": "Paris: capital letter + after “to” → place",
+        "analogy": "A detective who weighs every clue at once, not just the last step."
+      }
+    },
+    {
+      "id": "clues",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Clues a CRF can use",
+      "props": {
+        "kicker": "Clues",
+        "title": "Clues you can give a CRF",
+        "items": [
+          {
+            "text": "Does the word start with a capital letter?"
+          },
+          {
+            "text": "Does it end in -ing, -ed or -ly?"
+          },
+          {
+            "text": "What are the words just before and after?"
+          },
+          {
+            "text": "Is it in a list of known names or places?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vs",
+      "kind": "core",
+      "component": "Compare",
+      "title": "HMM versus CRF",
+      "props": {
+        "kicker": "Compare",
+        "title": "HMM versus CRF",
+        "columns": [
+          {
+            "title": "HMM",
+            "items": [
+              "generative",
+              "clues: previous tag + the word",
+              "learns by counting"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "CRF",
+            "items": [
+              "discriminative",
+              "clues: anything in the sentence",
+              "learns how much to trust each clue"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Same job, much more freedom"
+        }
+      }
+    },
+    {
+      "id": "decide",
+      "kind": "core",
+      "component": "Steps",
+      "title": "How a CRF decides",
+      "props": {
+        "kicker": "Inside a CRF",
+        "title": "How a CRF picks the tags",
+        "steps": [
+          {
+            "label": "Score clues",
+            "detail": "each clue adds or removes points"
+          },
+          {
+            "label": "Score pairs",
+            "detail": "points for tags that fit together"
+          },
+          {
+            "label": "Add up",
+            "detail": "a total for every tag sequence"
+          },
+          {
+            "label": "Pick the best",
+            "detail": "Viterbi finds the top score fast"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ner",
+      "kind": "core",
+      "component": "Table",
+      "title": "Finding names",
+      "short": true,
+      "shortTitle": "How AI spots names, places and dates",
+      "props": {
+        "kicker": "Named entity recognition",
+        "title": "“Rahul flew to Paris on Monday”",
+        "columns": [
+          "Word",
+          "Tag",
+          "Strong clue"
+        ],
+        "rows": [
+          [
+            "Rahul",
+            "PERSON",
+            "capital letter, a known first name"
+          ],
+          [
+            "flew",
+            "O",
+            "lowercase verb"
+          ],
+          [
+            "to",
+            "O",
+            "common little word"
+          ],
+          [
+            "Paris",
+            "PLACE",
+            "capital, after “to”"
+          ],
+          [
+            "on",
+            "O",
+            "common little word"
+          ],
+          [
+            "Monday",
+            "DATE",
+            "a day of the week"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 3,
+            "col": 1
+          },
+          {
+            "row": 5,
+            "col": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "uses",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Where CRFs are used",
+      "props": {
+        "kicker": "In practice",
+        "title": "Where you'll find CRFs",
+        "items": [
+          {
+            "text": "Finding names of people, places and dates"
+          },
+          {
+            "text": "Part-of-speech tagging and chunking"
+          },
+          {
+            "text": "On top of neural networks, to keep tags consistent"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: HMM or CRF?",
+      "props": {
+        "question": "Which clue can a CRF use easily, but a basic HMM can't?",
+        "options": [
+          "The previous tag",
+          "Whether the word starts with a capital letter",
+          "The current word"
+        ],
+        "answer": 1,
+        "explain": "An HMM only uses the previous tag and the word itself; a CRF can add any clue, like capitals."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "A CRF scores the whole tag sequence at once",
+          "It can use any clues: capitals, endings, neighbours",
+          "It's discriminative: it learns how much to trust each clue",
+          "Viterbi finds the best-scoring tags"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
