@@ -1,0 +1,2854 @@
+{
+  "version": 1,
+  "episode": "u3-01",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome to unit three of NLP, Simply Explained. This is lesson 1: constituency parsing.",
+      "spoken": "Welcome to unit three of N L P, Simply Explained. This is lesson 1: constituency parsing.",
+      "textHash": "181612fa0736aad0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7077416e2775e257.wav",
+      "duration": 6.343,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "to",
+          "start": 0.44
+        },
+        {
+          "w": "unit",
+          "start": 0.64
+        },
+        {
+          "w": "three",
+          "start": 1
+        },
+        {
+          "w": "of",
+          "start": 1.36
+        },
+        {
+          "w": "NLP,",
+          "start": 1.72
+        },
+        {
+          "w": "Simply",
+          "start": 2.08
+        },
+        {
+          "w": "Explained.",
+          "start": 2.72
+        },
+        {
+          "w": "This",
+          "start": 3.52
+        },
+        {
+          "w": "is",
+          "start": 3.867
+        },
+        {
+          "w": "lesson",
+          "start": 4.213
+        },
+        {
+          "w": "1:",
+          "start": 4.56
+        },
+        {
+          "w": "constituency",
+          "start": 4.88
+        },
+        {
+          "w": "parsing.",
+          "start": 5.8
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "In unit two we tagged words and grouped them into small chunks. Now we go all the way, and find the complete structure of a sentence.",
+      "spoken": "In unit two we tagged words and grouped them into small chunks. Now we go all the way, and find the complete structure of a sentence.",
+      "textHash": "ef4df0098d524425",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a73c11ed80c43d1e.wav",
+      "duration": 7.977,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "unit",
+          "start": 0.16
+        },
+        {
+          "w": "two",
+          "start": 0.5
+        },
+        {
+          "w": "we",
+          "start": 0.84
+        },
+        {
+          "w": "tagged",
+          "start": 1.04
+        },
+        {
+          "w": "words",
+          "start": 1.44
+        },
+        {
+          "w": "and",
+          "start": 1.8
+        },
+        {
+          "w": "grouped",
+          "start": 2
+        },
+        {
+          "w": "them",
+          "start": 2.36
+        },
+        {
+          "w": "into",
+          "start": 2.56
+        },
+        {
+          "w": "small",
+          "start": 2.987
+        },
+        {
+          "w": "chunks.",
+          "start": 3.413
+        },
+        {
+          "w": "Now",
+          "start": 3.84
+        },
+        {
+          "w": "we",
+          "start": 4.2
+        },
+        {
+          "w": "go",
+          "start": 4.44
+        },
+        {
+          "w": "all",
+          "start": 4.72
+        },
+        {
+          "w": "the",
+          "start": 4.92
+        },
+        {
+          "w": "way,",
+          "start": 5.12
+        },
+        {
+          "w": "and",
+          "start": 5.4
+        },
+        {
+          "w": "find",
+          "start": 5.68
+        },
+        {
+          "w": "the",
+          "start": 5.96
+        },
+        {
+          "w": "complete",
+          "start": 6.12
+        },
+        {
+          "w": "structure",
+          "start": 6.64
+        },
+        {
+          "w": "of",
+          "start": 7.12
+        },
+        {
+          "w": "a",
+          "start": 7.24
+        },
+        {
+          "w": "sentence.",
+          "start": 7.36
+        }
+      ],
+      "matchScore": 0.85
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. A sentence isn't a flat list of words. It's a tree: phrases nested inside bigger phrases.",
+      "spoken": "Here's the idea. A sentence isn't a flat list of words. It's a tree: phrases nested inside bigger phrases.",
+      "textHash": "c1a8abf7930852a5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/65eb289f47b83cd6.wav",
+      "duration": 7.13,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "A",
+          "start": 1.12
+        },
+        {
+          "w": "sentence",
+          "start": 1.36
+        },
+        {
+          "w": "isn't",
+          "start": 1.88
+        },
+        {
+          "w": "a",
+          "start": 2.2
+        },
+        {
+          "w": "flat",
+          "start": 2.32
+        },
+        {
+          "w": "list",
+          "start": 2.64
+        },
+        {
+          "w": "of",
+          "start": 2.88
+        },
+        {
+          "w": "words.",
+          "start": 3.04
+        },
+        {
+          "w": "It's",
+          "start": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.84
+        },
+        {
+          "w": "tree:",
+          "start": 4
+        },
+        {
+          "w": "phrases",
+          "start": 4.48
+        },
+        {
+          "w": "nested",
+          "start": 5.2
+        },
+        {
+          "w": "inside",
+          "start": 5.64
+        },
+        {
+          "w": "bigger",
+          "start": 6.08
+        },
+        {
+          "w": "phrases.",
+          "start": 6.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c04": {
+      "segment": "constituent",
+      "display": "The building blocks are called constituents. A constituent is a group of words that works as one unit. A quick test: can you replace the group with a single word?",
+      "spoken": "The building blocks are called constituents. A constituent is a group of words that works as one unit. A quick test: can you replace the group with a single word?",
+      "textHash": "fe001156cd211b2e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6e2ae112cbe03ddb.wav",
+      "duration": 9.664,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "building",
+          "start": 0.12
+        },
+        {
+          "w": "blocks",
+          "start": 0.52
+        },
+        {
+          "w": "are",
+          "start": 0.92
+        },
+        {
+          "w": "called",
+          "start": 1.12
+        },
+        {
+          "w": "constituents.",
+          "start": 1.44
+        },
+        {
+          "w": "A",
+          "start": 2.44
+        },
+        {
+          "w": "constituent",
+          "start": 2.64
+        },
+        {
+          "w": "is",
+          "start": 3.44
+        },
+        {
+          "w": "a",
+          "start": 3.56
+        },
+        {
+          "w": "group",
+          "start": 3.68
+        },
+        {
+          "w": "of",
+          "start": 3.92
+        },
+        {
+          "w": "words",
+          "start": 4.08
+        },
+        {
+          "w": "that",
+          "start": 4.4
+        },
+        {
+          "w": "works",
+          "start": 4.6
+        },
+        {
+          "w": "as",
+          "start": 4.92
+        },
+        {
+          "w": "one",
+          "start": 5.12
+        },
+        {
+          "w": "unit.",
+          "start": 5.4
+        },
+        {
+          "w": "A",
+          "start": 5.68
+        },
+        {
+          "w": "quick",
+          "start": 5.96
+        },
+        {
+          "w": "test:",
+          "start": 6.6
+        },
+        {
+          "w": "can",
+          "start": 7.2
+        },
+        {
+          "w": "you",
+          "start": 7.44
+        },
+        {
+          "w": "replace",
+          "start": 7.6
+        },
+        {
+          "w": "the",
+          "start": 8.08
+        },
+        {
+          "w": "group",
+          "start": 8.24
+        },
+        {
+          "w": "with",
+          "start": 8.56
+        },
+        {
+          "w": "a",
+          "start": 8.68
+        },
+        {
+          "w": "single",
+          "start": 8.84
+        },
+        {
+          "w": "word?",
+          "start": 9.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c05": {
+      "segment": "constituent",
+      "display": "In \"the old man slept\", you can replace \"the old man\" with \"he\". So \"the old man\" is a constituent.",
+      "spoken": "In \"the old man slept\", you can replace \"the old man\" with \"he\". So \"the old man\" is a constituent.",
+      "textHash": "1c587498b0d36fbd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6c698900ef3f4ec6.wav",
+      "duration": 5.867,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"the",
+          "start": 0.16
+        },
+        {
+          "w": "old",
+          "start": 0.32
+        },
+        {
+          "w": "man",
+          "start": 0.64
+        },
+        {
+          "w": "slept\",",
+          "start": 0.88
+        },
+        {
+          "w": "you",
+          "start": 1.44
+        },
+        {
+          "w": "can",
+          "start": 1.64
+        },
+        {
+          "w": "replace",
+          "start": 1.8
+        },
+        {
+          "w": "\"the",
+          "start": 2.24
+        },
+        {
+          "w": "old",
+          "start": 2.4
+        },
+        {
+          "w": "man\"",
+          "start": 2.72
+        },
+        {
+          "w": "with",
+          "start": 2.96
+        },
+        {
+          "w": "\"he\".",
+          "start": 3.2
+        },
+        {
+          "w": "So",
+          "start": 3.6
+        },
+        {
+          "w": "\"the",
+          "start": 3.88
+        },
+        {
+          "w": "old",
+          "start": 4.12
+        },
+        {
+          "w": "man\"",
+          "start": 4.4
+        },
+        {
+          "w": "is",
+          "start": 4.72
+        },
+        {
+          "w": "a",
+          "start": 4.92
+        },
+        {
+          "w": "constituent.",
+          "start": 5.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "constituent",
+      "display": "Think of nesting boxes. Small boxes are packed inside bigger boxes, and the biggest box holds the whole sentence.",
+      "spoken": "Think of nesting boxes. Small boxes are packed inside bigger boxes, and the biggest box holds the whole sentence.",
+      "textHash": "bcac8055b6049f51",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/861a5482bffcb7c9.wav",
+      "duration": 7.34,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "nesting",
+          "start": 0.36
+        },
+        {
+          "w": "boxes.",
+          "start": 0.88
+        },
+        {
+          "w": "Small",
+          "start": 1.76
+        },
+        {
+          "w": "boxes",
+          "start": 2.12
+        },
+        {
+          "w": "are",
+          "start": 2.72
+        },
+        {
+          "w": "packed",
+          "start": 2.92
+        },
+        {
+          "w": "inside",
+          "start": 3.28
+        },
+        {
+          "w": "bigger",
+          "start": 3.68
+        },
+        {
+          "w": "boxes,",
+          "start": 4.08
+        },
+        {
+          "w": "and",
+          "start": 4.72
+        },
+        {
+          "w": "the",
+          "start": 4.88
+        },
+        {
+          "w": "biggest",
+          "start": 5.08
+        },
+        {
+          "w": "box",
+          "start": 5.56
+        },
+        {
+          "w": "holds",
+          "start": 5.92
+        },
+        {
+          "w": "the",
+          "start": 6.28
+        },
+        {
+          "w": "whole",
+          "start": 6.44
+        },
+        {
+          "w": "sentence.",
+          "start": 6.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c07": {
+      "segment": "build",
+      "display": "Let's build the tree for \"the old man slept\", from the bottom up.",
+      "spoken": "Let's build the tree for \"the old man slept\", from the bottom up.",
+      "textHash": "f5515d950b61256f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/60f865c0cf9f6f99.wav",
+      "duration": 3.512,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "build",
+          "start": 0.36
+        },
+        {
+          "w": "the",
+          "start": 0.6
+        },
+        {
+          "w": "tree",
+          "start": 0.76
+        },
+        {
+          "w": "for",
+          "start": 1.04
+        },
+        {
+          "w": "\"the",
+          "start": 1.2
+        },
+        {
+          "w": "old",
+          "start": 1.36
+        },
+        {
+          "w": "man",
+          "start": 1.64
+        },
+        {
+          "w": "slept\",",
+          "start": 1.88
+        },
+        {
+          "w": "from",
+          "start": 2.48
+        },
+        {
+          "w": "the",
+          "start": 2.64
+        },
+        {
+          "w": "bottom",
+          "start": 2.8
+        },
+        {
+          "w": "up.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "build",
+      "display": "Words: we start with the four words at the bottom of the tree.",
+      "spoken": "Words: we start with the four words at the bottom of the tree.",
+      "textHash": "e038eb6c8a1999f4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7cd28183fc404de9.wav",
+      "duration": 3.142,
+      "marks": {},
+      "words": [
+        {
+          "w": "Words:",
+          "start": 0
+        },
+        {
+          "w": "we",
+          "start": 0.56
+        },
+        {
+          "w": "start",
+          "start": 0.76
+        },
+        {
+          "w": "with",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.24
+        },
+        {
+          "w": "four",
+          "start": 1.46
+        },
+        {
+          "w": "words",
+          "start": 1.68
+        },
+        {
+          "w": "at",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.12
+        },
+        {
+          "w": "bottom",
+          "start": 2.24
+        },
+        {
+          "w": "of",
+          "start": 2.6
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "tree.",
+          "start": 2.84
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c09": {
+      "segment": "build",
+      "display": "Noun phrase: \"the old man\" joins into one noun phrase, NP.",
+      "spoken": "Noun phrase: \"the old man\" joins into one noun phrase, N P.",
+      "textHash": "701108b5ece0732b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0dd88eea2219dab0.wav",
+      "duration": 4.117,
+      "marks": {},
+      "words": [
+        {
+          "w": "Noun",
+          "start": 0
+        },
+        {
+          "w": "phrase:",
+          "start": 0.4
+        },
+        {
+          "w": "\"the",
+          "start": 0.96
+        },
+        {
+          "w": "old",
+          "start": 1.2
+        },
+        {
+          "w": "man\"",
+          "start": 1.48
+        },
+        {
+          "w": "joins",
+          "start": 1.84
+        },
+        {
+          "w": "into",
+          "start": 2.32
+        },
+        {
+          "w": "one",
+          "start": 2.52
+        },
+        {
+          "w": "noun",
+          "start": 2.76
+        },
+        {
+          "w": "phrase,",
+          "start": 3.04
+        },
+        {
+          "w": "NP.",
+          "start": 3.579
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "build",
+      "display": "Verb phrase: \"slept\" forms the verb phrase, VP.",
+      "spoken": "Verb phrase: \"slept\" forms the verb phrase, V P.",
+      "textHash": "9fe9fdff05421419",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9221f537fe28ef25.wav",
+      "duration": 3.157,
+      "marks": {},
+      "words": [
+        {
+          "w": "Verb",
+          "start": 0.04
+        },
+        {
+          "w": "phrase:",
+          "start": 0.48
+        },
+        {
+          "w": "\"slept\"",
+          "start": 0.92
+        },
+        {
+          "w": "forms",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.613
+        },
+        {
+          "w": "verb",
+          "start": 1.867
+        },
+        {
+          "w": "phrase,",
+          "start": 2.12
+        },
+        {
+          "w": "VP.",
+          "start": 2.639
+        }
+      ],
+      "matchScore": 0.571
+    },
+    "c11": {
+      "segment": "build",
+      "display": "Sentence: finally, the noun phrase and the verb phrase join into the whole sentence, S, at the top of the tree.",
+      "spoken": "Sentence: finally, the noun phrase and the verb phrase join into the whole sentence, S, at the top of the tree.",
+      "textHash": "61ac5e9f32ad8539",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cde8b061d9447da6.wav",
+      "duration": 6.912,
+      "marks": {},
+      "words": [
+        {
+          "w": "Sentence:",
+          "start": 0
+        },
+        {
+          "w": "finally,",
+          "start": 0.72
+        },
+        {
+          "w": "the",
+          "start": 1.52
+        },
+        {
+          "w": "noun",
+          "start": 1.76
+        },
+        {
+          "w": "phrase",
+          "start": 2.08
+        },
+        {
+          "w": "and",
+          "start": 2.48
+        },
+        {
+          "w": "the",
+          "start": 2.667
+        },
+        {
+          "w": "verb",
+          "start": 2.853
+        },
+        {
+          "w": "phrase",
+          "start": 3.04
+        },
+        {
+          "w": "join",
+          "start": 3.52
+        },
+        {
+          "w": "into",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 4.04
+        },
+        {
+          "w": "whole",
+          "start": 4.16
+        },
+        {
+          "w": "sentence,",
+          "start": 4.48
+        },
+        {
+          "w": "S,",
+          "start": 5.36
+        },
+        {
+          "w": "at",
+          "start": 5.6
+        },
+        {
+          "w": "the",
+          "start": 5.84
+        },
+        {
+          "w": "top",
+          "start": 6
+        },
+        {
+          "w": "of",
+          "start": 6.32
+        },
+        {
+          "w": "the",
+          "start": 6.4
+        },
+        {
+          "w": "tree.",
+          "start": 6.56
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c12": {
+      "segment": "grammar",
+      "display": "A parser knows which joins are allowed from a set of rules, called a context-free grammar. Here's a tiny one.",
+      "spoken": "A parser knows which joins are allowed from a set of rules, called a context-free grammar. Here's a tiny one.",
+      "textHash": "6661da79ff2c3d06",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/10d149cc1bd09dc4.wav",
+      "duration": 6.483,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "parser",
+          "start": 0.08
+        },
+        {
+          "w": "knows",
+          "start": 0.56
+        },
+        {
+          "w": "which",
+          "start": 0.88
+        },
+        {
+          "w": "joins",
+          "start": 1.12
+        },
+        {
+          "w": "are",
+          "start": 1.52
+        },
+        {
+          "w": "allowed",
+          "start": 1.68
+        },
+        {
+          "w": "from",
+          "start": 2.04
+        },
+        {
+          "w": "a",
+          "start": 2.16
+        },
+        {
+          "w": "set",
+          "start": 2.28
+        },
+        {
+          "w": "of",
+          "start": 2.48
+        },
+        {
+          "w": "rules,",
+          "start": 2.64
+        },
+        {
+          "w": "called",
+          "start": 3.12
+        },
+        {
+          "w": "a",
+          "start": 3.48
+        },
+        {
+          "w": "context-free",
+          "start": 4
+        },
+        {
+          "w": "grammar.",
+          "start": 4.52
+        },
+        {
+          "w": "Here's",
+          "start": 5.12
+        },
+        {
+          "w": "a",
+          "start": 5.6
+        },
+        {
+          "w": "tiny",
+          "start": 5.76
+        },
+        {
+          "w": "one.",
+          "start": 6.2
+        }
+      ],
+      "matchScore": 0.933
+    },
+    "c13": {
+      "segment": "grammar",
+      "display": "S goes to NP VP: a sentence is a noun phrase followed by a verb phrase.",
+      "spoken": "S goes to N P V P: a sentence is a noun phrase followed by a verb phrase.",
+      "textHash": "632a6ad2aba491aa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/26ec2dfce65481be.wav",
+      "duration": 5.31,
+      "marks": {},
+      "words": [
+        {
+          "w": "S",
+          "start": 0.28
+        },
+        {
+          "w": "goes",
+          "start": 0.56
+        },
+        {
+          "w": "to",
+          "start": 0.84
+        },
+        {
+          "w": "NP",
+          "start": 1.12
+        },
+        {
+          "w": "VP:",
+          "start": 1.4
+        },
+        {
+          "w": "a",
+          "start": 1.68
+        },
+        {
+          "w": "sentence",
+          "start": 2.04
+        },
+        {
+          "w": "is",
+          "start": 2.64
+        },
+        {
+          "w": "a",
+          "start": 2.8
+        },
+        {
+          "w": "noun",
+          "start": 2.96
+        },
+        {
+          "w": "phrase",
+          "start": 3.28
+        },
+        {
+          "w": "followed",
+          "start": 3.8
+        },
+        {
+          "w": "by",
+          "start": 4.24
+        },
+        {
+          "w": "a",
+          "start": 4.44
+        },
+        {
+          "w": "verb",
+          "start": 4.64
+        },
+        {
+          "w": "phrase.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c14": {
+      "segment": "grammar",
+      "display": "NP goes to determiner, adjective, noun: like \"the old man\".",
+      "spoken": "N P goes to determiner, adjective, noun: like \"the old man\".",
+      "textHash": "317c997f7600cbde",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8b46ba710dbd0ef5.wav",
+      "duration": 4.001,
+      "marks": {},
+      "words": [
+        {
+          "w": "NP",
+          "start": 0.22
+        },
+        {
+          "w": "goes",
+          "start": 0.44
+        },
+        {
+          "w": "to",
+          "start": 0.76
+        },
+        {
+          "w": "determiner,",
+          "start": 0.92
+        },
+        {
+          "w": "adjective,",
+          "start": 1.6
+        },
+        {
+          "w": "noun:",
+          "start": 2.32
+        },
+        {
+          "w": "like",
+          "start": 2.8
+        },
+        {
+          "w": "\"the",
+          "start": 3.08
+        },
+        {
+          "w": "old",
+          "start": 3.32
+        },
+        {
+          "w": "man\".",
+          "start": 3.64
+        }
+      ],
+      "matchScore": 1
+    },
+    "c15": {
+      "segment": "grammar",
+      "display": "VP goes to VERB NP: a verb followed by its object, like \"saw a dog\".",
+      "spoken": "V P goes to VERB N P: a verb followed by its object, like \"saw a dog\".",
+      "textHash": "6aab406b025ce22d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c7644807ffc91658.wav",
+      "duration": 4.878,
+      "marks": {},
+      "words": [
+        {
+          "w": "VP",
+          "start": 0.24
+        },
+        {
+          "w": "goes",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.84
+        },
+        {
+          "w": "VERB",
+          "start": 1.2
+        },
+        {
+          "w": "NP:",
+          "start": 1.56
+        },
+        {
+          "w": "a",
+          "start": 1.92
+        },
+        {
+          "w": "verb",
+          "start": 2.28
+        },
+        {
+          "w": "followed",
+          "start": 2.64
+        },
+        {
+          "w": "by",
+          "start": 2.96
+        },
+        {
+          "w": "its",
+          "start": 3.12
+        },
+        {
+          "w": "object,",
+          "start": 3.36
+        },
+        {
+          "w": "like",
+          "start": 3.88
+        },
+        {
+          "w": "\"saw",
+          "start": 4.12
+        },
+        {
+          "w": "a",
+          "start": 4.28
+        },
+        {
+          "w": "dog\".",
+          "start": 4.44
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c16": {
+      "segment": "grammar",
+      "display": "And VP can also be just a verb on its own, like \"slept\".",
+      "spoken": "And V P can also be just a verb on its own, like \"slept\".",
+      "textHash": "18f7d1b2866ca7de",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1b29503497d1de38.wav",
+      "duration": 3.452,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0.213
+        },
+        {
+          "w": "VP",
+          "start": 0.427
+        },
+        {
+          "w": "can",
+          "start": 0.64
+        },
+        {
+          "w": "also",
+          "start": 0.88
+        },
+        {
+          "w": "be",
+          "start": 1.12
+        },
+        {
+          "w": "just",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.453
+        },
+        {
+          "w": "verb",
+          "start": 1.627
+        },
+        {
+          "w": "on",
+          "start": 1.8
+        },
+        {
+          "w": "its",
+          "start": 1.96
+        },
+        {
+          "w": "own,",
+          "start": 2.2
+        },
+        {
+          "w": "like",
+          "start": 2.56
+        },
+        {
+          "w": "\"slept\".",
+          "start": 2.88
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c17": {
+      "segment": "telescope",
+      "display": "Here's why parsing is hard. Take: \"I saw the man with the telescope.\"",
+      "spoken": "Here's why parsing is hard. Take: \"I saw the man with the telescope.\"",
+      "textHash": "8da17959e3933690",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c54b16367749acf3.wav",
+      "duration": 4.18,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "why",
+          "start": 0.32
+        },
+        {
+          "w": "parsing",
+          "start": 0.56
+        },
+        {
+          "w": "is",
+          "start": 1.04
+        },
+        {
+          "w": "hard.",
+          "start": 1.28
+        },
+        {
+          "w": "Take:",
+          "start": 1.76
+        },
+        {
+          "w": "\"I",
+          "start": 2.2
+        },
+        {
+          "w": "saw",
+          "start": 2.52
+        },
+        {
+          "w": "the",
+          "start": 2.72
+        },
+        {
+          "w": "man",
+          "start": 2.92
+        },
+        {
+          "w": "with",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.28
+        },
+        {
+          "w": "telescope.\"",
+          "start": 3.44
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "telescope",
+      "display": "In one tree, \"with the telescope\" belongs to \"the man\". The man is the one holding the telescope.",
+      "spoken": "In one tree, \"with the telescope\" belongs to \"the man\". The man is the one holding the telescope.",
+      "textHash": "32b548b2652c1474",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3c294ded2871245d.wav",
+      "duration": 5.699,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "one",
+          "start": 0.2
+        },
+        {
+          "w": "tree,",
+          "start": 0.48
+        },
+        {
+          "w": "\"with",
+          "start": 0.96
+        },
+        {
+          "w": "the",
+          "start": 1.12
+        },
+        {
+          "w": "telescope\"",
+          "start": 1.28
+        },
+        {
+          "w": "belongs",
+          "start": 2.04
+        },
+        {
+          "w": "to",
+          "start": 2.52
+        },
+        {
+          "w": "\"the",
+          "start": 2.68
+        },
+        {
+          "w": "man\".",
+          "start": 2.84
+        },
+        {
+          "w": "The",
+          "start": 3.24
+        },
+        {
+          "w": "man",
+          "start": 3.52
+        },
+        {
+          "w": "is",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 4.04
+        },
+        {
+          "w": "one",
+          "start": 4.16
+        },
+        {
+          "w": "holding",
+          "start": 4.4
+        },
+        {
+          "w": "the",
+          "start": 4.8
+        },
+        {
+          "w": "telescope.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "telescope",
+      "display": "In the other tree, it belongs to \"saw\". I used the telescope to see him. Same words, two different trees.",
+      "spoken": "In the other tree, it belongs to \"saw\". I used the telescope to see him. Same words, two different trees.",
+      "textHash": "34c087098b57fa7b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5bb38aaa12f16edd.wav",
+      "duration": 6.224,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "other",
+          "start": 0.24
+        },
+        {
+          "w": "tree,",
+          "start": 0.48
+        },
+        {
+          "w": "it",
+          "start": 0.8
+        },
+        {
+          "w": "belongs",
+          "start": 0.96
+        },
+        {
+          "w": "to",
+          "start": 1.4
+        },
+        {
+          "w": "\"saw\".",
+          "start": 1.6
+        },
+        {
+          "w": "I",
+          "start": 2
+        },
+        {
+          "w": "used",
+          "start": 2.3
+        },
+        {
+          "w": "the",
+          "start": 2.6
+        },
+        {
+          "w": "telescope",
+          "start": 2.72
+        },
+        {
+          "w": "to",
+          "start": 3.44
+        },
+        {
+          "w": "see",
+          "start": 3.6
+        },
+        {
+          "w": "him.",
+          "start": 3.88
+        },
+        {
+          "w": "Same",
+          "start": 4.28
+        },
+        {
+          "w": "words,",
+          "start": 4.64
+        },
+        {
+          "w": "two",
+          "start": 5.08
+        },
+        {
+          "w": "different",
+          "start": 5.32
+        },
+        {
+          "w": "trees.",
+          "start": 5.76
+        }
+      ],
+      "matchScore": 0.933
+    },
+    "c20": {
+      "segment": "pcfg",
+      "display": "So how does a parser choose between trees? It gives each grammar rule a probability. That's a probabilistic context-free grammar, or PCFG. The probabilities are learned by counting rules in a treebank: a large set of sentences that people have parsed by hand.",
+      "spoken": "So how does a parser choose between trees? It gives each grammar rule a probability. That's a probabilistic context-free grammar, or P C F G. The probabilities are learned by counting rules in a treebank: a large set of sentences that people have parsed by hand.",
+      "textHash": "6aa8049fb6dadaa9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/94f3071a20dd78cc.wav",
+      "duration": 17.058,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.16
+        },
+        {
+          "w": "does",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "parser",
+          "start": 0.6
+        },
+        {
+          "w": "choose",
+          "start": 1.04
+        },
+        {
+          "w": "between",
+          "start": 1.44
+        },
+        {
+          "w": "trees?",
+          "start": 1.76
+        },
+        {
+          "w": "It",
+          "start": 2.32
+        },
+        {
+          "w": "gives",
+          "start": 2.56
+        },
+        {
+          "w": "each",
+          "start": 2.88
+        },
+        {
+          "w": "grammar",
+          "start": 3.16
+        },
+        {
+          "w": "rule",
+          "start": 3.64
+        },
+        {
+          "w": "a",
+          "start": 3.92
+        },
+        {
+          "w": "probability.",
+          "start": 4.08
+        },
+        {
+          "w": "That's",
+          "start": 5.04
+        },
+        {
+          "w": "a",
+          "start": 5.44
+        },
+        {
+          "w": "probabilistic",
+          "start": 5.56
+        },
+        {
+          "w": "context-free",
+          "start": 6.42
+        },
+        {
+          "w": "grammar,",
+          "start": 7.28
+        },
+        {
+          "w": "or",
+          "start": 7.92
+        },
+        {
+          "w": "PCFG.",
+          "start": 8.8
+        },
+        {
+          "w": "The",
+          "start": 9.68
+        },
+        {
+          "w": "probabilities",
+          "start": 10.16
+        },
+        {
+          "w": "are",
+          "start": 11.04
+        },
+        {
+          "w": "learned",
+          "start": 11.28
+        },
+        {
+          "w": "by",
+          "start": 11.64
+        },
+        {
+          "w": "counting",
+          "start": 11.88
+        },
+        {
+          "w": "rules",
+          "start": 12.32
+        },
+        {
+          "w": "in",
+          "start": 12.68
+        },
+        {
+          "w": "a",
+          "start": 12.84
+        },
+        {
+          "w": "treebank:",
+          "start": 13.26
+        },
+        {
+          "w": "a",
+          "start": 13.68
+        },
+        {
+          "w": "large",
+          "start": 13.92
+        },
+        {
+          "w": "set",
+          "start": 14.28
+        },
+        {
+          "w": "of",
+          "start": 14.52
+        },
+        {
+          "w": "sentences",
+          "start": 14.64
+        },
+        {
+          "w": "that",
+          "start": 15.32
+        },
+        {
+          "w": "people",
+          "start": 15.52
+        },
+        {
+          "w": "have",
+          "start": 15.8
+        },
+        {
+          "w": "parsed",
+          "start": 16
+        },
+        {
+          "w": "by",
+          "start": 16.44
+        },
+        {
+          "w": "hand.",
+          "start": 16.68
+        }
+      ],
+      "matchScore": 0.903
+    },
+    "c21": {
+      "segment": "pcfg",
+      "display": "Common rules, like a verb followed by its object, get high probabilities. Rare rules get low ones. The tree whose rules are most likely overall wins.",
+      "spoken": "Common rules, like a verb followed by its object, get high probabilities. Rare rules get low ones. The tree whose rules are most likely overall wins.",
+      "textHash": "b7bdc11c4b9d0732",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ec08408658f9737c.wav",
+      "duration": 9.915,
+      "marks": {},
+      "words": [
+        {
+          "w": "Common",
+          "start": 0
+        },
+        {
+          "w": "rules,",
+          "start": 0.4
+        },
+        {
+          "w": "like",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.133
+        },
+        {
+          "w": "verb",
+          "start": 1.387
+        },
+        {
+          "w": "followed",
+          "start": 1.64
+        },
+        {
+          "w": "by",
+          "start": 2
+        },
+        {
+          "w": "its",
+          "start": 2.16
+        },
+        {
+          "w": "object,",
+          "start": 2.4
+        },
+        {
+          "w": "get",
+          "start": 3.04
+        },
+        {
+          "w": "high",
+          "start": 3.32
+        },
+        {
+          "w": "probabilities.",
+          "start": 3.6
+        },
+        {
+          "w": "Rare",
+          "start": 4.8
+        },
+        {
+          "w": "rules",
+          "start": 5.24
+        },
+        {
+          "w": "get",
+          "start": 5.68
+        },
+        {
+          "w": "low",
+          "start": 5.92
+        },
+        {
+          "w": "ones.",
+          "start": 6.24
+        },
+        {
+          "w": "The",
+          "start": 6.64
+        },
+        {
+          "w": "tree",
+          "start": 6.88
+        },
+        {
+          "w": "whose",
+          "start": 7.2
+        },
+        {
+          "w": "rules",
+          "start": 7.52
+        },
+        {
+          "w": "are",
+          "start": 7.92
+        },
+        {
+          "w": "most",
+          "start": 8.12
+        },
+        {
+          "w": "likely",
+          "start": 8.4
+        },
+        {
+          "w": "overall",
+          "start": 8.905
+        },
+        {
+          "w": "wins.",
+          "start": 9.41
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c22": {
+      "segment": "pcfg",
+      "display": "Think of a sat-nav. There are many possible routes, and it picks the one most likely to get you there.",
+      "spoken": "Think of a sat-nav. There are many possible routes, and it picks the one most likely to get you there.",
+      "textHash": "5a80b87fe4dc5ee3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2f13d6d99f9cc3d9.wav",
+      "duration": 5.223,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "sat-nav.",
+          "start": 0.76
+        },
+        {
+          "w": "There",
+          "start": 1.2
+        },
+        {
+          "w": "are",
+          "start": 1.4
+        },
+        {
+          "w": "many",
+          "start": 1.6
+        },
+        {
+          "w": "possible",
+          "start": 1.84
+        },
+        {
+          "w": "routes,",
+          "start": 2.4
+        },
+        {
+          "w": "and",
+          "start": 2.84
+        },
+        {
+          "w": "it",
+          "start": 3
+        },
+        {
+          "w": "picks",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.48
+        },
+        {
+          "w": "one",
+          "start": 3.6
+        },
+        {
+          "w": "most",
+          "start": 3.84
+        },
+        {
+          "w": "likely",
+          "start": 4.08
+        },
+        {
+          "w": "to",
+          "start": 4.4
+        },
+        {
+          "w": "get",
+          "start": 4.56
+        },
+        {
+          "w": "you",
+          "start": 4.76
+        },
+        {
+          "w": "there.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 0.938
+    },
+    "c23": {
+      "segment": "cky",
+      "display": "A sentence can have thousands of possible trees, so the parser needs a smart search. A classic one is called CKY. Here's the idea.",
+      "spoken": "A sentence can have thousands of possible trees, so the parser needs a smart search. A classic one is called C K Y. Here's the idea.",
+      "textHash": "ee00a036df0a5dfb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0070cf42a186c1cc.wav",
+      "duration": 8.574,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "sentence",
+          "start": 0.12
+        },
+        {
+          "w": "can",
+          "start": 0.6
+        },
+        {
+          "w": "have",
+          "start": 0.8
+        },
+        {
+          "w": "thousands",
+          "start": 1
+        },
+        {
+          "w": "of",
+          "start": 1.48
+        },
+        {
+          "w": "possible",
+          "start": 1.64
+        },
+        {
+          "w": "trees,",
+          "start": 2.16
+        },
+        {
+          "w": "so",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 2.8
+        },
+        {
+          "w": "parser",
+          "start": 2.96
+        },
+        {
+          "w": "needs",
+          "start": 3.36
+        },
+        {
+          "w": "a",
+          "start": 3.68
+        },
+        {
+          "w": "smart",
+          "start": 3.84
+        },
+        {
+          "w": "search.",
+          "start": 4.24
+        },
+        {
+          "w": "A",
+          "start": 4.8
+        },
+        {
+          "w": "classic",
+          "start": 5.04
+        },
+        {
+          "w": "one",
+          "start": 5.6
+        },
+        {
+          "w": "is",
+          "start": 5.84
+        },
+        {
+          "w": "called",
+          "start": 6
+        },
+        {
+          "w": "CKY.",
+          "start": 6.64
+        },
+        {
+          "w": "Here's",
+          "start": 7.28
+        },
+        {
+          "w": "the",
+          "start": 7.84
+        },
+        {
+          "w": "idea.",
+          "start": 8
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c24": {
+      "segment": "cky",
+      "display": "First, find the best phrases for every pair of neighbouring words.",
+      "spoken": "First, find the best phrases for every pair of neighbouring words.",
+      "textHash": "0921645a6f7f6bcc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fe11a5324caf1f9f.wav",
+      "duration": 3.55,
+      "marks": {},
+      "words": [
+        {
+          "w": "First,",
+          "start": 0
+        },
+        {
+          "w": "find",
+          "start": 0.44
+        },
+        {
+          "w": "the",
+          "start": 0.76
+        },
+        {
+          "w": "best",
+          "start": 0.88
+        },
+        {
+          "w": "phrases",
+          "start": 1.12
+        },
+        {
+          "w": "for",
+          "start": 1.72
+        },
+        {
+          "w": "every",
+          "start": 1.92
+        },
+        {
+          "w": "pair",
+          "start": 2.16
+        },
+        {
+          "w": "of",
+          "start": 2.4
+        },
+        {
+          "w": "neighbouring",
+          "start": 2.56
+        },
+        {
+          "w": "words.",
+          "start": 3.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "cky",
+      "display": "Then for every run of three words, then four, and so on.",
+      "spoken": "Then for every run of three words, then four, and so on.",
+      "textHash": "298087af2b3d8c60",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/359a98ceb6402e34.wav",
+      "duration": 3.239,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.2
+        },
+        {
+          "w": "every",
+          "start": 0.36
+        },
+        {
+          "w": "run",
+          "start": 0.64
+        },
+        {
+          "w": "of",
+          "start": 0.88
+        },
+        {
+          "w": "three",
+          "start": 1.08
+        },
+        {
+          "w": "words,",
+          "start": 1.36
+        },
+        {
+          "w": "then",
+          "start": 1.84
+        },
+        {
+          "w": "four,",
+          "start": 2.08
+        },
+        {
+          "w": "and",
+          "start": 2.4
+        },
+        {
+          "w": "so",
+          "start": 2.64
+        },
+        {
+          "w": "on.",
+          "start": 2.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "cky",
+      "display": "Each bigger step reuses the small results already found, so nothing is worked out twice.",
+      "spoken": "Each bigger step reuses the small results already found, so nothing is worked out twice.",
+      "textHash": "66fff3286714bb62",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7ab200eda936d031.wav",
+      "duration": 5.478,
+      "marks": {},
+      "words": [
+        {
+          "w": "Each",
+          "start": 0
+        },
+        {
+          "w": "bigger",
+          "start": 0.28
+        },
+        {
+          "w": "step",
+          "start": 0.64
+        },
+        {
+          "w": "reuses",
+          "start": 1
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "small",
+          "start": 1.76
+        },
+        {
+          "w": "results",
+          "start": 2.08
+        },
+        {
+          "w": "already",
+          "start": 2.6
+        },
+        {
+          "w": "found,",
+          "start": 3.12
+        },
+        {
+          "w": "so",
+          "start": 3.52
+        },
+        {
+          "w": "nothing",
+          "start": 3.8
+        },
+        {
+          "w": "is",
+          "start": 4.16
+        },
+        {
+          "w": "worked",
+          "start": 4.4
+        },
+        {
+          "w": "out",
+          "start": 4.72
+        },
+        {
+          "w": "twice.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c27": {
+      "segment": "cky",
+      "display": "When it reaches the full sentence, the best tree over all the words wins.",
+      "spoken": "When it reaches the full sentence, the best tree over all the words wins.",
+      "textHash": "621e8eca9675b485",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fe827c566c42ce2c.wav",
+      "duration": 4.01,
+      "marks": {},
+      "words": [
+        {
+          "w": "When",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.12
+        },
+        {
+          "w": "reaches",
+          "start": 0.24
+        },
+        {
+          "w": "the",
+          "start": 0.68
+        },
+        {
+          "w": "full",
+          "start": 0.8
+        },
+        {
+          "w": "sentence,",
+          "start": 1.08
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "best",
+          "start": 1.88
+        },
+        {
+          "w": "tree",
+          "start": 2.24
+        },
+        {
+          "w": "over",
+          "start": 2.56
+        },
+        {
+          "w": "all",
+          "start": 2.8
+        },
+        {
+          "w": "the",
+          "start": 3
+        },
+        {
+          "w": "words",
+          "start": 3.16
+        },
+        {
+          "w": "wins.",
+          "start": 3.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "Quick quiz. Why does \"I saw the man with the telescope\" have two different trees?",
+      "spoken": "Quick quiz. Why does \"I saw the man with the telescope\" have two different trees?",
+      "textHash": "c8a7356a49731fec",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/005159c56d4ad34f.wav",
+      "duration": 4.486,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.267
+        },
+        {
+          "w": "quiz.",
+          "start": 0.533
+        },
+        {
+          "w": "Why",
+          "start": 0.8
+        },
+        {
+          "w": "does",
+          "start": 1.04
+        },
+        {
+          "w": "\"I",
+          "start": 1.28
+        },
+        {
+          "w": "saw",
+          "start": 1.48
+        },
+        {
+          "w": "the",
+          "start": 1.68
+        },
+        {
+          "w": "man",
+          "start": 1.84
+        },
+        {
+          "w": "with",
+          "start": 2.04
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "telescope\"",
+          "start": 2.28
+        },
+        {
+          "w": "have",
+          "start": 3.12
+        },
+        {
+          "w": "two",
+          "start": 3.32
+        },
+        {
+          "w": "different",
+          "start": 3.52
+        },
+        {
+          "w": "trees?",
+          "start": 4
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c29": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c30": {
+      "segment": "quiz",
+      "display": "Because \"with the telescope\" can attach to \"saw\", or to \"the man\". Each choice gives a different tree, and a different meaning.",
+      "spoken": "Because \"with the telescope\" can attach to \"saw\", or to \"the man\". Each choice gives a different tree, and a different meaning.",
+      "textHash": "75ed6af8c88f8d46",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1144639aed76042b.wav",
+      "duration": 6.786,
+      "marks": {},
+      "words": [
+        {
+          "w": "Because",
+          "start": 0
+        },
+        {
+          "w": "\"with",
+          "start": 0.28
+        },
+        {
+          "w": "the",
+          "start": 0.48
+        },
+        {
+          "w": "telescope\"",
+          "start": 0.6
+        },
+        {
+          "w": "can",
+          "start": 1.28
+        },
+        {
+          "w": "attach",
+          "start": 1.44
+        },
+        {
+          "w": "to",
+          "start": 1.84
+        },
+        {
+          "w": "\"saw\",",
+          "start": 2.04
+        },
+        {
+          "w": "or",
+          "start": 2.48
+        },
+        {
+          "w": "to",
+          "start": 2.76
+        },
+        {
+          "w": "\"the",
+          "start": 2.92
+        },
+        {
+          "w": "man\".",
+          "start": 3.12
+        },
+        {
+          "w": "Each",
+          "start": 3.68
+        },
+        {
+          "w": "choice",
+          "start": 4.12
+        },
+        {
+          "w": "gives",
+          "start": 4.56
+        },
+        {
+          "w": "a",
+          "start": 4.84
+        },
+        {
+          "w": "different",
+          "start": 4.96
+        },
+        {
+          "w": "tree,",
+          "start": 5.32
+        },
+        {
+          "w": "and",
+          "start": 5.64
+        },
+        {
+          "w": "a",
+          "start": 5.84
+        },
+        {
+          "w": "different",
+          "start": 5.96
+        },
+        {
+          "w": "meaning.",
+          "start": 6.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "Let's recap. A sentence is a tree of phrases inside phrases.",
+      "spoken": "Let's recap. A sentence is a tree of phrases inside phrases.",
+      "textHash": "77fe44c4827c3ed2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e24cd5d11818664e.wav",
+      "duration": 4.092,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "sentence",
+          "start": 1.2
+        },
+        {
+          "w": "is",
+          "start": 1.72
+        },
+        {
+          "w": "a",
+          "start": 1.88
+        },
+        {
+          "w": "tree",
+          "start": 2
+        },
+        {
+          "w": "of",
+          "start": 2.24
+        },
+        {
+          "w": "phrases",
+          "start": 2.4
+        },
+        {
+          "w": "inside",
+          "start": 2.92
+        },
+        {
+          "w": "phrases.",
+          "start": 3.4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "A context-free grammar lists which joins are allowed.",
+      "spoken": "A context-free grammar lists which joins are allowed.",
+      "textHash": "617a65cfb82e0191",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e96b4b3ef62b0c79.wav",
+      "duration": 2.951,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "context-free",
+          "start": 0.46
+        },
+        {
+          "w": "grammar",
+          "start": 0.92
+        },
+        {
+          "w": "lists",
+          "start": 1.36
+        },
+        {
+          "w": "which",
+          "start": 1.68
+        },
+        {
+          "w": "joins",
+          "start": 1.92
+        },
+        {
+          "w": "are",
+          "start": 2.32
+        },
+        {
+          "w": "allowed.",
+          "start": 2.48
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Many sentences can be parsed into more than one tree.",
+      "spoken": "Many sentences can be parsed into more than one tree.",
+      "textHash": "cfab5f0ce731fdd4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9316d10a3169a70a.wav",
+      "duration": 3.157,
+      "marks": {},
+      "words": [
+        {
+          "w": "Many",
+          "start": 0
+        },
+        {
+          "w": "sentences",
+          "start": 0.36
+        },
+        {
+          "w": "can",
+          "start": 1.2
+        },
+        {
+          "w": "be",
+          "start": 1.36
+        },
+        {
+          "w": "parsed",
+          "start": 1.52
+        },
+        {
+          "w": "into",
+          "start": 1.92
+        },
+        {
+          "w": "more",
+          "start": 2.16
+        },
+        {
+          "w": "than",
+          "start": 2.4
+        },
+        {
+          "w": "one",
+          "start": 2.56
+        },
+        {
+          "w": "tree.",
+          "start": 2.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "And a probabilistic grammar, a PCFG, picks the most likely tree.",
+      "spoken": "And a probabilistic grammar, a P C F G, picks the most likely tree.",
+      "textHash": "52b7fe676c643b8e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/870965e93db38c52.wav",
+      "duration": 4.498,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.12
+        },
+        {
+          "w": "probabilistic",
+          "start": 0.24
+        },
+        {
+          "w": "grammar,",
+          "start": 1.04
+        },
+        {
+          "w": "a",
+          "start": 1.52
+        },
+        {
+          "w": "PCFG,",
+          "start": 1.945
+        },
+        {
+          "w": "picks",
+          "start": 2.371
+        },
+        {
+          "w": "the",
+          "start": 2.796
+        },
+        {
+          "w": "most",
+          "start": 3.222
+        },
+        {
+          "w": "likely",
+          "start": 3.647
+        },
+        {
+          "w": "tree.",
+          "start": 4.073
+        }
+      ],
+      "matchScore": 0.333
+    },
+    "c35": {
+      "segment": "recap",
+      "display": "Next lesson: Dependency Parsing. How do words in a sentence depend on each other?",
+      "spoken": "Next lesson: Dependency Parsing. How do words in a sentence depend on each other?",
+      "textHash": "14affecc3443bfc6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/41f67930b4cde07f.wav",
+      "duration": 5.124,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.32
+        },
+        {
+          "w": "lesson:",
+          "start": 0.64
+        },
+        {
+          "w": "Dependency",
+          "start": 0.96
+        },
+        {
+          "w": "Parsing.",
+          "start": 1.84
+        },
+        {
+          "w": "How",
+          "start": 2.56
+        },
+        {
+          "w": "do",
+          "start": 2.84
+        },
+        {
+          "w": "words",
+          "start": 3.12
+        },
+        {
+          "w": "in",
+          "start": 3.4
+        },
+        {
+          "w": "a",
+          "start": 3.52
+        },
+        {
+          "w": "sentence",
+          "start": 3.64
+        },
+        {
+          "w": "depend",
+          "start": 4.08
+        },
+        {
+          "w": "on",
+          "start": 4.44
+        },
+        {
+          "w": "each",
+          "start": 4.6
+        },
+        {
+          "w": "other?",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 0.8
+    }
+  }
+}

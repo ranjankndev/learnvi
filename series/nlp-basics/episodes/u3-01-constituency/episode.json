@@ -1,0 +1,224 @@
+{
+  "id": "u3-01",
+  "thumbnail": {
+    "headline": "How AI sees a sentence as a tree",
+    "big": "S → NP VP"
+  },
+  "tags": [
+    "constituency parsing",
+    "parse tree",
+    "context free grammar",
+    "PCFG",
+    "CKY"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Constituency Parsing",
+        "subtitle": "Sentences as trees"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "A sentence isn't a flat list of words. It's a tree of phrases inside phrases.",
+        "highlight": [
+          "tree"
+        ]
+      }
+    },
+    {
+      "id": "constituent",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a constituent?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Constituent",
+        "definition": "A group of words that works as one unit in a sentence. Quick test: can you replace it with a single word?",
+        "example": "[the old man] slept → [he] slept",
+        "analogy": "Nesting boxes: small boxes packed inside bigger boxes."
+      }
+    },
+    {
+      "id": "build",
+      "kind": "core",
+      "component": "Steps",
+      "title": "Building a tree",
+      "props": {
+        "kicker": "Bottom up",
+        "title": "Building the tree for “the old man slept”",
+        "steps": [
+          {
+            "label": "Words",
+            "detail": "the · old · man · slept"
+          },
+          {
+            "label": "Noun phrase",
+            "detail": "the old man → NP"
+          },
+          {
+            "label": "Verb phrase",
+            "detail": "slept → VP"
+          },
+          {
+            "label": "Sentence",
+            "detail": "NP + VP → S"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grammar",
+      "kind": "core",
+      "component": "Table",
+      "title": "A tiny grammar",
+      "props": {
+        "kicker": "Context-free grammar",
+        "title": "A tiny grammar",
+        "columns": [
+          "Rule",
+          "Means",
+          "Example"
+        ],
+        "rows": [
+          [
+            "S → NP VP",
+            "noun phrase + verb phrase",
+            "the man | slept"
+          ],
+          [
+            "NP → DET ADJ NOUN",
+            "the, a describing word, a noun",
+            "the old man"
+          ],
+          [
+            "VP → VERB NP",
+            "a verb and its object",
+            "saw | a dog"
+          ],
+          [
+            "VP → VERB",
+            "a verb on its own",
+            "slept"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "telescope",
+      "kind": "core",
+      "component": "Compare",
+      "title": "One sentence, two trees",
+      "short": true,
+      "shortTitle": "One sentence, two meanings: the telescope problem",
+      "props": {
+        "kicker": "Ambiguity",
+        "title": "“I saw the man with the telescope”",
+        "columns": [
+          {
+            "title": "Tree 1",
+            "items": [
+              "[saw] [the man with the telescope]",
+              "the man has the telescope"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Tree 2",
+            "items": [
+              "[saw the man] [with the telescope]",
+              "I used the telescope"
+            ],
+            "tone": "neutral"
+          }
+        ],
+        "verdict": {
+          "text": "Same words, two different trees"
+        }
+      }
+    },
+    {
+      "id": "pcfg",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Choosing the likely tree",
+      "props": {
+        "kicker": "Probabilistic grammar",
+        "term": "PCFG",
+        "definition": "Probabilistic context-free grammar: each rule gets a probability, learned from a treebank, so the parser can pick the most likely tree.",
+        "example": "VP → VERB NP: common  ·  rare rules: unlikely",
+        "analogy": "A sat-nav picking the likeliest route among many roads."
+      }
+    },
+    {
+      "id": "cky",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "How the search works",
+      "props": {
+        "kicker": "The CKY idea",
+        "title": "How a parser searches for the best tree",
+        "items": [
+          {
+            "text": "Find the best phrases for every pair of words"
+          },
+          {
+            "text": "Then for every run of three, four, and more"
+          },
+          {
+            "text": "Reuse small results to build bigger ones"
+          },
+          {
+            "text": "The best tree over the whole sentence wins"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: why two trees?",
+      "props": {
+        "question": "Why does “I saw the man with the telescope” have two trees?",
+        "options": [
+          "Some words are misspelled",
+          "“with the telescope” can attach to “saw” or to “the man”",
+          "It has two verbs"
+        ],
+        "answer": 1,
+        "explain": "The phrase can hang from either place in the tree, giving two meanings."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Sentences are trees of phrases inside phrases",
+          "A context-free grammar says which joins are allowed",
+          "One sentence can have several trees",
+          "A PCFG picks the most likely tree"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}

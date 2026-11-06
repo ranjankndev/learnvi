@@ -1,4 +1,7 @@
 {
+  "PCFGs": "P C F Gs",
+  "PCFG": "P C F G",
+  "CKY": "C K Y",
   "CRFs": "C R Fs",
   "CRF": "C R F",
   "B-NP": "B dash N P",
