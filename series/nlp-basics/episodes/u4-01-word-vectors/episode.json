@@ -1,0 +1,238 @@
+{
+  "id": "u4-01",
+  "thumbnail": {
+    "headline": "Words have addresses too",
+    "big": "king − man + woman"
+  },
+  "tags": [
+    "word vectors",
+    "word embeddings",
+    "distributional semantics",
+    "SVD",
+    "word analogies"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Word Vectors",
+        "subtitle": "Giving words a place on a map"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea · J. R. Firth, 1957",
+        "text": "You shall know a word by the company it keeps.",
+        "highlight": [
+          "company"
+        ]
+      }
+    },
+    {
+      "id": "vector",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a word vector?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Word vector",
+        "definition": "A list of numbers that places a word in a space of meaning, so similar words sit close together.",
+        "example": "rain → [0.8, 0.1, 0.6, …]",
+        "analogy": "A map: towns that are close together have a lot in common."
+      }
+    },
+    {
+      "id": "counts",
+      "kind": "core",
+      "component": "Table",
+      "title": "Counting the company",
+      "props": {
+        "kicker": "Example counts",
+        "title": "How often each word appears near…",
+        "columns": [
+          "Word",
+          "wet",
+          "cloud",
+          "bark"
+        ],
+        "rows": [
+          [
+            "rain",
+            "8",
+            "6",
+            "0"
+          ],
+          [
+            "storm",
+            "6",
+            "7",
+            "0"
+          ],
+          [
+            "dog",
+            "1",
+            "0",
+            "9"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0
+          },
+          {
+            "row": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "build",
+      "kind": "core",
+      "component": "Steps",
+      "title": "From counts to vectors",
+      "props": {
+        "kicker": "Building vectors",
+        "title": "From counts to word vectors",
+        "steps": [
+          {
+            "label": "Count",
+            "detail": "neighbours in lots of text"
+          },
+          {
+            "label": "Compress",
+            "detail": "keep the main patterns"
+          },
+          {
+            "label": "Compare",
+            "detail": "close vectors = similar words"
+          }
+        ]
+      }
+    },
+    {
+      "id": "similar",
+      "kind": "core",
+      "component": "BarChart",
+      "title": "Closest to rain",
+      "props": {
+        "kicker": "Illustrative scores",
+        "title": "How similar is each word to “rain”?",
+        "bars": [
+          {
+            "label": "storm",
+            "value": 0.9
+          },
+          {
+            "label": "umbrella",
+            "value": 0.7
+          },
+          {
+            "label": "banana",
+            "value": 0.1
+          }
+        ],
+        "note": "0 = unrelated, 1 = very similar"
+      }
+    },
+    {
+      "id": "maths",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Word maths",
+      "short": true,
+      "shortTitle": "Word maths: king − man + woman = ?",
+      "props": {
+        "kicker": "Word maths",
+        "title": "Directions in the map carry meaning",
+        "items": [
+          {
+            "text": "king − man + woman ≈ queen"
+          },
+          {
+            "text": "Paris − France + Italy ≈ Rome"
+          },
+          {
+            "text": "walked − walk + swim ≈ swam"
+          }
+        ]
+      }
+    },
+    {
+      "id": "onehot",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Why not just IDs?",
+      "props": {
+        "kicker": "Before and after",
+        "title": "IDs versus word vectors",
+        "columns": [
+          {
+            "title": "One ID per word",
+            "items": [
+              "one slot per word",
+              "every word equally far apart",
+              "rain is as close to storm as to banana"
+            ],
+            "tone": "bad"
+          },
+          {
+            "title": "Word vectors",
+            "items": [
+              "a few hundred numbers",
+              "similar words sit close",
+              "learned from text"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Vectors let a model see that words are related"
+        }
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: which word is closest to “rain”?",
+      "props": {
+        "question": "Which word's vector is probably closest to “rain”?",
+        "options": [
+          "storm",
+          "banana",
+          "Tuesday"
+        ],
+        "answer": 0,
+        "explain": "Rain and storm keep the same company: wet, cloud, weather."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Words get meaning from the company they keep",
+          "A word vector places a word on a map of meaning",
+          "Close vectors mean similar words",
+          "Directions carry meaning: king − man + woman ≈ queen"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}

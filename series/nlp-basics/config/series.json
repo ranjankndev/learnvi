@@ -130,8 +130,18 @@
       "folder": "u1-03-classification"
     },
     {
+      "id": "u1-04",
+      "unit": 1,
+      "lesson": 4,
+      "short": "Language Models",
+      "title": "Language Models: Guessing the Next Word",
+      "question": "How can a computer guess what word comes next?",
+      "folder": "u1-04-language-models",
+      "number": 4
+    },
+    {
       "id": "u2-01",
-      "number": 4,
+      "number": 5,
       "unit": 2,
       "lesson": 1,
       "short": "Morphology",
@@ -141,7 +151,7 @@
     },
     {
       "id": "u2-02",
-      "number": 5,
+      "number": 6,
       "unit": 2,
       "lesson": 2,
       "short": "POS Tagging",
@@ -150,13 +160,134 @@
       "folder": "u2-02-pos-tagging"
     },
     {
+      "id": "u2-03",
+      "unit": 2,
+      "lesson": 3,
+      "short": "Chunking",
+      "title": "Chunking: Grouping Words into Phrases",
+      "question": "How does a computer find 'the big red bus' as one unit?",
+      "folder": "u2-03-chunking",
+      "number": 7
+    },
+    {
+      "id": "u2-04",
+      "unit": 2,
+      "lesson": 4,
+      "short": "Generative vs Discriminative",
+      "title": "Generative vs Discriminative Models",
+      "question": "Should a model learn how data is made, or just where the boundary is?",
+      "folder": "u2-04-gen-vs-disc",
+      "number": 8
+    },
+    {
+      "id": "u2-05",
+      "unit": 2,
+      "lesson": 5,
+      "short": "Hidden Markov Models",
+      "title": "Hidden Markov Models, Intuitively",
+      "question": "How can we guess hidden tags from the words we can see?",
+      "folder": "u2-05-hmm",
+      "number": 9
+    },
+    {
+      "id": "u2-06",
+      "unit": 2,
+      "lesson": 6,
+      "short": "CRFs",
+      "title": "Conditional Random Fields, Intuitively",
+      "question": "How can a tagger use many clues at once?",
+      "folder": "u2-06-crf",
+      "number": 10
+    },
+    {
+      "id": "u3-01",
+      "unit": 3,
+      "lesson": 1,
+      "short": "Constituency Parsing",
+      "title": "Constituency Parsing: Sentences as Trees",
+      "question": "How does a computer see the structure of a sentence?",
+      "folder": "u3-01-constituency",
+      "number": 11
+    },
+    {
+      "id": "u3-02",
+      "unit": 3,
+      "lesson": 2,
+      "short": "Dependency Parsing",
+      "title": "Dependency Parsing: Who Did What to Whom",
+      "question": "How do words in a sentence depend on each other?",
+      "folder": "u3-02-dependency",
+      "number": 12
+    },
+    {
+      "id": "u3-03",
+      "unit": 3,
+      "lesson": 3,
+      "short": "Transition Parsing",
+      "title": "Transition-Based Parsing: Building Trees Step by Step",
+      "question": "How can a parser build a tree one move at a time?",
+      "folder": "u3-03-transition",
+      "number": 13
+    },
+    {
       "id": "u4-01",
-      "number": 6,
+      "number": 14,
       "unit": 4,
       "lesson": 1,
       "short": "Word Vectors",
       "title": "Word Vectors: Giving Words a Place on a Map",
-      "question": "How can a computer know that 'rain' is close to 'storm'?"
+      "question": "How can a computer know that 'rain' is close to 'storm'?",
+      "folder": "u4-01-word-vectors"
+    },
+    {
+      "id": "u4-02",
+      "unit": 4,
+      "lesson": 2,
+      "short": "Word2Vec",
+      "title": "Word2Vec: Learning Word Vectors from Context",
+      "question": "How does a computer learn word vectors just by reading?",
+      "folder": "u4-02-word2vec",
+      "number": 15
+    },
+    {
+      "id": "u4-03",
+      "unit": 4,
+      "lesson": 3,
+      "short": "RNNs",
+      "title": "Recurrent Neural Networks: Reading with Memory",
+      "question": "How can a network read a sentence one word at a time?",
+      "folder": "u4-03-rnn",
+      "number": 16
+    },
+    {
+      "id": "u4-04",
+      "unit": 4,
+      "lesson": 4,
+      "short": "LSTMs",
+      "title": "LSTMs: Remembering What Matters",
+      "question": "How can a network remember something from far back in a sentence?",
+      "folder": "u4-04-lstm",
+      "number": 17
+    },
+    {
+      "id": "u5-01",
+      "unit": 5,
+      "lesson": 1,
+      "short": "Contextual Embeddings",
+      "title": "Contextual Embeddings and ELMo",
+      "question": "How can 'bank' get a different vector in different sentences?",
+      "folder": "u5-01-elmo",
+      "number": 18
+    },
+    {
+      "id": "u5-02",
+      "unit": 5,
+      "lesson": 2,
+      "short": "BERT",
+      "title": "BERT: Reading in Both Directions",
+      "question": "How did BERT learn language by filling in the blanks?",
+      "folder": "u5-02-bert",
+      "number": 19
     }
   ]
 }

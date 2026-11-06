@@ -1,0 +1,2888 @@
+{
+  "version": 1,
+  "episode": "u4-01",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 4, lesson 1: word vectors.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 4, lesson 1: word vectors.",
+      "textHash": "a5a3be80d42248bc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0ce1dc30b5903b9c.wav",
+      "duration": 5.948,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.08
+        },
+        {
+          "w": "This",
+          "start": 2.88
+        },
+        {
+          "w": "is",
+          "start": 3.12
+        },
+        {
+          "w": "unit",
+          "start": 3.36
+        },
+        {
+          "w": "4,",
+          "start": 3.747
+        },
+        {
+          "w": "lesson",
+          "start": 4.133
+        },
+        {
+          "w": "1:",
+          "start": 4.52
+        },
+        {
+          "w": "word",
+          "start": 4.996
+        },
+        {
+          "w": "vectors.",
+          "start": 5.472
+        }
+      ],
+      "matchScore": 0.583
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "So far, a word has just been a token with an ID number. Today we give each word something richer: a place on a map of meaning.",
+      "spoken": "So far, a word has just been a token with an ID number. Today we give each word something richer: a place on a map of meaning.",
+      "textHash": "f64231e8d298087c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e07116a52744667c.wav",
+      "duration": 7.902,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "far,",
+          "start": 0.28
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "word",
+          "start": 0.88
+        },
+        {
+          "w": "has",
+          "start": 1.16
+        },
+        {
+          "w": "just",
+          "start": 1.36
+        },
+        {
+          "w": "been",
+          "start": 1.56
+        },
+        {
+          "w": "a",
+          "start": 1.72
+        },
+        {
+          "w": "token",
+          "start": 1.84
+        },
+        {
+          "w": "with",
+          "start": 2.28
+        },
+        {
+          "w": "an",
+          "start": 2.44
+        },
+        {
+          "w": "ID",
+          "start": 2.86
+        },
+        {
+          "w": "number.",
+          "start": 3.28
+        },
+        {
+          "w": "Today",
+          "start": 3.7
+        },
+        {
+          "w": "we",
+          "start": 4.12
+        },
+        {
+          "w": "give",
+          "start": 4.4
+        },
+        {
+          "w": "each",
+          "start": 4.6
+        },
+        {
+          "w": "word",
+          "start": 4.92
+        },
+        {
+          "w": "something",
+          "start": 5.2
+        },
+        {
+          "w": "richer:",
+          "start": 5.6
+        },
+        {
+          "w": "a",
+          "start": 6.2
+        },
+        {
+          "w": "place",
+          "start": 6.44
+        },
+        {
+          "w": "on",
+          "start": 6.76
+        },
+        {
+          "w": "a",
+          "start": 6.92
+        },
+        {
+          "w": "map",
+          "start": 7.04
+        },
+        {
+          "w": "of",
+          "start": 7.28
+        },
+        {
+          "w": "meaning.",
+          "start": 7.48
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "This lesson rests on one old idea, from the linguist J. R. Firth in 1957. You shall know a word by the company it keeps.",
+      "spoken": "This lesson rests on one old idea, from the linguist J. R. Firth in 1957. You shall know a word by the company it keeps.",
+      "textHash": "bae1558fa70e4bb5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c55ecc2e3d4ae053.wav",
+      "duration": 9.341,
+      "marks": {},
+      "words": [
+        {
+          "w": "This",
+          "start": 0.2
+        },
+        {
+          "w": "lesson",
+          "start": 0.4
+        },
+        {
+          "w": "rests",
+          "start": 0.6
+        },
+        {
+          "w": "on",
+          "start": 1.04
+        },
+        {
+          "w": "one",
+          "start": 1.24
+        },
+        {
+          "w": "old",
+          "start": 1.48
+        },
+        {
+          "w": "idea,",
+          "start": 1.76
+        },
+        {
+          "w": "from",
+          "start": 2.32
+        },
+        {
+          "w": "the",
+          "start": 2.48
+        },
+        {
+          "w": "linguist",
+          "start": 2.992
+        },
+        {
+          "w": "J.",
+          "start": 3.504
+        },
+        {
+          "w": "R.",
+          "start": 4.016
+        },
+        {
+          "w": "Firth",
+          "start": 4.528
+        },
+        {
+          "w": "in",
+          "start": 5.04
+        },
+        {
+          "w": "1957.",
+          "start": 5.21
+        },
+        {
+          "w": "You",
+          "start": 6.88
+        },
+        {
+          "w": "shall",
+          "start": 7.04
+        },
+        {
+          "w": "know",
+          "start": 7.28
+        },
+        {
+          "w": "a",
+          "start": 7.52
+        },
+        {
+          "w": "word",
+          "start": 7.68
+        },
+        {
+          "w": "by",
+          "start": 7.92
+        },
+        {
+          "w": "the",
+          "start": 8.08
+        },
+        {
+          "w": "company",
+          "start": 8.24
+        },
+        {
+          "w": "it",
+          "start": 8.72
+        },
+        {
+          "w": "keeps.",
+          "start": 8.92
+        }
+      ],
+      "matchScore": 0.696
+    },
+    "c04": {
+      "segment": "vector",
+      "display": "A word vector is a list of numbers that places a word somewhere in a space of meaning. Words with similar meanings end up close together.",
+      "spoken": "A word vector is a list of numbers that places a word somewhere in a space of meaning. Words with similar meanings end up close together.",
+      "textHash": "77851df89748d52d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/068e2418d1adc2fa.wav",
+      "duration": 8.194,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "word",
+          "start": 0.293
+        },
+        {
+          "w": "vector",
+          "start": 0.587
+        },
+        {
+          "w": "is",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "list",
+          "start": 1.16
+        },
+        {
+          "w": "of",
+          "start": 1.453
+        },
+        {
+          "w": "numbers",
+          "start": 1.747
+        },
+        {
+          "w": "that",
+          "start": 2.04
+        },
+        {
+          "w": "places",
+          "start": 2.28
+        },
+        {
+          "w": "a",
+          "start": 2.68
+        },
+        {
+          "w": "word",
+          "start": 2.84
+        },
+        {
+          "w": "somewhere",
+          "start": 3.16
+        },
+        {
+          "w": "in",
+          "start": 3.72
+        },
+        {
+          "w": "a",
+          "start": 3.88
+        },
+        {
+          "w": "space",
+          "start": 4
+        },
+        {
+          "w": "of",
+          "start": 4.32
+        },
+        {
+          "w": "meaning.",
+          "start": 4.48
+        },
+        {
+          "w": "Words",
+          "start": 5.24
+        },
+        {
+          "w": "with",
+          "start": 5.76
+        },
+        {
+          "w": "similar",
+          "start": 5.92
+        },
+        {
+          "w": "meanings",
+          "start": 6.44
+        },
+        {
+          "w": "end",
+          "start": 6.92
+        },
+        {
+          "w": "up",
+          "start": 7.2
+        },
+        {
+          "w": "close",
+          "start": 7.4
+        },
+        {
+          "w": "together.",
+          "start": 7.72
+        }
+      ],
+      "matchScore": 0.824
+    },
+    "c05": {
+      "segment": "vector",
+      "display": "For example, the word rain might become a list of a few hundred numbers. On their own, the numbers mean little. What matters is where they put the word.",
+      "spoken": "For example, the word rain might become a list of a few hundred numbers. On their own, the numbers mean little. What matters is where they put the word.",
+      "textHash": "51c18e7c9ee84489",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/92c3e60802f1b20c.wav",
+      "duration": 8.519,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "example,",
+          "start": 0.16
+        },
+        {
+          "w": "the",
+          "start": 0.72
+        },
+        {
+          "w": "word",
+          "start": 0.96
+        },
+        {
+          "w": "rain",
+          "start": 1.26
+        },
+        {
+          "w": "might",
+          "start": 1.56
+        },
+        {
+          "w": "become",
+          "start": 1.76
+        },
+        {
+          "w": "a",
+          "start": 2.08
+        },
+        {
+          "w": "list",
+          "start": 2.24
+        },
+        {
+          "w": "of",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.64
+        },
+        {
+          "w": "few",
+          "start": 2.72
+        },
+        {
+          "w": "hundred",
+          "start": 3.173
+        },
+        {
+          "w": "numbers.",
+          "start": 3.627
+        },
+        {
+          "w": "On",
+          "start": 4.08
+        },
+        {
+          "w": "their",
+          "start": 4.28
+        },
+        {
+          "w": "own,",
+          "start": 4.56
+        },
+        {
+          "w": "the",
+          "start": 4.92
+        },
+        {
+          "w": "numbers",
+          "start": 5.28
+        },
+        {
+          "w": "mean",
+          "start": 5.64
+        },
+        {
+          "w": "little.",
+          "start": 5.96
+        },
+        {
+          "w": "What",
+          "start": 6.48
+        },
+        {
+          "w": "matters",
+          "start": 6.8
+        },
+        {
+          "w": "is",
+          "start": 7.28
+        },
+        {
+          "w": "where",
+          "start": 7.52
+        },
+        {
+          "w": "they",
+          "start": 7.68
+        },
+        {
+          "w": "put",
+          "start": 7.84
+        },
+        {
+          "w": "the",
+          "start": 8.04
+        },
+        {
+          "w": "word.",
+          "start": 8.24
+        }
+      ],
+      "matchScore": 0.792
+    },
+    "c06": {
+      "segment": "vector",
+      "display": "Think of a map. Two towns that are close together usually share a lot: weather, food, accent. Word vectors do the same for words.",
+      "spoken": "Think of a map. Two towns that are close together usually share a lot: weather, food, accent. Word vectors do the same for words.",
+      "textHash": "a6f6d40b3f994b94",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/16633ff3982a29ea.wav",
+      "duration": 8.125,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.24
+        },
+        {
+          "w": "a",
+          "start": 0.36
+        },
+        {
+          "w": "map.",
+          "start": 0.52
+        },
+        {
+          "w": "Two",
+          "start": 1
+        },
+        {
+          "w": "towns",
+          "start": 1.28
+        },
+        {
+          "w": "that",
+          "start": 1.72
+        },
+        {
+          "w": "are",
+          "start": 1.88
+        },
+        {
+          "w": "close",
+          "start": 2.04
+        },
+        {
+          "w": "together",
+          "start": 2.32
+        },
+        {
+          "w": "usually",
+          "start": 2.8
+        },
+        {
+          "w": "share",
+          "start": 3.2
+        },
+        {
+          "w": "a",
+          "start": 3.48
+        },
+        {
+          "w": "lot:",
+          "start": 3.64
+        },
+        {
+          "w": "weather,",
+          "start": 4.08
+        },
+        {
+          "w": "food,",
+          "start": 4.52
+        },
+        {
+          "w": "accent.",
+          "start": 5.12
+        },
+        {
+          "w": "Word",
+          "start": 5.693
+        },
+        {
+          "w": "vectors",
+          "start": 6.267
+        },
+        {
+          "w": "do",
+          "start": 6.84
+        },
+        {
+          "w": "the",
+          "start": 7.04
+        },
+        {
+          "w": "same",
+          "start": 7.2
+        },
+        {
+          "w": "for",
+          "start": 7.44
+        },
+        {
+          "w": "words.",
+          "start": 7.68
+        }
+      ],
+      "matchScore": 0.85
+    },
+    "c07": {
+      "segment": "counts",
+      "display": "The simplest way to build these vectors is to count. For each word, we count which other words appear near it in lots of text. Here's a tiny made-up example.",
+      "spoken": "The simplest way to build these vectors is to count. For each word, we count which other words appear near it in lots of text. Here's a tiny made-up example.",
+      "textHash": "36782b7c20df21ba",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e2ac7d4b6c7a3afd.wav",
+      "duration": 9.693,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "simplest",
+          "start": 0.16
+        },
+        {
+          "w": "way",
+          "start": 0.76
+        },
+        {
+          "w": "to",
+          "start": 0.92
+        },
+        {
+          "w": "build",
+          "start": 1.08
+        },
+        {
+          "w": "these",
+          "start": 1.467
+        },
+        {
+          "w": "vectors",
+          "start": 1.853
+        },
+        {
+          "w": "is",
+          "start": 2.24
+        },
+        {
+          "w": "to",
+          "start": 2.44
+        },
+        {
+          "w": "count.",
+          "start": 2.64
+        },
+        {
+          "w": "For",
+          "start": 3.16
+        },
+        {
+          "w": "each",
+          "start": 3.44
+        },
+        {
+          "w": "word,",
+          "start": 3.84
+        },
+        {
+          "w": "we",
+          "start": 4.24
+        },
+        {
+          "w": "count",
+          "start": 4.52
+        },
+        {
+          "w": "which",
+          "start": 4.84
+        },
+        {
+          "w": "other",
+          "start": 5.04
+        },
+        {
+          "w": "words",
+          "start": 5.32
+        },
+        {
+          "w": "appear",
+          "start": 5.64
+        },
+        {
+          "w": "near",
+          "start": 5.92
+        },
+        {
+          "w": "it",
+          "start": 6.2
+        },
+        {
+          "w": "in",
+          "start": 6.36
+        },
+        {
+          "w": "lots",
+          "start": 6.52
+        },
+        {
+          "w": "of",
+          "start": 6.84
+        },
+        {
+          "w": "text.",
+          "start": 7
+        },
+        {
+          "w": "Here's",
+          "start": 7.52
+        },
+        {
+          "w": "a",
+          "start": 8.04
+        },
+        {
+          "w": "tiny",
+          "start": 8.2
+        },
+        {
+          "w": "made-up",
+          "start": 8.66
+        },
+        {
+          "w": "example.",
+          "start": 9.12
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c08": {
+      "segment": "counts",
+      "display": "Rain often appears near wet and cloud, and never near bark.",
+      "spoken": "Rain often appears near wet and cloud, and never near bark.",
+      "textHash": "ebb48795d3ad407a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cf1c4cc6ee89d9f2.wav",
+      "duration": 3.574,
+      "marks": {},
+      "words": [
+        {
+          "w": "Rain",
+          "start": 0
+        },
+        {
+          "w": "often",
+          "start": 0.36
+        },
+        {
+          "w": "appears",
+          "start": 0.72
+        },
+        {
+          "w": "near",
+          "start": 1.12
+        },
+        {
+          "w": "wet",
+          "start": 1.32
+        },
+        {
+          "w": "and",
+          "start": 1.54
+        },
+        {
+          "w": "cloud,",
+          "start": 1.76
+        },
+        {
+          "w": "and",
+          "start": 2.24
+        },
+        {
+          "w": "never",
+          "start": 2.48
+        },
+        {
+          "w": "near",
+          "start": 2.8
+        },
+        {
+          "w": "bark.",
+          "start": 3.08
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c09": {
+      "segment": "counts",
+      "display": "Storm looks almost the same: wet, cloud, no bark. So the rows for rain and storm are similar, and that similarity is the meaning we're after.",
+      "spoken": "Storm looks almost the same: wet, cloud, no bark. So the rows for rain and storm are similar, and that similarity is the meaning we're after.",
+      "textHash": "c3f29774d1c67ada",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/93f87a894f714fe0.wav",
+      "duration": 8.876,
+      "marks": {},
+      "words": [
+        {
+          "w": "Storm",
+          "start": 0
+        },
+        {
+          "w": "looks",
+          "start": 0.44
+        },
+        {
+          "w": "almost",
+          "start": 0.8
+        },
+        {
+          "w": "the",
+          "start": 1.16
+        },
+        {
+          "w": "same:",
+          "start": 1.32
+        },
+        {
+          "w": "wet,",
+          "start": 1.88
+        },
+        {
+          "w": "cloud,",
+          "start": 2.4
+        },
+        {
+          "w": "no",
+          "start": 2.88
+        },
+        {
+          "w": "bark.",
+          "start": 3.12
+        },
+        {
+          "w": "So",
+          "start": 3.68
+        },
+        {
+          "w": "the",
+          "start": 3.92
+        },
+        {
+          "w": "rows",
+          "start": 4.12
+        },
+        {
+          "w": "for",
+          "start": 4.48
+        },
+        {
+          "w": "rain",
+          "start": 4.68
+        },
+        {
+          "w": "and",
+          "start": 5.04
+        },
+        {
+          "w": "storm",
+          "start": 5.2
+        },
+        {
+          "w": "are",
+          "start": 5.64
+        },
+        {
+          "w": "similar,",
+          "start": 5.76
+        },
+        {
+          "w": "and",
+          "start": 6.32
+        },
+        {
+          "w": "that",
+          "start": 6.52
+        },
+        {
+          "w": "similarity",
+          "start": 6.72
+        },
+        {
+          "w": "is",
+          "start": 7.52
+        },
+        {
+          "w": "the",
+          "start": 7.68
+        },
+        {
+          "w": "meaning",
+          "start": 7.84
+        },
+        {
+          "w": "we're",
+          "start": 8.185
+        },
+        {
+          "w": "after.",
+          "start": 8.531
+        }
+      ],
+      "matchScore": 0.913
+    },
+    "c10": {
+      "segment": "counts",
+      "display": "Dog is different. It appears near bark, and hardly ever near cloud.",
+      "spoken": "Dog is different. It appears near bark, and hardly ever near cloud.",
+      "textHash": "77570527299b8b53",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d3a9e93ccc262750.wav",
+      "duration": 4.104,
+      "marks": {},
+      "words": [
+        {
+          "w": "Dog",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.44
+        },
+        {
+          "w": "different.",
+          "start": 0.64
+        },
+        {
+          "w": "It",
+          "start": 1.2
+        },
+        {
+          "w": "appears",
+          "start": 1.4
+        },
+        {
+          "w": "near",
+          "start": 1.8
+        },
+        {
+          "w": "bark,",
+          "start": 2.08
+        },
+        {
+          "w": "and",
+          "start": 2.48
+        },
+        {
+          "w": "hardly",
+          "start": 2.64
+        },
+        {
+          "w": "ever",
+          "start": 3.04
+        },
+        {
+          "w": "near",
+          "start": 3.32
+        },
+        {
+          "w": "cloud.",
+          "start": 3.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c11": {
+      "segment": "build",
+      "display": "Real tables are huge, with tens of thousands of columns. So we build vectors in three steps.",
+      "spoken": "Real tables are huge, with tens of thousands of columns. So we build vectors in three steps.",
+      "textHash": "79f553752d92c655",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8028098092eb1866.wav",
+      "duration": 5.942,
+      "marks": {},
+      "words": [
+        {
+          "w": "Real",
+          "start": 0
+        },
+        {
+          "w": "tables",
+          "start": 0.4
+        },
+        {
+          "w": "are",
+          "start": 0.92
+        },
+        {
+          "w": "huge,",
+          "start": 1.16
+        },
+        {
+          "w": "with",
+          "start": 1.6
+        },
+        {
+          "w": "tens",
+          "start": 1.84
+        },
+        {
+          "w": "of",
+          "start": 2.2
+        },
+        {
+          "w": "thousands",
+          "start": 2.4
+        },
+        {
+          "w": "of",
+          "start": 2.84
+        },
+        {
+          "w": "columns.",
+          "start": 3.04
+        },
+        {
+          "w": "So",
+          "start": 3.72
+        },
+        {
+          "w": "we",
+          "start": 3.96
+        },
+        {
+          "w": "build",
+          "start": 4.307
+        },
+        {
+          "w": "vectors",
+          "start": 4.653
+        },
+        {
+          "w": "in",
+          "start": 5
+        },
+        {
+          "w": "three",
+          "start": 5.16
+        },
+        {
+          "w": "steps.",
+          "start": 5.44
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c12": {
+      "segment": "build",
+      "display": "Count: go through millions of sentences, and count the neighbours of every word.",
+      "spoken": "Count: go through millions of sentences, and count the neighbours of every word.",
+      "textHash": "b630e5380161cfea",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6fb48cd2b5c22b80.wav",
+      "duration": 4.434,
+      "marks": {},
+      "words": [
+        {
+          "w": "Count:",
+          "start": 0
+        },
+        {
+          "w": "go",
+          "start": 0.48
+        },
+        {
+          "w": "through",
+          "start": 0.72
+        },
+        {
+          "w": "millions",
+          "start": 1
+        },
+        {
+          "w": "of",
+          "start": 1.44
+        },
+        {
+          "w": "sentences,",
+          "start": 1.6
+        },
+        {
+          "w": "and",
+          "start": 2.32
+        },
+        {
+          "w": "count",
+          "start": 2.6
+        },
+        {
+          "w": "the",
+          "start": 2.88
+        },
+        {
+          "w": "neighbours",
+          "start": 3.04
+        },
+        {
+          "w": "of",
+          "start": 3.56
+        },
+        {
+          "w": "every",
+          "start": 3.72
+        },
+        {
+          "w": "word.",
+          "start": 4.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c13": {
+      "segment": "build",
+      "display": "Compress: squeeze the giant table down to a few hundred numbers per word, keeping only the main patterns. A classic way to do this is called singular value decomposition, or SVD.",
+      "spoken": "Compress: squeeze the giant table down to a few hundred numbers per word, keeping only the main patterns. A classic way to do this is called singular value decomposition, or SVD.",
+      "textHash": "c5bc1267e48fe9bf",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e5bc5ef01e013360.wav",
+      "duration": 12.184,
+      "marks": {},
+      "words": [
+        {
+          "w": "Compress:",
+          "start": 0
+        },
+        {
+          "w": "squeeze",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 1.24
+        },
+        {
+          "w": "giant",
+          "start": 1.44
+        },
+        {
+          "w": "table",
+          "start": 1.84
+        },
+        {
+          "w": "down",
+          "start": 2.24
+        },
+        {
+          "w": "to",
+          "start": 2.52
+        },
+        {
+          "w": "a",
+          "start": 2.64
+        },
+        {
+          "w": "few",
+          "start": 2.8
+        },
+        {
+          "w": "hundred",
+          "start": 3.12
+        },
+        {
+          "w": "numbers",
+          "start": 3.44
+        },
+        {
+          "w": "per",
+          "start": 3.76
+        },
+        {
+          "w": "word,",
+          "start": 4
+        },
+        {
+          "w": "keeping",
+          "start": 4.44
+        },
+        {
+          "w": "only",
+          "start": 4.88
+        },
+        {
+          "w": "the",
+          "start": 5.12
+        },
+        {
+          "w": "main",
+          "start": 5.28
+        },
+        {
+          "w": "patterns.",
+          "start": 5.64
+        },
+        {
+          "w": "A",
+          "start": 6.56
+        },
+        {
+          "w": "classic",
+          "start": 6.72
+        },
+        {
+          "w": "way",
+          "start": 7.36
+        },
+        {
+          "w": "to",
+          "start": 7.52
+        },
+        {
+          "w": "do",
+          "start": 7.72
+        },
+        {
+          "w": "this",
+          "start": 7.92
+        },
+        {
+          "w": "is",
+          "start": 8.16
+        },
+        {
+          "w": "called",
+          "start": 8.36
+        },
+        {
+          "w": "singular",
+          "start": 8.72
+        },
+        {
+          "w": "value",
+          "start": 9.28
+        },
+        {
+          "w": "decomposition,",
+          "start": 9.68
+        },
+        {
+          "w": "or",
+          "start": 10.8
+        },
+        {
+          "w": "SVD.",
+          "start": 11.492
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c14": {
+      "segment": "build",
+      "display": "Compare: now, to see how similar two words are, we check how close their vectors are.",
+      "spoken": "Compare: now, to see how similar two words are, we check how close their vectors are.",
+      "textHash": "f2db04b5f995b408",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/80be0b6a45c86f4b.wav",
+      "duration": 4.998,
+      "marks": {},
+      "words": [
+        {
+          "w": "Compare:",
+          "start": 0
+        },
+        {
+          "w": "now,",
+          "start": 0.76
+        },
+        {
+          "w": "to",
+          "start": 1.16
+        },
+        {
+          "w": "see",
+          "start": 1.44
+        },
+        {
+          "w": "how",
+          "start": 1.6
+        },
+        {
+          "w": "similar",
+          "start": 1.8
+        },
+        {
+          "w": "two",
+          "start": 2.36
+        },
+        {
+          "w": "words",
+          "start": 2.56
+        },
+        {
+          "w": "are,",
+          "start": 2.88
+        },
+        {
+          "w": "we",
+          "start": 3.12
+        },
+        {
+          "w": "check",
+          "start": 3.32
+        },
+        {
+          "w": "how",
+          "start": 3.6
+        },
+        {
+          "w": "close",
+          "start": 3.8
+        },
+        {
+          "w": "their",
+          "start": 4.133
+        },
+        {
+          "w": "vectors",
+          "start": 4.467
+        },
+        {
+          "w": "are.",
+          "start": 4.8
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c15": {
+      "segment": "similar",
+      "display": "Here are some illustrative similarity scores, from zero for unrelated up to one for very similar.",
+      "spoken": "Here are some illustrative similarity scores, from zero for unrelated up to one for very similar.",
+      "textHash": "41d6231f83957b49",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/42102dd107bf2432.wav",
+      "duration": 5.997,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "are",
+          "start": 0.24
+        },
+        {
+          "w": "some",
+          "start": 0.4
+        },
+        {
+          "w": "illustrative",
+          "start": 0.6
+        },
+        {
+          "w": "similarity",
+          "start": 1.28
+        },
+        {
+          "w": "scores,",
+          "start": 1.96
+        },
+        {
+          "w": "from",
+          "start": 2.427
+        },
+        {
+          "w": "zero",
+          "start": 2.893
+        },
+        {
+          "w": "for",
+          "start": 3.36
+        },
+        {
+          "w": "unrelated",
+          "start": 3.56
+        },
+        {
+          "w": "up",
+          "start": 4.24
+        },
+        {
+          "w": "to",
+          "start": 4.48
+        },
+        {
+          "w": "one",
+          "start": 4.64
+        },
+        {
+          "w": "for",
+          "start": 4.92
+        },
+        {
+          "w": "very",
+          "start": 5.12
+        },
+        {
+          "w": "similar.",
+          "start": 5.44
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c16": {
+      "segment": "similar",
+      "display": "Storm is very close to rain.",
+      "spoken": "Storm is very close to rain.",
+      "textHash": "5259c4e2e53081a5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c2d4b5ca61fd0317.wav",
+      "duration": 1.806,
+      "marks": {},
+      "words": [
+        {
+          "w": "Storm",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.44
+        },
+        {
+          "w": "very",
+          "start": 0.68
+        },
+        {
+          "w": "close",
+          "start": 0.92
+        },
+        {
+          "w": "to",
+          "start": 1.24
+        },
+        {
+          "w": "rain.",
+          "start": 1.4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "similar",
+      "display": "Umbrella is fairly close: it shows up in many of the same sentences.",
+      "spoken": "Umbrella is fairly close: it shows up in many of the same sentences.",
+      "textHash": "c8fd0462777dbd10",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eab0d3afd63f6074.wav",
+      "duration": 4.291,
+      "marks": {},
+      "words": [
+        {
+          "w": "Umbrella",
+          "start": 0.04
+        },
+        {
+          "w": "is",
+          "start": 0.64
+        },
+        {
+          "w": "fairly",
+          "start": 0.8
+        },
+        {
+          "w": "close:",
+          "start": 1.28
+        },
+        {
+          "w": "it",
+          "start": 1.76
+        },
+        {
+          "w": "shows",
+          "start": 2
+        },
+        {
+          "w": "up",
+          "start": 2.36
+        },
+        {
+          "w": "in",
+          "start": 2.52
+        },
+        {
+          "w": "many",
+          "start": 2.68
+        },
+        {
+          "w": "of",
+          "start": 2.96
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "same",
+          "start": 3.24
+        },
+        {
+          "w": "sentences.",
+          "start": 3.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "similar",
+      "display": "And banana is far away. They simply don't keep the same company.",
+      "spoken": "And banana is far away. They simply don't keep the same company.",
+      "textHash": "82682363b720ad58",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8fe481cd269f2959.wav",
+      "duration": 3.732,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "banana",
+          "start": 0.12
+        },
+        {
+          "w": "is",
+          "start": 0.68
+        },
+        {
+          "w": "far",
+          "start": 0.92
+        },
+        {
+          "w": "away.",
+          "start": 1.2
+        },
+        {
+          "w": "They",
+          "start": 1.64
+        },
+        {
+          "w": "simply",
+          "start": 1.88
+        },
+        {
+          "w": "don't",
+          "start": 2.32
+        },
+        {
+          "w": "keep",
+          "start": 2.56
+        },
+        {
+          "w": "the",
+          "start": 2.76
+        },
+        {
+          "w": "same",
+          "start": 2.92
+        },
+        {
+          "w": "company.",
+          "start": 3.2
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "maths",
+      "display": "Something surprising happens in a good vector space: directions carry meaning, so you can do maths with words.",
+      "spoken": "Something surprising happens in a good vector space: directions carry meaning, so you can do maths with words.",
+      "textHash": "05f96b631d7af48a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c811cdf5c8d8c653.wav",
+      "duration": 6.46,
+      "marks": {},
+      "words": [
+        {
+          "w": "Something",
+          "start": 0
+        },
+        {
+          "w": "surprising",
+          "start": 0.4
+        },
+        {
+          "w": "happens",
+          "start": 1.08
+        },
+        {
+          "w": "in",
+          "start": 1.52
+        },
+        {
+          "w": "a",
+          "start": 1.64
+        },
+        {
+          "w": "good",
+          "start": 1.893
+        },
+        {
+          "w": "vector",
+          "start": 2.147
+        },
+        {
+          "w": "space:",
+          "start": 2.4
+        },
+        {
+          "w": "directions",
+          "start": 3.04
+        },
+        {
+          "w": "carry",
+          "start": 3.76
+        },
+        {
+          "w": "meaning,",
+          "start": 4.12
+        },
+        {
+          "w": "so",
+          "start": 4.56
+        },
+        {
+          "w": "you",
+          "start": 4.8
+        },
+        {
+          "w": "can",
+          "start": 4.96
+        },
+        {
+          "w": "do",
+          "start": 5.16
+        },
+        {
+          "w": "maths",
+          "start": 5.36
+        },
+        {
+          "w": "with",
+          "start": 5.8
+        },
+        {
+          "w": "words.",
+          "start": 6
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c20": {
+      "segment": "maths",
+      "display": "Start at king, take away man, add woman, and the nearest word is queen.",
+      "spoken": "Start at king, take away man, add woman, and the nearest word is queen.",
+      "textHash": "eea8c57d21da543d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/72b204ad761c59ba.wav",
+      "duration": 4.061,
+      "marks": {},
+      "words": [
+        {
+          "w": "Start",
+          "start": 0
+        },
+        {
+          "w": "at",
+          "start": 0.24
+        },
+        {
+          "w": "king,",
+          "start": 0.48
+        },
+        {
+          "w": "take",
+          "start": 0.88
+        },
+        {
+          "w": "away",
+          "start": 1.12
+        },
+        {
+          "w": "man,",
+          "start": 1.44
+        },
+        {
+          "w": "add",
+          "start": 1.8
+        },
+        {
+          "w": "woman,",
+          "start": 2.16
+        },
+        {
+          "w": "and",
+          "start": 2.48
+        },
+        {
+          "w": "the",
+          "start": 2.64
+        },
+        {
+          "w": "nearest",
+          "start": 2.76
+        },
+        {
+          "w": "word",
+          "start": 3.24
+        },
+        {
+          "w": "is",
+          "start": 3.514
+        },
+        {
+          "w": "queen.",
+          "start": 3.787
+        }
+      ],
+      "matchScore": 0.917
+    },
+    "c21": {
+      "segment": "maths",
+      "display": "Start at Paris, take away France, add Italy, and you land near Rome. The direction from a country to its capital is roughly the same everywhere.",
+      "spoken": "Start at Paris, take away France, add Italy, and you land near Rome. The direction from a country to its capital is roughly the same everywhere.",
+      "textHash": "01c460d087971e3d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c7f319519560d381.wav",
+      "duration": 8.677,
+      "marks": {},
+      "words": [
+        {
+          "w": "Start",
+          "start": 0
+        },
+        {
+          "w": "at",
+          "start": 0.32
+        },
+        {
+          "w": "Paris,",
+          "start": 0.48
+        },
+        {
+          "w": "take",
+          "start": 0.96
+        },
+        {
+          "w": "away",
+          "start": 1.2
+        },
+        {
+          "w": "France,",
+          "start": 1.44
+        },
+        {
+          "w": "add",
+          "start": 2
+        },
+        {
+          "w": "Italy,",
+          "start": 2.36
+        },
+        {
+          "w": "and",
+          "start": 2.88
+        },
+        {
+          "w": "you",
+          "start": 3.08
+        },
+        {
+          "w": "land",
+          "start": 3.32
+        },
+        {
+          "w": "near",
+          "start": 3.64
+        },
+        {
+          "w": "Rome.",
+          "start": 3.92
+        },
+        {
+          "w": "The",
+          "start": 4.48
+        },
+        {
+          "w": "direction",
+          "start": 4.8
+        },
+        {
+          "w": "from",
+          "start": 5.36
+        },
+        {
+          "w": "a",
+          "start": 5.52
+        },
+        {
+          "w": "country",
+          "start": 5.68
+        },
+        {
+          "w": "to",
+          "start": 6
+        },
+        {
+          "w": "its",
+          "start": 6.16
+        },
+        {
+          "w": "capital",
+          "start": 6.4
+        },
+        {
+          "w": "is",
+          "start": 6.88
+        },
+        {
+          "w": "roughly",
+          "start": 7.12
+        },
+        {
+          "w": "the",
+          "start": 7.56
+        },
+        {
+          "w": "same",
+          "start": 7.72
+        },
+        {
+          "w": "everywhere.",
+          "start": 8.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "maths",
+      "display": "It even works for grammar: walked minus walk plus swim lands near swam.",
+      "spoken": "It even works for grammar: walked minus walk plus swim lands near swam.",
+      "textHash": "ab785928cba5bd53",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e66e15dc603fa998.wav",
+      "duration": 4.395,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "even",
+          "start": 0.16
+        },
+        {
+          "w": "works",
+          "start": 0.48
+        },
+        {
+          "w": "for",
+          "start": 0.8
+        },
+        {
+          "w": "grammar:",
+          "start": 1
+        },
+        {
+          "w": "walked",
+          "start": 1.6
+        },
+        {
+          "w": "minus",
+          "start": 2
+        },
+        {
+          "w": "walk",
+          "start": 2.44
+        },
+        {
+          "w": "plus",
+          "start": 2.68
+        },
+        {
+          "w": "swim",
+          "start": 3
+        },
+        {
+          "w": "lands",
+          "start": 3.32
+        },
+        {
+          "w": "near",
+          "start": 3.64
+        },
+        {
+          "w": "swam.",
+          "start": 3.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "onehot",
+      "display": "Why is this such a big deal? Compare it with what we had before.",
+      "spoken": "Why is this such a big deal? Compare it with what we had before.",
+      "textHash": "8d54d72774d2a9e2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f8b40665a9feb1c8.wav",
+      "duration": 3.507,
+      "marks": {},
+      "words": [
+        {
+          "w": "Why",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.24
+        },
+        {
+          "w": "this",
+          "start": 0.48
+        },
+        {
+          "w": "such",
+          "start": 0.72
+        },
+        {
+          "w": "a",
+          "start": 0.92
+        },
+        {
+          "w": "big",
+          "start": 1.08
+        },
+        {
+          "w": "deal?",
+          "start": 1.32
+        },
+        {
+          "w": "Compare",
+          "start": 1.76
+        },
+        {
+          "w": "it",
+          "start": 2.24
+        },
+        {
+          "w": "with",
+          "start": 2.36
+        },
+        {
+          "w": "what",
+          "start": 2.56
+        },
+        {
+          "w": "we",
+          "start": 2.68
+        },
+        {
+          "w": "had",
+          "start": 2.84
+        },
+        {
+          "w": "before.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "onehot",
+      "display": "With one ID per word, every word is equally far from every other. To the model, rain is as close to storm as it is to banana.",
+      "spoken": "With one ID per word, every word is equally far from every other. To the model, rain is as close to storm as it is to banana.",
+      "textHash": "b91bc6ee192835dc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/60ccb5a5471d9aae.wav",
+      "duration": 8.424,
+      "marks": {},
+      "words": [
+        {
+          "w": "With",
+          "start": 0
+        },
+        {
+          "w": "one",
+          "start": 0.16
+        },
+        {
+          "w": "ID",
+          "start": 0.54
+        },
+        {
+          "w": "per",
+          "start": 0.92
+        },
+        {
+          "w": "word,",
+          "start": 1.2
+        },
+        {
+          "w": "every",
+          "start": 1.64
+        },
+        {
+          "w": "word",
+          "start": 2
+        },
+        {
+          "w": "is",
+          "start": 2.28
+        },
+        {
+          "w": "equally",
+          "start": 2.48
+        },
+        {
+          "w": "far",
+          "start": 3.04
+        },
+        {
+          "w": "from",
+          "start": 3.36
+        },
+        {
+          "w": "every",
+          "start": 3.6
+        },
+        {
+          "w": "other.",
+          "start": 3.96
+        },
+        {
+          "w": "To",
+          "start": 4.44
+        },
+        {
+          "w": "the",
+          "start": 4.64
+        },
+        {
+          "w": "model,",
+          "start": 4.84
+        },
+        {
+          "w": "rain",
+          "start": 5.44
+        },
+        {
+          "w": "is",
+          "start": 5.92
+        },
+        {
+          "w": "as",
+          "start": 6.08
+        },
+        {
+          "w": "close",
+          "start": 6.28
+        },
+        {
+          "w": "to",
+          "start": 6.64
+        },
+        {
+          "w": "storm",
+          "start": 6.8
+        },
+        {
+          "w": "as",
+          "start": 7.2
+        },
+        {
+          "w": "it",
+          "start": 7.4
+        },
+        {
+          "w": "is",
+          "start": 7.56
+        },
+        {
+          "w": "to",
+          "start": 7.72
+        },
+        {
+          "w": "banana.",
+          "start": 7.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "onehot",
+      "display": "With word vectors, similar words sit close together, and the model can use that. Anything it learns about storm partly carries over to rain.",
+      "spoken": "With word vectors, similar words sit close together, and the model can use that. Anything it learns about storm partly carries over to rain.",
+      "textHash": "fec2123ec413d233",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f27a44cb5ea5c43b.wav",
+      "duration": 8.63,
+      "marks": {},
+      "words": [
+        {
+          "w": "With",
+          "start": 0
+        },
+        {
+          "w": "word",
+          "start": 0.387
+        },
+        {
+          "w": "vectors,",
+          "start": 0.773
+        },
+        {
+          "w": "similar",
+          "start": 1.16
+        },
+        {
+          "w": "words",
+          "start": 1.76
+        },
+        {
+          "w": "sit",
+          "start": 2.08
+        },
+        {
+          "w": "close",
+          "start": 2.4
+        },
+        {
+          "w": "together,",
+          "start": 2.68
+        },
+        {
+          "w": "and",
+          "start": 3.24
+        },
+        {
+          "w": "the",
+          "start": 3.4
+        },
+        {
+          "w": "model",
+          "start": 3.56
+        },
+        {
+          "w": "can",
+          "start": 4
+        },
+        {
+          "w": "use",
+          "start": 4.2
+        },
+        {
+          "w": "that.",
+          "start": 4.56
+        },
+        {
+          "w": "Anything",
+          "start": 4.96
+        },
+        {
+          "w": "it",
+          "start": 5.44
+        },
+        {
+          "w": "learns",
+          "start": 5.68
+        },
+        {
+          "w": "about",
+          "start": 6.12
+        },
+        {
+          "w": "storm",
+          "start": 6.36
+        },
+        {
+          "w": "partly",
+          "start": 6.8
+        },
+        {
+          "w": "carries",
+          "start": 7.32
+        },
+        {
+          "w": "over",
+          "start": 7.76
+        },
+        {
+          "w": "to",
+          "start": 8
+        },
+        {
+          "w": "rain.",
+          "start": 8.2
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c26": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. Which word's vector is probably closest to the vector for rain: storm, banana, or Tuesday?",
+      "spoken": "Time for a quick quiz. Which word's vector is probably closest to the vector for rain: storm, banana, or Tuesday?",
+      "textHash": "152c5b8f4124d5ce",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b768482c72342655.wav",
+      "duration": 7.39,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "quick",
+          "start": 0.96
+        },
+        {
+          "w": "quiz.",
+          "start": 1.28
+        },
+        {
+          "w": "Which",
+          "start": 1.6
+        },
+        {
+          "w": "word's",
+          "start": 1.973
+        },
+        {
+          "w": "vector",
+          "start": 2.347
+        },
+        {
+          "w": "is",
+          "start": 2.72
+        },
+        {
+          "w": "probably",
+          "start": 2.88
+        },
+        {
+          "w": "closest",
+          "start": 3.4
+        },
+        {
+          "w": "to",
+          "start": 3.8
+        },
+        {
+          "w": "the",
+          "start": 4.013
+        },
+        {
+          "w": "vector",
+          "start": 4.227
+        },
+        {
+          "w": "for",
+          "start": 4.44
+        },
+        {
+          "w": "rain:",
+          "start": 4.64
+        },
+        {
+          "w": "storm,",
+          "start": 5.2
+        },
+        {
+          "w": "banana,",
+          "start": 5.84
+        },
+        {
+          "w": "or",
+          "start": 6.56
+        },
+        {
+          "w": "Tuesday?",
+          "start": 6.72
+        }
+      ],
+      "matchScore": 0.625
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "It's storm. Rain and storm appear near the same words, like wet, cloud and weather, so their vectors end up close together.",
+      "spoken": "It's storm. Rain and storm appear near the same words, like wet, cloud and weather, so their vectors end up close together.",
+      "textHash": "177b40a8fe7b9139",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a4a965465f4e450d.wav",
+      "duration": 7.722,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "storm.",
+          "start": 0.28
+        },
+        {
+          "w": "Rain",
+          "start": 0.88
+        },
+        {
+          "w": "and",
+          "start": 1.28
+        },
+        {
+          "w": "storm",
+          "start": 1.48
+        },
+        {
+          "w": "appear",
+          "start": 1.88
+        },
+        {
+          "w": "near",
+          "start": 2.2
+        },
+        {
+          "w": "the",
+          "start": 2.44
+        },
+        {
+          "w": "same",
+          "start": 2.64
+        },
+        {
+          "w": "words,",
+          "start": 2.96
+        },
+        {
+          "w": "like",
+          "start": 3.56
+        },
+        {
+          "w": "wet,",
+          "start": 3.88
+        },
+        {
+          "w": "cloud",
+          "start": 4.4
+        },
+        {
+          "w": "and",
+          "start": 4.88
+        },
+        {
+          "w": "weather,",
+          "start": 5.12
+        },
+        {
+          "w": "so",
+          "start": 5.52
+        },
+        {
+          "w": "their",
+          "start": 5.84
+        },
+        {
+          "w": "vectors",
+          "start": 6.16
+        },
+        {
+          "w": "end",
+          "start": 6.48
+        },
+        {
+          "w": "up",
+          "start": 6.72
+        },
+        {
+          "w": "close",
+          "start": 6.92
+        },
+        {
+          "w": "together.",
+          "start": 7.24
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c29": {
+      "segment": "recap",
+      "display": "Let's recap. A word gets its meaning from the company it keeps.",
+      "spoken": "Let's recap. A word gets its meaning from the company it keeps.",
+      "textHash": "e46c75a78d8d4d3c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/38e19fc76b2dbb64.wav",
+      "duration": 3.677,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.4
+        },
+        {
+          "w": "A",
+          "start": 0.96
+        },
+        {
+          "w": "word",
+          "start": 1.2
+        },
+        {
+          "w": "gets",
+          "start": 1.52
+        },
+        {
+          "w": "its",
+          "start": 1.84
+        },
+        {
+          "w": "meaning",
+          "start": 2.08
+        },
+        {
+          "w": "from",
+          "start": 2.4
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "company",
+          "start": 2.64
+        },
+        {
+          "w": "it",
+          "start": 3.08
+        },
+        {
+          "w": "keeps.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "A word vector is a list of numbers that places the word on a map of meaning.",
+      "spoken": "A word vector is a list of numbers that places the word on a map of meaning.",
+      "textHash": "3e32e7c25de54faa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1bb4e1fdf0b52691.wav",
+      "duration": 4.416,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "word",
+          "start": 0.32
+        },
+        {
+          "w": "vector",
+          "start": 0.64
+        },
+        {
+          "w": "is",
+          "start": 0.96
+        },
+        {
+          "w": "a",
+          "start": 1.12
+        },
+        {
+          "w": "list",
+          "start": 1.24
+        },
+        {
+          "w": "of",
+          "start": 1.587
+        },
+        {
+          "w": "numbers",
+          "start": 1.933
+        },
+        {
+          "w": "that",
+          "start": 2.28
+        },
+        {
+          "w": "places",
+          "start": 2.48
+        },
+        {
+          "w": "the",
+          "start": 2.92
+        },
+        {
+          "w": "word",
+          "start": 3.08
+        },
+        {
+          "w": "on",
+          "start": 3.36
+        },
+        {
+          "w": "a",
+          "start": 3.48
+        },
+        {
+          "w": "map",
+          "start": 3.6
+        },
+        {
+          "w": "of",
+          "start": 3.84
+        },
+        {
+          "w": "meaning.",
+          "start": 4
+        }
+      ],
+      "matchScore": 0.7
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "Words with close vectors have similar meanings.",
+      "spoken": "Words with close vectors have similar meanings.",
+      "textHash": "0d1e86516b622143",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b4fb50f8d72b72a0.wav",
+      "duration": 2.76,
+      "marks": {},
+      "words": [
+        {
+          "w": "Words",
+          "start": 0
+        },
+        {
+          "w": "with",
+          "start": 0.4
+        },
+        {
+          "w": "close",
+          "start": 0.6
+        },
+        {
+          "w": "vectors",
+          "start": 1.04
+        },
+        {
+          "w": "have",
+          "start": 1.48
+        },
+        {
+          "w": "similar",
+          "start": 1.68
+        },
+        {
+          "w": "meanings.",
+          "start": 2.2
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "And directions in that map carry meaning, so king minus man plus woman lands near queen.",
+      "spoken": "And directions in that map carry meaning, so king minus man plus woman lands near queen.",
+      "textHash": "6f2a5f21e08e5608",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/662157cf63522feb.wav",
+      "duration": 5.147,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "directions",
+          "start": 0.12
+        },
+        {
+          "w": "in",
+          "start": 0.64
+        },
+        {
+          "w": "that",
+          "start": 0.8
+        },
+        {
+          "w": "map",
+          "start": 0.96
+        },
+        {
+          "w": "carry",
+          "start": 1.24
+        },
+        {
+          "w": "meaning,",
+          "start": 1.6
+        },
+        {
+          "w": "so",
+          "start": 2.08
+        },
+        {
+          "w": "king",
+          "start": 2.36
+        },
+        {
+          "w": "minus",
+          "start": 2.72
+        },
+        {
+          "w": "man",
+          "start": 3.24
+        },
+        {
+          "w": "plus",
+          "start": 3.44
+        },
+        {
+          "w": "woman",
+          "start": 3.84
+        },
+        {
+          "w": "lands",
+          "start": 4.08
+        },
+        {
+          "w": "near",
+          "start": 4.436
+        },
+        {
+          "w": "queen.",
+          "start": 4.791
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Next lesson: Word2Vec. How does a computer learn word vectors just by reading?",
+      "spoken": "Next lesson: Word2Vec. How does a computer learn word vectors just by reading?",
+      "textHash": "7c820177bcd510d2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/51c0b339b6a438d4.wav",
+      "duration": 5.096,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.5
+        },
+        {
+          "w": "lesson:",
+          "start": 1
+        },
+        {
+          "w": "Word2Vec.",
+          "start": 1.5
+        },
+        {
+          "w": "How",
+          "start": 2
+        },
+        {
+          "w": "does",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.52
+        },
+        {
+          "w": "computer",
+          "start": 2.64
+        },
+        {
+          "w": "learn",
+          "start": 3.08
+        },
+        {
+          "w": "word",
+          "start": 3.44
+        },
+        {
+          "w": "vectors",
+          "start": 3.8
+        },
+        {
+          "w": "just",
+          "start": 4.16
+        },
+        {
+          "w": "by",
+          "start": 4.4
+        },
+        {
+          "w": "reading?",
+          "start": 4.6
+        }
+      ],
+      "matchScore": 0.545
+    }
+  }
+}

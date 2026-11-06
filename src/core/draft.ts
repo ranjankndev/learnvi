@@ -29,6 +29,7 @@ const DraftSchema = z4.object({
     narration: z4.array(z4.object({
       text: z4.string().describe("one paragraph, 1–3 sentences, as spoken"),
       note: z4.string().nullable().describe("optional delivery note for the narrator, or null"),
+      pause: z4.number().nullable().describe("seconds of silence after this paragraph (e.g. 3 after a quiz question), or null"),
     })),
   })),
   thumbnail: z4.object({ headline: z4.string().describe("2–6 punchy words"), big: z4.string().nullable().describe("1–3 words or a number for the thumbnail card, or null") }),
@@ -123,7 +124,8 @@ export function writeDraft(project: Project, epId: string, d: Draft) {
     md.push(`## ${sg.id}`);
     for (const p of sg.narration) {
       if (p.note) md.push(`> ${p.note}`);
-      md.push(`[c${String(++n).padStart(2, "0")}] ${p.text.replace(/\s*\n\s*/g, " ").trim()}`, "");
+      const after = p.pause ? ` after=${p.pause}` : "";
+      md.push(`[c${String(++n).padStart(2, "0")}${after}] ${p.text.replace(/\s*\n\s*/g, " ").trim()}`, "");
     }
   }
   fs.writeFileSync(path.join(dir, "script.md"), md.join("\n"));
@@ -156,7 +158,34 @@ async function callApi<T>(fn: () => Promise<T>): Promise<T> {
     throw e;
   }
 }
-export interface DraftOptions { brief: string; minutes?: number; model?: string; dryRun?: boolean; force?: boolean }
+export interface DraftOptions { brief: string; minutes?: number; model?: string; dryRun?: boolean; force?: boolean; from?: string }
+
+/**
+ * Import a draft written elsewhere (by hand, or pasted from a Claude.ai chat given the --dry-run prompt),
+ * with no API call. Same validation as an API draft.
+ */
+export function importDraft(project: Project, epId: string, file: string, force = false) {
+  const meta = project.series.episodes.find((e) => e.id === epId);
+  if (!meta) throw new ConfigError(`Add "${epId}" to series.json → episodes first.`);
+  const dir = path.join(project.root, "episodes", meta.folder ?? meta.id);
+  if (fs.existsSync(path.join(dir, "episode.json")) && !force) throw new ConfigError(`${epId} already has an episode.json. Use --force to replace it.`);
+  let raw: unknown;
+  try { raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^\s*```(?:json)?\s*|\s*```\s*$/g, "")); }
+  catch (e) { throw new ConfigError(`${file} is not valid JSON: ${(e as Error).message}`); }
+  // accept props as an object as well as a JSON string, and pause/note/shortTitle left out
+  const segs = (raw as any)?.segments;
+  if (Array.isArray(segs)) for (const s of segs) {
+    if (s.props && typeof s.props === "object" && s.props_json === undefined) s.props_json = JSON.stringify(s.props);
+    s.shortTitle ??= null; s.short ??= false;
+    for (const p of s.narration ?? []) { p.note ??= null; p.pause ??= null; }
+  }
+  if (raw && typeof raw === "object") { (raw as any).fact_check ??= []; (raw as any).tags ??= []; }
+  const r = DraftSchema.safeParse(raw);
+  if (!r.success) throw new ConfigError(`${file} doesn't match the draft format:\n` + r.error.issues.slice(0, 12).map((i) => `  • ${i.path.join(".")}: ${i.message}`).join("\n"));
+  const { bad } = writeDraft(project, epId, r.data);
+  const problems = [...bad, ...checkEpisode(project, epId).filter((f) => f.level === "error").map((f) => `${f.where}: ${f.msg}`)];
+  return { dir, problems };
+}
 
 export async function draftEpisode(project: Project, epId: string, opts: DraftOptions, log: (s: string) => void) {
   const meta = project.series.episodes.find((e) => e.id === epId);

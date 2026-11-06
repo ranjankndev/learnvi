@@ -12,7 +12,7 @@ import { readTimeline, renderEpisode, still } from "../core/render.js";
 import { clock, packageEpisode } from "../core/package.js";
 import { startReviewServer } from "../review/server.js";
 import { KIT } from "../../remotion/kit/specs.js";
-import { draftEpisode } from "../core/draft.js";
+import { draftEpisode, importDraft } from "../core/draft.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 /** the series folder this command works on (see `press series`) */
@@ -200,8 +200,16 @@ program.command("draft <episode>").description("AI step (optional): draft episod
   .option("--model <id>", "override series.json → draft.model")
   .option("--dry-run", "print the prompt that would be sent, and send nothing")
   .option("--force", "replace an existing episode.json and script.md")
-  .action(async (e: string, o: { brief?: string; text?: string; minutes?: string; model?: string; dryRun?: boolean; force?: boolean }) => {
+  .option("--from <file>", "import a draft JSON written elsewhere (e.g. pasted from a Claude.ai chat): no API call")
+  .action(async (e: string, o: { brief?: string; text?: string; minutes?: string; model?: string; dryRun?: boolean; force?: boolean; from?: string }) => {
     const p = loadProject(root());
+    if (o.from) {
+      const r = importDraft(p, e, o.from, o.force);
+      console.log(`${r.problems.length ? C.y + "!" : C.g + "✓"}${C.x} imported ${e} → ${path.relative(process.cwd(), r.dir)}/episode.json · script.md · fact-check.md`);
+      r.problems.forEach((x) => console.log(`  • ${x}`));
+      if (r.problems.length) process.exitCode = 1;
+      return;
+    }
     const brief = o.brief ? fs.readFileSync(o.brief, "utf8") : o.text ?? "";
     const r = await draftEpisode(p, e, { brief, minutes: o.minutes ? +o.minutes : undefined, model: o.model, dryRun: o.dryRun, force: o.force }, (s) => console.log(`${C.d}…${C.x} ${s}`));
     if (r.dryRun) {
