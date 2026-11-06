@@ -6,6 +6,7 @@
   "language": "en",
   "theme": "travel",
   "fps": 30,
+  "video": { "width": 1920, "height": 1080, "burnCaptions": true, "brand": "learnvi.in" },
   "voice": { "provider": "kokoro", "voice": "af_heart", "speed": 1.0, "lang": "en-us" },
   "audio": {
     "sampleRate": 48000,

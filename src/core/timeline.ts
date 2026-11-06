@@ -4,13 +4,16 @@ import { ConfigError, fillTemplate, templateContext, type EpisodeCtx } from "./p
 import type { Lock } from "./audio/pipeline.js";
 import { mixAt } from "./audio/tools.js";
 
-export interface TimelineCue { id: string; start: number; end: number; marks: Record<string, number>; text: string }
+export interface TimelineCue { id: string; start: number; end: number; marks: Record<string, number>; text: string; words: { w: string; start: number }[] }
 export interface TimelineSegment {
   id: string; kind: string; component: string; props: Record<string, unknown>; short: boolean;
   start: number; end: number; startFrame: number; durationInFrames: number; cues: TimelineCue[];
 }
 export interface Timeline {
   episode: string; title: string; fps: number; duration: number; durationInFrames: number;
+  video: { width: number; height: number; burnCaptions: boolean; brand: string };
+  series: { title: string; subtitle: string; runningPrompt: string; stops: { id: string; number: number; name: string; stamp: string; topic: string }[] };
+  stop: { number: number; name: string; stamp: string };
   segments: TimelineSegment[];
   /** every addressable point: "c07" and "c07@ids" → absolute seconds */
   refs: Record<string, number>;
@@ -46,7 +49,8 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
       refs[id] = +cs.toFixed(3);
       for (const [k, v] of Object.entries(marks)) refs[`${id}@${k}`] = v;
       audio.push({ file: c.audio, start: +cs.toFixed(3) });
-      return { id, start: +cs.toFixed(3), end: +(cs + c.duration).toFixed(3), marks, text: c.display };
+      const words = c.words.map((w) => ({ w: w.w, start: +(cs + w.start).toFixed(3) }));
+      return { id, start: +cs.toFixed(3), end: +(cs + c.duration).toFixed(3), marks, text: c.display, words };
     });
     if (seg.minDuration && t - start < seg.minDuration) t = start + seg.minDuration;
     if (!ids.length && !seg.minDuration) t += 2;
@@ -59,13 +63,26 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
     });
   }
   const duration = +(t - a.gapAfterSegment + a.tail).toFixed(3);
+  // make segments cover every frame: the first starts at 0, each runs until the next, the last until the end
+  const total = f(duration);
+  segments.forEach((s, i) => {
+    s.startFrame = i === 0 ? 0 : f(s.start);
+    const next = i + 1 < segments.length ? f(segments[i + 1].start) : total;
+    s.durationInFrames = Math.max(1, next - s.startFrame);
+  });
   // every reference used in props must exist
   for (const seg of ctx.episode.segments) {
     const used: string[] = [];
     resolveProps(seg.props, vars, seg.id, used);
     for (const r of used) if (!(r in refs)) throw new ConfigError(`${seg.id}.props points at "${r}", which is not a cue or mark in script.md`);
   }
-  return { episode: ctx.meta.id, title: ctx.meta.title, fps, duration, durationInFrames: f(duration), segments, refs, audio };
+  return {
+    episode: ctx.meta.id, title: ctx.meta.title, fps, duration, durationInFrames: total, video: series.video,
+    series: { title: series.title, subtitle: series.subtitle, runningPrompt: series.runningPrompt,
+      stops: series.episodes.map((e) => ({ id: e.id, number: e.number, name: e.stop, stamp: e.stamp, topic: e.topic })) },
+    stop: { number: ctx.meta.number, name: ctx.meta.stop, stamp: ctx.meta.stamp },
+    segments, refs, audio,
+  };
 }
 
 export function outDir(ctx: EpisodeCtx) { return path.join(ctx.project.root, "out", ctx.meta.id); }
@@ -75,10 +92,30 @@ export function writeTimelineOutputs(ctx: EpisodeCtx, tl: Timeline) {
   const dir = outDir(ctx);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "timeline.json"), JSON.stringify(tl, null, 2));
+  writeRemotionManifest(ctx.project.root, tl);
   mixAt(tl.audio.map((x) => ({ file: path.join(ctx.project.root, x.file), start: x.start })), tl.duration, path.join(dir, "narration.wav"), ctx.project.series.audio.sampleRate);
+  // Remotion's public folder holds only what the visuals need (keeps bundles small)
+  const pub = path.join(ctx.project.root, ".cache", "public", ctx.meta.id);
+  fs.mkdirSync(pub, { recursive: true });
+  fs.copyFileSync(path.join(dir, "narration.wav"), path.join(pub, "narration.wav"));
   const ts = (s: number) => { const ms = Math.round(s * 1000); const p = (n: number, w = 2) => String(n).padStart(w, "0");
     return `${p(Math.floor(ms / 3600000))}:${p(Math.floor(ms / 60000) % 60)}:${p(Math.floor(ms / 1000) % 60)},${p(ms % 1000, 3)}`; };
   const srt = tl.segments.flatMap((s) => s.cues).map((c, i) => `${i + 1}\n${ts(c.start)} --> ${ts(c.end + 0.2)}\n${c.text}\n`).join("\n");
   fs.writeFileSync(path.join(dir, "captions.srt"), srt);
   return dir;
+}
+
+/**
+ * Remotion reads timelines from remotion/generated/, so the preview studio hot-reloads
+ * whenever `press audio` (or `press studio`'s watcher) regenerates them.
+ */
+export function writeRemotionManifest(root: string, tl: Timeline) {
+  const dir = path.join(root, "remotion", "generated");
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, `${tl.episode}.json`), JSON.stringify(tl));
+  const eps = fs.readdirSync(dir).filter((f) => /^ep\w+\.json$/.test(f)).map((f) => f.replace(".json", "")).sort();
+  const src = `// Generated by \`press audio\`. Do not edit.\n` +
+    eps.map((e) => `import ${e} from "./${e}.json";`).join("\n") +
+    `\nimport type { Timeline } from "../types";\n\nexport const TIMELINES = [${eps.join(", ")}] as unknown as Timeline[];\n`;
+  fs.writeFileSync(path.join(dir, "index.ts"), src);
 }

@@ -1,0 +1,65 @@
+import "@fontsource/bricolage-grotesque/700.css";
+import "@fontsource/bricolage-grotesque/800.css";
+import "@fontsource/source-sans-3/400.css";
+import "@fontsource/source-sans-3/600.css";
+import "@fontsource/source-sans-3/700.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/700.css";
+import React, { useEffect, useState } from "react";
+import { AbsoluteFill, Audio, Composition, Folder, Sequence, continueRender, delayRender, staticFile } from "remotion";
+import { SegmentView } from "./Frame";
+import { TIMELINES } from "./generated";
+import type { Timeline } from "./types";
+
+/** Hold every frame until the fonts are ready, so no frame renders in a fallback font. */
+const useFonts = () => {
+  const [h] = useState(() => delayRender("fonts"));
+  useEffect(() => {
+    const faces = ['800 40px "Bricolage Grotesque"', '700 40px "Bricolage Grotesque"', '400 40px "Source Sans 3"', '600 40px "Source Sans 3"', '700 40px "Source Sans 3"', '500 40px "JetBrains Mono"', '700 40px "JetBrains Mono"'];
+    Promise.all(faces.map((f) => document.fonts.load(f))).then(() => continueRender(h), () => continueRender(h));
+  }, [h]);
+};
+
+/** The whole episode: every segment in sequence, plus the narration. */
+const Episode: React.FC<{ episode: string; muted?: boolean }> = ({ episode, muted }) => {
+  useFonts();
+  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  return (
+    <AbsoluteFill>
+      {!muted && <Audio src={staticFile(`${episode}/narration.wav`)} />}
+      {tl.segments.map((s) => (
+        <Sequence key={s.id} from={s.startFrame} durationInFrames={s.durationInFrames} name={s.id}>
+          <SegmentView tl={tl} seg={s} />
+        </Sequence>
+      ))}
+    </AbsoluteFill>
+  );
+};
+
+/** One segment on its own: what the renderer caches, and what you preview in the studio. */
+const Segment: React.FC<{ episode: string; segment: string; muted?: boolean }> = ({ episode, segment, muted }) => {
+  useFonts();
+  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  const seg = tl.segments.find((s) => s.id === segment)!;
+  return (
+    <AbsoluteFill>
+      {!muted && <Audio src={staticFile(`${episode}/narration.wav`)} trimBefore={seg.startFrame} />}
+      <SegmentView tl={tl} seg={seg} />
+    </AbsoluteFill>
+  );
+};
+
+export const Root: React.FC = () => (
+  <>
+    {TIMELINES.map((tl: Timeline) => (
+      <Folder key={tl.episode} name={tl.episode}>
+        <Composition id={tl.episode} component={Episode} fps={tl.fps} width={tl.video.width} height={tl.video.height}
+          durationInFrames={tl.durationInFrames} defaultProps={{ episode: tl.episode, muted: false }} />
+        {tl.segments.map((s) => (
+          <Composition key={s.id} id={`${tl.episode}-${s.id}`} component={Segment} fps={tl.fps} width={tl.video.width} height={tl.video.height}
+            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.episode, segment: s.id, muted: false }} />
+        ))}
+      </Folder>
+    ))}
+  </>
+);

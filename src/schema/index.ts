@@ -19,6 +19,14 @@ export const SeriesSchema = z.object({
   language: z.string().default("en"),
   theme: z.string().default("travel"),
   fps: z.number().int().positive().default(30),
+  video: z.object({
+    width: z.number().int().default(1920),
+    height: z.number().int().default(1080),
+    /** draw captions into the video (for people watching on mute) */
+    burnCaptions: z.boolean().default(true),
+    /** shown in the corner of every frame */
+    brand: z.string().default("learnvi.in"),
+  }).default({}),
   voice: Voice.default({}),
   audio: z.object({
     sampleRate: z.number().int().default(48000),

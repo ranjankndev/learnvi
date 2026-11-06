@@ -8,7 +8,7 @@ Change a title in JSON or re-record one paragraph, and rebuild: only what change
 
 Plan and architecture: [`docs/plan.html`](docs/plan.html).
 
-**Status: Phase 1 (foundation and audio track) done.** Phase 2 (Remotion visual engine) is next.
+**Status: Phase 2 (Remotion visual engine) done.** Phase 3 (finished pilot video, Shorts, audio-only) is next.
 
 ## Setup (once per machine)
 
@@ -36,6 +36,10 @@ On Windows, if `python` is not the right interpreter, set `PRESS_PYTHON` to its 
 | `press use ep03 c07 tts` | Switch a cue to another take (`tts`, `v1`, `v2`…) |
 | `press ids ep03` | Give new script paragraphs a cue id |
 | `press new ep04` | Start an episode from the series template |
+| `press studio` | Open the Remotion preview studio; editing config/ or episodes/ rebuilds the timeline live |
+| `press still ep03 bpe --at c18@merge` | Render one frame of a segment to PNG |
+| `press sheet ep03` | Contact sheet: one frame per segment, in one PNG |
+| `press render ep03` | Render the episode; only segments whose look or timing changed are re-rendered |
 
 Outputs go to `out/<episode>/`: `narration.wav`, `timeline.json` (what the visual engine reads), `captions.srt`.
 
@@ -47,9 +51,31 @@ config/lexicon.json       pronunciations, e.g. "LLMs" → "el el ems" (captions 
 episodes/<ep>/episode.json  segments: which component, which props, in template order
 episodes/<ep>/script.md     narration, one paragraph = one cue
 episodes/<ep>/audio.lock.json  generated: per cue take, duration, mark times (commit it, don't edit it)
+remotion/                  visual engine: theme (ui.tsx), components/, Root.tsx; generated/ is written by press audio
 takes/<ep>/<cue>/          your recordings (vN.wav) + takes.json (which one is selected); stored with Git LFS
 .cache/  .models/  out/    generated, not committed
 ```
+
+## Visuals (Remotion)
+
+Every segment in `episode.json` names a **component** and gives it **props**. Components live in
+`remotion/components/` and are registered in `remotion/components/index.tsx`; the travel theme
+(colours, fonts, chips, stamps, motion helpers) is in `remotion/ui.tsx`.
+
+Components never use seconds. A prop like `"firstMergeAt": "c18@merge"` is read with
+`useMark(firstMergeAt)`, which returns the frame where that word is spoken, so re-recording a
+paragraph re-times its animation automatically. Props can use `{{templates}}` like the script.
+
+**Adding a component:** write it in `remotion/components/`, add one line to the registry, and use its
+name in an episode. An unknown name renders a placeholder showing its props, so new episodes still preview.
+
+**Rendering:** each segment renders silently and is cached under `.cache/segments/` by a hash of the
+component code, its props, and its timings *relative to the segment*. A retake in one segment
+shifts later segments in time without changing their pixels, so they are reused. Segments are joined
+without re-encoding, then the narration is added. The result is `out/<ep>/<ep>-<name>.mp4`.
+
+Remotion downloads its own headless Chrome on first use. To use one you already have, set
+`REMOTION_BROWSER_EXECUTABLE` to its path.
 
 ## Writing script.md
 

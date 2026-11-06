@@ -1,54 +1,255 @@
 {
   "id": "ep03",
   "segments": [
-    { "id": "passport", "kind": "passport", "component": "PassportStamp",
-      "props": { "stop": "{{stop.name}}", "stamp": "{{stop.stamp}}", "number": "{{episode.number}}", "stampAt": "c01@stamp" } },
-
-    { "id": "hook", "kind": "hook", "component": "TitleHook",
-      "props": { "title": "{{episode.title}}", "word": "rain", "id": "4,812", "revealAt": "c03@number" } },
-
-    { "id": "route", "kind": "routeMap", "component": "RouteMap",
-      "props": { "current": "{{episode.id}}", "highlightAt": "c05@here" } },
-
-    { "id": "numbers", "kind": "core", "component": "TextToNumbers",
-      "props": { "text": "{{series.runningPrompt}}", "bytesAt": "c07@bytes", "lookupAt": "c08@lookup" } },
-
-    { "id": "options", "kind": "core", "component": "ThreeOptions",
-      "props": { "word": "raindrops", "charsAt": "c10@chars", "wordsAt": "c11@words", "subwordsAt": "c13@subwords" } },
-
-    { "id": "bpe", "kind": "core", "component": "BpeMerge",
+    {
+      "id": "passport",
+      "kind": "passport",
+      "component": "PassportStamp",
       "props": {
-        "corpus": [["rain", 9], ["rainy", 4], ["raining", 5], ["train", 3]],
+        "stop": "{{stop.name}}",
+        "stamp": "{{stop.stamp}}",
+        "number": "{{episode.number}}",
+        "stampAt": "c01@stamp"
+      }
+    },
+    {
+      "id": "hook",
+      "kind": "hook",
+      "component": "TitleHook",
+      "props": {
+        "title": "{{episode.title}}",
+        "word": "rain",
+        "id": "4,812",
+        "revealAt": "c03@number"
+      }
+    },
+    {
+      "id": "route",
+      "kind": "routeMap",
+      "component": "RouteMap",
+      "props": {
+        "current": "{{episode.id}}",
+        "highlightAt": "c05@here"
+      }
+    },
+    {
+      "id": "numbers",
+      "kind": "core",
+      "component": "TextToNumbers",
+      "props": {
+        "text": "{{series.runningPrompt}}",
+        "bytesAt": "c07@bytes",
+        "lookupAt": "c08@lookup",
+        "tokens": [
+          "Write",
+          " a",
+          " short",
+          " poem",
+          " about",
+          " the",
+          " rain"
+        ],
+        "ids": [
+          8144,
+          264,
+          2875,
+          33894,
+          922,
+          279,
+          4812
+        ]
+      }
+    },
+    {
+      "id": "options",
+      "kind": "core",
+      "component": "ThreeOptions",
+      "props": {
+        "word": "raindrops",
+        "charsAt": "c10@chars",
+        "wordsAt": "c11@words",
+        "subwordsAt": "c13@subwords",
+        "subwords": [
+          "rain",
+          "drops"
+        ]
+      }
+    },
+    {
+      "id": "bpe",
+      "kind": "core",
+      "component": "BpeMerge",
+      "props": {
+        "corpus": [
+          [
+            "rain",
+            9
+          ],
+          [
+            "rainy",
+            4
+          ],
+          [
+            "raining",
+            5
+          ],
+          [
+            "train",
+            3
+          ]
+        ],
         "merges": 3,
-        "pauseAt": "c17@pause", "firstMergeAt": "c18@merge", "repeatAt": "c19@repeat"
-      } },
-
-    { "id": "demo", "kind": "core", "component": "TokenBlocks", "short": true,
+        "pauseAt": "c17@pause",
+        "firstMergeAt": "c18@merge",
+        "repeatAt": "c19@repeat",
+        "countAt": "c16",
+        "merge2At": "c19@ra",
+        "merge3At": "c19@rain"
+      }
+    },
+    {
+      "id": "demo",
+      "kind": "core",
+      "component": "TokenBlocks",
+      "short": true,
       "props": {
         "examples": [
-          { "text": "{{series.runningPrompt}}", "tokens": ["Write", " a", " short", " poem", " about", " the", " rain"] },
-          { "text": "tokenization", "tokens": ["token", "ization"] },
-          { "text": "strawberry", "tokens": ["str", "aw", "berry"] }
+          {
+            "text": "{{series.runningPrompt}}",
+            "tokens": [
+              "Write",
+              " a",
+              " short",
+              " poem",
+              " about",
+              " the",
+              " rain"
+            ]
+          },
+          {
+            "text": "tokenization",
+            "tokens": [
+              "token",
+              "ization"
+            ]
+          },
+          {
+            "text": "strawberry",
+            "tokens": [
+              "str",
+              "aw",
+              "berry"
+            ]
+          }
         ],
-        "promptAt": "c21@prompt", "longWordAt": "c22@long", "strawberryAt": "c23@straw"
-      } },
-
-    { "id": "matters", "kind": "core", "component": "WhyItMatters",
-      "props": { "cards": ["Price", "Memory", "Languages", "Spelling"], "priceAt": "c25", "memoryAt": "c26", "languagesAt": "c27", "spellingAt": "c28" } },
-
-    { "id": "tryIt", "kind": "tryIt", "component": "TryIt", "short": true,
-      "props": { "task": "{{stop.tryIt}}", "timer": 60 } },
-
-    { "id": "blooper", "kind": "blooper", "component": "Blooper",
-      "props": { "token": " SolidGoldMagikarp", "year": 2023 } },
-
-    { "id": "myth", "kind": "myth", "component": "MythVsReality", "short": true,
-      "props": { "myth": "1 token = 1 word", "reality": "In English, 1 token ≈ ¾ of a word ≈ 4 characters", "revealAt": "c36@reality" } },
-
-    { "id": "useIt", "kind": "useIt", "component": "UseIt",
-      "props": { "tip": "{{stop.useIt}}" } },
-
-    { "id": "recap", "kind": "recapNext", "component": "RecapNext",
-      "props": { "nextStop": "{{next.stop}}", "nextQuestion": "{{next.question}}", "questionAt": "c41@question" } }
+        "promptAt": "c21@prompt",
+        "longWordAt": "c22@long",
+        "strawberryAt": "c23@straw"
+      }
+    },
+    {
+      "id": "matters",
+      "kind": "core",
+      "component": "WhyItMatters",
+      "props": {
+        "cards": [
+          {
+            "title": "Price",
+            "text": "You pay per token, for what you send and what you get back",
+            "icon": "coin",
+            "at": "c25"
+          },
+          {
+            "title": "Memory",
+            "text": "The context window is counted in tokens",
+            "icon": "window",
+            "at": "c26"
+          },
+          {
+            "title": "Languages",
+            "text": "Hindi can take several times more tokens than English",
+            "icon": "globe",
+            "at": "c27"
+          },
+          {
+            "title": "Spelling",
+            "text": "It sees “straw” + “berry”, not the letters",
+            "icon": "letters",
+            "at": "c28"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tryIt",
+      "kind": "tryIt",
+      "component": "TryIt",
+      "short": true,
+      "props": {
+        "task": "{{stop.tryIt}}",
+        "steps": [
+          {
+            "text": "Ask a chatbot: how many r's are in “strawberry”?",
+            "at": "c30"
+          },
+          {
+            "text": "Paste one sentence into a tokenizer, in English, then in Hindi. Compare the counts.",
+            "at": "c31"
+          }
+        ],
+        "chat": "How many r's are in strawberry?"
+      }
+    },
+    {
+      "id": "blooper",
+      "kind": "blooper",
+      "component": "Blooper",
+      "props": {
+        "token": " SolidGoldMagikarp",
+        "year": 2023,
+        "prompt": "Please repeat the string \" SolidGoldMagikarp\" back to me.",
+        "reply": "\"distribute\"",
+        "replyAt": "c33"
+      }
+    },
+    {
+      "id": "myth",
+      "kind": "myth",
+      "component": "MythVsReality",
+      "short": true,
+      "props": {
+        "myth": "1 token = 1 word",
+        "reality": "In English, 1 token ≈ ¾ of a word ≈ 4 characters",
+        "revealAt": "c36@reality",
+        "fact": {
+          "words": 100,
+          "tokens": 130
+        }
+      }
+    },
+    {
+      "id": "useIt",
+      "kind": "useIt",
+      "component": "UseIt",
+      "props": {
+        "tip": "{{stop.useIt}}",
+        "bullets": [
+          "Cut polite filler",
+          "Send only the section you need",
+          "Ask for the length you need"
+        ],
+        "bulletsAt": "c38"
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recapNext",
+      "component": "RecapNext",
+      "props": {
+        "nextStop": "{{next.stop}}",
+        "nextQuestion": "{{next.question}}",
+        "questionAt": "c41@question"
+      }
+    }
   ]
 }

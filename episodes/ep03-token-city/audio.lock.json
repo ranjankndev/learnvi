@@ -2165,7 +2165,9 @@
       "audio": ".cache/proc/f73cda8c3f09ca63.wav",
       "duration": 9.181,
       "marks": {
-        "repeat": 0.32
+        "repeat": 0.32,
+        "ra": 1.56,
+        "rain": 5.08
       },
       "words": [
         {

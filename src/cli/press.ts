@@ -1,13 +1,14 @@
 import fs from "node:fs";
 process.stdout.on("error", (e: NodeJS.ErrnoException) => { if (e.code === "EPIPE") process.exit(0); });
 import path from "node:path";
-import { spawnSync } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { Command } from "commander";
 import { ConfigError, loadEpisode, loadProject, findRoot } from "../core/project.js";
 import { assignIds } from "../core/script.js";
 import { checkAll } from "../core/check.js";
 import { buildAudio, importTake, loadTakes, plan, readLock, readScript, selectTake, type CueState } from "../core/audio/pipeline.js";
-import { buildTimeline, writeTimelineOutputs } from "../core/timeline.js";
+import { buildTimeline, writeTimelineOutputs, outDir } from "../core/timeline.js";
+import { readTimeline, renderEpisode, still } from "../core/render.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 const ep = (ref: string) => loadEpisode(loadProject(), ref);
@@ -100,6 +101,90 @@ program.command("takes <episode> <cue>").description("list the takes of one cue"
 
 program.command("use <episode> <cue> <take>").description('switch a cue to another take ("tts", "v1", "v2"…)')
   .action((e: string, cueId: string, take: string) => { const c = ep(e); selectTake(c, cueId.toLowerCase(), take); console.log(`${C.g}✓${C.x} ${cueId} now uses ${take}. Run: press audio ${c.meta.id}`); });
+
+/** Resolve "--at c18@merge", "--t 3.5" (seconds into the segment) or "--frame 40" to a frame within the segment. */
+function frameFor(tl: ReturnType<typeof readTimeline>, segId: string, o: { at?: string; t?: string; frame?: string }) {
+  const seg = tl.segments.find((s) => s.id === segId);
+  if (!seg) throw new ConfigError(`No segment "${segId}". Segments: ${tl.segments.map((s) => s.id).join(", ")}`);
+  if (o.frame) return { seg, frame: +o.frame };
+  if (o.t) return { seg, frame: Math.round(+o.t * tl.fps) };
+  if (o.at) {
+    const t = tl.refs[o.at.toLowerCase()];
+    if (t === undefined) throw new ConfigError(`No cue or mark "${o.at}"`);
+    return { seg, frame: Math.round(t * tl.fps) - seg.startFrame + 20 };
+  }
+  return { seg, frame: Math.round(seg.durationInFrames * 0.85) };
+}
+
+program.command("still <episode> <segment>").description("render one frame of a segment to PNG (default: near its end)")
+  .option("--at <ref>", "just after a cue or mark, e.g. c18@merge").option("--t <seconds>", "seconds into the segment").option("--frame <n>", "frame within the segment")
+  .option("-o, --out <file>", "output PNG")
+  .action(async (e: string, segId: string, o: { at?: string; t?: string; frame?: string; out?: string }) => {
+    const c = ep(e), tl = readTimeline(c);
+    const { frame } = frameFor(tl, segId, o);
+    const file = o.out ?? path.join(outDir(c), "stills", `${segId}-${frame}.png`);
+    await still(c, segId, frame, file, (s) => console.log(`${C.d}…${C.x} ${s}`));
+    console.log(`${C.g}✓${C.x} ${path.relative(process.cwd(), file)}`);
+  });
+
+program.command("sheet <episode>").description("contact sheet: one still per segment, in one PNG")
+  .action(async (e: string) => {
+    const c = ep(e), tl = readTimeline(c);
+    const dir = path.join(outDir(c), "stills");
+    const files: string[] = [];
+    for (const s of tl.segments) {
+      const f = path.join(dir, `sheet-${String(files.length).padStart(2, "0")}-${s.id}.png`);
+      await still(c, s.id, frameFor(tl, s.id, {}).frame, f, (m) => console.log(`${C.d}…${C.x} ${m}`));
+      files.push(f); console.log(`${C.d}…${C.x} ${s.id}`);
+    }
+    const out = path.join(outDir(c), `${c.meta.id}-sheet.png`);
+    const cols = 3, rows = Math.ceil(files.length / cols);
+    const r = spawnSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", ...files.flatMap((f) => ["-i", f]), "-filter_complex",
+      files.map((_, i) => `[${i}:v]scale=640:-1[s${i}]`).join(";") + ";" + files.map((_, i) => `[s${i}]`).join("") + `xstack=inputs=${files.length}:layout=` +
+      files.map((_, i) => `${(i % cols) * 640}_${Math.floor(i / cols) * 360}`).join("|") + `:fill=black`, "-frames:v", "1", out], { encoding: "utf8" });
+    if (r.status !== 0) throw new Error(r.stderr);
+    console.log(`${C.g}✓${C.x} ${path.relative(process.cwd(), out)} (${files.length} segments, ${cols}×${rows})`);
+  });
+
+program.command("render <episode>").description("render the video; only segments whose look or timing changed are re-rendered")
+  .option("--only <segments>", "force these segments (comma-separated)").option("--force", "re-render everything")
+  .action(async (e: string, o: { only?: string; force?: boolean }) => {
+    const c = ep(e);
+    const r = await renderEpisode(c, { only: o.only?.split(","), force: o.force }, (s) => console.log(`${C.d}…${C.x} ${s}`));
+    console.log(`\n${C.g}✓${C.x} ${path.relative(process.cwd(), r.output)} · rendered ${r.rendered.length} segment(s)${r.rendered.length ? ` (${r.rendered.join(", ")})` : ""} · reused ${r.reused.length} · ${r.seconds.toFixed(0)}s`);
+  });
+
+program.command("studio").description("open the Remotion preview studio; edits to config/ and episodes/ rebuild the timeline live")
+  .action(() => {
+    const root = findRoot();
+    let timer: NodeJS.Timeout | null = null, busy = false;
+    const rebuild = () => {
+      if (busy) return; busy = true;
+      try {
+        const p = loadProject(root);
+        for (const m of p.series.episodes) {
+          if (!fs.existsSync(path.join(root, "episodes", m.folder ?? m.id, "episode.json"))) continue;
+          const c = loadEpisode(p, m.id);
+          const { lock } = buildAudio(c, (s) => console.log(`${C.d}[press]${C.x} ${s}`));
+          writeTimelineOutputs(c, buildTimeline(c, lock));
+        }
+        console.log(`${C.g}[press]${C.x} timeline updated`);
+      } catch (err) { console.log(`${C.r}[press]${C.x} ${(err as Error).message}`); }
+      busy = false;
+    };
+    for (const d of ["config", "episodes", "takes"]) {
+      const dir = path.join(root, d);
+      if (fs.existsSync(dir)) fs.watch(dir, { recursive: true }, (_ev, f) => {
+        if (!f || /audio\.lock\.json$|takes\.json$/.test(f)) return;
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(rebuild, 400);
+      });
+    }
+    rebuild();
+    // non-blocking, so the file watcher above keeps running while the studio is open
+    const child = spawn(process.platform === "win32" ? "npx.cmd" : "npx", ["remotion", "studio"], { cwd: root, stdio: "inherit", shell: process.platform === "win32" });
+    child.on("exit", (code) => process.exit(code ?? 0));
+  });
 
 program.command("setup").description("download the offline voice and alignment models (once per machine)")
   .action(() => {

@@ -51,7 +51,7 @@
 
 [c18] It's "i" followed by "n", 26 times. So we {@merge}glue them into one new piece, "in", and add it to the vocabulary.
 
-[c19] Then we {@repeat}count again and repeat. "r" plus "a" wins next, 21 times. Then "ra" plus "in" becomes "rain", a whole word as a single token.
+[c19] Then we {@repeat}count again and repeat. {@ra}"r" plus "a" wins next, 21 times. Then {@rain}"ra" plus "in" becomes "rain", a whole word as a single token.
 
 [c20] Real tokenizers repeat this tens of thousands of times over huge amounts of text. What's left is a vocabulary where frequent words are one token and rare words are a few.
 
