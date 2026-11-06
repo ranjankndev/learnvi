@@ -1,0 +1,242 @@
+{
+  "id": "u1-04",
+  "thumbnail": {
+    "headline": "How AI guesses your next word",
+    "big": "a cup of …"
+  },
+  "tags": [
+    "language models",
+    "n-gram",
+    "smoothing",
+    "perplexity",
+    "next word prediction"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Language Models",
+        "subtitle": "Guessing the next word"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "A language model is a well-read guesser of the next word.",
+        "highlight": [
+          "next word."
+        ]
+      }
+    },
+    {
+      "id": "lm",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a language model?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Language model",
+        "definition": "A model that gives a chance to every possible next word, so it can tell likely sentences from unlikely ones.",
+        "example": "a cup of … → tea ✓  carpet ✗",
+        "analogy": "Your phone's keyboard, suggesting what you'll type next."
+      }
+    },
+    {
+      "id": "count",
+      "kind": "core",
+      "component": "Steps",
+      "title": "Learning by counting",
+      "props": {
+        "kicker": "N-gram models",
+        "title": "The simplest language model: count",
+        "steps": [
+          {
+            "label": "Read",
+            "detail": "lots of text"
+          },
+          {
+            "label": "Count",
+            "detail": "which words follow which"
+          },
+          {
+            "label": "Divide",
+            "detail": "turn counts into chances"
+          },
+          {
+            "label": "Predict",
+            "detail": "pick a likely next word"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cupof",
+      "kind": "core",
+      "component": "Table",
+      "title": "After “a cup of”",
+      "short": true,
+      "shortTitle": "How your phone guesses the next word",
+      "props": {
+        "kicker": "Example counts",
+        "title": "What came after “a cup of” (100 times)",
+        "columns": [
+          "Next word",
+          "Seen",
+          "Chance"
+        ],
+        "rows": [
+          [
+            "tea",
+            "60",
+            "60%"
+          ],
+          [
+            "coffee",
+            "30",
+            "30%"
+          ],
+          [
+            "water",
+            "9",
+            "9%"
+          ],
+          [
+            "carpet",
+            "1",
+            "1%"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "memory",
+      "kind": "core",
+      "component": "Compare",
+      "title": "How much context?",
+      "props": {
+        "kicker": "The trade-off",
+        "title": "How many words should it look back?",
+        "columns": [
+          {
+            "title": "Short memory",
+            "items": [
+              "looks at 1 or 2 words",
+              "fast and simple",
+              "“of …” could be anything"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Longer memory",
+            "items": [
+              "looks at 3 or 4 words",
+              "much better guesses",
+              "needs far more text"
+            ],
+            "tone": "neutral"
+          }
+        ],
+        "verdict": {
+          "text": "More context helps, until the data runs out"
+        }
+      }
+    },
+    {
+      "id": "zero",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Never seen it before",
+      "props": {
+        "kicker": "A catch",
+        "title": "What if a phrase was never seen?",
+        "items": [
+          {
+            "text": "Its count is zero, so its chance is zero"
+          },
+          {
+            "text": "But never seen doesn't mean impossible"
+          },
+          {
+            "text": "Smoothing gives unseen phrases a small share"
+          }
+        ]
+      }
+    },
+    {
+      "id": "perplexity",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Measuring a language model",
+      "props": {
+        "kicker": "How good is it?",
+        "term": "Perplexity",
+        "definition": "How surprised a language model is by real text. Lower is better.",
+        "example": "perplexity 50 ≈ torn between 50 words each time",
+        "analogy": "A quiz contestant who narrows the answer down to two options beats one stuck choosing among fifty."
+      }
+    },
+    {
+      "id": "today",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "From counts to chatbots",
+      "props": {
+        "kicker": "Then and now",
+        "text": "Today's chatbots are language models too: far bigger, and built with neural networks.",
+        "highlight": [
+          "language",
+          "models"
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: can you beat a language model?",
+      "props": {
+        "question": "Which word would a language model rate most likely next? “Peanut butter and …”",
+        "options": [
+          "jelly",
+          "cement",
+          "Tuesday"
+        ],
+        "answer": 0,
+        "explain": "In English text, “peanut butter and” is followed by “jelly” far more often than anything else."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "A language model predicts the next word",
+          "N-gram models learn by counting what follows what",
+          "Smoothing saves room for phrases never seen",
+          "Perplexity measures surprise: lower is better"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
