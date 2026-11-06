@@ -117,3 +117,33 @@ export const Stamp: React.FC<{ title: string; sub: string; p?: number; rotate?: 
 export const Ribbon: React.FC<{ children: React.ReactNode; color: string; style?: React.CSSProperties }> = ({ children, color, style }) => (
   <div style={{ display: "inline-block", background: color, color: C.night, fontFamily: F.display, fontWeight: 800, fontSize: 40, letterSpacing: 3, padding: "14px 34px", borderRadius: 10, transform: "rotate(-2deg)", boxShadow: "0 12px 30px rgba(0,0,0,.35)", ...style }}>{children}</div>
 );
+
+/**
+ * Appearance frames for a list of n items. An item's own `at` ("c07" / "c07@mark") wins.
+ * Otherwise items line up with the segment's paragraphs: with as many paragraphs as items, one
+ * each; with more, the last n paragraphs (the first ones usually introduce the scene); with fewer,
+ * items are spread evenly through the narration.
+ */
+export function useTimes(ats: (string | undefined)[], opts: { reserveEnd?: number } = {}): number[] {
+  const { tl, seg } = useSeg();
+  const rel = (t: number) => Math.round(t * tl.fps) - seg.startFrame;
+  // reserveEnd: leave the last paragraph(s) to something else (e.g. a recap's "next" teaser)
+  const all = seg.cues.map((c) => ({ from: rel(c.start), to: rel(c.end) }));
+  const cues = all.length > (opts.reserveEnd ?? 0) ? all.slice(0, all.length - (opts.reserveEnd ?? 0)) : all;
+  const n = ats.length;
+  return ats.map((at, i) => {
+    if (at) { const t = tl.refs[at.toLowerCase()]; if (t !== undefined) return rel(t); }
+    if (cues.length >= n && n > 0) return cues[cues.length - n + i].from;
+    const from = cues[0]?.from ?? 10, to = cues.length ? cues[cues.length - 1].to : seg.durationInFrames - 30;
+    return Math.round(from + 20 + ((to - from - 20) * i) / Math.max(1, n));
+  });
+}
+
+/** Frames for explicit marks only (undefined where an item has no `at`). */
+export function useRefs(ats: (string | undefined)[]): (number | undefined)[] {
+  const { tl, seg } = useSeg();
+  return ats.map((a) => {
+    const t = a ? tl.refs[a.toLowerCase()] : undefined;
+    return t === undefined ? undefined : Math.round(t * tl.fps) - seg.startFrame;
+  });
+}

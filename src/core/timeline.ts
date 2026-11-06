@@ -3,6 +3,14 @@ import path from "node:path";
 import { ConfigError, fillTemplate, templateContext, type EpisodeCtx } from "./project.js";
 import type { Lock } from "./audio/pipeline.js";
 import { mixAt } from "./audio/tools.js";
+import { KIT } from "../../remotion/kit/specs.js";
+
+/** Scene-kit props go through their spec, so defaults are filled in before anything renders. */
+function withKitDefaults(component: string, props: Record<string, unknown>) {
+  const spec = (KIT as Record<string, { props: { safeParse: (v: unknown) => { success: boolean; data?: unknown } } }>)[component];
+  const r = spec?.props.safeParse(props);
+  return r?.success ? (r.data as Record<string, unknown>) : props;
+}
 
 export interface TimelineCue { id: string; start: number; end: number; marks: Record<string, number>; text: string; words: { w: string; start: number }[] }
 export interface TimelineSegment {
@@ -76,7 +84,7 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
     segments.push({
       id: seg.id, kind: seg.kind, component: seg.component, short: seg.short, cues,
       title: fillTemplate(titleFor(seg), vars, `${seg.id}.title`), shortTitle: fillTemplate(seg.shortTitle ?? titleFor(seg), vars, `${seg.id}.shortTitle`),
-      props: resolveProps(seg.props, vars, `${seg.id}.props`, []) as Record<string, unknown>,
+      props: withKitDefaults(seg.component, resolveProps(seg.props, vars, `${seg.id}.props`, []) as Record<string, unknown>),
       start: +start.toFixed(3), end: +end.toFixed(3), startFrame: f(start), durationInFrames: Math.max(1, f(end + a.gapAfterSegment) - f(start)),
     });
   }

@@ -1,0 +1,61 @@
+{
+  "id": "u1-01",
+  "thumbnail": { "headline": "How computers read a sentence", "big": "5 stages" },
+  "tags": ["stages of NLP", "lexical analysis", "syntactic analysis", "semantic analysis", "ambiguity"],
+  "segments": [
+    { "id": "intro", "kind": "intro", "component": "TitleCard", "title": "Welcome",
+      "props": { "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}", "title": "The Stages of NLP", "subtitle": "How a computer climbs from letters to meaning" } },
+
+    { "id": "idea", "kind": "core", "component": "BigIdea", "title": "The big idea",
+      "props": { "kicker": "Key idea", "text": "Understanding a sentence is not one step. It is a staircase.", "highlight": ["staircase"] } },
+
+    { "id": "stages", "kind": "core", "component": "Steps", "title": "The five stages", "short": true,
+      "shortTitle": "The 5 stages every NLP system climbs",
+      "props": { "kicker": "The staircase", "title": "Five stages, from letters to intent", "steps": [
+        { "label": "Lexical", "detail": "words and tokens" },
+        { "label": "Morphological", "detail": "parts inside words" },
+        { "label": "Syntactic", "detail": "sentence structure" },
+        { "label": "Semantic", "detail": "literal meaning" },
+        { "label": "Pragmatic", "detail": "meaning in context" } ] } },
+
+    { "id": "walk", "kind": "core", "component": "Table", "title": "One sentence, five stages",
+      "props": { "kicker": "Worked example", "title": "“The dogs were barking loudly”", "columns": ["Stage", "What it finds"],
+        "rows": [
+          ["Lexical", "The · dogs · were · barking · loudly"],
+          ["Morphological", "dog + s,  bark + ing"],
+          ["Syntactic", "“dogs” is the subject"],
+          ["Semantic", "animals making noise"],
+          ["Pragmatic", "someone may be at the door"] ],
+        "highlight": [{ "row": 4 }] } },
+
+    { "id": "ambiguity", "kind": "core", "component": "Definition", "title": "Ambiguity",
+      "props": { "kicker": "Why it's hard", "term": "Ambiguity", "definition": "When the same words can be read in more than one way.",
+        "example": "I saw her duck.", "analogy": "An optical illusion: one picture, two images." } },
+
+    { "id": "duck", "kind": "core", "component": "Chat", "title": "Ambiguity in a chat", "short": true,
+      "shortTitle": "“I saw her duck”: why computers get confused",
+      "props": { "title": "Same words, two meanings", "messages": [
+        { "role": "user", "text": "I saw her duck." },
+        { "role": "ai", "text": "Do you mean her pet duck, or that she ducked down?" } ] } },
+
+    { "id": "levels", "kind": "core", "component": "Compare", "title": "Ambiguity at each stage",
+      "props": { "kicker": "Two kinds", "title": "Ambiguity hides at different stages", "columns": [
+        { "title": "Lexical", "items": ["one word, two meanings", "“bank”: river or money?"], "tone": "neutral" },
+        { "title": "Syntactic", "items": ["one sentence, two structures", "“I saw the man with the telescope”"], "tone": "neutral" } ],
+        "verdict": { "text": "Each stage clears up its own kind of ambiguity", "at": "c22@verdict" } } },
+
+    { "id": "quiz", "kind": "quiz", "component": "Quiz", "title": "Quick quiz", "short": true,
+      "shortTitle": "Quick quiz: which NLP stage is this?",
+      "props": { "question": "Which stage decides that “bank” means the side of a river?",
+        "options": ["Lexical", "Syntactic", "Semantic", "Pragmatic"], "answer": 2,
+        "explain": "Choosing the right meaning of a word is semantic analysis." } },
+
+    { "id": "recap", "kind": "recap", "component": "Recap", "title": "Recap and next lesson",
+      "props": { "points": [
+        "NLP understands text in layers, like a staircase",
+        "Lexical → morphological → syntactic → semantic → pragmatic",
+        "Each stage clears up its own kind of ambiguity",
+        "Mistakes on a low step travel up to every step above" ],
+        "next": { "title": "{{next.short}}", "question": "{{next.question}}" } } }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "nlp-basics",
+  "title": "NLP, Simply Explained",
+  "subtitle": "University NLP, one idea at a time, no heavy maths",
+  "runningPrompt": "",
+  "language": "en",
+  "theme": "learnvi",
+  "fps": 30,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "burnCaptions": true,
+    "brand": "learnvi.in",
+    "badge": [
+      "UNIT {{episode.unit}} · LESSON {{episode.lesson}}",
+      "{{episode.short|upper}}"
+    ]
+  },
+  "shorts": {
+    "width": 1080,
+    "height": 1920,
+    "maxSeconds": 60,
+    "cta": "Full lesson: {{series.title}} · Unit {{episode.unit}}"
+  },
+  "audioOnly": {
+    "maxPause": 2.5,
+    "bitrate": "128k"
+  },
+  "youtube": {
+    "title": "{{episode.title}} | {{series.title}} (Unit {{episode.unit}}.{{episode.lesson}})",
+    "description": [
+      "{{episode.question}}",
+      "",
+      "Part of {{series.title}}: university-level NLP explained with pictures and plain words.",
+      "",
+      "Chapters",
+      "{{chapters}}",
+      "",
+      "More at https://learnvi.in"
+    ],
+    "tags": [
+      "NLP",
+      "natural language processing",
+      "NLP for beginners",
+      "university NLP",
+      "learnvi"
+    ]
+  },
+  "voice": {
+    "provider": "kokoro",
+    "voice": "af_heart",
+    "speed": 1.0,
+    "lang": "en-us"
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "loudnessLUFS": -16,
+    "truePeak": -1.5,
+    "trimSilence": true,
+    "padSeconds": 0.08,
+    "leadIn": 0.6,
+    "gapAfterCue": 0.4,
+    "gapAfterSegment": 0.9,
+    "tail": 1.5,
+    "staleTakePolicy": "tts-fallback",
+    "minMatchScore": 0.5
+  },
+  "draft": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "maxTokens": 16000,
+    "minutes": 4,
+    "style": [
+      "Audience: university students meeting the topic for the first time; plain English, no formulas.",
+      "Teach one idea per scene, with one concrete example and, where it helps, an everyday analogy.",
+      "Short paragraphs: one to three sentences each. One paragraph per item a scene reveals.",
+      "Say what is on screen, so the lesson also works as audio only.",
+      "Include one quick quiz near the end, and end with a recap that teases the next lesson."
+    ]
+  },
+  "template": [
+    {
+      "kind": "intro",
+      "component": "TitleCard"
+    },
+    {
+      "kind": "core",
+      "repeat": true,
+      "component": "Bullets"
+    },
+    {
+      "kind": "quiz",
+      "required": false,
+      "component": "Quiz"
+    },
+    {
+      "kind": "recap",
+      "component": "Recap"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "u1-01",
+      "number": 1,
+      "unit": 1,
+      "lesson": 1,
+      "short": "Stages of NLP",
+      "folder": "u1-01-stages",
+      "title": "The Stages of NLP: From Letters to Meaning",
+      "question": "How does a computer get from raw text to what you meant?"
+    },
+    {
+      "id": "u1-02",
+      "number": 2,
+      "unit": 1,
+      "lesson": 2,
+      "short": "Tokenization",
+      "title": "Tokenization: How Text Becomes Pieces",
+      "question": "How do we cut text into units a model can use?"
+    },
+    {
+      "id": "u1-03",
+      "number": 3,
+      "unit": 1,
+      "lesson": 3,
+      "short": "Text Classification",
+      "title": "Text Classification: Teaching Computers to Sort Text",
+      "question": "How does a spam filter decide?"
+    },
+    {
+      "id": "u2-01",
+      "number": 4,
+      "unit": 2,
+      "lesson": 1,
+      "short": "Morphology",
+      "title": "Morphology: The Building Blocks Inside Words",
+      "question": "Why is 'unbreakable' really three pieces?"
+    },
+    {
+      "id": "u2-02",
+      "number": 5,
+      "unit": 2,
+      "lesson": 2,
+      "short": "POS Tagging",
+      "title": "Part-of-Speech Tagging: Is It a Noun or a Verb?",
+      "question": "How does a computer tell 'book a flight' from 'read a book'?"
+    },
+    {
+      "id": "u4-01",
+      "number": 6,
+      "unit": 4,
+      "lesson": 1,
+      "short": "Word Vectors",
+      "title": "Word Vectors: Giving Words a Place on a Map",
+      "question": "How can a computer know that 'rain' is close to 'storm'?"
+    }
+  ]
+}

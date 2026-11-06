@@ -11,6 +11,8 @@ import { buildTimeline, writeTimelineOutputs, outDir } from "../core/timeline.js
 import { readTimeline, renderEpisode, still } from "../core/render.js";
 import { clock, packageEpisode } from "../core/package.js";
 import { startReviewServer } from "../review/server.js";
+import { KIT } from "../../remotion/kit/specs.js";
+import { draftEpisode } from "../core/draft.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 /** the series folder this command works on (see `press series`) */
@@ -191,6 +193,29 @@ program.command("review [episode]").description("open the review studio: listen,
     console.log(`${C.g}✓${C.x} review studio running at ${C.B}http://localhost:${o.port}/${e ? `?ep=${e}` : ""}${C.x}  (Ctrl+C to stop)`);
   });
 
+program.command("draft <episode>").description("AI step (optional): draft episode.json + script.md from a brief, using scene-kit scenes")
+  .option("-b, --brief <file>", "a text/markdown file with the brief: key points, examples, audience")
+  .option("-t, --text <brief>", "the brief inline instead of a file")
+  .option("-m, --minutes <n>", "target narration length (default from series.json → draft.minutes)")
+  .option("--model <id>", "override series.json → draft.model")
+  .option("--dry-run", "print the prompt that would be sent, and send nothing")
+  .option("--force", "replace an existing episode.json and script.md")
+  .action(async (e: string, o: { brief?: string; text?: string; minutes?: string; model?: string; dryRun?: boolean; force?: boolean }) => {
+    const p = loadProject(root());
+    const brief = o.brief ? fs.readFileSync(o.brief, "utf8") : o.text ?? "";
+    const r = await draftEpisode(p, e, { brief, minutes: o.minutes ? +o.minutes : undefined, model: o.model, dryRun: o.dryRun, force: o.force }, (s) => console.log(`${C.d}…${C.x} ${s}`));
+    if (r.dryRun) {
+      console.log(`${C.B}SYSTEM (cached between calls)${C.x}\n${r.system}\n\n${C.B}USER${C.x}\n${r.user}`);
+      console.log(`\n${C.d}${r.system.length + r.user.length} characters ≈ ${Math.round((r.system.length + r.user.length) / 4)} tokens in. Nothing was sent.${C.x}`);
+      return;
+    }
+    const rel = path.relative(process.cwd(), r.dir);
+    console.log(`\n${r.problems.length ? C.y + "!" : C.g + "✓"}${C.x} drafted ${e} with ${r.model} in ${r.usage.calls} call(s): ${r.usage.input} tokens in, ${r.usage.output} out${r.fixed ? " (second call fixed validation problems)" : ""}`);
+    console.log(`  ${rel}/episode.json · script.md · fact-check.md`);
+    if (r.problems.length) { console.log(`${C.y}Still to fix by hand:${C.x}`); r.problems.forEach((x) => console.log(`  • ${x}`)); }
+    console.log(`Next: read and edit script.md, tick fact-check.md, then: press audio ${e} && press review ${e}`);
+  });
+
 program.command("studio").description("open the Remotion preview studio; edits to config/ and episodes/ rebuild the timeline live")
   .action(() => {
     const series = root();
@@ -238,7 +263,12 @@ program.command("new <episode>").description("start an episode from the series t
     const dir = path.join(p.root, "episodes", meta.folder ?? meta.id);
     if (fs.existsSync(path.join(dir, "episode.json"))) throw new ConfigError(`${meta.id} already exists.`);
     fs.mkdirSync(dir, { recursive: true });
-    const segs = p.series.template.filter((t) => t.required).map((t) => ({ id: t.kind, kind: t.kind, component: t.kind[0].toUpperCase() + t.kind.slice(1), props: {} }));
+    // start from the template; scene-kit components get their example content so the episode previews at once
+    const segs = p.series.template.filter((t) => t.required).map((t) => {
+      const component = t.component ?? t.kind[0].toUpperCase() + t.kind.slice(1);
+      const ex = (KIT as Record<string, { example: unknown }>)[component]?.example ?? {};
+      return { id: t.kind, kind: t.kind, component, props: ex };
+    });
     fs.writeFileSync(path.join(dir, "episode.json"), JSON.stringify({ id: meta.id, segments: segs }, null, 2) + "\n");
     fs.writeFileSync(path.join(dir, "script.md"), `# ${meta.title}\n\n` + segs.map((s) => `## ${s.id}\n\nWrite the ${s.kind} narration here.\n`).join("\n"));
     console.log(`${C.g}✓${C.x} created ${path.relative(process.cwd(), dir)}. Write script.md, then: press ids ${meta.id} && press check ${meta.id}`);

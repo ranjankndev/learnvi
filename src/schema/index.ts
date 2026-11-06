@@ -64,12 +64,24 @@ export const SeriesSchema = z.object({
         share of the script's content words are heard. Recognisers slip on short words, so keep it low. */
     minMatchScore: z.number().min(0).max(1).default(0.5),
   }).default({}),
+  /** `press draft`: the only part of the framework that calls an AI service, and only when you run it */
+  draft: z.object({
+    model: z.string().default("claude-opus-5-5"),
+    effort: z.enum(["low", "medium", "high", "xhigh", "max"]).default("medium"),
+    maxTokens: z.number().int().default(16000),
+    /** target narration length */
+    minutes: z.number().positive().default(5),
+    /** house style for the narration, one rule per line */
+    style: z.array(z.string()).default([]),
+  }).default({}),
   /** the episode template: order and rules for segment kinds */
   template: z.array(z.object({
     kind: SegmentKind,
     required: z.boolean().default(true),
     repeat: z.boolean().default(false),
     narrated: z.boolean().default(true),
+    /** component `press new` uses for this kind (e.g. a scene-kit name like "Bullets") */
+    component: z.string().optional(),
   })),
   /** one entry per video: titles and stops live here so they can be changed in one place */
   episodes: z.array(z.object({

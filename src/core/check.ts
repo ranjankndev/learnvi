@@ -2,6 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { ConfigError, fillTemplate, loadEpisode, templateContext, type Project } from "./project.js";
 import { readScript, loadTakes } from "./audio/pipeline.js";
+import { KIT } from "../../remotion/kit/specs.js";
+import { CUSTOM_COMPONENTS } from "../../remotion/components/names.js";
 
 export interface Finding { level: "error" | "warn" | "info"; where: string; msg: string }
 
@@ -35,6 +37,19 @@ export function checkEpisode(project: Project, ref: string): Finding[] {
   for (const t of tpl) {
     if (t.required && !counts[t.kind]) add("error", epRel, `missing required segment kind "${t.kind}"`);
     if (!t.repeat && (counts[t.kind] ?? 0) > 1) add("error", epRel, `"${t.kind}" appears ${counts[t.kind]} times; only one allowed`);
+  }
+  // components: scene-kit props must match their spec; unknown names render a placeholder
+  for (const seg of episode.segments) {
+    const spec = (KIT as Record<string, { props: { safeParse: (v: unknown) => any } }>)[seg.component];
+    if (spec) {
+      // validate what will actually be shown: templates filled in first
+      const fill = (v: unknown): unknown => typeof v === "string" ? (() => { try { return fillTemplate(v, templateContext(ctx!), seg.id); } catch { return v; } })()
+        : Array.isArray(v) ? v.map(fill) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, fill(x)])) : v;
+      const r = spec.props.safeParse(fill(seg.props));
+      if (!r.success) for (const i of r.error.issues) add("error", `${epRel} → ${seg.id}.props${i.path.length ? "." + i.path.join(".") : ""}`, `${seg.component}: ${i.message}`);
+    } else if (!CUSTOM_COMPONENTS.includes(seg.component)) {
+      add("warn", `${epRel} → ${seg.id}`, `component "${seg.component}" doesn't exist yet; it will render as a placeholder`);
+    }
   }
   const ids = episode.segments.map((s) => s.id);
   ids.filter((x, i) => ids.indexOf(x) !== i).forEach((x) => add("error", epRel, `duplicate segment id "${x}"`));

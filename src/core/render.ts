@@ -97,7 +97,10 @@ export async function renderEpisode(ctx: EpisodeCtx, opts: { only?: string[]; fo
   const out = outDir(ctx);
   const list = path.join(segDir, "concat.txt");
   fs.writeFileSync(list, plan.map((p) => `file '${p.file.replace(/'/g, "'\\''")}'`).join("\n"));
-  const output = path.join(out, `${ctx.meta.id}-${(ctx.meta.folder ?? ctx.meta.id).replace(/^ep\d+-?/, "") || "episode"}.mp4`);
+  // "<id>-<name>.mp4": the folder name without a leading copy of the id (ep03-token-city → ep03-token-city.mp4)
+  const folder = ctx.meta.folder ?? ctx.meta.id;
+  const name = (folder.startsWith(ctx.meta.id) ? folder.slice(ctx.meta.id.length) : "-" + folder).replace(/^-+/, "") || "episode";
+  const output = path.join(out, `${ctx.meta.id}-${name}.mp4`);
   const ff = (args: string[]) => {
     const r = spawnSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", ...args], { encoding: "utf8" });
     if (r.status !== 0) throw new Error("ffmpeg: " + r.stderr);

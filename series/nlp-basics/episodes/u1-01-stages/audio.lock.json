@@ -1,0 +1,2581 @@
+{
+  "version": 1,
+  "episode": "u1-01",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome to NLP, Simply Explained. This is unit 1, lesson 1: the stages of NLP.",
+      "spoken": "Welcome to N L P, Simply Explained. This is unit 1, lesson 1: the stages of N L P.",
+      "textHash": "bd1b57700d815716",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/49a80e7f2c531fb1.wav",
+      "duration": 6.668,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "to",
+          "start": 0.453
+        },
+        {
+          "w": "NLP,",
+          "start": 0.907
+        },
+        {
+          "w": "Simply",
+          "start": 1.36
+        },
+        {
+          "w": "Explained.",
+          "start": 2
+        },
+        {
+          "w": "This",
+          "start": 2.76
+        },
+        {
+          "w": "is",
+          "start": 3.04
+        },
+        {
+          "w": "unit",
+          "start": 3.28
+        },
+        {
+          "w": "1,",
+          "start": 3.68
+        },
+        {
+          "w": "lesson",
+          "start": 4.08
+        },
+        {
+          "w": "1:",
+          "start": 4.48
+        },
+        {
+          "w": "the",
+          "start": 4.8
+        },
+        {
+          "w": "stages",
+          "start": 5.04
+        },
+        {
+          "w": "of",
+          "start": 5.583
+        },
+        {
+          "w": "NLP.",
+          "start": 6.125
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "When you read a sentence, you understand it in a blink. A computer can't. It has to work its way up, one stage at a time.",
+      "spoken": "When you read a sentence, you understand it in a blink. A computer can't. It has to work its way up, one stage at a time.",
+      "textHash": "4c3dd7928ff68377",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/af063c57cb4645cc.wav",
+      "duration": 7.081,
+      "marks": {},
+      "words": [
+        {
+          "w": "When",
+          "start": 0
+        },
+        {
+          "w": "you",
+          "start": 0.12
+        },
+        {
+          "w": "read",
+          "start": 0.24
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "sentence,",
+          "start": 0.64
+        },
+        {
+          "w": "you",
+          "start": 1.16
+        },
+        {
+          "w": "understand",
+          "start": 1.36
+        },
+        {
+          "w": "it",
+          "start": 1.92
+        },
+        {
+          "w": "in",
+          "start": 2.08
+        },
+        {
+          "w": "a",
+          "start": 2.24
+        },
+        {
+          "w": "blink.",
+          "start": 2.32
+        },
+        {
+          "w": "A",
+          "start": 2.84
+        },
+        {
+          "w": "computer",
+          "start": 3.04
+        },
+        {
+          "w": "can't.",
+          "start": 3.64
+        },
+        {
+          "w": "It",
+          "start": 4.16
+        },
+        {
+          "w": "has",
+          "start": 4.4
+        },
+        {
+          "w": "to",
+          "start": 4.6
+        },
+        {
+          "w": "work",
+          "start": 4.8
+        },
+        {
+          "w": "its",
+          "start": 5.04
+        },
+        {
+          "w": "way",
+          "start": 5.28
+        },
+        {
+          "w": "up,",
+          "start": 5.48
+        },
+        {
+          "w": "one",
+          "start": 5.76
+        },
+        {
+          "w": "stage",
+          "start": 6
+        },
+        {
+          "w": "at",
+          "start": 6.4
+        },
+        {
+          "w": "a",
+          "start": 6.56
+        },
+        {
+          "w": "time.",
+          "start": 6.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here is the one idea to remember from this lesson. Understanding a sentence is not one step. It is a staircase.",
+      "spoken": "Here is the one idea to remember from this lesson. Understanding a sentence is not one step. It is a staircase.",
+      "textHash": "a08513e57778d327",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5a2849ce65a704d1.wav",
+      "duration": 6.987,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.24
+        },
+        {
+          "w": "the",
+          "start": 0.44
+        },
+        {
+          "w": "one",
+          "start": 0.56
+        },
+        {
+          "w": "idea",
+          "start": 0.84
+        },
+        {
+          "w": "to",
+          "start": 1.32
+        },
+        {
+          "w": "remember",
+          "start": 1.48
+        },
+        {
+          "w": "from",
+          "start": 1.96
+        },
+        {
+          "w": "this",
+          "start": 2.293
+        },
+        {
+          "w": "lesson.",
+          "start": 2.627
+        },
+        {
+          "w": "Understanding",
+          "start": 2.96
+        },
+        {
+          "w": "a",
+          "start": 3.84
+        },
+        {
+          "w": "sentence",
+          "start": 4
+        },
+        {
+          "w": "is",
+          "start": 4.52
+        },
+        {
+          "w": "not",
+          "start": 4.72
+        },
+        {
+          "w": "one",
+          "start": 4.96
+        },
+        {
+          "w": "step.",
+          "start": 5.24
+        },
+        {
+          "w": "It",
+          "start": 5.72
+        },
+        {
+          "w": "is",
+          "start": 5.92
+        },
+        {
+          "w": "a",
+          "start": 6.08
+        },
+        {
+          "w": "staircase.",
+          "start": 6.24
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c04": {
+      "segment": "stages",
+      "display": "Let's climb it. There are five steps, and each one builds on the step below.",
+      "spoken": "Let's climb it. There are five steps, and each one builds on the step below.",
+      "textHash": "7d914c9363ec6a8e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6207a9598f2aec2f.wav",
+      "duration": 4.193,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "climb",
+          "start": 0.32
+        },
+        {
+          "w": "it.",
+          "start": 0.72
+        },
+        {
+          "w": "There",
+          "start": 0.96
+        },
+        {
+          "w": "are",
+          "start": 1.16
+        },
+        {
+          "w": "five",
+          "start": 1.36
+        },
+        {
+          "w": "steps,",
+          "start": 1.68
+        },
+        {
+          "w": "and",
+          "start": 2.16
+        },
+        {
+          "w": "each",
+          "start": 2.36
+        },
+        {
+          "w": "one",
+          "start": 2.6
+        },
+        {
+          "w": "builds",
+          "start": 2.8
+        },
+        {
+          "w": "on",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.28
+        },
+        {
+          "w": "step",
+          "start": 3.4
+        },
+        {
+          "w": "below.",
+          "start": 3.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c05": {
+      "segment": "stages",
+      "display": "Step one is lexical analysis. The computer splits the text into words and tokens, and works out where sentences begin and end.",
+      "spoken": "Step one is lexical analysis. The computer splits the text into words and tokens, and works out where sentences begin and end.",
+      "textHash": "02e5f22a0713c59e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a2e162181f508d03.wav",
+      "duration": 8.379,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "one",
+          "start": 0.4
+        },
+        {
+          "w": "is",
+          "start": 0.72
+        },
+        {
+          "w": "lexical",
+          "start": 0.96
+        },
+        {
+          "w": "analysis.",
+          "start": 1.52
+        },
+        {
+          "w": "The",
+          "start": 2.44
+        },
+        {
+          "w": "computer",
+          "start": 2.72
+        },
+        {
+          "w": "splits",
+          "start": 3.24
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "text",
+          "start": 3.8
+        },
+        {
+          "w": "into",
+          "start": 4.16
+        },
+        {
+          "w": "words",
+          "start": 4.44
+        },
+        {
+          "w": "and",
+          "start": 4.84
+        },
+        {
+          "w": "tokens,",
+          "start": 5.04
+        },
+        {
+          "w": "and",
+          "start": 5.68
+        },
+        {
+          "w": "works",
+          "start": 5.92
+        },
+        {
+          "w": "out",
+          "start": 6.28
+        },
+        {
+          "w": "where",
+          "start": 6.48
+        },
+        {
+          "w": "sentences",
+          "start": 6.68
+        },
+        {
+          "w": "begin",
+          "start": 7.36
+        },
+        {
+          "w": "and",
+          "start": 7.7
+        },
+        {
+          "w": "end.",
+          "start": 8.04
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c06": {
+      "segment": "stages",
+      "display": "Step two is morphological analysis. It looks inside each word for its parts. \"Barking\" is \"bark\" plus \"i n g\".",
+      "spoken": "Step two is morphological analysis. It looks inside each word for its parts. \"Barking\" is \"bark\" plus \"i n g\".",
+      "textHash": "de97cad44c7e33d6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bf52dcdaac72e091.wav",
+      "duration": 8.002,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "two",
+          "start": 0.32
+        },
+        {
+          "w": "is",
+          "start": 0.64
+        },
+        {
+          "w": "morphological",
+          "start": 0.84
+        },
+        {
+          "w": "analysis.",
+          "start": 1.68
+        },
+        {
+          "w": "It",
+          "start": 2.56
+        },
+        {
+          "w": "looks",
+          "start": 2.8
+        },
+        {
+          "w": "inside",
+          "start": 3.12
+        },
+        {
+          "w": "each",
+          "start": 3.6
+        },
+        {
+          "w": "word",
+          "start": 3.88
+        },
+        {
+          "w": "for",
+          "start": 4.12
+        },
+        {
+          "w": "its",
+          "start": 4.28
+        },
+        {
+          "w": "parts.",
+          "start": 4.56
+        },
+        {
+          "w": "\"Barking\"",
+          "start": 5.24
+        },
+        {
+          "w": "is",
+          "start": 5.92
+        },
+        {
+          "w": "\"bark\"",
+          "start": 6.2
+        },
+        {
+          "w": "plus",
+          "start": 6.64
+        },
+        {
+          "w": "\"i",
+          "start": 7.08
+        },
+        {
+          "w": "n",
+          "start": 7.46
+        },
+        {
+          "w": "g\".",
+          "start": 7.84
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c07": {
+      "segment": "stages",
+      "display": "Step three is syntactic analysis. It works out the structure of the sentence: who is doing what, and which words belong together.",
+      "spoken": "Step three is syntactic analysis. It works out the structure of the sentence: who is doing what, and which words belong together.",
+      "textHash": "b8ded3f31e664ab0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0335b8cd95ddba67.wav",
+      "duration": 7.829,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "three",
+          "start": 0.4
+        },
+        {
+          "w": "is",
+          "start": 0.68
+        },
+        {
+          "w": "syntactic",
+          "start": 0.88
+        },
+        {
+          "w": "analysis.",
+          "start": 1.56
+        },
+        {
+          "w": "It",
+          "start": 2.48
+        },
+        {
+          "w": "works",
+          "start": 2.72
+        },
+        {
+          "w": "out",
+          "start": 3.08
+        },
+        {
+          "w": "the",
+          "start": 3.24
+        },
+        {
+          "w": "structure",
+          "start": 3.36
+        },
+        {
+          "w": "of",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 3.96
+        },
+        {
+          "w": "sentence:",
+          "start": 4.12
+        },
+        {
+          "w": "who",
+          "start": 4.88
+        },
+        {
+          "w": "is",
+          "start": 5.08
+        },
+        {
+          "w": "doing",
+          "start": 5.32
+        },
+        {
+          "w": "what,",
+          "start": 5.76
+        },
+        {
+          "w": "and",
+          "start": 6
+        },
+        {
+          "w": "which",
+          "start": 6.24
+        },
+        {
+          "w": "words",
+          "start": 6.52
+        },
+        {
+          "w": "belong",
+          "start": 6.88
+        },
+        {
+          "w": "together.",
+          "start": 7.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "stages",
+      "display": "Step four is semantic analysis. It works out the literal meaning of the words and the sentence.",
+      "spoken": "Step four is semantic analysis. It works out the literal meaning of the words and the sentence.",
+      "textHash": "dcb543839fab038f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/68bc8f7ec04ccae7.wav",
+      "duration": 5.667,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "four",
+          "start": 0.32
+        },
+        {
+          "w": "is",
+          "start": 0.64
+        },
+        {
+          "w": "semantic",
+          "start": 0.84
+        },
+        {
+          "w": "analysis.",
+          "start": 1.4
+        },
+        {
+          "w": "It",
+          "start": 2.32
+        },
+        {
+          "w": "works",
+          "start": 2.6
+        },
+        {
+          "w": "out",
+          "start": 2.92
+        },
+        {
+          "w": "the",
+          "start": 3.08
+        },
+        {
+          "w": "literal",
+          "start": 3.2
+        },
+        {
+          "w": "meaning",
+          "start": 3.68
+        },
+        {
+          "w": "of",
+          "start": 4
+        },
+        {
+          "w": "the",
+          "start": 4.12
+        },
+        {
+          "w": "words",
+          "start": 4.28
+        },
+        {
+          "w": "and",
+          "start": 4.68
+        },
+        {
+          "w": "the",
+          "start": 4.84
+        },
+        {
+          "w": "sentence.",
+          "start": 5.04
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c09": {
+      "segment": "stages",
+      "display": "And step five is pragmatic analysis: what the speaker actually means in this situation, which can go beyond the literal words.",
+      "spoken": "And step five is pragmatic analysis: what the speaker actually means in this situation, which can go beyond the literal words.",
+      "textHash": "0e2ff18fabc94dff",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e523556c74f8a8cc.wav",
+      "duration": 7.864,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "step",
+          "start": 0.16
+        },
+        {
+          "w": "five",
+          "start": 0.52
+        },
+        {
+          "w": "is",
+          "start": 0.88
+        },
+        {
+          "w": "pragmatic",
+          "start": 1.08
+        },
+        {
+          "w": "analysis:",
+          "start": 1.76
+        },
+        {
+          "w": "what",
+          "start": 2.72
+        },
+        {
+          "w": "the",
+          "start": 2.96
+        },
+        {
+          "w": "speaker",
+          "start": 3.2
+        },
+        {
+          "w": "actually",
+          "start": 3.72
+        },
+        {
+          "w": "means",
+          "start": 4.24
+        },
+        {
+          "w": "in",
+          "start": 4.56
+        },
+        {
+          "w": "this",
+          "start": 4.72
+        },
+        {
+          "w": "situation,",
+          "start": 4.92
+        },
+        {
+          "w": "which",
+          "start": 5.76
+        },
+        {
+          "w": "can",
+          "start": 6
+        },
+        {
+          "w": "go",
+          "start": 6.24
+        },
+        {
+          "w": "beyond",
+          "start": 6.48
+        },
+        {
+          "w": "the",
+          "start": 6.84
+        },
+        {
+          "w": "literal",
+          "start": 7
+        },
+        {
+          "w": "words.",
+          "start": 7.44
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "walk",
+      "display": "Let's send one sentence up the staircase: \"The dogs were barking loudly\". The table shows what each stage finds.",
+      "spoken": "Let's send one sentence up the staircase: \"The dogs were barking loudly\". The table shows what each stage finds.",
+      "textHash": "97a973a4340d4ca3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5873fce146c8484a.wav",
+      "duration": 6.738,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0.12
+        },
+        {
+          "w": "send",
+          "start": 0.24
+        },
+        {
+          "w": "one",
+          "start": 0.6
+        },
+        {
+          "w": "sentence",
+          "start": 0.8
+        },
+        {
+          "w": "up",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "staircase:",
+          "start": 1.6
+        },
+        {
+          "w": "\"The",
+          "start": 2.28
+        },
+        {
+          "w": "dogs",
+          "start": 2.56
+        },
+        {
+          "w": "were",
+          "start": 2.96
+        },
+        {
+          "w": "barking",
+          "start": 3.16
+        },
+        {
+          "w": "loudly\".",
+          "start": 3.64
+        },
+        {
+          "w": "The",
+          "start": 4.32
+        },
+        {
+          "w": "table",
+          "start": 4.52
+        },
+        {
+          "w": "shows",
+          "start": 4.92
+        },
+        {
+          "w": "what",
+          "start": 5.32
+        },
+        {
+          "w": "each",
+          "start": 5.52
+        },
+        {
+          "w": "stage",
+          "start": 5.76
+        },
+        {
+          "w": "finds.",
+          "start": 6.16
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c11": {
+      "segment": "walk",
+      "display": "The lexical stage finds five words: the, dogs, were, barking, loudly.",
+      "spoken": "The lexical stage finds five words: the, dogs, were, barking, loudly.",
+      "textHash": "6b0300d2ce6db24b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/99d35e5f97deec8a.wav",
+      "duration": 4.72,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "lexical",
+          "start": 0.12
+        },
+        {
+          "w": "stage",
+          "start": 0.64
+        },
+        {
+          "w": "finds",
+          "start": 1.04
+        },
+        {
+          "w": "five",
+          "start": 1.4
+        },
+        {
+          "w": "words:",
+          "start": 1.76
+        },
+        {
+          "w": "the,",
+          "start": 2.24
+        },
+        {
+          "w": "dogs,",
+          "start": 2.56
+        },
+        {
+          "w": "were,",
+          "start": 3.12
+        },
+        {
+          "w": "barking,",
+          "start": 3.44
+        },
+        {
+          "w": "loudly.",
+          "start": 4.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c12": {
+      "segment": "walk",
+      "display": "The morphological stage notices that \"dogs\" is \"dog\" plus a plural \"s\", and \"barking\" is \"bark\" plus \"i n g\".",
+      "spoken": "The morphological stage notices that \"dogs\" is \"dog\" plus a plural \"s\", and \"barking\" is \"bark\" plus \"i n g\".",
+      "textHash": "59ae290a66da2ab7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8309765d1d387d4e.wav",
+      "duration": 7.471,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "morphological",
+          "start": 0.12
+        },
+        {
+          "w": "stage",
+          "start": 0.96
+        },
+        {
+          "w": "notices",
+          "start": 1.32
+        },
+        {
+          "w": "that",
+          "start": 1.92
+        },
+        {
+          "w": "\"dogs\"",
+          "start": 2.12
+        },
+        {
+          "w": "is",
+          "start": 2.56
+        },
+        {
+          "w": "\"dog\"",
+          "start": 2.76
+        },
+        {
+          "w": "plus",
+          "start": 3.12
+        },
+        {
+          "w": "a",
+          "start": 3.44
+        },
+        {
+          "w": "plural",
+          "start": 3.52
+        },
+        {
+          "w": "\"s\",",
+          "start": 4.16
+        },
+        {
+          "w": "and",
+          "start": 4.4
+        },
+        {
+          "w": "\"barking\"",
+          "start": 4.8
+        },
+        {
+          "w": "is",
+          "start": 5.4
+        },
+        {
+          "w": "\"bark\"",
+          "start": 5.64
+        },
+        {
+          "w": "plus",
+          "start": 6.08
+        },
+        {
+          "w": "\"i",
+          "start": 6.56
+        },
+        {
+          "w": "n",
+          "start": 6.94
+        },
+        {
+          "w": "g\".",
+          "start": 7.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c13": {
+      "segment": "walk",
+      "display": "The syntactic stage works out that \"dogs\" is the subject: they are the ones doing the barking.",
+      "spoken": "The syntactic stage works out that \"dogs\" is the subject: they are the ones doing the barking.",
+      "textHash": "e9607f1737801737",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1989e212a21b133d.wav",
+      "duration": 5.411,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "syntactic",
+          "start": 0.12
+        },
+        {
+          "w": "stage",
+          "start": 0.8
+        },
+        {
+          "w": "works",
+          "start": 1.24
+        },
+        {
+          "w": "out",
+          "start": 1.56
+        },
+        {
+          "w": "that",
+          "start": 1.76
+        },
+        {
+          "w": "\"dogs\"",
+          "start": 2
+        },
+        {
+          "w": "is",
+          "start": 2.48
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "subject:",
+          "start": 2.84
+        },
+        {
+          "w": "they",
+          "start": 3.56
+        },
+        {
+          "w": "are",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 4
+        },
+        {
+          "w": "ones",
+          "start": 4.12
+        },
+        {
+          "w": "doing",
+          "start": 4.44
+        },
+        {
+          "w": "the",
+          "start": 4.72
+        },
+        {
+          "w": "barking.",
+          "start": 4.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c14": {
+      "segment": "walk",
+      "display": "The semantic stage understands the meaning: some animals were making a loud noise.",
+      "spoken": "The semantic stage understands the meaning: some animals were making a loud noise.",
+      "textHash": "0e98e9aeb8e4366b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/90e2a4827dfe5b12.wav",
+      "duration": 4.802,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "semantic",
+          "start": 0.16
+        },
+        {
+          "w": "stage",
+          "start": 0.72
+        },
+        {
+          "w": "understands",
+          "start": 1.16
+        },
+        {
+          "w": "the",
+          "start": 1.8
+        },
+        {
+          "w": "meaning:",
+          "start": 2
+        },
+        {
+          "w": "some",
+          "start": 2.52
+        },
+        {
+          "w": "animals",
+          "start": 2.88
+        },
+        {
+          "w": "were",
+          "start": 3.4
+        },
+        {
+          "w": "making",
+          "start": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.84
+        },
+        {
+          "w": "loud",
+          "start": 4
+        },
+        {
+          "w": "noise.",
+          "start": 4.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c15": {
+      "segment": "walk",
+      "display": "And the pragmatic stage reads between the lines. If someone says this to you at home, they might mean: go and check who's at the door.",
+      "spoken": "And the pragmatic stage reads between the lines. If someone says this to you at home, they might mean: go and check who's at the door.",
+      "textHash": "d58ee42ed93603e1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bc3ce7c12eac8f7d.wav",
+      "duration": 7.551,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.08
+        },
+        {
+          "w": "pragmatic",
+          "start": 0.2
+        },
+        {
+          "w": "stage",
+          "start": 0.88
+        },
+        {
+          "w": "reads",
+          "start": 1.32
+        },
+        {
+          "w": "between",
+          "start": 1.72
+        },
+        {
+          "w": "the",
+          "start": 2
+        },
+        {
+          "w": "lines.",
+          "start": 2.16
+        },
+        {
+          "w": "If",
+          "start": 2.8
+        },
+        {
+          "w": "someone",
+          "start": 3.18
+        },
+        {
+          "w": "says",
+          "start": 3.56
+        },
+        {
+          "w": "this",
+          "start": 3.84
+        },
+        {
+          "w": "to",
+          "start": 4.04
+        },
+        {
+          "w": "you",
+          "start": 4.16
+        },
+        {
+          "w": "at",
+          "start": 4.36
+        },
+        {
+          "w": "home,",
+          "start": 4.56
+        },
+        {
+          "w": "they",
+          "start": 4.88
+        },
+        {
+          "w": "might",
+          "start": 5.08
+        },
+        {
+          "w": "mean:",
+          "start": 5.4
+        },
+        {
+          "w": "go",
+          "start": 5.84
+        },
+        {
+          "w": "and",
+          "start": 6.16
+        },
+        {
+          "w": "check",
+          "start": 6.4
+        },
+        {
+          "w": "who's",
+          "start": 6.68
+        },
+        {
+          "w": "at",
+          "start": 7
+        },
+        {
+          "w": "the",
+          "start": 7.12
+        },
+        {
+          "w": "door.",
+          "start": 7.24
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c16": {
+      "segment": "ambiguity",
+      "display": "So why is this hard for a computer? One word explains most of it: ambiguity. Ambiguity is when the same words can be read in more than one way.",
+      "spoken": "So why is this hard for a computer? One word explains most of it: ambiguity. Ambiguity is when the same words can be read in more than one way.",
+      "textHash": "4220df3809d01b57",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e84d75974ddb720e.wav",
+      "duration": 8.961,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "why",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.4
+        },
+        {
+          "w": "this",
+          "start": 0.6
+        },
+        {
+          "w": "hard",
+          "start": 0.8
+        },
+        {
+          "w": "for",
+          "start": 1.08
+        },
+        {
+          "w": "a",
+          "start": 1.24
+        },
+        {
+          "w": "computer?",
+          "start": 1.36
+        },
+        {
+          "w": "One",
+          "start": 2
+        },
+        {
+          "w": "word",
+          "start": 2.36
+        },
+        {
+          "w": "explains",
+          "start": 2.64
+        },
+        {
+          "w": "most",
+          "start": 3.32
+        },
+        {
+          "w": "of",
+          "start": 3.6
+        },
+        {
+          "w": "it:",
+          "start": 3.72
+        },
+        {
+          "w": "ambiguity.",
+          "start": 4
+        },
+        {
+          "w": "Ambiguity",
+          "start": 5.2
+        },
+        {
+          "w": "is",
+          "start": 6.16
+        },
+        {
+          "w": "when",
+          "start": 6.32
+        },
+        {
+          "w": "the",
+          "start": 6.52
+        },
+        {
+          "w": "same",
+          "start": 6.64
+        },
+        {
+          "w": "words",
+          "start": 6.92
+        },
+        {
+          "w": "can",
+          "start": 7.24
+        },
+        {
+          "w": "be",
+          "start": 7.36
+        },
+        {
+          "w": "read",
+          "start": 7.52
+        },
+        {
+          "w": "in",
+          "start": 7.76
+        },
+        {
+          "w": "more",
+          "start": 7.96
+        },
+        {
+          "w": "than",
+          "start": 8.16
+        },
+        {
+          "w": "one",
+          "start": 8.4
+        },
+        {
+          "w": "way.",
+          "start": 8.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "ambiguity",
+      "display": "Take this sentence: \"I saw her duck.\"",
+      "spoken": "Take this sentence: \"I saw her duck.\"",
+      "textHash": "15eb32c89ab6774a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/39d0df9062728f36.wav",
+      "duration": 2.268,
+      "marks": {},
+      "words": [
+        {
+          "w": "Take",
+          "start": 0
+        },
+        {
+          "w": "this",
+          "start": 0.32
+        },
+        {
+          "w": "sentence:",
+          "start": 0.56
+        },
+        {
+          "w": "\"I",
+          "start": 1.16
+        },
+        {
+          "w": "saw",
+          "start": 1.44
+        },
+        {
+          "w": "her",
+          "start": 1.68
+        },
+        {
+          "w": "duck.\"",
+          "start": 1.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "ambiguity",
+      "display": "It's like an optical illusion. One picture, two images, and you can't see both at once.",
+      "spoken": "It's like an optical illusion. One picture, two images, and you can't see both at once.",
+      "textHash": "2b54864a2a4cf70e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/350f1755368d6fa8.wav",
+      "duration": 5.291,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "like",
+          "start": 0.2
+        },
+        {
+          "w": "an",
+          "start": 0.36
+        },
+        {
+          "w": "optical",
+          "start": 0.48
+        },
+        {
+          "w": "illusion.",
+          "start": 1
+        },
+        {
+          "w": "One",
+          "start": 1.84
+        },
+        {
+          "w": "picture,",
+          "start": 2.16
+        },
+        {
+          "w": "two",
+          "start": 2.8
+        },
+        {
+          "w": "images,",
+          "start": 3.12
+        },
+        {
+          "w": "and",
+          "start": 3.68
+        },
+        {
+          "w": "you",
+          "start": 3.8
+        },
+        {
+          "w": "can't",
+          "start": 3.96
+        },
+        {
+          "w": "see",
+          "start": 4.24
+        },
+        {
+          "w": "both",
+          "start": 4.44
+        },
+        {
+          "w": "at",
+          "start": 4.76
+        },
+        {
+          "w": "once.",
+          "start": 4.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "duck",
+      "display": "Here's how that plays out in a conversation. You type: \"I saw her duck.\" A careful assistant has to ask: do you mean her pet duck, or that she ducked down?",
+      "spoken": "Here's how that plays out in a conversation. You type: \"I saw her duck.\" A careful assistant has to ask: do you mean her pet duck, or that she ducked down?",
+      "textHash": "99b7c04e2a53d2ae",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dc2283ee18c45a50.wav",
+      "duration": 9.179,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0.14
+        },
+        {
+          "w": "how",
+          "start": 0.28
+        },
+        {
+          "w": "that",
+          "start": 0.48
+        },
+        {
+          "w": "plays",
+          "start": 0.64
+        },
+        {
+          "w": "out",
+          "start": 1
+        },
+        {
+          "w": "in",
+          "start": 1.16
+        },
+        {
+          "w": "a",
+          "start": 1.28
+        },
+        {
+          "w": "conversation.",
+          "start": 1.36
+        },
+        {
+          "w": "You",
+          "start": 2.32
+        },
+        {
+          "w": "type:",
+          "start": 2.56
+        },
+        {
+          "w": "\"I",
+          "start": 3.12
+        },
+        {
+          "w": "saw",
+          "start": 3.36
+        },
+        {
+          "w": "her",
+          "start": 3.68
+        },
+        {
+          "w": "duck.\"",
+          "start": 3.92
+        },
+        {
+          "w": "A",
+          "start": 4.4
+        },
+        {
+          "w": "careful",
+          "start": 4.64
+        },
+        {
+          "w": "assistant",
+          "start": 5.12
+        },
+        {
+          "w": "has",
+          "start": 5.76
+        },
+        {
+          "w": "to",
+          "start": 5.92
+        },
+        {
+          "w": "ask:",
+          "start": 6.12
+        },
+        {
+          "w": "do",
+          "start": 6.52
+        },
+        {
+          "w": "you",
+          "start": 6.68
+        },
+        {
+          "w": "mean",
+          "start": 6.88
+        },
+        {
+          "w": "her",
+          "start": 7.04
+        },
+        {
+          "w": "pet",
+          "start": 7.2
+        },
+        {
+          "w": "duck,",
+          "start": 7.48
+        },
+        {
+          "w": "or",
+          "start": 7.84
+        },
+        {
+          "w": "that",
+          "start": 8.04
+        },
+        {
+          "w": "she",
+          "start": 8.24
+        },
+        {
+          "w": "ducked",
+          "start": 8.48
+        },
+        {
+          "w": "down?",
+          "start": 8.84
+        }
+      ],
+      "matchScore": 0.958
+    },
+    "c20": {
+      "segment": "levels",
+      "display": "Ambiguity hides at different stages. Here are the two you'll meet most often.",
+      "spoken": "Ambiguity hides at different stages. Here are the two you'll meet most often.",
+      "textHash": "e50b074d81266918",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e3a08b1115af456e.wav",
+      "duration": 4.429,
+      "marks": {},
+      "words": [
+        {
+          "w": "Ambiguity",
+          "start": 0
+        },
+        {
+          "w": "hides",
+          "start": 0.8
+        },
+        {
+          "w": "at",
+          "start": 1.16
+        },
+        {
+          "w": "different",
+          "start": 1.36
+        },
+        {
+          "w": "stages.",
+          "start": 1.72
+        },
+        {
+          "w": "Here",
+          "start": 2.4
+        },
+        {
+          "w": "are",
+          "start": 2.8
+        },
+        {
+          "w": "the",
+          "start": 2.92
+        },
+        {
+          "w": "two",
+          "start": 3.04
+        },
+        {
+          "w": "you'll",
+          "start": 3.2
+        },
+        {
+          "w": "meet",
+          "start": 3.48
+        },
+        {
+          "w": "most",
+          "start": 3.72
+        },
+        {
+          "w": "often.",
+          "start": 3.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "levels",
+      "display": "Lexical ambiguity is one word with two meanings, like \"bank\": the side of a river, or the place that keeps your money.",
+      "spoken": "Lexical ambiguity is one word with two meanings, like \"bank\": the side of a river, or the place that keeps your money.",
+      "textHash": "3cf11bdd6c80a3ab",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/861c09c2e4616605.wav",
+      "duration": 6.798,
+      "marks": {},
+      "words": [
+        {
+          "w": "Lexical",
+          "start": 0
+        },
+        {
+          "w": "ambiguity",
+          "start": 0.48
+        },
+        {
+          "w": "is",
+          "start": 1.2
+        },
+        {
+          "w": "one",
+          "start": 1.36
+        },
+        {
+          "w": "word",
+          "start": 1.64
+        },
+        {
+          "w": "with",
+          "start": 1.88
+        },
+        {
+          "w": "two",
+          "start": 2.08
+        },
+        {
+          "w": "meanings,",
+          "start": 2.32
+        },
+        {
+          "w": "like",
+          "start": 2.96
+        },
+        {
+          "w": "\"bank\":",
+          "start": 3.28
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "side",
+          "start": 4.08
+        },
+        {
+          "w": "of",
+          "start": 4.48
+        },
+        {
+          "w": "a",
+          "start": 4.6
+        },
+        {
+          "w": "river,",
+          "start": 4.72
+        },
+        {
+          "w": "or",
+          "start": 5.16
+        },
+        {
+          "w": "the",
+          "start": 5.32
+        },
+        {
+          "w": "place",
+          "start": 5.52
+        },
+        {
+          "w": "that",
+          "start": 5.76
+        },
+        {
+          "w": "keeps",
+          "start": 5.96
+        },
+        {
+          "w": "your",
+          "start": 6.28
+        },
+        {
+          "w": "money.",
+          "start": 6.44
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c22": {
+      "segment": "levels",
+      "display": "Syntactic ambiguity is one sentence with two structures, like \"I saw the man with the telescope\". Who has the telescope? Each stage clears up its own kind of ambiguity.",
+      "spoken": "Syntactic ambiguity is one sentence with two structures, like \"I saw the man with the telescope\". Who has the telescope? Each stage clears up its own kind of ambiguity.",
+      "textHash": "d598ebece663af84",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/357385b8119e7ce3.wav",
+      "duration": 10.501,
+      "marks": {
+        "verdict": 7.72
+      },
+      "words": [
+        {
+          "w": "Syntactic",
+          "start": 0
+        },
+        {
+          "w": "ambiguity",
+          "start": 0.64
+        },
+        {
+          "w": "is",
+          "start": 1.36
+        },
+        {
+          "w": "one",
+          "start": 1.56
+        },
+        {
+          "w": "sentence",
+          "start": 1.8
+        },
+        {
+          "w": "with",
+          "start": 2.32
+        },
+        {
+          "w": "two",
+          "start": 2.52
+        },
+        {
+          "w": "structures,",
+          "start": 2.76
+        },
+        {
+          "w": "like",
+          "start": 3.52
+        },
+        {
+          "w": "\"I",
+          "start": 3.84
+        },
+        {
+          "w": "saw",
+          "start": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.4
+        },
+        {
+          "w": "man",
+          "start": 4.56
+        },
+        {
+          "w": "with",
+          "start": 4.84
+        },
+        {
+          "w": "the",
+          "start": 5
+        },
+        {
+          "w": "telescope\".",
+          "start": 5.12
+        },
+        {
+          "w": "Who",
+          "start": 6.08
+        },
+        {
+          "w": "has",
+          "start": 6.36
+        },
+        {
+          "w": "the",
+          "start": 6.56
+        },
+        {
+          "w": "telescope?",
+          "start": 6.76
+        },
+        {
+          "w": "Each",
+          "start": 7.72
+        },
+        {
+          "w": "stage",
+          "start": 8.08
+        },
+        {
+          "w": "clears",
+          "start": 8.44
+        },
+        {
+          "w": "up",
+          "start": 8.88
+        },
+        {
+          "w": "its",
+          "start": 9.04
+        },
+        {
+          "w": "own",
+          "start": 9.2
+        },
+        {
+          "w": "kind",
+          "start": 9.44
+        },
+        {
+          "w": "of",
+          "start": 9.6
+        },
+        {
+          "w": "ambiguity.",
+          "start": 9.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. Which stage decides that \"bank\" means the side of a river?",
+      "spoken": "Time for a quick quiz. Which stage decides that \"bank\" means the side of a river?",
+      "textHash": "a83754f0009e36ef",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7eebd9763cf672d3.wav",
+      "duration": 4.805,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.6
+        },
+        {
+          "w": "quick",
+          "start": 0.88
+        },
+        {
+          "w": "quiz.",
+          "start": 1.16
+        },
+        {
+          "w": "Which",
+          "start": 1.44
+        },
+        {
+          "w": "stage",
+          "start": 1.8
+        },
+        {
+          "w": "decides",
+          "start": 2.24
+        },
+        {
+          "w": "that",
+          "start": 2.76
+        },
+        {
+          "w": "\"bank\"",
+          "start": 3
+        },
+        {
+          "w": "means",
+          "start": 3.4
+        },
+        {
+          "w": "the",
+          "start": 3.653
+        },
+        {
+          "w": "side",
+          "start": 3.907
+        },
+        {
+          "w": "of",
+          "start": 4.16
+        },
+        {
+          "w": "a",
+          "start": 4.28
+        },
+        {
+          "w": "river?",
+          "start": 4.4
+        }
+      ],
+      "matchScore": 0.692
+    },
+    "c24": {
+      "segment": "quiz",
+      "display": "Pause the video and pick one. Lexical, syntactic, semantic, or pragmatic?",
+      "spoken": "Pause the video and pick one. Lexical, syntactic, semantic, or pragmatic?",
+      "textHash": "a3480ecc531b8d3d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1304456bf06b4a60.wav",
+      "duration": 5.056,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.56
+        },
+        {
+          "w": "and",
+          "start": 0.84
+        },
+        {
+          "w": "pick",
+          "start": 1.04
+        },
+        {
+          "w": "one.",
+          "start": 1.36
+        },
+        {
+          "w": "Lexical,",
+          "start": 1.84
+        },
+        {
+          "w": "syntactic,",
+          "start": 2.64
+        },
+        {
+          "w": "semantic,",
+          "start": 3.52
+        },
+        {
+          "w": "or",
+          "start": 4.12
+        },
+        {
+          "w": "pragmatic?",
+          "start": 4.32
+        }
+      ],
+      "matchScore": 0.9,
+      "after": 3
+    },
+    "c25": {
+      "segment": "quiz",
+      "display": "The answer is semantic. Choosing the right meaning of a word is semantic analysis.",
+      "spoken": "The answer is semantic. Choosing the right meaning of a word is semantic analysis.",
+      "textHash": "d1da77759cfcd480",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cbffc64231b200c4.wav",
+      "duration": 5.082,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "answer",
+          "start": 0.2
+        },
+        {
+          "w": "is",
+          "start": 0.64
+        },
+        {
+          "w": "semantic.",
+          "start": 0.88
+        },
+        {
+          "w": "Choosing",
+          "start": 1.68
+        },
+        {
+          "w": "the",
+          "start": 2.24
+        },
+        {
+          "w": "right",
+          "start": 2.4
+        },
+        {
+          "w": "meaning",
+          "start": 2.64
+        },
+        {
+          "w": "of",
+          "start": 2.96
+        },
+        {
+          "w": "a",
+          "start": 3.08
+        },
+        {
+          "w": "word",
+          "start": 3.24
+        },
+        {
+          "w": "is",
+          "start": 3.52
+        },
+        {
+          "w": "semantic",
+          "start": 3.72
+        },
+        {
+          "w": "analysis.",
+          "start": 4.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "recap",
+      "display": "Let's recap. NLP understands text in layers, like a staircase.",
+      "spoken": "Let's recap. N L P understands text in layers, like a staircase.",
+      "textHash": "2351aa0ee7bf09cd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e16a7722f8be707d.wav",
+      "duration": 4.449,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.613
+        },
+        {
+          "w": "NLP",
+          "start": 1.227
+        },
+        {
+          "w": "understands",
+          "start": 1.84
+        },
+        {
+          "w": "text",
+          "start": 2.48
+        },
+        {
+          "w": "in",
+          "start": 2.72
+        },
+        {
+          "w": "layers,",
+          "start": 2.96
+        },
+        {
+          "w": "like",
+          "start": 3.44
+        },
+        {
+          "w": "a",
+          "start": 3.64
+        },
+        {
+          "w": "staircase.",
+          "start": 3.76
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c27": {
+      "segment": "recap",
+      "display": "The five steps are lexical, morphological, syntactic, semantic, and pragmatic.",
+      "spoken": "The five steps are lexical, morphological, syntactic, semantic, and pragmatic.",
+      "textHash": "c4fbec7479567bd0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/10cb280f13579896.wav",
+      "duration": 5.072,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "five",
+          "start": 0.16
+        },
+        {
+          "w": "steps",
+          "start": 0.4
+        },
+        {
+          "w": "are",
+          "start": 0.8
+        },
+        {
+          "w": "lexical,",
+          "start": 0.96
+        },
+        {
+          "w": "morphological,",
+          "start": 1.56
+        },
+        {
+          "w": "syntactic,",
+          "start": 2.6
+        },
+        {
+          "w": "semantic,",
+          "start": 3.48
+        },
+        {
+          "w": "and",
+          "start": 4.12
+        },
+        {
+          "w": "pragmatic.",
+          "start": 4.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "recap",
+      "display": "Each stage clears up its own kind of ambiguity.",
+      "spoken": "Each stage clears up its own kind of ambiguity.",
+      "textHash": "f8243aae636b3da5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/307e2f18e21737ee.wav",
+      "duration": 2.613,
+      "marks": {},
+      "words": [
+        {
+          "w": "Each",
+          "start": 0
+        },
+        {
+          "w": "stage",
+          "start": 0.32
+        },
+        {
+          "w": "clears",
+          "start": 0.68
+        },
+        {
+          "w": "up",
+          "start": 1.08
+        },
+        {
+          "w": "its",
+          "start": 1.24
+        },
+        {
+          "w": "own",
+          "start": 1.4
+        },
+        {
+          "w": "kind",
+          "start": 1.6
+        },
+        {
+          "w": "of",
+          "start": 1.76
+        },
+        {
+          "w": "ambiguity.",
+          "start": 1.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "recap",
+      "display": "And a mistake on a low step travels up to every step above it.",
+      "spoken": "And a mistake on a low step travels up to every step above it.",
+      "textHash": "1b46f9ff6bcbfae7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/502f22530f18a644.wav",
+      "duration": 3.413,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.12
+        },
+        {
+          "w": "mistake",
+          "start": 0.24
+        },
+        {
+          "w": "on",
+          "start": 0.68
+        },
+        {
+          "w": "a",
+          "start": 0.8
+        },
+        {
+          "w": "low",
+          "start": 0.96
+        },
+        {
+          "w": "step",
+          "start": 1.2
+        },
+        {
+          "w": "travels",
+          "start": 1.6
+        },
+        {
+          "w": "up",
+          "start": 2.12
+        },
+        {
+          "w": "to",
+          "start": 2.28
+        },
+        {
+          "w": "every",
+          "start": 2.44
+        },
+        {
+          "w": "step",
+          "start": 2.68
+        },
+        {
+          "w": "above",
+          "start": 2.96
+        },
+        {
+          "w": "it.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "Next lesson: Tokenization. How do we cut text into units a model can use?",
+      "spoken": "Next lesson: Tokenization. How do we cut text into units a model can use?",
+      "textHash": "97ada1eaed8b5eae",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bff42314c6e8a230.wav",
+      "duration": 4.973,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.307
+        },
+        {
+          "w": "lesson:",
+          "start": 0.613
+        },
+        {
+          "w": "Tokenization.",
+          "start": 0.92
+        },
+        {
+          "w": "How",
+          "start": 2.12
+        },
+        {
+          "w": "do",
+          "start": 2.4
+        },
+        {
+          "w": "we",
+          "start": 2.56
+        },
+        {
+          "w": "cut",
+          "start": 2.76
+        },
+        {
+          "w": "text",
+          "start": 2.96
+        },
+        {
+          "w": "into",
+          "start": 3.32
+        },
+        {
+          "w": "units",
+          "start": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.88
+        },
+        {
+          "w": "model",
+          "start": 3.96
+        },
+        {
+          "w": "can",
+          "start": 4.36
+        },
+        {
+          "w": "use?",
+          "start": 4.6
+        }
+      ],
+      "matchScore": 0.818
+    }
+  }
+}

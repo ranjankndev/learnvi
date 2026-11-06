@@ -8,7 +8,12 @@ Change a title in JSON or re-record one paragraph, and rebuild: only what change
 
 Plan and architecture: [`docs/plan.html`](docs/plan.html).
 
-**Status: Phases 1–4 done:** audio track, visual engine, publishing package and review studio. Next: the remaining episodes.
+**Status:** audio track, visual engine, publishing package, review studio, multiple series, a general-purpose
+scene kit, and an optional AI drafting step. Two series: `press-enter` (custom scenes) and `nlp-basics`
+(built entirely from the scene kit).
+
+**Does it call AI services?** Only `press draft`, and only when you run it. Everything else (voice, word
+timing, visuals, rendering, review) runs on your machine with no API calls and no per-use cost.
 
 ## Setup (once per machine)
 
@@ -22,6 +27,52 @@ press setup                             # downloads the offline voice (Kokoro) a
 ```
 
 On Windows, if `python` is not the right interpreter, set `PRESS_PYTHON` to its full path.
+
+## Series
+
+Each series lives in `series/<id>/` with its own `config/`, `episodes/` and `takes/`. The engine, models,
+cache and outputs (`out/<series>/<episode>/`) are shared.
+
+```bash
+press series                 # list series; ▶ marks the current one
+press series nlp-basics      # make it the default
+press -s press-enter status ep03   # or pick one per command
+```
+
+To start a new series, copy `series/nlp-basics/config/` to `series/<new-id>/config/` and edit `series.json`
+(title, badge, template, episode list).
+
+## Making a new episode
+
+Two routes, both ending in the same files:
+
+**By hand (no AI):** add the episode to `series.json → episodes`, run `press new <id>`, then edit
+`episode.json` (which scenes, what they show) and `script.md` (what is said). `press check` tells you
+exactly what's wrong, field by field.
+
+**With `press draft` (one AI call):** add the episode to `series.json → episodes`, write a short brief,
+and run:
+
+```bash
+press draft u1-03 --text "Cover: what classification is, spam vs not spam, labelled examples, precision vs recall in plain words."
+# or: press draft u1-03 --brief brief.md        (--dry-run prints the prompt and sends nothing)
+```
+
+It writes `episode.json`, `script.md` and a `fact-check.md` list, validated like a hand-written
+episode. If validation finds problems, a second call fixes them (never more than two calls). Model,
+effort, length and house style are in `series.json → draft`. It needs `ANTHROPIC_API_KEY` (or
+`ant auth login`). The draft is a starting point: read it, fix it, tick the fact-check list.
+
+## Scene kit
+
+General-purpose scenes in `remotion/kit/`, usable by any series with JSON alone:
+`TitleCard`, `BigIdea`, `Bullets`, `Steps`, `Compare`, `Definition`, `Table`, `BarChart`, `Quiz`,
+`Chat`, `Timeline`, `Recap`. Each has a spec in `remotion/kit/specs.ts` (fields, length limits, an
+example), which `press check` validates against and `press draft` shows to the model.
+
+Timing is automatic: a scene that reveals a list shows one item per narrated paragraph (an extra first
+paragraph can introduce it). To pin an item to a word instead, mark the word in the script
+(`{@name}`) and give the item `"at": "c07@name"`.
 
 ## Everyday commands
 
