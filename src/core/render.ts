@@ -39,7 +39,7 @@ function codeHash(root: string) {
 export function segmentKey(tl: Timeline, seg: TimelineSegment, code: string) {
   const rel = (t: number) => Math.round((t - seg.start) * tl.fps);
   const cues = seg.cues.map((c) => ({ id: c.id, text: c.text, s: rel(c.start), e: rel(c.end), m: Object.fromEntries(Object.entries(c.marks).map(([k, v]) => [k, rel(v)])), w: c.words.map((w) => [w.w, rel(w.start)]) }));
-  return sha(code, seg.id, seg.component, seg.props, seg.durationInFrames, cues, tl.video, tl.series, tl.stop, tl.fps);
+  return sha(code, seg.id, seg.component, seg.props, seg.durationInFrames, cues, tl.video, tl.badge, tl.series, tl.stop, tl.fps);
 }
 
 let bundled: Promise<string> | null = null;
@@ -57,9 +57,9 @@ async function composition(serveUrl: string, id: string, inputProps: Record<stri
 
 /** One frame of one segment, as a PNG: for quick reviews. */
 export async function still(ctx: EpisodeCtx, segId: string, frame: number, output: string, log: (s: string) => void) {
-  const serveUrl = await getBundle(ctx.project.root, log);
-  const inputProps = { episode: ctx.meta.id, segment: segId, muted: true };
-  const comp = await composition(serveUrl, `${ctx.meta.id}-${segId}`, inputProps);
+  const serveUrl = await getBundle(ctx.project.code, log);
+  const inputProps = { episode: ctx.key, segment: segId, muted: true };
+  const comp = await composition(serveUrl, `${ctx.key}-${segId}`, inputProps);
   fs.mkdirSync(path.dirname(output), { recursive: true });
   await renderStill({ composition: comp, serveUrl, output, frame: Math.max(0, Math.min(frame, comp.durationInFrames - 1)), inputProps, browserExecutable: browserExecutable(), imageFormat: "png" });
   return output;
@@ -69,8 +69,8 @@ export interface RenderReport { rendered: string[]; reused: string[]; output: st
 
 export async function renderEpisode(ctx: EpisodeCtx, opts: { only?: string[]; force?: boolean }, log: (s: string) => void): Promise<RenderReport> {
   const t0 = Date.now();
-  const root = ctx.project.root, tl = readTimeline(ctx);
-  const segDir = path.join(root, ".cache", "segments", ctx.meta.id);
+  const root = ctx.project.code, tl = readTimeline(ctx);
+  const segDir = path.join(root, ".cache", "segments", ctx.key);
   fs.mkdirSync(segDir, { recursive: true });
   const code = codeHash(root);
   const plan = tl.segments.map((s) => ({ seg: s, file: path.join(segDir, `${s.id}-${segmentKey(tl, s, code)}.mp4`) }));
@@ -79,8 +79,8 @@ export async function renderEpisode(ctx: EpisodeCtx, opts: { only?: string[]; fo
   if (todo.length) {
     const serveUrl = await getBundle(root, log);
     for (const { seg, file } of todo) {
-      const inputProps = { episode: ctx.meta.id, segment: seg.id, muted: true };
-      const comp = await composition(serveUrl, `${ctx.meta.id}-${seg.id}`, inputProps);
+      const inputProps = { episode: ctx.key, segment: seg.id, muted: true };
+      const comp = await composition(serveUrl, `${ctx.key}-${seg.id}`, inputProps);
       let last = -10;
       await renderMedia({
         composition: comp, serveUrl, codec: "h264", crf: 18, outputLocation: file + ".part.mp4", inputProps, muted: true,

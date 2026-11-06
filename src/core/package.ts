@@ -72,17 +72,17 @@ export function writeAudioOnly(ctx: EpisodeCtx, tl: Timeline) {
     s.cues.forEach((c, i) => {
       if (prevEnd !== null) t += Math.min(c.start - prevEnd, maxPause);
       if (i === 0) marks.push({ t: marks.length ? t : 0, title: s.title });
-      clips.push({ file: path.join(ctx.project.root, lock.cues[c.id].audio), start: +t.toFixed(3) });
+      clips.push({ file: path.join(ctx.project.code, lock.cues[c.id].audio), start: +t.toFixed(3) });
       t += c.end - c.start; prevEnd = c.end;
     });
   }
   const total = t + 1.5;
-  const dir = outDir(ctx), wav = path.join(ctx.project.root, ".cache", `${ctx.meta.id}-audio-only.wav`);
+  const dir = outDir(ctx), wav = path.join(ctx.project.code, ".cache", `${ctx.key}-audio-only.wav`);
   mixAt(clips, total, wav, ctx.project.series.audio.sampleRate);
   const ms = (x: number) => Math.round(x * 1000);
   const meta = [";FFMETADATA1", `title=${tl.title}`, `artist=${tl.video.brand}`, `album=${tl.series.title}`, `track=${tl.stop.number}`, ""]
     .concat(marks.flatMap((m, i) => ["[CHAPTER]", "TIMEBASE=1/1000", `START=${ms(m.t)}`, `END=${ms(marks[i + 1]?.t ?? total)}`, `title=${m.title}`, ""])).join("\n");
-  const metaFile = path.join(ctx.project.root, ".cache", `${ctx.meta.id}-chapters.txt`);
+  const metaFile = path.join(ctx.project.code, ".cache", `${ctx.key}-chapters.txt`);
   fs.writeFileSync(metaFile, meta);
   const out = path.join(dir, `${ctx.meta.id}-audio-only.mp3`);
   ff(["-i", wav, "-i", metaFile, "-map", "0:a", "-map_metadata", "1", "-map_chapters", "1", "-c:a", "libmp3lame", "-b:a", bitrate, "-id3v2_version", "3", out]);
@@ -90,20 +90,20 @@ export function writeAudioOnly(ctx: EpisodeCtx, tl: Timeline) {
 }
 
 export async function renderShorts(ctx: EpisodeCtx, tl: Timeline, log: (s: string) => void) {
-  const root = ctx.project.root, dir = path.join(outDir(ctx), "shorts");
-  const cache = path.join(root, ".cache", "shorts", ctx.meta.id);
+  const root = ctx.project.code, dir = path.join(outDir(ctx), "shorts");
+  const cache = path.join(root, ".cache", "shorts", ctx.key);
   fs.mkdirSync(dir, { recursive: true }); fs.mkdirSync(cache, { recursive: true });
   const code = sha(fs.readFileSync(path.join(root, "remotion", "Short.tsx"), "utf8"));
   const results: { id: string; file: string; seconds: number; rendered: boolean; warning?: string }[] = [];
   for (const seg of tl.segments.filter((s) => s.short)) {
-    const key = sha(code, segmentKey(tl, seg, code), seg.shortTitle, tl.shorts);
+    const key = sha(code, segmentKey(tl, seg, code), seg.shortTitle, tl.shorts, tl.badge);
     const cached = path.join(cache, `${seg.id}-${key}.mp4`);
     const out = path.join(dir, `${ctx.meta.id}-short-${seg.id}.mp4`);
     const seconds = seg.durationInFrames / tl.fps;
     let rendered = false;
     if (!fs.existsSync(cached)) {
       const serveUrl = await getBundle(root, log);
-      const id = `${ctx.meta.id}-short-${seg.id}`, inputProps = { episode: ctx.meta.id, segment: seg.id };
+      const id = `${ctx.key}-short-${seg.id}`, inputProps = { episode: ctx.key, segment: seg.id };
       const composition = await selectComposition({ serveUrl, id, inputProps, browserExecutable: browserExecutable() });
       log(`rendering Short: ${seg.id}`);
       await renderMedia({ composition, serveUrl, codec: "h264", crf: 18, outputLocation: cached + ".part.mp4", inputProps, imageFormat: "jpeg", jpegQuality: 92, browserExecutable: browserExecutable(), audioBitrate: "160k" });
@@ -118,8 +118,8 @@ export async function renderShorts(ctx: EpisodeCtx, tl: Timeline, log: (s: strin
 }
 
 export async function renderThumbnail(ctx: EpisodeCtx, log: (s: string) => void) {
-  const serveUrl = await getBundle(ctx.project.root, log);
-  const id = `${ctx.meta.id}-thumbnail`, inputProps = { episode: ctx.meta.id };
+  const serveUrl = await getBundle(ctx.project.code, log);
+  const id = `${ctx.key}-thumbnail`, inputProps = { episode: ctx.key };
   const composition = await selectComposition({ serveUrl, id, inputProps, browserExecutable: browserExecutable() });
   const out = path.join(outDir(ctx), `${ctx.meta.id}-thumbnail.jpg`);
   await renderStill({ composition, serveUrl, output: out, frame: 0, inputProps, imageFormat: "jpeg", jpegQuality: 90, browserExecutable: browserExecutable() });

@@ -39,8 +39,9 @@ export interface LockCue {
 }
 export interface Lock { version: 1; episode: string; cues: Record<string, LockCue>; order: string[] }
 
-const rel = (ctx: EpisodeCtx, p: string) => path.relative(ctx.project.root, p).split(path.sep).join("/");
-const cacheDir = (ctx: EpisodeCtx, kind: string) => path.join(ctx.project.root, ".cache", kind);
+// audio paths in the lock are relative to the engine folder, where the shared cache lives
+const rel = (ctx: EpisodeCtx, p: string) => path.relative(ctx.project.code, p).split(path.sep).join("/");
+const cacheDir = (ctx: EpisodeCtx, kind: string) => path.join(ctx.project.code, ".cache", kind);
 
 export function readScript(ctx: EpisodeCtx) {
   return parseScript(ctx.scriptFile, templateContext(ctx), ctx.project.lexicon);
@@ -133,7 +134,7 @@ export function buildAudio(ctx: EpisodeCtx, log: (s: string) => void = console.l
   if (tts.length) {
     log(`voicing ${tts.length} cue(s) with Kokoro…`);
     fs.mkdirSync(cacheDir(ctx, "tts"), { recursive: true });
-    const r = runWorker(root, tts);
+    const r = runWorker(ctx.project.code, tts);
     const bad = Object.entries(r).filter(([, v]) => !v.ok);
     if (bad.length) throw new Error("TTS failed: " + bad.map(([k, v]) => `${k}: ${v.error}`).join("; "));
     report.tts = tts.length;
@@ -149,7 +150,7 @@ export function buildAudio(ctx: EpisodeCtx, log: (s: string) => void = console.l
   if (al.length) {
     log(`aligning ${al.length} cue(s)…`);
     fs.mkdirSync(cacheDir(ctx, "align"), { recursive: true });
-    const r = runWorker(root, al);
+    const r = runWorker(ctx.project.code, al);
     const bad = Object.entries(r).filter(([, v]) => !v.ok);
     if (bad.length) throw new Error("Alignment failed: " + bad.map(([k, v]) => `${k}: ${v.error}`).join("; "));
     report.aligned = al.length;

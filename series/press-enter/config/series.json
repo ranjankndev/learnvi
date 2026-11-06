@@ -10,7 +10,11 @@
     "width": 1920,
     "height": 1080,
     "burnCaptions": true,
-    "brand": "learnvi.in"
+    "brand": "learnvi.in",
+    "badge": [
+      "STOP {{episode.number|pad2}}",
+      "{{stop.name|upper}}"
+    ]
   },
   "shorts": {
     "width": 1080,

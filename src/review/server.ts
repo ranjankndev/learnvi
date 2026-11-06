@@ -74,7 +74,8 @@ function runJob(root: string, args: string[]) {
   if (job) throw new Error(`"${job.cmd}" is still running`);
   job = { cmd: `press ${args.join(" ")}`, started: Date.now() };
   send("job", { state: "start", cmd: job.cmd });
-  const p = spawn(process.execPath, [path.join(root, "bin", "press.mjs"), ...args], { cwd: root, env: { ...process.env, FORCE_COLOR: "0" } });
+  const code = loadProject(root).code;
+  const p = spawn(process.execPath, [path.join(code, "bin", "press.mjs"), "-s", path.basename(root), ...args], { cwd: code, env: { ...process.env, FORCE_COLOR: "0" } });
   const line = (b: Buffer) => b.toString().split("\n").filter((l) => l.trim() && !/memory|cgroup|docker/i.test(l)).forEach((l) => send("log", l.replace(/\x1b\[[0-9;]*m/g, "")));
   p.stdout.on("data", line); p.stderr.on("data", line);
   p.on("close", (code) => { send("job", { state: code === 0 ? "done" : "failed", cmd: job!.cmd, seconds: (Date.now() - job!.started) / 1000 }); job = null; });
@@ -109,11 +110,14 @@ export function startReviewServer(root: string, port: number) {
         res.write(`event: hello\ndata: ${JSON.stringify({ job: job?.cmd ?? null })}\n\n`);
         clients.add(res); req.on("close", () => clients.delete(res)); return;
       }
-      if (parts[0] === "api" && parts[1] === "episode" && req.method === "GET") return json(res, 200, episodeState(root, parts[2] ?? "ep03"));
+      if (parts[0] === "api" && parts[1] === "episode" && req.method === "GET") {
+        const first = loadProject(root).series.episodes.find((e) => fs.existsSync(path.join(root, "episodes", e.folder ?? e.id, "episode.json")));
+        return json(res, 200, episodeState(root, parts[2] || first?.id || "ep01"));
+      }
       if (parts[0] === "audio") {
         const ctx = loadEpisode(loadProject(root), parts[1]);
         const c = readLock(ctx).cues[parts[2]];
-        return serveFile(req, res, path.join(root, c.audio), "audio/wav");
+        return serveFile(req, res, path.join(ctx.project.code, c.audio), "audio/wav");
       }
       if (parts[0] === "take") {
         const ctx = loadEpisode(loadProject(root), parts[1]);

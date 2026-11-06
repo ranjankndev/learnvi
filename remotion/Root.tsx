@@ -24,7 +24,7 @@ const useFonts = () => {
 /** The whole episode: every segment in sequence, plus the narration. */
 const Episode: React.FC<{ episode: string; muted?: boolean }> = ({ episode, muted }) => {
   useFonts();
-  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  const tl = TIMELINES.find((t) => t.key === episode)!;
   return (
     <AbsoluteFill>
       {!muted && <Audio src={staticFile(`${episode}/narration.wav`)} />}
@@ -40,7 +40,7 @@ const Episode: React.FC<{ episode: string; muted?: boolean }> = ({ episode, mute
 /** One segment on its own: what the renderer caches, and what you preview in the studio. */
 const Segment: React.FC<{ episode: string; segment: string; muted?: boolean }> = ({ episode, segment, muted }) => {
   useFonts();
-  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  const tl = TIMELINES.find((t) => t.key === episode)!;
   const seg = tl.segments.find((s) => s.id === segment)!;
   return (
     <AbsoluteFill>
@@ -53,7 +53,7 @@ const Segment: React.FC<{ episode: string; segment: string; muted?: boolean }> =
 /** A segment as a vertical Short, with its own slice of the narration. */
 const Short: React.FC<{ episode: string; segment: string }> = ({ episode, segment }) => {
   useFonts();
-  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  const tl = TIMELINES.find((t) => t.key === episode)!;
   const seg = tl.segments.find((s) => s.id === segment)!;
   return (
     <AbsoluteFill>
@@ -65,24 +65,24 @@ const Short: React.FC<{ episode: string; segment: string }> = ({ episode, segmen
 
 const Thumb: React.FC<{ episode: string }> = ({ episode }) => {
   useFonts();
-  return <Thumbnail tl={TIMELINES.find((t) => t.episode === episode)!} />;
+  return <Thumbnail tl={TIMELINES.find((t) => t.key === episode)!} />;
 };
 
 export const Root: React.FC = () => (
   <>
     {TIMELINES.map((tl: Timeline) => (
-      <Folder key={tl.episode} name={tl.episode}>
-        <Composition id={tl.episode} component={Episode} fps={tl.fps} width={tl.video.width} height={tl.video.height}
-          durationInFrames={tl.durationInFrames} defaultProps={{ episode: tl.episode, muted: false }} />
+      <Folder key={tl.key} name={tl.key}>
+        <Composition id={tl.key} component={Episode} fps={tl.fps} width={tl.video.width} height={tl.video.height}
+          durationInFrames={tl.durationInFrames} defaultProps={{ episode: tl.key, muted: false }} />
         {tl.segments.map((s) => (
-          <Composition key={s.id} id={`${tl.episode}-${s.id}`} component={Segment} fps={tl.fps} width={tl.video.width} height={tl.video.height}
-            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.episode, segment: s.id, muted: false }} />
+          <Composition key={s.id} id={`${tl.key}-${s.id}`} component={Segment} fps={tl.fps} width={tl.video.width} height={tl.video.height}
+            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.key, segment: s.id, muted: false }} />
         ))}
         {tl.segments.filter((s) => s.short).map((s) => (
-          <Composition key={"short-" + s.id} id={`${tl.episode}-short-${s.id}`} component={Short} fps={tl.fps} width={tl.shorts.width} height={tl.shorts.height}
-            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.episode, segment: s.id }} />
+          <Composition key={"short-" + s.id} id={`${tl.key}-short-${s.id}`} component={Short} fps={tl.fps} width={tl.shorts.width} height={tl.shorts.height}
+            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.key, segment: s.id }} />
         ))}
-        <Composition id={`${tl.episode}-thumbnail`} component={Thumb} fps={tl.fps} width={1280} height={720} durationInFrames={1} defaultProps={{ episode: tl.episode }} />
+        <Composition id={`${tl.key}-thumbnail`} component={Thumb} fps={tl.fps} width={1280} height={720} durationInFrames={1} defaultProps={{ episode: tl.key }} />
       </Folder>
     ))}
   </>

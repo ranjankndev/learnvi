@@ -23,7 +23,7 @@ const Chrome: React.FC = () => {
         <span style={{ color: C.teal }}>●</span> {tl.video.brand}
       </div>
       <div style={{ position: "absolute", right: 110, top: 34, fontFamily: F.mono, fontSize: 22, letterSpacing: 4, color: C.mute, border: `2px solid ${C.line}`, borderRadius: 40, padding: "8px 22px" }}>
-        STOP {String(tl.stop.number).padStart(2, "0")} · <span style={{ color: C.sun }}>{tl.stop.name.toUpperCase()}</span>
+        {tl.badge[0]} · <span style={{ color: C.sun }}>{tl.badge[1]}</span>
       </div>
     </>
   );

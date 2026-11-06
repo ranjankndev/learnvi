@@ -3,7 +3,7 @@ process.stdout.on("error", (e: NodeJS.ErrnoException) => { if (e.code === "EPIPE
 import path from "node:path";
 import { spawn, spawnSync } from "node:child_process";
 import { Command } from "commander";
-import { ConfigError, loadEpisode, loadProject, findRoot } from "../core/project.js";
+import { CODE_ROOT, ConfigError, loadEpisode, loadProject, findRoot, listSeries, setDefaultSeries } from "../core/project.js";
 import { assignIds } from "../core/script.js";
 import { checkAll } from "../core/check.js";
 import { buildAudio, importTake, loadTakes, plan, readLock, readScript, selectTake, type CueState } from "../core/audio/pipeline.js";
@@ -13,7 +13,9 @@ import { clock, packageEpisode } from "../core/package.js";
 import { startReviewServer } from "../review/server.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
-const ep = (ref: string) => loadEpisode(loadProject(), ref);
+/** the series folder this command works on (see `press series`) */
+const root = () => findRoot(program.opts().series);
+const ep = (ref: string) => loadEpisode(loadProject(root()), ref);
 const fmt = (s: number) => `${Math.floor(s / 60)}:${(s % 60).toFixed(1).padStart(4, "0")}`;
 const clip = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
 
@@ -22,11 +24,22 @@ const STATUS: Record<CueState["status"], string> = {
   "stale-take": `${C.y}stale take${C.x}`, "missing-take": `${C.r}missing take${C.x}`,
 };
 
-const program = new Command().name("press").description("Press Enter Studio — config-driven video production");
+const program = new Command().name("press").description("learnvi studio: config-driven video production")
+  .option("-s, --series <id>", "which series (folder under series/); see `press series`");
+
+program.command("series [id]").description("list the series, or set the default one")
+  .action((id?: string) => {
+    if (id) { setDefaultSeries(id); console.log(`${C.g}✓${C.x} default series is now ${id}`); return; }
+    let cur = ""; try { cur = path.basename(root()); } catch { /* none chosen */ }
+    for (const s of listSeries()) {
+      const p = loadProject(path.join(CODE_ROOT, "series", s));
+      console.log(`${s === cur ? "▶" : " "} ${s.padEnd(16)} ${p.series.title}  ${C.d}(${p.series.episodes.length} episodes)${C.x}`);
+    }
+  });
 
 program.command("check [episode]").description("validate config, template and scripts")
   .action((e?: string) => {
-    const f = checkAll(loadProject(), e);
+    const f = checkAll(loadProject(root()), e);
     for (const x of f) {
       const tag = x.level === "error" ? `${C.r}error${C.x}` : x.level === "warn" ? `${C.y}warn ${C.x}` : `${C.d}info ${C.x}`;
       console.log(`${tag}  ${C.B}${x.where}${C.x}  ${x.msg}`);
@@ -174,21 +187,20 @@ program.command("package <episode>").description("everything to publish: video, 
 program.command("review [episode]").description("open the review studio: listen, record retakes, edit text, comment, approve")
   .option("-p, --port <port>", "port", "4310")
   .action((e: string | undefined, o: { port: string }) => {
-    const root = findRoot();
-    startReviewServer(root, +o.port);
+    startReviewServer(root(), +o.port);
     console.log(`${C.g}✓${C.x} review studio running at ${C.B}http://localhost:${o.port}/${e ? `?ep=${e}` : ""}${C.x}  (Ctrl+C to stop)`);
   });
 
 program.command("studio").description("open the Remotion preview studio; edits to config/ and episodes/ rebuild the timeline live")
   .action(() => {
-    const root = findRoot();
+    const series = root();
     let timer: NodeJS.Timeout | null = null, busy = false;
     const rebuild = () => {
       if (busy) return; busy = true;
       try {
-        const p = loadProject(root);
+        const p = loadProject(series);
         for (const m of p.series.episodes) {
-          if (!fs.existsSync(path.join(root, "episodes", m.folder ?? m.id, "episode.json"))) continue;
+          if (!fs.existsSync(path.join(series, "episodes", m.folder ?? m.id, "episode.json"))) continue;
           const c = loadEpisode(p, m.id);
           const { lock } = buildAudio(c, (s) => console.log(`${C.d}[press]${C.x} ${s}`));
           writeTimelineOutputs(c, buildTimeline(c, lock));
@@ -198,30 +210,29 @@ program.command("studio").description("open the Remotion preview studio; edits t
       busy = false;
     };
     for (const d of ["config", "episodes", "takes"]) {
-      const dir = path.join(root, d);
+      const dir = path.join(series, d);
       if (fs.existsSync(dir)) fs.watch(dir, { recursive: true }, (_ev, f) => {
-        if (!f || /audio\.lock\.json$|takes\.json$/.test(f)) return;
+        if (!f || /audio\.lock\.json$|takes\.json$|review\.json$/.test(f)) return;
         if (timer) clearTimeout(timer);
         timer = setTimeout(rebuild, 400);
       });
     }
     rebuild();
     // non-blocking, so the file watcher above keeps running while the studio is open
-    const child = spawn(process.platform === "win32" ? "npx.cmd" : "npx", ["remotion", "studio"], { cwd: root, stdio: "inherit", shell: process.platform === "win32" });
+    const child = spawn(process.platform === "win32" ? "npx.cmd" : "npx", ["remotion", "studio"], { cwd: CODE_ROOT, stdio: "inherit", shell: process.platform === "win32" });
     child.on("exit", (code) => process.exit(code ?? 0));
   });
 
 program.command("setup").description("download the offline voice and alignment models (once per machine)")
   .action(() => {
-    const root = findRoot();
     const py = process.env.PRESS_PYTHON || (process.platform === "win32" ? "python" : "python3");
-    const r = spawnSync(py, [path.join(root, "py", "setup_models.py")], { stdio: "inherit" });
+    const r = spawnSync(py, [path.join(CODE_ROOT, "py", "setup_models.py")], { stdio: "inherit" });
     process.exitCode = r.status ?? 1;
   });
 
 program.command("new <episode>").description("start an episode from the series template")
   .action((e: string) => {
-    const p = loadProject();
+    const p = loadProject(root());
     const meta = p.series.episodes.find((x) => x.id === e);
     if (!meta) throw new ConfigError(`Add "${e}" to series.json → episodes first.`);
     const dir = path.join(p.root, "episodes", meta.folder ?? meta.id);

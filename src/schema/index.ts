@@ -1,8 +1,7 @@
 import { z } from "zod";
 
-/** Segment kinds the standard episode template knows about. */
-export const SEGMENT_KINDS = ["passport", "hook", "routeMap", "core", "tryIt", "blooper", "myth", "useIt", "recapNext"] as const;
-export const SegmentKind = z.enum(SEGMENT_KINDS);
+/** Segment kinds are defined per series, by its template (e.g. passport, hook, core, quiz, recap). */
+export const SegmentKind = z.string().regex(/^[a-z][\w-]*$/i, "use letters, digits, - or _");
 
 const Voice = z.object({
   provider: z.literal("kokoro").default("kokoro"),
@@ -26,6 +25,8 @@ export const SeriesSchema = z.object({
     burnCaptions: z.boolean().default(true),
     /** shown in the corner of every frame */
     brand: z.string().default("learnvi.in"),
+    /** top-right badge: [label, highlighted part], templates allowed */
+    badge: z.tuple([z.string(), z.string()]).default(["EPISODE {{episode.number|pad2}}", "{{episode.title|upper}}"]),
   }).default({}),
   shorts: z.object({
     width: z.number().int().default(1080),
@@ -75,14 +76,16 @@ export const SeriesSchema = z.object({
     id: z.string(),
     number: z.number().int(),
     title: z.string(),
-    stop: z.string(),
-    stamp: z.string(),
-    topic: z.string(),
-    question: z.string(),
-    tryIt: z.string(),
-    useIt: z.string(),
+    /** one-line question the episode answers */
+    question: z.string().default(""),
     folder: z.string().optional(),
-  })),
+    // travel-series fields (press-enter); other series can leave them out
+    stop: z.string().optional(),
+    stamp: z.string().optional(),
+    topic: z.string().optional(),
+    tryIt: z.string().optional(),
+    useIt: z.string().optional(),
+  }).passthrough()),
 });
 export type Series = z.infer<typeof SeriesSchema>;
 export type EpisodeMeta = Series["episodes"][number];

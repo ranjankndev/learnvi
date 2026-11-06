@@ -11,8 +11,12 @@ export interface TimelineSegment {
   start: number; end: number; startFrame: number; durationInFrames: number; cues: TimelineCue[];
 }
 export interface Timeline {
+  /** unique id across series ("press-enter-ep03"): compositions, public files and caches use it */
+  key: string; seriesId: string;
   episode: string; title: string; fps: number; duration: number; durationInFrames: number;
   video: { width: number; height: number; burnCaptions: boolean; brand: string };
+  /** top-right badge, already filled in: [label, highlighted part] */
+  badge: [string, string];
   series: { title: string; subtitle: string; runningPrompt: string; stops: { id: string; number: number; name: string; stamp: string; topic: string }[] };
   stop: { number: number; name: string; stamp: string };
   shorts: { width: number; height: number; maxSeconds: number; cta: string };
@@ -91,27 +95,30 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
     for (const r of used) if (!(r in refs)) throw new ConfigError(`${seg.id}.props points at "${r}", which is not a cue or mark in script.md`);
   }
   return {
-    episode: ctx.meta.id, title: ctx.meta.title, fps, duration, durationInFrames: total, video: series.video,
+    key: ctx.key, seriesId: ctx.project.id,
+    episode: ctx.meta.id, title: ctx.meta.title, fps, duration, durationInFrames: total,
+    video: { width: series.video.width, height: series.video.height, burnCaptions: series.video.burnCaptions, brand: series.video.brand },
+    badge: [fillTemplate(series.video.badge[0], vars, "video.badge"), fillTemplate(series.video.badge[1], vars, "video.badge")],
     series: { title: series.title, subtitle: series.subtitle, runningPrompt: series.runningPrompt,
-      stops: series.episodes.map((e) => ({ id: e.id, number: e.number, name: e.stop, stamp: e.stamp, topic: e.topic })) },
-    stop: { number: ctx.meta.number, name: ctx.meta.stop, stamp: ctx.meta.stamp },
+      stops: series.episodes.map((e) => ({ id: e.id, number: e.number, name: e.stop ?? e.title, stamp: e.stamp ?? (e.stop ?? e.title).toUpperCase(), topic: e.topic ?? "" })) },
+    stop: { number: ctx.meta.number, name: ctx.meta.stop ?? ctx.meta.title, stamp: ctx.meta.stamp ?? (ctx.meta.stop ?? ctx.meta.title).toUpperCase() },
     shorts: { ...series.shorts, cta: fillTemplate(series.shorts.cta, vars, "series.shorts.cta") },
     thumbnail: ctx.episode.thumbnail ? { headline: fillTemplate(ctx.episode.thumbnail.headline, vars, "thumbnail"), big: ctx.episode.thumbnail.big } : null,
     segments, refs, audio,
   };
 }
 
-export function outDir(ctx: EpisodeCtx) { return path.join(ctx.project.root, "out", ctx.meta.id); }
+export function outDir(ctx: EpisodeCtx) { return path.join(ctx.project.code, "out", ctx.project.id, ctx.meta.id); }
 
 /** Write timeline.json, narration.wav (voice only) and cue-level captions.srt. */
 export function writeTimelineOutputs(ctx: EpisodeCtx, tl: Timeline) {
   const dir = outDir(ctx);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "timeline.json"), JSON.stringify(tl, null, 2));
-  writeRemotionManifest(ctx.project.root, tl);
-  mixAt(tl.audio.map((x) => ({ file: path.join(ctx.project.root, x.file), start: x.start })), tl.duration, path.join(dir, "narration.wav"), ctx.project.series.audio.sampleRate);
+  writeRemotionManifest(ctx.project.code, tl);
+  mixAt(tl.audio.map((x) => ({ file: path.join(ctx.project.code, x.file), start: x.start })), tl.duration, path.join(dir, "narration.wav"), ctx.project.series.audio.sampleRate);
   // Remotion's public folder holds only what the visuals need (keeps bundles small)
-  const pub = path.join(ctx.project.root, ".cache", "public", ctx.meta.id);
+  const pub = path.join(ctx.project.code, ".cache", "public", ctx.key);
   fs.mkdirSync(pub, { recursive: true });
   fs.copyFileSync(path.join(dir, "narration.wav"), path.join(pub, "narration.wav"));
   const ts = (s: number) => { const ms = Math.round(s * 1000); const p = (n: number, w = 2) => String(n).padStart(w, "0");
@@ -125,13 +132,14 @@ export function writeTimelineOutputs(ctx: EpisodeCtx, tl: Timeline) {
  * Remotion reads timelines from remotion/generated/, so the preview studio hot-reloads
  * whenever `press audio` (or `press studio`'s watcher) regenerates them.
  */
-export function writeRemotionManifest(root: string, tl: Timeline) {
-  const dir = path.join(root, "remotion", "generated");
+export function writeRemotionManifest(code: string, tl: Timeline) {
+  const dir = path.join(code, "remotion", "generated");
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, `${tl.episode}.json`), JSON.stringify(tl));
-  const eps = fs.readdirSync(dir).filter((f) => /^ep\w+\.json$/.test(f)).map((f) => f.replace(".json", "")).sort();
+  fs.writeFileSync(path.join(dir, `${tl.key}.json`), JSON.stringify(tl));
+  const keys = fs.readdirSync(dir).filter((f) => f.endsWith(".json")).map((f) => f.replace(".json", "")).sort();
+  const ident = (k: string) => "t_" + k.replace(/\W/g, "_");
   const src = `// Generated by \`press audio\`. Do not edit.\n` +
-    eps.map((e) => `import ${e} from "./${e}.json";`).join("\n") +
-    `\nimport type { Timeline } from "../types";\n\nexport const TIMELINES = [${eps.join(", ")}] as unknown as Timeline[];\n`;
+    keys.map((k) => `import ${ident(k)} from "./${k}.json";`).join("\n") +
+    `\nimport type { Timeline } from "../types";\n\nexport const TIMELINES = [${keys.map(ident).join(", ")}] as unknown as Timeline[];\n`;
   fs.writeFileSync(path.join(dir, "index.ts"), src);
 }

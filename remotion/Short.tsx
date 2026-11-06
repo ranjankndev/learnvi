@@ -22,7 +22,7 @@ export const ShortView: React.FC<{ tl: Timeline; seg: TimelineSegment }> = ({ tl
         <div style={{ position: "absolute", left: 70, right: 70, top: 90 }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 34, color: C.mute }}><span style={{ color: C.teal }}>●</span> {tl.video.brand}</div>
-            <div style={{ fontFamily: F.mono, fontSize: 24, letterSpacing: 4, color: C.sun }}>STOP {String(tl.stop.number).padStart(2, "0")} · {tl.stop.name.toUpperCase()}</div>
+            <div style={{ fontFamily: F.mono, fontSize: 24, letterSpacing: 4, color: C.mute }}>{tl.badge[0]} · <span style={{ color: C.sun }}>{tl.badge[1]}</span></div>
           </div>
           <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 76, color: C.text, lineHeight: 1.08, marginTop: 50, letterSpacing: -1, ...enter(frame, 0, 14) }}>{seg.shortTitle}</div>
         </div>
@@ -50,7 +50,7 @@ export const Thumbnail: React.FC<{ tl: Timeline }> = ({ tl }) => {
     <AbsoluteFill style={{ width: 1280, height: 720 }}>
       <Backdrop />
       <div style={{ position: "absolute", left: 64, top: 70, width: 690 }}>
-        <Kicker style={{ fontSize: 22 }}>Stop {tl.stop.number} · {tl.stop.name}</Kicker>
+        <Kicker style={{ fontSize: 22 }}>{tl.badge[0]} · {tl.badge[1]}</Kicker>
         <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 96, lineHeight: 0.98, color: C.text, letterSpacing: -2, marginTop: 22 }}>{th.headline}</div>
         <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 30, color: C.mute, marginTop: 30 }}>{tl.video.brand}</div>
       </div>
