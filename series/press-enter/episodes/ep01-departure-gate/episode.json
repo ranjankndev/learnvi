@@ -52,7 +52,7 @@
     { "id": "stream", "kind": "core", "component": "ChatStream", "title": "Why answers stream",
       "props": { "kicker": "Streaming", "title": "Why the answer appears word by word", "prompt": "{{series.runningPrompt}}",
         "answer": "Soft rain taps the window,\nsilver threads on grey,\nthe street hums a quiet song\nand puddles hold the day.",
-        "streamAt": "c32@stream", "notes": ["each piece appears as soon as it's predicted", "no waiting for the whole answer"] } },
+        "streamAt": "c32@stream", "wordsPerSecond": 2.5, "notes": ["each piece appears as soon as it's predicted", "no waiting for the whole answer"] } },
 
     { "id": "tryIt", "kind": "tryIt", "component": "TryIt", "title": "Try it yourself", "short": true,
       "shortTitle": "Try this: time your chatbot's first word",
