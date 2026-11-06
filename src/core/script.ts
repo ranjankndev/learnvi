@@ -121,3 +121,36 @@ export function assignIds(file: string): string[] {
   if (added.length) fs.writeFileSync(file, out.join("\n"));
   return added;
 }
+
+/** Locate a cue's paragraph in script.md: its line range and the raw text after the [cNN …] tag. */
+function findParagraph(lines: string[], cueId: string) {
+  const re = new RegExp(`^\\[${cueId}((?:\\s+\\w+=[^\\]\\s]+)*)\\]\\s*`, "i");
+  const start = lines.findIndex((l) => re.test(l.trim()));
+  if (start < 0) return null;
+  let end = start;
+  while (end + 1 < lines.length) {
+    const t = lines[end + 1].trim();
+    if (!t || /^#/.test(t) || t.startsWith(">") || /^\[c\d+/i.test(t)) break;
+    end++;
+  }
+  const first = lines[start].trim(), m = first.match(re)!;
+  const raw = [first.slice(m[0].length), ...lines.slice(start + 1, end + 1).map((l) => l.trim())].join(" ").trim();
+  return { start, end, tag: m[0].trim(), raw };
+}
+
+/** The raw (unrendered) text of one cue: marks, overrides and {{templates}} included. */
+export function getCueRaw(file: string, cueId: string): string | null {
+  return findParagraph(fs.readFileSync(file, "utf8").split(/\r?\n/), cueId)?.raw ?? null;
+}
+
+/** Replace one cue's raw text in script.md, keeping its id, attributes and every other line as is. */
+export function setCueRaw(file: string, cueId: string, raw: string) {
+  const text = raw.replace(/\s*\n\s*/g, " ").trim();
+  if (!text) throw new Error("text cannot be empty");
+  const src = fs.readFileSync(file, "utf8"), nl = src.includes("\r\n") ? "\r\n" : "\n";
+  const lines = src.split(/\r?\n/);
+  const p = findParagraph(lines, cueId);
+  if (!p) throw new Error(`no cue ${cueId} in ${file}`);
+  lines.splice(p.start, p.end - p.start + 1, `${p.tag} ${text}`);
+  fs.writeFileSync(file, lines.join(nl));
+}

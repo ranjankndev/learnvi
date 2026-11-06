@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>learnvi review studio</title>
+<style>
+:root{--bg:#0e1b29;--panel:#152a3d;--panel2:#1a3248;--line:#2b4560;--text:#eef3f8;--mute:#8ea3b6;--teal:#2fb3ad;--sun:#f3b443;--stamp:#e0532a;--good:#43c38a;--bad:#ef5b5b;
+--display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Source Sans 3","Segoe UI",system-ui,sans-serif;--mono:"JetBrains Mono",Consolas,ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 var(--body)}
+button,select,textarea,input{font:inherit;color:inherit}
+header{position:sticky;top:0;z-index:5;background:rgba(14,27,41,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:12px 20px;display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.brand{font:700 18px var(--display);color:var(--mute)}.brand b{color:var(--teal)}
+h1{font:800 22px var(--display);margin:0;letter-spacing:-.3px}
+.stats{display:flex;gap:8px;flex-wrap:wrap}
+.pill{font:600 13px var(--mono);padding:4px 10px;border-radius:20px;border:1px solid var(--line);color:var(--mute);white-space:nowrap}
+.pill.good{color:var(--good);border-color:#2c6b52}.pill.warn{color:var(--sun);border-color:#6d5a2a}.pill.bad{color:var(--bad);border-color:#6d3434}.pill.teal{color:var(--teal);border-color:#245e5c}
+.actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.btn{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 13px;cursor:pointer;font-weight:600;font-size:14px;white-space:nowrap}
+.btn:hover:not(:disabled){border-color:var(--teal)}.btn:disabled{opacity:.45;cursor:default}
+.btn.pri{background:var(--teal);border-color:var(--teal);color:#06231f}.btn.rec{color:#fff;background:#b8361a;border-color:#b8361a}
+.btn.on{background:#1f4f47;border-color:var(--teal)}.btn.flag{background:#5a2420;border-color:var(--stamp)}
+.btn.sm{padding:4px 10px;font-size:13px}
+:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+main{display:grid;grid-template-columns:minmax(360px,42%) 1fr;gap:24px;padding:20px;max-width:1700px;margin:0 auto}
+@media(max-width:980px){main{grid-template-columns:1fr}.side{position:static!important}}
+.side{position:sticky;top:84px;align-self:start;display:flex;flex-direction:column;gap:14px}
+video{width:100%;border-radius:12px;background:#000;display:block}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.box h3{margin:0 0 8px;font:600 12px var(--mono);letter-spacing:2px;color:var(--mute)}
+#log{font:12.5px/1.45 var(--mono);color:#b9c8d6;max-height:220px;overflow:auto;white-space:pre-wrap;margin:0}
+.toc a{display:flex;justify-content:space-between;gap:10px;color:var(--text);text-decoration:none;padding:4px 6px;border-radius:6px;font-size:14px}
+.toc a:hover{background:var(--panel2)}.toc span{font:12px var(--mono);color:var(--mute)}
+.seg{margin-bottom:28px}.seg h2{font:800 20px var(--display);margin:0 0 10px;display:flex;align-items:baseline;gap:10px}
+.seg h2 small{font:500 12px var(--mono);color:var(--mute);letter-spacing:1px}
+.cue{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+.cue.approved{border-left-color:var(--good)}.cue.retake{border-left-color:var(--stamp)}.cue.playing{box-shadow:0 0 0 2px var(--sun)}
+.top{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin-bottom:6px}
+.cid{font:700 14px var(--mono);color:var(--sun);margin-right:2px}
+.txt{font-size:18px;line-height:1.45;margin:4px 0}
+.note{font-size:14px;color:var(--mute);font-style:italic}
+.warn{font-size:13.5px;color:var(--sun)}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
+.row .grow{flex:1}
+select{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:5px 8px;font-size:13px}
+textarea{width:100%;background:#0b1622;border:1px solid var(--line);border-radius:9px;padding:10px;font:15px/1.5 var(--mono);min-height:90px;resize:vertical}
+.hint{font-size:12.5px;color:var(--mute)}
+.comments{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+.comment{font-size:14px;display:flex;gap:8px;align-items:flex-start;margin-bottom:4px}.comment time{font:11px var(--mono);color:var(--mute);white-space:nowrap;padding-top:3px}
+.comment .x{margin-left:auto;background:none;border:0;color:var(--mute);cursor:pointer}
+input[type=text]{background:#0b1622;border:1px solid var(--line);border-radius:9px;padding:6px 10px;font-size:14px;width:100%}
+/* recorder */
+dialog{border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--text);width:min(880px,94vw);padding:26px}
+dialog::backdrop{background:rgba(3,8,14,.75)}
+.prompter{font:600 30px/1.45 var(--body);margin:14px 0 18px}
+.meter{height:12px;border-radius:6px;background:#0b1622;overflow:hidden}.meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--sun),var(--stamp))}
+.big{font:800 64px var(--mono);color:var(--sun);text-align:center;min-height:80px}
+.recdot{display:inline-block;width:26px;height:26px;border-radius:13px;background:var(--stamp);margin-right:18px;vertical-align:middle;animation:blink 1s infinite}
+@keyframes blink{50%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){.recdot{animation:none}}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line);padding:10px 18px;border-radius:10px;z-index:20;font-size:14px}
+</style></head>
+<body>
+<header>
+  <div class="brand"><b>●</b> learnvi · review</div>
+  <select id="ep" aria-label="Episode"></select>
+  <h1 id="title">Loading…</h1>
+  <div class="stats" id="stats"></div>
+  <div class="actions">
+    <label class="hint"><input type="checkbox" id="auto" checked> rebuild audio after changes</label>
+    <button class="btn" data-run="audio">Rebuild audio</button>
+    <button class="btn" data-run="render">Render video</button>
+    <button class="btn pri" data-run="package">Package</button>
+  </div>
+</header>
+<main>
+  <div class="side">
+    <div id="videoBox"></div>
+    <div class="box"><h3>BUILD LOG <span id="jobState"></span></h3><pre id="log">Ready.</pre></div>
+    <div class="box toc"><h3>SEGMENTS</h3><div id="toc"></div></div>
+  </div>
+  <div id="cues"></div>
+</main>
+
+<dialog id="rec">
+  <div class="hint" id="recHead"></div>
+  <div class="prompter" id="recText"></div>
+  <div class="note" id="recNote"></div>
+  <div class="big" id="recBig"></div>
+  <div class="meter"><i id="lvl"></i></div>
+  <div class="row" style="margin-top:16px" id="recButtons"></div>
+  <audio id="recPlay" controls style="width:100%;margin-top:12px" hidden></audio>
+  <p class="hint">Tip: record in a quiet room, 15–25 cm from the microphone. Press <b>Space</b> to start and stop. Silence at the start and end is trimmed automatically.</p>
+</dialog>
+
+<script>
+const $ = (s, r = document) => r.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmt = (s) => s == null ? "—" : `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+let EP = new URLSearchParams(location.search).get("ep") || "ep03", S = null, editing = null, busy = false;
+const player = new Audio();
+const toast = (m) => { const t = document.createElement("div"); t.className = "toast"; t.textContent = m; document.body.append(t); setTimeout(() => t.remove(), 3200); };
+
+async function api(path, opts = {}) {
+  const r = await fetch(path, opts), j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || r.statusText);
+  return j;
+}
+const post = (path, body) => api(path, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body ?? {}) });
+
+async function load() {
+  S = await api(`/api/episode/${EP}`);
+  render();
+}
+
+const STATUS = { ready: ["ready", "good"], "needs-build": ["needs build", "teal"], "needs-voice": ["needs voice", "teal"], "stale-take": ["text changed since your take", "warn"], "missing-take": ["take missing", "bad"] };
+
+function render() {
+  $("#title").textContent = `${S.id} · ${S.title}`;
+  $("#ep").innerHTML = S.episodes.map((e) => `<option value="${e.id}" ${e.id === S.id ? "selected" : ""}>${e.id} · ${esc(e.title)}</option>`).join("");
+  const n = S.cues.length, ap = S.cues.filter((c) => c.review.state === "approved").length, rt = S.cues.filter((c) => c.review.state === "retake").length;
+  const you = S.cues.filter((c) => c.source === "human").length, todo = S.cues.filter((c) => c.status !== "ready").length;
+  $("#stats").innerHTML = `<span class="pill good">${ap}/${n} approved</span>${rt ? `<span class="pill bad">${rt} need retake</span>` : ""}<span class="pill teal">${you} in your voice</span>${todo ? `<span class="pill warn">${todo} need audio build</span>` : ""}`;
+  $("#videoBox").innerHTML = S.video
+    ? `<video id="vid" src="${S.video}" controls preload="metadata"></video>${S.videoStale ? `<div class="warn" style="margin-top:6px">The audio changed after this video was rendered. Press “Render video” to update it.</div>` : ""}`
+    : `<div class="box hint">No video rendered yet. Press “Render video”.</div>`;
+  $("#toc").innerHTML = S.segments.map((s) => `<a href="#seg-${s.id}"><b>${esc(s.title)}</b><span>${fmt(s.start)}${s.short ? " · short" : ""}</span></a>`).join("");
+  $("#cues").innerHTML = S.segments.map((seg) => {
+    const cues = S.cues.filter((c) => c.segment === seg.id);
+    return `<section class="seg" id="seg-${seg.id}"><h2>${esc(seg.title)} <small>${seg.id.toUpperCase()} · ${fmt(seg.start)}</small></h2>${cues.map(card).join("") || `<div class="hint">No narration in this segment.</div>`}</section>`;
+  }).join("");
+}
+
+function card(c) {
+  const [st, tone] = STATUS[c.status] || [c.status, ""];
+  const src = c.source === "human" ? `<span class="pill good">your take ${c.take}</span>` : `<span class="pill">TTS voice</span>`;
+  const rv = c.review.state === "approved" ? `<span class="pill good">✓ approved</span>` : c.review.state === "retake" ? `<span class="pill bad">⚑ needs retake</span>` : c.review.changedSinceApproval ? `<span class="pill warn">changed since approval</span>` : "";
+  const takes = `<select data-act="use" aria-label="Take for ${c.id}"><option value="tts" ${c.take === "tts" ? "selected" : ""}>TTS voice</option>${c.takes.map((t) => `<option value="${t.id}" ${c.take === t.id ? "selected" : ""}>${t.id} · ${t.importedAt.slice(5, 16).replace("T", " ")}${t.current ? "" : " (older text)"}</option>`).join("")}</select>`;
+  const body = editing === c.id
+    ? `<textarea id="edit-${c.id}" aria-label="Text for ${c.id}">${esc(c.raw)}</textarea>
+       <div class="hint">Keep marks like {@merge} where an animation should land. [[shown|spoken]] and {{templates}} work as in script.md.</div>
+       <div class="row"><button class="btn sm pri" data-act="save">Save text</button><button class="btn sm" data-act="cancel">Cancel</button></div>`
+    : `<div class="txt">${esc(c.display)}</div>`;
+  return `<article class="cue ${c.review.state}" id="cue-${c.id}" data-id="${c.id}">
+    <div class="top"><span class="cid">${c.id}</span>${src}<span class="pill ${tone}">${st}</span><span class="pill">${c.duration != null ? c.duration.toFixed(1) + " s" : "—"}</span>${rv}</div>
+    ${c.note ? `<div class="note">Direction: ${esc(c.note)}</div>` : ""}
+    ${body}
+    ${c.warning ? `<div class="warn">⚠ ${esc(c.warning)}</div>` : ""}
+    <div class="row">
+      <button class="btn sm" data-act="play" ${c.audio ? "" : "disabled"}>▶ Play</button>
+      <button class="btn sm" data-act="seek" ${S.video && c.start != null ? "" : "disabled"}>Show in video</button>
+      <button class="btn sm rec" data-act="record">● Record</button>
+      <button class="btn sm" data-act="upload">Upload</button>
+      ${takes}
+      <span class="grow"></span>
+      ${editing === c.id ? "" : `<button class="btn sm" data-act="edit">Edit text</button>`}
+      <button class="btn sm ${c.review.state === "approved" ? "on" : ""}" data-act="approve">✓ Approve</button>
+      <button class="btn sm ${c.review.state === "retake" ? "flag" : ""}" data-act="retake">⚑ Retake</button>
+    </div>
+    <div class="comments">
+      ${c.review.comments.map((m, i) => `<div class="comment"><time>${m.at.slice(5, 16).replace("T", " ")}</time><span>${esc(m.text)}</span><button class="x" data-act="uncomment" data-i="${i}" aria-label="Delete comment">✕</button></div>`).join("")}
+      <input type="text" placeholder="Add a note for ${c.id} and press Enter" data-act="comment" aria-label="Comment on ${c.id}">
+    </div>
+  </article>`;
+}
+
+// ---------- actions ----------
+async function changed(msg) { if (msg) toast(msg); await load(); if ($("#auto").checked) run("audio"); }
+async function run(what) { try { await post(`/api/run/${EP}/${what}`); } catch (e) { toast(e.message); } }
+
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-act],[data-run]");
+  if (!b || b.tagName === "SELECT" || b.tagName === "INPUT") return;
+  if (b.dataset.run) return run(b.dataset.run);
+  const card = b.closest(".cue"), id = card?.dataset.id, c = S.cues.find((x) => x.id === id);
+  try {
+    switch (b.dataset.act) {
+      case "play": document.querySelectorAll(".cue.playing").forEach((x) => x.classList.remove("playing"));
+        if (!player.paused && player.dataset.id === id) { player.pause(); return; }
+        player.src = c.audio; player.dataset.id = id; card.classList.add("playing"); player.play(); player.onended = () => card.classList.remove("playing"); break;
+      case "seek": { const v = $("#vid"); v.currentTime = c.start; v.play(); v.scrollIntoView({ block: "nearest" }); break; }
+      case "edit": editing = id; render(); $(`#edit-${id}`).focus(); break;
+      case "cancel": editing = null; render(); break;
+      case "save": await post(`/api/cue/${EP}/${id}/text`, { raw: $(`#edit-${id}`).value }); editing = null; await changed(`${id} text saved to script.md`); break;
+      case "approve": await post(`/api/cue/${EP}/${id}/review`, { state: c.review.state === "approved" ? "open" : "approved" }); await load(); break;
+      case "retake": await post(`/api/cue/${EP}/${id}/review`, { state: c.review.state === "retake" ? "open" : "retake" }); await load(); break;
+      case "uncomment": await post(`/api/cue/${EP}/${id}/review`, { removeComment: +b.dataset.i }); await load(); break;
+      case "record": openRecorder(c); break;
+      case "upload": { const i = document.createElement("input"); i.type = "file"; i.accept = "audio/*"; i.onchange = () => i.files[0] && uploadTake(id, i.files[0]); i.click(); break; }
+    }
+  } catch (err) { toast(err.message); }
+});
+document.addEventListener("change", async (e) => {
+  if (e.target.id === "ep") { EP = e.target.value; history.replaceState(null, "", `?ep=${EP}`); return load(); }
+  if (e.target.dataset.act === "use") { const id = e.target.closest(".cue").dataset.id; await post(`/api/cue/${EP}/${id}/use`, { take: e.target.value }); await changed(`${id} now uses ${e.target.value}`); }
+});
+document.addEventListener("keydown", async (e) => {
+  if (e.target.dataset?.act === "comment" && e.key === "Enter" && e.target.value.trim()) {
+    const id = e.target.closest(".cue").dataset.id;
+    await post(`/api/cue/${EP}/${id}/review`, { comment: e.target.value.trim() }); await load();
+    $(`#cue-${id} input`)?.focus();
+  }
+});
+
+async function uploadTake(id, blob) {
+  const r = await fetch(`/api/cue/${EP}/${id}/take`, { method: "POST", headers: { "content-type": blob.type || "audio/webm" }, body: blob });
+  const j = await r.json();
+  if (!r.ok) return toast(j.error);
+  await changed(`${id}: saved as take ${j.take}`);
+}
+
+// ---------- recorder ----------
+let rec = null;
+async function openRecorder(c) {
+  const d = $("#rec");
+  $("#recHead").textContent = `${c.id} · ${S.segments.find((s) => s.id === c.segment)?.title ?? c.segment}`;
+  $("#recText").textContent = c.display; $("#recNote").textContent = c.note ? `Direction: ${c.note}` : "";
+  $("#recBig").textContent = ""; $("#recPlay").hidden = true;
+  d.showModal();
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: true, autoGainControl: false } });
+    const ac = new AudioContext(); await ac.resume(); const an = ac.createAnalyser(); an.fftSize = 1024; ac.createMediaStreamSource(stream).connect(an);
+    const buf = new Float32Array(an.fftSize);
+    rec = { c, stream, ac, state: "ready", chunks: [], blob: null, raf: 0 };
+    const meter = () => { an.getFloatTimeDomainData(buf); let p = 0; for (const v of buf) p = Math.max(p, Math.abs(v)); $("#lvl").style.width = Math.min(100, p * 140) + "%"; rec.raf = requestAnimationFrame(meter); };
+    meter(); recButtons();
+  } catch (err) {
+    $("#recBig").textContent = ""; $("#recButtons").innerHTML = `<div class="warn">Microphone not available: ${esc(err.message)}. Allow microphone access, or use Upload instead.</div><button class="btn" onclick="closeRecorder()">Close</button>`;
+  }
+}
+function recButtons() {
+  const s = rec.state;
+  $("#recButtons").innerHTML =
+    s === "ready" ? `<button class="btn rec" onclick="startRec()">● Start recording</button><button class="btn" onclick="closeRecorder()">Cancel</button>` :
+    s === "count" ? `<button class="btn" onclick="closeRecorder()">Cancel</button>` :
+    s === "recording" ? `<button class="btn pri" onclick="stopRec()">■ Stop</button>` :
+    `<button class="btn pri" onclick="useRec()">Use this take</button><button class="btn" onclick="startRec()">Record again</button><button class="btn" onclick="closeRecorder()">Discard</button>`;
+}
+async function startRec() {
+  rec.state = "count"; recButtons(); $("#recPlay").hidden = true;
+  for (const n of [3, 2, 1]) { if (rec?.state !== "count") return; $("#recBig").textContent = n; await new Promise((r) => setTimeout(r, 700)); }
+  if (rec?.state !== "count") return;
+  const type = ["audio/webm;codecs=opus", "audio/ogg;codecs=opus", "audio/webm"].find((t) => MediaRecorder.isTypeSupported(t)) || "";
+  rec.mr = new MediaRecorder(rec.stream, type ? { mimeType: type } : {}); rec.chunks = [];
+  rec.mr.ondataavailable = (e) => e.data.size && rec.chunks.push(e.data);
+  rec.mr.onstop = () => { rec.blob = new Blob(rec.chunks, { type: rec.mr.mimeType }); const a = $("#recPlay"); a.src = URL.createObjectURL(rec.blob); a.hidden = false; rec.state = "review"; recButtons(); };
+  rec.mr.start(); rec.state = "recording"; rec.t0 = Date.now(); recButtons();
+  const tick = () => { if (rec?.state !== "recording") return; $("#recBig").innerHTML = `<span class="recdot"></span>${((Date.now() - rec.t0) / 1000).toFixed(1)} s`; setTimeout(tick, 100); };
+  tick();
+}
+function stopRec() { if (rec?.mr?.state === "recording") rec.mr.stop(); $("#recBig").textContent = ""; }
+async function useRec() { const { c, blob } = rec; closeRecorder(); await uploadTake(c.id, blob); }
+function closeRecorder() {
+  if (rec) { if (rec.mr?.state === "recording") rec.mr.stop(); cancelAnimationFrame(rec.raf); rec.stream?.getTracks().forEach((t) => t.stop()); rec.ac?.close(); rec = null; }
+  $("#rec").close();
+}
+$("#rec").addEventListener("cancel", (e) => { e.preventDefault(); closeRecorder(); });
+document.addEventListener("keydown", (e) => {
+  if (!rec || e.code !== "Space") return;
+  e.preventDefault();
+  if (rec.state === "ready" || rec.state === "review") startRec(); else if (rec.state === "recording") stopRec();
+});
+
+// ---------- live build log ----------
+const es = new EventSource("/api/events");
+const logEl = $("#log");
+const logLine = (l) => { logEl.textContent += "\n" + l; logEl.scrollTop = logEl.scrollHeight; };
+es.addEventListener("hello", (e) => { const j = JSON.parse(e.data); if (j.job) setBusy(true, j.job); });
+es.addEventListener("log", (e) => logLine(JSON.parse(e.data)));
+es.addEventListener("job", async (e) => {
+  const j = JSON.parse(e.data);
+  if (j.state === "start") { logEl.textContent = `$ ${j.cmd}`; setBusy(true, j.cmd); }
+  else { setBusy(false); logLine(j.state === "done" ? `✓ done in ${j.seconds.toFixed(0)} s` : "✗ failed"); await load(); }
+});
+function setBusy(on, cmd) {
+  busy = on; document.querySelectorAll("[data-run]").forEach((b) => (b.disabled = on));
+  $("#jobState").textContent = on ? `· running ${cmd}` : "";
+}
+load().catch((e) => { $("#title").textContent = e.message; });
+</script>
+</body></html>

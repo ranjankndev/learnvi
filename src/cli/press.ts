@@ -10,6 +10,7 @@ import { buildAudio, importTake, loadTakes, plan, readLock, readScript, selectTa
 import { buildTimeline, writeTimelineOutputs, outDir } from "../core/timeline.js";
 import { readTimeline, renderEpisode, still } from "../core/render.js";
 import { clock, packageEpisode } from "../core/package.js";
+import { startReviewServer } from "../review/server.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 const ep = (ref: string) => loadEpisode(loadProject(), ref);
@@ -168,6 +169,14 @@ program.command("package <episode>").description("everything to publish: video, 
     console.log(`  audio-only  ${rel(r.audio.file)}  ${clock(r.audio.seconds)} with ${r.audio.chapters} chapters (${r.audio.saved.toFixed(0)}s of silence trimmed)`);
     console.log(`  captions    ${r.captions.map(rel).join(", ")}`);
     console.log(`  youtube     ${rel(r.youtube)}  (title, description with ${r.chapters.length} chapters, tags)`);
+  });
+
+program.command("review [episode]").description("open the review studio: listen, record retakes, edit text, comment, approve")
+  .option("-p, --port <port>", "port", "4310")
+  .action((e: string | undefined, o: { port: string }) => {
+    const root = findRoot();
+    startReviewServer(root, +o.port);
+    console.log(`${C.g}✓${C.x} review studio running at ${C.B}http://localhost:${o.port}/${e ? `?ep=${e}` : ""}${C.x}  (Ctrl+C to stop)`);
   });
 
 program.command("studio").description("open the Remotion preview studio; edits to config/ and episodes/ rebuild the timeline live")

@@ -8,7 +8,7 @@ Change a title in JSON or re-record one paragraph, and rebuild: only what change
 
 Plan and architecture: [`docs/plan.html`](docs/plan.html).
 
-**Status: Phase 3 done. The Token City pilot is fully packaged.** Next: Phase 4 (review studio) and the remaining episodes.
+**Status: Phases 1–4 done:** audio track, visual engine, publishing package and review studio. Next: the remaining episodes.
 
 ## Setup (once per machine)
 
@@ -41,6 +41,7 @@ On Windows, if `python` is not the right interpreter, set `PRESS_PYTHON` to its 
 | `press sheet ep03` | Contact sheet: one frame per segment, in one PNG |
 | `press render ep03` | Render the episode; only segments whose look or timing changed are re-rendered |
 | `press package ep03` | Everything to publish: video, Shorts, thumbnail, audio-only MP3, captions, YouTube text |
+| `press review ep03` | Open the review studio at http://localhost:4310 |
 
 Outputs go to `out/<episode>/`: `narration.wav`, `timeline.json` (what the visual engine reads), `captions.srt`.
 
@@ -77,6 +78,23 @@ without re-encoding, then the narration is added. The result is `out/<ep>/<ep>-<
 
 Remotion downloads its own headless Chrome on first use. To use one you already have, set
 `REMOTION_BROWSER_EXECUTABLE` to its path.
+
+## Review studio
+
+`press review ep03` opens a local web page (http://localhost:4310) for reviewing an episode
+paragraph by paragraph:
+
+- **Listen**: play any paragraph, or jump the rendered video to it.
+- **Record a retake**: the paragraph is shown teleprompter-style; Space starts and stops. The take is
+  converted to WAV, stored in `takes/`, selected, and the audio rebuilt (only that paragraph).
+  You can also upload a file, or switch between takes and the TTS voice.
+- **Edit text**: changes are written back into `script.md`, keeping the cue id and settings.
+- **Comment, approve, flag for retake**: saved in `episodes/<ep>/review.json` (commit it). An approval
+  only holds for the exact text and take you approved; change either and it reopens.
+- **Build**: rebuild audio, render or package, with the log streamed into the page.
+
+It works on the same files as the CLI, so you can switch between the two at any time.
+Recording needs microphone permission; browsers allow it on `localhost`.
 
 ## Publishing package
 
