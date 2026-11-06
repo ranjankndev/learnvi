@@ -1,0 +1,2928 @@
+{
+  "version": 1,
+  "episode": "u2-05",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 2, lesson 5: hidden Markov models.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 2, lesson 5: hidden Markov models.",
+      "textHash": "84c0f8715a401d73",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a9699eae7927f209.wav",
+      "duration": 6.461,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.2
+        },
+        {
+          "w": "This",
+          "start": 3
+        },
+        {
+          "w": "is",
+          "start": 3.28
+        },
+        {
+          "w": "unit",
+          "start": 3.52
+        },
+        {
+          "w": "2,",
+          "start": 3.88
+        },
+        {
+          "w": "lesson",
+          "start": 4.24
+        },
+        {
+          "w": "5:",
+          "start": 4.6
+        },
+        {
+          "w": "hidden",
+          "start": 5.04
+        },
+        {
+          "w": "Markov",
+          "start": 5.48
+        },
+        {
+          "w": "models.",
+          "start": 5.92
+        }
+      ],
+      "matchScore": 0.692
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "We've seen that a tagger has to work out whether each word is a noun, a verb, and so on. Today we meet the classic model that does it, without a single formula.",
+      "spoken": "We've seen that a tagger has to work out whether each word is a noun, a verb, and so on. Today we meet the classic model that does it, without a single formula.",
+      "textHash": "f1e628d63f948fac",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bdf2af7b210edbd9.wav",
+      "duration": 9.5,
+      "marks": {},
+      "words": [
+        {
+          "w": "We've",
+          "start": 0
+        },
+        {
+          "w": "seen",
+          "start": 0.24
+        },
+        {
+          "w": "that",
+          "start": 0.48
+        },
+        {
+          "w": "a",
+          "start": 0.6
+        },
+        {
+          "w": "tagger",
+          "start": 0.88
+        },
+        {
+          "w": "has",
+          "start": 1.16
+        },
+        {
+          "w": "to",
+          "start": 1.32
+        },
+        {
+          "w": "work",
+          "start": 1.48
+        },
+        {
+          "w": "out",
+          "start": 1.72
+        },
+        {
+          "w": "whether",
+          "start": 1.92
+        },
+        {
+          "w": "each",
+          "start": 2.24
+        },
+        {
+          "w": "word",
+          "start": 2.52
+        },
+        {
+          "w": "is",
+          "start": 2.8
+        },
+        {
+          "w": "a",
+          "start": 2.96
+        },
+        {
+          "w": "noun,",
+          "start": 3.12
+        },
+        {
+          "w": "a",
+          "start": 3.52
+        },
+        {
+          "w": "verb,",
+          "start": 3.92
+        },
+        {
+          "w": "and",
+          "start": 4.32
+        },
+        {
+          "w": "so",
+          "start": 4.56
+        },
+        {
+          "w": "on.",
+          "start": 4.84
+        },
+        {
+          "w": "Today",
+          "start": 5.38
+        },
+        {
+          "w": "we",
+          "start": 5.92
+        },
+        {
+          "w": "meet",
+          "start": 6.16
+        },
+        {
+          "w": "the",
+          "start": 6.4
+        },
+        {
+          "w": "classic",
+          "start": 6.52
+        },
+        {
+          "w": "model",
+          "start": 6.96
+        },
+        {
+          "w": "that",
+          "start": 7.32
+        },
+        {
+          "w": "does",
+          "start": 7.52
+        },
+        {
+          "w": "it,",
+          "start": 7.76
+        },
+        {
+          "w": "without",
+          "start": 8.04
+        },
+        {
+          "w": "a",
+          "start": 8.32
+        },
+        {
+          "w": "single",
+          "start": 8.48
+        },
+        {
+          "w": "formula.",
+          "start": 8.92
+        }
+      ],
+      "matchScore": 0.87
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. When we read text, we can see the words, but the tags are hidden. A hidden Markov model, or HMM, guesses the hidden tags from the words it can see.",
+      "spoken": "Here's the idea. When we read text, we can see the words, but the tags are hidden. A hidden Markov model, or H M M, guesses the hidden tags from the words it can see.",
+      "textHash": "75db40e1dc9b4600",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6c5941d383107990.wav",
+      "duration": 10.793,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "When",
+          "start": 1.2
+        },
+        {
+          "w": "we",
+          "start": 1.44
+        },
+        {
+          "w": "read",
+          "start": 1.64
+        },
+        {
+          "w": "text,",
+          "start": 1.92
+        },
+        {
+          "w": "we",
+          "start": 2.44
+        },
+        {
+          "w": "can",
+          "start": 2.64
+        },
+        {
+          "w": "see",
+          "start": 2.8
+        },
+        {
+          "w": "the",
+          "start": 3
+        },
+        {
+          "w": "words,",
+          "start": 3.2
+        },
+        {
+          "w": "but",
+          "start": 3.56
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "tags",
+          "start": 3.84
+        },
+        {
+          "w": "are",
+          "start": 4.28
+        },
+        {
+          "w": "hidden.",
+          "start": 4.48
+        },
+        {
+          "w": "A",
+          "start": 5.12
+        },
+        {
+          "w": "hidden",
+          "start": 5.36
+        },
+        {
+          "w": "Markov",
+          "start": 5.84
+        },
+        {
+          "w": "model,",
+          "start": 6.32
+        },
+        {
+          "w": "or",
+          "start": 6.88
+        },
+        {
+          "w": "HMM,",
+          "start": 7.44
+        },
+        {
+          "w": "guesses",
+          "start": 8
+        },
+        {
+          "w": "the",
+          "start": 8.56
+        },
+        {
+          "w": "hidden",
+          "start": 8.72
+        },
+        {
+          "w": "tags",
+          "start": 9.08
+        },
+        {
+          "w": "from",
+          "start": 9.52
+        },
+        {
+          "w": "the",
+          "start": 9.68
+        },
+        {
+          "w": "words",
+          "start": 9.8
+        },
+        {
+          "w": "it",
+          "start": 10.12
+        },
+        {
+          "w": "can",
+          "start": 10.28
+        },
+        {
+          "w": "see.",
+          "start": 10.52
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c04": {
+      "segment": "hmm",
+      "display": "A hidden Markov model imagines that hidden states, like part-of-speech tags, produce the things we observe, like words, one step at a time.",
+      "spoken": "A hidden Markov model imagines that hidden states, like part-of-speech tags, produce the things we observe, like words, one step at a time.",
+      "textHash": "c1da5fedfcc3526d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dc7020ecee64cec7.wav",
+      "duration": 8.787,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "hidden",
+          "start": 0.12
+        },
+        {
+          "w": "Markov",
+          "start": 0.54
+        },
+        {
+          "w": "model",
+          "start": 0.96
+        },
+        {
+          "w": "imagines",
+          "start": 1.36
+        },
+        {
+          "w": "that",
+          "start": 2.04
+        },
+        {
+          "w": "hidden",
+          "start": 2.24
+        },
+        {
+          "w": "states,",
+          "start": 2.64
+        },
+        {
+          "w": "like",
+          "start": 3.16
+        },
+        {
+          "w": "part-of-speech",
+          "start": 3.7
+        },
+        {
+          "w": "tags,",
+          "start": 4.24
+        },
+        {
+          "w": "produce",
+          "start": 4.88
+        },
+        {
+          "w": "the",
+          "start": 5.36
+        },
+        {
+          "w": "things",
+          "start": 5.52
+        },
+        {
+          "w": "we",
+          "start": 5.84
+        },
+        {
+          "w": "observe,",
+          "start": 6.08
+        },
+        {
+          "w": "like",
+          "start": 6.68
+        },
+        {
+          "w": "words,",
+          "start": 6.96
+        },
+        {
+          "w": "one",
+          "start": 7.44
+        },
+        {
+          "w": "step",
+          "start": 7.76
+        },
+        {
+          "w": "at",
+          "start": 8.12
+        },
+        {
+          "w": "a",
+          "start": 8.28
+        },
+        {
+          "w": "time.",
+          "start": 8.44
+        }
+      ],
+      "matchScore": 0.895
+    },
+    "c05": {
+      "segment": "hmm",
+      "display": "For \"the dog barks\", the hidden tags are determiner, noun, verb. What we see are just the words: the, dog, barks.",
+      "spoken": "For \"the dog barks\", the hidden tags are determiner, noun, verb. What we see are just the words: the, dog, barks.",
+      "textHash": "150c5aa60cb1d50c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/660afa5f943e26e1.wav",
+      "duration": 6.784,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "\"the",
+          "start": 0.16
+        },
+        {
+          "w": "dog",
+          "start": 0.32
+        },
+        {
+          "w": "barks\",",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 1.04
+        },
+        {
+          "w": "hidden",
+          "start": 1.24
+        },
+        {
+          "w": "tags",
+          "start": 1.6
+        },
+        {
+          "w": "are",
+          "start": 2
+        },
+        {
+          "w": "determiner,",
+          "start": 2.16
+        },
+        {
+          "w": "noun,",
+          "start": 2.72
+        },
+        {
+          "w": "verb.",
+          "start": 3.28
+        },
+        {
+          "w": "What",
+          "start": 3.84
+        },
+        {
+          "w": "we",
+          "start": 4.16
+        },
+        {
+          "w": "see",
+          "start": 4.32
+        },
+        {
+          "w": "are",
+          "start": 4.56
+        },
+        {
+          "w": "just",
+          "start": 4.72
+        },
+        {
+          "w": "the",
+          "start": 4.96
+        },
+        {
+          "w": "words:",
+          "start": 5.12
+        },
+        {
+          "w": "the,",
+          "start": 5.56
+        },
+        {
+          "w": "dog,",
+          "start": 5.8
+        },
+        {
+          "w": "barks.",
+          "start": 6.2
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c06": {
+      "segment": "hmm",
+      "display": "Think of a friend's diary that never mentions the weather, only whether they carried an umbrella. You can't see the weather, but you can make a very good guess from the umbrellas.",
+      "spoken": "Think of a friend's diary that never mentions the weather, only whether they carried an umbrella. You can't see the weather, but you can make a very good guess from the umbrellas.",
+      "textHash": "4625d129a16ce013",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/65dc6e7c6a002a99.wav",
+      "duration": 9.642,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "friend's",
+          "start": 0.48
+        },
+        {
+          "w": "diary",
+          "start": 0.88
+        },
+        {
+          "w": "that",
+          "start": 1.36
+        },
+        {
+          "w": "never",
+          "start": 1.56
+        },
+        {
+          "w": "mentions",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 2.32
+        },
+        {
+          "w": "weather,",
+          "start": 2.48
+        },
+        {
+          "w": "only",
+          "start": 3.04
+        },
+        {
+          "w": "whether",
+          "start": 3.36
+        },
+        {
+          "w": "they",
+          "start": 3.68
+        },
+        {
+          "w": "carried",
+          "start": 3.92
+        },
+        {
+          "w": "an",
+          "start": 4.1
+        },
+        {
+          "w": "umbrella.",
+          "start": 4.28
+        },
+        {
+          "w": "You",
+          "start": 5.28
+        },
+        {
+          "w": "can't",
+          "start": 5.6
+        },
+        {
+          "w": "see",
+          "start": 6
+        },
+        {
+          "w": "the",
+          "start": 6.2
+        },
+        {
+          "w": "weather,",
+          "start": 6.36
+        },
+        {
+          "w": "but",
+          "start": 6.76
+        },
+        {
+          "w": "you",
+          "start": 6.96
+        },
+        {
+          "w": "can",
+          "start": 7.16
+        },
+        {
+          "w": "make",
+          "start": 7.36
+        },
+        {
+          "w": "a",
+          "start": 7.52
+        },
+        {
+          "w": "very",
+          "start": 7.68
+        },
+        {
+          "w": "good",
+          "start": 7.92
+        },
+        {
+          "w": "guess",
+          "start": 8.16
+        },
+        {
+          "w": "from",
+          "start": 8.56
+        },
+        {
+          "w": "the",
+          "start": 8.921
+        },
+        {
+          "w": "umbrellas.",
+          "start": 9.281
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c07": {
+      "segment": "two",
+      "display": "An HMM learns just two kinds of chances, both by counting tagged text.",
+      "spoken": "An H M M learns just two kinds of chances, both by counting tagged text.",
+      "textHash": "57c8be3728f6b214",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f9dc8725610fcf94.wav",
+      "duration": 4.831,
+      "marks": {},
+      "words": [
+        {
+          "w": "An",
+          "start": 0.293
+        },
+        {
+          "w": "HMM",
+          "start": 0.587
+        },
+        {
+          "w": "learns",
+          "start": 0.88
+        },
+        {
+          "w": "just",
+          "start": 1.28
+        },
+        {
+          "w": "two",
+          "start": 1.48
+        },
+        {
+          "w": "kinds",
+          "start": 1.72
+        },
+        {
+          "w": "of",
+          "start": 1.96
+        },
+        {
+          "w": "chances,",
+          "start": 2.12
+        },
+        {
+          "w": "both",
+          "start": 2.8
+        },
+        {
+          "w": "by",
+          "start": 3.2
+        },
+        {
+          "w": "counting",
+          "start": 3.44
+        },
+        {
+          "w": "tagged",
+          "start": 3.84
+        },
+        {
+          "w": "text.",
+          "start": 4.24
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c08": {
+      "segment": "two",
+      "display": "Transition chances: how likely one tag is to follow another. After a determiner like \"the\", a noun is very likely.",
+      "spoken": "Transition chances: how likely one tag is to follow another. After a determiner like \"the\", a noun is very likely.",
+      "textHash": "63fb3c2d16f2a124",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/88755e3102ed5f0e.wav",
+      "duration": 7.623,
+      "marks": {},
+      "words": [
+        {
+          "w": "Transition",
+          "start": 0
+        },
+        {
+          "w": "chances:",
+          "start": 0.72
+        },
+        {
+          "w": "how",
+          "start": 1.4
+        },
+        {
+          "w": "likely",
+          "start": 1.68
+        },
+        {
+          "w": "one",
+          "start": 2.12
+        },
+        {
+          "w": "tag",
+          "start": 2.36
+        },
+        {
+          "w": "is",
+          "start": 2.8
+        },
+        {
+          "w": "to",
+          "start": 2.96
+        },
+        {
+          "w": "follow",
+          "start": 3.12
+        },
+        {
+          "w": "another.",
+          "start": 3.52
+        },
+        {
+          "w": "After",
+          "start": 4.12
+        },
+        {
+          "w": "a",
+          "start": 4.48
+        },
+        {
+          "w": "determiner",
+          "start": 4.56
+        },
+        {
+          "w": "like",
+          "start": 5.24
+        },
+        {
+          "w": "\"the\",",
+          "start": 5.6
+        },
+        {
+          "w": "a",
+          "start": 5.96
+        },
+        {
+          "w": "noun",
+          "start": 6.16
+        },
+        {
+          "w": "is",
+          "start": 6.56
+        },
+        {
+          "w": "very",
+          "start": 6.8
+        },
+        {
+          "w": "likely.",
+          "start": 7.12
+        }
+      ],
+      "matchScore": 0.933
+    },
+    "c09": {
+      "segment": "two",
+      "display": "Emission chances: how likely a tag is to produce a particular word. A verb might well be the word \"barks\".",
+      "spoken": "Emission chances: how likely a tag is to produce a particular word. A verb might well be the word \"barks\".",
+      "textHash": "5a85e46a38f7c5b4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/82089f54f7963b95.wav",
+      "duration": 6.519,
+      "marks": {},
+      "words": [
+        {
+          "w": "Emission",
+          "start": 0
+        },
+        {
+          "w": "chances:",
+          "start": 0.56
+        },
+        {
+          "w": "how",
+          "start": 1.32
+        },
+        {
+          "w": "likely",
+          "start": 1.6
+        },
+        {
+          "w": "a",
+          "start": 2
+        },
+        {
+          "w": "tag",
+          "start": 2.16
+        },
+        {
+          "w": "is",
+          "start": 2.52
+        },
+        {
+          "w": "to",
+          "start": 2.64
+        },
+        {
+          "w": "produce",
+          "start": 2.8
+        },
+        {
+          "w": "a",
+          "start": 3.2
+        },
+        {
+          "w": "particular",
+          "start": 3.32
+        },
+        {
+          "w": "word.",
+          "start": 3.96
+        },
+        {
+          "w": "A",
+          "start": 4.293
+        },
+        {
+          "w": "verb",
+          "start": 4.627
+        },
+        {
+          "w": "might",
+          "start": 4.96
+        },
+        {
+          "w": "well",
+          "start": 5.2
+        },
+        {
+          "w": "be",
+          "start": 5.4
+        },
+        {
+          "w": "the",
+          "start": 5.56
+        },
+        {
+          "w": "word",
+          "start": 5.72
+        },
+        {
+          "w": "\"barks\".",
+          "start": 6
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c10": {
+      "segment": "example",
+      "display": "Let's tag \"the dog barks\".",
+      "spoken": "Let's tag \"the dog barks\".",
+      "textHash": "0eaecbdf1532bba1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a43282e47460b676.wav",
+      "duration": 1.773,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "tag",
+          "start": 0.32
+        },
+        {
+          "w": "\"the",
+          "start": 0.72
+        },
+        {
+          "w": "dog",
+          "start": 0.88
+        },
+        {
+          "w": "barks\".",
+          "start": 1.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c11": {
+      "segment": "example",
+      "display": "\"The\" can only be a determiner.",
+      "spoken": "\"The\" can only be a determiner.",
+      "textHash": "11447297c67d239a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4f410262ce6ffae2.wav",
+      "duration": 1.752,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"The\"",
+          "start": 0.12
+        },
+        {
+          "w": "can",
+          "start": 0.24
+        },
+        {
+          "w": "only",
+          "start": 0.44
+        },
+        {
+          "w": "be",
+          "start": 0.72
+        },
+        {
+          "w": "a",
+          "start": 0.92
+        },
+        {
+          "w": "determiner.",
+          "start": 1.04
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c12": {
+      "segment": "example",
+      "display": "\"Dog\" could be a noun, or a verb, as in \"to dog someone's steps\". But a noun is far more likely after a determiner, so the model picks noun.",
+      "spoken": "\"Dog\" could be a noun, or a verb, as in \"to dog someone's steps\". But a noun is far more likely after a determiner, so the model picks noun.",
+      "textHash": "152c24aa248ebf6a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1c5672560c199560.wav",
+      "duration": 8.842,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"Dog\"",
+          "start": 0
+        },
+        {
+          "w": "could",
+          "start": 0.44
+        },
+        {
+          "w": "be",
+          "start": 0.56
+        },
+        {
+          "w": "a",
+          "start": 0.72
+        },
+        {
+          "w": "noun,",
+          "start": 0.84
+        },
+        {
+          "w": "or",
+          "start": 1.24
+        },
+        {
+          "w": "a",
+          "start": 1.56
+        },
+        {
+          "w": "verb,",
+          "start": 1.88
+        },
+        {
+          "w": "as",
+          "start": 2.2
+        },
+        {
+          "w": "in",
+          "start": 2.44
+        },
+        {
+          "w": "\"to",
+          "start": 2.68
+        },
+        {
+          "w": "dog",
+          "start": 2.96
+        },
+        {
+          "w": "someone's",
+          "start": 3.32
+        },
+        {
+          "w": "steps\".",
+          "start": 3.88
+        },
+        {
+          "w": "But",
+          "start": 4.48
+        },
+        {
+          "w": "a",
+          "start": 4.72
+        },
+        {
+          "w": "noun",
+          "start": 4.88
+        },
+        {
+          "w": "is",
+          "start": 5.28
+        },
+        {
+          "w": "far",
+          "start": 5.44
+        },
+        {
+          "w": "more",
+          "start": 5.68
+        },
+        {
+          "w": "likely",
+          "start": 5.96
+        },
+        {
+          "w": "after",
+          "start": 6.36
+        },
+        {
+          "w": "a",
+          "start": 6.6
+        },
+        {
+          "w": "determiner,",
+          "start": 6.72
+        },
+        {
+          "w": "so",
+          "start": 7.4
+        },
+        {
+          "w": "the",
+          "start": 7.6
+        },
+        {
+          "w": "model",
+          "start": 7.76
+        },
+        {
+          "w": "picks",
+          "start": 8.12
+        },
+        {
+          "w": "noun.",
+          "start": 8.44
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c13": {
+      "segment": "example",
+      "display": "\"Barks\" could be a noun too, the bark of a tree, in the plural. But after a noun, a verb fits much better. So the best guess is verb.",
+      "spoken": "\"Barks\" could be a noun too, the bark of a tree, in the plural. But after a noun, a verb fits much better. So the best guess is verb.",
+      "textHash": "c6fc1d7ed0320b2b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1e4e5619b361eb31.wav",
+      "duration": 7.751,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"Barks\"",
+          "start": 0
+        },
+        {
+          "w": "could",
+          "start": 0.44
+        },
+        {
+          "w": "be",
+          "start": 0.56
+        },
+        {
+          "w": "a",
+          "start": 0.747
+        },
+        {
+          "w": "noun",
+          "start": 0.933
+        },
+        {
+          "w": "too,",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.36
+        },
+        {
+          "w": "bark",
+          "start": 1.52
+        },
+        {
+          "w": "of",
+          "start": 1.84
+        },
+        {
+          "w": "a",
+          "start": 1.96
+        },
+        {
+          "w": "tree,",
+          "start": 2.08
+        },
+        {
+          "w": "in",
+          "start": 2.44
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "plural.",
+          "start": 2.72
+        },
+        {
+          "w": "But",
+          "start": 3.28
+        },
+        {
+          "w": "after",
+          "start": 3.6
+        },
+        {
+          "w": "a",
+          "start": 3.92
+        },
+        {
+          "w": "noun,",
+          "start": 4.04
+        },
+        {
+          "w": "a",
+          "start": 4.36
+        },
+        {
+          "w": "verb",
+          "start": 4.68
+        },
+        {
+          "w": "fits",
+          "start": 5
+        },
+        {
+          "w": "much",
+          "start": 5.44
+        },
+        {
+          "w": "better.",
+          "start": 5.68
+        },
+        {
+          "w": "So",
+          "start": 6.12
+        },
+        {
+          "w": "the",
+          "start": 6.32
+        },
+        {
+          "w": "best",
+          "start": 6.52
+        },
+        {
+          "w": "guess",
+          "start": 6.828
+        },
+        {
+          "w": "is",
+          "start": 7.136
+        },
+        {
+          "w": "verb.",
+          "start": 7.443
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c14": {
+      "segment": "viterbi",
+      "display": "How does the model find the best tags for a whole sentence? It uses a clever method called the Viterbi algorithm, in four steps.",
+      "spoken": "How does the model find the best tags for a whole sentence? It uses a clever method called the Viterbi algorithm, in four steps.",
+      "textHash": "9c8482ffe69f68b6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ee1ccb33b1b80412.wav",
+      "duration": 7.722,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "does",
+          "start": 0.12
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "model",
+          "start": 0.48
+        },
+        {
+          "w": "find",
+          "start": 0.88
+        },
+        {
+          "w": "the",
+          "start": 1.12
+        },
+        {
+          "w": "best",
+          "start": 1.28
+        },
+        {
+          "w": "tags",
+          "start": 1.56
+        },
+        {
+          "w": "for",
+          "start": 2.04
+        },
+        {
+          "w": "a",
+          "start": 2.2
+        },
+        {
+          "w": "whole",
+          "start": 2.36
+        },
+        {
+          "w": "sentence?",
+          "start": 2.64
+        },
+        {
+          "w": "It",
+          "start": 3.36
+        },
+        {
+          "w": "uses",
+          "start": 3.68
+        },
+        {
+          "w": "a",
+          "start": 4.08
+        },
+        {
+          "w": "clever",
+          "start": 4.2
+        },
+        {
+          "w": "method",
+          "start": 4.52
+        },
+        {
+          "w": "called",
+          "start": 4.88
+        },
+        {
+          "w": "the",
+          "start": 5.16
+        },
+        {
+          "w": "Viterbi",
+          "start": 5.52
+        },
+        {
+          "w": "algorithm,",
+          "start": 5.88
+        },
+        {
+          "w": "in",
+          "start": 6.64
+        },
+        {
+          "w": "four",
+          "start": 6.88
+        },
+        {
+          "w": "steps.",
+          "start": 7.16
+        }
+      ],
+      "matchScore": 0.95
+    },
+    "c15": {
+      "segment": "viterbi",
+      "display": "Start: for the first word, score every tag it could have.",
+      "spoken": "Start: for the first word, score every tag it could have.",
+      "textHash": "ddff7addf747b8a0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ae590541f0777e52.wav",
+      "duration": 3.158,
+      "marks": {},
+      "words": [
+        {
+          "w": "Start:",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.44
+        },
+        {
+          "w": "the",
+          "start": 0.6
+        },
+        {
+          "w": "first",
+          "start": 0.72
+        },
+        {
+          "w": "word,",
+          "start": 1.08
+        },
+        {
+          "w": "score",
+          "start": 1.44
+        },
+        {
+          "w": "every",
+          "start": 1.92
+        },
+        {
+          "w": "tag",
+          "start": 2.16
+        },
+        {
+          "w": "it",
+          "start": 2.48
+        },
+        {
+          "w": "could",
+          "start": 2.68
+        },
+        {
+          "w": "have.",
+          "start": 2.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "viterbi",
+      "display": "Extend: for each next word, and for each possible tag, keep only the single best path that leads into that tag.",
+      "spoken": "Extend: for each next word, and for each possible tag, keep only the single best path that leads into that tag.",
+      "textHash": "893bfb9f59914c75",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/efb6f612a4b262e1.wav",
+      "duration": 7.005,
+      "marks": {},
+      "words": [
+        {
+          "w": "Extend:",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.68
+        },
+        {
+          "w": "each",
+          "start": 0.96
+        },
+        {
+          "w": "next",
+          "start": 1.28
+        },
+        {
+          "w": "word,",
+          "start": 1.68
+        },
+        {
+          "w": "and",
+          "start": 1.92
+        },
+        {
+          "w": "for",
+          "start": 2.12
+        },
+        {
+          "w": "each",
+          "start": 2.32
+        },
+        {
+          "w": "possible",
+          "start": 2.56
+        },
+        {
+          "w": "tag,",
+          "start": 3.2
+        },
+        {
+          "w": "keep",
+          "start": 3.76
+        },
+        {
+          "w": "only",
+          "start": 4.08
+        },
+        {
+          "w": "the",
+          "start": 4.36
+        },
+        {
+          "w": "single",
+          "start": 4.56
+        },
+        {
+          "w": "best",
+          "start": 5
+        },
+        {
+          "w": "path",
+          "start": 5.32
+        },
+        {
+          "w": "that",
+          "start": 5.6
+        },
+        {
+          "w": "leads",
+          "start": 5.8
+        },
+        {
+          "w": "into",
+          "start": 6.16
+        },
+        {
+          "w": "that",
+          "start": 6.4
+        },
+        {
+          "w": "tag.",
+          "start": 6.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "viterbi",
+      "display": "Finish: at the last word, pick the tag with the best path.",
+      "spoken": "Finish: at the last word, pick the tag with the best path.",
+      "textHash": "25f74241be0f134a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8490a25500d722f4.wav",
+      "duration": 3.147,
+      "marks": {},
+      "words": [
+        {
+          "w": "Finish:",
+          "start": 0
+        },
+        {
+          "w": "at",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.68
+        },
+        {
+          "w": "last",
+          "start": 0.88
+        },
+        {
+          "w": "word,",
+          "start": 1.2
+        },
+        {
+          "w": "pick",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.8
+        },
+        {
+          "w": "tag",
+          "start": 1.92
+        },
+        {
+          "w": "with",
+          "start": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.4
+        },
+        {
+          "w": "best",
+          "start": 2.52
+        },
+        {
+          "w": "path.",
+          "start": 2.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "viterbi",
+      "display": "Trace back: follow that winning path backwards, and you have the best tag for every word.",
+      "spoken": "Trace back: follow that winning path backwards, and you have the best tag for every word.",
+      "textHash": "52c0db616a8ed9d8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e0cc4e1240f5a620.wav",
+      "duration": 4.902,
+      "marks": {},
+      "words": [
+        {
+          "w": "Trace",
+          "start": 0
+        },
+        {
+          "w": "back:",
+          "start": 0.48
+        },
+        {
+          "w": "follow",
+          "start": 0.88
+        },
+        {
+          "w": "that",
+          "start": 1.16
+        },
+        {
+          "w": "winning",
+          "start": 1.36
+        },
+        {
+          "w": "path",
+          "start": 1.72
+        },
+        {
+          "w": "backwards,",
+          "start": 2.08
+        },
+        {
+          "w": "and",
+          "start": 2.68
+        },
+        {
+          "w": "you",
+          "start": 2.88
+        },
+        {
+          "w": "have",
+          "start": 3.08
+        },
+        {
+          "w": "the",
+          "start": 3.24
+        },
+        {
+          "w": "best",
+          "start": 3.36
+        },
+        {
+          "w": "tag",
+          "start": 3.68
+        },
+        {
+          "w": "for",
+          "start": 4.04
+        },
+        {
+          "w": "every",
+          "start": 4.24
+        },
+        {
+          "w": "word.",
+          "start": 4.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "fast",
+      "display": "Why go to this trouble?",
+      "spoken": "Why go to this trouble?",
+      "textHash": "6da5054bd73f5055",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c5de3662a21911a7.wav",
+      "duration": 1.341,
+      "marks": {},
+      "words": [
+        {
+          "w": "Why",
+          "start": 0
+        },
+        {
+          "w": "go",
+          "start": 0.24
+        },
+        {
+          "w": "to",
+          "start": 0.48
+        },
+        {
+          "w": "this",
+          "start": 0.64
+        },
+        {
+          "w": "trouble?",
+          "start": 0.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "fast",
+      "display": "Because trying every combination of tags is hopeless. With ten words and a dozen tags each, there are more combinations than there are people on Earth.",
+      "spoken": "Because trying every combination of tags is hopeless. With ten words and a dozen tags each, there are more combinations than there are people on Earth.",
+      "textHash": "6421dd7e415ad847",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/95a11d55dcf9f862.wav",
+      "duration": 8.861,
+      "marks": {},
+      "words": [
+        {
+          "w": "Because",
+          "start": 0
+        },
+        {
+          "w": "trying",
+          "start": 0.32
+        },
+        {
+          "w": "every",
+          "start": 0.8
+        },
+        {
+          "w": "combination",
+          "start": 1.12
+        },
+        {
+          "w": "of",
+          "start": 1.68
+        },
+        {
+          "w": "tags",
+          "start": 1.84
+        },
+        {
+          "w": "is",
+          "start": 2.32
+        },
+        {
+          "w": "hopeless.",
+          "start": 2.56
+        },
+        {
+          "w": "With",
+          "start": 3.28
+        },
+        {
+          "w": "ten",
+          "start": 3.6
+        },
+        {
+          "w": "words",
+          "start": 3.96
+        },
+        {
+          "w": "and",
+          "start": 4.32
+        },
+        {
+          "w": "a",
+          "start": 4.52
+        },
+        {
+          "w": "dozen",
+          "start": 4.64
+        },
+        {
+          "w": "tags",
+          "start": 5
+        },
+        {
+          "w": "each,",
+          "start": 5.48
+        },
+        {
+          "w": "there",
+          "start": 5.84
+        },
+        {
+          "w": "are",
+          "start": 6.08
+        },
+        {
+          "w": "more",
+          "start": 6.32
+        },
+        {
+          "w": "combinations",
+          "start": 6.56
+        },
+        {
+          "w": "than",
+          "start": 7.44
+        },
+        {
+          "w": "there",
+          "start": 7.6
+        },
+        {
+          "w": "are",
+          "start": 7.84
+        },
+        {
+          "w": "people",
+          "start": 8
+        },
+        {
+          "w": "on",
+          "start": 8.32
+        },
+        {
+          "w": "Earth.",
+          "start": 8.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "fast",
+      "display": "Viterbi keeps only the best path into each tag at each word, and throws the rest away.",
+      "spoken": "Viterbi keeps only the best path into each tag at each word, and throws the rest away.",
+      "textHash": "ea9ea7448e9cc8bb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4d63f3234fdc3dee.wav",
+      "duration": 5.306,
+      "marks": {},
+      "words": [
+        {
+          "w": "Viterbi",
+          "start": 0.36
+        },
+        {
+          "w": "keeps",
+          "start": 0.72
+        },
+        {
+          "w": "only",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "best",
+          "start": 1.44
+        },
+        {
+          "w": "path",
+          "start": 1.72
+        },
+        {
+          "w": "into",
+          "start": 2.04
+        },
+        {
+          "w": "each",
+          "start": 2.28
+        },
+        {
+          "w": "tag",
+          "start": 2.56
+        },
+        {
+          "w": "at",
+          "start": 2.92
+        },
+        {
+          "w": "each",
+          "start": 3.12
+        },
+        {
+          "w": "word,",
+          "start": 3.44
+        },
+        {
+          "w": "and",
+          "start": 3.76
+        },
+        {
+          "w": "throws",
+          "start": 4.04
+        },
+        {
+          "w": "the",
+          "start": 4.44
+        },
+        {
+          "w": "rest",
+          "start": 4.64
+        },
+        {
+          "w": "away.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 0.938
+    },
+    "c22": {
+      "segment": "fast",
+      "display": "So the work grows gently with the length of the sentence, and even long sentences stay quick to tag.",
+      "spoken": "So the work grows gently with the length of the sentence, and even long sentences stay quick to tag.",
+      "textHash": "ec3a501c2def6260",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8b2ad82e4a32ae32.wav",
+      "duration": 5.774,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "work",
+          "start": 0.28
+        },
+        {
+          "w": "grows",
+          "start": 0.56
+        },
+        {
+          "w": "gently",
+          "start": 0.96
+        },
+        {
+          "w": "with",
+          "start": 1.4
+        },
+        {
+          "w": "the",
+          "start": 1.56
+        },
+        {
+          "w": "length",
+          "start": 1.68
+        },
+        {
+          "w": "of",
+          "start": 2.04
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "sentence,",
+          "start": 2.32
+        },
+        {
+          "w": "and",
+          "start": 2.96
+        },
+        {
+          "w": "even",
+          "start": 3.24
+        },
+        {
+          "w": "long",
+          "start": 3.64
+        },
+        {
+          "w": "sentences",
+          "start": 3.92
+        },
+        {
+          "w": "stay",
+          "start": 4.347
+        },
+        {
+          "w": "quick",
+          "start": 4.773
+        },
+        {
+          "w": "to",
+          "start": 5.2
+        },
+        {
+          "w": "tag.",
+          "start": 5.36
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c23": {
+      "segment": "limits",
+      "display": "So how good are HMMs?",
+      "spoken": "So how good are H M Ms?",
+      "textHash": "ec37aa9d0d17e60a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a97490e2e43573d2.wav",
+      "duration": 1.686,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.16
+        },
+        {
+          "w": "good",
+          "start": 0.36
+        },
+        {
+          "w": "are",
+          "start": 0.56
+        },
+        {
+          "w": "HMMs?",
+          "start": 1.123
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c24": {
+      "segment": "limits",
+      "display": "Their strengths: they're simple, fast, learn just by counting, and make a strong baseline for tagging.",
+      "spoken": "Their strengths: they're simple, fast, learn just by counting, and make a strong baseline for tagging.",
+      "textHash": "1ca0c11b45ade48b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/80df0c61e4e80224.wav",
+      "duration": 5.846,
+      "marks": {},
+      "words": [
+        {
+          "w": "Their",
+          "start": 0
+        },
+        {
+          "w": "strengths:",
+          "start": 0.24
+        },
+        {
+          "w": "they're",
+          "start": 0.72
+        },
+        {
+          "w": "simple,",
+          "start": 1.2
+        },
+        {
+          "w": "fast,",
+          "start": 1.8
+        },
+        {
+          "w": "learn",
+          "start": 2.32
+        },
+        {
+          "w": "just",
+          "start": 2.68
+        },
+        {
+          "w": "by",
+          "start": 2.92
+        },
+        {
+          "w": "counting,",
+          "start": 3.16
+        },
+        {
+          "w": "and",
+          "start": 3.6
+        },
+        {
+          "w": "make",
+          "start": 3.84
+        },
+        {
+          "w": "a",
+          "start": 4.04
+        },
+        {
+          "w": "strong",
+          "start": 4.16
+        },
+        {
+          "w": "baseline",
+          "start": 4.66
+        },
+        {
+          "w": "for",
+          "start": 5.16
+        },
+        {
+          "w": "tagging.",
+          "start": 5.32
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c25": {
+      "segment": "limits",
+      "display": "Their limits: each step only looks at the previous tag, and it's awkward to add extra clues, like a word's spelling or capital letters. And as a generative model, it spends effort modelling the words themselves, when we only need the tags. Next lesson's model lifts these limits.",
+      "spoken": "Their limits: each step only looks at the previous tag, and it's awkward to add extra clues, like a word's spelling or capital letters. And as a generative model, it spends effort modelling the words themselves, when we only need the tags. Next lesson's model lifts these limits.",
+      "textHash": "d9ac35f5a3a298a1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7a3769602ef9c493.wav",
+      "duration": 16.75,
+      "marks": {},
+      "words": [
+        {
+          "w": "Their",
+          "start": 0
+        },
+        {
+          "w": "limits:",
+          "start": 0.24
+        },
+        {
+          "w": "each",
+          "start": 0.88
+        },
+        {
+          "w": "step",
+          "start": 1.28
+        },
+        {
+          "w": "only",
+          "start": 1.64
+        },
+        {
+          "w": "looks",
+          "start": 1.92
+        },
+        {
+          "w": "at",
+          "start": 2.16
+        },
+        {
+          "w": "the",
+          "start": 2.28
+        },
+        {
+          "w": "previous",
+          "start": 2.4
+        },
+        {
+          "w": "tag,",
+          "start": 2.88
+        },
+        {
+          "w": "and",
+          "start": 3.28
+        },
+        {
+          "w": "it's",
+          "start": 3.52
+        },
+        {
+          "w": "awkward",
+          "start": 3.72
+        },
+        {
+          "w": "to",
+          "start": 4.16
+        },
+        {
+          "w": "add",
+          "start": 4.28
+        },
+        {
+          "w": "extra",
+          "start": 4.6
+        },
+        {
+          "w": "clues,",
+          "start": 5
+        },
+        {
+          "w": "like",
+          "start": 5.44
+        },
+        {
+          "w": "a",
+          "start": 5.68
+        },
+        {
+          "w": "word's",
+          "start": 5.88
+        },
+        {
+          "w": "spelling",
+          "start": 6.08
+        },
+        {
+          "w": "or",
+          "start": 6.64
+        },
+        {
+          "w": "capital",
+          "start": 6.88
+        },
+        {
+          "w": "letters.",
+          "start": 7.4
+        },
+        {
+          "w": "And",
+          "start": 8
+        },
+        {
+          "w": "as",
+          "start": 8.28
+        },
+        {
+          "w": "a",
+          "start": 8.48
+        },
+        {
+          "w": "generative",
+          "start": 8.84
+        },
+        {
+          "w": "model,",
+          "start": 9.2
+        },
+        {
+          "w": "it",
+          "start": 9.64
+        },
+        {
+          "w": "spends",
+          "start": 9.84
+        },
+        {
+          "w": "effort",
+          "start": 10.24
+        },
+        {
+          "w": "modelling",
+          "start": 10.64
+        },
+        {
+          "w": "the",
+          "start": 11.12
+        },
+        {
+          "w": "words",
+          "start": 11.28
+        },
+        {
+          "w": "themselves,",
+          "start": 11.64
+        },
+        {
+          "w": "when",
+          "start": 12.28
+        },
+        {
+          "w": "we",
+          "start": 12.48
+        },
+        {
+          "w": "only",
+          "start": 12.72
+        },
+        {
+          "w": "need",
+          "start": 12.96
+        },
+        {
+          "w": "the",
+          "start": 13.28
+        },
+        {
+          "w": "tags.",
+          "start": 13.44
+        },
+        {
+          "w": "Next",
+          "start": 14.027
+        },
+        {
+          "w": "lesson's",
+          "start": 14.613
+        },
+        {
+          "w": "model",
+          "start": 15.2
+        },
+        {
+          "w": "lifts",
+          "start": 15.6
+        },
+        {
+          "w": "these",
+          "start": 15.96
+        },
+        {
+          "w": "limits.",
+          "start": 16.2
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c26": {
+      "segment": "quiz",
+      "display": "Quick quiz. In a hidden Markov model used for tagging, what is hidden: the words, the tags, or the sentence length?",
+      "spoken": "Quick quiz. In a hidden Markov model used for tagging, what is hidden: the words, the tags, or the sentence length?",
+      "textHash": "a61536e683d1ddaa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6956da733967185a.wav",
+      "duration": 6.78,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.227
+        },
+        {
+          "w": "quiz.",
+          "start": 0.453
+        },
+        {
+          "w": "In",
+          "start": 0.68
+        },
+        {
+          "w": "a",
+          "start": 0.84
+        },
+        {
+          "w": "hidden",
+          "start": 0.96
+        },
+        {
+          "w": "Markov",
+          "start": 1.36
+        },
+        {
+          "w": "model",
+          "start": 1.76
+        },
+        {
+          "w": "used",
+          "start": 2.12
+        },
+        {
+          "w": "for",
+          "start": 2.36
+        },
+        {
+          "w": "tagging,",
+          "start": 2.48
+        },
+        {
+          "w": "what",
+          "start": 3.04
+        },
+        {
+          "w": "is",
+          "start": 3.28
+        },
+        {
+          "w": "hidden:",
+          "start": 3.48
+        },
+        {
+          "w": "the",
+          "start": 4.08
+        },
+        {
+          "w": "words,",
+          "start": 4.4
+        },
+        {
+          "w": "the",
+          "start": 4.92
+        },
+        {
+          "w": "tags,",
+          "start": 5.12
+        },
+        {
+          "w": "or",
+          "start": 5.64
+        },
+        {
+          "w": "the",
+          "start": 5.84
+        },
+        {
+          "w": "sentence",
+          "start": 6
+        },
+        {
+          "w": "length?",
+          "start": 6.48
+        }
+      ],
+      "matchScore": 0.824
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "It's the tags. We can see the words. The tags are the hidden states the model is trying to guess.",
+      "spoken": "It's the tags. We can see the words. The tags are the hidden states the model is trying to guess.",
+      "textHash": "7a69384b92b0bc82",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d9574394a94ac4ac.wav",
+      "duration": 5.647,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.24
+        },
+        {
+          "w": "tags.",
+          "start": 0.4
+        },
+        {
+          "w": "We",
+          "start": 1
+        },
+        {
+          "w": "can",
+          "start": 1.2
+        },
+        {
+          "w": "see",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.68
+        },
+        {
+          "w": "words.",
+          "start": 1.84
+        },
+        {
+          "w": "The",
+          "start": 2.48
+        },
+        {
+          "w": "tags",
+          "start": 2.72
+        },
+        {
+          "w": "are",
+          "start": 3.24
+        },
+        {
+          "w": "the",
+          "start": 3.36
+        },
+        {
+          "w": "hidden",
+          "start": 3.48
+        },
+        {
+          "w": "states",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 4.16
+        },
+        {
+          "w": "model",
+          "start": 4.32
+        },
+        {
+          "w": "is",
+          "start": 4.68
+        },
+        {
+          "w": "trying",
+          "start": 4.8
+        },
+        {
+          "w": "to",
+          "start": 5.08
+        },
+        {
+          "w": "guess.",
+          "start": 5.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "recap",
+      "display": "Let's recap. In an HMM, hidden tags produce the words we can see.",
+      "spoken": "Let's recap. In an H M M, hidden tags produce the words we can see.",
+      "textHash": "63200a236da7fd22",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/35d4384a76c2d7e8.wav",
+      "duration": 4.563,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "In",
+          "start": 0.96
+        },
+        {
+          "w": "an",
+          "start": 1.387
+        },
+        {
+          "w": "HMM,",
+          "start": 1.813
+        },
+        {
+          "w": "hidden",
+          "start": 2.24
+        },
+        {
+          "w": "tags",
+          "start": 2.64
+        },
+        {
+          "w": "produce",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.4
+        },
+        {
+          "w": "words",
+          "start": 3.56
+        },
+        {
+          "w": "we",
+          "start": 3.88
+        },
+        {
+          "w": "can",
+          "start": 4.04
+        },
+        {
+          "w": "see.",
+          "start": 4.28
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "Transition chances say how likely one tag is to follow another.",
+      "spoken": "Transition chances say how likely one tag is to follow another.",
+      "textHash": "07e6487b9f903fb3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ea048f1d5ad89c51.wav",
+      "duration": 4.272,
+      "marks": {},
+      "words": [
+        {
+          "w": "Transition",
+          "start": 0
+        },
+        {
+          "w": "chances",
+          "start": 0.68
+        },
+        {
+          "w": "say",
+          "start": 1.36
+        },
+        {
+          "w": "how",
+          "start": 1.64
+        },
+        {
+          "w": "likely",
+          "start": 1.92
+        },
+        {
+          "w": "one",
+          "start": 2.32
+        },
+        {
+          "w": "tag",
+          "start": 2.56
+        },
+        {
+          "w": "is",
+          "start": 3.04
+        },
+        {
+          "w": "to",
+          "start": 3.24
+        },
+        {
+          "w": "follow",
+          "start": 3.44
+        },
+        {
+          "w": "another.",
+          "start": 3.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "Emission chances say how likely a tag is to produce a word.",
+      "spoken": "Emission chances say how likely a tag is to produce a word.",
+      "textHash": "6689e7ebfd8554dd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e687fe7c2a5a2f59.wav",
+      "duration": 3.697,
+      "marks": {},
+      "words": [
+        {
+          "w": "Emission",
+          "start": 0
+        },
+        {
+          "w": "chances",
+          "start": 0.48
+        },
+        {
+          "w": "say",
+          "start": 1.04
+        },
+        {
+          "w": "how",
+          "start": 1.28
+        },
+        {
+          "w": "likely",
+          "start": 1.48
+        },
+        {
+          "w": "a",
+          "start": 1.88
+        },
+        {
+          "w": "tag",
+          "start": 2
+        },
+        {
+          "w": "is",
+          "start": 2.44
+        },
+        {
+          "w": "to",
+          "start": 2.64
+        },
+        {
+          "w": "produce",
+          "start": 2.8
+        },
+        {
+          "w": "a",
+          "start": 3.24
+        },
+        {
+          "w": "word.",
+          "start": 3.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "And the Viterbi algorithm finds the best tags for a whole sentence, quickly.",
+      "spoken": "And the Viterbi algorithm finds the best tags for a whole sentence, quickly.",
+      "textHash": "0210801c64b5060e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/642c66d120bd4053.wav",
+      "duration": 4.466,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.08
+        },
+        {
+          "w": "Viterbi",
+          "start": 0.2
+        },
+        {
+          "w": "algorithm",
+          "start": 0.72
+        },
+        {
+          "w": "finds",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.76
+        },
+        {
+          "w": "best",
+          "start": 1.92
+        },
+        {
+          "w": "tags",
+          "start": 2.2
+        },
+        {
+          "w": "for",
+          "start": 2.6
+        },
+        {
+          "w": "a",
+          "start": 2.72
+        },
+        {
+          "w": "whole",
+          "start": 2.88
+        },
+        {
+          "w": "sentence,",
+          "start": 3.409
+        },
+        {
+          "w": "quickly.",
+          "start": 3.937
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Next lesson: CRFs. How can a tagger use many clues at once?",
+      "spoken": "Next lesson: CRFs. How can a tagger use many clues at once?",
+      "textHash": "27dfe3113e0f8b92",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/53ad9553273d8aa3.wav",
+      "duration": 4.022,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.44
+        },
+        {
+          "w": "lesson:",
+          "start": 0.88
+        },
+        {
+          "w": "CRFs.",
+          "start": 1.32
+        },
+        {
+          "w": "How",
+          "start": 1.76
+        },
+        {
+          "w": "can",
+          "start": 2.04
+        },
+        {
+          "w": "a",
+          "start": 2.24
+        },
+        {
+          "w": "tagger",
+          "start": 2.48
+        },
+        {
+          "w": "use",
+          "start": 2.72
+        },
+        {
+          "w": "many",
+          "start": 2.96
+        },
+        {
+          "w": "clues",
+          "start": 3.16
+        },
+        {
+          "w": "at",
+          "start": 3.52
+        },
+        {
+          "w": "once?",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 0.6
+    }
+  }
+}

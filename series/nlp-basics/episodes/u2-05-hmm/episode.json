@@ -1,0 +1,246 @@
+{
+  "id": "u2-05",
+  "thumbnail": {
+    "headline": "How AI guesses hidden tags",
+    "big": "hidden tags"
+  },
+  "tags": [
+    "hidden markov model",
+    "HMM",
+    "viterbi algorithm",
+    "POS tagging",
+    "sequence labeling"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Hidden Markov Models",
+        "subtitle": "Guessing what you can't see"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "We can see the words. The tags are hidden. An HMM guesses the hidden tags from what it sees.",
+        "highlight": [
+          "hidden.",
+          "hidden"
+        ]
+      }
+    },
+    {
+      "id": "hmm",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is an HMM?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Hidden Markov Model",
+        "definition": "A model where hidden states, like tags, produce the things we observe, like words, one step at a time.",
+        "example": "hidden: DET → NOUN → VERB  ·  seen: the dog barks",
+        "analogy": "Guessing the weather from a friend's diary that only says whether they carried an umbrella."
+      }
+    },
+    {
+      "id": "two",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Two kinds of chances",
+      "props": {
+        "kicker": "What it learns",
+        "title": "Two kinds of chances",
+        "columns": [
+          {
+            "title": "Transition",
+            "items": [
+              "tag → next tag",
+              "after DET, a NOUN is likely",
+              "count pairs of tags"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Emission",
+            "items": [
+              "tag → word",
+              "a VERB may well be “barks”",
+              "count tag-and-word pairs"
+            ],
+            "tone": "neutral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "example",
+      "kind": "core",
+      "component": "Table",
+      "title": "A worked example",
+      "short": true,
+      "shortTitle": "How AI tags “the dog barks”",
+      "props": {
+        "kicker": "Worked example",
+        "title": "“the dog barks”",
+        "columns": [
+          "Word",
+          "Could be",
+          "Best guess"
+        ],
+        "rows": [
+          [
+            "the",
+            "DET",
+            "DET"
+          ],
+          [
+            "dog",
+            "NOUN · VERB",
+            "NOUN"
+          ],
+          [
+            "barks",
+            "NOUN · VERB",
+            "VERB"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 1,
+            "col": 2
+          },
+          {
+            "row": 2,
+            "col": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "viterbi",
+      "kind": "core",
+      "component": "Steps",
+      "title": "The Viterbi algorithm",
+      "props": {
+        "kicker": "Finding the best tags",
+        "title": "The Viterbi algorithm",
+        "steps": [
+          {
+            "label": "Start",
+            "detail": "which tags fit the first word?"
+          },
+          {
+            "label": "Extend",
+            "detail": "best path into each tag, word by word"
+          },
+          {
+            "label": "Finish",
+            "detail": "pick the best last tag"
+          },
+          {
+            "label": "Trace back",
+            "detail": "follow that path backwards"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fast",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Why it's fast",
+      "props": {
+        "kicker": "Why it matters",
+        "title": "Why Viterbi is so useful",
+        "items": [
+          {
+            "text": "Trying every combination of tags is hopeless"
+          },
+          {
+            "text": "Viterbi keeps only the best path into each tag"
+          },
+          {
+            "text": "So long sentences stay quick to tag"
+          }
+        ]
+      }
+    },
+    {
+      "id": "limits",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Strengths and limits",
+      "props": {
+        "kicker": "Pros and cons",
+        "title": "Strengths and limits",
+        "columns": [
+          {
+            "title": "Strengths",
+            "items": [
+              "simple and fast",
+              "learns just by counting",
+              "a strong baseline for tagging"
+            ],
+            "tone": "good"
+          },
+          {
+            "title": "Limits",
+            "items": [
+              "sees only the previous tag",
+              "hard to add clues like spelling",
+              "spends effort modelling the words"
+            ],
+            "tone": "bad"
+          }
+        ],
+        "verdict": {
+          "text": "Next lesson: CRFs lift these limits"
+        }
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: what's hidden in a Hidden Markov Model?",
+      "props": {
+        "question": "In an HMM used for tagging, what is hidden?",
+        "options": [
+          "The words",
+          "The tags",
+          "The sentence length"
+        ],
+        "answer": 1,
+        "explain": "We see the words; the tags are the hidden states we're trying to guess."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Hidden tags produce the words we see",
+          "Transition chances: tag to next tag",
+          "Emission chances: tag to word",
+          "Viterbi finds the best tags quickly"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}

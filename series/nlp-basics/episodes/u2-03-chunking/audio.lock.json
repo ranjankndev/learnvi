@@ -676,7 +676,7 @@
     },
     "c08": {
       "segment": "types",
-      "display": "The big red bus is a noun phrase, N P for short: a noun with the words that describe it.",
+      "display": "The big red bus is a noun phrase, NP for short: a noun with the words that describe it.",
       "spoken": "The big red bus is a noun phrase, N P for short: a noun with the words that describe it.",
       "textHash": "bb0562d314eebf28",
       "source": "tts",
@@ -718,12 +718,8 @@
           "start": 1.56
         },
         {
-          "w": "N",
-          "start": 2.02
-        },
-        {
-          "w": "P",
-          "start": 2.48
+          "w": "NP",
+          "start": 2.1
         },
         {
           "w": "for",
@@ -770,7 +766,7 @@
     },
     "c09": {
       "segment": "types",
-      "display": "Stopped is a verb phrase, V P.",
+      "display": "Stopped is a verb phrase, VP.",
       "spoken": "Stopped is a verb phrase, V P.",
       "textHash": "83b763a15913246a",
       "source": "tts",
@@ -800,12 +796,8 @@
           "start": 0.96
         },
         {
-          "w": "V",
-          "start": 1.44
-        },
-        {
-          "w": "P.",
-          "start": 1.92
+          "w": "VP.",
+          "start": 1.526
         }
       ],
       "matchScore": 0.667
@@ -1242,7 +1234,7 @@
     },
     "c17": {
       "segment": "tagged",
-      "display": "The begins a noun phrase, so it's B dash N P.",
+      "display": "The begins a noun phrase, so it's B-NP.",
       "spoken": "The begins a noun phrase, so it's B dash N P.",
       "textHash": "875e459fc0c07903",
       "source": "tts",
@@ -1280,27 +1272,15 @@
           "start": 1.6
         },
         {
-          "w": "B",
-          "start": 1.88
-        },
-        {
-          "w": "dash",
-          "start": 2.04
-        },
-        {
-          "w": "N",
-          "start": 2.42
-        },
-        {
-          "w": "P.",
-          "start": 2.8
+          "w": "B-NP.",
+          "start": 2.281
         }
       ],
-      "matchScore": 0.833
+      "matchScore": 0.667
     },
     "c18": {
       "segment": "tagged",
-      "display": "Big is inside that noun phrase: I dash N P.",
+      "display": "Big is inside that noun phrase: I-NP.",
       "spoken": "Big is inside that noun phrase: I dash N P.",
       "textHash": "75847cbd4416d2d1",
       "source": "tts",
@@ -1334,27 +1314,15 @@
           "start": 1.24
         },
         {
-          "w": "I",
-          "start": 1.84
-        },
-        {
-          "w": "dash",
-          "start": 2.12
-        },
-        {
-          "w": "N",
-          "start": 2.444
-        },
-        {
-          "w": "P.",
-          "start": 2.768
+          "w": "I-NP.",
+          "start": 2.166
         }
       ],
-      "matchScore": 1
+      "matchScore": 0.833
     },
     "c19": {
       "segment": "tagged",
-      "display": "Bus is still inside it: I dash N P.",
+      "display": "Bus is still inside it: I-NP.",
       "spoken": "Bus is still inside it: I dash N P.",
       "textHash": "bcc78f752b947cc0",
       "source": "tts",
@@ -1384,27 +1352,15 @@
           "start": 1.08
         },
         {
-          "w": "I",
-          "start": 1.32
-        },
-        {
-          "w": "dash",
-          "start": 1.56
-        },
-        {
-          "w": "N",
-          "start": 1.98
-        },
-        {
-          "w": "P.",
-          "start": 2.4
+          "w": "I-NP.",
+          "start": 1.815
         }
       ],
-      "matchScore": 1
+      "matchScore": 0.75
     },
     "c20": {
       "segment": "tagged",
-      "display": "Stopped begins a verb phrase: B dash V P.",
+      "display": "Stopped begins a verb phrase: B-VP.",
       "spoken": "Stopped begins a verb phrase: B dash V P.",
       "textHash": "2620f892f70510a9",
       "source": "tts",
@@ -1434,20 +1390,8 @@
           "start": 1.2
         },
         {
-          "w": "B",
-          "start": 1.72
-        },
-        {
-          "w": "dash",
-          "start": 2.067
-        },
-        {
-          "w": "V",
-          "start": 2.413
-        },
-        {
-          "w": "P.",
-          "start": 2.76
+          "w": "B-VP.",
+          "start": 2.045
         }
       ],
       "matchScore": 0.6
@@ -2267,7 +2211,7 @@
     },
     "c31": {
       "segment": "quiz",
-      "display": "It's I dash N P. The word \"the\" begins the noun phrase, and big, red and bus are all inside it.",
+      "display": "It's I-NP. The word \"the\" begins the noun phrase, and big, red and bus are all inside it.",
       "spoken": "It's I dash N P. The word \"the\" begins the noun phrase, and big, red and bus are all inside it.",
       "textHash": "40709fea0468e0fe",
       "source": "tts",
@@ -2281,20 +2225,8 @@
           "start": 0
         },
         {
-          "w": "I",
-          "start": 0.2
-        },
-        {
-          "w": "dash",
-          "start": 0.4
-        },
-        {
-          "w": "N",
-          "start": 0.72
-        },
-        {
-          "w": "P.",
-          "start": 1.04
+          "w": "I-NP.",
+          "start": 0.7
         },
         {
           "w": "The",
@@ -2361,7 +2293,7 @@
           "start": 6.04
         }
       ],
-      "matchScore": 0.941
+      "matchScore": 0.882
     },
     "c32": {
       "segment": "recap",

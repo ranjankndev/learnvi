@@ -20,9 +20,9 @@
 ## types
 [c07] Each chunk gets a type. Let's label our sentence.
 
-[c08] The big red bus is a noun phrase, N P for short: a noun with the words that describe it.
+[c08] The big red bus is a noun phrase, NP for short: a noun with the words that describe it.
 
-[c09] Stopped is a verb phrase, V P.
+[c09] Stopped is a verb phrase, VP.
 
 [c10] Near is a preposition, which links the bus to where it stopped.
 
@@ -40,13 +40,13 @@
 ## tagged
 [c16] Let's tag a short sentence: "The big bus stopped", with a full stop.
 
-[c17] The begins a noun phrase, so it's B dash N P.
+[c17] The begins a noun phrase, so it's B-NP.
 
-[c18] Big is inside that noun phrase: I dash N P.
+[c18] Big is inside that noun phrase: I-NP.
 
-[c19] Bus is still inside it: I dash N P.
+[c19] Bus is still inside it: I-NP.
 
-[c20] Stopped begins a verb phrase: B dash V P.
+[c20] Stopped begins a verb phrase: B-VP.
 
 [c21] And the full stop is outside every chunk, so it gets O.
 
@@ -71,7 +71,7 @@
 
 [c30 after=3] Pause the video and choose.
 
-[c31] It's I dash N P. The word "the" begins the noun phrase, and big, red and bus are all inside it.
+[c31] It's I-NP. The word "the" begins the noun phrase, and big, red and bus are all inside it.
 
 ## recap
 [c32] Let's recap. A chunk is a short group of words that acts as one unit.

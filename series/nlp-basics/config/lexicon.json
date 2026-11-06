@@ -1,4 +1,11 @@
 {
+  "B-NP": "B dash N P",
+  "I-NP": "I dash N P",
+  "B-VP": "B dash V P",
+  "HMMs": "H M Ms",
+  "HMM": "H M M",
+  "NP": "N P",
+  "VP": "V P",
   "NLP": "N L P",
   "POS": "P O S"
 }
