@@ -1,0 +1,3222 @@
+{
+  "version": 1,
+  "episode": "u2-02",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c37",
+    "c38",
+    "c39",
+    "c40",
+    "c41",
+    "c42",
+    "c43",
+    "c44",
+    "c45"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 2, lesson 2: part-of-speech tagging.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 2, lesson 2: part-of-speech tagging.",
+      "textHash": "5471d5ed88301b5b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cb644c4d6e78027c.wav",
+      "duration": 6.335,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.16
+        },
+        {
+          "w": "This",
+          "start": 2.92
+        },
+        {
+          "w": "is",
+          "start": 3.2
+        },
+        {
+          "w": "unit",
+          "start": 3.44
+        },
+        {
+          "w": "2,",
+          "start": 3.813
+        },
+        {
+          "w": "lesson",
+          "start": 4.187
+        },
+        {
+          "w": "2:",
+          "start": 4.56
+        },
+        {
+          "w": "part-of-speech",
+          "start": 5.2
+        },
+        {
+          "w": "tagging.",
+          "start": 5.84
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time we looked inside words. Today we look at the job each word does in a sentence.",
+      "spoken": "Last time we looked inside words. Today we look at the job each word does in a sentence.",
+      "textHash": "d884bb082145202a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2165ffc6d0035a88.wav",
+      "duration": 5.402,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time",
+          "start": 0.36
+        },
+        {
+          "w": "we",
+          "start": 0.64
+        },
+        {
+          "w": "looked",
+          "start": 0.84
+        },
+        {
+          "w": "inside",
+          "start": 1.08
+        },
+        {
+          "w": "words.",
+          "start": 1.68
+        },
+        {
+          "w": "Today",
+          "start": 2.16
+        },
+        {
+          "w": "we",
+          "start": 2.64
+        },
+        {
+          "w": "look",
+          "start": 2.84
+        },
+        {
+          "w": "at",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.16
+        },
+        {
+          "w": "job",
+          "start": 3.28
+        },
+        {
+          "w": "each",
+          "start": 3.72
+        },
+        {
+          "w": "word",
+          "start": 4
+        },
+        {
+          "w": "does",
+          "start": 4.24
+        },
+        {
+          "w": "in",
+          "start": 4.56
+        },
+        {
+          "w": "a",
+          "start": 4.68
+        },
+        {
+          "w": "sentence.",
+          "start": 4.8
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here is the idea for today. The same word can play different roles in different sentences. Part-of-speech tagging works out which role it's playing.",
+      "spoken": "Here is the idea for today. The same word can play different roles in different sentences. Part-of-speech tagging works out which role it's playing.",
+      "textHash": "4394108edf40c169",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0da8654b2a4c1984.wav",
+      "duration": 8.509,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.32
+        },
+        {
+          "w": "the",
+          "start": 0.48
+        },
+        {
+          "w": "idea",
+          "start": 0.64
+        },
+        {
+          "w": "for",
+          "start": 1.12
+        },
+        {
+          "w": "today.",
+          "start": 1.52
+        },
+        {
+          "w": "The",
+          "start": 1.92
+        },
+        {
+          "w": "same",
+          "start": 2.16
+        },
+        {
+          "w": "word",
+          "start": 2.48
+        },
+        {
+          "w": "can",
+          "start": 2.8
+        },
+        {
+          "w": "play",
+          "start": 2.96
+        },
+        {
+          "w": "different",
+          "start": 3.24
+        },
+        {
+          "w": "roles",
+          "start": 3.64
+        },
+        {
+          "w": "in",
+          "start": 4
+        },
+        {
+          "w": "different",
+          "start": 4.16
+        },
+        {
+          "w": "sentences.",
+          "start": 4.56
+        },
+        {
+          "w": "Part-of-speech",
+          "start": 5.5
+        },
+        {
+          "w": "tagging",
+          "start": 6.44
+        },
+        {
+          "w": "works",
+          "start": 6.88
+        },
+        {
+          "w": "out",
+          "start": 7.2
+        },
+        {
+          "w": "which",
+          "start": 7.36
+        },
+        {
+          "w": "role",
+          "start": 7.6
+        },
+        {
+          "w": "it's",
+          "start": 7.84
+        },
+        {
+          "w": "playing.",
+          "start": 8.08
+        }
+      ],
+      "matchScore": 0.864
+    },
+    "c04": {
+      "segment": "pos",
+      "display": "A part of speech is the grammatical role a word plays in a sentence: noun, verb, adjective, and so on.",
+      "spoken": "A part of speech is the grammatical role a word plays in a sentence: noun, verb, adjective, and so on.",
+      "textHash": "1b3d19e9a325aa3c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a416e5e97557d403.wav",
+      "duration": 6.696,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "part",
+          "start": 0.12
+        },
+        {
+          "w": "of",
+          "start": 0.32
+        },
+        {
+          "w": "speech",
+          "start": 0.44
+        },
+        {
+          "w": "is",
+          "start": 0.8
+        },
+        {
+          "w": "the",
+          "start": 0.92
+        },
+        {
+          "w": "grammatical",
+          "start": 1.04
+        },
+        {
+          "w": "role",
+          "start": 1.72
+        },
+        {
+          "w": "a",
+          "start": 2
+        },
+        {
+          "w": "word",
+          "start": 2.16
+        },
+        {
+          "w": "plays",
+          "start": 2.4
+        },
+        {
+          "w": "in",
+          "start": 2.72
+        },
+        {
+          "w": "a",
+          "start": 2.84
+        },
+        {
+          "w": "sentence:",
+          "start": 2.96
+        },
+        {
+          "w": "noun,",
+          "start": 3.693
+        },
+        {
+          "w": "verb,",
+          "start": 4.427
+        },
+        {
+          "w": "adjective,",
+          "start": 5.16
+        },
+        {
+          "w": "and",
+          "start": 5.92
+        },
+        {
+          "w": "so",
+          "start": 6.12
+        },
+        {
+          "w": "on.",
+          "start": 6.36
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c05": {
+      "segment": "pos",
+      "display": "In \"book a flight\", the word \"book\" is a verb. It's something you do.",
+      "spoken": "In \"book a flight\", the word \"book\" is a verb. It's something you do.",
+      "textHash": "d0256a4465ef3dc9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eab8cae329f0d125.wav",
+      "duration": 3.538,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"book",
+          "start": 0.12
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "flight\",",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.84
+        },
+        {
+          "w": "word",
+          "start": 1.04
+        },
+        {
+          "w": "\"book\"",
+          "start": 1.28
+        },
+        {
+          "w": "is",
+          "start": 1.6
+        },
+        {
+          "w": "a",
+          "start": 1.84
+        },
+        {
+          "w": "verb.",
+          "start": 2.08
+        },
+        {
+          "w": "It's",
+          "start": 2.32
+        },
+        {
+          "w": "something",
+          "start": 2.64
+        },
+        {
+          "w": "you",
+          "start": 2.96
+        },
+        {
+          "w": "do.",
+          "start": 3.24
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c06": {
+      "segment": "pos",
+      "display": "Think of words as actors. The same actor can play the hero in one film and the villain in the next. You can only tell which by watching the scene.",
+      "spoken": "Think of words as actors. The same actor can play the hero in one film and the villain in the next. You can only tell which by watching the scene.",
+      "textHash": "879a4b811c8be70e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3915ed5b181124dc.wav",
+      "duration": 8.525,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.24
+        },
+        {
+          "w": "words",
+          "start": 0.4
+        },
+        {
+          "w": "as",
+          "start": 0.8
+        },
+        {
+          "w": "actors.",
+          "start": 1.04
+        },
+        {
+          "w": "The",
+          "start": 1.76
+        },
+        {
+          "w": "same",
+          "start": 2
+        },
+        {
+          "w": "actor",
+          "start": 2.36
+        },
+        {
+          "w": "can",
+          "start": 2.8
+        },
+        {
+          "w": "play",
+          "start": 2.96
+        },
+        {
+          "w": "the",
+          "start": 3.2
+        },
+        {
+          "w": "hero",
+          "start": 3.36
+        },
+        {
+          "w": "in",
+          "start": 3.76
+        },
+        {
+          "w": "one",
+          "start": 3.96
+        },
+        {
+          "w": "film",
+          "start": 4.16
+        },
+        {
+          "w": "and",
+          "start": 4.56
+        },
+        {
+          "w": "the",
+          "start": 4.72
+        },
+        {
+          "w": "villain",
+          "start": 4.88
+        },
+        {
+          "w": "in",
+          "start": 5.28
+        },
+        {
+          "w": "the",
+          "start": 5.44
+        },
+        {
+          "w": "next.",
+          "start": 5.6
+        },
+        {
+          "w": "You",
+          "start": 6.08
+        },
+        {
+          "w": "can",
+          "start": 6.32
+        },
+        {
+          "w": "only",
+          "start": 6.56
+        },
+        {
+          "w": "tell",
+          "start": 6.8
+        },
+        {
+          "w": "which",
+          "start": 7.08
+        },
+        {
+          "w": "by",
+          "start": 7.32
+        },
+        {
+          "w": "watching",
+          "start": 7.52
+        },
+        {
+          "w": "the",
+          "start": 7.96
+        },
+        {
+          "w": "scene.",
+          "start": 8.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c07": {
+      "segment": "tagset",
+      "display": "A tagger gives every word a short label called a tag. Here are six you'll see everywhere.",
+      "spoken": "A tagger gives every word a short label called a tag. Here are six you'll see everywhere.",
+      "textHash": "c18ceb019316977b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/31df3baa0fe2897e.wav",
+      "duration": 4.944,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "tagger",
+          "start": 0.3
+        },
+        {
+          "w": "gives",
+          "start": 0.6
+        },
+        {
+          "w": "every",
+          "start": 0.92
+        },
+        {
+          "w": "word",
+          "start": 1.16
+        },
+        {
+          "w": "a",
+          "start": 1.4
+        },
+        {
+          "w": "short",
+          "start": 1.56
+        },
+        {
+          "w": "label",
+          "start": 1.84
+        },
+        {
+          "w": "called",
+          "start": 2.28
+        },
+        {
+          "w": "a",
+          "start": 2.56
+        },
+        {
+          "w": "tag.",
+          "start": 2.68
+        },
+        {
+          "w": "Here",
+          "start": 3.12
+        },
+        {
+          "w": "are",
+          "start": 3.44
+        },
+        {
+          "w": "six",
+          "start": 3.64
+        },
+        {
+          "w": "you'll",
+          "start": 3.88
+        },
+        {
+          "w": "see",
+          "start": 4.16
+        },
+        {
+          "w": "everywhere.",
+          "start": 4.4
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c08": {
+      "segment": "tagset",
+      "display": "NOUN is a thing or an idea, like \"cat\" or \"flight\".",
+      "spoken": "NOUN is a thing or an idea, like \"cat\" or \"flight\".",
+      "textHash": "4c1e9b83c4034a03",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f2077d873af81783.wav",
+      "duration": 3.177,
+      "marks": {},
+      "words": [
+        {
+          "w": "NOUN",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "thing",
+          "start": 0.64
+        },
+        {
+          "w": "or",
+          "start": 0.84
+        },
+        {
+          "w": "an",
+          "start": 1
+        },
+        {
+          "w": "idea,",
+          "start": 1.16
+        },
+        {
+          "w": "like",
+          "start": 1.68
+        },
+        {
+          "w": "\"cat\"",
+          "start": 2
+        },
+        {
+          "w": "or",
+          "start": 2.4
+        },
+        {
+          "w": "\"flight\".",
+          "start": 2.64
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "tagset",
+      "display": "VERB is an action or a state, like \"run\", or \"book\" when you book something.",
+      "spoken": "VERB is an action or a state, like \"run\", or \"book\" when you book something.",
+      "textHash": "68c89131784ac1b0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/80907b3b3d387f03.wav",
+      "duration": 4.304,
+      "marks": {},
+      "words": [
+        {
+          "w": "VERB",
+          "start": 0.04
+        },
+        {
+          "w": "is",
+          "start": 0.4
+        },
+        {
+          "w": "an",
+          "start": 0.52
+        },
+        {
+          "w": "action",
+          "start": 0.64
+        },
+        {
+          "w": "or",
+          "start": 1.08
+        },
+        {
+          "w": "a",
+          "start": 1.2
+        },
+        {
+          "w": "state,",
+          "start": 1.36
+        },
+        {
+          "w": "like",
+          "start": 1.76
+        },
+        {
+          "w": "\"run\",",
+          "start": 2.08
+        },
+        {
+          "w": "or",
+          "start": 2.52
+        },
+        {
+          "w": "\"book\"",
+          "start": 2.8
+        },
+        {
+          "w": "when",
+          "start": 3.16
+        },
+        {
+          "w": "you",
+          "start": 3.36
+        },
+        {
+          "w": "book",
+          "start": 3.52
+        },
+        {
+          "w": "something.",
+          "start": 3.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "tagset",
+      "display": "ADJ, short for adjective, describes a noun, like \"happy\" or \"red\".",
+      "spoken": "ADJ, short for adjective, describes a noun, like \"happy\" or \"red\".",
+      "textHash": "889b0ddf0ffeefdc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/af216e9f66ca7fbf.wav",
+      "duration": 3.728,
+      "marks": {},
+      "words": [
+        {
+          "w": "ADJ,",
+          "start": 0.16
+        },
+        {
+          "w": "short",
+          "start": 0.32
+        },
+        {
+          "w": "for",
+          "start": 0.56
+        },
+        {
+          "w": "adjective,",
+          "start": 0.72
+        },
+        {
+          "w": "describes",
+          "start": 1.32
+        },
+        {
+          "w": "a",
+          "start": 1.8
+        },
+        {
+          "w": "noun,",
+          "start": 1.92
+        },
+        {
+          "w": "like",
+          "start": 2.32
+        },
+        {
+          "w": "\"happy\"",
+          "start": 2.56
+        },
+        {
+          "w": "or",
+          "start": 3.04
+        },
+        {
+          "w": "\"red\".",
+          "start": 3.32
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c11": {
+      "segment": "tagset",
+      "display": "DET, short for determiner, points to a noun, like \"the\" or \"a\".",
+      "spoken": "DET, short for determiner, points to a noun, like \"the\" or \"a\".",
+      "textHash": "a7ace50eb1300f63",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/781b75854e5948a2.wav",
+      "duration": 3.612,
+      "marks": {},
+      "words": [
+        {
+          "w": "DET,",
+          "start": 0.16
+        },
+        {
+          "w": "short",
+          "start": 0.32
+        },
+        {
+          "w": "for",
+          "start": 0.56
+        },
+        {
+          "w": "determiner,",
+          "start": 0.72
+        },
+        {
+          "w": "points",
+          "start": 1.4
+        },
+        {
+          "w": "to",
+          "start": 1.72
+        },
+        {
+          "w": "a",
+          "start": 1.84
+        },
+        {
+          "w": "noun,",
+          "start": 1.92
+        },
+        {
+          "w": "like",
+          "start": 2.32
+        },
+        {
+          "w": "\"the\"",
+          "start": 2.64
+        },
+        {
+          "w": "or",
+          "start": 2.92
+        },
+        {
+          "w": "\"a\".",
+          "start": 3.24
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c12": {
+      "segment": "tagset",
+      "display": "ADP covers prepositions, like \"in\", \"on\" and \"to\".",
+      "spoken": "ADP covers prepositions, like \"in\", \"on\" and \"to\".",
+      "textHash": "15816ab03c2d154f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/772b27d4e36fad33.wav",
+      "duration": 3.602,
+      "marks": {},
+      "words": [
+        {
+          "w": "ADP",
+          "start": 0.28
+        },
+        {
+          "w": "covers",
+          "start": 0.56
+        },
+        {
+          "w": "prepositions,",
+          "start": 0.96
+        },
+        {
+          "w": "like",
+          "start": 1.84
+        },
+        {
+          "w": "\"in\",",
+          "start": 2.12
+        },
+        {
+          "w": "\"on\"",
+          "start": 2.52
+        },
+        {
+          "w": "and",
+          "start": 2.88
+        },
+        {
+          "w": "\"to\".",
+          "start": 3.2
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c13": {
+      "segment": "tagset",
+      "display": "And PRON is a pronoun, a word that stands in for a noun, like \"she\" or \"it\".",
+      "spoken": "And PRON is a pronoun, a word that stands in for a noun, like \"she\" or \"it\".",
+      "textHash": "f37999bda35893b6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/95343feee4b18fb4.wav",
+      "duration": 4.617,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "PRON",
+          "start": 0.24
+        },
+        {
+          "w": "is",
+          "start": 0.48
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "pronoun,",
+          "start": 0.8
+        },
+        {
+          "w": "a",
+          "start": 1.36
+        },
+        {
+          "w": "word",
+          "start": 1.6
+        },
+        {
+          "w": "that",
+          "start": 1.84
+        },
+        {
+          "w": "stands",
+          "start": 2.04
+        },
+        {
+          "w": "in",
+          "start": 2.4
+        },
+        {
+          "w": "for",
+          "start": 2.56
+        },
+        {
+          "w": "a",
+          "start": 2.68
+        },
+        {
+          "w": "noun,",
+          "start": 2.84
+        },
+        {
+          "w": "like",
+          "start": 3.24
+        },
+        {
+          "w": "\"she\"",
+          "start": 3.56
+        },
+        {
+          "w": "or",
+          "start": 3.92
+        },
+        {
+          "w": "\"it\".",
+          "start": 4.28
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c14": {
+      "segment": "tagged",
+      "display": "Let's tag a whole sentence: \"I want to book a flight\".",
+      "spoken": "Let's tag a whole sentence: \"I want to book a flight\".",
+      "textHash": "83d21da82cbccb1c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b87ea9bfb1850267.wav",
+      "duration": 2.975,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "tag",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.56
+        },
+        {
+          "w": "whole",
+          "start": 0.72
+        },
+        {
+          "w": "sentence:",
+          "start": 0.96
+        },
+        {
+          "w": "\"I",
+          "start": 1.56
+        },
+        {
+          "w": "want",
+          "start": 1.84
+        },
+        {
+          "w": "to",
+          "start": 1.92
+        },
+        {
+          "w": "book",
+          "start": 2
+        },
+        {
+          "w": "a",
+          "start": 2.08
+        },
+        {
+          "w": "flight\".",
+          "start": 2.56
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c15": {
+      "segment": "tagged",
+      "display": "\"I\" is a pronoun.",
+      "spoken": "\"I\" is a pronoun.",
+      "textHash": "7394ead4382c9fdd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ac509fa44af96c6c.wav",
+      "duration": 1.17,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"I\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.4
+        },
+        {
+          "w": "pronoun.",
+          "start": 0.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "tagged",
+      "display": "\"want\" is a verb.",
+      "spoken": "\"want\" is a verb.",
+      "textHash": "29eb24f518eafb8d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ee5b514cd33b01ef.wav",
+      "duration": 1.143,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"want\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.4
+        },
+        {
+          "w": "a",
+          "start": 0.648
+        },
+        {
+          "w": "verb.",
+          "start": 0.895
+        }
+      ],
+      "matchScore": 0.5
+    },
+    "c17": {
+      "segment": "tagged",
+      "display": "\"to\" gets its own small tag, PART, because here it's part of the verb that follows.",
+      "spoken": "\"to\" gets its own small tag, PART, because here it's part of the verb that follows.",
+      "textHash": "6613298b94f9530f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/afed2abc889cc294.wav",
+      "duration": 4.562,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"to\"",
+          "start": 0.04
+        },
+        {
+          "w": "gets",
+          "start": 0.2
+        },
+        {
+          "w": "its",
+          "start": 0.48
+        },
+        {
+          "w": "own",
+          "start": 0.76
+        },
+        {
+          "w": "small",
+          "start": 1.04
+        },
+        {
+          "w": "tag,",
+          "start": 1.32
+        },
+        {
+          "w": "PART,",
+          "start": 1.8
+        },
+        {
+          "w": "because",
+          "start": 2.16
+        },
+        {
+          "w": "here",
+          "start": 2.48
+        },
+        {
+          "w": "it's",
+          "start": 2.76
+        },
+        {
+          "w": "part",
+          "start": 3.04
+        },
+        {
+          "w": "of",
+          "start": 3.2
+        },
+        {
+          "w": "the",
+          "start": 3.4
+        },
+        {
+          "w": "verb",
+          "start": 3.6
+        },
+        {
+          "w": "that",
+          "start": 3.8
+        },
+        {
+          "w": "follows.",
+          "start": 4
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c18": {
+      "segment": "tagged",
+      "display": "\"book\" is a verb: booking is the action.",
+      "spoken": "\"book\" is a verb: booking is the action.",
+      "textHash": "6c11311e1a600196",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0bf8d4befb97d23b.wav",
+      "duration": 2.382,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"book\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.56
+        },
+        {
+          "w": "verb:",
+          "start": 0.8
+        },
+        {
+          "w": "booking",
+          "start": 1.04
+        },
+        {
+          "w": "is",
+          "start": 1.48
+        },
+        {
+          "w": "the",
+          "start": 1.68
+        },
+        {
+          "w": "action.",
+          "start": 1.84
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c19": {
+      "segment": "tagged",
+      "display": "\"a\" is a determiner.",
+      "spoken": "\"a\" is a determiner.",
+      "textHash": "a5c1f09945cae7c2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e5891b875b755c6f.wav",
+      "duration": 1.287,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"a\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.24
+        },
+        {
+          "w": "a",
+          "start": 0.4
+        },
+        {
+          "w": "determiner.",
+          "start": 0.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "tagged",
+      "display": "And \"flight\" is a noun.",
+      "spoken": "And \"flight\" is a noun.",
+      "textHash": "9e2943b672be2595",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9b22953f1d53de01.wav",
+      "duration": 1.379,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "\"flight\"",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.6
+        },
+        {
+          "w": "a",
+          "start": 0.8
+        },
+        {
+          "w": "noun.",
+          "start": 0.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "book",
+      "display": "Notice that \"book\" was a verb there. But it isn't always.",
+      "spoken": "Notice that \"book\" was a verb there. But it isn't always.",
+      "textHash": "84f3b2d8106c3190",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ec6743779de720a9.wav",
+      "duration": 3.208,
+      "marks": {},
+      "words": [
+        {
+          "w": "Notice",
+          "start": 0
+        },
+        {
+          "w": "that",
+          "start": 0.48
+        },
+        {
+          "w": "\"book\"",
+          "start": 0.72
+        },
+        {
+          "w": "was",
+          "start": 1
+        },
+        {
+          "w": "a",
+          "start": 1.213
+        },
+        {
+          "w": "verb",
+          "start": 1.427
+        },
+        {
+          "w": "there.",
+          "start": 1.64
+        },
+        {
+          "w": "But",
+          "start": 1.88
+        },
+        {
+          "w": "it",
+          "start": 2.08
+        },
+        {
+          "w": "isn't",
+          "start": 2.28
+        },
+        {
+          "w": "always.",
+          "start": 2.64
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c22": {
+      "segment": "book",
+      "display": "In \"book a flight\", it's a verb: an action you do.",
+      "spoken": "In \"book a flight\", it's a verb: an action you do.",
+      "textHash": "138db5c25c8392fb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9a5ea5a39cdb131f.wav",
+      "duration": 2.937,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"book",
+          "start": 0.16
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "flight\",",
+          "start": 0.48
+        },
+        {
+          "w": "it's",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.16
+        },
+        {
+          "w": "verb:",
+          "start": 1.44
+        },
+        {
+          "w": "an",
+          "start": 1.72
+        },
+        {
+          "w": "action",
+          "start": 1.92
+        },
+        {
+          "w": "you",
+          "start": 2.4
+        },
+        {
+          "w": "do.",
+          "start": 2.64
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c23": {
+      "segment": "book",
+      "display": "In \"read a book\", it's a noun: a thing you hold in your hands.",
+      "spoken": "In \"read a book\", it's a noun: a thing you hold in your hands.",
+      "textHash": "52a2c2eb1864db0b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e84c54439ec4557e.wav",
+      "duration": 3.366,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0.08
+        },
+        {
+          "w": "\"read",
+          "start": 0.16
+        },
+        {
+          "w": "a",
+          "start": 0.44
+        },
+        {
+          "w": "book\",",
+          "start": 0.56
+        },
+        {
+          "w": "it's",
+          "start": 0.8
+        },
+        {
+          "w": "a",
+          "start": 1.08
+        },
+        {
+          "w": "noun:",
+          "start": 1.24
+        },
+        {
+          "w": "a",
+          "start": 1.64
+        },
+        {
+          "w": "thing",
+          "start": 1.84
+        },
+        {
+          "w": "you",
+          "start": 2.08
+        },
+        {
+          "w": "hold",
+          "start": 2.28
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "your",
+          "start": 2.72
+        },
+        {
+          "w": "hands.",
+          "start": 2.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "book",
+      "display": "The spelling is identical, so the word alone can't tell you which it is.",
+      "spoken": "The spelling is identical, so the word alone can't tell you which it is.",
+      "textHash": "a0aa048407443d5d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d781d82d81b84d9f.wav",
+      "duration": 4.083,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "spelling",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.64
+        },
+        {
+          "w": "identical,",
+          "start": 0.8
+        },
+        {
+          "w": "so",
+          "start": 1.6
+        },
+        {
+          "w": "the",
+          "start": 1.84
+        },
+        {
+          "w": "word",
+          "start": 2.04
+        },
+        {
+          "w": "alone",
+          "start": 2.24
+        },
+        {
+          "w": "can't",
+          "start": 2.72
+        },
+        {
+          "w": "tell",
+          "start": 3.04
+        },
+        {
+          "w": "you",
+          "start": 3.2
+        },
+        {
+          "w": "which",
+          "start": 3.44
+        },
+        {
+          "w": "it",
+          "start": 3.6
+        },
+        {
+          "w": "is.",
+          "start": 3.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "book",
+      "display": "What decides it is the company it keeps. The neighbouring words decide.",
+      "spoken": "What decides it is the company it keeps. The neighbouring words decide.",
+      "textHash": "33881af0521adc49",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a9d8b4d2a904b556.wav",
+      "duration": 3.842,
+      "marks": {
+        "verdict": 2.12
+      },
+      "words": [
+        {
+          "w": "What",
+          "start": 0
+        },
+        {
+          "w": "decides",
+          "start": 0.16
+        },
+        {
+          "w": "it",
+          "start": 0.68
+        },
+        {
+          "w": "is",
+          "start": 0.84
+        },
+        {
+          "w": "the",
+          "start": 1
+        },
+        {
+          "w": "company",
+          "start": 1.12
+        },
+        {
+          "w": "it",
+          "start": 1.52
+        },
+        {
+          "w": "keeps.",
+          "start": 1.68
+        },
+        {
+          "w": "The",
+          "start": 2.12
+        },
+        {
+          "w": "neighbouring",
+          "start": 2.24
+        },
+        {
+          "w": "words",
+          "start": 2.92
+        },
+        {
+          "w": "decide.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "decide",
+      "display": "So how does a tagger make the decision? It works in three steps.",
+      "spoken": "So how does a tagger make the decision? It works in three steps.",
+      "textHash": "7e1d75c22f2d650d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/117ba6e5443a70c1.wav",
+      "duration": 3.621,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.16
+        },
+        {
+          "w": "does",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.52
+        },
+        {
+          "w": "tagger",
+          "start": 0.78
+        },
+        {
+          "w": "make",
+          "start": 1.04
+        },
+        {
+          "w": "the",
+          "start": 1.24
+        },
+        {
+          "w": "decision?",
+          "start": 1.36
+        },
+        {
+          "w": "It",
+          "start": 2
+        },
+        {
+          "w": "works",
+          "start": 2.24
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "three",
+          "start": 2.8
+        },
+        {
+          "w": "steps.",
+          "start": 3.08
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c27": {
+      "segment": "decide",
+      "display": "Look up: first it checks which tags each word is able to take. \"book\" could be a noun or a verb.",
+      "spoken": "Look up: first it checks which tags each word is able to take. \"book\" could be a noun or a verb.",
+      "textHash": "34b9aaa4b0ef2315",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/13c30fe4c2b09e94.wav",
+      "duration": 5.61,
+      "marks": {},
+      "words": [
+        {
+          "w": "Look",
+          "start": 0
+        },
+        {
+          "w": "up:",
+          "start": 0.24
+        },
+        {
+          "w": "first",
+          "start": 0.48
+        },
+        {
+          "w": "it",
+          "start": 0.68
+        },
+        {
+          "w": "checks",
+          "start": 0.88
+        },
+        {
+          "w": "which",
+          "start": 1.2
+        },
+        {
+          "w": "tags",
+          "start": 1.4
+        },
+        {
+          "w": "each",
+          "start": 1.76
+        },
+        {
+          "w": "word",
+          "start": 1.96
+        },
+        {
+          "w": "is",
+          "start": 2.16
+        },
+        {
+          "w": "able",
+          "start": 2.32
+        },
+        {
+          "w": "to",
+          "start": 2.6
+        },
+        {
+          "w": "take.",
+          "start": 2.8
+        },
+        {
+          "w": "\"book\"",
+          "start": 3.44
+        },
+        {
+          "w": "could",
+          "start": 3.92
+        },
+        {
+          "w": "be",
+          "start": 4.08
+        },
+        {
+          "w": "a",
+          "start": 4.24
+        },
+        {
+          "w": "noun",
+          "start": 4.4
+        },
+        {
+          "w": "or",
+          "start": 4.8
+        },
+        {
+          "w": "a",
+          "start": 5.07
+        },
+        {
+          "w": "verb.",
+          "start": 5.34
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c28": {
+      "segment": "decide",
+      "display": "Check neighbours: then it looks at what usually comes before and after each tag.",
+      "spoken": "Check neighbours: then it looks at what usually comes before and after each tag.",
+      "textHash": "1e5b5ff7d17f7e95",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c388883d2d924e39.wav",
+      "duration": 4.322,
+      "marks": {},
+      "words": [
+        {
+          "w": "Check",
+          "start": 0
+        },
+        {
+          "w": "neighbours:",
+          "start": 0.32
+        },
+        {
+          "w": "then",
+          "start": 0.96
+        },
+        {
+          "w": "it",
+          "start": 1.2
+        },
+        {
+          "w": "looks",
+          "start": 1.4
+        },
+        {
+          "w": "at",
+          "start": 1.64
+        },
+        {
+          "w": "what",
+          "start": 1.8
+        },
+        {
+          "w": "usually",
+          "start": 2
+        },
+        {
+          "w": "comes",
+          "start": 2.48
+        },
+        {
+          "w": "before",
+          "start": 2.84
+        },
+        {
+          "w": "and",
+          "start": 3.16
+        },
+        {
+          "w": "after",
+          "start": 3.36
+        },
+        {
+          "w": "each",
+          "start": 3.64
+        },
+        {
+          "w": "tag.",
+          "start": 3.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "decide",
+      "display": "Pick the best: finally it chooses the tags that make the most sense for the whole sentence together, not just one word at a time.",
+      "spoken": "Pick the best: finally it chooses the tags that make the most sense for the whole sentence together, not just one word at a time.",
+      "textHash": "8b5958edb2a0bb44",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/61eaa28aec14fa3b.wav",
+      "duration": 7.731,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pick",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.32
+        },
+        {
+          "w": "best:",
+          "start": 0.52
+        },
+        {
+          "w": "finally",
+          "start": 1
+        },
+        {
+          "w": "it",
+          "start": 1.68
+        },
+        {
+          "w": "chooses",
+          "start": 1.92
+        },
+        {
+          "w": "the",
+          "start": 2.4
+        },
+        {
+          "w": "tags",
+          "start": 2.56
+        },
+        {
+          "w": "that",
+          "start": 3
+        },
+        {
+          "w": "make",
+          "start": 3.2
+        },
+        {
+          "w": "the",
+          "start": 3.4
+        },
+        {
+          "w": "most",
+          "start": 3.52
+        },
+        {
+          "w": "sense",
+          "start": 3.76
+        },
+        {
+          "w": "for",
+          "start": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.28
+        },
+        {
+          "w": "whole",
+          "start": 4.44
+        },
+        {
+          "w": "sentence",
+          "start": 4.68
+        },
+        {
+          "w": "together,",
+          "start": 5.2
+        },
+        {
+          "w": "not",
+          "start": 5.84
+        },
+        {
+          "w": "just",
+          "start": 6.12
+        },
+        {
+          "w": "one",
+          "start": 6.4
+        },
+        {
+          "w": "word",
+          "start": 6.72
+        },
+        {
+          "w": "at",
+          "start": 7.04
+        },
+        {
+          "w": "a",
+          "start": 7.24
+        },
+        {
+          "w": "time.",
+          "start": 7.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c30": {
+      "segment": "clues",
+      "display": "What kinds of clues does a tagger learn? Here are four simple ones.",
+      "spoken": "What kinds of clues does a tagger learn? Here are four simple ones.",
+      "textHash": "b97bf30709429759",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/564bc444e723cbe2.wav",
+      "duration": 3.43,
+      "marks": {},
+      "words": [
+        {
+          "w": "What",
+          "start": 0
+        },
+        {
+          "w": "kinds",
+          "start": 0.16
+        },
+        {
+          "w": "of",
+          "start": 0.4
+        },
+        {
+          "w": "clues",
+          "start": 0.52
+        },
+        {
+          "w": "does",
+          "start": 0.84
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "tagger",
+          "start": 1.16
+        },
+        {
+          "w": "learn?",
+          "start": 1.48
+        },
+        {
+          "w": "Here",
+          "start": 1.84
+        },
+        {
+          "w": "are",
+          "start": 2.16
+        },
+        {
+          "w": "four",
+          "start": 2.32
+        },
+        {
+          "w": "simple",
+          "start": 2.56
+        },
+        {
+          "w": "ones.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "clues",
+      "display": "After \"the\" or \"a\", the next word is usually a noun.",
+      "spoken": "After \"the\" or \"a\", the next word is usually a noun.",
+      "textHash": "d676c76907908783",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c0e0f45489fb6a62.wav",
+      "duration": 3.156,
+      "marks": {},
+      "words": [
+        {
+          "w": "After",
+          "start": 0
+        },
+        {
+          "w": "\"the\"",
+          "start": 0.4
+        },
+        {
+          "w": "or",
+          "start": 0.72
+        },
+        {
+          "w": "\"a\",",
+          "start": 0.96
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "next",
+          "start": 1.48
+        },
+        {
+          "w": "word",
+          "start": 1.84
+        },
+        {
+          "w": "is",
+          "start": 2.08
+        },
+        {
+          "w": "usually",
+          "start": 2.24
+        },
+        {
+          "w": "a",
+          "start": 2.6
+        },
+        {
+          "w": "noun.",
+          "start": 2.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c32": {
+      "segment": "clues",
+      "display": "After \"to\", there's often a verb, as in \"to book\".",
+      "spoken": "After \"to\", there's often a verb, as in \"to book\".",
+      "textHash": "60b572c681c7d08b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4be6de79f4b2c865.wav",
+      "duration": 2.727,
+      "marks": {},
+      "words": [
+        {
+          "w": "After",
+          "start": 0
+        },
+        {
+          "w": "\"to\",",
+          "start": 0.32
+        },
+        {
+          "w": "there's",
+          "start": 0.64
+        },
+        {
+          "w": "often",
+          "start": 0.96
+        },
+        {
+          "w": "a",
+          "start": 1.227
+        },
+        {
+          "w": "verb,",
+          "start": 1.493
+        },
+        {
+          "w": "as",
+          "start": 1.76
+        },
+        {
+          "w": "in",
+          "start": 1.96
+        },
+        {
+          "w": "\"to",
+          "start": 2.12
+        },
+        {
+          "w": "book\".",
+          "start": 2.423
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c33": {
+      "segment": "clues",
+      "display": "A word ending in \"l y\" is often an adverb, like \"quickly\".",
+      "spoken": "A word ending in \"l y\" is often an adverb, like \"quickly\".",
+      "textHash": "e7a59de148e2f3c9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f0f5e098a0a7b77f.wav",
+      "duration": 3.673,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "word",
+          "start": 0.12
+        },
+        {
+          "w": "ending",
+          "start": 0.4
+        },
+        {
+          "w": "in",
+          "start": 0.69
+        },
+        {
+          "w": "\"l",
+          "start": 0.98
+        },
+        {
+          "w": "y\"",
+          "start": 1.27
+        },
+        {
+          "w": "is",
+          "start": 1.56
+        },
+        {
+          "w": "often",
+          "start": 1.84
+        },
+        {
+          "w": "an",
+          "start": 2.24
+        },
+        {
+          "w": "adverb,",
+          "start": 2.4
+        },
+        {
+          "w": "like",
+          "start": 2.824
+        },
+        {
+          "w": "\"quickly\".",
+          "start": 3.249
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c34": {
+      "segment": "clues",
+      "display": "And a word ending in \"e d\" or \"i n g\" is often a verb, like \"walked\" or \"walking\".",
+      "spoken": "And a word ending in \"e d\" or \"i n g\" is often a verb, like \"walked\" or \"walking\".",
+      "textHash": "8df011142678ee56",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/196555a442dd6588.wav",
+      "duration": 5.176,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.12
+        },
+        {
+          "w": "word",
+          "start": 0.24
+        },
+        {
+          "w": "ending",
+          "start": 0.52
+        },
+        {
+          "w": "in",
+          "start": 0.88
+        },
+        {
+          "w": "\"e",
+          "start": 1.08
+        },
+        {
+          "w": "d\"",
+          "start": 1.32
+        },
+        {
+          "w": "or",
+          "start": 1.56
+        },
+        {
+          "w": "\"i",
+          "start": 1.88
+        },
+        {
+          "w": "n",
+          "start": 2.12
+        },
+        {
+          "w": "g\"",
+          "start": 2.36
+        },
+        {
+          "w": "is",
+          "start": 2.56
+        },
+        {
+          "w": "often",
+          "start": 2.8
+        },
+        {
+          "w": "a",
+          "start": 3.08
+        },
+        {
+          "w": "verb,",
+          "start": 3.36
+        },
+        {
+          "w": "like",
+          "start": 3.64
+        },
+        {
+          "w": "\"walked\"",
+          "start": 3.92
+        },
+        {
+          "w": "or",
+          "start": 4.36
+        },
+        {
+          "w": "\"walking\".",
+          "start": 4.64
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c35": {
+      "segment": "accuracy",
+      "display": "How good are taggers? On English news text, they are very good.",
+      "spoken": "How good are taggers? On English news text, they are very good.",
+      "textHash": "0c547f6e74317e46",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/411e09817ad98dbc.wav",
+      "duration": 3.483,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "good",
+          "start": 0.24
+        },
+        {
+          "w": "are",
+          "start": 0.44
+        },
+        {
+          "w": "taggers?",
+          "start": 0.84
+        },
+        {
+          "w": "On",
+          "start": 1.24
+        },
+        {
+          "w": "English",
+          "start": 1.48
+        },
+        {
+          "w": "news",
+          "start": 1.88
+        },
+        {
+          "w": "text,",
+          "start": 2.16
+        },
+        {
+          "w": "they",
+          "start": 2.56
+        },
+        {
+          "w": "are",
+          "start": 2.68
+        },
+        {
+          "w": "very",
+          "start": 2.88
+        },
+        {
+          "w": "good.",
+          "start": 3.16
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c36": {
+      "segment": "accuracy",
+      "display": "Just picking each word's most common tag already gets about ninety-two percent of words right.",
+      "spoken": "Just picking each word's most common tag already gets about ninety-two percent of words right.",
+      "textHash": "6f3f7419e26879e1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/44d3b7c0645fcfa1.wav",
+      "duration": 5.562,
+      "marks": {},
+      "words": [
+        {
+          "w": "Just",
+          "start": 0
+        },
+        {
+          "w": "picking",
+          "start": 0.28
+        },
+        {
+          "w": "each",
+          "start": 0.64
+        },
+        {
+          "w": "word's",
+          "start": 0.96
+        },
+        {
+          "w": "most",
+          "start": 1.32
+        },
+        {
+          "w": "common",
+          "start": 1.6
+        },
+        {
+          "w": "tag",
+          "start": 1.96
+        },
+        {
+          "w": "already",
+          "start": 2.44
+        },
+        {
+          "w": "gets",
+          "start": 3
+        },
+        {
+          "w": "about",
+          "start": 3.28
+        },
+        {
+          "w": "ninety-two",
+          "start": 3.747
+        },
+        {
+          "w": "percent",
+          "start": 4.213
+        },
+        {
+          "w": "of",
+          "start": 4.68
+        },
+        {
+          "w": "words",
+          "start": 4.88
+        },
+        {
+          "w": "right.",
+          "start": 5.24
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c37": {
+      "segment": "accuracy",
+      "display": "Modern taggers, which use the whole sentence, reach about ninety-seven percent. That still means roughly one word in thirty gets the wrong tag, and the hard cases are exactly the ambiguous ones.",
+      "spoken": "Modern taggers, which use the whole sentence, reach about ninety-seven percent. That still means roughly one word in thirty gets the wrong tag, and the hard cases are exactly the ambiguous ones.",
+      "textHash": "99c48046d121df0d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aa4335211854db65.wav",
+      "duration": 12.127,
+      "marks": {},
+      "words": [
+        {
+          "w": "Modern",
+          "start": 0
+        },
+        {
+          "w": "taggers,",
+          "start": 0.52
+        },
+        {
+          "w": "which",
+          "start": 1.12
+        },
+        {
+          "w": "use",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "whole",
+          "start": 1.76
+        },
+        {
+          "w": "sentence,",
+          "start": 2.08
+        },
+        {
+          "w": "reach",
+          "start": 2.8
+        },
+        {
+          "w": "about",
+          "start": 3.2
+        },
+        {
+          "w": "ninety-seven",
+          "start": 3.84
+        },
+        {
+          "w": "percent.",
+          "start": 4.48
+        },
+        {
+          "w": "That",
+          "start": 5.12
+        },
+        {
+          "w": "still",
+          "start": 5.44
+        },
+        {
+          "w": "means",
+          "start": 5.8
+        },
+        {
+          "w": "roughly",
+          "start": 6.2
+        },
+        {
+          "w": "one",
+          "start": 6.64
+        },
+        {
+          "w": "word",
+          "start": 6.88
+        },
+        {
+          "w": "in",
+          "start": 7.12
+        },
+        {
+          "w": "thirty",
+          "start": 7.32
+        },
+        {
+          "w": "gets",
+          "start": 7.72
+        },
+        {
+          "w": "the",
+          "start": 8
+        },
+        {
+          "w": "wrong",
+          "start": 8.2
+        },
+        {
+          "w": "tag,",
+          "start": 8.52
+        },
+        {
+          "w": "and",
+          "start": 9
+        },
+        {
+          "w": "the",
+          "start": 9.2
+        },
+        {
+          "w": "hard",
+          "start": 9.4
+        },
+        {
+          "w": "cases",
+          "start": 9.68
+        },
+        {
+          "w": "are",
+          "start": 10.16
+        },
+        {
+          "w": "exactly",
+          "start": 10.36
+        },
+        {
+          "w": "the",
+          "start": 10.92
+        },
+        {
+          "w": "ambiguous",
+          "start": 11.04
+        },
+        {
+          "w": "ones.",
+          "start": 11.76
+        }
+      ],
+      "matchScore": 0.935
+    },
+    "c38": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. In the sentence \"Time flies like an arrow\", what part of speech is \"flies\"?",
+      "spoken": "Time for a quick quiz. In the sentence \"Time flies like an arrow\", what part of speech is \"flies\"?",
+      "textHash": "41431bae6b3f18aa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cb82b03d96adad60.wav",
+      "duration": 6.021,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.62
+        },
+        {
+          "w": "quick",
+          "start": 0.92
+        },
+        {
+          "w": "quiz.",
+          "start": 1.22
+        },
+        {
+          "w": "In",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.72
+        },
+        {
+          "w": "sentence",
+          "start": 1.92
+        },
+        {
+          "w": "\"Time",
+          "start": 2.72
+        },
+        {
+          "w": "flies",
+          "start": 3
+        },
+        {
+          "w": "like",
+          "start": 3.52
+        },
+        {
+          "w": "an",
+          "start": 3.68
+        },
+        {
+          "w": "arrow\",",
+          "start": 3.84
+        },
+        {
+          "w": "what",
+          "start": 4.24
+        },
+        {
+          "w": "part",
+          "start": 4.44
+        },
+        {
+          "w": "of",
+          "start": 4.64
+        },
+        {
+          "w": "speech",
+          "start": 4.76
+        },
+        {
+          "w": "is",
+          "start": 5.16
+        },
+        {
+          "w": "\"flies\"?",
+          "start": 5.36
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c39": {
+      "segment": "quiz",
+      "display": "Pause the video and choose: noun, verb, or adjective?",
+      "spoken": "Pause the video and choose: noun, verb, or adjective?",
+      "textHash": "49548908f2aea386",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ea6337572be6d289.wav",
+      "duration": 3.506,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.52
+        },
+        {
+          "w": "and",
+          "start": 0.76
+        },
+        {
+          "w": "choose:",
+          "start": 0.96
+        },
+        {
+          "w": "noun,",
+          "start": 1.493
+        },
+        {
+          "w": "verb,",
+          "start": 2.027
+        },
+        {
+          "w": "or",
+          "start": 2.56
+        },
+        {
+          "w": "adjective?",
+          "start": 2.72
+        }
+      ],
+      "matchScore": 0.625,
+      "after": 3
+    },
+    "c40": {
+      "segment": "quiz",
+      "display": "It's a verb: flying is what time does. But in \"Fruit flies like a banana\", \"flies\" is a noun. Same word, different neighbours.",
+      "spoken": "It's a verb: flying is what time does. But in \"Fruit flies like a banana\", \"flies\" is a noun. Same word, different neighbours.",
+      "textHash": "a36634545c46ed2b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/262ac353670dbbcd.wav",
+      "duration": 7.912,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.24
+        },
+        {
+          "w": "verb:",
+          "start": 0.48
+        },
+        {
+          "w": "flying",
+          "start": 0.72
+        },
+        {
+          "w": "is",
+          "start": 1.16
+        },
+        {
+          "w": "what",
+          "start": 1.36
+        },
+        {
+          "w": "time",
+          "start": 1.6
+        },
+        {
+          "w": "does.",
+          "start": 1.92
+        },
+        {
+          "w": "But",
+          "start": 2.36
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "\"Fruit",
+          "start": 2.8
+        },
+        {
+          "w": "flies",
+          "start": 3.16
+        },
+        {
+          "w": "like",
+          "start": 3.56
+        },
+        {
+          "w": "a",
+          "start": 3.72
+        },
+        {
+          "w": "banana\",",
+          "start": 3.84
+        },
+        {
+          "w": "\"flies\"",
+          "start": 4.56
+        },
+        {
+          "w": "is",
+          "start": 5.28
+        },
+        {
+          "w": "a",
+          "start": 5.44
+        },
+        {
+          "w": "noun.",
+          "start": 5.6
+        },
+        {
+          "w": "Same",
+          "start": 6.12
+        },
+        {
+          "w": "word,",
+          "start": 6.56
+        },
+        {
+          "w": "different",
+          "start": 6.88
+        },
+        {
+          "w": "neighbours.",
+          "start": 7.32
+        }
+      ],
+      "matchScore": 0.941
+    },
+    "c41": {
+      "segment": "recap",
+      "display": "Let's recap. A part of speech is the role a word plays in a sentence.",
+      "spoken": "Let's recap. A part of speech is the role a word plays in a sentence.",
+      "textHash": "7328454cb7ea3f4c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/92179f951202506f.wav",
+      "duration": 4.244,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.4
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "part",
+          "start": 1.24
+        },
+        {
+          "w": "of",
+          "start": 1.44
+        },
+        {
+          "w": "speech",
+          "start": 1.6
+        },
+        {
+          "w": "is",
+          "start": 2.08
+        },
+        {
+          "w": "the",
+          "start": 2.2
+        },
+        {
+          "w": "role",
+          "start": 2.36
+        },
+        {
+          "w": "a",
+          "start": 2.64
+        },
+        {
+          "w": "word",
+          "start": 2.8
+        },
+        {
+          "w": "plays",
+          "start": 3.08
+        },
+        {
+          "w": "in",
+          "start": 3.4
+        },
+        {
+          "w": "a",
+          "start": 3.52
+        },
+        {
+          "w": "sentence.",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c42": {
+      "segment": "recap",
+      "display": "A tagger labels every word with a tag, like NOUN, VERB or DET.",
+      "spoken": "A tagger labels every word with a tag, like NOUN, VERB or DET.",
+      "textHash": "e21dacd1c44b68e5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/861b48b6df8aac41.wav",
+      "duration": 4.251,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "tagger",
+          "start": 0.26
+        },
+        {
+          "w": "labels",
+          "start": 0.52
+        },
+        {
+          "w": "every",
+          "start": 0.96
+        },
+        {
+          "w": "word",
+          "start": 1.24
+        },
+        {
+          "w": "with",
+          "start": 1.48
+        },
+        {
+          "w": "a",
+          "start": 1.6
+        },
+        {
+          "w": "tag,",
+          "start": 1.76
+        },
+        {
+          "w": "like",
+          "start": 2.28
+        },
+        {
+          "w": "NOUN,",
+          "start": 2.733
+        },
+        {
+          "w": "VERB",
+          "start": 3.187
+        },
+        {
+          "w": "or",
+          "start": 3.64
+        },
+        {
+          "w": "DET.",
+          "start": 3.946
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c43": {
+      "segment": "recap",
+      "display": "Many words, like \"book\", can take more than one tag.",
+      "spoken": "Many words, like \"book\", can take more than one tag.",
+      "textHash": "7f433af4aa59d661",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e6c9f5c1293f8073.wav",
+      "duration": 2.834,
+      "marks": {},
+      "words": [
+        {
+          "w": "Many",
+          "start": 0
+        },
+        {
+          "w": "words,",
+          "start": 0.32
+        },
+        {
+          "w": "like",
+          "start": 0.64
+        },
+        {
+          "w": "\"book\",",
+          "start": 0.92
+        },
+        {
+          "w": "can",
+          "start": 1.28
+        },
+        {
+          "w": "take",
+          "start": 1.52
+        },
+        {
+          "w": "more",
+          "start": 1.76
+        },
+        {
+          "w": "than",
+          "start": 1.96
+        },
+        {
+          "w": "one",
+          "start": 2.16
+        },
+        {
+          "w": "tag.",
+          "start": 2.4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c44": {
+      "segment": "recap",
+      "display": "And the neighbouring words decide which tag fits.",
+      "spoken": "And the neighbouring words decide which tag fits.",
+      "textHash": "9b18d327e2d29615",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/32067e1c1e7ade25.wav",
+      "duration": 2.606,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.08
+        },
+        {
+          "w": "neighbouring",
+          "start": 0.16
+        },
+        {
+          "w": "words",
+          "start": 0.76
+        },
+        {
+          "w": "decide",
+          "start": 1.08
+        },
+        {
+          "w": "which",
+          "start": 1.56
+        },
+        {
+          "w": "tag",
+          "start": 1.76
+        },
+        {
+          "w": "fits.",
+          "start": 2.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c45": {
+      "segment": "recap",
+      "display": "Next lesson: Word Vectors. How can a computer know that 'rain' is close to 'storm'?",
+      "spoken": "Next lesson: Word Vectors. How can a computer know that 'rain' is close to 'storm'?",
+      "textHash": "7b7d3cbdda0caaeb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/82193eefe73a8aa4.wav",
+      "duration": 4.919,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.416
+        },
+        {
+          "w": "lesson:",
+          "start": 0.832
+        },
+        {
+          "w": "Word",
+          "start": 1.248
+        },
+        {
+          "w": "Vectors.",
+          "start": 1.664
+        },
+        {
+          "w": "How",
+          "start": 2.08
+        },
+        {
+          "w": "can",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.52
+        },
+        {
+          "w": "computer",
+          "start": 2.64
+        },
+        {
+          "w": "know",
+          "start": 3.12
+        },
+        {
+          "w": "that",
+          "start": 3.28
+        },
+        {
+          "w": "'rain'",
+          "start": 3.48
+        },
+        {
+          "w": "is",
+          "start": 3.8
+        },
+        {
+          "w": "close",
+          "start": 3.96
+        },
+        {
+          "w": "to",
+          "start": 4.24
+        },
+        {
+          "w": "'storm'?",
+          "start": 4.44
+        }
+      ],
+      "matchScore": 0.667
+    }
+  }
+}

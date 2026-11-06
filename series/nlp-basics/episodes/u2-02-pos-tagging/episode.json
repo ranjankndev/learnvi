@@ -1,0 +1,77 @@
+{
+  "id": "u2-02",
+  "thumbnail": { "headline": "Noun or verb? How AI decides", "big": "book · book" },
+  "tags": ["POS tagging", "part of speech tagging", "parts of speech", "NLP grammar", "ambiguity"],
+  "segments": [
+    { "id": "intro", "kind": "intro", "component": "TitleCard", "title": "Welcome",
+      "props": { "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}", "title": "Part-of-Speech Tagging", "subtitle": "Is it a noun or a verb?" } },
+
+    { "id": "idea", "kind": "core", "component": "BigIdea", "title": "The big idea",
+      "props": { "kicker": "Key idea", "text": "The same word can play different roles. Tagging works out which one.", "highlight": ["different roles"] } },
+
+    { "id": "pos", "kind": "core", "component": "Definition", "title": "What is a part of speech?",
+      "props": { "kicker": "Definition", "term": "Part of speech", "definition": "The grammatical role a word plays in a sentence: noun, verb, adjective, and so on.",
+        "example": "book a flight → book = verb", "analogy": "Roles in a play: one actor can be the hero or the villain." } },
+
+    { "id": "tagset", "kind": "core", "component": "Table", "title": "Common tags",
+      "props": { "kicker": "The tag set", "title": "Six tags you'll see everywhere", "columns": ["Tag", "Meaning", "Examples"],
+        "rows": [
+          ["NOUN", "a thing or idea", "cat · flight"],
+          ["VERB", "an action or state", "run · book"],
+          ["ADJ", "describes a noun", "happy · red"],
+          ["DET", "points to a noun", "the · a"],
+          ["ADP", "preposition", "in · on · to"],
+          ["PRON", "stands in for a noun", "she · it"] ] } },
+
+    { "id": "tagged", "kind": "core", "component": "Table", "title": "A tagged sentence",
+      "props": { "kicker": "Worked example", "title": "“I want to book a flight”", "columns": ["Word", "Tag"],
+        "rows": [
+          ["I", "PRON"],
+          ["want", "VERB"],
+          ["to", "PART"],
+          ["book", "VERB"],
+          ["a", "DET"],
+          ["flight", "NOUN"] ],
+        "highlight": [{ "row": 3 }] } },
+
+    { "id": "book", "kind": "core", "component": "Compare", "title": "One word, two tags", "short": true,
+      "shortTitle": "Why “book” confuses computers",
+      "props": { "kicker": "Ambiguity", "title": "One word, two parts of speech", "columns": [
+        { "title": "Verb", "items": ["“book a flight”", "an action you do"], "tone": "good", "at": "c22" },
+        { "title": "Noun", "items": ["“read a book”", "a thing you hold"], "tone": "neutral", "at": "c23" } ],
+        "verdict": { "text": "The neighbouring words decide", "at": "c25@verdict" } } },
+
+    { "id": "decide", "kind": "core", "component": "Steps", "title": "How a tagger decides",
+      "props": { "kicker": "Inside a tagger", "title": "How a tagger decides", "steps": [
+        { "label": "Look up", "detail": "which tags each word can take" },
+        { "label": "Check neighbours", "detail": "what usually comes before and after" },
+        { "label": "Pick the best", "detail": "the most likely tags for the whole sentence" } ] } },
+
+    { "id": "clues", "kind": "core", "component": "Bullets", "title": "Clues a tagger uses",
+      "props": { "kicker": "Clues", "title": "Clues a tagger looks for", "items": [
+        { "text": "After “the” or “a”, usually a noun" },
+        { "text": "After “to”, often a verb" },
+        { "text": "Ends in -ly: often an adverb" },
+        { "text": "Ends in -ed or -ing: often a verb" } ] } },
+
+    { "id": "accuracy", "kind": "core", "component": "BarChart", "title": "How good are taggers?",
+      "props": { "kicker": "How good is it?", "title": "Tagging accuracy on English news text", "unit": "%", "bars": [
+        { "label": "Most common tag", "value": 92 },
+        { "label": "Modern tagger", "value": 97 } ],
+        "note": "About 1 word in 30 still gets the wrong tag." } },
+
+    { "id": "quiz", "kind": "quiz", "component": "Quiz", "title": "Quick quiz", "short": true,
+      "shortTitle": "Quick quiz: “Time flies like an arrow”",
+      "props": { "question": "In “Time flies like an arrow”, what part of speech is “flies”?",
+        "options": ["Noun", "Verb", "Adjective"], "answer": 1,
+        "explain": "It's the action time does. In “Fruit flies like a banana”, it's a noun!" } },
+
+    { "id": "recap", "kind": "recap", "component": "Recap", "title": "Recap and next lesson",
+      "props": { "points": [
+        "A part of speech is the role a word plays",
+        "Taggers label every word: NOUN, VERB, DET…",
+        "Many words can take more than one tag",
+        "The neighbouring words decide which tag fits" ],
+        "next": { "title": "{{next.short}}", "question": "{{next.question}}" } } }
+  ]
+}

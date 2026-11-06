@@ -65,7 +65,7 @@ export const Steps: React.FC<KitProps<"Steps">> = ({ kicker, title, steps }) => 
   const frame = useCurrentFrame();
   const at = useTimes(steps.map((x) => x.at));
   const active = at.filter((a) => frame >= a).length - 1;
-  const w = Math.min(330, (1700 - (steps.length - 1) * 60) / steps.length);
+  const w = Math.min(steps.length <= 3 ? 460 : 330, (1700 - (steps.length - 1) * 60) / steps.length);
   // shrink labels so the longest one fits its box (bold display face ≈ 0.6 em per character)
   const longest = Math.max(...steps.map((s) => s.label.length));
   const labelSize = Math.min(44, Math.floor((w - 50) / (longest * 0.6)));
@@ -147,15 +147,17 @@ export const Table: React.FC<KitProps<"Table">> = ({ kicker, title, columns, row
   const at = useTimes(rows.map((_, i) => rowsAt?.[i]));
   // a highlight lands on its own mark, or shortly after its row appears
   const hl = useRefs(highlight.map((h) => h.at)).map((t, i) => t ?? (at[highlight[i].row] ?? 0) + 30);
+  // more than four rows: tighter rows and slightly smaller text, so the table clears the captions
+  const dense = rows.length > 4, pad = dense ? "14px 30px" : "22px 30px", cellSize = dense ? 34 : 40;
   const lit = (r: number, c: number) => highlight.some((h, i) => h.row === r && (h.col === undefined || h.col === c) && frame >= hl[i]);
   return (
     <>
       <Heading kicker={kicker}>{title}</Heading>
       <div style={{ position: "absolute", left: 110, right: 110, top: 290 }}>
         <div style={{ display: "grid", gridTemplateColumns: `repeat(${columns.length}, 1fr)`, borderRadius: 22, overflow: "hidden", border: `3px solid ${C.line}` }}>
-          {columns.map((c, i) => <div key={i} style={{ background: C.panel, padding: "22px 30px", fontFamily: F.mono, fontWeight: 700, fontSize: 30, letterSpacing: 2, color: C.sun, textTransform: "uppercase" }}>{c}</div>)}
+          {columns.map((c, i) => <div key={i} style={{ background: C.panel, padding: pad, fontFamily: F.mono, fontWeight: 700, fontSize: dense ? 26 : 30, letterSpacing: 2, color: C.sun, textTransform: "uppercase" }}>{c}</div>)}
           {rows.map((r, ri) => r.slice(0, columns.length).map((cell, ci) => (
-            <div key={`${ri}-${ci}`} style={{ padding: "22px 30px", fontFamily: ci === 0 ? F.body : F.mono, fontWeight: ci === 0 ? 700 : 500, fontSize: 40, color: lit(ri, ci) ? C.night : C.text, background: lit(ri, ci) ? C.sun : ri % 2 ? "#13263a" : C.night2, borderTop: `2px solid ${C.line}`, ...reveal(frame, at[ri], 0.08) }}>{cell}</div>
+            <div key={`${ri}-${ci}`} style={{ padding: pad, fontFamily: ci === 0 ? F.body : F.mono, fontWeight: ci === 0 ? 700 : 500, fontSize: cellSize, color: lit(ri, ci) ? C.night : C.text, background: lit(ri, ci) ? C.sun : ri % 2 ? "#13263a" : C.night2, borderTop: `2px solid ${C.line}`, ...reveal(frame, at[ri], 0.08) }}>{cell}</div>
           )))}
         </div>
       </div>
@@ -173,13 +175,13 @@ export const BarChart: React.FC<KitProps<"BarChart">> = ({ kicker, title, unit, 
       <div style={{ position: "absolute", left: 110, right: 160, top: 320, display: "flex", flexDirection: "column", gap: 34 }}>
         {bars.map((b, i) => (
           <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, opacity: 0.2 + 0.8 * progress(frame, at[i], 10) }}>
-            <div style={{ width: 300, fontFamily: F.body, fontWeight: 700, fontSize: 42, color: C.text, textAlign: "right" }}>{b.label}</div>
-            <div style={{ height: 70, borderRadius: 12, background: ACCENTS[i % 6], width: Math.max(8, (b.value / max) * 1100 * progress(frame, at[i], 24)) }} />
+            <div style={{ width: 400, fontFamily: F.body, fontWeight: 700, fontSize: 40, color: C.text, textAlign: "right", whiteSpace: "nowrap" }}>{b.label}</div>
+            <div style={{ height: 70, borderRadius: 12, background: ACCENTS[i % 6], width: Math.max(8, (b.value / max) * 1000 * progress(frame, at[i], 24)) }} />
             <div style={{ fontFamily: F.mono, fontWeight: 700, fontSize: 44, color: C.text, opacity: progress(frame, at[i] + 18, 8) }}>{b.value.toLocaleString("en-US")}{unit ? <span style={{ fontSize: 28, color: C.mute }}> {unit}</span> : null}</div>
           </div>
         ))}
         {/* the note follows the bars, so it never sits under a two-line caption */}
-        {note && <div style={{ fontFamily: F.body, fontSize: 36, color: C.text, marginTop: 20, paddingLeft: 330, ...enter(frame, at[at.length - 1] + 30) }}>{note}</div>}
+        {note && <div style={{ fontFamily: F.body, fontSize: 36, color: C.text, marginTop: 20, paddingLeft: 430, ...enter(frame, at[at.length - 1] + 30) }}>{note}</div>}
       </div>
     </>
   );

@@ -146,7 +146,8 @@
       "lesson": 2,
       "short": "POS Tagging",
       "title": "Part-of-Speech Tagging: Is It a Noun or a Verb?",
-      "question": "How does a computer tell 'book a flight' from 'read a book'?"
+      "question": "How does a computer tell 'book a flight' from 'read a book'?",
+      "folder": "u2-02-pos-tagging"
     },
     {
       "id": "u4-01",
