@@ -1,0 +1,252 @@
+{
+  "id": "u2-03",
+  "thumbnail": {
+    "headline": "How AI finds phrases",
+    "big": "B · I · O"
+  },
+  "tags": [
+    "chunking",
+    "shallow parsing",
+    "noun phrase",
+    "BIO tagging",
+    "NLP"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Chunking",
+        "subtitle": "Grouping words into phrases"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "Chunking groups words into small phrases, without building a full tree.",
+        "highlight": [
+          "small phrases,"
+        ]
+      }
+    },
+    {
+      "id": "chunk",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a chunk?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Chunk",
+        "definition": "A short group of words that acts as one unit, such as a noun phrase. Chunks never overlap.",
+        "example": "[the big red bus] [stopped] [near] [my old school]",
+        "analogy": "Reading aloud in breaths: you group words into bite-sized pieces without diagramming the sentence."
+      }
+    },
+    {
+      "id": "types",
+      "kind": "core",
+      "component": "Table",
+      "title": "Kinds of chunks",
+      "props": {
+        "kicker": "Worked example",
+        "title": "“The big red bus stopped near my old school”",
+        "columns": [
+          "Chunk",
+          "Type"
+        ],
+        "rows": [
+          [
+            "The big red bus",
+            "NP · noun phrase"
+          ],
+          [
+            "stopped",
+            "VP · verb phrase"
+          ],
+          [
+            "near",
+            "PP · preposition"
+          ],
+          [
+            "my old school",
+            "NP · noun phrase"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0
+          },
+          {
+            "row": 3
+          }
+        ]
+      }
+    },
+    {
+      "id": "bio",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "BIO tags",
+      "props": {
+        "kicker": "A clever trick",
+        "title": "Turn chunking into tagging with B, I and O",
+        "items": [
+          {
+            "text": "B: this word begins a chunk"
+          },
+          {
+            "text": "I: this word is inside a chunk"
+          },
+          {
+            "text": "O: this word is outside any chunk"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tagged",
+      "kind": "core",
+      "component": "Table",
+      "title": "A BIO-tagged sentence",
+      "short": true,
+      "shortTitle": "BIO tags: how AI finds phrases",
+      "props": {
+        "kicker": "BIO in action",
+        "title": "“The big bus stopped .”",
+        "columns": [
+          "Word",
+          "BIO tag"
+        ],
+        "rows": [
+          [
+            "The",
+            "B-NP"
+          ],
+          [
+            "big",
+            "I-NP"
+          ],
+          [
+            "bus",
+            "I-NP"
+          ],
+          [
+            "stopped",
+            "B-VP"
+          ],
+          [
+            ".",
+            "O"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 3,
+            "col": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "how",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Two ways to chunk",
+      "props": {
+        "kicker": "Two approaches",
+        "title": "Rules or learning?",
+        "columns": [
+          {
+            "title": "Rule-based",
+            "items": [
+              "patterns over POS tags",
+              "DET + ADJ + NOUN = NP",
+              "easy to read, easy to break"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Learned",
+            "items": [
+              "a tagger predicts B, I, O",
+              "uses many clues at once",
+              "needs labelled examples"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Either way, chunking becomes tagging"
+        }
+      }
+    },
+    {
+      "id": "uses",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Why chunk?",
+      "props": {
+        "kicker": "Why it matters",
+        "title": "What chunks are good for",
+        "items": [
+          {
+            "text": "Find the things a text talks about"
+          },
+          {
+            "text": "Pull out simple facts: [Apple] [bought] [a startup]"
+          },
+          {
+            "text": "A quick first step towards full parsing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: B, I or O?",
+      "props": {
+        "question": "In BIO tagging, which tag does “red” get in “the big red bus”?",
+        "options": [
+          "B-NP",
+          "I-NP",
+          "O"
+        ],
+        "answer": 1,
+        "explain": "“The” begins the noun phrase; “big”, “red” and “bus” are inside it."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "A chunk is a short phrase that acts as one unit",
+          "Noun phrases, verb phrases and more",
+          "BIO tags turn chunking into tagging",
+          "Chunks help find things and simple facts"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
