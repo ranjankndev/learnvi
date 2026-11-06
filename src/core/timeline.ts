@@ -39,6 +39,9 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
   const segments: TimelineSegment[] = [];
   let t = a.leadIn;
   for (const seg of ctx.episode.segments) {
+    // start every segment on a whole frame, so a retake earlier in the episode shifts later
+    // segments by whole frames and their internal timing (and cached render) stays identical
+    t = Math.ceil(t * fps - 1e-6) / fps;
     const start = t;
     const ids = lock.order.filter((id) => lock.cues[id].segment === seg.id);
     const cues: TimelineCue[] = ids.map((id, i) => {

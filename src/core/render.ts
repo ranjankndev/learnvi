@@ -37,7 +37,7 @@ function codeHash(root: string) {
 
 /** Everything that changes a segment's pixels, with all times made relative to the segment start. */
 export function segmentKey(tl: Timeline, seg: TimelineSegment, code: string) {
-  const rel = (t: number) => Math.round(t * tl.fps) - seg.startFrame;
+  const rel = (t: number) => Math.round((t - seg.start) * tl.fps);
   const cues = seg.cues.map((c) => ({ id: c.id, text: c.text, s: rel(c.start), e: rel(c.end), m: Object.fromEntries(Object.entries(c.marks).map(([k, v]) => [k, rel(v)])), w: c.words.map((w) => [w.w, rel(w.start)]) }));
   return sha(code, seg.id, seg.component, seg.props, seg.durationInFrames, cues, tl.video, tl.series, tl.stop, tl.fps);
 }
