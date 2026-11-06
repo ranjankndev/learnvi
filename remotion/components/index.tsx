@@ -7,7 +7,7 @@ import { C, F, useSeg } from "../ui";
 import type { SegProps } from "../types";
 import { PassportStamp, RecapNext, RouteMap, TitleHook } from "./journey";
 import { BpeMerge, TextToNumbers, ThreeOptions, TokenBlocks, WhyItMatters } from "./teach";
-import { Blooper, MythVsReality, TryIt, UseIt } from "./recurring";
+import { Blooper, ChatStream, MythVsReality, TryIt, UseIt } from "./recurring";
 import { KIT_COMPONENTS } from "../kit/scenes";
 
 export const COMPONENTS: Record<string, React.FC<SegProps>> = {
@@ -16,7 +16,7 @@ export const COMPONENTS: Record<string, React.FC<SegProps>> = {
   // custom scenes for the press-enter series
   PassportStamp, TitleHook, RouteMap, RecapNext,
   TextToNumbers, ThreeOptions, BpeMerge, TokenBlocks, WhyItMatters,
-  TryIt, Blooper, MythVsReality, UseIt,
+  TryIt, Blooper, MythVsReality, UseIt, ChatStream,
 };
 
 /** Shown for a component name that isn't registered yet, so a new episode still previews. */

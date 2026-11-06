@@ -152,7 +152,7 @@ export const BpeMerge: React.FC<SegProps> = ({ corpus = [], merges = 3, countAt,
 };
 
 /** Real tokens as coloured blocks, one example at a time. */
-export const TokenBlocks: React.FC<SegProps> = ({ examples = [], promptAt, longWordAt, strawberryAt }) => {
+export const TokenBlocks: React.FC<SegProps> = ({ examples = [], promptAt, longWordAt, strawberryAt, rememberLast = true }) => {
   const frame = useCurrentFrame();
   const ats = [useMark(promptAt), useMark(longWordAt), useMark(strawberryAt)];
   return (
@@ -161,7 +161,7 @@ export const TokenBlocks: React.FC<SegProps> = ({ examples = [], promptAt, longW
       <div style={{ position: "absolute", left: 110, top: 300, width: 1700 }}>
         {(examples as { text: string; tokens: string[] }[]).map((ex, i) => {
           const at = ats[i];
-          const last = i === examples.length - 1;
+          const last = rememberLast && i === examples.length - 1;
           return (
             <div key={i} style={{ marginBottom: 46, opacity: at === undefined ? 0 : progress(frame, at, 14) }}>
               <div style={{ fontFamily: F.mono, fontSize: 24, color: C.mute, letterSpacing: 2 }}>“{ex.text}” · <span style={{ color: C.sun }}>{ex.tokens.length} tokens</span></div>

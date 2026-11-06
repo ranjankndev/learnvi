@@ -17,7 +17,7 @@ export const PassportStamp: React.FC<SegProps> = ({ stop, stamp, number, stampAt
     <>
       <div style={{ position: "absolute", left: 110, top: 300 }}>
         <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 64, color: C.mute, ...enter(frame, 4) }}>Next stop:</div>
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 150, color: C.sun, letterSpacing: -4, lineHeight: 1, ...enter(frame, 12, 18, 60) }}>{stop}!</div>
+        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: Math.min(150, Math.floor(950 / ((String(stop).length + 1) * 0.56))), color: C.sun, letterSpacing: -4, lineHeight: 1, whiteSpace: "nowrap", ...enter(frame, 12, 18, 60) }}>{stop}!</div>
         <div style={{ fontFamily: F.body, fontSize: 38, color: C.text, marginTop: 30, maxWidth: 720, ...enter(frame, 26) }}>
           Stop {n} of {tl.series.stops.length} · following one prompt from your keyboard to an answer
         </div>
@@ -37,7 +37,7 @@ export const PassportStamp: React.FC<SegProps> = ({ stop, stamp, number, stampAt
           </div>
           {at !== undefined && frame >= at - 1 && (
             <div style={{ position: "absolute", left: 150, bottom: 70 }}>
-              <Stamp title={stamp} sub={`STOP ${String(n).padStart(2, "0")}`} p={p} size={1.25} />
+              <Stamp title={stamp} sub={`STOP ${String(n).padStart(2, "0")}`} p={p} size={String(stamp).length > 11 ? 0.95 : 1.25} />
             </div>
           )}
         </Paper>

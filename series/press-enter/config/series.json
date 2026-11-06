@@ -113,7 +113,8 @@
       "topic": "The whole journey",
       "question": "What is the full journey from my prompt to the answer?",
       "tryIt": "Time how fast the first word appears",
-      "useIt": "Why long chats get slower and costlier"
+      "useIt": "Why long chats get slower and costlier",
+      "folder": "ep01-departure-gate"
     },
     {
       "id": "ep02",

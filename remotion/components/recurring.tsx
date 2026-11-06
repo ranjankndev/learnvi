@@ -107,9 +107,10 @@ export const MythVsReality: React.FC<SegProps> = ({ myth, reality, revealAt, fac
       <div style={{ position: "absolute", left: 110, right: 110, top: 300, display: "flex", gap: 40 }}>
         <div style={{ flex: 1, background: C.panel, borderRadius: 28, padding: 46, border: `3px solid ${C.bad}`, ...enter(frame, 10) }}>
           <div style={stampStyle(C.bad)}>MYTH</div>
-          <div style={{ position: "relative", fontFamily: F.display, fontWeight: 800, fontSize: 84, color: C.text, marginTop: 40, opacity: 1 - 0.5 * r }}>
+          {/* long myths get smaller text; the strike-through is drawn on every line */}
+          <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: String(myth).length > 24 ? 62 : 84, lineHeight: 1.15, color: C.text, marginTop: 40, opacity: 1 - 0.5 * r,
+            textDecorationLine: "line-through", textDecorationThickness: 8, textDecorationColor: `rgba(239,91,91,${r})` }}>
             {myth}
-            <div style={{ position: "absolute", left: 0, top: "52%", height: 10, background: C.bad, width: `${r * 100}%`, borderRadius: 5 }} />
           </div>
         </div>
         <div style={{ flex: 1.15, background: C.panel, borderRadius: 28, padding: 46, border: `3px solid ${C.good}`, opacity: r, transform: `translateX(${(1 - r) * 120}px) scale(${0.9 + 0.1 * pop})` }}>
@@ -153,6 +154,49 @@ export const UseIt: React.FC<SegProps> = ({ tip, bullets = [], bulletsAt }) => {
             </div>
           ))}
         </div>
+      </div>
+    </>
+  );
+};
+
+/**
+ * A chat answer streaming in word by word, the way chat apps show replies as they're generated.
+ * Streaming starts at `streamAt` (a cue or mark) and runs at a steady, realistic pace.
+ */
+export const ChatStream: React.FC<SegProps> = ({ kicker = "Streaming", title, prompt, answer, streamAt, wordsPerSecond = 7, notes = [] }) => {
+  const frame = useCurrentFrame();
+  const { tl } = useSeg();
+  const at = useMark(streamAt) ?? 30;
+  const words = String(answer ?? "").split(/(\s+)/); // keep spaces and line breaks
+  const shownWords = Math.max(0, Math.floor(((frame - at) / tl.fps) * wordsPerSecond));
+  let count = 0;
+  const visible = words.filter((w) => (/\S/.test(w) ? ++count <= shownWords : count < shownWords)).join("");
+  const total = words.filter((w) => /\S/.test(w)).length;
+  const streaming = frame >= at && shownWords < total;
+  return (
+    <>
+      <div style={{ position: "absolute", left: 110, top: 110, width: 900, ...enter(frame, 0) }}>
+        <div style={{ fontFamily: F.mono, fontSize: 26, letterSpacing: 6, textTransform: "uppercase", color: C.teal, fontWeight: 700 }}>{kicker}</div>
+        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 70, color: C.text, marginTop: 10, lineHeight: 1.08 }}>{title}</div>
+      </div>
+      <div style={{ position: "absolute", left: 110, top: 400, width: 880 }}>
+        <div style={{ fontFamily: F.mono, fontSize: 30, color: C.mute, letterSpacing: 2 }}>WORDS STREAMED</div>
+        <div style={{ fontFamily: F.mono, fontWeight: 700, fontSize: 120, color: streaming ? C.sun : C.text, lineHeight: 1.1 }}>{Math.min(shownWords, total)}<span style={{ fontSize: 48, color: C.mute }}> / {total}</span></div>
+        {(notes as string[]).map((n, i) => (
+          <div key={i} style={{ fontFamily: F.body, fontSize: 38, color: C.text, marginTop: 22, lineHeight: 1.3, opacity: progress(frame, at + 30 + i * 45, 15) }}>• {n}</div>
+        ))}
+      </div>
+      <div style={{ position: "absolute", right: 170, top: 120, ...enter(frame, 6, 20, 80) }}>
+        <Phone>
+          <Bubble me>{prompt}</Bubble>
+          {frame >= at - 10 && (
+            <Bubble style={{ whiteSpace: "pre-wrap" }}>
+              {visible}
+              {frame >= at && shownWords < total && <span style={{ display: "inline-block", width: 12, height: 28, marginLeft: 4, background: C.teal, opacity: Math.floor(frame / 8) % 2 ? 1 : 0.2, verticalAlign: "middle" }} />}
+              {frame < at && <span style={{ letterSpacing: 4 }}>{"•••".slice(0, 1 + (Math.floor(frame / 10) % 3))}</span>}
+            </Bubble>
+          )}
+        </Phone>
       </div>
     </>
   );

@@ -1,0 +1,73 @@
+{
+  "id": "ep01",
+  "thumbnail": { "headline": "What happens when you press Enter", "big": "Enter ↵" },
+  "tags": ["how LLMs work", "what happens when you press enter", "tokens", "embeddings", "next token prediction"],
+  "segments": [
+    { "id": "passport", "kind": "passport", "component": "PassportStamp", "title": "Next stop: Departure Gate",
+      "props": { "stop": "{{stop.name}}", "stamp": "{{stop.stamp}}", "number": "{{episode.number}}", "stampAt": "c01@stamp" } },
+
+    { "id": "hook", "kind": "hook", "component": "BigIdea", "title": "Seven words, one poem",
+      "props": { "kicker": "Episode {{episode.number}}", "text": "You typed seven words. Seconds later, a poem appeared. Let's follow your words.", "highlight": ["follow"] } },
+
+    { "id": "route", "kind": "routeMap", "component": "RouteMap", "title": "Route map",
+      "props": { "current": "{{episode.id}}", "highlightAt": "c05@here" } },
+
+    { "id": "journey", "kind": "core", "component": "Steps", "title": "The whole journey",
+      "props": { "kicker": "The journey", "title": "From Enter to answer, in five stages", "steps": [
+        { "label": "Send", "detail": "your prompt goes to a server" },
+        { "label": "Tokenize", "detail": "text cut into tokens" },
+        { "label": "Embed", "detail": "tokens become numbers" },
+        { "label": "Attend", "detail": "tokens look at each other" },
+        { "label": "Predict", "detail": "one token at a time" } ] } },
+
+    { "id": "send", "kind": "core", "component": "Steps", "title": "What the app really sends",
+      "props": { "kicker": "Stage 1 · Send", "title": "The app sends more than you typed", "steps": [
+        { "label": "Your prompt", "detail": "“Write a short poem…”" },
+        { "label": "Instructions", "detail": "hidden rules from the app" },
+        { "label": "Chat so far", "detail": "every earlier message" },
+        { "label": "To the server", "detail": "where the model runs" } ] } },
+
+    { "id": "tokens", "kind": "core", "component": "TokenBlocks", "title": "Cut into tokens",
+      "props": { "examples": [ { "text": "{{series.runningPrompt}}", "tokens": ["Write", " a", " short", " poem", " about", " the", " rain"] } ],
+        "promptAt": "c17@prompt", "rememberLast": false } },
+
+    { "id": "embed", "kind": "core", "component": "Definition", "title": "Tokens become numbers",
+      "props": { "kicker": "Stage 3 · Embed", "term": "Embedding", "definition": "Each token becomes a long list of numbers that captures what it means.",
+        "example": "rain → [0.21, −0.73, 0.05, …]", "analogy": "An address on a map of meaning: rain lives near storm and cloud." } },
+
+    { "id": "attend", "kind": "core", "component": "Bullets", "title": "Tokens look at each other",
+      "props": { "kicker": "Stage 4 · Attend", "title": "Inside the transformer", "items": [
+        { "text": "Every token looks at every other token" },
+        { "text": "“poem” and “short” shape what “rain” is for" },
+        { "text": "Layer after layer, the meaning sharpens" } ] } },
+
+    { "id": "predict", "kind": "core", "component": "Steps", "title": "One token at a time", "short": true,
+      "shortTitle": "AI writes one word at a time. Here's the loop.",
+      "props": { "kicker": "Stage 5 · Predict", "title": "The loop that writes the answer", "steps": [
+        { "label": "Predict", "detail": "a chance for every next token" },
+        { "label": "Pick", "detail": "one likely token" },
+        { "label": "Add", "detail": "stick it on the end" },
+        { "label": "Repeat", "detail": "until the answer is done" } ] } },
+
+    { "id": "stream", "kind": "core", "component": "ChatStream", "title": "Why answers stream",
+      "props": { "kicker": "Streaming", "title": "Why the answer appears word by word", "prompt": "{{series.runningPrompt}}",
+        "answer": "Soft rain taps the window,\nsilver threads on grey,\nthe street hums a quiet song\nand puddles hold the day.",
+        "streamAt": "c32@stream", "notes": ["each piece appears as soon as it's predicted", "no waiting for the whole answer"] } },
+
+    { "id": "tryIt", "kind": "tryIt", "component": "TryIt", "title": "Try it yourself", "short": true,
+      "shortTitle": "Try this: time your chatbot's first word",
+      "props": { "steps": [
+        { "text": "Ask a chatbot a short question. Count the seconds until the first word appears.", "at": "c35" },
+        { "text": "Now ask for a long essay. Does the first word appear any later?", "at": "c36" } ],
+        "chat": "Write a 1,000-word essay about rain" } },
+
+    { "id": "myth", "kind": "myth", "component": "MythVsReality", "title": "Myth vs reality: does it search the internet?",
+      "props": { "myth": "It searches the internet for the answer", "reality": "It writes from patterns it learned in training. Some apps can add a web search, but that's an extra tool.", "revealAt": "c39@reality" } },
+
+    { "id": "useIt", "kind": "useIt", "component": "UseIt", "title": "Use it tomorrow",
+      "props": { "tip": "{{stop.useIt}}", "bullets": ["Every message re-sends the whole chat", "More to read: slower and costlier", "New topic? Start a new chat"], "bulletsAt": "c41" } },
+
+    { "id": "recap", "kind": "recapNext", "component": "RecapNext", "title": "Recap and next stop",
+      "props": { "nextStop": "{{next.stop}}", "nextQuestion": "{{next.question}}", "questionAt": "c44@question" } }
+  ]
+}
