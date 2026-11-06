@@ -136,7 +136,8 @@
       "lesson": 1,
       "short": "Morphology",
       "title": "Morphology: The Building Blocks Inside Words",
-      "question": "Why is 'unbreakable' really three pieces?"
+      "question": "Why is 'unbreakable' really three pieces?",
+      "folder": "u2-01-morphology"
     },
     {
       "id": "u2-02",

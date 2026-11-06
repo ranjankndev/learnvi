@@ -1,0 +1,2951 @@
+{
+  "version": 1,
+  "episode": "u2-01",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c37",
+    "c38"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 2, lesson 1: morphology.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 2, lesson 1: morphology.",
+      "textHash": "be8552995b9b41cd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3cb2660985238875.wav",
+      "duration": 5.811,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.08
+        },
+        {
+          "w": "This",
+          "start": 2.88
+        },
+        {
+          "w": "is",
+          "start": 3.16
+        },
+        {
+          "w": "unit",
+          "start": 3.36
+        },
+        {
+          "w": "2,",
+          "start": 3.76
+        },
+        {
+          "w": "lesson",
+          "start": 4.16
+        },
+        {
+          "w": "1:",
+          "start": 4.56
+        },
+        {
+          "w": "morphology.",
+          "start": 4.88
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "So far we have cut text into words and tokens. Today we look inside the words themselves.",
+      "spoken": "So far we have cut text into words and tokens. Today we look inside the words themselves.",
+      "textHash": "64ddba83eb4c66f9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/60b62f5505aed1ab.wav",
+      "duration": 5.84,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "far",
+          "start": 0.24
+        },
+        {
+          "w": "we",
+          "start": 0.56
+        },
+        {
+          "w": "have",
+          "start": 0.72
+        },
+        {
+          "w": "cut",
+          "start": 0.92
+        },
+        {
+          "w": "text",
+          "start": 1.12
+        },
+        {
+          "w": "into",
+          "start": 1.56
+        },
+        {
+          "w": "words",
+          "start": 1.84
+        },
+        {
+          "w": "and",
+          "start": 2.2
+        },
+        {
+          "w": "tokens.",
+          "start": 2.4
+        },
+        {
+          "w": "Today",
+          "start": 3.08
+        },
+        {
+          "w": "we",
+          "start": 3.76
+        },
+        {
+          "w": "look",
+          "start": 4
+        },
+        {
+          "w": "inside",
+          "start": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.6
+        },
+        {
+          "w": "words",
+          "start": 4.8
+        },
+        {
+          "w": "themselves.",
+          "start": 5.2
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here is the idea for today. Words are built from smaller pieces, and each of those pieces carries meaning.",
+      "spoken": "Here is the idea for today. Words are built from smaller pieces, and each of those pieces carries meaning.",
+      "textHash": "cecd66c929b91f4f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/812711647c652749.wav",
+      "duration": 6.432,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.28
+        },
+        {
+          "w": "the",
+          "start": 0.44
+        },
+        {
+          "w": "idea",
+          "start": 0.6
+        },
+        {
+          "w": "for",
+          "start": 1.08
+        },
+        {
+          "w": "today.",
+          "start": 1.56
+        },
+        {
+          "w": "Words",
+          "start": 2.04
+        },
+        {
+          "w": "are",
+          "start": 2.48
+        },
+        {
+          "w": "built",
+          "start": 2.64
+        },
+        {
+          "w": "from",
+          "start": 2.96
+        },
+        {
+          "w": "smaller",
+          "start": 3.2
+        },
+        {
+          "w": "pieces,",
+          "start": 3.6
+        },
+        {
+          "w": "and",
+          "start": 4.16
+        },
+        {
+          "w": "each",
+          "start": 4.44
+        },
+        {
+          "w": "of",
+          "start": 4.68
+        },
+        {
+          "w": "those",
+          "start": 4.8
+        },
+        {
+          "w": "pieces",
+          "start": 5.12
+        },
+        {
+          "w": "carries",
+          "start": 5.52
+        },
+        {
+          "w": "meaning.",
+          "start": 6
+        }
+      ],
+      "matchScore": 0.941
+    },
+    "c04": {
+      "segment": "morpheme",
+      "display": "Those pieces are called morphemes. A morpheme is the smallest part of a word that still carries meaning.",
+      "spoken": "Those pieces are called morphemes. A morpheme is the smallest part of a word that still carries meaning.",
+      "textHash": "d6fe716cd7d344c4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0637a69c9b8c616f.wav",
+      "duration": 5.951,
+      "marks": {},
+      "words": [
+        {
+          "w": "Those",
+          "start": 0
+        },
+        {
+          "w": "pieces",
+          "start": 0.32
+        },
+        {
+          "w": "are",
+          "start": 0.72
+        },
+        {
+          "w": "called",
+          "start": 0.92
+        },
+        {
+          "w": "morphemes.",
+          "start": 1.56
+        },
+        {
+          "w": "A",
+          "start": 2.2
+        },
+        {
+          "w": "morpheme",
+          "start": 2.4
+        },
+        {
+          "w": "is",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.16
+        },
+        {
+          "w": "smallest",
+          "start": 3.32
+        },
+        {
+          "w": "part",
+          "start": 3.8
+        },
+        {
+          "w": "of",
+          "start": 4
+        },
+        {
+          "w": "a",
+          "start": 4.12
+        },
+        {
+          "w": "word",
+          "start": 4.28
+        },
+        {
+          "w": "that",
+          "start": 4.56
+        },
+        {
+          "w": "still",
+          "start": 4.8
+        },
+        {
+          "w": "carries",
+          "start": 5.04
+        },
+        {
+          "w": "meaning.",
+          "start": 5.52
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c05": {
+      "segment": "morpheme",
+      "display": "Take the word \"unbreakable\". It is three morphemes: \"un\", meaning not; \"break\"; and \"able\", meaning it can be done.",
+      "spoken": "Take the word \"unbreakable\". It is three morphemes: \"un\", meaning not; \"break\"; and \"able\", meaning it can be done.",
+      "textHash": "6d954ae30ba3b1aa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cbbcc1f057976ad9.wav",
+      "duration": 6.825,
+      "marks": {},
+      "words": [
+        {
+          "w": "Take",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.24
+        },
+        {
+          "w": "word",
+          "start": 0.4
+        },
+        {
+          "w": "\"unbreakable\".",
+          "start": 0.64
+        },
+        {
+          "w": "It",
+          "start": 1.52
+        },
+        {
+          "w": "is",
+          "start": 1.76
+        },
+        {
+          "w": "three",
+          "start": 1.92
+        },
+        {
+          "w": "morphemes:",
+          "start": 2.24
+        },
+        {
+          "w": "\"un\",",
+          "start": 2.86
+        },
+        {
+          "w": "meaning",
+          "start": 3.48
+        },
+        {
+          "w": "not;",
+          "start": 3.92
+        },
+        {
+          "w": "\"break\";",
+          "start": 4.4
+        },
+        {
+          "w": "and",
+          "start": 4.96
+        },
+        {
+          "w": "\"able\",",
+          "start": 5.2
+        },
+        {
+          "w": "meaning",
+          "start": 5.68
+        },
+        {
+          "w": "it",
+          "start": 6.04
+        },
+        {
+          "w": "can",
+          "start": 6.2
+        },
+        {
+          "w": "be",
+          "start": 6.32
+        },
+        {
+          "w": "done.",
+          "start": 6.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "morpheme",
+      "display": "Think of morphemes as LEGO bricks. A small set of bricks snaps together into thousands of different words.",
+      "spoken": "Think of morphemes as LEGO bricks. A small set of bricks snaps together into thousands of different words.",
+      "textHash": "bd3704d4c705f6ac",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d394b619654ab077.wav",
+      "duration": 6.223,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.16
+        },
+        {
+          "w": "morphemes",
+          "start": 0.32
+        },
+        {
+          "w": "as",
+          "start": 0.96
+        },
+        {
+          "w": "LEGO",
+          "start": 1.3
+        },
+        {
+          "w": "bricks.",
+          "start": 1.64
+        },
+        {
+          "w": "A",
+          "start": 2.24
+        },
+        {
+          "w": "small",
+          "start": 2.48
+        },
+        {
+          "w": "set",
+          "start": 2.8
+        },
+        {
+          "w": "of",
+          "start": 3.08
+        },
+        {
+          "w": "bricks",
+          "start": 3.2
+        },
+        {
+          "w": "snaps",
+          "start": 3.64
+        },
+        {
+          "w": "together",
+          "start": 4.08
+        },
+        {
+          "w": "into",
+          "start": 4.52
+        },
+        {
+          "w": "thousands",
+          "start": 4.76
+        },
+        {
+          "w": "of",
+          "start": 5.28
+        },
+        {
+          "w": "different",
+          "start": 5.4
+        },
+        {
+          "w": "words.",
+          "start": 5.88
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c07": {
+      "segment": "kinds",
+      "display": "Morphemes come in two kinds.",
+      "spoken": "Morphemes come in two kinds.",
+      "textHash": "83d6b781b1ca7aa4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f4c77ae7000977c4.wav",
+      "duration": 1.656,
+      "marks": {},
+      "words": [
+        {
+          "w": "Morphemes",
+          "start": 0.3
+        },
+        {
+          "w": "come",
+          "start": 0.6
+        },
+        {
+          "w": "in",
+          "start": 0.8
+        },
+        {
+          "w": "two",
+          "start": 0.92
+        },
+        {
+          "w": "kinds.",
+          "start": 1.2
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c08": {
+      "segment": "kinds",
+      "display": "Free morphemes can stand alone as words of their own, like \"break\", \"cat\" or \"happy\".",
+      "spoken": "Free morphemes can stand alone as words of their own, like \"break\", \"cat\" or \"happy\".",
+      "textHash": "21f8aac30b388324",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3eedbec095229b0a.wav",
+      "duration": 5.168,
+      "marks": {},
+      "words": [
+        {
+          "w": "Free",
+          "start": 0
+        },
+        {
+          "w": "morphemes",
+          "start": 0.28
+        },
+        {
+          "w": "can",
+          "start": 0.84
+        },
+        {
+          "w": "stand",
+          "start": 1
+        },
+        {
+          "w": "alone",
+          "start": 1.24
+        },
+        {
+          "w": "as",
+          "start": 1.6
+        },
+        {
+          "w": "words",
+          "start": 1.8
+        },
+        {
+          "w": "of",
+          "start": 2.12
+        },
+        {
+          "w": "their",
+          "start": 2.24
+        },
+        {
+          "w": "own,",
+          "start": 2.44
+        },
+        {
+          "w": "like",
+          "start": 2.8
+        },
+        {
+          "w": "\"break\",",
+          "start": 3.04
+        },
+        {
+          "w": "\"cat\"",
+          "start": 3.8
+        },
+        {
+          "w": "or",
+          "start": 4.32
+        },
+        {
+          "w": "\"happy\".",
+          "start": 4.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "kinds",
+      "display": "Bound morphemes can't stand alone. They have to attach to another piece, like \"un\", \"able\", or the \"s\" that makes a plural. Most words mix both kinds.",
+      "spoken": "Bound morphemes can't stand alone. They have to attach to another piece, like \"un\", \"able\", or the \"s\" that makes a plural. Most words mix both kinds.",
+      "textHash": "c475cc28ad2bc720",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8d04ae31dd2c946c.wav",
+      "duration": 9.737,
+      "marks": {
+        "verdict": 7.76
+      },
+      "words": [
+        {
+          "w": "Bound",
+          "start": 0
+        },
+        {
+          "w": "morphemes",
+          "start": 0.36
+        },
+        {
+          "w": "can't",
+          "start": 1
+        },
+        {
+          "w": "stand",
+          "start": 1.28
+        },
+        {
+          "w": "alone.",
+          "start": 1.68
+        },
+        {
+          "w": "They",
+          "start": 2.24
+        },
+        {
+          "w": "have",
+          "start": 2.48
+        },
+        {
+          "w": "to",
+          "start": 2.68
+        },
+        {
+          "w": "attach",
+          "start": 2.84
+        },
+        {
+          "w": "to",
+          "start": 3.28
+        },
+        {
+          "w": "another",
+          "start": 3.48
+        },
+        {
+          "w": "piece,",
+          "start": 3.84
+        },
+        {
+          "w": "like",
+          "start": 4.36
+        },
+        {
+          "w": "\"un\",",
+          "start": 4.72
+        },
+        {
+          "w": "\"able\",",
+          "start": 5.24
+        },
+        {
+          "w": "or",
+          "start": 5.76
+        },
+        {
+          "w": "the",
+          "start": 6
+        },
+        {
+          "w": "\"s\"",
+          "start": 6.28
+        },
+        {
+          "w": "that",
+          "start": 6.48
+        },
+        {
+          "w": "makes",
+          "start": 6.72
+        },
+        {
+          "w": "a",
+          "start": 6.96
+        },
+        {
+          "w": "plural.",
+          "start": 7.08
+        },
+        {
+          "w": "Most",
+          "start": 7.76
+        },
+        {
+          "w": "words",
+          "start": 8.2
+        },
+        {
+          "w": "mix",
+          "start": 8.56
+        },
+        {
+          "w": "both",
+          "start": 8.88
+        },
+        {
+          "w": "kinds.",
+          "start": 9.28
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c10": {
+      "segment": "affixes",
+      "display": "Bound pieces that attach to the front or the back of a word are called affixes. Here are some you use every day.",
+      "spoken": "Bound pieces that attach to the front or the back of a word are called affixes. Here are some you use every day.",
+      "textHash": "8bd0d5536a0f9104",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8603b226c1c60248.wav",
+      "duration": 6.305,
+      "marks": {},
+      "words": [
+        {
+          "w": "Bound",
+          "start": 0
+        },
+        {
+          "w": "pieces",
+          "start": 0.36
+        },
+        {
+          "w": "that",
+          "start": 0.8
+        },
+        {
+          "w": "attach",
+          "start": 1.08
+        },
+        {
+          "w": "to",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.48
+        },
+        {
+          "w": "front",
+          "start": 1.6
+        },
+        {
+          "w": "or",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "back",
+          "start": 2.32
+        },
+        {
+          "w": "of",
+          "start": 2.56
+        },
+        {
+          "w": "a",
+          "start": 2.68
+        },
+        {
+          "w": "word",
+          "start": 2.84
+        },
+        {
+          "w": "are",
+          "start": 3.16
+        },
+        {
+          "w": "called",
+          "start": 3.36
+        },
+        {
+          "w": "affixes.",
+          "start": 3.68
+        },
+        {
+          "w": "Here",
+          "start": 4.52
+        },
+        {
+          "w": "are",
+          "start": 4.88
+        },
+        {
+          "w": "some",
+          "start": 5
+        },
+        {
+          "w": "you",
+          "start": 5.2
+        },
+        {
+          "w": "use",
+          "start": 5.44
+        },
+        {
+          "w": "every",
+          "start": 5.68
+        },
+        {
+          "w": "day.",
+          "start": 6
+        }
+      ],
+      "matchScore": 0.947
+    },
+    "c11": {
+      "segment": "affixes",
+      "display": "\"un\" goes at the front, so it's a prefix: unhappy.",
+      "spoken": "\"un\" goes at the front, so it's a prefix: unhappy.",
+      "textHash": "af0f2642dada89f2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/91ccdc52b169f607.wav",
+      "duration": 2.927,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"un\"",
+          "start": 0.173
+        },
+        {
+          "w": "goes",
+          "start": 0.347
+        },
+        {
+          "w": "at",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "front,",
+          "start": 0.72
+        },
+        {
+          "w": "so",
+          "start": 1
+        },
+        {
+          "w": "it's",
+          "start": 1.12
+        },
+        {
+          "w": "a",
+          "start": 1.32
+        },
+        {
+          "w": "prefix:",
+          "start": 1.44
+        },
+        {
+          "w": "unhappy.",
+          "start": 2.16
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c12": {
+      "segment": "affixes",
+      "display": "\"re\" is a prefix too: rebuild means build again.",
+      "spoken": "\"re\" is a prefix too: rebuild means build again.",
+      "textHash": "2902dbed3bb484ce",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/89abeedc568b6de8.wav",
+      "duration": 3.028,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"re\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.28
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "prefix",
+          "start": 0.56
+        },
+        {
+          "w": "too:",
+          "start": 1
+        },
+        {
+          "w": "rebuild",
+          "start": 1.44
+        },
+        {
+          "w": "means",
+          "start": 2
+        },
+        {
+          "w": "build",
+          "start": 2.32
+        },
+        {
+          "w": "again.",
+          "start": 2.68
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c13": {
+      "segment": "affixes",
+      "display": "At the back, \"s\" is a suffix that makes a plural: cats.",
+      "spoken": "At the back, \"s\" is a suffix that makes a plural: cats.",
+      "textHash": "a77557c8eacdd9ca",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ff03cb103c8e2777.wav",
+      "duration": 3.31,
+      "marks": {},
+      "words": [
+        {
+          "w": "At",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.16
+        },
+        {
+          "w": "back,",
+          "start": 0.32
+        },
+        {
+          "w": "\"s\"",
+          "start": 0.68
+        },
+        {
+          "w": "is",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "suffix",
+          "start": 1.2
+        },
+        {
+          "w": "that",
+          "start": 1.64
+        },
+        {
+          "w": "makes",
+          "start": 1.76
+        },
+        {
+          "w": "a",
+          "start": 2
+        },
+        {
+          "w": "plural:",
+          "start": 2.32
+        },
+        {
+          "w": "cats.",
+          "start": 2.64
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c14": {
+      "segment": "affixes",
+      "display": "\"ness\" turns an adjective into a noun: kind becomes kindness.",
+      "spoken": "\"ness\" turns an adjective into a noun: kind becomes kindness.",
+      "textHash": "cff409dcfa460f74",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/53e8f56ac3038014.wav",
+      "duration": 4.123,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"ness\"",
+          "start": 0.04
+        },
+        {
+          "w": "turns",
+          "start": 0.48
+        },
+        {
+          "w": "an",
+          "start": 0.84
+        },
+        {
+          "w": "adjective",
+          "start": 1
+        },
+        {
+          "w": "into",
+          "start": 1.6
+        },
+        {
+          "w": "a",
+          "start": 1.8
+        },
+        {
+          "w": "noun:",
+          "start": 1.92
+        },
+        {
+          "w": "kind",
+          "start": 2.48
+        },
+        {
+          "w": "becomes",
+          "start": 2.92
+        },
+        {
+          "w": "kindness.",
+          "start": 3.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c15": {
+      "segment": "affixes",
+      "display": "And \"e d\" puts a verb in the past: walk becomes walked.",
+      "spoken": "And \"e d\" puts a verb in the past: walk becomes walked.",
+      "textHash": "621352cadb21a115",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eb9fa2a8ffa38d68.wav",
+      "duration": 3.481,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "\"e",
+          "start": 0.24
+        },
+        {
+          "w": "d\"",
+          "start": 0.48
+        },
+        {
+          "w": "puts",
+          "start": 0.64
+        },
+        {
+          "w": "a",
+          "start": 0.88
+        },
+        {
+          "w": "verb",
+          "start": 1.12
+        },
+        {
+          "w": "in",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.48
+        },
+        {
+          "w": "past:",
+          "start": 1.64
+        },
+        {
+          "w": "walk",
+          "start": 2.2
+        },
+        {
+          "w": "becomes",
+          "start": 2.52
+        },
+        {
+          "w": "walked.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c16": {
+      "segment": "inflect",
+      "display": "Affixes do one of two jobs, and it helps to keep them apart.",
+      "spoken": "Affixes do one of two jobs, and it helps to keep them apart.",
+      "textHash": "3c83a07e4878d9e5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3710c3ad687a7b3a.wav",
+      "duration": 3.611,
+      "marks": {},
+      "words": [
+        {
+          "w": "Affixes",
+          "start": 0.3
+        },
+        {
+          "w": "do",
+          "start": 0.6
+        },
+        {
+          "w": "one",
+          "start": 0.76
+        },
+        {
+          "w": "of",
+          "start": 0.92
+        },
+        {
+          "w": "two",
+          "start": 1.04
+        },
+        {
+          "w": "jobs,",
+          "start": 1.32
+        },
+        {
+          "w": "and",
+          "start": 1.84
+        },
+        {
+          "w": "it",
+          "start": 2.04
+        },
+        {
+          "w": "helps",
+          "start": 2.16
+        },
+        {
+          "w": "to",
+          "start": 2.56
+        },
+        {
+          "w": "keep",
+          "start": 2.68
+        },
+        {
+          "w": "them",
+          "start": 2.92
+        },
+        {
+          "w": "apart.",
+          "start": 3.12
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c17": {
+      "segment": "inflect",
+      "display": "Inflection gives the same word a new form. \"walk\" and \"walked\" are the same verb, just in the past. \"cat\" and \"cats\" are the same noun, just plural.",
+      "spoken": "Inflection gives the same word a new form. \"walk\" and \"walked\" are the same verb, just in the past. \"cat\" and \"cats\" are the same noun, just plural.",
+      "textHash": "5a961314532cc5f4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/79b0b31c8a8094aa.wav",
+      "duration": 9.013,
+      "marks": {},
+      "words": [
+        {
+          "w": "Inflection",
+          "start": 0
+        },
+        {
+          "w": "gives",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 0.88
+        },
+        {
+          "w": "same",
+          "start": 1.04
+        },
+        {
+          "w": "word",
+          "start": 1.32
+        },
+        {
+          "w": "a",
+          "start": 1.56
+        },
+        {
+          "w": "new",
+          "start": 1.72
+        },
+        {
+          "w": "form.",
+          "start": 2
+        },
+        {
+          "w": "\"walk\"",
+          "start": 2.76
+        },
+        {
+          "w": "and",
+          "start": 3.16
+        },
+        {
+          "w": "\"walked\"",
+          "start": 3.48
+        },
+        {
+          "w": "are",
+          "start": 3.88
+        },
+        {
+          "w": "the",
+          "start": 4
+        },
+        {
+          "w": "same",
+          "start": 4.293
+        },
+        {
+          "w": "verb,",
+          "start": 4.587
+        },
+        {
+          "w": "just",
+          "start": 4.88
+        },
+        {
+          "w": "in",
+          "start": 5.12
+        },
+        {
+          "w": "the",
+          "start": 5.28
+        },
+        {
+          "w": "past.",
+          "start": 5.48
+        },
+        {
+          "w": "\"cat\"",
+          "start": 6.12
+        },
+        {
+          "w": "and",
+          "start": 6.56
+        },
+        {
+          "w": "\"cats\"",
+          "start": 6.8
+        },
+        {
+          "w": "are",
+          "start": 7.24
+        },
+        {
+          "w": "the",
+          "start": 7.4
+        },
+        {
+          "w": "same",
+          "start": 7.52
+        },
+        {
+          "w": "noun,",
+          "start": 7.84
+        },
+        {
+          "w": "just",
+          "start": 8.16
+        },
+        {
+          "w": "plural.",
+          "start": 8.44
+        }
+      ],
+      "matchScore": 0.885
+    },
+    "c18": {
+      "segment": "inflect",
+      "display": "Derivation builds a different word. \"happy\" is an adjective, but \"happiness\" is a new word, a noun. \"teach\" becomes \"teacher\": a person, not an action.",
+      "spoken": "Derivation builds a different word. \"happy\" is an adjective, but \"happiness\" is a new word, a noun. \"teach\" becomes \"teacher\": a person, not an action.",
+      "textHash": "3853c7195b3c265e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fdd5a610a574bf5c.wav",
+      "duration": 9.455,
+      "marks": {},
+      "words": [
+        {
+          "w": "Derivation",
+          "start": 0
+        },
+        {
+          "w": "builds",
+          "start": 0.68
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "different",
+          "start": 1.16
+        },
+        {
+          "w": "word.",
+          "start": 1.64
+        },
+        {
+          "w": "\"happy\"",
+          "start": 2.08
+        },
+        {
+          "w": "is",
+          "start": 2.52
+        },
+        {
+          "w": "an",
+          "start": 2.76
+        },
+        {
+          "w": "adjective,",
+          "start": 2.92
+        },
+        {
+          "w": "but",
+          "start": 3.52
+        },
+        {
+          "w": "\"happiness\"",
+          "start": 3.76
+        },
+        {
+          "w": "is",
+          "start": 4.32
+        },
+        {
+          "w": "a",
+          "start": 4.44
+        },
+        {
+          "w": "new",
+          "start": 4.6
+        },
+        {
+          "w": "word,",
+          "start": 4.88
+        },
+        {
+          "w": "a",
+          "start": 5.12
+        },
+        {
+          "w": "noun.",
+          "start": 5.28
+        },
+        {
+          "w": "\"teach\"",
+          "start": 5.92
+        },
+        {
+          "w": "becomes",
+          "start": 6.44
+        },
+        {
+          "w": "\"teacher\":",
+          "start": 7.04
+        },
+        {
+          "w": "a",
+          "start": 7.76
+        },
+        {
+          "w": "person,",
+          "start": 8
+        },
+        {
+          "w": "not",
+          "start": 8.48
+        },
+        {
+          "w": "an",
+          "start": 8.76
+        },
+        {
+          "w": "action.",
+          "start": 8.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "inflect",
+      "display": "So here's the short version. Inflection changes the form; derivation changes the word.",
+      "spoken": "So here's the short version. Inflection changes the form; derivation changes the word.",
+      "textHash": "4881beeef1afb338",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a645cbf5991f8dec.wav",
+      "duration": 5.515,
+      "marks": {
+        "verdict": 1.84
+      },
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "here's",
+          "start": 0.34
+        },
+        {
+          "w": "the",
+          "start": 0.68
+        },
+        {
+          "w": "short",
+          "start": 1.067
+        },
+        {
+          "w": "version.",
+          "start": 1.453
+        },
+        {
+          "w": "Inflection",
+          "start": 1.84
+        },
+        {
+          "w": "changes",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "form;",
+          "start": 3.32
+        },
+        {
+          "w": "derivation",
+          "start": 3.76
+        },
+        {
+          "w": "changes",
+          "start": 4.56
+        },
+        {
+          "w": "the",
+          "start": 5
+        },
+        {
+          "w": "word.",
+          "start": 5.2
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c20": {
+      "segment": "stem",
+      "display": "In NLP we often want to get back to the root of a word, so that \"studies\" and \"study\" count as the same thing. There are two ways to do it.",
+      "spoken": "In N L P we often want to get back to the root of a word, so that \"studies\" and \"study\" count as the same thing. There are two ways to do it.",
+      "textHash": "b5f5fd5ebdf3be95",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7f16e27f971929c7.wav",
+      "duration": 8.182,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0.28
+        },
+        {
+          "w": "NLP",
+          "start": 0.56
+        },
+        {
+          "w": "we",
+          "start": 0.84
+        },
+        {
+          "w": "often",
+          "start": 1.12
+        },
+        {
+          "w": "want",
+          "start": 1.48
+        },
+        {
+          "w": "to",
+          "start": 1.68
+        },
+        {
+          "w": "get",
+          "start": 1.8
+        },
+        {
+          "w": "back",
+          "start": 2
+        },
+        {
+          "w": "to",
+          "start": 2.16
+        },
+        {
+          "w": "the",
+          "start": 2.28
+        },
+        {
+          "w": "root",
+          "start": 2.4
+        },
+        {
+          "w": "of",
+          "start": 2.64
+        },
+        {
+          "w": "a",
+          "start": 2.8
+        },
+        {
+          "w": "word,",
+          "start": 2.96
+        },
+        {
+          "w": "so",
+          "start": 3.32
+        },
+        {
+          "w": "that",
+          "start": 3.56
+        },
+        {
+          "w": "\"studies\"",
+          "start": 3.8
+        },
+        {
+          "w": "and",
+          "start": 4.4
+        },
+        {
+          "w": "\"study\"",
+          "start": 4.64
+        },
+        {
+          "w": "count",
+          "start": 5.2
+        },
+        {
+          "w": "as",
+          "start": 5.52
+        },
+        {
+          "w": "the",
+          "start": 5.72
+        },
+        {
+          "w": "same",
+          "start": 5.92
+        },
+        {
+          "w": "thing.",
+          "start": 6.24
+        },
+        {
+          "w": "There",
+          "start": 6.64
+        },
+        {
+          "w": "are",
+          "start": 6.88
+        },
+        {
+          "w": "two",
+          "start": 7.04
+        },
+        {
+          "w": "ways",
+          "start": 7.28
+        },
+        {
+          "w": "to",
+          "start": 7.6
+        },
+        {
+          "w": "do",
+          "start": 7.8
+        },
+        {
+          "w": "it.",
+          "start": 7.96
+        }
+      ],
+      "matchScore": 0.95
+    },
+    "c21": {
+      "segment": "stem",
+      "display": "Stemming simply chops endings off by rule. It's fast, but the result isn't always a real word. Lemmatization looks the word up, and returns its dictionary form, called the lemma.",
+      "spoken": "Stemming simply chops endings off by rule. It's fast, but the result isn't always a real word. Lemmatization looks the word up, and returns its dictionary form, called the lemma.",
+      "textHash": "1aca6c55cb9c7bb9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7ed224bf60d0c8e8.wav",
+      "duration": 11.139,
+      "marks": {},
+      "words": [
+        {
+          "w": "Stemming",
+          "start": 0
+        },
+        {
+          "w": "simply",
+          "start": 0.48
+        },
+        {
+          "w": "chops",
+          "start": 0.92
+        },
+        {
+          "w": "endings",
+          "start": 1.36
+        },
+        {
+          "w": "off",
+          "start": 1.88
+        },
+        {
+          "w": "by",
+          "start": 2.16
+        },
+        {
+          "w": "rule.",
+          "start": 2.36
+        },
+        {
+          "w": "It's",
+          "start": 2.8
+        },
+        {
+          "w": "fast,",
+          "start": 3.28
+        },
+        {
+          "w": "but",
+          "start": 3.68
+        },
+        {
+          "w": "the",
+          "start": 3.84
+        },
+        {
+          "w": "result",
+          "start": 4.04
+        },
+        {
+          "w": "isn't",
+          "start": 4.48
+        },
+        {
+          "w": "always",
+          "start": 4.84
+        },
+        {
+          "w": "a",
+          "start": 5.2
+        },
+        {
+          "w": "real",
+          "start": 5.36
+        },
+        {
+          "w": "word.",
+          "start": 5.84
+        },
+        {
+          "w": "Lemmatization",
+          "start": 6.52
+        },
+        {
+          "w": "looks",
+          "start": 7.4
+        },
+        {
+          "w": "the",
+          "start": 7.68
+        },
+        {
+          "w": "word",
+          "start": 7.84
+        },
+        {
+          "w": "up,",
+          "start": 8.08
+        },
+        {
+          "w": "and",
+          "start": 8.32
+        },
+        {
+          "w": "returns",
+          "start": 8.48
+        },
+        {
+          "w": "its",
+          "start": 9
+        },
+        {
+          "w": "dictionary",
+          "start": 9.2
+        },
+        {
+          "w": "form,",
+          "start": 9.84
+        },
+        {
+          "w": "called",
+          "start": 10.24
+        },
+        {
+          "w": "the",
+          "start": 10.6
+        },
+        {
+          "w": "lemma.",
+          "start": 10.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "stem",
+      "display": "\"studies\": a common stemmer gives \"studi\", which isn't a word. Lemmatization gives \"study\".",
+      "spoken": "\"studies\": a common stemmer gives \"studi\", which isn't a word. Lemmatization gives \"study\".",
+      "textHash": "5b44c65dbc1e2835",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/452407ea97e4bd93.wav",
+      "duration": 5.14,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"studies\":",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "common",
+          "start": 0.8
+        },
+        {
+          "w": "stemmer",
+          "start": 1.2
+        },
+        {
+          "w": "gives",
+          "start": 1.64
+        },
+        {
+          "w": "\"studi\",",
+          "start": 1.98
+        },
+        {
+          "w": "which",
+          "start": 2.32
+        },
+        {
+          "w": "isn't",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.8
+        },
+        {
+          "w": "word.",
+          "start": 2.96
+        },
+        {
+          "w": "Lemmatization",
+          "start": 3.48
+        },
+        {
+          "w": "gives",
+          "start": 4.36
+        },
+        {
+          "w": "\"study\".",
+          "start": 4.68
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c23": {
+      "segment": "stem",
+      "display": "\"running\": both give \"run\".",
+      "spoken": "\"running\": both give \"run\".",
+      "textHash": "dec3030a9991dd41",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/72c086c72cbc393a.wav",
+      "duration": 1.591,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"running\":",
+          "start": 0
+        },
+        {
+          "w": "both",
+          "start": 0.48
+        },
+        {
+          "w": "give",
+          "start": 0.84
+        },
+        {
+          "w": "\"run\".",
+          "start": 1.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "stem",
+      "display": "\"better\": stemming leaves it alone, but lemmatization knows it's a form of \"good\".",
+      "spoken": "\"better\": stemming leaves it alone, but lemmatization knows it's a form of \"good\".",
+      "textHash": "efa25b7a032af27a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1c2efdd342b6e174.wav",
+      "duration": 4.469,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"better\":",
+          "start": 0
+        },
+        {
+          "w": "stemming",
+          "start": 0.56
+        },
+        {
+          "w": "leaves",
+          "start": 1.08
+        },
+        {
+          "w": "it",
+          "start": 1.36
+        },
+        {
+          "w": "alone,",
+          "start": 1.56
+        },
+        {
+          "w": "but",
+          "start": 2.04
+        },
+        {
+          "w": "lemmatization",
+          "start": 2.28
+        },
+        {
+          "w": "knows",
+          "start": 3.08
+        },
+        {
+          "w": "it's",
+          "start": 3.36
+        },
+        {
+          "w": "a",
+          "start": 3.6
+        },
+        {
+          "w": "form",
+          "start": 3.68
+        },
+        {
+          "w": "of",
+          "start": 3.96
+        },
+        {
+          "w": "\"good\".",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "stem",
+      "display": "And \"was\": stemming chops it to \"wa\", while lemmatization knows it's a form of \"be\".",
+      "spoken": "And \"was\": stemming chops it to \"wa\", while lemmatization knows it's a form of \"be\".",
+      "textHash": "ff67e3948d5ef65a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fcadfc96c814b54a.wav",
+      "duration": 4.867,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "\"was\":",
+          "start": 0.28
+        },
+        {
+          "w": "stemming",
+          "start": 0.8
+        },
+        {
+          "w": "chops",
+          "start": 1.36
+        },
+        {
+          "w": "it",
+          "start": 1.76
+        },
+        {
+          "w": "to",
+          "start": 1.88
+        },
+        {
+          "w": "\"wa\",",
+          "start": 2.08
+        },
+        {
+          "w": "while",
+          "start": 2.44
+        },
+        {
+          "w": "lemmatization",
+          "start": 2.72
+        },
+        {
+          "w": "knows",
+          "start": 3.52
+        },
+        {
+          "w": "it's",
+          "start": 3.8
+        },
+        {
+          "w": "a",
+          "start": 4
+        },
+        {
+          "w": "form",
+          "start": 4.08
+        },
+        {
+          "w": "of",
+          "start": 4.36
+        },
+        {
+          "w": "\"be\".",
+          "start": 4.614
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "why",
+      "display": "So why does NLP care about word parts? Four reasons.",
+      "spoken": "So why does N L P care about word parts? Four reasons.",
+      "textHash": "bd8d557de2be5195",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eddb21fce02b919a.wav",
+      "duration": 3.644,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "why",
+          "start": 0.16
+        },
+        {
+          "w": "does",
+          "start": 0.52
+        },
+        {
+          "w": "NLP",
+          "start": 0.88
+        },
+        {
+          "w": "care",
+          "start": 1.24
+        },
+        {
+          "w": "about",
+          "start": 1.56
+        },
+        {
+          "w": "word",
+          "start": 1.84
+        },
+        {
+          "w": "parts?",
+          "start": 2.12
+        },
+        {
+          "w": "Four",
+          "start": 2.54
+        },
+        {
+          "w": "reasons.",
+          "start": 2.96
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c27": {
+      "segment": "why",
+      "display": "There are fewer things to learn. Walk, walks, walked and walking all share one root.",
+      "spoken": "There are fewer things to learn. Walk, walks, walked and walking all share one root.",
+      "textHash": "2bd6ee7265bf763d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3a2968cfa139a279.wav",
+      "duration": 4.781,
+      "marks": {},
+      "words": [
+        {
+          "w": "There",
+          "start": 0
+        },
+        {
+          "w": "are",
+          "start": 0.16
+        },
+        {
+          "w": "fewer",
+          "start": 0.28
+        },
+        {
+          "w": "things",
+          "start": 0.6
+        },
+        {
+          "w": "to",
+          "start": 0.92
+        },
+        {
+          "w": "learn.",
+          "start": 1.12
+        },
+        {
+          "w": "Walk,",
+          "start": 1.68
+        },
+        {
+          "w": "walks,",
+          "start": 2.2
+        },
+        {
+          "w": "walked",
+          "start": 2.72
+        },
+        {
+          "w": "and",
+          "start": 3.08
+        },
+        {
+          "w": "walking",
+          "start": 3.28
+        },
+        {
+          "w": "all",
+          "start": 3.64
+        },
+        {
+          "w": "share",
+          "start": 3.84
+        },
+        {
+          "w": "one",
+          "start": 4.2
+        },
+        {
+          "w": "root.",
+          "start": 4.49
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c28": {
+      "segment": "why",
+      "display": "Search gets better. Type \"running\", and you also find pages that say \"run\".",
+      "spoken": "Search gets better. Type \"running\", and you also find pages that say \"run\".",
+      "textHash": "a4ee12faea7925ca",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d3310cc115633089.wav",
+      "duration": 4.642,
+      "marks": {},
+      "words": [
+        {
+          "w": "Search",
+          "start": 0
+        },
+        {
+          "w": "gets",
+          "start": 0.48
+        },
+        {
+          "w": "better.",
+          "start": 0.8
+        },
+        {
+          "w": "Type",
+          "start": 1.28
+        },
+        {
+          "w": "\"running\",",
+          "start": 1.76
+        },
+        {
+          "w": "and",
+          "start": 2.24
+        },
+        {
+          "w": "you",
+          "start": 2.4
+        },
+        {
+          "w": "also",
+          "start": 2.64
+        },
+        {
+          "w": "find",
+          "start": 2.92
+        },
+        {
+          "w": "pages",
+          "start": 3.2
+        },
+        {
+          "w": "that",
+          "start": 3.68
+        },
+        {
+          "w": "say",
+          "start": 3.92
+        },
+        {
+          "w": "\"run\".",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "why",
+      "display": "It helps with new words. Even if \"ungoogleable\" isn't in the dictionary, its pieces are: un, google, able.",
+      "spoken": "It helps with new words. Even if \"ungoogleable\" isn't in the dictionary, its pieces are: un, google, able.",
+      "textHash": "dcf739471b78ff17",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b295dd064adb65b4.wav",
+      "duration": 6.827,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "helps",
+          "start": 0.12
+        },
+        {
+          "w": "with",
+          "start": 0.52
+        },
+        {
+          "w": "new",
+          "start": 0.68
+        },
+        {
+          "w": "words.",
+          "start": 0.96
+        },
+        {
+          "w": "Even",
+          "start": 1.56
+        },
+        {
+          "w": "if",
+          "start": 1.92
+        },
+        {
+          "w": "\"ungoogleable\"",
+          "start": 2.42
+        },
+        {
+          "w": "isn't",
+          "start": 2.92
+        },
+        {
+          "w": "in",
+          "start": 3.24
+        },
+        {
+          "w": "the",
+          "start": 3.32
+        },
+        {
+          "w": "dictionary,",
+          "start": 3.44
+        },
+        {
+          "w": "its",
+          "start": 4.08
+        },
+        {
+          "w": "pieces",
+          "start": 4.32
+        },
+        {
+          "w": "are:",
+          "start": 4.88
+        },
+        {
+          "w": "un,",
+          "start": 5.373
+        },
+        {
+          "w": "google,",
+          "start": 5.867
+        },
+        {
+          "w": "able.",
+          "start": 6.36
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c30": {
+      "segment": "why",
+      "display": "And it matters even more in languages like Turkish or Finnish, where one long word can hold what English says in a whole sentence.",
+      "spoken": "And it matters even more in languages like Turkish or Finnish, where one long word can hold what English says in a whole sentence.",
+      "textHash": "579f76cde0e01992",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0bbcf76c5a74a811.wav",
+      "duration": 7.697,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.12
+        },
+        {
+          "w": "matters",
+          "start": 0.28
+        },
+        {
+          "w": "even",
+          "start": 0.68
+        },
+        {
+          "w": "more",
+          "start": 1
+        },
+        {
+          "w": "in",
+          "start": 1.2
+        },
+        {
+          "w": "languages",
+          "start": 1.4
+        },
+        {
+          "w": "like",
+          "start": 2.04
+        },
+        {
+          "w": "Turkish",
+          "start": 2.24
+        },
+        {
+          "w": "or",
+          "start": 2.8
+        },
+        {
+          "w": "Finnish,",
+          "start": 3.04
+        },
+        {
+          "w": "where",
+          "start": 3.68
+        },
+        {
+          "w": "one",
+          "start": 4
+        },
+        {
+          "w": "long",
+          "start": 4.28
+        },
+        {
+          "w": "word",
+          "start": 4.64
+        },
+        {
+          "w": "can",
+          "start": 4.88
+        },
+        {
+          "w": "hold",
+          "start": 5.08
+        },
+        {
+          "w": "what",
+          "start": 5.36
+        },
+        {
+          "w": "English",
+          "start": 5.6
+        },
+        {
+          "w": "says",
+          "start": 6.08
+        },
+        {
+          "w": "in",
+          "start": 6.4
+        },
+        {
+          "w": "a",
+          "start": 6.6
+        },
+        {
+          "w": "whole",
+          "start": 6.76
+        },
+        {
+          "w": "sentence.",
+          "start": 7.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. How many morphemes are in the word \"unbreakable\"?",
+      "spoken": "Time for a quick quiz. How many morphemes are in the word \"unbreakable\"?",
+      "textHash": "69d244ba8460f173",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f90bce862ce4de12.wav",
+      "duration": 3.913,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.59
+        },
+        {
+          "w": "quick",
+          "start": 0.86
+        },
+        {
+          "w": "quiz.",
+          "start": 1.13
+        },
+        {
+          "w": "How",
+          "start": 1.4
+        },
+        {
+          "w": "many",
+          "start": 1.6
+        },
+        {
+          "w": "morphemes",
+          "start": 2.04
+        },
+        {
+          "w": "are",
+          "start": 2.48
+        },
+        {
+          "w": "in",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 2.72
+        },
+        {
+          "w": "word",
+          "start": 2.88
+        },
+        {
+          "w": "\"unbreakable\"?",
+          "start": 3.12
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c32": {
+      "segment": "quiz",
+      "display": "Pause the video and count the pieces.",
+      "spoken": "Pause the video and count the pieces.",
+      "textHash": "7dbfd0d490811a82",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/434e87c96b092a01.wav",
+      "duration": 2.106,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.32
+        },
+        {
+          "w": "video",
+          "start": 0.6
+        },
+        {
+          "w": "and",
+          "start": 0.88
+        },
+        {
+          "w": "count",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.36
+        },
+        {
+          "w": "pieces.",
+          "start": 1.52
+        }
+      ],
+      "matchScore": 0.857,
+      "after": 3
+    },
+    "c33": {
+      "segment": "quiz",
+      "display": "The answer is three: \"un\", \"break\", and \"able\". A prefix, a root, and a suffix.",
+      "spoken": "The answer is three: \"un\", \"break\", and \"able\". A prefix, a root, and a suffix.",
+      "textHash": "b17e845dee6c81a0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/316479501e39fadd.wav",
+      "duration": 4.954,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "answer",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.52
+        },
+        {
+          "w": "three:",
+          "start": 0.72
+        },
+        {
+          "w": "\"un\",",
+          "start": 1.16
+        },
+        {
+          "w": "\"break\",",
+          "start": 1.6
+        },
+        {
+          "w": "and",
+          "start": 2.04
+        },
+        {
+          "w": "\"able\".",
+          "start": 2.24
+        },
+        {
+          "w": "A",
+          "start": 2.8
+        },
+        {
+          "w": "prefix,",
+          "start": 3
+        },
+        {
+          "w": "a",
+          "start": 3.6
+        },
+        {
+          "w": "root,",
+          "start": 3.72
+        },
+        {
+          "w": "and",
+          "start": 4.04
+        },
+        {
+          "w": "a",
+          "start": 4.2
+        },
+        {
+          "w": "suffix.",
+          "start": 4.32
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "Let's recap. A morpheme is the smallest piece of a word that carries meaning.",
+      "spoken": "Let's recap. A morpheme is the smallest piece of a word that carries meaning.",
+      "textHash": "3ed5d3402260a6e4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/360bc61c5d096c96.wav",
+      "duration": 4.452,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "morpheme",
+          "start": 1.2
+        },
+        {
+          "w": "is",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 1.96
+        },
+        {
+          "w": "smallest",
+          "start": 2.12
+        },
+        {
+          "w": "piece",
+          "start": 2.6
+        },
+        {
+          "w": "of",
+          "start": 2.84
+        },
+        {
+          "w": "a",
+          "start": 2.96
+        },
+        {
+          "w": "word",
+          "start": 3.12
+        },
+        {
+          "w": "that",
+          "start": 3.36
+        },
+        {
+          "w": "carries",
+          "start": 3.56
+        },
+        {
+          "w": "meaning.",
+          "start": 4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c35": {
+      "segment": "recap",
+      "display": "Free morphemes can stand alone; bound morphemes have to attach to something.",
+      "spoken": "Free morphemes can stand alone; bound morphemes have to attach to something.",
+      "textHash": "b05f4c8371530035",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4b31b522c7d7a42c.wav",
+      "duration": 4.41,
+      "marks": {},
+      "words": [
+        {
+          "w": "Free",
+          "start": 0
+        },
+        {
+          "w": "morphemes",
+          "start": 0.44
+        },
+        {
+          "w": "can",
+          "start": 0.88
+        },
+        {
+          "w": "stand",
+          "start": 1.12
+        },
+        {
+          "w": "alone;",
+          "start": 1.44
+        },
+        {
+          "w": "bound",
+          "start": 2.08
+        },
+        {
+          "w": "morphemes",
+          "start": 2.56
+        },
+        {
+          "w": "have",
+          "start": 3.04
+        },
+        {
+          "w": "to",
+          "start": 3.2
+        },
+        {
+          "w": "attach",
+          "start": 3.32
+        },
+        {
+          "w": "to",
+          "start": 3.76
+        },
+        {
+          "w": "something.",
+          "start": 3.96
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c36": {
+      "segment": "recap",
+      "display": "Inflection changes a word's form; derivation builds a new word.",
+      "spoken": "Inflection changes a word's form; derivation builds a new word.",
+      "textHash": "62c022226016e634",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ca15f9251e8c0f5e.wav",
+      "duration": 3.801,
+      "marks": {},
+      "words": [
+        {
+          "w": "Inflection",
+          "start": 0
+        },
+        {
+          "w": "changes",
+          "start": 0.64
+        },
+        {
+          "w": "a",
+          "start": 1.12
+        },
+        {
+          "w": "word's",
+          "start": 1.28
+        },
+        {
+          "w": "form;",
+          "start": 1.6
+        },
+        {
+          "w": "derivation",
+          "start": 2.04
+        },
+        {
+          "w": "builds",
+          "start": 2.76
+        },
+        {
+          "w": "a",
+          "start": 3.16
+        },
+        {
+          "w": "new",
+          "start": 3.28
+        },
+        {
+          "w": "word.",
+          "start": 3.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c37": {
+      "segment": "recap",
+      "display": "And stemming chops endings by rule, while lemmatization looks up the real root.",
+      "spoken": "And stemming chops endings by rule, while lemmatization looks up the real root.",
+      "textHash": "d33753d8afed235a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e9711f44b435d126.wav",
+      "duration": 4.638,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "stemming",
+          "start": 0.16
+        },
+        {
+          "w": "chops",
+          "start": 0.64
+        },
+        {
+          "w": "endings",
+          "start": 1.12
+        },
+        {
+          "w": "by",
+          "start": 1.6
+        },
+        {
+          "w": "rule,",
+          "start": 1.84
+        },
+        {
+          "w": "while",
+          "start": 2.28
+        },
+        {
+          "w": "lemmatization",
+          "start": 2.52
+        },
+        {
+          "w": "looks",
+          "start": 3.36
+        },
+        {
+          "w": "up",
+          "start": 3.64
+        },
+        {
+          "w": "the",
+          "start": 3.8
+        },
+        {
+          "w": "real",
+          "start": 3.92
+        },
+        {
+          "w": "root.",
+          "start": 4.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c38": {
+      "segment": "recap",
+      "display": "Next lesson: POS Tagging. How does a computer tell 'book a flight' from 'read a book'?",
+      "spoken": "Next lesson: P O S Tagging. How does a computer tell 'book a flight' from 'read a book'?",
+      "textHash": "27a4149bf8b67232",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/26473e8a2d549f2e.wav",
+      "duration": 4.993,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.42
+        },
+        {
+          "w": "lesson:",
+          "start": 0.84
+        },
+        {
+          "w": "POS",
+          "start": 1.26
+        },
+        {
+          "w": "Tagging.",
+          "start": 1.68
+        },
+        {
+          "w": "How",
+          "start": 2.28
+        },
+        {
+          "w": "does",
+          "start": 2.52
+        },
+        {
+          "w": "a",
+          "start": 2.76
+        },
+        {
+          "w": "computer",
+          "start": 2.88
+        },
+        {
+          "w": "tell",
+          "start": 3.32
+        },
+        {
+          "w": "'book",
+          "start": 3.52
+        },
+        {
+          "w": "a",
+          "start": 3.72
+        },
+        {
+          "w": "flight'",
+          "start": 3.84
+        },
+        {
+          "w": "from",
+          "start": 4.12
+        },
+        {
+          "w": "'read",
+          "start": 4.32
+        },
+        {
+          "w": "a",
+          "start": 4.52
+        },
+        {
+          "w": "book'?",
+          "start": 4.68
+        }
+      ],
+      "matchScore": 0.769
+    }
+  }
+}

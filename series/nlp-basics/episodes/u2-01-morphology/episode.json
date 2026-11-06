@@ -1,0 +1,68 @@
+{
+  "id": "u2-01",
+  "thumbnail": { "headline": "The hidden pieces inside words", "big": "un · break · able" },
+  "tags": ["morphology", "morphemes", "stemming", "lemmatization", "inflection and derivation"],
+  "segments": [
+    { "id": "intro", "kind": "intro", "component": "TitleCard", "title": "Welcome",
+      "props": { "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}", "title": "Morphology", "subtitle": "The building blocks inside words" } },
+
+    { "id": "idea", "kind": "core", "component": "BigIdea", "title": "The big idea",
+      "props": { "kicker": "Key idea", "text": "Words are built from smaller pieces, and each piece carries meaning.", "highlight": ["smaller pieces"] } },
+
+    { "id": "morpheme", "kind": "core", "component": "Definition", "title": "What is a morpheme?",
+      "props": { "kicker": "Definition", "term": "Morpheme", "definition": "The smallest part of a word that still carries meaning.",
+        "example": "un · break · able", "analogy": "LEGO bricks that snap together to build words." } },
+
+    { "id": "kinds", "kind": "core", "component": "Compare", "title": "Free and bound morphemes",
+      "props": { "kicker": "Two kinds", "title": "Free and bound morphemes", "columns": [
+        { "title": "Free", "items": ["can stand alone as a word", "break · cat · happy"], "tone": "good" },
+        { "title": "Bound", "items": ["must attach to another piece", "un- · -able · -s · -ed"], "tone": "neutral" } ],
+        "verdict": { "text": "Most words mix both", "at": "c09@verdict" } } },
+
+    { "id": "affixes", "kind": "core", "component": "Table", "title": "Prefixes and suffixes",
+      "props": { "kicker": "Affixes", "title": "Pieces that attach to words", "columns": ["Piece", "Where", "Example"],
+        "rows": [
+          ["un-", "prefix", "unhappy"],
+          ["re-", "prefix", "rebuild"],
+          ["-s", "suffix", "cats"],
+          ["-ness", "suffix", "kindness"],
+          ["-ed", "suffix", "walked"] ] } },
+
+    { "id": "inflect", "kind": "core", "component": "Compare", "title": "Inflection and derivation",
+      "props": { "kicker": "Two jobs", "title": "Same word, or a new word?", "columns": [
+        { "title": "Inflection", "items": ["same word, new form", "walk → walked", "cat → cats"], "tone": "neutral", "at": "c17" },
+        { "title": "Derivation", "items": ["builds a new word", "happy → happiness", "teach → teacher"], "tone": "good", "at": "c18" } ],
+        "verdict": { "text": "Inflection changes the form. Derivation changes the word.", "at": "c19@verdict" } } },
+
+    { "id": "stem", "kind": "core", "component": "Table", "title": "Stemming and lemmatization", "short": true,
+      "shortTitle": "Stemming vs lemmatization in 40 seconds",
+      "props": { "kicker": "Back to the root", "title": "Stemming vs lemmatization", "columns": ["Word", "Stemming", "Lemmatization"],
+        "rows": [
+          ["studies", "studi", "study"],
+          ["running", "run", "run"],
+          ["better", "better", "good"],
+          ["was", "wa", "be"] ],
+        "highlight": [{ "row": 2, "col": 2 }, { "row": 3, "col": 2 }] } },
+
+    { "id": "why", "kind": "core", "component": "Bullets", "title": "Why NLP cares",
+      "props": { "kicker": "Why it matters", "title": "Why NLP cares about word parts", "items": [
+        { "text": "Fewer things to learn: walk, walks, walked" },
+        { "text": "Search for “running”, also find “run”" },
+        { "text": "Make sense of new words: un + google + able" },
+        { "text": "Vital for languages like Turkish and Finnish" } ] } },
+
+    { "id": "quiz", "kind": "quiz", "component": "Quiz", "title": "Quick quiz", "short": true,
+      "shortTitle": "Quick quiz: how many pieces in “unbreakable”?",
+      "props": { "question": "How many morphemes are in the word “unbreakable”?",
+        "options": ["1", "2", "3", "4"], "answer": 2,
+        "explain": "un + break + able: a prefix, a root and a suffix." } },
+
+    { "id": "recap", "kind": "recap", "component": "Recap", "title": "Recap and next lesson",
+      "props": { "points": [
+        "A morpheme is the smallest piece of meaning",
+        "Free morphemes stand alone; bound ones attach",
+        "Inflection changes the form; derivation makes a new word",
+        "Stemming chops; lemmatization looks up the real root" ],
+        "next": { "title": "{{next.short}}", "question": "{{next.question}}" } } }
+  ]
+}
