@@ -1,0 +1,217 @@
+{
+  "id": "u4-02",
+  "thumbnail": {
+    "headline": "How AI learns word meaning by reading",
+    "big": "skip-gram"
+  },
+  "tags": [
+    "word2vec",
+    "skip-gram",
+    "CBOW",
+    "negative sampling",
+    "word embeddings"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Word2Vec",
+        "subtitle": "Learning word vectors by guessing neighbours"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "Learn word vectors by playing a guessing game: predict a word's neighbours.",
+        "highlight": [
+          "guessing game:"
+        ]
+      }
+    },
+    {
+      "id": "w2v",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is Word2Vec?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Word2Vec",
+        "definition": "A method from 2013 that learns word vectors by training a small network to predict which words appear near each other.",
+        "example": "“the cat sat”: cat ↔ the, sat",
+        "analogy": "Learning a language through millions of fill-in-the-blank exercises."
+      }
+    },
+    {
+      "id": "window",
+      "kind": "core",
+      "component": "Table",
+      "title": "Neighbours in a window",
+      "short": true,
+      "shortTitle": "How Word2Vec learns from a sliding window",
+      "props": {
+        "kicker": "Context window",
+        "title": "“the quick brown fox jumps” · window of 2",
+        "columns": [
+          "Centre word",
+          "Its neighbours"
+        ],
+        "rows": [
+          [
+            "quick",
+            "the · brown · fox"
+          ],
+          [
+            "brown",
+            "the · quick · fox · jumps"
+          ],
+          [
+            "fox",
+            "quick · brown · jumps"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "two",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Two versions",
+      "props": {
+        "kicker": "Two versions",
+        "title": "Skip-gram versus CBOW",
+        "columns": [
+          {
+            "title": "Skip-gram",
+            "items": [
+              "centre word → guess the neighbours",
+              "better for rare words"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "CBOW",
+            "items": [
+              "neighbours → guess the centre word",
+              "faster to train"
+            ],
+            "tone": "neutral"
+          }
+        ],
+        "verdict": {
+          "text": "Either way, the vectors are the real prize"
+        }
+      }
+    },
+    {
+      "id": "loop",
+      "kind": "core",
+      "component": "Steps",
+      "title": "The training loop",
+      "props": {
+        "kicker": "Training",
+        "title": "How the vectors are learned",
+        "steps": [
+          {
+            "label": "Pick",
+            "detail": "a word and a real neighbour"
+          },
+          {
+            "label": "Guess",
+            "detail": "how likely they're neighbours"
+          },
+          {
+            "label": "Nudge",
+            "detail": "move their vectors closer"
+          },
+          {
+            "label": "Push away",
+            "detail": "a few random non-neighbours"
+          }
+        ]
+      }
+    },
+    {
+      "id": "negative",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Negative sampling",
+      "props": {
+        "kicker": "A clever shortcut",
+        "term": "Negative sampling",
+        "definition": "Instead of comparing against every word in the vocabulary, compare against just a few random words that aren't neighbours.",
+        "example": "real: (fox, brown)  ·  fake: (fox, carpet), (fox, Tuesday)",
+        "analogy": "Learning what a cat is by also seeing a few things that aren't cats."
+      }
+    },
+    {
+      "id": "results",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "What you get",
+      "props": {
+        "kicker": "Results",
+        "title": "What Word2Vec gives you",
+        "items": [
+          {
+            "text": "Learns from huge amounts of text, quickly"
+          },
+          {
+            "text": "Similar words end up close together"
+          },
+          {
+            "text": "But one vector per word: “bank” gets just one"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: what does skip-gram guess?",
+      "props": {
+        "question": "In skip-gram, what does the model try to predict?",
+        "options": [
+          "The next sentence",
+          "The neighbours of a word",
+          "A word's part of speech"
+        ],
+        "answer": 1,
+        "explain": "Skip-gram takes the centre word and guesses the words around it."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Word2Vec learns vectors by guessing neighbours",
+          "Training pairs come from a sliding window",
+          "Skip-gram guesses neighbours; CBOW guesses the centre",
+          "Negative sampling: compare with a few random words"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
