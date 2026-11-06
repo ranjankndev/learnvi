@@ -1,0 +1,2619 @@
+{
+  "version": 1,
+  "episode": "u3-02",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 3, lesson 2: dependency parsing.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 3, lesson 2: dependency parsing.",
+      "textHash": "db91db6086d20912",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8563b648b8f6d420.wav",
+      "duration": 6.295,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.12
+        },
+        {
+          "w": "This",
+          "start": 2.92
+        },
+        {
+          "w": "is",
+          "start": 3.2
+        },
+        {
+          "w": "unit",
+          "start": 3.44
+        },
+        {
+          "w": "3,",
+          "start": 3.84
+        },
+        {
+          "w": "lesson",
+          "start": 4.24
+        },
+        {
+          "w": "2:",
+          "start": 4.64
+        },
+        {
+          "w": "dependency",
+          "start": 4.96
+        },
+        {
+          "w": "parsing.",
+          "start": 5.76
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time we drew sentences as trees of phrases. Today we draw them a different way: as links between words.",
+      "spoken": "Last time we drew sentences as trees of phrases. Today we draw them a different way: as links between words.",
+      "textHash": "aaa1239bd20923c6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c8253e3f118b66d5.wav",
+      "duration": 6.777,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time",
+          "start": 0.32
+        },
+        {
+          "w": "we",
+          "start": 0.56
+        },
+        {
+          "w": "drew",
+          "start": 0.72
+        },
+        {
+          "w": "sentences",
+          "start": 0.96
+        },
+        {
+          "w": "as",
+          "start": 1.6
+        },
+        {
+          "w": "trees",
+          "start": 1.8
+        },
+        {
+          "w": "of",
+          "start": 2.16
+        },
+        {
+          "w": "phrases.",
+          "start": 2.36
+        },
+        {
+          "w": "Today",
+          "start": 3.02
+        },
+        {
+          "w": "we",
+          "start": 3.68
+        },
+        {
+          "w": "draw",
+          "start": 3.92
+        },
+        {
+          "w": "them",
+          "start": 4.2
+        },
+        {
+          "w": "a",
+          "start": 4.36
+        },
+        {
+          "w": "different",
+          "start": 4.48
+        },
+        {
+          "w": "way:",
+          "start": 4.88
+        },
+        {
+          "w": "as",
+          "start": 5.2
+        },
+        {
+          "w": "links",
+          "start": 5.44
+        },
+        {
+          "w": "between",
+          "start": 5.96
+        },
+        {
+          "w": "words.",
+          "start": 6.32
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. In a dependency tree, every word hangs off exactly one other word, and the main verb usually sits at the very top.",
+      "spoken": "Here's the idea. In a dependency tree, every word hangs off exactly one other word, and the main verb usually sits at the very top.",
+      "textHash": "f7fac3a98771c0af",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2d5a4668ac47a09c.wav",
+      "duration": 8.634,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "In",
+          "start": 1.24
+        },
+        {
+          "w": "a",
+          "start": 1.48
+        },
+        {
+          "w": "dependency",
+          "start": 1.68
+        },
+        {
+          "w": "tree,",
+          "start": 2.52
+        },
+        {
+          "w": "every",
+          "start": 3
+        },
+        {
+          "w": "word",
+          "start": 3.36
+        },
+        {
+          "w": "hangs",
+          "start": 3.68
+        },
+        {
+          "w": "off",
+          "start": 4.12
+        },
+        {
+          "w": "exactly",
+          "start": 4.4
+        },
+        {
+          "w": "one",
+          "start": 5
+        },
+        {
+          "w": "other",
+          "start": 5.24
+        },
+        {
+          "w": "word,",
+          "start": 5.56
+        },
+        {
+          "w": "and",
+          "start": 5.88
+        },
+        {
+          "w": "the",
+          "start": 6.08
+        },
+        {
+          "w": "main",
+          "start": 6.373
+        },
+        {
+          "w": "verb",
+          "start": 6.667
+        },
+        {
+          "w": "usually",
+          "start": 6.96
+        },
+        {
+          "w": "sits",
+          "start": 7.36
+        },
+        {
+          "w": "at",
+          "start": 7.72
+        },
+        {
+          "w": "the",
+          "start": 7.84
+        },
+        {
+          "w": "very",
+          "start": 7.96
+        },
+        {
+          "w": "top.",
+          "start": 8.24
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c04": {
+      "segment": "dep",
+      "display": "A dependency is a link from a head word to a word that depends on it, with a label saying how they're related.",
+      "spoken": "A dependency is a link from a head word to a word that depends on it, with a label saying how they're related.",
+      "textHash": "f678e535c56c236b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6cd1fd901e94acc0.wav",
+      "duration": 6.513,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "dependency",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.96
+        },
+        {
+          "w": "a",
+          "start": 1.16
+        },
+        {
+          "w": "link",
+          "start": 1.24
+        },
+        {
+          "w": "from",
+          "start": 1.6
+        },
+        {
+          "w": "a",
+          "start": 1.72
+        },
+        {
+          "w": "head",
+          "start": 1.973
+        },
+        {
+          "w": "word",
+          "start": 2.227
+        },
+        {
+          "w": "to",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.68
+        },
+        {
+          "w": "word",
+          "start": 2.88
+        },
+        {
+          "w": "that",
+          "start": 3.12
+        },
+        {
+          "w": "depends",
+          "start": 3.36
+        },
+        {
+          "w": "on",
+          "start": 3.84
+        },
+        {
+          "w": "it,",
+          "start": 4
+        },
+        {
+          "w": "with",
+          "start": 4.28
+        },
+        {
+          "w": "a",
+          "start": 4.44
+        },
+        {
+          "w": "label",
+          "start": 4.6
+        },
+        {
+          "w": "saying",
+          "start": 5.04
+        },
+        {
+          "w": "how",
+          "start": 5.44
+        },
+        {
+          "w": "they're",
+          "start": 5.7
+        },
+        {
+          "w": "related.",
+          "start": 5.96
+        }
+      ],
+      "matchScore": 0.786
+    },
+    "c05": {
+      "segment": "dep",
+      "display": "In \"Priya ate pizza\", the word \"pizza\" depends on \"ate\". It's the object: the thing that was eaten.",
+      "spoken": "In \"Priya ate pizza\", the word \"pizza\" depends on \"ate\". It's the object: the thing that was eaten.",
+      "textHash": "804ddcfd6a26353b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6ceb928dea003431.wav",
+      "duration": 5.67,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"Priya",
+          "start": 0.253
+        },
+        {
+          "w": "ate",
+          "start": 0.507
+        },
+        {
+          "w": "pizza\",",
+          "start": 0.76
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "word",
+          "start": 1.44
+        },
+        {
+          "w": "\"pizza\"",
+          "start": 1.72
+        },
+        {
+          "w": "depends",
+          "start": 2.2
+        },
+        {
+          "w": "on",
+          "start": 2.68
+        },
+        {
+          "w": "\"ate\".",
+          "start": 3.02
+        },
+        {
+          "w": "It's",
+          "start": 3.36
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "object:",
+          "start": 3.88
+        },
+        {
+          "w": "the",
+          "start": 4.44
+        },
+        {
+          "w": "thing",
+          "start": 4.64
+        },
+        {
+          "w": "that",
+          "start": 4.88
+        },
+        {
+          "w": "was",
+          "start": 5.04
+        },
+        {
+          "w": "eaten.",
+          "start": 5.2
+        }
+      ],
+      "matchScore": 0.813
+    },
+    "c06": {
+      "segment": "dep",
+      "display": "Think of a family tree. Every word has exactly one parent, except the root at the top, which has none.",
+      "spoken": "Think of a family tree. Every word has exactly one parent, except the root at the top, which has none.",
+      "textHash": "3f7e01c1fccdc407",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/99aaa2c1a411e4dc.wav",
+      "duration": 6.098,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.24
+        },
+        {
+          "w": "a",
+          "start": 0.36
+        },
+        {
+          "w": "family",
+          "start": 0.52
+        },
+        {
+          "w": "tree.",
+          "start": 1.04
+        },
+        {
+          "w": "Every",
+          "start": 1.6
+        },
+        {
+          "w": "word",
+          "start": 2
+        },
+        {
+          "w": "has",
+          "start": 2.36
+        },
+        {
+          "w": "exactly",
+          "start": 2.6
+        },
+        {
+          "w": "one",
+          "start": 3.2
+        },
+        {
+          "w": "parent,",
+          "start": 3.4
+        },
+        {
+          "w": "except",
+          "start": 3.88
+        },
+        {
+          "w": "the",
+          "start": 4.32
+        },
+        {
+          "w": "root",
+          "start": 4.48
+        },
+        {
+          "w": "at",
+          "start": 4.76
+        },
+        {
+          "w": "the",
+          "start": 4.88
+        },
+        {
+          "w": "top,",
+          "start": 5
+        },
+        {
+          "w": "which",
+          "start": 5.36
+        },
+        {
+          "w": "has",
+          "start": 5.56
+        },
+        {
+          "w": "none.",
+          "start": 5.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c07": {
+      "segment": "example",
+      "display": "Let's parse \"Priya ate cold pizza\". The labels in brackets are the short names used by Universal Dependencies, a standard used for over a hundred languages.",
+      "spoken": "Let's parse \"Priya ate cold pizza\". The labels in brackets are the short names used by Universal Dependencies, a standard used for over a hundred languages.",
+      "textHash": "904a5091c7d32296",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/50acf0eb85f8103b.wav",
+      "duration": 10.286,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "parse",
+          "start": 0.4
+        },
+        {
+          "w": "\"Priya",
+          "start": 0.787
+        },
+        {
+          "w": "ate",
+          "start": 1.173
+        },
+        {
+          "w": "cold",
+          "start": 1.56
+        },
+        {
+          "w": "pizza\".",
+          "start": 1.96
+        },
+        {
+          "w": "The",
+          "start": 2.72
+        },
+        {
+          "w": "labels",
+          "start": 3
+        },
+        {
+          "w": "in",
+          "start": 3.52
+        },
+        {
+          "w": "brackets",
+          "start": 3.68
+        },
+        {
+          "w": "are",
+          "start": 4.24
+        },
+        {
+          "w": "the",
+          "start": 4.4
+        },
+        {
+          "w": "short",
+          "start": 4.56
+        },
+        {
+          "w": "names",
+          "start": 4.92
+        },
+        {
+          "w": "used",
+          "start": 5.32
+        },
+        {
+          "w": "by",
+          "start": 5.6
+        },
+        {
+          "w": "Universal",
+          "start": 5.8
+        },
+        {
+          "w": "Dependencies,",
+          "start": 6.48
+        },
+        {
+          "w": "a",
+          "start": 7.52
+        },
+        {
+          "w": "standard",
+          "start": 7.76
+        },
+        {
+          "w": "used",
+          "start": 8.24
+        },
+        {
+          "w": "for",
+          "start": 8.56
+        },
+        {
+          "w": "over",
+          "start": 8.8
+        },
+        {
+          "w": "a",
+          "start": 9.04
+        },
+        {
+          "w": "hundred",
+          "start": 9.2
+        },
+        {
+          "w": "languages.",
+          "start": 9.52
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c08": {
+      "segment": "example",
+      "display": "Priya depends on ate. She's the subject: the one doing the eating.",
+      "spoken": "Priya depends on ate. She's the subject: the one doing the eating.",
+      "textHash": "7b43ee428f35d243",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c0ae8ede7fa5fa8d.wav",
+      "duration": 3.92,
+      "marks": {},
+      "words": [
+        {
+          "w": "Priya",
+          "start": 0.18
+        },
+        {
+          "w": "depends",
+          "start": 0.36
+        },
+        {
+          "w": "on",
+          "start": 0.8
+        },
+        {
+          "w": "ate.",
+          "start": 1.12
+        },
+        {
+          "w": "She's",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.84
+        },
+        {
+          "w": "subject:",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "one",
+          "start": 2.76
+        },
+        {
+          "w": "doing",
+          "start": 3
+        },
+        {
+          "w": "the",
+          "start": 3.28
+        },
+        {
+          "w": "eating.",
+          "start": 3.44
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c09": {
+      "segment": "example",
+      "display": "Ate depends on nothing. It's the root of the whole sentence.",
+      "spoken": "Ate depends on nothing. It's the root of the whole sentence.",
+      "textHash": "ada467c541750e7c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0f061f360320888e.wav",
+      "duration": 3.409,
+      "marks": {},
+      "words": [
+        {
+          "w": "Ate",
+          "start": 0.16
+        },
+        {
+          "w": "depends",
+          "start": 0.32
+        },
+        {
+          "w": "on",
+          "start": 0.72
+        },
+        {
+          "w": "nothing.",
+          "start": 0.92
+        },
+        {
+          "w": "It's",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.72
+        },
+        {
+          "w": "root",
+          "start": 1.88
+        },
+        {
+          "w": "of",
+          "start": 2.2
+        },
+        {
+          "w": "the",
+          "start": 2.28
+        },
+        {
+          "w": "whole",
+          "start": 2.48
+        },
+        {
+          "w": "sentence.",
+          "start": 2.72
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c10": {
+      "segment": "example",
+      "display": "Cold depends on pizza, because it describes the pizza.",
+      "spoken": "Cold depends on pizza, because it describes the pizza.",
+      "textHash": "081f165dda524c10",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dbe6ab900a25e815.wav",
+      "duration": 3.313,
+      "marks": {},
+      "words": [
+        {
+          "w": "Cold",
+          "start": 0
+        },
+        {
+          "w": "depends",
+          "start": 0.4
+        },
+        {
+          "w": "on",
+          "start": 0.84
+        },
+        {
+          "w": "pizza,",
+          "start": 1.04
+        },
+        {
+          "w": "because",
+          "start": 1.6
+        },
+        {
+          "w": "it",
+          "start": 1.88
+        },
+        {
+          "w": "describes",
+          "start": 2.04
+        },
+        {
+          "w": "the",
+          "start": 2.64
+        },
+        {
+          "w": "pizza.",
+          "start": 2.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c11": {
+      "segment": "example",
+      "display": "And pizza depends on ate: it's the object, the thing that was eaten.",
+      "spoken": "And pizza depends on ate: it's the object, the thing that was eaten.",
+      "textHash": "6398d4d09d131e81",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2ad389b62e43a923.wav",
+      "duration": 3.987,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "pizza",
+          "start": 0.16
+        },
+        {
+          "w": "depends",
+          "start": 0.6
+        },
+        {
+          "w": "on",
+          "start": 1.08
+        },
+        {
+          "w": "ate:",
+          "start": 1.34
+        },
+        {
+          "w": "it's",
+          "start": 1.6
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "object,",
+          "start": 2.12
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "thing",
+          "start": 2.88
+        },
+        {
+          "w": "that",
+          "start": 3.16
+        },
+        {
+          "w": "was",
+          "start": 3.32
+        },
+        {
+          "w": "eaten.",
+          "start": 3.52
+        }
+      ],
+      "matchScore": 0.917
+    },
+    "c12": {
+      "segment": "versus",
+      "display": "How does this compare with last lesson's trees?",
+      "spoken": "How does this compare with last lesson's trees?",
+      "textHash": "8c6493626d347850",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/58cc32c64019ddd2.wav",
+      "duration": 2.364,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "does",
+          "start": 0.16
+        },
+        {
+          "w": "this",
+          "start": 0.36
+        },
+        {
+          "w": "compare",
+          "start": 0.56
+        },
+        {
+          "w": "with",
+          "start": 0.92
+        },
+        {
+          "w": "last",
+          "start": 1.24
+        },
+        {
+          "w": "lesson's",
+          "start": 1.56
+        },
+        {
+          "w": "trees?",
+          "start": 1.88
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c13": {
+      "segment": "versus",
+      "display": "A constituency tree nests phrases inside phrases, with labels like noun phrase and verb phrase. It shows the grammatical structure.",
+      "spoken": "A constituency tree nests phrases inside phrases, with labels like noun phrase and verb phrase. It shows the grammatical structure.",
+      "textHash": "6deb74c6fdea291c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6333710e9e425996.wav",
+      "duration": 8.577,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "constituency",
+          "start": 0.12
+        },
+        {
+          "w": "tree",
+          "start": 0.92
+        },
+        {
+          "w": "nests",
+          "start": 1.2
+        },
+        {
+          "w": "phrases",
+          "start": 1.6
+        },
+        {
+          "w": "inside",
+          "start": 2.16
+        },
+        {
+          "w": "phrases,",
+          "start": 2.64
+        },
+        {
+          "w": "with",
+          "start": 3.44
+        },
+        {
+          "w": "labels",
+          "start": 3.68
+        },
+        {
+          "w": "like",
+          "start": 4.24
+        },
+        {
+          "w": "noun",
+          "start": 4.48
+        },
+        {
+          "w": "phrase",
+          "start": 4.8
+        },
+        {
+          "w": "and",
+          "start": 5.147
+        },
+        {
+          "w": "verb",
+          "start": 5.493
+        },
+        {
+          "w": "phrase.",
+          "start": 5.84
+        },
+        {
+          "w": "It",
+          "start": 6.44
+        },
+        {
+          "w": "shows",
+          "start": 6.72
+        },
+        {
+          "w": "the",
+          "start": 7.08
+        },
+        {
+          "w": "grammatical",
+          "start": 7.24
+        },
+        {
+          "w": "structure.",
+          "start": 8
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c14": {
+      "segment": "versus",
+      "display": "A dependency tree links words directly, with labels like subject and object. It shows who did what to whom. They're two views of the same sentence.",
+      "spoken": "A dependency tree links words directly, with labels like subject and object. It shows who did what to whom. They're two views of the same sentence.",
+      "textHash": "069aae68885cc533",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a213cafa14726e5d.wav",
+      "duration": 9.351,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "dependency",
+          "start": 0.16
+        },
+        {
+          "w": "tree",
+          "start": 0.88
+        },
+        {
+          "w": "links",
+          "start": 1.2
+        },
+        {
+          "w": "words",
+          "start": 1.64
+        },
+        {
+          "w": "directly,",
+          "start": 2
+        },
+        {
+          "w": "with",
+          "start": 2.68
+        },
+        {
+          "w": "labels",
+          "start": 2.88
+        },
+        {
+          "w": "like",
+          "start": 3.44
+        },
+        {
+          "w": "subject",
+          "start": 3.68
+        },
+        {
+          "w": "and",
+          "start": 4.28
+        },
+        {
+          "w": "object.",
+          "start": 4.48
+        },
+        {
+          "w": "It",
+          "start": 5.2
+        },
+        {
+          "w": "shows",
+          "start": 5.44
+        },
+        {
+          "w": "who",
+          "start": 5.92
+        },
+        {
+          "w": "did",
+          "start": 6.12
+        },
+        {
+          "w": "what",
+          "start": 6.32
+        },
+        {
+          "w": "to",
+          "start": 6.52
+        },
+        {
+          "w": "whom.",
+          "start": 6.72
+        },
+        {
+          "w": "They're",
+          "start": 7.12
+        },
+        {
+          "w": "two",
+          "start": 7.4
+        },
+        {
+          "w": "views",
+          "start": 7.68
+        },
+        {
+          "w": "of",
+          "start": 8.08
+        },
+        {
+          "w": "the",
+          "start": 8.2
+        },
+        {
+          "w": "same",
+          "start": 8.36
+        },
+        {
+          "w": "sentence.",
+          "start": 8.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c15": {
+      "segment": "read",
+      "display": "This makes dependency trees very handy for reading off meaning. Start at the top.",
+      "spoken": "This makes dependency trees very handy for reading off meaning. Start at the top.",
+      "textHash": "430b361412a0ef1d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/65fcc68f0c8e8a54.wav",
+      "duration": 4.728,
+      "marks": {},
+      "words": [
+        {
+          "w": "This",
+          "start": 0
+        },
+        {
+          "w": "makes",
+          "start": 0.2
+        },
+        {
+          "w": "dependency",
+          "start": 0.48
+        },
+        {
+          "w": "trees",
+          "start": 1.2
+        },
+        {
+          "w": "very",
+          "start": 1.64
+        },
+        {
+          "w": "handy",
+          "start": 1.92
+        },
+        {
+          "w": "for",
+          "start": 2.24
+        },
+        {
+          "w": "reading",
+          "start": 2.4
+        },
+        {
+          "w": "off",
+          "start": 2.76
+        },
+        {
+          "w": "meaning.",
+          "start": 3.04
+        },
+        {
+          "w": "Start",
+          "start": 3.6
+        },
+        {
+          "w": "at",
+          "start": 4.08
+        },
+        {
+          "w": "the",
+          "start": 4.2
+        },
+        {
+          "w": "top.",
+          "start": 4.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "read",
+      "display": "The root tells you what happened: ate.",
+      "spoken": "The root tells you what happened: ate.",
+      "textHash": "f73bb115c52fa277",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2b92abaec4d00b64.wav",
+      "duration": 2.111,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "root",
+          "start": 0.08
+        },
+        {
+          "w": "tells",
+          "start": 0.4
+        },
+        {
+          "w": "you",
+          "start": 0.68
+        },
+        {
+          "w": "what",
+          "start": 0.84
+        },
+        {
+          "w": "happened:",
+          "start": 1.04
+        },
+        {
+          "w": "ate.",
+          "start": 1.576
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c17": {
+      "segment": "read",
+      "display": "The subject tells you who did it: Priya.",
+      "spoken": "The subject tells you who did it: Priya.",
+      "textHash": "222746106734ab5e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d66000e8d5dd5ad5.wav",
+      "duration": 2.275,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "subject",
+          "start": 0.12
+        },
+        {
+          "w": "tells",
+          "start": 0.64
+        },
+        {
+          "w": "you",
+          "start": 0.88
+        },
+        {
+          "w": "who",
+          "start": 1.08
+        },
+        {
+          "w": "did",
+          "start": 1.24
+        },
+        {
+          "w": "it:",
+          "start": 1.44
+        },
+        {
+          "w": "Priya.",
+          "start": 1.857
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c18": {
+      "segment": "read",
+      "display": "The object tells you what it was done to: pizza.",
+      "spoken": "The object tells you what it was done to: pizza.",
+      "textHash": "7496849d92ad5663",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ef6e03f6a755fcb7.wav",
+      "duration": 2.765,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "object",
+          "start": 0.12
+        },
+        {
+          "w": "tells",
+          "start": 0.6
+        },
+        {
+          "w": "you",
+          "start": 0.84
+        },
+        {
+          "w": "what",
+          "start": 1
+        },
+        {
+          "w": "it",
+          "start": 1.16
+        },
+        {
+          "w": "was",
+          "start": 1.28
+        },
+        {
+          "w": "done",
+          "start": 1.44
+        },
+        {
+          "w": "to:",
+          "start": 1.72
+        },
+        {
+          "w": "pizza.",
+          "start": 2.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "read",
+      "display": "And modifiers add extra detail: the pizza was cold.",
+      "spoken": "And modifiers add extra detail: the pizza was cold.",
+      "textHash": "2705d0c4ddf10553",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e55ecc59f56ac49b.wav",
+      "duration": 3.602,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "modifiers",
+          "start": 0.16
+        },
+        {
+          "w": "add",
+          "start": 0.88
+        },
+        {
+          "w": "extra",
+          "start": 1.16
+        },
+        {
+          "w": "detail:",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 2.12
+        },
+        {
+          "w": "pizza",
+          "start": 2.32
+        },
+        {
+          "w": "was",
+          "start": 2.84
+        },
+        {
+          "w": "cold.",
+          "start": 3.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "projective",
+      "display": "One more idea from your syllabus: projectivity. A dependency tree is projective if you can draw all its links as arcs above the sentence, without any of them crossing.",
+      "spoken": "One more idea from your syllabus: projectivity. A dependency tree is projective if you can draw all its links as arcs above the sentence, without any of them crossing.",
+      "textHash": "36550a79657e6375",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3288c53d290aa54d.wav",
+      "duration": 10.322,
+      "marks": {},
+      "words": [
+        {
+          "w": "One",
+          "start": 0
+        },
+        {
+          "w": "more",
+          "start": 0.28
+        },
+        {
+          "w": "idea",
+          "start": 0.56
+        },
+        {
+          "w": "from",
+          "start": 1.08
+        },
+        {
+          "w": "your",
+          "start": 1.24
+        },
+        {
+          "w": "syllabus:",
+          "start": 1.4
+        },
+        {
+          "w": "projectivity.",
+          "start": 2.16
+        },
+        {
+          "w": "A",
+          "start": 3.36
+        },
+        {
+          "w": "dependency",
+          "start": 3.64
+        },
+        {
+          "w": "tree",
+          "start": 4.44
+        },
+        {
+          "w": "is",
+          "start": 4.84
+        },
+        {
+          "w": "projective",
+          "start": 5.04
+        },
+        {
+          "w": "if",
+          "start": 5.68
+        },
+        {
+          "w": "you",
+          "start": 5.88
+        },
+        {
+          "w": "can",
+          "start": 6.04
+        },
+        {
+          "w": "draw",
+          "start": 6.24
+        },
+        {
+          "w": "all",
+          "start": 6.56
+        },
+        {
+          "w": "its",
+          "start": 6.72
+        },
+        {
+          "w": "links",
+          "start": 7
+        },
+        {
+          "w": "as",
+          "start": 7.28
+        },
+        {
+          "w": "arcs",
+          "start": 7.48
+        },
+        {
+          "w": "above",
+          "start": 7.8
+        },
+        {
+          "w": "the",
+          "start": 8.12
+        },
+        {
+          "w": "sentence,",
+          "start": 8.24
+        },
+        {
+          "w": "without",
+          "start": 8.84
+        },
+        {
+          "w": "any",
+          "start": 9.12
+        },
+        {
+          "w": "of",
+          "start": 9.36
+        },
+        {
+          "w": "them",
+          "start": 9.52
+        },
+        {
+          "w": "crossing.",
+          "start": 9.72
+        }
+      ],
+      "matchScore": 0.958
+    },
+    "c21": {
+      "segment": "projective",
+      "display": "Most English sentences are projective. Some sentences, and languages with freer word order, like Czech or Dutch, have links that cross. Those are called non-projective, and some parsers can't build them.",
+      "spoken": "Most English sentences are projective. Some sentences, and languages with freer word order, like Czech or Dutch, have links that cross. Those are called non-projective, and some parsers can't build them.",
+      "textHash": "07e0010e83252883",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c8d99232aa69beb2.wav",
+      "duration": 12.403,
+      "marks": {},
+      "words": [
+        {
+          "w": "Most",
+          "start": 0
+        },
+        {
+          "w": "English",
+          "start": 0.24
+        },
+        {
+          "w": "sentences",
+          "start": 0.68
+        },
+        {
+          "w": "are",
+          "start": 1.32
+        },
+        {
+          "w": "projective.",
+          "start": 1.52
+        },
+        {
+          "w": "Some",
+          "start": 2.4
+        },
+        {
+          "w": "sentences,",
+          "start": 2.8
+        },
+        {
+          "w": "and",
+          "start": 3.56
+        },
+        {
+          "w": "languages",
+          "start": 3.76
+        },
+        {
+          "w": "with",
+          "start": 4.36
+        },
+        {
+          "w": "freer",
+          "start": 4.56
+        },
+        {
+          "w": "word",
+          "start": 4.92
+        },
+        {
+          "w": "order,",
+          "start": 5.2
+        },
+        {
+          "w": "like",
+          "start": 5.64
+        },
+        {
+          "w": "Czech",
+          "start": 5.96
+        },
+        {
+          "w": "or",
+          "start": 6.28
+        },
+        {
+          "w": "Dutch,",
+          "start": 6.56
+        },
+        {
+          "w": "have",
+          "start": 7.08
+        },
+        {
+          "w": "links",
+          "start": 7.44
+        },
+        {
+          "w": "that",
+          "start": 7.8
+        },
+        {
+          "w": "cross.",
+          "start": 8.04
+        },
+        {
+          "w": "Those",
+          "start": 8.72
+        },
+        {
+          "w": "are",
+          "start": 9.08
+        },
+        {
+          "w": "called",
+          "start": 9.32
+        },
+        {
+          "w": "non-projective,",
+          "start": 9.92
+        },
+        {
+          "w": "and",
+          "start": 10.56
+        },
+        {
+          "w": "some",
+          "start": 10.76
+        },
+        {
+          "w": "parsers",
+          "start": 11.14
+        },
+        {
+          "w": "can't",
+          "start": 11.52
+        },
+        {
+          "w": "build",
+          "start": 11.84
+        },
+        {
+          "w": "them.",
+          "start": 12.16
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c22": {
+      "segment": "projective",
+      "display": "Picture beads on a necklace, with strings tied between some of them. If none of the strings cross, the tree is projective.",
+      "spoken": "Picture beads on a necklace, with strings tied between some of them. If none of the strings cross, the tree is projective.",
+      "textHash": "24dd8e51a95b3a48",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/09b46d42dea322b4.wav",
+      "duration": 6.934,
+      "marks": {},
+      "words": [
+        {
+          "w": "Picture",
+          "start": 0
+        },
+        {
+          "w": "beads",
+          "start": 0.4
+        },
+        {
+          "w": "on",
+          "start": 0.8
+        },
+        {
+          "w": "a",
+          "start": 0.92
+        },
+        {
+          "w": "necklace,",
+          "start": 1.04
+        },
+        {
+          "w": "with",
+          "start": 1.6
+        },
+        {
+          "w": "strings",
+          "start": 1.84
+        },
+        {
+          "w": "tied",
+          "start": 2.36
+        },
+        {
+          "w": "between",
+          "start": 2.8
+        },
+        {
+          "w": "some",
+          "start": 3.16
+        },
+        {
+          "w": "of",
+          "start": 3.36
+        },
+        {
+          "w": "them.",
+          "start": 3.56
+        },
+        {
+          "w": "If",
+          "start": 3.88
+        },
+        {
+          "w": "none",
+          "start": 4.16
+        },
+        {
+          "w": "of",
+          "start": 4.4
+        },
+        {
+          "w": "the",
+          "start": 4.48
+        },
+        {
+          "w": "strings",
+          "start": 4.64
+        },
+        {
+          "w": "cross,",
+          "start": 5.04
+        },
+        {
+          "w": "the",
+          "start": 5.48
+        },
+        {
+          "w": "tree",
+          "start": 5.68
+        },
+        {
+          "w": "is",
+          "start": 6
+        },
+        {
+          "w": "projective.",
+          "start": 6.2
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "why",
+      "display": "Dependency parsing has become the most widely used kind. Three reasons.",
+      "spoken": "Dependency parsing has become the most widely used kind. Three reasons.",
+      "textHash": "3b59e20a2047b68c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dc64cad40bd0276b.wav",
+      "duration": 4.754,
+      "marks": {},
+      "words": [
+        {
+          "w": "Dependency",
+          "start": 0
+        },
+        {
+          "w": "parsing",
+          "start": 0.72
+        },
+        {
+          "w": "has",
+          "start": 1.24
+        },
+        {
+          "w": "become",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.8
+        },
+        {
+          "w": "most",
+          "start": 1.96
+        },
+        {
+          "w": "widely",
+          "start": 2.2
+        },
+        {
+          "w": "used",
+          "start": 2.68
+        },
+        {
+          "w": "kind.",
+          "start": 3.08
+        },
+        {
+          "w": "Three",
+          "start": 3.68
+        },
+        {
+          "w": "reasons.",
+          "start": 4.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "why",
+      "display": "It works well across many languages, including ones with free word order.",
+      "spoken": "It works well across many languages, including ones with free word order.",
+      "textHash": "d06ada30609d1911",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2ff943a082d96d0c.wav",
+      "duration": 4.12,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "works",
+          "start": 0.16
+        },
+        {
+          "w": "well",
+          "start": 0.48
+        },
+        {
+          "w": "across",
+          "start": 0.68
+        },
+        {
+          "w": "many",
+          "start": 1.08
+        },
+        {
+          "w": "languages,",
+          "start": 1.36
+        },
+        {
+          "w": "including",
+          "start": 2.08
+        },
+        {
+          "w": "ones",
+          "start": 2.72
+        },
+        {
+          "w": "with",
+          "start": 3
+        },
+        {
+          "w": "free",
+          "start": 3.2
+        },
+        {
+          "w": "word",
+          "start": 3.48
+        },
+        {
+          "w": "order.",
+          "start": 3.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "why",
+      "display": "It directly shows relations, which are easy to turn into facts: Priya, ate, pizza.",
+      "spoken": "It directly shows relations, which are easy to turn into facts: Priya, ate, pizza.",
+      "textHash": "0de093f2c9104b2f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/412b6e389827443f.wav",
+      "duration": 5.265,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "directly",
+          "start": 0.16
+        },
+        {
+          "w": "shows",
+          "start": 0.64
+        },
+        {
+          "w": "relations,",
+          "start": 0.96
+        },
+        {
+          "w": "which",
+          "start": 1.64
+        },
+        {
+          "w": "are",
+          "start": 1.8
+        },
+        {
+          "w": "easy",
+          "start": 2
+        },
+        {
+          "w": "to",
+          "start": 2.32
+        },
+        {
+          "w": "turn",
+          "start": 2.52
+        },
+        {
+          "w": "into",
+          "start": 2.8
+        },
+        {
+          "w": "facts:",
+          "start": 3.04
+        },
+        {
+          "w": "Priya,",
+          "start": 3.573
+        },
+        {
+          "w": "ate,",
+          "start": 4.107
+        },
+        {
+          "w": "pizza.",
+          "start": 4.64
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c26": {
+      "segment": "why",
+      "display": "And fast parsers can build the tree step by step, one move at a time. That's next lesson.",
+      "spoken": "And fast parsers can build the tree step by step, one move at a time. That's next lesson.",
+      "textHash": "648e1c18c0814e33",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a25ca52cc126386f.wav",
+      "duration": 5.439,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "fast",
+          "start": 0.16
+        },
+        {
+          "w": "parsers",
+          "start": 0.56
+        },
+        {
+          "w": "can",
+          "start": 1
+        },
+        {
+          "w": "build",
+          "start": 1.2
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "tree",
+          "start": 1.56
+        },
+        {
+          "w": "step",
+          "start": 1.8
+        },
+        {
+          "w": "by",
+          "start": 2.12
+        },
+        {
+          "w": "step,",
+          "start": 2.28
+        },
+        {
+          "w": "one",
+          "start": 2.72
+        },
+        {
+          "w": "move",
+          "start": 3
+        },
+        {
+          "w": "at",
+          "start": 3.32
+        },
+        {
+          "w": "a",
+          "start": 3.48
+        },
+        {
+          "w": "time.",
+          "start": 3.68
+        },
+        {
+          "w": "That's",
+          "start": 4.16
+        },
+        {
+          "w": "next",
+          "start": 4.586
+        },
+        {
+          "w": "lesson.",
+          "start": 5.013
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "Quick quiz. In \"Priya ate cold pizza\", which word does \"cold\" depend on?",
+      "spoken": "Quick quiz. In \"Priya ate cold pizza\", which word does \"cold\" depend on?",
+      "textHash": "4210fcfbf4d820be",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dd4f1efc82532c0b.wav",
+      "duration": 4.436,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.253
+        },
+        {
+          "w": "quiz.",
+          "start": 0.507
+        },
+        {
+          "w": "In",
+          "start": 0.76
+        },
+        {
+          "w": "\"Priya",
+          "start": 1.013
+        },
+        {
+          "w": "ate",
+          "start": 1.267
+        },
+        {
+          "w": "cold",
+          "start": 1.52
+        },
+        {
+          "w": "pizza\",",
+          "start": 1.96
+        },
+        {
+          "w": "which",
+          "start": 2.4
+        },
+        {
+          "w": "word",
+          "start": 2.72
+        },
+        {
+          "w": "does",
+          "start": 2.96
+        },
+        {
+          "w": "\"cold\"",
+          "start": 3.28
+        },
+        {
+          "w": "depend",
+          "start": 3.72
+        },
+        {
+          "w": "on?",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 0.545
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c29": {
+      "segment": "quiz",
+      "display": "It's pizza. Cold describes the pizza, so pizza is its head.",
+      "spoken": "It's pizza. Cold describes the pizza, so pizza is its head.",
+      "textHash": "1507db429f8efaa6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5ed6ee2a4b9b9ab7.wav",
+      "duration": 4.017,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "pizza.",
+          "start": 0.24
+        },
+        {
+          "w": "Cold",
+          "start": 0.92
+        },
+        {
+          "w": "describes",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "pizza,",
+          "start": 2.04
+        },
+        {
+          "w": "so",
+          "start": 2.56
+        },
+        {
+          "w": "pizza",
+          "start": 2.92
+        },
+        {
+          "w": "is",
+          "start": 3.28
+        },
+        {
+          "w": "its",
+          "start": 3.44
+        },
+        {
+          "w": "head.",
+          "start": 3.72
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "Let's recap. In a dependency tree, every word hangs off one head word.",
+      "spoken": "Let's recap. In a dependency tree, every word hangs off one head word.",
+      "textHash": "dc72665d97e05d60",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ff0f25b9988ce972.wav",
+      "duration": 4.526,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "In",
+          "start": 0.96
+        },
+        {
+          "w": "a",
+          "start": 1.2
+        },
+        {
+          "w": "dependency",
+          "start": 1.36
+        },
+        {
+          "w": "tree,",
+          "start": 2.08
+        },
+        {
+          "w": "every",
+          "start": 2.52
+        },
+        {
+          "w": "word",
+          "start": 2.8
+        },
+        {
+          "w": "hangs",
+          "start": 3.12
+        },
+        {
+          "w": "off",
+          "start": 3.48
+        },
+        {
+          "w": "one",
+          "start": 3.76
+        },
+        {
+          "w": "head",
+          "start": 4.015
+        },
+        {
+          "w": "word.",
+          "start": 4.271
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "The main verb is usually the root at the top.",
+      "spoken": "The main verb is usually the root at the top.",
+      "textHash": "bebc3e697a5fe930",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/92352b09cb9ceecb.wav",
+      "duration": 2.677,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "main",
+          "start": 0.293
+        },
+        {
+          "w": "verb",
+          "start": 0.587
+        },
+        {
+          "w": "is",
+          "start": 0.88
+        },
+        {
+          "w": "usually",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.52
+        },
+        {
+          "w": "root",
+          "start": 1.68
+        },
+        {
+          "w": "at",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "top.",
+          "start": 2.28
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "Each link has a label, like subject or object, saying how the words relate.",
+      "spoken": "Each link has a label, like subject or object, saying how the words relate.",
+      "textHash": "8e334e9cfb5da904",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/46a1548c5e03552d.wav",
+      "duration": 4.801,
+      "marks": {},
+      "words": [
+        {
+          "w": "Each",
+          "start": 0
+        },
+        {
+          "w": "link",
+          "start": 0.24
+        },
+        {
+          "w": "has",
+          "start": 0.6
+        },
+        {
+          "w": "a",
+          "start": 0.72
+        },
+        {
+          "w": "label,",
+          "start": 0.88
+        },
+        {
+          "w": "like",
+          "start": 1.36
+        },
+        {
+          "w": "subject",
+          "start": 1.6
+        },
+        {
+          "w": "or",
+          "start": 2.2
+        },
+        {
+          "w": "object,",
+          "start": 2.44
+        },
+        {
+          "w": "saying",
+          "start": 3.12
+        },
+        {
+          "w": "how",
+          "start": 3.52
+        },
+        {
+          "w": "the",
+          "start": 3.72
+        },
+        {
+          "w": "words",
+          "start": 3.92
+        },
+        {
+          "w": "relate.",
+          "start": 4.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "And a tree is projective if its links can be drawn without crossing.",
+      "spoken": "And a tree is projective if its links can be drawn without crossing.",
+      "textHash": "0ef8e5016abf0de1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f83f0c52e06c7e44.wav",
+      "duration": 3.791,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.16
+        },
+        {
+          "w": "tree",
+          "start": 0.28
+        },
+        {
+          "w": "is",
+          "start": 0.6
+        },
+        {
+          "w": "projective",
+          "start": 0.8
+        },
+        {
+          "w": "if",
+          "start": 1.52
+        },
+        {
+          "w": "its",
+          "start": 1.68
+        },
+        {
+          "w": "links",
+          "start": 1.96
+        },
+        {
+          "w": "can",
+          "start": 2.32
+        },
+        {
+          "w": "be",
+          "start": 2.48
+        },
+        {
+          "w": "drawn",
+          "start": 2.6
+        },
+        {
+          "w": "without",
+          "start": 2.96
+        },
+        {
+          "w": "crossing.",
+          "start": 3.2
+        }
+      ],
+      "matchScore": 1
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "Next lesson: Transition Parsing. How can a parser build a tree one move at a time?",
+      "spoken": "Next lesson: Transition Parsing. How can a parser build a tree one move at a time?",
+      "textHash": "56d4273a54103b84",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/33c8cf6b24a1ccc5.wav",
+      "duration": 5.216,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.32
+        },
+        {
+          "w": "lesson:",
+          "start": 0.64
+        },
+        {
+          "w": "Transition",
+          "start": 0.96
+        },
+        {
+          "w": "Parsing.",
+          "start": 1.8
+        },
+        {
+          "w": "How",
+          "start": 2.52
+        },
+        {
+          "w": "can",
+          "start": 2.72
+        },
+        {
+          "w": "a",
+          "start": 2.92
+        },
+        {
+          "w": "parser",
+          "start": 3.04
+        },
+        {
+          "w": "build",
+          "start": 3.44
+        },
+        {
+          "w": "a",
+          "start": 3.68
+        },
+        {
+          "w": "tree",
+          "start": 3.8
+        },
+        {
+          "w": "one",
+          "start": 4.04
+        },
+        {
+          "w": "move",
+          "start": 4.28
+        },
+        {
+          "w": "at",
+          "start": 4.56
+        },
+        {
+          "w": "a",
+          "start": 4.72
+        },
+        {
+          "w": "time?",
+          "start": 4.88
+        }
+      ],
+      "matchScore": 0.833
+    }
+  }
+}

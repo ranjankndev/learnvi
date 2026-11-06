@@ -1,0 +1,225 @@
+{
+  "id": "u3-02",
+  "thumbnail": {
+    "headline": "Who did what to whom?",
+    "big": "Priya → ate → pizza"
+  },
+  "tags": [
+    "dependency parsing",
+    "universal dependencies",
+    "syntax",
+    "projectivity",
+    "NLP"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Dependency Parsing",
+        "subtitle": "Who did what to whom"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "Every word hangs off another word, and the main verb sits at the top.",
+        "highlight": [
+          "hangs",
+          "main verb"
+        ]
+      }
+    },
+    {
+      "id": "dep",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a dependency?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Dependency",
+        "definition": "A link from a head word to a word that depends on it, labelled with how they're related.",
+        "example": "ate → pizza  (object)",
+        "analogy": "A family tree: every word has one parent, except the root at the top."
+      }
+    },
+    {
+      "id": "example",
+      "kind": "core",
+      "component": "Table",
+      "title": "A dependency tree",
+      "short": true,
+      "shortTitle": "How AI finds who did what to whom",
+      "props": {
+        "kicker": "Worked example",
+        "title": "“Priya ate cold pizza”",
+        "columns": [
+          "Word",
+          "Depends on",
+          "Relation"
+        ],
+        "rows": [
+          [
+            "Priya",
+            "ate",
+            "subject (nsubj)"
+          ],
+          [
+            "ate",
+            "nothing",
+            "root"
+          ],
+          [
+            "cold",
+            "pizza",
+            "describes it (amod)"
+          ],
+          [
+            "pizza",
+            "ate",
+            "object (obj)"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "versus",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Two kinds of tree",
+      "props": {
+        "kicker": "Two views",
+        "title": "Constituency versus dependency",
+        "columns": [
+          {
+            "title": "Constituency",
+            "items": [
+              "phrases inside phrases",
+              "labels like NP, VP, S",
+              "shows grammatical structure"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Dependency",
+            "items": [
+              "links between words",
+              "labels like subject, object",
+              "shows who did what to whom"
+            ],
+            "tone": "neutral"
+          }
+        ],
+        "verdict": {
+          "text": "Two views of the same sentence"
+        }
+      }
+    },
+    {
+      "id": "read",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Reading the tree",
+      "props": {
+        "kicker": "Reading it",
+        "title": "Who did what to whom?",
+        "items": [
+          {
+            "text": "The root: what happened (ate)"
+          },
+          {
+            "text": "The subject: who did it (Priya)"
+          },
+          {
+            "text": "The object: what it was done to (pizza)"
+          },
+          {
+            "text": "Modifiers: extra detail (cold)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "projective",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Projectivity",
+      "props": {
+        "kicker": "Projectivity",
+        "term": "Projective tree",
+        "definition": "A dependency tree whose links can all be drawn above the sentence without any lines crossing.",
+        "example": "most English sentences: no crossings",
+        "analogy": "Strings tied between beads on a necklace: projective if none of the strings cross."
+      }
+    },
+    {
+      "id": "why",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Why dependency parsing?",
+      "props": {
+        "kicker": "Why it's popular",
+        "title": "Why dependency parsing is so widely used",
+        "items": [
+          {
+            "text": "Works across many languages"
+          },
+          {
+            "text": "Shows relations you can turn into facts"
+          },
+          {
+            "text": "Fast parsers can build it step by step"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: what does “cold” hang on?",
+      "props": {
+        "question": "In “Priya ate cold pizza”, which word does “cold” depend on?",
+        "options": [
+          "Priya",
+          "ate",
+          "pizza"
+        ],
+        "answer": 2,
+        "explain": "“Cold” describes the pizza, so its head is “pizza”."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Every word hangs off one head word",
+          "The main verb is the root",
+          "Labels say how words relate: subject, object…",
+          "Projective: links drawn without crossing"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
