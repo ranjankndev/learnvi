@@ -9,6 +9,7 @@ import { checkAll } from "../core/check.js";
 import { buildAudio, importTake, loadTakes, plan, readLock, readScript, selectTake, type CueState } from "../core/audio/pipeline.js";
 import { buildTimeline, writeTimelineOutputs, outDir } from "../core/timeline.js";
 import { readTimeline, renderEpisode, still } from "../core/render.js";
+import { clock, packageEpisode } from "../core/package.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 const ep = (ref: string) => loadEpisode(loadProject(), ref);
@@ -152,6 +153,21 @@ program.command("render <episode>").description("render the video; only segments
     const c = ep(e);
     const r = await renderEpisode(c, { only: o.only?.split(","), force: o.force }, (s) => console.log(`${C.d}…${C.x} ${s}`));
     console.log(`\n${C.g}✓${C.x} ${path.relative(process.cwd(), r.output)} · rendered ${r.rendered.length} segment(s)${r.rendered.length ? ` (${r.rendered.join(", ")})` : ""} · reused ${r.reused.length} · ${r.seconds.toFixed(0)}s`);
+  });
+
+program.command("package <episode>").description("everything to publish: video, Shorts, thumbnail, audio-only MP3, captions, YouTube text")
+  .option("--no-shorts", "skip the Shorts")
+  .action(async (e: string, o: { shorts: boolean }) => {
+    const c = ep(e);
+    const r = await packageEpisode(c, { shorts: o.shorts }, (s) => console.log(`${C.d}…${C.x} ${s}`));
+    const rel = (f: string) => path.relative(process.cwd(), f);
+    console.log(`\n${C.B}${c.meta.id} · ${c.meta.title}${C.x}`);
+    console.log(`  video       ${rel(r.video.output)}  (${r.video.rendered.length} segment(s) rendered, ${r.video.reused.length} reused)`);
+    for (const s of r.shorts) console.log(`  short       ${rel(s.file)}  ${s.seconds.toFixed(0)}s${s.rendered ? "" : " (cached)"}${s.warning ? `  ${C.y}${s.warning}${C.x}` : ""}`);
+    console.log(`  thumbnail   ${rel(r.thumbnail)}`);
+    console.log(`  audio-only  ${rel(r.audio.file)}  ${clock(r.audio.seconds)} with ${r.audio.chapters} chapters (${r.audio.saved.toFixed(0)}s of silence trimmed)`);
+    console.log(`  captions    ${r.captions.map(rel).join(", ")}`);
+    console.log(`  youtube     ${rel(r.youtube)}  (title, description with ${r.chapters.length} chapters, tags)`);
   });
 
 program.command("studio").description("open the Remotion preview studio; edits to config/ and episodes/ rebuild the timeline live")

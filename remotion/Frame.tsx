@@ -2,10 +2,11 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { C, F, Seg, useSeg } from "./ui";
 import { COMPONENTS, Placeholder } from "./components";
+import { captionLines } from "./captions";
 import type { Timeline, TimelineSegment } from "./types";
 
 /** Night-sky map background: faint latitude/longitude lines + a warm glow. */
-const Backdrop: React.FC = () => (
+export const Backdrop: React.FC = () => (
   <AbsoluteFill style={{ background: `radial-gradient(1200px 700px at 85% -10%, ${C.night2}, transparent 70%), radial-gradient(900px 600px at -10% 110%, #2a2236, transparent 65%), ${C.night}` }}>
     <svg width="100%" height="100%" style={{ position: "absolute", opacity: 0.07 }}>
       {Array.from({ length: 9 }, (_, i) => <path key={"h" + i} d={`M0 ${120 * i + 60} Q960 ${120 * i + 20} 1920 ${120 * i + 60}`} stroke={C.sky} strokeWidth={2} fill="none" />)}
@@ -28,25 +29,26 @@ const Chrome: React.FC = () => {
   );
 };
 
-/** Burned-in captions: the current cue, with words lighting up as they are spoken. */
-const Captions: React.FC = () => {
+/** The caption line being spoken at this frame (null between cues). */
+export function useCaption() {
   const { tl, seg } = useSeg();
   const frame = useCurrentFrame();
   const t = (seg.startFrame + frame) / tl.fps;
   const cue = seg.cues.find((c) => t >= c.start - 0.1 && t <= c.end + 0.35);
-  if (!cue || !tl.video.burnCaptions) return null;
-  // split long cues into caption lines of up to ~12 words, preferring to break after punctuation
-  const chunks: number[] = [0];
-  cue.words.forEach((w, i) => {
-    const n = i + 1 - chunks[chunks.length - 1];
-    if (i + 1 < cue.words.length && (n >= 12 || (n >= 6 && /[.,;:!?]["”’)]?$/.test(w.w)))) chunks.push(i + 1);
-  });
-  const cur = Math.max(0, cue.words.findLastIndex((w) => w.start <= t));
-  const from = chunks.filter((c) => c <= cur).pop() ?? 0;
-  const words = cue.words.slice(from, chunks.find((c) => c > from) ?? cue.words.length);
+  if (!cue) return null;
+  const lines = captionLines(cue.words, cue.end);
+  const line = [...lines].reverse().find((l) => l.start <= t) ?? lines[0];
+  return { t, words: line.words };
+}
+
+/** Burned-in captions: the current line, with words lighting up as they are spoken. */
+export const Captions: React.FC<{ size?: number; bottom?: number; width?: number }> = ({ size = 40, bottom = 44, width = 1500 }) => {
+  const c = useCaption();
+  if (!c) return null;
+  const { t, words } = c;
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, bottom: 44, display: "flex", justifyContent: "center" }}>
-      <div style={{ maxWidth: 1500, textAlign: "center", fontFamily: F.body, fontWeight: 600, fontSize: 40, lineHeight: 1.3, padding: "12px 28px", borderRadius: 14, background: "rgba(6,12,20,.72)" }}>
+    <div style={{ position: "absolute", left: 0, right: 0, bottom, display: "flex", justifyContent: "center" }}>
+      <div style={{ maxWidth: width, textAlign: "center", fontFamily: F.body, fontWeight: 600, fontSize: size, lineHeight: 1.3, padding: "12px 28px", borderRadius: 14, background: "rgba(6,12,20,.72)" }}>
         {words.map((w, i) => (
           <span key={i} style={{ color: w.start <= t ? C.text : "#7d8fa3" }}>{w.w} </span>
         ))}
@@ -55,15 +57,15 @@ const Captions: React.FC = () => {
   );
 };
 
-export const SegmentView: React.FC<{ tl: Timeline; seg: TimelineSegment }> = ({ tl, seg }) => {
+export const SegmentView: React.FC<{ tl: Timeline; seg: TimelineSegment; captions?: boolean; chrome?: boolean }> = ({ tl, seg, captions = true, chrome = true }) => {
   const Comp = COMPONENTS[seg.component] ?? Placeholder;
   return (
     <Seg.Provider value={{ tl, seg }}>
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <Backdrop />
         <Comp {...seg.props} />
-        <Chrome />
-        <Captions />
+        {chrome && <Chrome />}
+        {captions && tl.video.burnCaptions && <Captions />}
       </AbsoluteFill>
     </Seg.Provider>
   );

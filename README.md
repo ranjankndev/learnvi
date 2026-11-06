@@ -8,7 +8,7 @@ Change a title in JSON or re-record one paragraph, and rebuild: only what change
 
 Plan and architecture: [`docs/plan.html`](docs/plan.html).
 
-**Status: Phase 2 (Remotion visual engine) done.** Phase 3 (finished pilot video, Shorts, audio-only) is next.
+**Status: Phase 3 done. The Token City pilot is fully packaged.** Next: Phase 4 (review studio) and the remaining episodes.
 
 ## Setup (once per machine)
 
@@ -40,6 +40,7 @@ On Windows, if `python` is not the right interpreter, set `PRESS_PYTHON` to its 
 | `press still ep03 bpe --at c18@merge` | Render one frame of a segment to PNG |
 | `press sheet ep03` | Contact sheet: one frame per segment, in one PNG |
 | `press render ep03` | Render the episode; only segments whose look or timing changed are re-rendered |
+| `press package ep03` | Everything to publish: video, Shorts, thumbnail, audio-only MP3, captions, YouTube text |
 
 Outputs go to `out/<episode>/`: `narration.wav`, `timeline.json` (what the visual engine reads), `captions.srt`.
 
@@ -76,6 +77,22 @@ without re-encoding, then the narration is added. The result is `out/<ep>/<ep>-<
 
 Remotion downloads its own headless Chrome on first use. To use one you already have, set
 `REMOTION_BROWSER_EXECUTABLE` to its path.
+
+## Publishing package
+
+`press package ep03` writes to `out/ep03/`:
+
+| File | What it is | Configured in |
+| --- | --- | --- |
+| `ep03-token-city.mp4` | 16:9 episode, 1080p | `series.json → video` |
+| `shorts/ep03-short-<segment>.mp4` | 9:16 Short for every segment with `"short": true` | `episode.json → segments[].shortTitle`, `series.json → shorts` |
+| `ep03-thumbnail.jpg` | 1280×720 thumbnail | `episode.json → thumbnail` |
+| `ep03-audio-only.mp3` | Narration with chapters; long pauses capped for listeners | `series.json → audioOnly` |
+| `ep03.srt`, `ep03.vtt` | Captions, broken into the same lines as the burned-in ones | |
+| `youtube.txt` | Title, description with chapter timestamps, tags | `series.json → youtube`, `episode.json → tags` |
+
+Chapter names come from each segment's `title` in episode.json. YouTube needs chapters of at least
+10 s, so shorter segments are folded into the previous chapter automatically.
 
 ## Writing script.md
 

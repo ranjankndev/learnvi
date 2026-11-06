@@ -27,6 +27,25 @@ export const SeriesSchema = z.object({
     /** shown in the corner of every frame */
     brand: z.string().default("learnvi.in"),
   }).default({}),
+  shorts: z.object({
+    width: z.number().int().default(1080),
+    height: z.number().int().default(1920),
+    maxSeconds: z.number().default(60),
+    /** line shown at the bottom of every Short */
+    cta: z.string().default("Full episode on YouTube · {{series.title}}"),
+  }).default({}),
+  audioOnly: z.object({
+    /** silences longer than this (countdowns, pause-and-predict) are shortened for listeners */
+    maxPause: z.number().default(2.5),
+    bitrate: z.string().default("128k"),
+  }).default({}),
+  youtube: z.object({
+    /** title template; {{episode.title}}, {{series.title}}, {{stop.name}}, {{episode.number}} … */
+    title: z.string().default("{{episode.title}} | {{series.title}} #{{episode.number}}"),
+    /** description lines; "{{chapters}}" is replaced by the timestamped chapter list */
+    description: z.array(z.string()).default(["{{episode.question}}", "", "{{chapters}}"]),
+    tags: z.array(z.string()).default([]),
+  }).default({}),
   voice: Voice.default({}),
   audio: z.object({
     sampleRate: z.number().int().default(48000),
@@ -82,7 +101,16 @@ export const EpisodeSchema = z.object({
     minDuration: z.number().nonnegative().optional(),
     /** also cut this segment as a 9:16 Short */
     short: z.boolean().default(false),
+    /** chapter title (YouTube timestamps, audio-only chapters); defaults from the segment kind */
+    title: z.string().optional(),
+    /** headline at the top of the Short; defaults to the chapter title */
+    shortTitle: z.string().optional(),
   })).min(1),
+  thumbnail: z.object({
+    headline: z.string(),
+    big: z.string().optional(),
+  }).optional(),
+  tags: z.array(z.string()).default([]),
 });
 export type Episode = z.infer<typeof EpisodeSchema>;
 

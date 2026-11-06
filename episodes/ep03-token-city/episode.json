@@ -10,7 +10,8 @@
         "stamp": "{{stop.stamp}}",
         "number": "{{episode.number}}",
         "stampAt": "c01@stamp"
-      }
+      },
+      "title": "Next stop: Token City"
     },
     {
       "id": "hook",
@@ -21,7 +22,8 @@
         "word": "rain",
         "id": "4,812",
         "revealAt": "c03@number"
-      }
+      },
+      "title": "The word the model never sees"
     },
     {
       "id": "route",
@@ -30,7 +32,8 @@
       "props": {
         "current": "{{episode.id}}",
         "highlightAt": "c05@here"
-      }
+      },
+      "title": "Route map"
     },
     {
       "id": "numbers",
@@ -58,7 +61,8 @@
           279,
           4812
         ]
-      }
+      },
+      "title": "Why computers need numbers"
     },
     {
       "id": "options",
@@ -73,7 +77,8 @@
           "rain",
           "drops"
         ]
-      }
+      },
+      "title": "Characters, words or subwords?"
     },
     {
       "id": "bpe",
@@ -105,7 +110,8 @@
         "countAt": "c16",
         "merge2At": "c19@ra",
         "merge3At": "c19@rain"
-      }
+      },
+      "title": "Byte Pair Encoding"
     },
     {
       "id": "demo",
@@ -145,7 +151,9 @@
         "promptAt": "c21@prompt",
         "longWordAt": "c22@long",
         "strawberryAt": "c23@straw"
-      }
+      },
+      "title": "Live demo: real tokens",
+      "shortTitle": "Why AI splits “strawberry” into 3 pieces"
     },
     {
       "id": "matters",
@@ -178,7 +186,8 @@
             "at": "c28"
           }
         ]
-      }
+      },
+      "title": "Why tokens matter"
     },
     {
       "id": "tryIt",
@@ -198,7 +207,9 @@
           }
         ],
         "chat": "How many r's are in strawberry?"
-      }
+      },
+      "title": "Try it yourself",
+      "shortTitle": "Can your chatbot count the r's in strawberry?"
     },
     {
       "id": "blooper",
@@ -210,7 +221,10 @@
         "prompt": "Please repeat the string \" SolidGoldMagikarp\" back to me.",
         "reply": "\"distribute\"",
         "replyAt": "c33"
-      }
+      },
+      "title": "AI blooper: SolidGoldMagikarp",
+      "short": true,
+      "shortTitle": "The word that broke ChatGPT"
     },
     {
       "id": "myth",
@@ -225,7 +239,9 @@
           "words": 100,
           "tokens": 130
         }
-      }
+      },
+      "title": "Myth vs reality: 1 token = 1 word?",
+      "shortTitle": "Is 1 token = 1 word?"
     },
     {
       "id": "useIt",
@@ -239,7 +255,8 @@
           "Ask for the length you need"
         ],
         "bulletsAt": "c38"
-      }
+      },
+      "title": "Use it tomorrow"
     },
     {
       "id": "recap",
@@ -249,7 +266,19 @@
         "nextStop": "{{next.stop}}",
         "nextQuestion": "{{next.question}}",
         "questionAt": "c41@question"
-      }
+      },
+      "title": "Recap and next stop"
     }
+  ],
+  "thumbnail": {
+    "headline": "Why AI can't spell strawberry",
+    "big": "rain = 4,812"
+  },
+  "tags": [
+    "tokenization",
+    "tokens",
+    "BPE",
+    "byte pair encoding",
+    "strawberry"
   ]
 }

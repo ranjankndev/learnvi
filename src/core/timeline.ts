@@ -7,6 +7,7 @@ import { mixAt } from "./audio/tools.js";
 export interface TimelineCue { id: string; start: number; end: number; marks: Record<string, number>; text: string; words: { w: string; start: number }[] }
 export interface TimelineSegment {
   id: string; kind: string; component: string; props: Record<string, unknown>; short: boolean;
+  title: string; shortTitle: string;
   start: number; end: number; startFrame: number; durationInFrames: number; cues: TimelineCue[];
 }
 export interface Timeline {
@@ -14,6 +15,8 @@ export interface Timeline {
   video: { width: number; height: number; burnCaptions: boolean; brand: string };
   series: { title: string; subtitle: string; runningPrompt: string; stops: { id: string; number: number; name: string; stamp: string; topic: string }[] };
   stop: { number: number; name: string; stamp: string };
+  shorts: { width: number; height: number; maxSeconds: number; cta: string };
+  thumbnail: { headline: string; big?: string } | null;
   segments: TimelineSegment[];
   /** every addressable point: "c07" and "c07@ids" → absolute seconds */
   refs: Record<string, number>;
@@ -21,6 +24,13 @@ export interface Timeline {
 }
 
 const REF = /^c\d+(@[a-z][\w-]*)?$/i;
+
+const KIND_TITLES: Record<string, string> = {
+  passport: "Next stop", hook: "Introduction", routeMap: "Route map", core: "", tryIt: "Try it yourself",
+  blooper: "AI blooper", myth: "Myth vs reality", useIt: "Use it tomorrow", recapNext: "Recap and next stop",
+};
+const titleFor = (seg: { id: string; kind: string; title?: string }) =>
+  seg.title ?? (KIND_TITLES[seg.kind] || seg.id.replace(/[-_]/g, " ").replace(/^\w/, (c) => c.toUpperCase()));
 
 /** Fill {{templates}} in props, and collect cue references found in them. */
 function resolveProps(v: unknown, vars: Record<string, unknown>, where: string, refs: string[]): unknown {
@@ -61,6 +71,7 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
     t += a.gapAfterSegment;
     segments.push({
       id: seg.id, kind: seg.kind, component: seg.component, short: seg.short, cues,
+      title: fillTemplate(titleFor(seg), vars, `${seg.id}.title`), shortTitle: fillTemplate(seg.shortTitle ?? titleFor(seg), vars, `${seg.id}.shortTitle`),
       props: resolveProps(seg.props, vars, `${seg.id}.props`, []) as Record<string, unknown>,
       start: +start.toFixed(3), end: +end.toFixed(3), startFrame: f(start), durationInFrames: Math.max(1, f(end + a.gapAfterSegment) - f(start)),
     });
@@ -84,6 +95,8 @@ export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
     series: { title: series.title, subtitle: series.subtitle, runningPrompt: series.runningPrompt,
       stops: series.episodes.map((e) => ({ id: e.id, number: e.number, name: e.stop, stamp: e.stamp, topic: e.topic })) },
     stop: { number: ctx.meta.number, name: ctx.meta.stop, stamp: ctx.meta.stamp },
+    shorts: { ...series.shorts, cta: fillTemplate(series.shorts.cta, vars, "series.shorts.cta") },
+    thumbnail: ctx.episode.thumbnail ? { headline: fillTemplate(ctx.episode.thumbnail.headline, vars, "thumbnail"), big: ctx.episode.thumbnail.big } : null,
     segments, refs, audio,
   };
 }

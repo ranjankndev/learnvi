@@ -8,6 +8,7 @@ import "@fontsource/jetbrains-mono/700.css";
 import React, { useEffect, useState } from "react";
 import { AbsoluteFill, Audio, Composition, Folder, Sequence, continueRender, delayRender, staticFile } from "remotion";
 import { SegmentView } from "./Frame";
+import { ShortView, Thumbnail } from "./Short";
 import { TIMELINES } from "./generated";
 import type { Timeline } from "./types";
 
@@ -49,6 +50,24 @@ const Segment: React.FC<{ episode: string; segment: string; muted?: boolean }> =
   );
 };
 
+/** A segment as a vertical Short, with its own slice of the narration. */
+const Short: React.FC<{ episode: string; segment: string }> = ({ episode, segment }) => {
+  useFonts();
+  const tl = TIMELINES.find((t) => t.episode === episode)!;
+  const seg = tl.segments.find((s) => s.id === segment)!;
+  return (
+    <AbsoluteFill>
+      <Audio src={staticFile(`${episode}/narration.wav`)} trimBefore={seg.startFrame} />
+      <ShortView tl={tl} seg={seg} />
+    </AbsoluteFill>
+  );
+};
+
+const Thumb: React.FC<{ episode: string }> = ({ episode }) => {
+  useFonts();
+  return <Thumbnail tl={TIMELINES.find((t) => t.episode === episode)!} />;
+};
+
 export const Root: React.FC = () => (
   <>
     {TIMELINES.map((tl: Timeline) => (
@@ -59,6 +78,11 @@ export const Root: React.FC = () => (
           <Composition key={s.id} id={`${tl.episode}-${s.id}`} component={Segment} fps={tl.fps} width={tl.video.width} height={tl.video.height}
             durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.episode, segment: s.id, muted: false }} />
         ))}
+        {tl.segments.filter((s) => s.short).map((s) => (
+          <Composition key={"short-" + s.id} id={`${tl.episode}-short-${s.id}`} component={Short} fps={tl.fps} width={tl.shorts.width} height={tl.shorts.height}
+            durationInFrames={s.durationInFrames} defaultProps={{ episode: tl.episode, segment: s.id }} />
+        ))}
+        <Composition id={`${tl.episode}-thumbnail`} component={Thumb} fps={tl.fps} width={1280} height={720} durationInFrames={1} defaultProps={{ episode: tl.episode }} />
       </Folder>
     ))}
   </>
