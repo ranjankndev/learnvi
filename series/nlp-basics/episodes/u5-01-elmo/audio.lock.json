@@ -1,0 +1,2491 @@
+{
+  "version": 1,
+  "episode": "u5-01",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome to unit five of NLP, Simply Explained. This is lesson 1: contextual embeddings, and a model called ELMo.",
+      "spoken": "Welcome to unit five of N L P, Simply Explained. This is lesson 1: contextual embeddings, and a model called ELMo.",
+      "textHash": "384baa6f4ecdb705",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f44b06ee5740625f.wav",
+      "duration": 8.141,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "to",
+          "start": 0.44
+        },
+        {
+          "w": "unit",
+          "start": 0.64
+        },
+        {
+          "w": "five",
+          "start": 1
+        },
+        {
+          "w": "of",
+          "start": 1.4
+        },
+        {
+          "w": "NLP,",
+          "start": 1.8
+        },
+        {
+          "w": "Simply",
+          "start": 2.2
+        },
+        {
+          "w": "Explained.",
+          "start": 2.88
+        },
+        {
+          "w": "This",
+          "start": 3.72
+        },
+        {
+          "w": "is",
+          "start": 4.08
+        },
+        {
+          "w": "lesson",
+          "start": 4.44
+        },
+        {
+          "w": "1:",
+          "start": 4.8
+        },
+        {
+          "w": "contextual",
+          "start": 5.36
+        },
+        {
+          "w": "embeddings,",
+          "start": 5.92
+        },
+        {
+          "w": "and",
+          "start": 6.56
+        },
+        {
+          "w": "a",
+          "start": 6.72
+        },
+        {
+          "w": "model",
+          "start": 6.88
+        },
+        {
+          "w": "called",
+          "start": 7.28
+        },
+        {
+          "w": "ELMo.",
+          "start": 7.64
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "In unit four, every word got one vector. Today we fix the biggest problem with that idea.",
+      "spoken": "In unit four, every word got one vector. Today we fix the biggest problem with that idea.",
+      "textHash": "f752871f3b51711e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2f25f38fc64a3493.wav",
+      "duration": 5.717,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "unit",
+          "start": 0.16
+        },
+        {
+          "w": "four,",
+          "start": 0.52
+        },
+        {
+          "w": "every",
+          "start": 0.96
+        },
+        {
+          "w": "word",
+          "start": 1.28
+        },
+        {
+          "w": "got",
+          "start": 1.6
+        },
+        {
+          "w": "one",
+          "start": 2.02
+        },
+        {
+          "w": "vector.",
+          "start": 2.44
+        },
+        {
+          "w": "Today",
+          "start": 2.86
+        },
+        {
+          "w": "we",
+          "start": 3.28
+        },
+        {
+          "w": "fix",
+          "start": 3.52
+        },
+        {
+          "w": "the",
+          "start": 3.8
+        },
+        {
+          "w": "biggest",
+          "start": 3.96
+        },
+        {
+          "w": "problem",
+          "start": 4.4
+        },
+        {
+          "w": "with",
+          "start": 4.84
+        },
+        {
+          "w": "that",
+          "start": 5
+        },
+        {
+          "w": "idea.",
+          "start": 5.2
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. The same word should get a different vector when it's used in a different sentence.",
+      "spoken": "Here's the idea. The same word should get a different vector when it's used in a different sentence.",
+      "textHash": "41db60748ad3638d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4197ae40e3b03b35.wav",
+      "duration": 5.418,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.44
+        },
+        {
+          "w": "idea.",
+          "start": 0.64
+        },
+        {
+          "w": "The",
+          "start": 1.28
+        },
+        {
+          "w": "same",
+          "start": 1.56
+        },
+        {
+          "w": "word",
+          "start": 1.92
+        },
+        {
+          "w": "should",
+          "start": 2.2
+        },
+        {
+          "w": "get",
+          "start": 2.4
+        },
+        {
+          "w": "a",
+          "start": 2.56
+        },
+        {
+          "w": "different",
+          "start": 2.867
+        },
+        {
+          "w": "vector",
+          "start": 3.173
+        },
+        {
+          "w": "when",
+          "start": 3.48
+        },
+        {
+          "w": "it's",
+          "start": 3.64
+        },
+        {
+          "w": "used",
+          "start": 3.92
+        },
+        {
+          "w": "in",
+          "start": 4.24
+        },
+        {
+          "w": "a",
+          "start": 4.36
+        },
+        {
+          "w": "different",
+          "start": 4.48
+        },
+        {
+          "w": "sentence.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c04": {
+      "segment": "vs",
+      "display": "Let's compare the two kinds.",
+      "spoken": "Let's compare the two kinds.",
+      "textHash": "966b2ed2f3407cea",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/870287c60fa545ed.wav",
+      "duration": 1.614,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "compare",
+          "start": 0.36
+        },
+        {
+          "w": "the",
+          "start": 0.72
+        },
+        {
+          "w": "two",
+          "start": 0.88
+        },
+        {
+          "w": "kinds.",
+          "start": 1.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c05": {
+      "segment": "vs",
+      "display": "Static vectors, like Word2Vec's, give each word exactly one vector. \"Bank\" always gets the same one, whatever the sentence.",
+      "spoken": "Static vectors, like Word2Vec's, give each word exactly one vector. \"Bank\" always gets the same one, whatever the sentence.",
+      "textHash": "32a3e906c24b0df6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fc1c1ff6a30aec91.wav",
+      "duration": 8.215,
+      "marks": {},
+      "words": [
+        {
+          "w": "Static",
+          "start": 0.347
+        },
+        {
+          "w": "vectors,",
+          "start": 0.693
+        },
+        {
+          "w": "like",
+          "start": 1.04
+        },
+        {
+          "w": "Word2Vec's,",
+          "start": 1.68
+        },
+        {
+          "w": "give",
+          "start": 2.32
+        },
+        {
+          "w": "each",
+          "start": 2.56
+        },
+        {
+          "w": "word",
+          "start": 2.84
+        },
+        {
+          "w": "exactly",
+          "start": 3.12
+        },
+        {
+          "w": "one",
+          "start": 3.707
+        },
+        {
+          "w": "vector.",
+          "start": 4.293
+        },
+        {
+          "w": "\"Bank\"",
+          "start": 4.88
+        },
+        {
+          "w": "always",
+          "start": 5.4
+        },
+        {
+          "w": "gets",
+          "start": 5.88
+        },
+        {
+          "w": "the",
+          "start": 6.2
+        },
+        {
+          "w": "same",
+          "start": 6.4
+        },
+        {
+          "w": "one,",
+          "start": 6.68
+        },
+        {
+          "w": "whatever",
+          "start": 6.96
+        },
+        {
+          "w": "the",
+          "start": 7.4
+        },
+        {
+          "w": "sentence.",
+          "start": 7.56
+        }
+      ],
+      "matchScore": 0.737
+    },
+    "c06": {
+      "segment": "vs",
+      "display": "Contextual vectors give a word a fresh vector every time it's used, based on the sentence around it. So a river bank and a money bank get different vectors.",
+      "spoken": "Contextual vectors give a word a fresh vector every time it's used, based on the sentence around it. So a river bank and a money bank get different vectors.",
+      "textHash": "8814a48d941ab1e3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/845eab275fe623ed.wav",
+      "duration": 9.352,
+      "marks": {},
+      "words": [
+        {
+          "w": "Contextual",
+          "start": 0.427
+        },
+        {
+          "w": "vectors",
+          "start": 0.853
+        },
+        {
+          "w": "give",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.52
+        },
+        {
+          "w": "word",
+          "start": 1.64
+        },
+        {
+          "w": "a",
+          "start": 1.92
+        },
+        {
+          "w": "fresh",
+          "start": 2.253
+        },
+        {
+          "w": "vector",
+          "start": 2.587
+        },
+        {
+          "w": "every",
+          "start": 2.92
+        },
+        {
+          "w": "time",
+          "start": 3.2
+        },
+        {
+          "w": "it's",
+          "start": 3.44
+        },
+        {
+          "w": "used,",
+          "start": 3.76
+        },
+        {
+          "w": "based",
+          "start": 4.28
+        },
+        {
+          "w": "on",
+          "start": 4.68
+        },
+        {
+          "w": "the",
+          "start": 4.8
+        },
+        {
+          "w": "sentence",
+          "start": 4.96
+        },
+        {
+          "w": "around",
+          "start": 5.44
+        },
+        {
+          "w": "it.",
+          "start": 5.96
+        },
+        {
+          "w": "So",
+          "start": 6.32
+        },
+        {
+          "w": "a",
+          "start": 6.56
+        },
+        {
+          "w": "river",
+          "start": 6.72
+        },
+        {
+          "w": "bank",
+          "start": 7.04
+        },
+        {
+          "w": "and",
+          "start": 7.36
+        },
+        {
+          "w": "a",
+          "start": 7.52
+        },
+        {
+          "w": "money",
+          "start": 7.6
+        },
+        {
+          "w": "bank",
+          "start": 7.88
+        },
+        {
+          "w": "get",
+          "start": 8.16
+        },
+        {
+          "w": "different",
+          "start": 8.557
+        },
+        {
+          "w": "vectors.",
+          "start": 8.955
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c07": {
+      "segment": "bank",
+      "display": "Here's the word \"bank\" in three sentences. A contextual model gives it three different vectors.",
+      "spoken": "Here's the word \"bank\" in three sentences. A contextual model gives it three different vectors.",
+      "textHash": "9b8755e6d6267451",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b79c1bf82dc2d786.wav",
+      "duration": 5.71,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0.18
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "word",
+          "start": 0.52
+        },
+        {
+          "w": "\"bank\"",
+          "start": 0.8
+        },
+        {
+          "w": "in",
+          "start": 1.24
+        },
+        {
+          "w": "three",
+          "start": 1.44
+        },
+        {
+          "w": "sentences.",
+          "start": 1.76
+        },
+        {
+          "w": "A",
+          "start": 2.72
+        },
+        {
+          "w": "contextual",
+          "start": 3.18
+        },
+        {
+          "w": "model",
+          "start": 3.64
+        },
+        {
+          "w": "gives",
+          "start": 4
+        },
+        {
+          "w": "it",
+          "start": 4.28
+        },
+        {
+          "w": "three",
+          "start": 4.44
+        },
+        {
+          "w": "different",
+          "start": 4.863
+        },
+        {
+          "w": "vectors.",
+          "start": 5.287
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c08": {
+      "segment": "bank",
+      "display": "\"We sat on the bank of the river\": the side of a river.",
+      "spoken": "\"We sat on the bank of the river\": the side of a river.",
+      "textHash": "7b6f9188a0b0781d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/abb8778b0b70466c.wav",
+      "duration": 2.846,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"We",
+          "start": 0
+        },
+        {
+          "w": "sat",
+          "start": 0.16
+        },
+        {
+          "w": "on",
+          "start": 0.44
+        },
+        {
+          "w": "the",
+          "start": 0.56
+        },
+        {
+          "w": "bank",
+          "start": 0.68
+        },
+        {
+          "w": "of",
+          "start": 0.96
+        },
+        {
+          "w": "the",
+          "start": 1.08
+        },
+        {
+          "w": "river\":",
+          "start": 1.24
+        },
+        {
+          "w": "the",
+          "start": 1.547
+        },
+        {
+          "w": "side",
+          "start": 1.853
+        },
+        {
+          "w": "of",
+          "start": 2.16
+        },
+        {
+          "w": "a",
+          "start": 2.28
+        },
+        {
+          "w": "river.",
+          "start": 2.4
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c09": {
+      "segment": "bank",
+      "display": "\"I paid money into the bank\": a place that keeps money.",
+      "spoken": "\"I paid money into the bank\": a place that keeps money.",
+      "textHash": "e9f184535c96fc19",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/947c8a15b922cdd4.wav",
+      "duration": 2.971,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"I",
+          "start": 0
+        },
+        {
+          "w": "paid",
+          "start": 0.16
+        },
+        {
+          "w": "money",
+          "start": 0.44
+        },
+        {
+          "w": "into",
+          "start": 0.76
+        },
+        {
+          "w": "the",
+          "start": 0.92
+        },
+        {
+          "w": "bank\":",
+          "start": 1.08
+        },
+        {
+          "w": "a",
+          "start": 1.48
+        },
+        {
+          "w": "place",
+          "start": 1.68
+        },
+        {
+          "w": "that",
+          "start": 1.96
+        },
+        {
+          "w": "keeps",
+          "start": 2.2
+        },
+        {
+          "w": "money.",
+          "start": 2.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "bank",
+      "display": "\"Don't bank on it\": here it's a verb, meaning to rely on something.",
+      "spoken": "\"Don't bank on it\": here it's a verb, meaning to rely on something.",
+      "textHash": "6ebea95920e0b270",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bc291dcecaf96d0c.wav",
+      "duration": 3.523,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"Don't",
+          "start": 0
+        },
+        {
+          "w": "bank",
+          "start": 0.28
+        },
+        {
+          "w": "on",
+          "start": 0.6
+        },
+        {
+          "w": "it\":",
+          "start": 0.8
+        },
+        {
+          "w": "here",
+          "start": 1
+        },
+        {
+          "w": "it's",
+          "start": 1.24
+        },
+        {
+          "w": "a",
+          "start": 1.48
+        },
+        {
+          "w": "verb,",
+          "start": 1.72
+        },
+        {
+          "w": "meaning",
+          "start": 1.96
+        },
+        {
+          "w": "to",
+          "start": 2.28
+        },
+        {
+          "w": "rely",
+          "start": 2.44
+        },
+        {
+          "w": "on",
+          "start": 2.84
+        },
+        {
+          "w": "something.",
+          "start": 3.08
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c11": {
+      "segment": "elmo",
+      "display": "ELMo, from 2018, stands for embeddings from language models. Its word vectors come out of a deep language model built from LSTMs reading in both directions, so each vector depends on the whole sentence.",
+      "spoken": "ELMo, from 2018, stands for embeddings from language models. Its word vectors come out of a deep language model built from L S T ems reading in both directions, so each vector depends on the whole sentence.",
+      "textHash": "fff0c7e04fa7d575",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/30374354631de71d.wav",
+      "duration": 13.754,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo,",
+          "start": 0.26
+        },
+        {
+          "w": "from",
+          "start": 0.52
+        },
+        {
+          "w": "2018,",
+          "start": 0.72
+        },
+        {
+          "w": "stands",
+          "start": 2.08
+        },
+        {
+          "w": "for",
+          "start": 2.48
+        },
+        {
+          "w": "embeddings",
+          "start": 2.64
+        },
+        {
+          "w": "from",
+          "start": 3.32
+        },
+        {
+          "w": "language",
+          "start": 3.48
+        },
+        {
+          "w": "models.",
+          "start": 3.92
+        },
+        {
+          "w": "Its",
+          "start": 4.72
+        },
+        {
+          "w": "word",
+          "start": 5.093
+        },
+        {
+          "w": "vectors",
+          "start": 5.467
+        },
+        {
+          "w": "come",
+          "start": 5.84
+        },
+        {
+          "w": "out",
+          "start": 6.08
+        },
+        {
+          "w": "of",
+          "start": 6.2
+        },
+        {
+          "w": "a",
+          "start": 6.32
+        },
+        {
+          "w": "deep",
+          "start": 6.4
+        },
+        {
+          "w": "language",
+          "start": 6.72
+        },
+        {
+          "w": "model",
+          "start": 7.2
+        },
+        {
+          "w": "built",
+          "start": 7.6
+        },
+        {
+          "w": "from",
+          "start": 8.187
+        },
+        {
+          "w": "LSTMs",
+          "start": 8.773
+        },
+        {
+          "w": "reading",
+          "start": 9.36
+        },
+        {
+          "w": "in",
+          "start": 9.76
+        },
+        {
+          "w": "both",
+          "start": 9.92
+        },
+        {
+          "w": "directions,",
+          "start": 10.24
+        },
+        {
+          "w": "so",
+          "start": 11.04
+        },
+        {
+          "w": "each",
+          "start": 11.373
+        },
+        {
+          "w": "vector",
+          "start": 11.707
+        },
+        {
+          "w": "depends",
+          "start": 12.04
+        },
+        {
+          "w": "on",
+          "start": 12.52
+        },
+        {
+          "w": "the",
+          "start": 12.64
+        },
+        {
+          "w": "whole",
+          "start": 12.8
+        },
+        {
+          "w": "sentence.",
+          "start": 13.12
+        }
+      ],
+      "matchScore": 0.774
+    },
+    "c12": {
+      "segment": "elmo",
+      "display": "For \"bank\" in our first sentence, the vector is computed from everything around it: sat on the, of the river.",
+      "spoken": "For \"bank\" in our first sentence, the vector is computed from everything around it: sat on the, of the river.",
+      "textHash": "c5fe206559ca02da",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cc18dc15d4175d32.wav",
+      "duration": 6.279,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "\"bank\"",
+          "start": 0.2
+        },
+        {
+          "w": "in",
+          "start": 0.56
+        },
+        {
+          "w": "our",
+          "start": 0.72
+        },
+        {
+          "w": "first",
+          "start": 0.88
+        },
+        {
+          "w": "sentence,",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.52
+        },
+        {
+          "w": "vector",
+          "start": 1.92
+        },
+        {
+          "w": "is",
+          "start": 2.32
+        },
+        {
+          "w": "computed",
+          "start": 2.48
+        },
+        {
+          "w": "from",
+          "start": 2.96
+        },
+        {
+          "w": "everything",
+          "start": 3.2
+        },
+        {
+          "w": "around",
+          "start": 3.64
+        },
+        {
+          "w": "it:",
+          "start": 4.12
+        },
+        {
+          "w": "sat",
+          "start": 4.56
+        },
+        {
+          "w": "on",
+          "start": 4.96
+        },
+        {
+          "w": "the,",
+          "start": 5.16
+        },
+        {
+          "w": "of",
+          "start": 5.44
+        },
+        {
+          "w": "the",
+          "start": 5.64
+        },
+        {
+          "w": "river.",
+          "start": 5.84
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c13": {
+      "segment": "elmo",
+      "display": "It's like asking someone what a word means while they're holding the whole sentence in mind.",
+      "spoken": "It's like asking someone what a word means while they're holding the whole sentence in mind.",
+      "textHash": "409daeddce810603",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a06fe4fcd30d0a9e.wav",
+      "duration": 4.908,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "like",
+          "start": 0.24
+        },
+        {
+          "w": "asking",
+          "start": 0.44
+        },
+        {
+          "w": "someone",
+          "start": 0.94
+        },
+        {
+          "w": "what",
+          "start": 1.44
+        },
+        {
+          "w": "a",
+          "start": 1.68
+        },
+        {
+          "w": "word",
+          "start": 1.84
+        },
+        {
+          "w": "means",
+          "start": 2.12
+        },
+        {
+          "w": "while",
+          "start": 2.48
+        },
+        {
+          "w": "they're",
+          "start": 2.72
+        },
+        {
+          "w": "holding",
+          "start": 2.96
+        },
+        {
+          "w": "the",
+          "start": 3.32
+        },
+        {
+          "w": "whole",
+          "start": 3.44
+        },
+        {
+          "w": "sentence",
+          "start": 3.72
+        },
+        {
+          "w": "in",
+          "start": 4.28
+        },
+        {
+          "w": "mind.",
+          "start": 4.48
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c14": {
+      "segment": "build",
+      "display": "Here's how it works, in four steps.",
+      "spoken": "Here's how it works, in four steps.",
+      "textHash": "d642cd41a2dfc17b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f0cdf2ad44571f4e.wav",
+      "duration": 1.964,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0.14
+        },
+        {
+          "w": "how",
+          "start": 0.28
+        },
+        {
+          "w": "it",
+          "start": 0.44
+        },
+        {
+          "w": "works,",
+          "start": 0.64
+        },
+        {
+          "w": "in",
+          "start": 0.96
+        },
+        {
+          "w": "four",
+          "start": 1.16
+        },
+        {
+          "w": "steps.",
+          "start": 1.44
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c15": {
+      "segment": "build",
+      "display": "Pretrain: train two LSTM language models on a huge amount of plain text. One predicts the next word, reading forwards. The other predicts the previous word, reading backwards.",
+      "spoken": "Pretrain: train two LSTM language models on a huge amount of plain text. One predicts the next word, reading forwards. The other predicts the previous word, reading backwards.",
+      "textHash": "750bf31494b79696",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/132cc6d7cde9b7b8.wav",
+      "duration": 11.425,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pretrain:",
+          "start": 0
+        },
+        {
+          "w": "train",
+          "start": 0.72
+        },
+        {
+          "w": "two",
+          "start": 1.24
+        },
+        {
+          "w": "LSTM",
+          "start": 1.76
+        },
+        {
+          "w": "language",
+          "start": 2.28
+        },
+        {
+          "w": "models",
+          "start": 2.72
+        },
+        {
+          "w": "on",
+          "start": 3.2
+        },
+        {
+          "w": "a",
+          "start": 3.36
+        },
+        {
+          "w": "huge",
+          "start": 3.48
+        },
+        {
+          "w": "amount",
+          "start": 3.84
+        },
+        {
+          "w": "of",
+          "start": 4.2
+        },
+        {
+          "w": "plain",
+          "start": 4.32
+        },
+        {
+          "w": "text.",
+          "start": 4.68
+        },
+        {
+          "w": "One",
+          "start": 5.4
+        },
+        {
+          "w": "predicts",
+          "start": 5.76
+        },
+        {
+          "w": "the",
+          "start": 6.28
+        },
+        {
+          "w": "next",
+          "start": 6.4
+        },
+        {
+          "w": "word,",
+          "start": 6.76
+        },
+        {
+          "w": "reading",
+          "start": 7.04
+        },
+        {
+          "w": "forwards.",
+          "start": 7.48
+        },
+        {
+          "w": "The",
+          "start": 8.24
+        },
+        {
+          "w": "other",
+          "start": 8.48
+        },
+        {
+          "w": "predicts",
+          "start": 8.8
+        },
+        {
+          "w": "the",
+          "start": 9.28
+        },
+        {
+          "w": "previous",
+          "start": 9.44
+        },
+        {
+          "w": "word,",
+          "start": 9.96
+        },
+        {
+          "w": "reading",
+          "start": 10.28
+        },
+        {
+          "w": "backwards.",
+          "start": 10.76
+        }
+      ],
+      "matchScore": 0.92
+    },
+    "c16": {
+      "segment": "build",
+      "display": "Read: run both models over your sentence.",
+      "spoken": "Read: run both models over your sentence.",
+      "textHash": "0655e70629c98eab",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8505e3dfa94c58c7.wav",
+      "duration": 2.506,
+      "marks": {},
+      "words": [
+        {
+          "w": "Read:",
+          "start": 0
+        },
+        {
+          "w": "run",
+          "start": 0.48
+        },
+        {
+          "w": "both",
+          "start": 0.84
+        },
+        {
+          "w": "models",
+          "start": 1.16
+        },
+        {
+          "w": "over",
+          "start": 1.6
+        },
+        {
+          "w": "your",
+          "start": 1.76
+        },
+        {
+          "w": "sentence.",
+          "start": 1.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "build",
+      "display": "Mix: for each word, blend the outputs of their layers, using weights learned for your task.",
+      "spoken": "Mix: for each word, blend the outputs of their layers, using weights learned for your task.",
+      "textHash": "20a36135051d07ec",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/73c7083a04bac07f.wav",
+      "duration": 5.154,
+      "marks": {},
+      "words": [
+        {
+          "w": "Mix:",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.48
+        },
+        {
+          "w": "each",
+          "start": 0.72
+        },
+        {
+          "w": "word,",
+          "start": 1.04
+        },
+        {
+          "w": "blend",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.72
+        },
+        {
+          "w": "outputs",
+          "start": 1.84
+        },
+        {
+          "w": "of",
+          "start": 2.32
+        },
+        {
+          "w": "their",
+          "start": 2.44
+        },
+        {
+          "w": "layers,",
+          "start": 2.64
+        },
+        {
+          "w": "using",
+          "start": 3.24
+        },
+        {
+          "w": "weights",
+          "start": 3.6
+        },
+        {
+          "w": "learned",
+          "start": 4
+        },
+        {
+          "w": "for",
+          "start": 4.32
+        },
+        {
+          "w": "your",
+          "start": 4.48
+        },
+        {
+          "w": "task.",
+          "start": 4.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "build",
+      "display": "Plug in: feed these vectors into your own model, for tagging, question answering, or whatever you're building.",
+      "spoken": "Plug in: feed these vectors into your own model, for tagging, question answering, or whatever you're building.",
+      "textHash": "aeb4ebe522168a44",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1c77b7fc33f8076c.wav",
+      "duration": 6.023,
+      "marks": {},
+      "words": [
+        {
+          "w": "Plug",
+          "start": 0.187
+        },
+        {
+          "w": "in:",
+          "start": 0.373
+        },
+        {
+          "w": "feed",
+          "start": 0.56
+        },
+        {
+          "w": "these",
+          "start": 0.893
+        },
+        {
+          "w": "vectors",
+          "start": 1.227
+        },
+        {
+          "w": "into",
+          "start": 1.56
+        },
+        {
+          "w": "your",
+          "start": 1.76
+        },
+        {
+          "w": "own",
+          "start": 1.92
+        },
+        {
+          "w": "model,",
+          "start": 2.12
+        },
+        {
+          "w": "for",
+          "start": 2.64
+        },
+        {
+          "w": "tagging,",
+          "start": 3.147
+        },
+        {
+          "w": "question",
+          "start": 3.653
+        },
+        {
+          "w": "answering,",
+          "start": 4.16
+        },
+        {
+          "w": "or",
+          "start": 4.72
+        },
+        {
+          "w": "whatever",
+          "start": 4.96
+        },
+        {
+          "w": "you're",
+          "start": 5.28
+        },
+        {
+          "w": "building.",
+          "start": 5.6
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c19": {
+      "segment": "layers",
+      "display": "Why blend the layers? Because they learn different things.",
+      "spoken": "Why blend the layers? Because they learn different things.",
+      "textHash": "6bfffdd7b5e64581",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6e2b451663381846.wav",
+      "duration": 3.041,
+      "marks": {},
+      "words": [
+        {
+          "w": "Why",
+          "start": 0
+        },
+        {
+          "w": "blend",
+          "start": 0.24
+        },
+        {
+          "w": "the",
+          "start": 0.56
+        },
+        {
+          "w": "layers?",
+          "start": 0.72
+        },
+        {
+          "w": "Because",
+          "start": 1.32
+        },
+        {
+          "w": "they",
+          "start": 1.6
+        },
+        {
+          "w": "learn",
+          "start": 1.84
+        },
+        {
+          "w": "different",
+          "start": 2.16
+        },
+        {
+          "w": "things.",
+          "start": 2.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "layers",
+      "display": "The lower layers capture more about grammar, like parts of speech.",
+      "spoken": "The lower layers capture more about grammar, like parts of speech.",
+      "textHash": "054e74b81b34635f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/470c32f1f486f1b9.wav",
+      "duration": 3.547,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "lower",
+          "start": 0.12
+        },
+        {
+          "w": "layers",
+          "start": 0.44
+        },
+        {
+          "w": "capture",
+          "start": 0.88
+        },
+        {
+          "w": "more",
+          "start": 1.32
+        },
+        {
+          "w": "about",
+          "start": 1.56
+        },
+        {
+          "w": "grammar,",
+          "start": 1.8
+        },
+        {
+          "w": "like",
+          "start": 2.36
+        },
+        {
+          "w": "parts",
+          "start": 2.6
+        },
+        {
+          "w": "of",
+          "start": 2.92
+        },
+        {
+          "w": "speech.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "layers",
+      "display": "The higher layers capture more about meaning in context, like which sense of \"bank\" is meant.",
+      "spoken": "The higher layers capture more about meaning in context, like which sense of \"bank\" is meant.",
+      "textHash": "168a075c6e9f4390",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7779de2cf8b197da.wav",
+      "duration": 5.226,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "higher",
+          "start": 0.16
+        },
+        {
+          "w": "layers",
+          "start": 0.4
+        },
+        {
+          "w": "capture",
+          "start": 0.88
+        },
+        {
+          "w": "more",
+          "start": 1.36
+        },
+        {
+          "w": "about",
+          "start": 1.6
+        },
+        {
+          "w": "meaning",
+          "start": 1.84
+        },
+        {
+          "w": "in",
+          "start": 2.12
+        },
+        {
+          "w": "context,",
+          "start": 2.4
+        },
+        {
+          "w": "like",
+          "start": 3.2
+        },
+        {
+          "w": "which",
+          "start": 3.44
+        },
+        {
+          "w": "sense",
+          "start": 3.68
+        },
+        {
+          "w": "of",
+          "start": 4.04
+        },
+        {
+          "w": "\"bank\"",
+          "start": 4.24
+        },
+        {
+          "w": "is",
+          "start": 4.64
+        },
+        {
+          "w": "meant.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "layers",
+      "display": "So each task can lean on the layers it needs most.",
+      "spoken": "So each task can lean on the layers it needs most.",
+      "textHash": "b94320651a18635d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/46fda976278fda4c.wav",
+      "duration": 2.716,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "each",
+          "start": 0.16
+        },
+        {
+          "w": "task",
+          "start": 0.44
+        },
+        {
+          "w": "can",
+          "start": 0.8
+        },
+        {
+          "w": "lean",
+          "start": 0.96
+        },
+        {
+          "w": "on",
+          "start": 1.2
+        },
+        {
+          "w": "the",
+          "start": 1.32
+        },
+        {
+          "w": "layers",
+          "start": 1.44
+        },
+        {
+          "w": "it",
+          "start": 1.84
+        },
+        {
+          "w": "needs",
+          "start": 2
+        },
+        {
+          "w": "most.",
+          "start": 2.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "impact",
+      "display": "ELMo was a turning point.",
+      "spoken": "ELMo was a turning point.",
+      "textHash": "092836e9e551876c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6a35d916e3acee62.wav",
+      "duration": 1.502,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo",
+          "start": 0.2
+        },
+        {
+          "w": "was",
+          "start": 0.4
+        },
+        {
+          "w": "a",
+          "start": 0.56
+        },
+        {
+          "w": "turning",
+          "start": 0.72
+        },
+        {
+          "w": "point.",
+          "start": 1.08
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c24": {
+      "segment": "impact",
+      "display": "Adding its vectors improved results across many NLP tasks at once.",
+      "spoken": "Adding its vectors improved results across many N L P tasks at once.",
+      "textHash": "75791d1cc86afcc1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/219dab4eedb11eb2.wav",
+      "duration": 4.471,
+      "marks": {},
+      "words": [
+        {
+          "w": "Adding",
+          "start": 0
+        },
+        {
+          "w": "its",
+          "start": 0.373
+        },
+        {
+          "w": "vectors",
+          "start": 0.747
+        },
+        {
+          "w": "improved",
+          "start": 1.12
+        },
+        {
+          "w": "results",
+          "start": 1.6
+        },
+        {
+          "w": "across",
+          "start": 2.08
+        },
+        {
+          "w": "many",
+          "start": 2.507
+        },
+        {
+          "w": "NLP",
+          "start": 2.933
+        },
+        {
+          "w": "tasks",
+          "start": 3.36
+        },
+        {
+          "w": "at",
+          "start": 3.92
+        },
+        {
+          "w": "once.",
+          "start": 4.08
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c25": {
+      "segment": "impact",
+      "display": "It proved that pretraining on plain, unlabelled text really pays off.",
+      "spoken": "It proved that pretraining on plain, unlabelled text really pays off.",
+      "textHash": "913b7d091dba950d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cd90c607d9266017.wav",
+      "duration": 4.194,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "proved",
+          "start": 0.12
+        },
+        {
+          "w": "that",
+          "start": 0.48
+        },
+        {
+          "w": "pretraining",
+          "start": 0.68
+        },
+        {
+          "w": "on",
+          "start": 1.28
+        },
+        {
+          "w": "plain,",
+          "start": 1.64
+        },
+        {
+          "w": "unlabelled",
+          "start": 2
+        },
+        {
+          "w": "text",
+          "start": 2.72
+        },
+        {
+          "w": "really",
+          "start": 3.12
+        },
+        {
+          "w": "pays",
+          "start": 3.48
+        },
+        {
+          "w": "off.",
+          "start": 3.88
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c26": {
+      "segment": "impact",
+      "display": "And it opened the door to BERT, our next and final lesson.",
+      "spoken": "And it opened the door to BERT, our next and final lesson.",
+      "textHash": "64896810fdc4a7a6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0fc1642f8127af12.wav",
+      "duration": 3.395,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.16
+        },
+        {
+          "w": "opened",
+          "start": 0.32
+        },
+        {
+          "w": "the",
+          "start": 0.6
+        },
+        {
+          "w": "door",
+          "start": 0.76
+        },
+        {
+          "w": "to",
+          "start": 1.04
+        },
+        {
+          "w": "BERT,",
+          "start": 1.2
+        },
+        {
+          "w": "our",
+          "start": 1.68
+        },
+        {
+          "w": "next",
+          "start": 1.92
+        },
+        {
+          "w": "and",
+          "start": 2.24
+        },
+        {
+          "w": "final",
+          "start": 2.625
+        },
+        {
+          "w": "lesson.",
+          "start": 3.01
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "Quick quiz. What's the main difference between ELMo's vectors and Word2Vec's?",
+      "spoken": "Quick quiz. What's the main difference between ELMo's vectors and Word2Vec's?",
+      "textHash": "74f304004205dbdd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0e7e757fdbd8d546.wav",
+      "duration": 4.517,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.253
+        },
+        {
+          "w": "quiz.",
+          "start": 0.507
+        },
+        {
+          "w": "What's",
+          "start": 0.76
+        },
+        {
+          "w": "the",
+          "start": 1.08
+        },
+        {
+          "w": "main",
+          "start": 1.2
+        },
+        {
+          "w": "difference",
+          "start": 1.48
+        },
+        {
+          "w": "between",
+          "start": 1.92
+        },
+        {
+          "w": "ELMo's",
+          "start": 2.347
+        },
+        {
+          "w": "vectors",
+          "start": 2.773
+        },
+        {
+          "w": "and",
+          "start": 3.2
+        },
+        {
+          "w": "Word2Vec's?",
+          "start": 3.859
+        }
+      ],
+      "matchScore": 0.545
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c29": {
+      "segment": "quiz",
+      "display": "ELMo's vectors depend on the sentence. Word2Vec gives each word one fixed vector, but ELMo computes a new one every time the word is used.",
+      "spoken": "ELMo's vectors depend on the sentence. Word2Vec gives each word one fixed vector, but ELMo computes a new one every time the word is used.",
+      "textHash": "ebb14519edcf8860",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0795b6007ae6a048.wav",
+      "duration": 9.498,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo's",
+          "start": 0.36
+        },
+        {
+          "w": "vectors",
+          "start": 0.72
+        },
+        {
+          "w": "depend",
+          "start": 1.08
+        },
+        {
+          "w": "on",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "sentence.",
+          "start": 1.8
+        },
+        {
+          "w": "Word2Vec",
+          "start": 2.86
+        },
+        {
+          "w": "gives",
+          "start": 3.92
+        },
+        {
+          "w": "each",
+          "start": 4.24
+        },
+        {
+          "w": "word",
+          "start": 4.52
+        },
+        {
+          "w": "one",
+          "start": 4.8
+        },
+        {
+          "w": "fixed",
+          "start": 5.227
+        },
+        {
+          "w": "vector,",
+          "start": 5.653
+        },
+        {
+          "w": "but",
+          "start": 6.08
+        },
+        {
+          "w": "ELMo",
+          "start": 6.28
+        },
+        {
+          "w": "computes",
+          "start": 6.72
+        },
+        {
+          "w": "a",
+          "start": 7.2
+        },
+        {
+          "w": "new",
+          "start": 7.36
+        },
+        {
+          "w": "one",
+          "start": 7.6
+        },
+        {
+          "w": "every",
+          "start": 7.84
+        },
+        {
+          "w": "time",
+          "start": 8.16
+        },
+        {
+          "w": "the",
+          "start": 8.4
+        },
+        {
+          "w": "word",
+          "start": 8.6
+        },
+        {
+          "w": "is",
+          "start": 8.88
+        },
+        {
+          "w": "used.",
+          "start": 9.12
+        }
+      ],
+      "matchScore": 0.773
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "Let's recap. Static vectors give a word one vector, whatever the sentence.",
+      "spoken": "Let's recap. Static vectors give a word one vector, whatever the sentence.",
+      "textHash": "e387cc1001b226d6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c81d59ee3e917eb7.wav",
+      "duration": 4.54,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.4
+        },
+        {
+          "w": "Static",
+          "start": 0.96
+        },
+        {
+          "w": "vectors",
+          "start": 1.52
+        },
+        {
+          "w": "give",
+          "start": 2.08
+        },
+        {
+          "w": "a",
+          "start": 2.28
+        },
+        {
+          "w": "word",
+          "start": 2.4
+        },
+        {
+          "w": "one",
+          "start": 2.72
+        },
+        {
+          "w": "vector,",
+          "start": 3.04
+        },
+        {
+          "w": "whatever",
+          "start": 3.36
+        },
+        {
+          "w": "the",
+          "start": 3.76
+        },
+        {
+          "w": "sentence.",
+          "start": 3.92
+        }
+      ],
+      "matchScore": 0.636
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "Contextual vectors change with the sentence, so \"bank\" can mean different things.",
+      "spoken": "Contextual vectors change with the sentence, so \"bank\" can mean different things.",
+      "textHash": "1418490467183773",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e82cbae99edb1368.wav",
+      "duration": 4.532,
+      "marks": {},
+      "words": [
+        {
+          "w": "Contextual",
+          "start": 0.4
+        },
+        {
+          "w": "vectors",
+          "start": 0.8
+        },
+        {
+          "w": "change",
+          "start": 1.2
+        },
+        {
+          "w": "with",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "sentence,",
+          "start": 1.76
+        },
+        {
+          "w": "so",
+          "start": 2.48
+        },
+        {
+          "w": "\"bank\"",
+          "start": 2.8
+        },
+        {
+          "w": "can",
+          "start": 3.2
+        },
+        {
+          "w": "mean",
+          "start": 3.44
+        },
+        {
+          "w": "different",
+          "start": 3.68
+        },
+        {
+          "w": "things.",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "ELMo takes its vectors from a two-way LSTM language model, pretrained on lots of text.",
+      "spoken": "ELMo takes its vectors from a two-way LSTM language model, pretrained on lots of text.",
+      "textHash": "4ed3be5dc60dfbc4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f05132c9fc54f351.wav",
+      "duration": 5.621,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo",
+          "start": 0
+        },
+        {
+          "w": "takes",
+          "start": 0.4
+        },
+        {
+          "w": "its",
+          "start": 0.707
+        },
+        {
+          "w": "vectors",
+          "start": 1.013
+        },
+        {
+          "w": "from",
+          "start": 1.32
+        },
+        {
+          "w": "a",
+          "start": 1.44
+        },
+        {
+          "w": "two-way",
+          "start": 1.907
+        },
+        {
+          "w": "LSTM",
+          "start": 2.373
+        },
+        {
+          "w": "language",
+          "start": 2.84
+        },
+        {
+          "w": "model,",
+          "start": 3.36
+        },
+        {
+          "w": "pretrained",
+          "start": 3.88
+        },
+        {
+          "w": "on",
+          "start": 4.4
+        },
+        {
+          "w": "lots",
+          "start": 4.64
+        },
+        {
+          "w": "of",
+          "start": 5
+        },
+        {
+          "w": "text.",
+          "start": 5.12
+        }
+      ],
+      "matchScore": 0.5
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "And it showed that pretraining on plain text pays off.",
+      "spoken": "And it showed that pretraining on plain text pays off.",
+      "textHash": "5d685b8a9ffc8a0e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a523e0dcd13b0d71.wav",
+      "duration": 2.834,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.08
+        },
+        {
+          "w": "showed",
+          "start": 0.24
+        },
+        {
+          "w": "that",
+          "start": 0.56
+        },
+        {
+          "w": "pretraining",
+          "start": 0.72
+        },
+        {
+          "w": "on",
+          "start": 1.28
+        },
+        {
+          "w": "plain",
+          "start": 1.44
+        },
+        {
+          "w": "text",
+          "start": 1.76
+        },
+        {
+          "w": "pays",
+          "start": 2.16
+        },
+        {
+          "w": "off.",
+          "start": 2.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "Next lesson: BERT. How did BERT learn language by filling in the blanks?",
+      "spoken": "Next lesson: BERT. How did BERT learn language by filling in the blanks?",
+      "textHash": "8a2e340922cd06da",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a4017ae771bc4a50.wav",
+      "duration": 4.252,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.307
+        },
+        {
+          "w": "lesson:",
+          "start": 0.613
+        },
+        {
+          "w": "BERT.",
+          "start": 0.92
+        },
+        {
+          "w": "How",
+          "start": 1.48
+        },
+        {
+          "w": "did",
+          "start": 1.76
+        },
+        {
+          "w": "BERT",
+          "start": 1.92
+        },
+        {
+          "w": "learn",
+          "start": 2.24
+        },
+        {
+          "w": "language",
+          "start": 2.56
+        },
+        {
+          "w": "by",
+          "start": 3
+        },
+        {
+          "w": "filling",
+          "start": 3.16
+        },
+        {
+          "w": "in",
+          "start": 3.48
+        },
+        {
+          "w": "the",
+          "start": 3.6
+        },
+        {
+          "w": "blanks?",
+          "start": 3.72
+        }
+      ],
+      "matchScore": 0.818
+    }
+  }
+}

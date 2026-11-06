@@ -1,0 +1,234 @@
+{
+  "id": "u5-01",
+  "thumbnail": {
+    "headline": "Same word, different meaning",
+    "big": "bank ≠ bank"
+  },
+  "tags": [
+    "ELMo",
+    "contextual embeddings",
+    "word sense",
+    "pretraining",
+    "language models"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Contextual Embeddings",
+        "subtitle": "One word, many meanings, many vectors"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "The same word should get a different vector in a different sentence.",
+        "highlight": [
+          "different vector"
+        ]
+      }
+    },
+    {
+      "id": "vs",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Static versus contextual",
+      "props": {
+        "kicker": "Two kinds",
+        "title": "Static versus contextual vectors",
+        "columns": [
+          {
+            "title": "Static (Word2Vec)",
+            "items": [
+              "one vector per word",
+              "“bank” is always the same"
+            ],
+            "tone": "bad"
+          },
+          {
+            "title": "Contextual (ELMo)",
+            "items": [
+              "a new vector in every sentence",
+              "river bank ≠ money bank"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Meaning depends on context"
+        }
+      }
+    },
+    {
+      "id": "bank",
+      "kind": "core",
+      "component": "Table",
+      "title": "One word, three meanings",
+      "short": true,
+      "shortTitle": "Why “bank” needs three different meanings in AI",
+      "props": {
+        "kicker": "Example",
+        "title": "Three sentences with “bank”",
+        "columns": [
+          "Sentence",
+          "Meaning"
+        ],
+        "rows": [
+          [
+            "We sat on the bank of the river",
+            "the side of a river"
+          ],
+          [
+            "I paid money into the bank",
+            "a place for money"
+          ],
+          [
+            "Don't bank on it",
+            "to rely on (a verb)"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 0,
+            "col": 1
+          },
+          {
+            "row": 1,
+            "col": 1
+          },
+          {
+            "row": 2,
+            "col": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "elmo",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is ELMo?",
+      "props": {
+        "kicker": "2018",
+        "term": "ELMo",
+        "definition": "Embeddings from Language Models: word vectors taken from a deep, two-way LSTM language model, so each depends on the whole sentence.",
+        "example": "bank → computed from “sat on the … of the river”",
+        "analogy": "Asking what a word means while holding the whole sentence in mind."
+      }
+    },
+    {
+      "id": "build",
+      "kind": "core",
+      "component": "Steps",
+      "title": "How ELMo works",
+      "props": {
+        "kicker": "How it works",
+        "title": "How ELMo makes a vector",
+        "steps": [
+          {
+            "label": "Pretrain",
+            "detail": "a forward and a backward LSTM language model"
+          },
+          {
+            "label": "Read",
+            "detail": "run both over your sentence"
+          },
+          {
+            "label": "Mix",
+            "detail": "blend their layers for each word"
+          },
+          {
+            "label": "Plug in",
+            "detail": "feed the vectors to your own model"
+          }
+        ]
+      }
+    },
+    {
+      "id": "layers",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "What the layers learn",
+      "props": {
+        "kicker": "Inside ELMo",
+        "title": "Different layers, different knowledge",
+        "items": [
+          {
+            "text": "Lower layers: more about grammar"
+          },
+          {
+            "text": "Higher layers: more about meaning in context"
+          },
+          {
+            "text": "Each task can weight the layers it needs"
+          }
+        ]
+      }
+    },
+    {
+      "id": "impact",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Why it mattered",
+      "props": {
+        "kicker": "Impact",
+        "title": "Why ELMo mattered",
+        "items": [
+          {
+            "text": "Better results across many NLP tasks"
+          },
+          {
+            "text": "Proved that pretraining on plain text pays off"
+          },
+          {
+            "text": "Opened the door to BERT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: Word2Vec or ELMo?",
+      "props": {
+        "question": "What's the main difference between ELMo vectors and Word2Vec vectors?",
+        "options": [
+          "ELMo vectors depend on the sentence",
+          "ELMo vectors are shorter",
+          "ELMo ignores word order"
+        ],
+        "answer": 0,
+        "explain": "Word2Vec gives one vector per word; ELMo computes a new one from each sentence."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Static vectors: one per word, whatever the sentence",
+          "Contextual vectors change with the sentence",
+          "ELMo takes them from a two-way LSTM language model",
+          "Pretraining on plain text pays off"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
