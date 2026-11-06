@@ -11,7 +11,7 @@ import { fillTemplate, sha, templateContext, type EpisodeCtx } from "./project.j
 import { readLock } from "./audio/pipeline.js";
 import { mixAt } from "./audio/tools.js";
 import { outDir, type Timeline } from "./timeline.js";
-import { getBundle, readTimeline, renderEpisode, segmentKey } from "./render.js";
+import { codeHash, getBundle, readTimeline, renderEpisode, segmentKey } from "./render.js";
 
 const browserExecutable = () => process.env.REMOTION_BROWSER_EXECUTABLE || null;
 const ff = (args: string[]) => {
@@ -93,7 +93,8 @@ export async function renderShorts(ctx: EpisodeCtx, tl: Timeline, log: (s: strin
   const root = ctx.project.code, dir = path.join(outDir(ctx), "shorts");
   const cache = path.join(root, ".cache", "shorts", ctx.key);
   fs.mkdirSync(dir, { recursive: true }); fs.mkdirSync(cache, { recursive: true });
-  const code = sha(fs.readFileSync(path.join(root, "remotion", "Short.tsx"), "utf8"));
+  // the whole visual code (scenes and the Short layout), so any change to either re-renders the Short
+  const code = codeHash(root);
   const results: { id: string; file: string; seconds: number; rendered: boolean; warning?: string }[] = [];
   for (const seg of tl.segments.filter((s) => s.short)) {
     const key = sha(code, segmentKey(tl, seg, code), seg.shortTitle, tl.shorts, tl.badge);

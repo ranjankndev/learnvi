@@ -24,7 +24,7 @@ export function readTimeline(ctx: EpisodeCtx): Timeline {
 }
 
 /** Hash of the visual code (everything in remotion/ except generated timelines). */
-function codeHash(root: string) {
+export function codeHash(root: string) {
   const dir = path.join(root, "remotion");
   const files: string[] = [];
   const walk = (d: string) => fs.readdirSync(d, { withFileTypes: true }).forEach((e) => {
