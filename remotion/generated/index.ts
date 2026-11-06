@@ -6,8 +6,9 @@ import t_nlp_basics_u1_04 from "./nlp-basics-u1-04.json";
 import t_nlp_basics_u2_01 from "./nlp-basics-u2-01.json";
 import t_nlp_basics_u2_02 from "./nlp-basics-u2-02.json";
 import t_nlp_basics_u2_03 from "./nlp-basics-u2-03.json";
+import t_nlp_basics_u2_04 from "./nlp-basics-u2-04.json";
 import t_nlp_basics_u4_01 from "./nlp-basics-u4-01.json";
 import t_press_enter_ep03 from "./press-enter-ep03.json";
 import type { Timeline } from "../types";
 
-export const TIMELINES = [t_nlp_basics_u1_01, t_nlp_basics_u1_02, t_nlp_basics_u1_03, t_nlp_basics_u1_04, t_nlp_basics_u2_01, t_nlp_basics_u2_02, t_nlp_basics_u2_03, t_nlp_basics_u4_01, t_press_enter_ep03] as unknown as Timeline[];
+export const TIMELINES = [t_nlp_basics_u1_01, t_nlp_basics_u1_02, t_nlp_basics_u1_03, t_nlp_basics_u1_04, t_nlp_basics_u2_01, t_nlp_basics_u2_02, t_nlp_basics_u2_03, t_nlp_basics_u2_04, t_nlp_basics_u4_01, t_press_enter_ep03] as unknown as Timeline[];

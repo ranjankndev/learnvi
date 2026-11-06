@@ -1,0 +1,204 @@
+{
+  "id": "u2-04",
+  "thumbnail": {
+    "headline": "Artist or judge? Two kinds of AI",
+    "big": "artist vs judge"
+  },
+  "tags": [
+    "generative model",
+    "discriminative model",
+    "naive bayes",
+    "logistic regression",
+    "machine learning"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Generative vs Discriminative",
+        "subtitle": "Two ways a model can learn"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "One kind learns how the data is made. The other learns where the boundary is.",
+        "highlight": [
+          "made.",
+          "boundary"
+        ]
+      }
+    },
+    {
+      "id": "gen",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Generative models",
+      "props": {
+        "kicker": "Generative",
+        "term": "Generative model",
+        "definition": "Learns what examples of each class look like, then asks which class most likely produced a new example.",
+        "example": "spam often contains: free · winner · prize",
+        "analogy": "An artist who has learned to paint both cats and dogs."
+      }
+    },
+    {
+      "id": "disc",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Discriminative models",
+      "props": {
+        "kicker": "Discriminative",
+        "term": "Discriminative model",
+        "definition": "Learns directly which clues separate the classes, without learning how the data is made.",
+        "example": "free + many links → spam",
+        "analogy": "A judge who can tell cats from dogs, but couldn't paint either."
+      }
+    },
+    {
+      "id": "side",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Side by side",
+      "short": true,
+      "shortTitle": "Generative vs discriminative, explained with cats and dogs",
+      "props": {
+        "kicker": "Side by side",
+        "title": "Artist versus judge",
+        "columns": [
+          {
+            "title": "Generative",
+            "items": [
+              "learns what each class looks like",
+              "could create new examples",
+              "Naive Bayes · HMM"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Discriminative",
+            "items": [
+              "learns the dividing line",
+              "only answers: which class?",
+              "logistic regression · CRF"
+            ],
+            "tone": "neutral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "models",
+      "kind": "core",
+      "component": "Table",
+      "title": "Models you'll meet",
+      "props": {
+        "kicker": "In this course",
+        "title": "Which kind is each model?",
+        "columns": [
+          "Model",
+          "Kind",
+          "Used for"
+        ],
+        "rows": [
+          [
+            "Naive Bayes",
+            "generative",
+            "classifying text"
+          ],
+          [
+            "Hidden Markov Model",
+            "generative",
+            "POS tagging"
+          ],
+          [
+            "Logistic regression",
+            "discriminative",
+            "classifying text"
+          ],
+          [
+            "CRF",
+            "discriminative",
+            "tagging, chunking"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "when",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Which is better?",
+      "props": {
+        "kicker": "Which wins?",
+        "title": "When each kind shines",
+        "columns": [
+          {
+            "title": "Generative",
+            "items": [
+              "learns well from little data",
+              "makes strong assumptions",
+              "can fill in missing pieces"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Discriminative",
+            "items": [
+              "usually more accurate with lots of data",
+              "can mix overlapping clues freely",
+              "needs more labelled data"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "With plenty of labelled data, discriminative usually wins"
+        }
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: artist or judge?",
+      "props": {
+        "question": "A model learns only the line that separates spam from normal mail. What kind is it?",
+        "options": [
+          "Generative",
+          "Discriminative"
+        ],
+        "answer": 1,
+        "explain": "It learns the boundary, not how emails are written."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "Generative: learn how each class's data is made",
+          "Discriminative: learn the boundary between classes",
+          "Naive Bayes and HMMs are generative; logistic regression and CRFs are discriminative",
+          "Lots of labelled data usually favours discriminative"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}

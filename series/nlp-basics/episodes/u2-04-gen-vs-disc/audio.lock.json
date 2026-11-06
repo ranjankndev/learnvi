@@ -1,0 +1,2413 @@
+{
+  "version": 1,
+  "episode": "u2-04",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 2, lesson 4: generative versus discriminative models.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 2, lesson 4: generative versus discriminative models.",
+      "textHash": "03b531da4b8b5ac8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0031a5dd05faf316.wav",
+      "duration": 7.67,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.52
+        },
+        {
+          "w": "to",
+          "start": 0.88
+        },
+        {
+          "w": "NLP,",
+          "start": 1.24
+        },
+        {
+          "w": "Simply",
+          "start": 1.6
+        },
+        {
+          "w": "Explained.",
+          "start": 2.28
+        },
+        {
+          "w": "This",
+          "start": 3.12
+        },
+        {
+          "w": "is",
+          "start": 3.44
+        },
+        {
+          "w": "unit",
+          "start": 3.68
+        },
+        {
+          "w": "2,",
+          "start": 4.053
+        },
+        {
+          "w": "lesson",
+          "start": 4.427
+        },
+        {
+          "w": "4:",
+          "start": 4.8
+        },
+        {
+          "w": "generative",
+          "start": 5.307
+        },
+        {
+          "w": "versus",
+          "start": 5.813
+        },
+        {
+          "w": "discriminative",
+          "start": 6.32
+        },
+        {
+          "w": "models.",
+          "start": 7.12
+        }
+      ],
+      "matchScore": 0.643
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "These two words sound technical, but they describe a simple difference in how a model learns. Once you see it, a lot of NLP falls into place.",
+      "spoken": "These two words sound technical, but they describe a simple difference in how a model learns. Once you see it, a lot of N L P falls into place.",
+      "textHash": "a5c2c441166b89d4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b1b6e1a8fa198fc8.wav",
+      "duration": 8.846,
+      "marks": {},
+      "words": [
+        {
+          "w": "These",
+          "start": 0
+        },
+        {
+          "w": "two",
+          "start": 0.28
+        },
+        {
+          "w": "words",
+          "start": 0.52
+        },
+        {
+          "w": "sound",
+          "start": 0.88
+        },
+        {
+          "w": "technical,",
+          "start": 1.2
+        },
+        {
+          "w": "but",
+          "start": 1.88
+        },
+        {
+          "w": "they",
+          "start": 2.08
+        },
+        {
+          "w": "describe",
+          "start": 2.28
+        },
+        {
+          "w": "a",
+          "start": 2.84
+        },
+        {
+          "w": "simple",
+          "start": 2.96
+        },
+        {
+          "w": "difference",
+          "start": 3.36
+        },
+        {
+          "w": "in",
+          "start": 3.76
+        },
+        {
+          "w": "how",
+          "start": 3.96
+        },
+        {
+          "w": "a",
+          "start": 4.12
+        },
+        {
+          "w": "model",
+          "start": 4.24
+        },
+        {
+          "w": "learns.",
+          "start": 4.68
+        },
+        {
+          "w": "Once",
+          "start": 5.32
+        },
+        {
+          "w": "you",
+          "start": 5.72
+        },
+        {
+          "w": "see",
+          "start": 5.92
+        },
+        {
+          "w": "it,",
+          "start": 6.16
+        },
+        {
+          "w": "a",
+          "start": 6.4
+        },
+        {
+          "w": "lot",
+          "start": 6.64
+        },
+        {
+          "w": "of",
+          "start": 7
+        },
+        {
+          "w": "NLP",
+          "start": 7.36
+        },
+        {
+          "w": "falls",
+          "start": 7.72
+        },
+        {
+          "w": "into",
+          "start": 8.16
+        },
+        {
+          "w": "place.",
+          "start": 8.48
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the whole idea. One kind of model learns how each kind of data is made. The other kind just learns where the boundary between them is.",
+      "spoken": "Here's the whole idea. One kind of model learns how each kind of data is made. The other kind just learns where the boundary between them is.",
+      "textHash": "2178714e3c8793ce",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/03af32092fed6001.wav",
+      "duration": 8.389,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "whole",
+          "start": 0.52
+        },
+        {
+          "w": "idea.",
+          "start": 0.88
+        },
+        {
+          "w": "One",
+          "start": 1.52
+        },
+        {
+          "w": "kind",
+          "start": 1.92
+        },
+        {
+          "w": "of",
+          "start": 2.16
+        },
+        {
+          "w": "model",
+          "start": 2.32
+        },
+        {
+          "w": "learns",
+          "start": 2.72
+        },
+        {
+          "w": "how",
+          "start": 3.12
+        },
+        {
+          "w": "each",
+          "start": 3.32
+        },
+        {
+          "w": "kind",
+          "start": 3.6
+        },
+        {
+          "w": "of",
+          "start": 3.8
+        },
+        {
+          "w": "data",
+          "start": 3.96
+        },
+        {
+          "w": "is",
+          "start": 4.4
+        },
+        {
+          "w": "made.",
+          "start": 4.64
+        },
+        {
+          "w": "The",
+          "start": 5.04
+        },
+        {
+          "w": "other",
+          "start": 5.28
+        },
+        {
+          "w": "kind",
+          "start": 5.6
+        },
+        {
+          "w": "just",
+          "start": 5.92
+        },
+        {
+          "w": "learns",
+          "start": 6.2
+        },
+        {
+          "w": "where",
+          "start": 6.64
+        },
+        {
+          "w": "the",
+          "start": 6.76
+        },
+        {
+          "w": "boundary",
+          "start": 6.88
+        },
+        {
+          "w": "between",
+          "start": 7.44
+        },
+        {
+          "w": "them",
+          "start": 7.8
+        },
+        {
+          "w": "is.",
+          "start": 8.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c04": {
+      "segment": "gen",
+      "display": "A generative model learns what examples of each class look like. Then, for a new example, it asks: which class most likely produced this?",
+      "spoken": "A generative model learns what examples of each class look like. Then, for a new example, it asks: which class most likely produced this?",
+      "textHash": "6f1a01e3225f1e6f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c65f5d86b0b58de6.wav",
+      "duration": 8.624,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "generative",
+          "start": 0.32
+        },
+        {
+          "w": "model",
+          "start": 0.64
+        },
+        {
+          "w": "learns",
+          "start": 1.08
+        },
+        {
+          "w": "what",
+          "start": 1.44
+        },
+        {
+          "w": "examples",
+          "start": 1.64
+        },
+        {
+          "w": "of",
+          "start": 2.2
+        },
+        {
+          "w": "each",
+          "start": 2.36
+        },
+        {
+          "w": "class",
+          "start": 2.6
+        },
+        {
+          "w": "look",
+          "start": 3
+        },
+        {
+          "w": "like.",
+          "start": 3.28
+        },
+        {
+          "w": "Then,",
+          "start": 3.76
+        },
+        {
+          "w": "for",
+          "start": 4.24
+        },
+        {
+          "w": "a",
+          "start": 4.56
+        },
+        {
+          "w": "new",
+          "start": 4.72
+        },
+        {
+          "w": "example,",
+          "start": 4.96
+        },
+        {
+          "w": "it",
+          "start": 5.6
+        },
+        {
+          "w": "asks:",
+          "start": 5.8
+        },
+        {
+          "w": "which",
+          "start": 6.48
+        },
+        {
+          "w": "class",
+          "start": 6.72
+        },
+        {
+          "w": "most",
+          "start": 7.2
+        },
+        {
+          "w": "likely",
+          "start": 7.44
+        },
+        {
+          "w": "produced",
+          "start": 7.84
+        },
+        {
+          "w": "this?",
+          "start": 8.32
+        }
+      ],
+      "matchScore": 0.95
+    },
+    "c05": {
+      "segment": "gen",
+      "display": "For spam, it learns that spam emails often contain words like free, winner and prize, and that normal emails contain other words.",
+      "spoken": "For spam, it learns that spam emails often contain words like free, winner and prize, and that normal emails contain other words.",
+      "textHash": "270f07d0e7f6a229",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8f0f0b74acf313de.wav",
+      "duration": 8.501,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "spam,",
+          "start": 0.24
+        },
+        {
+          "w": "it",
+          "start": 0.72
+        },
+        {
+          "w": "learns",
+          "start": 0.96
+        },
+        {
+          "w": "that",
+          "start": 1.36
+        },
+        {
+          "w": "spam",
+          "start": 1.6
+        },
+        {
+          "w": "emails",
+          "start": 2.08
+        },
+        {
+          "w": "often",
+          "start": 2.56
+        },
+        {
+          "w": "contain",
+          "start": 2.88
+        },
+        {
+          "w": "words",
+          "start": 3.36
+        },
+        {
+          "w": "like",
+          "start": 3.72
+        },
+        {
+          "w": "free,",
+          "start": 4
+        },
+        {
+          "w": "winner",
+          "start": 4.48
+        },
+        {
+          "w": "and",
+          "start": 4.92
+        },
+        {
+          "w": "prize,",
+          "start": 5.12
+        },
+        {
+          "w": "and",
+          "start": 5.68
+        },
+        {
+          "w": "that",
+          "start": 5.96
+        },
+        {
+          "w": "normal",
+          "start": 6.24
+        },
+        {
+          "w": "emails",
+          "start": 6.76
+        },
+        {
+          "w": "contain",
+          "start": 7.28
+        },
+        {
+          "w": "other",
+          "start": 7.8
+        },
+        {
+          "w": "words.",
+          "start": 8.08
+        }
+      ],
+      "matchScore": 0.905
+    },
+    "c06": {
+      "segment": "gen",
+      "display": "Think of an artist who has learned to paint both cats and dogs. Show them a new animal, and they ask which of their two pictures it resembles.",
+      "spoken": "Think of an artist who has learned to paint both cats and dogs. Show them a new animal, and they ask which of their two pictures it resembles.",
+      "textHash": "78b90e4f44b0e0ed",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7e03fe5d010800fc.wav",
+      "duration": 7.799,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "an",
+          "start": 0.32
+        },
+        {
+          "w": "artist",
+          "start": 0.48
+        },
+        {
+          "w": "who",
+          "start": 0.88
+        },
+        {
+          "w": "has",
+          "start": 1.04
+        },
+        {
+          "w": "learned",
+          "start": 1.2
+        },
+        {
+          "w": "to",
+          "start": 1.44
+        },
+        {
+          "w": "paint",
+          "start": 1.56
+        },
+        {
+          "w": "both",
+          "start": 1.88
+        },
+        {
+          "w": "cats",
+          "start": 2.16
+        },
+        {
+          "w": "and",
+          "start": 2.6
+        },
+        {
+          "w": "dogs.",
+          "start": 2.88
+        },
+        {
+          "w": "Show",
+          "start": 3.52
+        },
+        {
+          "w": "them",
+          "start": 3.84
+        },
+        {
+          "w": "a",
+          "start": 4.04
+        },
+        {
+          "w": "new",
+          "start": 4.2
+        },
+        {
+          "w": "animal,",
+          "start": 4.44
+        },
+        {
+          "w": "and",
+          "start": 4.96
+        },
+        {
+          "w": "they",
+          "start": 5.16
+        },
+        {
+          "w": "ask",
+          "start": 5.36
+        },
+        {
+          "w": "which",
+          "start": 5.72
+        },
+        {
+          "w": "of",
+          "start": 5.92
+        },
+        {
+          "w": "their",
+          "start": 6.04
+        },
+        {
+          "w": "two",
+          "start": 6.24
+        },
+        {
+          "w": "pictures",
+          "start": 6.44
+        },
+        {
+          "w": "it",
+          "start": 6.96
+        },
+        {
+          "w": "resembles.",
+          "start": 7.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c07": {
+      "segment": "disc",
+      "display": "A discriminative model skips that. It learns directly which clues separate the classes, without learning how the data is made.",
+      "spoken": "A discriminative model skips that. It learns directly which clues separate the classes, without learning how the data is made.",
+      "textHash": "f7070742d1ea2bc4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e1c9aee768b6843f.wav",
+      "duration": 7.177,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "discriminative",
+          "start": 0.12
+        },
+        {
+          "w": "model",
+          "start": 0.92
+        },
+        {
+          "w": "skips",
+          "start": 1.28
+        },
+        {
+          "w": "that.",
+          "start": 1.8
+        },
+        {
+          "w": "It",
+          "start": 2.12
+        },
+        {
+          "w": "learns",
+          "start": 2.36
+        },
+        {
+          "w": "directly",
+          "start": 2.84
+        },
+        {
+          "w": "which",
+          "start": 3.36
+        },
+        {
+          "w": "clues",
+          "start": 3.6
+        },
+        {
+          "w": "separate",
+          "start": 4
+        },
+        {
+          "w": "the",
+          "start": 4.36
+        },
+        {
+          "w": "classes,",
+          "start": 4.52
+        },
+        {
+          "w": "without",
+          "start": 5.2
+        },
+        {
+          "w": "learning",
+          "start": 5.52
+        },
+        {
+          "w": "how",
+          "start": 5.92
+        },
+        {
+          "w": "the",
+          "start": 6.12
+        },
+        {
+          "w": "data",
+          "start": 6.28
+        },
+        {
+          "w": "is",
+          "start": 6.68
+        },
+        {
+          "w": "made.",
+          "start": 6.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "disc",
+      "display": "For spam, it might learn that the word free, together with lots of links, pushes an email over the line into spam.",
+      "spoken": "For spam, it might learn that the word free, together with lots of links, pushes an email over the line into spam.",
+      "textHash": "e02d058ac6d99887",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0df651f8772e6cbb.wav",
+      "duration": 6.735,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "spam,",
+          "start": 0.2
+        },
+        {
+          "w": "it",
+          "start": 0.68
+        },
+        {
+          "w": "might",
+          "start": 0.88
+        },
+        {
+          "w": "learn",
+          "start": 1.16
+        },
+        {
+          "w": "that",
+          "start": 1.48
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "word",
+          "start": 1.84
+        },
+        {
+          "w": "free,",
+          "start": 2.16
+        },
+        {
+          "w": "together",
+          "start": 2.64
+        },
+        {
+          "w": "with",
+          "start": 3.12
+        },
+        {
+          "w": "lots",
+          "start": 3.32
+        },
+        {
+          "w": "of",
+          "start": 3.64
+        },
+        {
+          "w": "links,",
+          "start": 3.96
+        },
+        {
+          "w": "pushes",
+          "start": 4.28
+        },
+        {
+          "w": "an",
+          "start": 4.72
+        },
+        {
+          "w": "email",
+          "start": 5.02
+        },
+        {
+          "w": "over",
+          "start": 5.32
+        },
+        {
+          "w": "the",
+          "start": 5.48
+        },
+        {
+          "w": "line",
+          "start": 5.64
+        },
+        {
+          "w": "into",
+          "start": 6
+        },
+        {
+          "w": "spam.",
+          "start": 6.367
+        }
+      ],
+      "matchScore": 0.842
+    },
+    "c09": {
+      "segment": "disc",
+      "display": "Think of a judge at a pet show who can instantly tell cats from dogs, but couldn't paint either one.",
+      "spoken": "Think of a judge at a pet show who can instantly tell cats from dogs, but couldn't paint either one.",
+      "textHash": "4279e42c9d5ed1c4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/61ba2f07ef94cc2e.wav",
+      "duration": 5.551,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.36
+        },
+        {
+          "w": "judge",
+          "start": 0.48
+        },
+        {
+          "w": "at",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "pet",
+          "start": 1.16
+        },
+        {
+          "w": "show",
+          "start": 1.4
+        },
+        {
+          "w": "who",
+          "start": 1.76
+        },
+        {
+          "w": "can",
+          "start": 1.96
+        },
+        {
+          "w": "instantly",
+          "start": 2.16
+        },
+        {
+          "w": "tell",
+          "start": 2.68
+        },
+        {
+          "w": "cats",
+          "start": 2.92
+        },
+        {
+          "w": "from",
+          "start": 3.32
+        },
+        {
+          "w": "dogs,",
+          "start": 3.52
+        },
+        {
+          "w": "but",
+          "start": 4.04
+        },
+        {
+          "w": "couldn't",
+          "start": 4.24
+        },
+        {
+          "w": "paint",
+          "start": 4.64
+        },
+        {
+          "w": "either",
+          "start": 4.96
+        },
+        {
+          "w": "one.",
+          "start": 5.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "side",
+      "display": "Let's put them side by side.",
+      "spoken": "Let's put them side by side.",
+      "textHash": "1e47b0cbdadcb6e4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c730bf27616855ce.wav",
+      "duration": 1.662,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "put",
+          "start": 0.32
+        },
+        {
+          "w": "them",
+          "start": 0.588
+        },
+        {
+          "w": "side",
+          "start": 0.857
+        },
+        {
+          "w": "by",
+          "start": 1.125
+        },
+        {
+          "w": "side.",
+          "start": 1.394
+        }
+      ],
+      "matchScore": 0.4
+    },
+    "c11": {
+      "segment": "side",
+      "display": "The generative model learns what each class looks like, so in principle it could even create new examples. Naive Bayes and hidden Markov models are generative.",
+      "spoken": "The generative model learns what each class looks like, so in principle it could even create new examples. Naive Bayes and hidden Markov models are generative.",
+      "textHash": "4579725089cb1b98",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/670c62696fb84f1f.wav",
+      "duration": 9.951,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "generative",
+          "start": 0.12
+        },
+        {
+          "w": "model",
+          "start": 0.64
+        },
+        {
+          "w": "learns",
+          "start": 1.04
+        },
+        {
+          "w": "what",
+          "start": 1.48
+        },
+        {
+          "w": "each",
+          "start": 1.68
+        },
+        {
+          "w": "class",
+          "start": 1.92
+        },
+        {
+          "w": "looks",
+          "start": 2.32
+        },
+        {
+          "w": "like,",
+          "start": 2.64
+        },
+        {
+          "w": "so",
+          "start": 3
+        },
+        {
+          "w": "in",
+          "start": 3.24
+        },
+        {
+          "w": "principle",
+          "start": 3.44
+        },
+        {
+          "w": "it",
+          "start": 4.12
+        },
+        {
+          "w": "could",
+          "start": 4.32
+        },
+        {
+          "w": "even",
+          "start": 4.56
+        },
+        {
+          "w": "create",
+          "start": 4.8
+        },
+        {
+          "w": "new",
+          "start": 5.32
+        },
+        {
+          "w": "examples.",
+          "start": 5.6
+        },
+        {
+          "w": "Naive",
+          "start": 6.68
+        },
+        {
+          "w": "Bayes",
+          "start": 7.2
+        },
+        {
+          "w": "and",
+          "start": 7.72
+        },
+        {
+          "w": "hidden",
+          "start": 7.88
+        },
+        {
+          "w": "Markov",
+          "start": 8.3
+        },
+        {
+          "w": "models",
+          "start": 8.72
+        },
+        {
+          "w": "are",
+          "start": 9.16
+        },
+        {
+          "w": "generative.",
+          "start": 9.28
+        }
+      ],
+      "matchScore": 0.913
+    },
+    "c12": {
+      "segment": "side",
+      "display": "The discriminative model learns only the dividing line, and answers just one question: which class is this? Logistic regression and conditional random fields are discriminative.",
+      "spoken": "The discriminative model learns only the dividing line, and answers just one question: which class is this? Logistic regression and conditional random fields are discriminative.",
+      "textHash": "4fe4d0f29408509b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d3948e9a83a93289.wav",
+      "duration": 11.189,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "discriminative",
+          "start": 0.12
+        },
+        {
+          "w": "model",
+          "start": 0.88
+        },
+        {
+          "w": "learns",
+          "start": 1.32
+        },
+        {
+          "w": "only",
+          "start": 1.76
+        },
+        {
+          "w": "the",
+          "start": 2
+        },
+        {
+          "w": "dividing",
+          "start": 2.16
+        },
+        {
+          "w": "line,",
+          "start": 2.8
+        },
+        {
+          "w": "and",
+          "start": 3.2
+        },
+        {
+          "w": "answers",
+          "start": 3.52
+        },
+        {
+          "w": "just",
+          "start": 4.04
+        },
+        {
+          "w": "one",
+          "start": 4.48
+        },
+        {
+          "w": "question:",
+          "start": 4.92
+        },
+        {
+          "w": "which",
+          "start": 5.36
+        },
+        {
+          "w": "class",
+          "start": 5.68
+        },
+        {
+          "w": "is",
+          "start": 6.12
+        },
+        {
+          "w": "this?",
+          "start": 6.4
+        },
+        {
+          "w": "Logistic",
+          "start": 7
+        },
+        {
+          "w": "regression",
+          "start": 7.64
+        },
+        {
+          "w": "and",
+          "start": 8.28
+        },
+        {
+          "w": "conditional",
+          "start": 8.48
+        },
+        {
+          "w": "random",
+          "start": 9.08
+        },
+        {
+          "w": "fields",
+          "start": 9.56
+        },
+        {
+          "w": "are",
+          "start": 10.04
+        },
+        {
+          "w": "discriminative.",
+          "start": 10.24
+        }
+      ],
+      "matchScore": 0.917
+    },
+    "c13": {
+      "segment": "models",
+      "display": "Here are models from this course, sorted into the two kinds.",
+      "spoken": "Here are models from this course, sorted into the two kinds.",
+      "textHash": "8dd3dd8cd238bab7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/213e0d1c37b6c1b1.wav",
+      "duration": 3.218,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "are",
+          "start": 0.24
+        },
+        {
+          "w": "models",
+          "start": 0.4
+        },
+        {
+          "w": "from",
+          "start": 0.88
+        },
+        {
+          "w": "this",
+          "start": 1.04
+        },
+        {
+          "w": "course,",
+          "start": 1.28
+        },
+        {
+          "w": "sorted",
+          "start": 1.68
+        },
+        {
+          "w": "into",
+          "start": 2.16
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "two",
+          "start": 2.48
+        },
+        {
+          "w": "kinds.",
+          "start": 2.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c14": {
+      "segment": "models",
+      "display": "Naive Bayes, from our text classification lesson, is generative.",
+      "spoken": "Naive Bayes, from our text classification lesson, is generative.",
+      "textHash": "9d39fe949c910316",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6ab4a8267ee38d88.wav",
+      "duration": 3.959,
+      "marks": {},
+      "words": [
+        {
+          "w": "Naive",
+          "start": 0
+        },
+        {
+          "w": "Bayes,",
+          "start": 0.48
+        },
+        {
+          "w": "from",
+          "start": 0.96
+        },
+        {
+          "w": "our",
+          "start": 1.12
+        },
+        {
+          "w": "text",
+          "start": 1.28
+        },
+        {
+          "w": "classification",
+          "start": 1.853
+        },
+        {
+          "w": "lesson,",
+          "start": 2.427
+        },
+        {
+          "w": "is",
+          "start": 3
+        },
+        {
+          "w": "generative.",
+          "start": 3.24
+        }
+      ],
+      "matchScore": 0.625
+    },
+    "c15": {
+      "segment": "models",
+      "display": "Hidden Markov models, a classic way to tag parts of speech, are generative too. They're next lesson.",
+      "spoken": "Hidden Markov models, a classic way to tag parts of speech, are generative too. They're next lesson.",
+      "textHash": "d7226eb701aab931",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ef39a4c020b5ee01.wav",
+      "duration": 6.138,
+      "marks": {},
+      "words": [
+        {
+          "w": "Hidden",
+          "start": 0
+        },
+        {
+          "w": "Markov",
+          "start": 0.42
+        },
+        {
+          "w": "models,",
+          "start": 0.84
+        },
+        {
+          "w": "a",
+          "start": 1.36
+        },
+        {
+          "w": "classic",
+          "start": 1.52
+        },
+        {
+          "w": "way",
+          "start": 2
+        },
+        {
+          "w": "to",
+          "start": 2.2
+        },
+        {
+          "w": "tag",
+          "start": 2.4
+        },
+        {
+          "w": "parts",
+          "start": 2.72
+        },
+        {
+          "w": "of",
+          "start": 3.04
+        },
+        {
+          "w": "speech,",
+          "start": 3.16
+        },
+        {
+          "w": "are",
+          "start": 3.6
+        },
+        {
+          "w": "generative",
+          "start": 3.76
+        },
+        {
+          "w": "too.",
+          "start": 4.44
+        },
+        {
+          "w": "They're",
+          "start": 4.865
+        },
+        {
+          "w": "next",
+          "start": 5.289
+        },
+        {
+          "w": "lesson.",
+          "start": 5.713
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c16": {
+      "segment": "models",
+      "display": "Logistic regression, another popular text classifier, is discriminative.",
+      "spoken": "Logistic regression, another popular text classifier, is discriminative.",
+      "textHash": "748e76db75b2de78",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e951384a2f81ce03.wav",
+      "duration": 4.701,
+      "marks": {},
+      "words": [
+        {
+          "w": "Logistic",
+          "start": 0
+        },
+        {
+          "w": "regression,",
+          "start": 0.64
+        },
+        {
+          "w": "another",
+          "start": 1.44
+        },
+        {
+          "w": "popular",
+          "start": 1.84
+        },
+        {
+          "w": "text",
+          "start": 2.36
+        },
+        {
+          "w": "classifier,",
+          "start": 2.72
+        },
+        {
+          "w": "is",
+          "start": 3.52
+        },
+        {
+          "w": "discriminative.",
+          "start": 3.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "models",
+      "display": "And conditional random fields, used for tagging and chunking, are discriminative. They're the lesson after.",
+      "spoken": "And conditional random fields, used for tagging and chunking, are discriminative. They're the lesson after.",
+      "textHash": "602b32e00f98195d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/919beb398c0f446c.wav",
+      "duration": 6.234,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "conditional",
+          "start": 0.16
+        },
+        {
+          "w": "random",
+          "start": 0.76
+        },
+        {
+          "w": "fields,",
+          "start": 1.24
+        },
+        {
+          "w": "used",
+          "start": 1.8
+        },
+        {
+          "w": "for",
+          "start": 2.12
+        },
+        {
+          "w": "tagging",
+          "start": 2.28
+        },
+        {
+          "w": "and",
+          "start": 2.667
+        },
+        {
+          "w": "chunking,",
+          "start": 3.053
+        },
+        {
+          "w": "are",
+          "start": 3.44
+        },
+        {
+          "w": "discriminative.",
+          "start": 3.68
+        },
+        {
+          "w": "They're",
+          "start": 4.21
+        },
+        {
+          "w": "the",
+          "start": 4.74
+        },
+        {
+          "w": "lesson",
+          "start": 5.27
+        },
+        {
+          "w": "after.",
+          "start": 5.8
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c18": {
+      "segment": "when",
+      "display": "So which is better? It depends on your data.",
+      "spoken": "So which is better? It depends on your data.",
+      "textHash": "41439d5e4134d78f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/548d76b35052c044.wav",
+      "duration": 2.453,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "which",
+          "start": 0.24
+        },
+        {
+          "w": "is",
+          "start": 0.48
+        },
+        {
+          "w": "better?",
+          "start": 0.68
+        },
+        {
+          "w": "It",
+          "start": 1.04
+        },
+        {
+          "w": "depends",
+          "start": 1.28
+        },
+        {
+          "w": "on",
+          "start": 1.72
+        },
+        {
+          "w": "your",
+          "start": 1.84
+        },
+        {
+          "w": "data.",
+          "start": 2.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "when",
+      "display": "Generative models often learn well from just a little data, because they make strong assumptions about how the data is made. When those assumptions are wrong, though, they pay for it.",
+      "spoken": "Generative models often learn well from just a little data, because they make strong assumptions about how the data is made. When those assumptions are wrong, though, they pay for it.",
+      "textHash": "99d749cbd1882bc6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/31713f2877bc93b5.wav",
+      "duration": 10.521,
+      "marks": {},
+      "words": [
+        {
+          "w": "Generative",
+          "start": 0
+        },
+        {
+          "w": "models",
+          "start": 0.64
+        },
+        {
+          "w": "often",
+          "start": 1.2
+        },
+        {
+          "w": "learn",
+          "start": 1.52
+        },
+        {
+          "w": "well",
+          "start": 1.84
+        },
+        {
+          "w": "from",
+          "start": 2.12
+        },
+        {
+          "w": "just",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.56
+        },
+        {
+          "w": "little",
+          "start": 2.72
+        },
+        {
+          "w": "data,",
+          "start": 2.92
+        },
+        {
+          "w": "because",
+          "start": 3.48
+        },
+        {
+          "w": "they",
+          "start": 3.8
+        },
+        {
+          "w": "make",
+          "start": 4.04
+        },
+        {
+          "w": "strong",
+          "start": 4.28
+        },
+        {
+          "w": "assumptions",
+          "start": 4.72
+        },
+        {
+          "w": "about",
+          "start": 5.44
+        },
+        {
+          "w": "how",
+          "start": 5.68
+        },
+        {
+          "w": "the",
+          "start": 5.88
+        },
+        {
+          "w": "data",
+          "start": 6.08
+        },
+        {
+          "w": "is",
+          "start": 6.52
+        },
+        {
+          "w": "made.",
+          "start": 6.76
+        },
+        {
+          "w": "When",
+          "start": 7.24
+        },
+        {
+          "w": "those",
+          "start": 7.52
+        },
+        {
+          "w": "assumptions",
+          "start": 7.84
+        },
+        {
+          "w": "are",
+          "start": 8.52
+        },
+        {
+          "w": "wrong,",
+          "start": 8.72
+        },
+        {
+          "w": "though,",
+          "start": 9.12
+        },
+        {
+          "w": "they",
+          "start": 9.44
+        },
+        {
+          "w": "pay",
+          "start": 9.72
+        },
+        {
+          "w": "for",
+          "start": 10.04
+        },
+        {
+          "w": "it.",
+          "start": 10.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "when",
+      "display": "Discriminative models can mix many overlapping clues freely, and with plenty of labelled data they're usually more accurate. That's why most modern systems are discriminative.",
+      "spoken": "Discriminative models can mix many overlapping clues freely, and with plenty of labelled data they're usually more accurate. That's why most modern systems are discriminative.",
+      "textHash": "9006c384b9e6e986",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2fa8494f727b959b.wav",
+      "duration": 10.545,
+      "marks": {},
+      "words": [
+        {
+          "w": "Discriminative",
+          "start": 0
+        },
+        {
+          "w": "models",
+          "start": 0.8
+        },
+        {
+          "w": "can",
+          "start": 1.28
+        },
+        {
+          "w": "mix",
+          "start": 1.44
+        },
+        {
+          "w": "many",
+          "start": 1.68
+        },
+        {
+          "w": "overlapping",
+          "start": 2.04
+        },
+        {
+          "w": "clues",
+          "start": 2.72
+        },
+        {
+          "w": "freely,",
+          "start": 3.12
+        },
+        {
+          "w": "and",
+          "start": 3.68
+        },
+        {
+          "w": "with",
+          "start": 3.88
+        },
+        {
+          "w": "plenty",
+          "start": 4.08
+        },
+        {
+          "w": "of",
+          "start": 4.52
+        },
+        {
+          "w": "labelled",
+          "start": 4.72
+        },
+        {
+          "w": "data",
+          "start": 5.2
+        },
+        {
+          "w": "they're",
+          "start": 5.58
+        },
+        {
+          "w": "usually",
+          "start": 5.96
+        },
+        {
+          "w": "more",
+          "start": 6.52
+        },
+        {
+          "w": "accurate.",
+          "start": 6.76
+        },
+        {
+          "w": "That's",
+          "start": 7.52
+        },
+        {
+          "w": "why",
+          "start": 8
+        },
+        {
+          "w": "most",
+          "start": 8.24
+        },
+        {
+          "w": "modern",
+          "start": 8.52
+        },
+        {
+          "w": "systems",
+          "start": 8.92
+        },
+        {
+          "w": "are",
+          "start": 9.48
+        },
+        {
+          "w": "discriminative.",
+          "start": 9.68
+        }
+      ],
+      "matchScore": 0.958
+    },
+    "c21": {
+      "segment": "quiz",
+      "display": "Quick quiz. A model learns only the line that separates spam from normal mail, and nothing about how emails are written. What kind is it?",
+      "spoken": "Quick quiz. A model learns only the line that separates spam from normal mail, and nothing about how emails are written. What kind is it?",
+      "textHash": "e88dc87336b7deb6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/62a44cabcbbd69ae.wav",
+      "duration": 8.416,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.24
+        },
+        {
+          "w": "quiz.",
+          "start": 0.48
+        },
+        {
+          "w": "A",
+          "start": 0.72
+        },
+        {
+          "w": "model",
+          "start": 0.92
+        },
+        {
+          "w": "learns",
+          "start": 1.36
+        },
+        {
+          "w": "only",
+          "start": 1.8
+        },
+        {
+          "w": "the",
+          "start": 2.04
+        },
+        {
+          "w": "line",
+          "start": 2.24
+        },
+        {
+          "w": "that",
+          "start": 2.56
+        },
+        {
+          "w": "separates",
+          "start": 2.72
+        },
+        {
+          "w": "spam",
+          "start": 3.22
+        },
+        {
+          "w": "from",
+          "start": 3.72
+        },
+        {
+          "w": "normal",
+          "start": 3.92
+        },
+        {
+          "w": "mail,",
+          "start": 4.36
+        },
+        {
+          "w": "and",
+          "start": 4.8
+        },
+        {
+          "w": "nothing",
+          "start": 5.04
+        },
+        {
+          "w": "about",
+          "start": 5.44
+        },
+        {
+          "w": "how",
+          "start": 5.68
+        },
+        {
+          "w": "emails",
+          "start": 6.1
+        },
+        {
+          "w": "are",
+          "start": 6.52
+        },
+        {
+          "w": "written.",
+          "start": 6.72
+        },
+        {
+          "w": "What",
+          "start": 7.32
+        },
+        {
+          "w": "kind",
+          "start": 7.68
+        },
+        {
+          "w": "is",
+          "start": 7.96
+        },
+        {
+          "w": "it?",
+          "start": 8.16
+        }
+      ],
+      "matchScore": 0.773
+    },
+    "c22": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c23": {
+      "segment": "quiz",
+      "display": "It's discriminative. It learns the boundary between the classes, not how the data is made.",
+      "spoken": "It's discriminative. It learns the boundary between the classes, not how the data is made.",
+      "textHash": "cca61a242e9333d2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/71f9c451827c9b10.wav",
+      "duration": 5.208,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "discriminative.",
+          "start": 0.28
+        },
+        {
+          "w": "It",
+          "start": 1.28
+        },
+        {
+          "w": "learns",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "boundary",
+          "start": 2.08
+        },
+        {
+          "w": "between",
+          "start": 2.6
+        },
+        {
+          "w": "the",
+          "start": 2.88
+        },
+        {
+          "w": "classes,",
+          "start": 3
+        },
+        {
+          "w": "not",
+          "start": 3.6
+        },
+        {
+          "w": "how",
+          "start": 3.88
+        },
+        {
+          "w": "the",
+          "start": 4.08
+        },
+        {
+          "w": "data",
+          "start": 4.28
+        },
+        {
+          "w": "is",
+          "start": 4.68
+        },
+        {
+          "w": "made.",
+          "start": 4.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "recap",
+      "display": "Let's recap. Generative models learn how each class's data is made.",
+      "spoken": "Let's recap. Generative models learn how each class's data is made.",
+      "textHash": "500673513069ce79",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6830e18b54130353.wav",
+      "duration": 4.175,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "Generative",
+          "start": 1.04
+        },
+        {
+          "w": "models",
+          "start": 1.64
+        },
+        {
+          "w": "learn",
+          "start": 2.08
+        },
+        {
+          "w": "how",
+          "start": 2.32
+        },
+        {
+          "w": "each",
+          "start": 2.52
+        },
+        {
+          "w": "class's",
+          "start": 2.8
+        },
+        {
+          "w": "data",
+          "start": 3.28
+        },
+        {
+          "w": "is",
+          "start": 3.68
+        },
+        {
+          "w": "made.",
+          "start": 3.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "recap",
+      "display": "Discriminative models learn the boundary between classes.",
+      "spoken": "Discriminative models learn the boundary between classes.",
+      "textHash": "cb1c03c667888ea9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a23e223068edc8db.wav",
+      "duration": 3.411,
+      "marks": {},
+      "words": [
+        {
+          "w": "Discriminative",
+          "start": 0
+        },
+        {
+          "w": "models",
+          "start": 0.84
+        },
+        {
+          "w": "learn",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.76
+        },
+        {
+          "w": "boundary",
+          "start": 1.88
+        },
+        {
+          "w": "between",
+          "start": 2.44
+        },
+        {
+          "w": "classes.",
+          "start": 2.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "recap",
+      "display": "Naive Bayes and hidden Markov models are generative. Logistic regression and conditional random fields are discriminative.",
+      "spoken": "Naive Bayes and hidden Markov models are generative. Logistic regression and conditional random fields are discriminative.",
+      "textHash": "56974e6209dcefb7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5e3b22eb93ed6c60.wav",
+      "duration": 7.985,
+      "marks": {},
+      "words": [
+        {
+          "w": "Naive",
+          "start": 0
+        },
+        {
+          "w": "Bayes",
+          "start": 0.5
+        },
+        {
+          "w": "and",
+          "start": 1
+        },
+        {
+          "w": "hidden",
+          "start": 1.2
+        },
+        {
+          "w": "Markov",
+          "start": 1.56
+        },
+        {
+          "w": "models",
+          "start": 2
+        },
+        {
+          "w": "are",
+          "start": 2.52
+        },
+        {
+          "w": "generative.",
+          "start": 2.72
+        },
+        {
+          "w": "Logistic",
+          "start": 3.76
+        },
+        {
+          "w": "regression",
+          "start": 4.4
+        },
+        {
+          "w": "and",
+          "start": 5.12
+        },
+        {
+          "w": "conditional",
+          "start": 5.36
+        },
+        {
+          "w": "random",
+          "start": 5.96
+        },
+        {
+          "w": "fields",
+          "start": 6.4
+        },
+        {
+          "w": "are",
+          "start": 6.88
+        },
+        {
+          "w": "discriminative.",
+          "start": 7.08
+        }
+      ],
+      "matchScore": 0.938
+    },
+    "c27": {
+      "segment": "recap",
+      "display": "And with plenty of labelled data, discriminative models usually come out ahead.",
+      "spoken": "And with plenty of labelled data, discriminative models usually come out ahead.",
+      "textHash": "5297decbde67a909",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3fb8878188209357.wav",
+      "duration": 4.516,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "with",
+          "start": 0.12
+        },
+        {
+          "w": "plenty",
+          "start": 0.28
+        },
+        {
+          "w": "of",
+          "start": 0.68
+        },
+        {
+          "w": "labelled",
+          "start": 0.84
+        },
+        {
+          "w": "data,",
+          "start": 1.32
+        },
+        {
+          "w": "discriminative",
+          "start": 1.88
+        },
+        {
+          "w": "models",
+          "start": 2.72
+        },
+        {
+          "w": "usually",
+          "start": 3.28
+        },
+        {
+          "w": "come",
+          "start": 3.72
+        },
+        {
+          "w": "out",
+          "start": 3.96
+        },
+        {
+          "w": "ahead.",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "recap",
+      "display": "Next lesson: Hidden Markov Models. How can we guess hidden tags from the words we can see?",
+      "spoken": "Next lesson: Hidden Markov Models. How can we guess hidden tags from the words we can see?",
+      "textHash": "c131f132eea4a3ec",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5fcb095e36d28214.wav",
+      "duration": 5.472,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.32
+        },
+        {
+          "w": "lesson:",
+          "start": 0.64
+        },
+        {
+          "w": "Hidden",
+          "start": 0.96
+        },
+        {
+          "w": "Markov",
+          "start": 1.4
+        },
+        {
+          "w": "Models.",
+          "start": 2
+        },
+        {
+          "w": "How",
+          "start": 2.64
+        },
+        {
+          "w": "can",
+          "start": 2.88
+        },
+        {
+          "w": "we",
+          "start": 3.04
+        },
+        {
+          "w": "guess",
+          "start": 3.16
+        },
+        {
+          "w": "hidden",
+          "start": 3.44
+        },
+        {
+          "w": "tags",
+          "start": 3.76
+        },
+        {
+          "w": "from",
+          "start": 4.2
+        },
+        {
+          "w": "the",
+          "start": 4.36
+        },
+        {
+          "w": "words",
+          "start": 4.48
+        },
+        {
+          "w": "we",
+          "start": 4.8
+        },
+        {
+          "w": "can",
+          "start": 4.96
+        },
+        {
+          "w": "see?",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 0.867
+    }
+  }
+}
