@@ -1,0 +1,3238 @@
+{
+  "version": 1,
+  "episode": "u1-03",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c37",
+    "c38",
+    "c39",
+    "c40",
+    "c41"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 1, lesson 3: text classification.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 1, lesson 3: text classification.",
+      "textHash": "9108b3cb8e3e1cdb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/259abe24f0af1851.wav",
+      "duration": 6.412,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.16
+        },
+        {
+          "w": "This",
+          "start": 2.92
+        },
+        {
+          "w": "is",
+          "start": 3.2
+        },
+        {
+          "w": "unit",
+          "start": 3.44
+        },
+        {
+          "w": "1,",
+          "start": 3.813
+        },
+        {
+          "w": "lesson",
+          "start": 4.187
+        },
+        {
+          "w": "3:",
+          "start": 4.56
+        },
+        {
+          "w": "text",
+          "start": 4.96
+        },
+        {
+          "w": "classification.",
+          "start": 5.4
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time we cut text into tokens. Today we use those pieces to answer a simple question about a whole message: which kind is it?",
+      "spoken": "Last time we cut text into tokens. Today we use those pieces to answer a simple question about a whole message: which kind is it?",
+      "textHash": "ba564a6c71925263",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4ee2d157b692959f.wav",
+      "duration": 8.596,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time",
+          "start": 0.36
+        },
+        {
+          "w": "we",
+          "start": 0.64
+        },
+        {
+          "w": "cut",
+          "start": 0.8
+        },
+        {
+          "w": "text",
+          "start": 1.04
+        },
+        {
+          "w": "into",
+          "start": 1.52
+        },
+        {
+          "w": "tokens.",
+          "start": 1.76
+        },
+        {
+          "w": "Today",
+          "start": 2.46
+        },
+        {
+          "w": "we",
+          "start": 3.16
+        },
+        {
+          "w": "use",
+          "start": 3.36
+        },
+        {
+          "w": "those",
+          "start": 3.68
+        },
+        {
+          "w": "pieces",
+          "start": 3.96
+        },
+        {
+          "w": "to",
+          "start": 4.36
+        },
+        {
+          "w": "answer",
+          "start": 4.56
+        },
+        {
+          "w": "a",
+          "start": 4.84
+        },
+        {
+          "w": "simple",
+          "start": 5.213
+        },
+        {
+          "w": "question",
+          "start": 5.587
+        },
+        {
+          "w": "about",
+          "start": 5.96
+        },
+        {
+          "w": "a",
+          "start": 6.2
+        },
+        {
+          "w": "whole",
+          "start": 6.36
+        },
+        {
+          "w": "message:",
+          "start": 6.64
+        },
+        {
+          "w": "which",
+          "start": 7.36
+        },
+        {
+          "w": "kind",
+          "start": 7.76
+        },
+        {
+          "w": "is",
+          "start": 8.08
+        },
+        {
+          "w": "it?",
+          "start": 8.32
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here is the idea in one line. Classification means putting each piece of text into the right box.",
+      "spoken": "Here is the idea in one line. Classification means putting each piece of text into the right box.",
+      "textHash": "48df4841187aaa88",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4700c650416f4b6f.wav",
+      "duration": 6.101,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.32
+        },
+        {
+          "w": "the",
+          "start": 0.48
+        },
+        {
+          "w": "idea",
+          "start": 0.68
+        },
+        {
+          "w": "in",
+          "start": 1.2
+        },
+        {
+          "w": "one",
+          "start": 1.44
+        },
+        {
+          "w": "line.",
+          "start": 1.68
+        },
+        {
+          "w": "Classification",
+          "start": 2.16
+        },
+        {
+          "w": "means",
+          "start": 3.28
+        },
+        {
+          "w": "putting",
+          "start": 3.6
+        },
+        {
+          "w": "each",
+          "start": 3.96
+        },
+        {
+          "w": "piece",
+          "start": 4.24
+        },
+        {
+          "w": "of",
+          "start": 4.48
+        },
+        {
+          "w": "text",
+          "start": 4.6
+        },
+        {
+          "w": "into",
+          "start": 5
+        },
+        {
+          "w": "the",
+          "start": 5.2
+        },
+        {
+          "w": "right",
+          "start": 5.32
+        },
+        {
+          "w": "box.",
+          "start": 5.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c04": {
+      "segment": "everyday",
+      "display": "You use text classifiers every day, often without noticing. Here are four.",
+      "spoken": "You use text classifiers every day, often without noticing. Here are four.",
+      "textHash": "b4175d782fa0807f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b26f05ac26fbb84c.wav",
+      "duration": 4.578,
+      "marks": {},
+      "words": [
+        {
+          "w": "You",
+          "start": 0
+        },
+        {
+          "w": "use",
+          "start": 0.16
+        },
+        {
+          "w": "text",
+          "start": 0.36
+        },
+        {
+          "w": "classifiers",
+          "start": 0.72
+        },
+        {
+          "w": "every",
+          "start": 1.52
+        },
+        {
+          "w": "day,",
+          "start": 1.8
+        },
+        {
+          "w": "often",
+          "start": 2.12
+        },
+        {
+          "w": "without",
+          "start": 2.56
+        },
+        {
+          "w": "noticing.",
+          "start": 2.84
+        },
+        {
+          "w": "Here",
+          "start": 3.6
+        },
+        {
+          "w": "are",
+          "start": 3.96
+        },
+        {
+          "w": "four.",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c05": {
+      "segment": "everyday",
+      "display": "Your email decides whether each message is spam or not spam.",
+      "spoken": "Your email decides whether each message is spam or not spam.",
+      "textHash": "b0997f2e3de0f883",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0f1863f5bd11e12e.wav",
+      "duration": 3.816,
+      "marks": {},
+      "words": [
+        {
+          "w": "Your",
+          "start": 0
+        },
+        {
+          "w": "email",
+          "start": 0.32
+        },
+        {
+          "w": "decides",
+          "start": 0.64
+        },
+        {
+          "w": "whether",
+          "start": 1.12
+        },
+        {
+          "w": "each",
+          "start": 1.36
+        },
+        {
+          "w": "message",
+          "start": 1.6
+        },
+        {
+          "w": "is",
+          "start": 2.04
+        },
+        {
+          "w": "spam",
+          "start": 2.42
+        },
+        {
+          "w": "or",
+          "start": 2.8
+        },
+        {
+          "w": "not",
+          "start": 3.04
+        },
+        {
+          "w": "spam.",
+          "start": 3.32
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c06": {
+      "segment": "everyday",
+      "display": "Shopping sites sort reviews into positive and negative.",
+      "spoken": "Shopping sites sort reviews into positive and negative.",
+      "textHash": "57a76cbb0d0ebaf6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/24db8339a4c05d70.wav",
+      "duration": 3.449,
+      "marks": {},
+      "words": [
+        {
+          "w": "Shopping",
+          "start": 0
+        },
+        {
+          "w": "sites",
+          "start": 0.48
+        },
+        {
+          "w": "sort",
+          "start": 0.96
+        },
+        {
+          "w": "reviews",
+          "start": 1.28
+        },
+        {
+          "w": "into",
+          "start": 1.8
+        },
+        {
+          "w": "positive",
+          "start": 2.04
+        },
+        {
+          "w": "and",
+          "start": 2.64
+        },
+        {
+          "w": "negative.",
+          "start": 2.8
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c07": {
+      "segment": "everyday",
+      "display": "Help desks route each support ticket to the team that should answer it.",
+      "spoken": "Help desks route each support ticket to the team that should answer it.",
+      "textHash": "159a59786aa173a2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/175255d1df2bd828.wav",
+      "duration": 3.709,
+      "marks": {},
+      "words": [
+        {
+          "w": "Help",
+          "start": 0
+        },
+        {
+          "w": "desks",
+          "start": 0.32
+        },
+        {
+          "w": "route",
+          "start": 0.8
+        },
+        {
+          "w": "each",
+          "start": 1.2
+        },
+        {
+          "w": "support",
+          "start": 1.44
+        },
+        {
+          "w": "ticket",
+          "start": 1.8
+        },
+        {
+          "w": "to",
+          "start": 2.2
+        },
+        {
+          "w": "the",
+          "start": 2.32
+        },
+        {
+          "w": "team",
+          "start": 2.48
+        },
+        {
+          "w": "that",
+          "start": 2.76
+        },
+        {
+          "w": "should",
+          "start": 2.92
+        },
+        {
+          "w": "answer",
+          "start": 3.12
+        },
+        {
+          "w": "it.",
+          "start": 3.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "everyday",
+      "display": "And your phone guesses which language a message is written in, so it can offer to translate it.",
+      "spoken": "And your phone guesses which language a message is written in, so it can offer to translate it.",
+      "textHash": "0feee1f400b35691",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/127158819a82303b.wav",
+      "duration": 4.916,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "your",
+          "start": 0.08
+        },
+        {
+          "w": "phone",
+          "start": 0.28
+        },
+        {
+          "w": "guesses",
+          "start": 0.64
+        },
+        {
+          "w": "which",
+          "start": 1.12
+        },
+        {
+          "w": "language",
+          "start": 1.36
+        },
+        {
+          "w": "a",
+          "start": 1.84
+        },
+        {
+          "w": "message",
+          "start": 1.96
+        },
+        {
+          "w": "is",
+          "start": 2.36
+        },
+        {
+          "w": "written",
+          "start": 2.56
+        },
+        {
+          "w": "in,",
+          "start": 2.92
+        },
+        {
+          "w": "so",
+          "start": 3.2
+        },
+        {
+          "w": "it",
+          "start": 3.44
+        },
+        {
+          "w": "can",
+          "start": 3.56
+        },
+        {
+          "w": "offer",
+          "start": 3.72
+        },
+        {
+          "w": "to",
+          "start": 4.04
+        },
+        {
+          "w": "translate",
+          "start": 4.2
+        },
+        {
+          "w": "it.",
+          "start": 4.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "classifier",
+      "display": "The program doing the sorting is called a classifier. It reads a piece of text and picks one label from a fixed list.",
+      "spoken": "The program doing the sorting is called a classifier. It reads a piece of text and picks one label from a fixed list.",
+      "textHash": "434deff9d8d1ab90",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1d28122b88df2c3e.wav",
+      "duration": 6.864,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "program",
+          "start": 0.293
+        },
+        {
+          "w": "doing",
+          "start": 0.587
+        },
+        {
+          "w": "the",
+          "start": 0.88
+        },
+        {
+          "w": "sorting",
+          "start": 1.04
+        },
+        {
+          "w": "is",
+          "start": 1.48
+        },
+        {
+          "w": "called",
+          "start": 1.68
+        },
+        {
+          "w": "a",
+          "start": 1.96
+        },
+        {
+          "w": "classifier.",
+          "start": 2.08
+        },
+        {
+          "w": "It",
+          "start": 3.04
+        },
+        {
+          "w": "reads",
+          "start": 3.28
+        },
+        {
+          "w": "a",
+          "start": 3.64
+        },
+        {
+          "w": "piece",
+          "start": 3.8
+        },
+        {
+          "w": "of",
+          "start": 4.04
+        },
+        {
+          "w": "text",
+          "start": 4.2
+        },
+        {
+          "w": "and",
+          "start": 4.64
+        },
+        {
+          "w": "picks",
+          "start": 4.84
+        },
+        {
+          "w": "one",
+          "start": 5.2
+        },
+        {
+          "w": "label",
+          "start": 5.44
+        },
+        {
+          "w": "from",
+          "start": 5.84
+        },
+        {
+          "w": "a",
+          "start": 5.96
+        },
+        {
+          "w": "fixed",
+          "start": 6.08
+        },
+        {
+          "w": "list.",
+          "start": 6.48
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c10": {
+      "segment": "classifier",
+      "display": "For example, it reads \"WIN a FREE prize!!!\" and picks the label \"spam\".",
+      "spoken": "For example, it reads \"WIN a FREE prize!!!\" and picks the label \"spam\".",
+      "textHash": "df59f09fae0c3d57",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fe9e3d34509cfb26.wav",
+      "duration": 4.632,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "example,",
+          "start": 0.16
+        },
+        {
+          "w": "it",
+          "start": 0.72
+        },
+        {
+          "w": "reads",
+          "start": 0.88
+        },
+        {
+          "w": "\"WIN",
+          "start": 1.293
+        },
+        {
+          "w": "a",
+          "start": 1.707
+        },
+        {
+          "w": "FREE",
+          "start": 2.12
+        },
+        {
+          "w": "prize!!!\"",
+          "start": 2.4
+        },
+        {
+          "w": "and",
+          "start": 2.88
+        },
+        {
+          "w": "picks",
+          "start": 3.2
+        },
+        {
+          "w": "the",
+          "start": 3.52
+        },
+        {
+          "w": "label",
+          "start": 3.68
+        },
+        {
+          "w": "\"spam\".",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c11": {
+      "segment": "classifier",
+      "display": "Think of a post-office sorter: every letter goes into exactly one pigeonhole, based on what's written on it.",
+      "spoken": "Think of a post-office sorter: every letter goes into exactly one pigeonhole, based on what's written on it.",
+      "textHash": "6516338939f21cc7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0c1538c4da635fcc.wav",
+      "duration": 6.129,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "post-office",
+          "start": 0.827
+        },
+        {
+          "w": "sorter:",
+          "start": 1.333
+        },
+        {
+          "w": "every",
+          "start": 1.84
+        },
+        {
+          "w": "letter",
+          "start": 2.16
+        },
+        {
+          "w": "goes",
+          "start": 2.56
+        },
+        {
+          "w": "into",
+          "start": 2.84
+        },
+        {
+          "w": "exactly",
+          "start": 3.08
+        },
+        {
+          "w": "one",
+          "start": 3.64
+        },
+        {
+          "w": "pigeonhole,",
+          "start": 4.16
+        },
+        {
+          "w": "based",
+          "start": 4.68
+        },
+        {
+          "w": "on",
+          "start": 5.04
+        },
+        {
+          "w": "what's",
+          "start": 5.2
+        },
+        {
+          "w": "written",
+          "start": 5.48
+        },
+        {
+          "w": "on",
+          "start": 5.8
+        },
+        {
+          "w": "it.",
+          "start": 5.96
+        }
+      ],
+      "matchScore": 0.769
+    },
+    "c12": {
+      "segment": "learn",
+      "display": "Nobody writes the sorting rules by hand. A classifier learns them from examples, in four steps.",
+      "spoken": "Nobody writes the sorting rules by hand. A classifier learns them from examples, in four steps.",
+      "textHash": "0b685e9657ce2e20",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d546c2ae33fe3a1e.wav",
+      "duration": 5.987,
+      "marks": {},
+      "words": [
+        {
+          "w": "Nobody",
+          "start": 0
+        },
+        {
+          "w": "writes",
+          "start": 0.48
+        },
+        {
+          "w": "the",
+          "start": 0.8
+        },
+        {
+          "w": "sorting",
+          "start": 0.96
+        },
+        {
+          "w": "rules",
+          "start": 1.32
+        },
+        {
+          "w": "by",
+          "start": 1.76
+        },
+        {
+          "w": "hand.",
+          "start": 2
+        },
+        {
+          "w": "A",
+          "start": 2.44
+        },
+        {
+          "w": "classifier",
+          "start": 2.64
+        },
+        {
+          "w": "learns",
+          "start": 3.52
+        },
+        {
+          "w": "them",
+          "start": 3.88
+        },
+        {
+          "w": "from",
+          "start": 4.08
+        },
+        {
+          "w": "examples,",
+          "start": 4.24
+        },
+        {
+          "w": "in",
+          "start": 4.92
+        },
+        {
+          "w": "four",
+          "start": 5.12
+        },
+        {
+          "w": "steps.",
+          "start": 5.4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c13": {
+      "segment": "learn",
+      "display": "Collect: gather lots of texts that already have the right label, like emails people have marked as spam or not spam.",
+      "spoken": "Collect: gather lots of texts that already have the right label, like emails people have marked as spam or not spam.",
+      "textHash": "9da9bbe803e66bb6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ff16b06cb75a58ab.wav",
+      "duration": 7.03,
+      "marks": {},
+      "words": [
+        {
+          "w": "Collect:",
+          "start": 0
+        },
+        {
+          "w": "gather",
+          "start": 0.64
+        },
+        {
+          "w": "lots",
+          "start": 1.04
+        },
+        {
+          "w": "of",
+          "start": 1.36
+        },
+        {
+          "w": "texts",
+          "start": 1.52
+        },
+        {
+          "w": "that",
+          "start": 1.96
+        },
+        {
+          "w": "already",
+          "start": 2.12
+        },
+        {
+          "w": "have",
+          "start": 2.52
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "right",
+          "start": 2.8
+        },
+        {
+          "w": "label,",
+          "start": 3.08
+        },
+        {
+          "w": "like",
+          "start": 3.68
+        },
+        {
+          "w": "emails",
+          "start": 3.96
+        },
+        {
+          "w": "people",
+          "start": 4.56
+        },
+        {
+          "w": "have",
+          "start": 4.84
+        },
+        {
+          "w": "marked",
+          "start": 5.04
+        },
+        {
+          "w": "as",
+          "start": 5.36
+        },
+        {
+          "w": "spam",
+          "start": 5.68
+        },
+        {
+          "w": "or",
+          "start": 6
+        },
+        {
+          "w": "not",
+          "start": 6.24
+        },
+        {
+          "w": "spam.",
+          "start": 6.52
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c14": {
+      "segment": "learn",
+      "display": "Find clues: turn each text into clues the computer can count. The simplest clues are the words themselves.",
+      "spoken": "Find clues: turn each text into clues the computer can count. The simplest clues are the words themselves.",
+      "textHash": "6edaaea8aa2a7da7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f8f0f4354fc7c9a7.wav",
+      "duration": 6.546,
+      "marks": {},
+      "words": [
+        {
+          "w": "Find",
+          "start": 0.18
+        },
+        {
+          "w": "clues:",
+          "start": 0.36
+        },
+        {
+          "w": "turn",
+          "start": 0.96
+        },
+        {
+          "w": "each",
+          "start": 1.28
+        },
+        {
+          "w": "text",
+          "start": 1.6
+        },
+        {
+          "w": "into",
+          "start": 2
+        },
+        {
+          "w": "clues",
+          "start": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "computer",
+          "start": 2.72
+        },
+        {
+          "w": "can",
+          "start": 3.24
+        },
+        {
+          "w": "count.",
+          "start": 3.48
+        },
+        {
+          "w": "The",
+          "start": 3.92
+        },
+        {
+          "w": "simplest",
+          "start": 4.16
+        },
+        {
+          "w": "clues",
+          "start": 4.8
+        },
+        {
+          "w": "are",
+          "start": 5.2
+        },
+        {
+          "w": "the",
+          "start": 5.28
+        },
+        {
+          "w": "words",
+          "start": 5.48
+        },
+        {
+          "w": "themselves.",
+          "start": 5.88
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c15": {
+      "segment": "learn",
+      "display": "Train: let the computer learn which clues usually point to which label.",
+      "spoken": "Train: let the computer learn which clues usually point to which label.",
+      "textHash": "470b3fb80825a3b0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cd1b812a2b5fd4c7.wav",
+      "duration": 3.768,
+      "marks": {},
+      "words": [
+        {
+          "w": "Train:",
+          "start": 0
+        },
+        {
+          "w": "let",
+          "start": 0.48
+        },
+        {
+          "w": "the",
+          "start": 0.68
+        },
+        {
+          "w": "computer",
+          "start": 0.88
+        },
+        {
+          "w": "learn",
+          "start": 1.36
+        },
+        {
+          "w": "which",
+          "start": 1.64
+        },
+        {
+          "w": "clues",
+          "start": 1.84
+        },
+        {
+          "w": "usually",
+          "start": 2.28
+        },
+        {
+          "w": "point",
+          "start": 2.72
+        },
+        {
+          "w": "to",
+          "start": 2.96
+        },
+        {
+          "w": "which",
+          "start": 3.12
+        },
+        {
+          "w": "label.",
+          "start": 3.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "learn",
+      "display": "Predict: give it a new text it has never seen, and it picks a label.",
+      "spoken": "Predict: give it a new text it has never seen, and it picks a label.",
+      "textHash": "3f1c3794aed70d47",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/87f69d31c357b4b2.wav",
+      "duration": 3.71,
+      "marks": {},
+      "words": [
+        {
+          "w": "Predict:",
+          "start": 0
+        },
+        {
+          "w": "give",
+          "start": 0.56
+        },
+        {
+          "w": "it",
+          "start": 0.72
+        },
+        {
+          "w": "a",
+          "start": 0.84
+        },
+        {
+          "w": "new",
+          "start": 0.96
+        },
+        {
+          "w": "text",
+          "start": 1.12
+        },
+        {
+          "w": "it",
+          "start": 1.52
+        },
+        {
+          "w": "has",
+          "start": 1.64
+        },
+        {
+          "w": "never",
+          "start": 1.84
+        },
+        {
+          "w": "seen,",
+          "start": 2.12
+        },
+        {
+          "w": "and",
+          "start": 2.48
+        },
+        {
+          "w": "it",
+          "start": 2.68
+        },
+        {
+          "w": "picks",
+          "start": 2.84
+        },
+        {
+          "w": "a",
+          "start": 3.16
+        },
+        {
+          "w": "label.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "clues",
+      "display": "Here is a small made-up example. Out of a hundred training emails, this table shows how many spam and normal emails contain each word.",
+      "spoken": "Here is a small made-up example. Out of a hundred training emails, this table shows how many spam and normal emails contain each word.",
+      "textHash": "00eb6091e3ebc8cc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/89c5579bca7f0709.wav",
+      "duration": 8.308,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.28
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "small",
+          "start": 0.6
+        },
+        {
+          "w": "made-up",
+          "start": 1
+        },
+        {
+          "w": "example.",
+          "start": 1.4
+        },
+        {
+          "w": "Out",
+          "start": 1.8
+        },
+        {
+          "w": "of",
+          "start": 2.2
+        },
+        {
+          "w": "a",
+          "start": 2.4
+        },
+        {
+          "w": "hundred",
+          "start": 2.56
+        },
+        {
+          "w": "training",
+          "start": 2.88
+        },
+        {
+          "w": "emails,",
+          "start": 3.46
+        },
+        {
+          "w": "this",
+          "start": 4.04
+        },
+        {
+          "w": "table",
+          "start": 4.32
+        },
+        {
+          "w": "shows",
+          "start": 4.72
+        },
+        {
+          "w": "how",
+          "start": 5.08
+        },
+        {
+          "w": "many",
+          "start": 5.28
+        },
+        {
+          "w": "spam",
+          "start": 5.6
+        },
+        {
+          "w": "and",
+          "start": 5.96
+        },
+        {
+          "w": "normal",
+          "start": 6.16
+        },
+        {
+          "w": "emails",
+          "start": 6.66
+        },
+        {
+          "w": "contain",
+          "start": 7.16
+        },
+        {
+          "w": "each",
+          "start": 7.68
+        },
+        {
+          "w": "word.",
+          "start": 7.96
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c18": {
+      "segment": "clues",
+      "display": "\"free\" appears in thirty spam emails, but only two normal ones. A strong hint of spam.",
+      "spoken": "\"free\" appears in thirty spam emails, but only two normal ones. A strong hint of spam.",
+      "textHash": "c46c98a4ba81db6c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0f2a1b50e5649c39.wav",
+      "duration": 5.468,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"free\"",
+          "start": 0
+        },
+        {
+          "w": "appears",
+          "start": 0.32
+        },
+        {
+          "w": "in",
+          "start": 0.72
+        },
+        {
+          "w": "thirty",
+          "start": 0.88
+        },
+        {
+          "w": "spam",
+          "start": 1.24
+        },
+        {
+          "w": "emails,",
+          "start": 1.7
+        },
+        {
+          "w": "but",
+          "start": 2.16
+        },
+        {
+          "w": "only",
+          "start": 2.4
+        },
+        {
+          "w": "two",
+          "start": 2.64
+        },
+        {
+          "w": "normal",
+          "start": 2.88
+        },
+        {
+          "w": "ones.",
+          "start": 3.4
+        },
+        {
+          "w": "A",
+          "start": 3.88
+        },
+        {
+          "w": "strong",
+          "start": 4.08
+        },
+        {
+          "w": "hint",
+          "start": 4.48
+        },
+        {
+          "w": "of",
+          "start": 4.84
+        },
+        {
+          "w": "spam.",
+          "start": 5
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c19": {
+      "segment": "clues",
+      "display": "\"winner\" is similar: eighteen spam emails, just one normal one.",
+      "spoken": "\"winner\" is similar: eighteen spam emails, just one normal one.",
+      "textHash": "f548dd76e8208f61",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5b23bf50180927f7.wav",
+      "duration": 4.05,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"winner\"",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.44
+        },
+        {
+          "w": "similar:",
+          "start": 0.64
+        },
+        {
+          "w": "eighteen",
+          "start": 1.2
+        },
+        {
+          "w": "spam",
+          "start": 1.84
+        },
+        {
+          "w": "emails,",
+          "start": 2.32
+        },
+        {
+          "w": "just",
+          "start": 2.8
+        },
+        {
+          "w": "one",
+          "start": 3.04
+        },
+        {
+          "w": "normal",
+          "start": 3.28
+        },
+        {
+          "w": "one.",
+          "start": 3.8
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c20": {
+      "segment": "clues",
+      "display": "\"meeting\" goes the other way: it appears in twenty-five normal emails and only one spam email.",
+      "spoken": "\"meeting\" goes the other way: it appears in twenty-five normal emails and only one spam email.",
+      "textHash": "bcbb2317f011d212",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6c103eecc050c23d.wav",
+      "duration": 6.085,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"meeting\"",
+          "start": 0
+        },
+        {
+          "w": "goes",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.84
+        },
+        {
+          "w": "other",
+          "start": 1
+        },
+        {
+          "w": "way:",
+          "start": 1.24
+        },
+        {
+          "w": "it",
+          "start": 1.6
+        },
+        {
+          "w": "appears",
+          "start": 1.88
+        },
+        {
+          "w": "in",
+          "start": 2.28
+        },
+        {
+          "w": "twenty-five",
+          "start": 2.74
+        },
+        {
+          "w": "normal",
+          "start": 3.2
+        },
+        {
+          "w": "emails",
+          "start": 3.76
+        },
+        {
+          "w": "and",
+          "start": 4.32
+        },
+        {
+          "w": "only",
+          "start": 4.56
+        },
+        {
+          "w": "one",
+          "start": 4.84
+        },
+        {
+          "w": "spam",
+          "start": 5.16
+        },
+        {
+          "w": "email.",
+          "start": 5.623
+        }
+      ],
+      "matchScore": 0.786
+    },
+    "c21": {
+      "segment": "clues",
+      "display": "And \"invoice\" leans towards normal mail too, but more weakly: twelve normal, three spam.",
+      "spoken": "And \"invoice\" leans towards normal mail too, but more weakly: twelve normal, three spam.",
+      "textHash": "35aabf80f8c19150",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6096488e9b311f4c.wav",
+      "duration": 5.472,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "\"invoice\"",
+          "start": 0.16
+        },
+        {
+          "w": "leans",
+          "start": 0.72
+        },
+        {
+          "w": "towards",
+          "start": 1.12
+        },
+        {
+          "w": "normal",
+          "start": 1.52
+        },
+        {
+          "w": "mail",
+          "start": 1.853
+        },
+        {
+          "w": "too,",
+          "start": 2.187
+        },
+        {
+          "w": "but",
+          "start": 2.52
+        },
+        {
+          "w": "more",
+          "start": 2.72
+        },
+        {
+          "w": "weakly:",
+          "start": 2.96
+        },
+        {
+          "w": "twelve",
+          "start": 3.64
+        },
+        {
+          "w": "normal,",
+          "start": 4.08
+        },
+        {
+          "w": "three",
+          "start": 4.68
+        },
+        {
+          "w": "spam.",
+          "start": 5.076
+        }
+      ],
+      "matchScore": 0.786
+    },
+    "c22": {
+      "segment": "bayes",
+      "display": "One of the oldest and simplest classifiers is called Naive Bayes. The idea is to let the clues vote.",
+      "spoken": "One of the oldest and simplest classifiers is called Naive Bayes. The idea is to let the clues vote.",
+      "textHash": "98ca42fa27c0e3c7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/50daec1e3ee5b013.wav",
+      "duration": 6.555,
+      "marks": {},
+      "words": [
+        {
+          "w": "One",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.16
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "oldest",
+          "start": 0.48
+        },
+        {
+          "w": "and",
+          "start": 0.92
+        },
+        {
+          "w": "simplest",
+          "start": 1.08
+        },
+        {
+          "w": "classifiers",
+          "start": 1.64
+        },
+        {
+          "w": "is",
+          "start": 2.48
+        },
+        {
+          "w": "called",
+          "start": 2.72
+        },
+        {
+          "w": "Naive",
+          "start": 3.08
+        },
+        {
+          "w": "Bayes.",
+          "start": 3.68
+        },
+        {
+          "w": "The",
+          "start": 4.28
+        },
+        {
+          "w": "idea",
+          "start": 4.6
+        },
+        {
+          "w": "is",
+          "start": 5.12
+        },
+        {
+          "w": "to",
+          "start": 5.32
+        },
+        {
+          "w": "let",
+          "start": 5.48
+        },
+        {
+          "w": "the",
+          "start": 5.68
+        },
+        {
+          "w": "clues",
+          "start": 5.972
+        },
+        {
+          "w": "vote.",
+          "start": 6.263
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c23": {
+      "segment": "bayes",
+      "display": "Every word in the email is a clue.",
+      "spoken": "Every word in the email is a clue.",
+      "textHash": "abf9fbf5c73bcb98",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5a8dbfefb68c633d.wav",
+      "duration": 1.994,
+      "marks": {},
+      "words": [
+        {
+          "w": "Every",
+          "start": 0
+        },
+        {
+          "w": "word",
+          "start": 0.28
+        },
+        {
+          "w": "in",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "email",
+          "start": 0.96
+        },
+        {
+          "w": "is",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.44
+        },
+        {
+          "w": "clue.",
+          "start": 1.56
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c24": {
+      "segment": "bayes",
+      "display": "Words that are common in spam add weight to the spam side.",
+      "spoken": "Words that are common in spam add weight to the spam side.",
+      "textHash": "e09cd69e8faee10a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4d3d52263016912c.wav",
+      "duration": 3.274,
+      "marks": {},
+      "words": [
+        {
+          "w": "Words",
+          "start": 0
+        },
+        {
+          "w": "that",
+          "start": 0.32
+        },
+        {
+          "w": "are",
+          "start": 0.48
+        },
+        {
+          "w": "common",
+          "start": 0.64
+        },
+        {
+          "w": "in",
+          "start": 0.96
+        },
+        {
+          "w": "spam",
+          "start": 1.16
+        },
+        {
+          "w": "add",
+          "start": 1.6
+        },
+        {
+          "w": "weight",
+          "start": 2
+        },
+        {
+          "w": "to",
+          "start": 2.28
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "spam",
+          "start": 2.665
+        },
+        {
+          "w": "side.",
+          "start": 2.969
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c25": {
+      "segment": "bayes",
+      "display": "Words that are common in normal mail add weight to the normal side.",
+      "spoken": "Words that are common in normal mail add weight to the normal side.",
+      "textHash": "098ed1d050a56638",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ca2d51fe7e6aff2f.wav",
+      "duration": 3.764,
+      "marks": {},
+      "words": [
+        {
+          "w": "Words",
+          "start": 0
+        },
+        {
+          "w": "that",
+          "start": 0.36
+        },
+        {
+          "w": "are",
+          "start": 0.52
+        },
+        {
+          "w": "common",
+          "start": 0.72
+        },
+        {
+          "w": "in",
+          "start": 1.04
+        },
+        {
+          "w": "normal",
+          "start": 1.24
+        },
+        {
+          "w": "mail",
+          "start": 1.62
+        },
+        {
+          "w": "add",
+          "start": 2
+        },
+        {
+          "w": "weight",
+          "start": 2.36
+        },
+        {
+          "w": "to",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 2.76
+        },
+        {
+          "w": "normal",
+          "start": 3.095
+        },
+        {
+          "w": "side.",
+          "start": 3.429
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c26": {
+      "segment": "bayes",
+      "display": "Whichever side ends up heavier wins. And it's called \"naive\" because it judges each word on its own, ignoring word order, which is a simplification that works surprisingly well.",
+      "spoken": "Whichever side ends up heavier wins. And it's called \"naive\" because it judges each word on its own, ignoring word order, which is a simplification that works surprisingly well.",
+      "textHash": "0bb431bb2b01310e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e24f8f36848a1d42.wav",
+      "duration": 11.103,
+      "marks": {},
+      "words": [
+        {
+          "w": "Whichever",
+          "start": 0.333
+        },
+        {
+          "w": "side",
+          "start": 0.667
+        },
+        {
+          "w": "ends",
+          "start": 1
+        },
+        {
+          "w": "up",
+          "start": 1.32
+        },
+        {
+          "w": "heavier",
+          "start": 1.52
+        },
+        {
+          "w": "wins.",
+          "start": 2.04
+        },
+        {
+          "w": "And",
+          "start": 2.56
+        },
+        {
+          "w": "it's",
+          "start": 2.8
+        },
+        {
+          "w": "called",
+          "start": 3.08
+        },
+        {
+          "w": "\"naive\"",
+          "start": 3.48
+        },
+        {
+          "w": "because",
+          "start": 4.16
+        },
+        {
+          "w": "it",
+          "start": 4.4
+        },
+        {
+          "w": "judges",
+          "start": 4.64
+        },
+        {
+          "w": "each",
+          "start": 5.2
+        },
+        {
+          "w": "word",
+          "start": 5.44
+        },
+        {
+          "w": "on",
+          "start": 5.72
+        },
+        {
+          "w": "its",
+          "start": 5.92
+        },
+        {
+          "w": "own,",
+          "start": 6.373
+        },
+        {
+          "w": "ignoring",
+          "start": 6.827
+        },
+        {
+          "w": "word",
+          "start": 7.28
+        },
+        {
+          "w": "order,",
+          "start": 7.6
+        },
+        {
+          "w": "which",
+          "start": 8.08
+        },
+        {
+          "w": "is",
+          "start": 8.28
+        },
+        {
+          "w": "a",
+          "start": 8.44
+        },
+        {
+          "w": "simplification",
+          "start": 8.56
+        },
+        {
+          "w": "that",
+          "start": 9.4
+        },
+        {
+          "w": "works",
+          "start": 9.6
+        },
+        {
+          "w": "surprisingly",
+          "start": 9.96
+        },
+        {
+          "w": "well.",
+          "start": 10.8
+        }
+      ],
+      "matchScore": 0.792
+    },
+    "c27": {
+      "segment": "eval",
+      "display": "So how do we know if a spam filter is any good? There are two questions to ask, and they're easy to mix up.",
+      "spoken": "So how do we know if a spam filter is any good? There are two questions to ask, and they're easy to mix up.",
+      "textHash": "a3c753cdaac581ae",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b71a8b6462e4c862.wav",
+      "duration": 6.169,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.16
+        },
+        {
+          "w": "do",
+          "start": 0.32
+        },
+        {
+          "w": "we",
+          "start": 0.48
+        },
+        {
+          "w": "know",
+          "start": 0.68
+        },
+        {
+          "w": "if",
+          "start": 0.88
+        },
+        {
+          "w": "a",
+          "start": 1.04
+        },
+        {
+          "w": "spam",
+          "start": 1.373
+        },
+        {
+          "w": "filter",
+          "start": 1.707
+        },
+        {
+          "w": "is",
+          "start": 2.04
+        },
+        {
+          "w": "any",
+          "start": 2.2
+        },
+        {
+          "w": "good?",
+          "start": 2.48
+        },
+        {
+          "w": "There",
+          "start": 2.84
+        },
+        {
+          "w": "are",
+          "start": 3.08
+        },
+        {
+          "w": "two",
+          "start": 3.413
+        },
+        {
+          "w": "questions",
+          "start": 3.747
+        },
+        {
+          "w": "to",
+          "start": 4.08
+        },
+        {
+          "w": "ask,",
+          "start": 4.28
+        },
+        {
+          "w": "and",
+          "start": 4.64
+        },
+        {
+          "w": "they're",
+          "start": 4.84
+        },
+        {
+          "w": "easy",
+          "start": 5.12
+        },
+        {
+          "w": "to",
+          "start": 5.44
+        },
+        {
+          "w": "mix",
+          "start": 5.64
+        },
+        {
+          "w": "up.",
+          "start": 5.92
+        }
+      ],
+      "matchScore": 0.733
+    },
+    "c28": {
+      "segment": "eval",
+      "display": "The first is precision: of all the mail the filter marked as spam, how much really was spam? Low precision means real emails go missing.",
+      "spoken": "The first is precision: of all the mail the filter marked as spam, how much really was spam? Low precision means real emails go missing.",
+      "textHash": "fcfed6b330dd7717",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c444c9923c4de453.wav",
+      "duration": 8.785,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "first",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.48
+        },
+        {
+          "w": "precision:",
+          "start": 0.72
+        },
+        {
+          "w": "of",
+          "start": 1.44
+        },
+        {
+          "w": "all",
+          "start": 1.68
+        },
+        {
+          "w": "the",
+          "start": 1.84
+        },
+        {
+          "w": "mail",
+          "start": 2.06
+        },
+        {
+          "w": "the",
+          "start": 2.28
+        },
+        {
+          "w": "filter",
+          "start": 2.48
+        },
+        {
+          "w": "marked",
+          "start": 2.92
+        },
+        {
+          "w": "as",
+          "start": 3.24
+        },
+        {
+          "w": "spam,",
+          "start": 3.62
+        },
+        {
+          "w": "how",
+          "start": 4
+        },
+        {
+          "w": "much",
+          "start": 4.32
+        },
+        {
+          "w": "really",
+          "start": 4.56
+        },
+        {
+          "w": "was",
+          "start": 4.88
+        },
+        {
+          "w": "spam?",
+          "start": 5.2
+        },
+        {
+          "w": "Low",
+          "start": 5.92
+        },
+        {
+          "w": "precision",
+          "start": 6.28
+        },
+        {
+          "w": "means",
+          "start": 6.88
+        },
+        {
+          "w": "real",
+          "start": 7.2
+        },
+        {
+          "w": "emails",
+          "start": 7.66
+        },
+        {
+          "w": "go",
+          "start": 8.12
+        },
+        {
+          "w": "missing.",
+          "start": 8.28
+        }
+      ],
+      "matchScore": 0.81
+    },
+    "c29": {
+      "segment": "eval",
+      "display": "The second is recall: of all the spam that arrived, how much did the filter catch? Low recall means spam fills your inbox. A good filter needs both.",
+      "spoken": "The second is recall: of all the spam that arrived, how much did the filter catch? Low recall means spam fills your inbox. A good filter needs both.",
+      "textHash": "921ecf8289d2edab",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/961f7b9e678fa421.wav",
+      "duration": 9.344,
+      "marks": {
+        "verdict": 7.6
+      },
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "second",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.56
+        },
+        {
+          "w": "recall:",
+          "start": 0.72
+        },
+        {
+          "w": "of",
+          "start": 1.32
+        },
+        {
+          "w": "all",
+          "start": 1.56
+        },
+        {
+          "w": "the",
+          "start": 1.72
+        },
+        {
+          "w": "spam",
+          "start": 1.98
+        },
+        {
+          "w": "that",
+          "start": 2.24
+        },
+        {
+          "w": "arrived,",
+          "start": 2.44
+        },
+        {
+          "w": "how",
+          "start": 2.96
+        },
+        {
+          "w": "much",
+          "start": 3.2
+        },
+        {
+          "w": "did",
+          "start": 3.44
+        },
+        {
+          "w": "the",
+          "start": 3.64
+        },
+        {
+          "w": "filter",
+          "start": 3.76
+        },
+        {
+          "w": "catch?",
+          "start": 4.24
+        },
+        {
+          "w": "Low",
+          "start": 4.8
+        },
+        {
+          "w": "recall",
+          "start": 5.12
+        },
+        {
+          "w": "means",
+          "start": 5.64
+        },
+        {
+          "w": "spam",
+          "start": 6
+        },
+        {
+          "w": "fills",
+          "start": 6.36
+        },
+        {
+          "w": "your",
+          "start": 6.68
+        },
+        {
+          "w": "inbox.",
+          "start": 7.14
+        },
+        {
+          "w": "A",
+          "start": 7.6
+        },
+        {
+          "w": "good",
+          "start": 7.84
+        },
+        {
+          "w": "filter",
+          "start": 8.08
+        },
+        {
+          "w": "needs",
+          "start": 8.56
+        },
+        {
+          "w": "both.",
+          "start": 8.96
+        }
+      ],
+      "matchScore": 0.92
+    },
+    "c30": {
+      "segment": "test",
+      "display": "Let's check our filter on a hundred test emails.",
+      "spoken": "Let's check our filter on a hundred test emails.",
+      "textHash": "4d15d4f5be3aad71",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0f0da476b0931174.wav",
+      "duration": 2.653,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "check",
+          "start": 0.28
+        },
+        {
+          "w": "our",
+          "start": 0.56
+        },
+        {
+          "w": "filter",
+          "start": 0.72
+        },
+        {
+          "w": "on",
+          "start": 1.12
+        },
+        {
+          "w": "a",
+          "start": 1.28
+        },
+        {
+          "w": "hundred",
+          "start": 1.4
+        },
+        {
+          "w": "test",
+          "start": 1.68
+        },
+        {
+          "w": "emails.",
+          "start": 2.167
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c31": {
+      "segment": "test",
+      "display": "It marked twenty of them as spam.",
+      "spoken": "It marked twenty of them as spam.",
+      "textHash": "7c774aae1b6cb679",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fbe8ac02b125bf91.wav",
+      "duration": 1.693,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "marked",
+          "start": 0.12
+        },
+        {
+          "w": "twenty",
+          "start": 0.4
+        },
+        {
+          "w": "of",
+          "start": 0.68
+        },
+        {
+          "w": "them",
+          "start": 0.8
+        },
+        {
+          "w": "as",
+          "start": 1
+        },
+        {
+          "w": "spam.",
+          "start": 1.347
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c32": {
+      "segment": "test",
+      "display": "Eighteen of those twenty really were spam, so its precision is eighteen out of twenty: ninety percent.",
+      "spoken": "Eighteen of those twenty really were spam, so its precision is eighteen out of twenty: ninety percent.",
+      "textHash": "5e01fced2af4b3fd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c8abaa2c8c2dec1c.wav",
+      "duration": 5.791,
+      "marks": {},
+      "words": [
+        {
+          "w": "Eighteen",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.4
+        },
+        {
+          "w": "those",
+          "start": 0.48
+        },
+        {
+          "w": "twenty",
+          "start": 0.72
+        },
+        {
+          "w": "really",
+          "start": 1.04
+        },
+        {
+          "w": "were",
+          "start": 1.4
+        },
+        {
+          "w": "spam,",
+          "start": 1.72
+        },
+        {
+          "w": "so",
+          "start": 2.04
+        },
+        {
+          "w": "its",
+          "start": 2.24
+        },
+        {
+          "w": "precision",
+          "start": 2.52
+        },
+        {
+          "w": "is",
+          "start": 3.04
+        },
+        {
+          "w": "eighteen",
+          "start": 3.2
+        },
+        {
+          "w": "out",
+          "start": 3.54
+        },
+        {
+          "w": "of",
+          "start": 3.88
+        },
+        {
+          "w": "twenty:",
+          "start": 4.04
+        },
+        {
+          "w": "ninety",
+          "start": 4.64
+        },
+        {
+          "w": "percent.",
+          "start": 5.216
+        }
+      ],
+      "matchScore": 0.769
+    },
+    "c33": {
+      "segment": "test",
+      "display": "But the test set held twenty-four spam emails in total, and it caught eighteen. So its recall is eighteen out of twenty-four: seventy-five percent.",
+      "spoken": "But the test set held twenty-four spam emails in total, and it caught eighteen. So its recall is eighteen out of twenty-four: seventy-five percent.",
+      "textHash": "262df8dbd72810bd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/17dcbb05e4e99f05.wav",
+      "duration": 9.151,
+      "marks": {},
+      "words": [
+        {
+          "w": "But",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.08
+        },
+        {
+          "w": "test",
+          "start": 0.28
+        },
+        {
+          "w": "set",
+          "start": 0.56
+        },
+        {
+          "w": "held",
+          "start": 0.8
+        },
+        {
+          "w": "twenty-four",
+          "start": 1.26
+        },
+        {
+          "w": "spam",
+          "start": 1.72
+        },
+        {
+          "w": "emails",
+          "start": 2.16
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "total,",
+          "start": 2.8
+        },
+        {
+          "w": "and",
+          "start": 3.28
+        },
+        {
+          "w": "it",
+          "start": 3.48
+        },
+        {
+          "w": "caught",
+          "start": 3.68
+        },
+        {
+          "w": "eighteen.",
+          "start": 4
+        },
+        {
+          "w": "So",
+          "start": 4.72
+        },
+        {
+          "w": "its",
+          "start": 5
+        },
+        {
+          "w": "recall",
+          "start": 5.28
+        },
+        {
+          "w": "is",
+          "start": 5.8
+        },
+        {
+          "w": "eighteen",
+          "start": 6
+        },
+        {
+          "w": "out",
+          "start": 6.52
+        },
+        {
+          "w": "of",
+          "start": 6.64
+        },
+        {
+          "w": "twenty-four:",
+          "start": 7.268
+        },
+        {
+          "w": "seventy-five",
+          "start": 7.896
+        },
+        {
+          "w": "percent.",
+          "start": 8.523
+        }
+      ],
+      "matchScore": 0.737
+    },
+    "c34": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. An important email from your boss lands in the spam folder. Which number went down: precision, or recall?",
+      "spoken": "Time for a quick quiz. An important email from your boss lands in the spam folder. Which number went down: precision, or recall?",
+      "textHash": "fbde5ff5098e1d9a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/111fbed18b0f3bdb.wav",
+      "duration": 7.966,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.61
+        },
+        {
+          "w": "quick",
+          "start": 0.9
+        },
+        {
+          "w": "quiz.",
+          "start": 1.19
+        },
+        {
+          "w": "An",
+          "start": 1.48
+        },
+        {
+          "w": "important",
+          "start": 1.72
+        },
+        {
+          "w": "email",
+          "start": 2.22
+        },
+        {
+          "w": "from",
+          "start": 2.72
+        },
+        {
+          "w": "your",
+          "start": 2.88
+        },
+        {
+          "w": "boss",
+          "start": 3.04
+        },
+        {
+          "w": "lands",
+          "start": 3.36
+        },
+        {
+          "w": "in",
+          "start": 3.6
+        },
+        {
+          "w": "the",
+          "start": 3.84
+        },
+        {
+          "w": "spam",
+          "start": 4.08
+        },
+        {
+          "w": "folder.",
+          "start": 4.32
+        },
+        {
+          "w": "Which",
+          "start": 4.76
+        },
+        {
+          "w": "number",
+          "start": 5.2
+        },
+        {
+          "w": "went",
+          "start": 5.64
+        },
+        {
+          "w": "down:",
+          "start": 5.96
+        },
+        {
+          "w": "precision,",
+          "start": 6.36
+        },
+        {
+          "w": "or",
+          "start": 7.12
+        },
+        {
+          "w": "recall?",
+          "start": 7.36
+        }
+      ],
+      "matchScore": 0.684
+    },
+    "c35": {
+      "segment": "quiz",
+      "display": "Pause the video and decide.",
+      "spoken": "Pause the video and decide.",
+      "textHash": "654ffa96c27d0f1e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0e5f123718689de8.wav",
+      "duration": 1.531,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.4
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "decide.",
+          "start": 0.96
+        }
+      ],
+      "matchScore": 1,
+      "after": 3
+    },
+    "c36": {
+      "segment": "quiz",
+      "display": "It's precision. A real email marked as spam is a false alarm, and false alarms lower precision.",
+      "spoken": "It's precision. A real email marked as spam is a false alarm, and false alarms lower precision.",
+      "textHash": "96f24d5dfca77667",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/784be08f8ff77ca9.wav",
+      "duration": 6.45,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "precision.",
+          "start": 0.28
+        },
+        {
+          "w": "A",
+          "start": 1.08
+        },
+        {
+          "w": "real",
+          "start": 1.28
+        },
+        {
+          "w": "email",
+          "start": 1.72
+        },
+        {
+          "w": "marked",
+          "start": 2.16
+        },
+        {
+          "w": "as",
+          "start": 2.48
+        },
+        {
+          "w": "spam",
+          "start": 2.78
+        },
+        {
+          "w": "is",
+          "start": 3.08
+        },
+        {
+          "w": "a",
+          "start": 3.24
+        },
+        {
+          "w": "false",
+          "start": 3.36
+        },
+        {
+          "w": "alarm,",
+          "start": 3.72
+        },
+        {
+          "w": "and",
+          "start": 4.24
+        },
+        {
+          "w": "false",
+          "start": 4.48
+        },
+        {
+          "w": "alarms",
+          "start": 4.88
+        },
+        {
+          "w": "lower",
+          "start": 5.48
+        },
+        {
+          "w": "precision.",
+          "start": 5.84
+        }
+      ],
+      "matchScore": 0.846
+    },
+    "c37": {
+      "segment": "recap",
+      "display": "Let's recap. A classifier reads text and picks one label from a fixed list.",
+      "spoken": "Let's recap. A classifier reads text and picks one label from a fixed list.",
+      "textHash": "37379e3112d28b0b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b8f5f3d8aeafc6fc.wav",
+      "duration": 4.769,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "classifier",
+          "start": 1.2
+        },
+        {
+          "w": "reads",
+          "start": 2
+        },
+        {
+          "w": "text",
+          "start": 2.4
+        },
+        {
+          "w": "and",
+          "start": 2.8
+        },
+        {
+          "w": "picks",
+          "start": 2.96
+        },
+        {
+          "w": "one",
+          "start": 3.28
+        },
+        {
+          "w": "label",
+          "start": 3.48
+        },
+        {
+          "w": "from",
+          "start": 3.84
+        },
+        {
+          "w": "a",
+          "start": 3.96
+        },
+        {
+          "w": "fixed",
+          "start": 4.08
+        },
+        {
+          "w": "list.",
+          "start": 4.4
+        }
+      ],
+      "matchScore": 1
+    },
+    "c38": {
+      "segment": "recap",
+      "display": "It learns from labelled examples, using words as clues.",
+      "spoken": "It learns from labelled examples, using words as clues.",
+      "textHash": "c6d0e5ce4dde76bc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1525579f850831f1.wav",
+      "duration": 3.326,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "learns",
+          "start": 0.16
+        },
+        {
+          "w": "from",
+          "start": 0.48
+        },
+        {
+          "w": "labelled",
+          "start": 0.64
+        },
+        {
+          "w": "examples,",
+          "start": 1.16
+        },
+        {
+          "w": "using",
+          "start": 1.88
+        },
+        {
+          "w": "words",
+          "start": 2.32
+        },
+        {
+          "w": "as",
+          "start": 2.64
+        },
+        {
+          "w": "clues.",
+          "start": 2.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c39": {
+      "segment": "recap",
+      "display": "Naive Bayes lets every word vote on its own, and the heavier side wins.",
+      "spoken": "Naive Bayes lets every word vote on its own, and the heavier side wins.",
+      "textHash": "be8a67e6c1786d71",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8bbbd430e66f5005.wav",
+      "duration": 4.398,
+      "marks": {},
+      "words": [
+        {
+          "w": "Naive",
+          "start": 0
+        },
+        {
+          "w": "Bayes",
+          "start": 0.44
+        },
+        {
+          "w": "lets",
+          "start": 0.88
+        },
+        {
+          "w": "every",
+          "start": 1.2
+        },
+        {
+          "w": "word",
+          "start": 1.48
+        },
+        {
+          "w": "vote",
+          "start": 1.76
+        },
+        {
+          "w": "on",
+          "start": 2.04
+        },
+        {
+          "w": "its",
+          "start": 2.2
+        },
+        {
+          "w": "own,",
+          "start": 2.4
+        },
+        {
+          "w": "and",
+          "start": 2.72
+        },
+        {
+          "w": "the",
+          "start": 2.88
+        },
+        {
+          "w": "heavier",
+          "start": 3.213
+        },
+        {
+          "w": "side",
+          "start": 3.547
+        },
+        {
+          "w": "wins.",
+          "start": 3.88
+        }
+      ],
+      "matchScore": 0.615
+    },
+    "c40": {
+      "segment": "recap",
+      "display": "Precision asks: were the alarms right? Recall asks: did we miss anything?",
+      "spoken": "Precision asks: were the alarms right? Recall asks: did we miss anything?",
+      "textHash": "b6f18ad85ee6025b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0abf6ee9695d41c0.wav",
+      "duration": 4.388,
+      "marks": {},
+      "words": [
+        {
+          "w": "Precision",
+          "start": 0
+        },
+        {
+          "w": "asks:",
+          "start": 0.6
+        },
+        {
+          "w": "were",
+          "start": 1.08
+        },
+        {
+          "w": "the",
+          "start": 1.2
+        },
+        {
+          "w": "alarms",
+          "start": 1.36
+        },
+        {
+          "w": "right?",
+          "start": 1.92
+        },
+        {
+          "w": "Recall",
+          "start": 2.32
+        },
+        {
+          "w": "asks:",
+          "start": 2.88
+        },
+        {
+          "w": "did",
+          "start": 3.36
+        },
+        {
+          "w": "we",
+          "start": 3.52
+        },
+        {
+          "w": "miss",
+          "start": 3.68
+        },
+        {
+          "w": "anything?",
+          "start": 3.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c41": {
+      "segment": "recap",
+      "display": "Next lesson: Morphology. Why is 'unbreakable' really three pieces?",
+      "spoken": "Next lesson: Morphology. Why is 'unbreakable' really three pieces?",
+      "textHash": "2eaae91b4c041c8c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f1ebeb21b0d3c9e3.wav",
+      "duration": 4.294,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.293
+        },
+        {
+          "w": "lesson:",
+          "start": 0.587
+        },
+        {
+          "w": "Morphology.",
+          "start": 0.88
+        },
+        {
+          "w": "Why",
+          "start": 1.92
+        },
+        {
+          "w": "is",
+          "start": 2.16
+        },
+        {
+          "w": "'unbreakable'",
+          "start": 2.4
+        },
+        {
+          "w": "really",
+          "start": 3.08
+        },
+        {
+          "w": "three",
+          "start": 3.48
+        },
+        {
+          "w": "pieces?",
+          "start": 3.72
+        }
+      ],
+      "matchScore": 0.75
+    }
+  }
+}

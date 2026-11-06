@@ -1,0 +1,75 @@
+{
+  "id": "u1-03",
+  "thumbnail": { "headline": "How a spam filter decides", "big": "spam or not?" },
+  "tags": ["text classification", "spam filter", "naive bayes", "precision and recall", "machine learning basics"],
+  "segments": [
+    { "id": "intro", "kind": "intro", "component": "TitleCard", "title": "Welcome",
+      "props": { "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}", "title": "Text Classification", "subtitle": "Teaching computers to sort text" } },
+
+    { "id": "idea", "kind": "core", "component": "BigIdea", "title": "The big idea",
+      "props": { "kicker": "Key idea", "text": "Classification means putting each piece of text into the right box.", "highlight": ["right box"] } },
+
+    { "id": "everyday", "kind": "core", "component": "Bullets", "title": "Where you meet it",
+      "props": { "kicker": "Every day", "title": "You use text classifiers all the time", "items": [
+        { "text": "Spam or not spam" },
+        { "text": "Positive or negative review" },
+        { "text": "Which team should answer a support ticket" },
+        { "text": "Which language a message is written in" } ] } },
+
+    { "id": "classifier", "kind": "core", "component": "Definition", "title": "What is a classifier?",
+      "props": { "kicker": "Definition", "term": "Classifier", "definition": "A program that reads a piece of text and picks one label from a fixed list.",
+        "example": "“WIN a FREE prize!!!” → spam", "analogy": "A post-office sorter dropping each letter into the right pigeonhole." } },
+
+    { "id": "learn", "kind": "core", "component": "Steps", "title": "How a classifier learns",
+      "props": { "kicker": "Learning from examples", "title": "How a classifier learns", "steps": [
+        { "label": "Collect", "detail": "examples with the right label" },
+        { "label": "Find clues", "detail": "words that hint at a label" },
+        { "label": "Train", "detail": "learn which clues point where" },
+        { "label": "Predict", "detail": "label text it has never seen" } ] } },
+
+    { "id": "clues", "kind": "core", "component": "Table", "title": "Words as clues",
+      "props": { "kicker": "Example training set", "title": "Emails containing each word (out of 100)", "columns": ["Word", "In spam", "In normal mail"],
+        "rows": [
+          ["free", "30", "2"],
+          ["winner", "18", "1"],
+          ["meeting", "1", "25"],
+          ["invoice", "3", "12"] ],
+        "highlight": [{ "row": 0, "col": 1 }, { "row": 2, "col": 2 }] } },
+
+    { "id": "bayes", "kind": "core", "component": "Bullets", "title": "Naive Bayes in plain words",
+      "props": { "kicker": "Naive Bayes", "title": "Let the clues vote", "numbered": true, "items": [
+        { "text": "Every word in the email is a clue" },
+        { "text": "Spam-like words add weight to spam" },
+        { "text": "Normal-mail words add weight to normal" },
+        { "text": "The heavier side wins" },
+        { "text": "“Naive”: each word is judged on its own" } ] } },
+
+    { "id": "eval", "kind": "core", "component": "Compare", "title": "Precision and recall", "short": true,
+      "shortTitle": "Precision vs recall, explained with your spam folder",
+      "props": { "kicker": "Is it any good?", "title": "Two ways to grade a spam filter", "columns": [
+        { "title": "Precision", "items": ["Of the mail marked spam,", "how much really was spam?", "Low: real emails go missing"], "tone": "neutral" },
+        { "title": "Recall", "items": ["Of all the real spam,", "how much did we catch?", "Low: spam fills your inbox"], "tone": "neutral" } ],
+        "verdict": { "text": "A good filter needs both", "at": "c29@verdict" } } },
+
+    { "id": "test", "kind": "core", "component": "BarChart", "title": "Checking the filter",
+      "props": { "kicker": "Example test", "title": "Our filter on 100 test emails", "unit": "emails", "bars": [
+        { "label": "Marked as spam", "value": 20 },
+        { "label": "…really spam", "value": 18 },
+        { "label": "All real spam", "value": 24 } ],
+        "note": "Precision: 18 of 20 (90%) · Recall: 18 of 24 (75%)" } },
+
+    { "id": "quiz", "kind": "quiz", "component": "Quiz", "title": "Quick quiz", "short": true,
+      "shortTitle": "Quick quiz: your boss's email went to spam. What failed?",
+      "props": { "question": "An important email from your boss lands in the spam folder. Which number went down?",
+        "options": ["Precision", "Recall", "Neither"], "answer": 0,
+        "explain": "A real email marked as spam is a false alarm, and false alarms lower precision." } },
+
+    { "id": "recap", "kind": "recap", "component": "Recap", "title": "Recap and next lesson",
+      "props": { "points": [
+        "A classifier picks one label from a fixed list",
+        "It learns from labelled examples, using words as clues",
+        "Naive Bayes lets every word vote on its own",
+        "Precision: no false alarms. Recall: nothing missed." ],
+        "next": { "title": "{{next.short}}", "question": "{{next.question}}" } } }
+  ]
+}

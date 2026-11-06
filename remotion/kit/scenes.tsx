@@ -178,8 +178,9 @@ export const BarChart: React.FC<KitProps<"BarChart">> = ({ kicker, title, unit, 
             <div style={{ fontFamily: F.mono, fontWeight: 700, fontSize: 44, color: C.text, opacity: progress(frame, at[i] + 18, 8) }}>{b.value.toLocaleString("en-US")}{unit ? <span style={{ fontSize: 28, color: C.mute }}> {unit}</span> : null}</div>
           </div>
         ))}
+        {/* the note follows the bars, so it never sits under a two-line caption */}
+        {note && <div style={{ fontFamily: F.body, fontSize: 36, color: C.text, marginTop: 20, paddingLeft: 330, ...enter(frame, at[at.length - 1] + 30) }}>{note}</div>}
       </div>
-      {note && <div style={{ position: "absolute", left: 110, top: 880, fontFamily: F.body, fontSize: 34, color: C.mute, ...enter(frame, at[at.length - 1] + 30) }}>{note}</div>}
     </>
   );
 };

@@ -126,7 +126,8 @@
       "lesson": 3,
       "short": "Text Classification",
       "title": "Text Classification: Teaching Computers to Sort Text",
-      "question": "How does a spam filter decide?"
+      "question": "How does a spam filter decide?",
+      "folder": "u1-03-classification"
     },
     {
       "id": "u2-01",
