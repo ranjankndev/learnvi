@@ -1,0 +1,2881 @@
+{
+  "version": 1,
+  "episode": "u3-03",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 3, lesson 3: transition-based parsing.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 3, lesson 3: transition-based parsing.",
+      "textHash": "d162a469c9ead1d7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/96429a55360194bf.wav",
+      "duration": 6.775,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.853
+        },
+        {
+          "w": "NLP,",
+          "start": 1.227
+        },
+        {
+          "w": "Simply",
+          "start": 1.6
+        },
+        {
+          "w": "Explained.",
+          "start": 2.12
+        },
+        {
+          "w": "This",
+          "start": 2.88
+        },
+        {
+          "w": "is",
+          "start": 3.2
+        },
+        {
+          "w": "unit",
+          "start": 3.4
+        },
+        {
+          "w": "3,",
+          "start": 3.813
+        },
+        {
+          "w": "lesson",
+          "start": 4.227
+        },
+        {
+          "w": "3:",
+          "start": 4.64
+        },
+        {
+          "w": "transition-based",
+          "start": 5.4
+        },
+        {
+          "w": "parsing.",
+          "start": 6.16
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time we learned what a dependency tree looks like. Today we see how a fast parser builds one, a single move at a time.",
+      "spoken": "Last time we learned what a dependency tree looks like. Today we see how a fast parser builds one, a single move at a time.",
+      "textHash": "084321a986e5c1f7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2ebf43b6e2761e59.wav",
+      "duration": 7.605,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time",
+          "start": 0.32
+        },
+        {
+          "w": "we",
+          "start": 0.56
+        },
+        {
+          "w": "learned",
+          "start": 0.72
+        },
+        {
+          "w": "what",
+          "start": 1.08
+        },
+        {
+          "w": "a",
+          "start": 1.24
+        },
+        {
+          "w": "dependency",
+          "start": 1.32
+        },
+        {
+          "w": "tree",
+          "start": 2.08
+        },
+        {
+          "w": "looks",
+          "start": 2.4
+        },
+        {
+          "w": "like.",
+          "start": 2.72
+        },
+        {
+          "w": "Today",
+          "start": 3.2
+        },
+        {
+          "w": "we",
+          "start": 3.68
+        },
+        {
+          "w": "see",
+          "start": 3.92
+        },
+        {
+          "w": "how",
+          "start": 4.16
+        },
+        {
+          "w": "a",
+          "start": 4.32
+        },
+        {
+          "w": "fast",
+          "start": 4.48
+        },
+        {
+          "w": "parser",
+          "start": 4.8
+        },
+        {
+          "w": "builds",
+          "start": 5.24
+        },
+        {
+          "w": "one,",
+          "start": 5.68
+        },
+        {
+          "w": "a",
+          "start": 6
+        },
+        {
+          "w": "single",
+          "start": 6.2
+        },
+        {
+          "w": "move",
+          "start": 6.64
+        },
+        {
+          "w": "at",
+          "start": 6.96
+        },
+        {
+          "w": "a",
+          "start": 7.12
+        },
+        {
+          "w": "time.",
+          "start": 7.28
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. Read the sentence from left to right, and build the tree using just a few simple moves.",
+      "spoken": "Here's the idea. Read the sentence from left to right, and build the tree using just a few simple moves.",
+      "textHash": "f50191135f26eaa1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/86870dd5762b0516.wav",
+      "duration": 6.171,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.4
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "Read",
+          "start": 1.2
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "sentence",
+          "start": 1.76
+        },
+        {
+          "w": "from",
+          "start": 2.28
+        },
+        {
+          "w": "left",
+          "start": 2.48
+        },
+        {
+          "w": "to",
+          "start": 2.72
+        },
+        {
+          "w": "right,",
+          "start": 2.96
+        },
+        {
+          "w": "and",
+          "start": 3.28
+        },
+        {
+          "w": "build",
+          "start": 3.52
+        },
+        {
+          "w": "the",
+          "start": 3.84
+        },
+        {
+          "w": "tree",
+          "start": 3.96
+        },
+        {
+          "w": "using",
+          "start": 4.32
+        },
+        {
+          "w": "just",
+          "start": 4.64
+        },
+        {
+          "w": "a",
+          "start": 4.88
+        },
+        {
+          "w": "few",
+          "start": 5
+        },
+        {
+          "w": "simple",
+          "start": 5.28
+        },
+        {
+          "w": "moves.",
+          "start": 5.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c04": {
+      "segment": "parser",
+      "display": "A transition parser reads words from a queue called the buffer, keeps words it's still working on in a pile called the stack, and picks one move at each step.",
+      "spoken": "A transition parser reads words from a queue called the buffer, keeps words it's still working on in a pile called the stack, and picks one move at each step.",
+      "textHash": "5bd5e8a82d420bf2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6e57d0374713e8de.wav",
+      "duration": 8.92,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "transition",
+          "start": 0.16
+        },
+        {
+          "w": "parser",
+          "start": 0.76
+        },
+        {
+          "w": "reads",
+          "start": 1.28
+        },
+        {
+          "w": "words",
+          "start": 1.76
+        },
+        {
+          "w": "from",
+          "start": 2.04
+        },
+        {
+          "w": "a",
+          "start": 2.2
+        },
+        {
+          "w": "queue",
+          "start": 2.42
+        },
+        {
+          "w": "called",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 2.88
+        },
+        {
+          "w": "buffer,",
+          "start": 3
+        },
+        {
+          "w": "keeps",
+          "start": 3.64
+        },
+        {
+          "w": "words",
+          "start": 4.04
+        },
+        {
+          "w": "it's",
+          "start": 4.36
+        },
+        {
+          "w": "still",
+          "start": 4.6
+        },
+        {
+          "w": "working",
+          "start": 4.84
+        },
+        {
+          "w": "on",
+          "start": 5.16
+        },
+        {
+          "w": "in",
+          "start": 5.36
+        },
+        {
+          "w": "a",
+          "start": 5.52
+        },
+        {
+          "w": "pile",
+          "start": 5.64
+        },
+        {
+          "w": "called",
+          "start": 6
+        },
+        {
+          "w": "the",
+          "start": 6.28
+        },
+        {
+          "w": "stack,",
+          "start": 6.44
+        },
+        {
+          "w": "and",
+          "start": 6.88
+        },
+        {
+          "w": "picks",
+          "start": 7.12
+        },
+        {
+          "w": "one",
+          "start": 7.48
+        },
+        {
+          "w": "move",
+          "start": 7.76
+        },
+        {
+          "w": "at",
+          "start": 8.08
+        },
+        {
+          "w": "each",
+          "start": 8.24
+        },
+        {
+          "w": "step.",
+          "start": 8.52
+        }
+      ],
+      "matchScore": 0.958
+    },
+    "c05": {
+      "segment": "parser",
+      "display": "At any moment, you can describe where it is by what's on the stack and what's left in the buffer.",
+      "spoken": "At any moment, you can describe where it is by what's on the stack and what's left in the buffer.",
+      "textHash": "32710ca00b75b509",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/263bee93ef092b45.wav",
+      "duration": 5.207,
+      "marks": {},
+      "words": [
+        {
+          "w": "At",
+          "start": 0
+        },
+        {
+          "w": "any",
+          "start": 0.2
+        },
+        {
+          "w": "moment,",
+          "start": 0.48
+        },
+        {
+          "w": "you",
+          "start": 1.04
+        },
+        {
+          "w": "can",
+          "start": 1.2
+        },
+        {
+          "w": "describe",
+          "start": 1.4
+        },
+        {
+          "w": "where",
+          "start": 1.96
+        },
+        {
+          "w": "it",
+          "start": 2.12
+        },
+        {
+          "w": "is",
+          "start": 2.28
+        },
+        {
+          "w": "by",
+          "start": 2.48
+        },
+        {
+          "w": "what's",
+          "start": 2.68
+        },
+        {
+          "w": "on",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "stack",
+          "start": 3.28
+        },
+        {
+          "w": "and",
+          "start": 3.68
+        },
+        {
+          "w": "what's",
+          "start": 3.92
+        },
+        {
+          "w": "left",
+          "start": 4.24
+        },
+        {
+          "w": "in",
+          "start": 4.48
+        },
+        {
+          "w": "the",
+          "start": 4.64
+        },
+        {
+          "w": "buffer.",
+          "start": 4.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "parser",
+      "display": "Think of sorting post. New letters wait in your in-tray, that's the buffer, and letters you're still dealing with sit in a pile on your desk. That's the stack.",
+      "spoken": "Think of sorting post. New letters wait in your in-tray, that's the buffer, and letters you're still dealing with sit in a pile on your desk. That's the stack.",
+      "textHash": "9c1d91b21a5ba222",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/93fda5b2c6813c7a.wav",
+      "duration": 8.502,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "sorting",
+          "start": 0.36
+        },
+        {
+          "w": "post.",
+          "start": 0.88
+        },
+        {
+          "w": "New",
+          "start": 1.48
+        },
+        {
+          "w": "letters",
+          "start": 1.76
+        },
+        {
+          "w": "wait",
+          "start": 2.2
+        },
+        {
+          "w": "in",
+          "start": 2.44
+        },
+        {
+          "w": "your",
+          "start": 2.56
+        },
+        {
+          "w": "in-tray,",
+          "start": 2.88
+        },
+        {
+          "w": "that's",
+          "start": 3.2
+        },
+        {
+          "w": "the",
+          "start": 3.56
+        },
+        {
+          "w": "buffer,",
+          "start": 3.68
+        },
+        {
+          "w": "and",
+          "start": 4.16
+        },
+        {
+          "w": "letters",
+          "start": 4.32
+        },
+        {
+          "w": "you're",
+          "start": 4.72
+        },
+        {
+          "w": "still",
+          "start": 4.92
+        },
+        {
+          "w": "dealing",
+          "start": 5.12
+        },
+        {
+          "w": "with",
+          "start": 5.44
+        },
+        {
+          "w": "sit",
+          "start": 5.6
+        },
+        {
+          "w": "in",
+          "start": 5.88
+        },
+        {
+          "w": "a",
+          "start": 6
+        },
+        {
+          "w": "pile",
+          "start": 6.12
+        },
+        {
+          "w": "on",
+          "start": 6.48
+        },
+        {
+          "w": "your",
+          "start": 6.64
+        },
+        {
+          "w": "desk.",
+          "start": 6.84
+        },
+        {
+          "w": "That's",
+          "start": 7.44
+        },
+        {
+          "w": "the",
+          "start": 7.84
+        },
+        {
+          "w": "stack.",
+          "start": 8.04
+        }
+      ],
+      "matchScore": 0.958
+    },
+    "c07": {
+      "segment": "moves",
+      "display": "The version in your syllabus is called arc-eager. It has four moves.",
+      "spoken": "The version in your syllabus is called arc-eager. It has four moves.",
+      "textHash": "e0e399ef28d11169",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/517cdcd4f2b12af2.wav",
+      "duration": 3.745,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0.16
+        },
+        {
+          "w": "version",
+          "start": 0.32
+        },
+        {
+          "w": "in",
+          "start": 0.48
+        },
+        {
+          "w": "your",
+          "start": 0.56
+        },
+        {
+          "w": "syllabus",
+          "start": 0.72
+        },
+        {
+          "w": "is",
+          "start": 1.24
+        },
+        {
+          "w": "called",
+          "start": 1.44
+        },
+        {
+          "w": "arc-eager.",
+          "start": 2
+        },
+        {
+          "w": "It",
+          "start": 2.56
+        },
+        {
+          "w": "has",
+          "start": 2.76
+        },
+        {
+          "w": "four",
+          "start": 2.96
+        },
+        {
+          "w": "moves.",
+          "start": 3.24
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c08": {
+      "segment": "moves",
+      "display": "SHIFT pushes the next word from the buffer onto the stack.",
+      "spoken": "shift pushes the next word from the buffer onto the stack.",
+      "textHash": "6d66c1260e43ba4a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a3a856aed6c0604a.wav",
+      "duration": 2.964,
+      "marks": {},
+      "words": [
+        {
+          "w": "SHIFT",
+          "start": 0
+        },
+        {
+          "w": "pushes",
+          "start": 0.48
+        },
+        {
+          "w": "the",
+          "start": 0.88
+        },
+        {
+          "w": "next",
+          "start": 1
+        },
+        {
+          "w": "word",
+          "start": 1.32
+        },
+        {
+          "w": "from",
+          "start": 1.56
+        },
+        {
+          "w": "the",
+          "start": 1.68
+        },
+        {
+          "w": "buffer",
+          "start": 1.8
+        },
+        {
+          "w": "onto",
+          "start": 2.12
+        },
+        {
+          "w": "the",
+          "start": 2.44
+        },
+        {
+          "w": "stack.",
+          "start": 2.56
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c09": {
+      "segment": "moves",
+      "display": "LEFT-ARC makes the next word the head of the word on top of the stack, then pops that top word off. Its job is done.",
+      "spoken": "left arc makes the next word the head of the word on top of the stack, then pops that top word off. Its job is done.",
+      "textHash": "66c4efc2eb0ca54e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9c74b81b92c71b28.wav",
+      "duration": 6.824,
+      "marks": {},
+      "words": [
+        {
+          "w": "LEFT-ARC",
+          "start": 0.32
+        },
+        {
+          "w": "makes",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 0.92
+        },
+        {
+          "w": "next",
+          "start": 1.04
+        },
+        {
+          "w": "word",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.52
+        },
+        {
+          "w": "head",
+          "start": 1.68
+        },
+        {
+          "w": "of",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "word",
+          "start": 2.04
+        },
+        {
+          "w": "on",
+          "start": 2.28
+        },
+        {
+          "w": "top",
+          "start": 2.44
+        },
+        {
+          "w": "of",
+          "start": 2.72
+        },
+        {
+          "w": "the",
+          "start": 2.8
+        },
+        {
+          "w": "stack,",
+          "start": 2.96
+        },
+        {
+          "w": "then",
+          "start": 3.44
+        },
+        {
+          "w": "pops",
+          "start": 3.68
+        },
+        {
+          "w": "that",
+          "start": 4.12
+        },
+        {
+          "w": "top",
+          "start": 4.32
+        },
+        {
+          "w": "word",
+          "start": 4.68
+        },
+        {
+          "w": "off.",
+          "start": 5.04
+        },
+        {
+          "w": "Its",
+          "start": 5.48
+        },
+        {
+          "w": "job",
+          "start": 5.88
+        },
+        {
+          "w": "is",
+          "start": 6.24
+        },
+        {
+          "w": "done.",
+          "start": 6.48
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c10": {
+      "segment": "moves",
+      "display": "RIGHT-ARC makes the top word the head of the next word, then pushes the next word onto the stack.",
+      "spoken": "right arc makes the top word the head of the next word, then pushes the next word onto the stack.",
+      "textHash": "1c533f8f3ff952db",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ef8fa3257b0a0d8f.wav",
+      "duration": 5.16,
+      "marks": {},
+      "words": [
+        {
+          "w": "RIGHT-ARC",
+          "start": 0.34
+        },
+        {
+          "w": "makes",
+          "start": 0.68
+        },
+        {
+          "w": "the",
+          "start": 0.92
+        },
+        {
+          "w": "top",
+          "start": 1.08
+        },
+        {
+          "w": "word",
+          "start": 1.4
+        },
+        {
+          "w": "the",
+          "start": 1.64
+        },
+        {
+          "w": "head",
+          "start": 1.8
+        },
+        {
+          "w": "of",
+          "start": 1.96
+        },
+        {
+          "w": "the",
+          "start": 2.08
+        },
+        {
+          "w": "next",
+          "start": 2.2
+        },
+        {
+          "w": "word,",
+          "start": 2.56
+        },
+        {
+          "w": "then",
+          "start": 2.88
+        },
+        {
+          "w": "pushes",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.68
+        },
+        {
+          "w": "next",
+          "start": 3.8
+        },
+        {
+          "w": "word",
+          "start": 4.12
+        },
+        {
+          "w": "onto",
+          "start": 4.38
+        },
+        {
+          "w": "the",
+          "start": 4.64
+        },
+        {
+          "w": "stack.",
+          "start": 4.76
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c11": {
+      "segment": "moves",
+      "display": "And REDUCE pops the top word, once it has its head and all its dependents.",
+      "spoken": "And reduce pops the top word, once it has its head and all its dependents.",
+      "textHash": "cae4ccf569185866",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/886575ff11abcf92.wav",
+      "duration": 4.407,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "REDUCE",
+          "start": 0.16
+        },
+        {
+          "w": "pops",
+          "start": 0.68
+        },
+        {
+          "w": "the",
+          "start": 1
+        },
+        {
+          "w": "top",
+          "start": 1.16
+        },
+        {
+          "w": "word,",
+          "start": 1.48
+        },
+        {
+          "w": "once",
+          "start": 1.84
+        },
+        {
+          "w": "it",
+          "start": 2.16
+        },
+        {
+          "w": "has",
+          "start": 2.32
+        },
+        {
+          "w": "its",
+          "start": 2.52
+        },
+        {
+          "w": "head",
+          "start": 2.8
+        },
+        {
+          "w": "and",
+          "start": 3.04
+        },
+        {
+          "w": "all",
+          "start": 3.2
+        },
+        {
+          "w": "its",
+          "start": 3.44
+        },
+        {
+          "w": "dependents.",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c12": {
+      "segment": "walk",
+      "display": "Let's parse \"Priya ate pizza\". We start with ROOT on the stack, and all three words in the buffer.",
+      "spoken": "Let's parse \"Priya ate pizza\". We start with root on the stack, and all three words in the buffer.",
+      "textHash": "7d1ece85930bd187",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dba79de1da3edf85.wav",
+      "duration": 5.643,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "parse",
+          "start": 0.36
+        },
+        {
+          "w": "\"Priya",
+          "start": 0.68
+        },
+        {
+          "w": "ate",
+          "start": 1
+        },
+        {
+          "w": "pizza\".",
+          "start": 1.32
+        },
+        {
+          "w": "We",
+          "start": 1.96
+        },
+        {
+          "w": "start",
+          "start": 2.28
+        },
+        {
+          "w": "with",
+          "start": 2.64
+        },
+        {
+          "w": "ROOT",
+          "start": 2.8
+        },
+        {
+          "w": "on",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.28
+        },
+        {
+          "w": "stack,",
+          "start": 3.4
+        },
+        {
+          "w": "and",
+          "start": 3.8
+        },
+        {
+          "w": "all",
+          "start": 4.04
+        },
+        {
+          "w": "three",
+          "start": 4.28
+        },
+        {
+          "w": "words",
+          "start": 4.6
+        },
+        {
+          "w": "in",
+          "start": 4.96
+        },
+        {
+          "w": "the",
+          "start": 5.04
+        },
+        {
+          "w": "buffer.",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c13": {
+      "segment": "walk",
+      "display": "Step one, SHIFT: Priya moves onto the stack.",
+      "spoken": "Step one, shift: Priya moves onto the stack.",
+      "textHash": "8241972903bf82b2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0e9206678643fe35.wav",
+      "duration": 2.803,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "one,",
+          "start": 0.4
+        },
+        {
+          "w": "SHIFT:",
+          "start": 0.68
+        },
+        {
+          "w": "Priya",
+          "start": 1.18
+        },
+        {
+          "w": "moves",
+          "start": 1.68
+        },
+        {
+          "w": "onto",
+          "start": 1.98
+        },
+        {
+          "w": "the",
+          "start": 2.28
+        },
+        {
+          "w": "stack.",
+          "start": 2.4
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c14": {
+      "segment": "walk",
+      "display": "Step two, LEFT-ARC: the next word, ate, becomes the head of Priya. Priya is the subject, so she's popped off.",
+      "spoken": "Step two, left arc: the next word, ate, becomes the head of Priya. Priya is the subject, so she's popped off.",
+      "textHash": "0a24d6b2fb3f478e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ded374a61ea052c4.wav",
+      "duration": 6.635,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "two,",
+          "start": 0.36
+        },
+        {
+          "w": "LEFT-ARC:",
+          "start": 0.9
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "next",
+          "start": 1.6
+        },
+        {
+          "w": "word,",
+          "start": 2
+        },
+        {
+          "w": "ate,",
+          "start": 2.28
+        },
+        {
+          "w": "becomes",
+          "start": 2.56
+        },
+        {
+          "w": "the",
+          "start": 2.96
+        },
+        {
+          "w": "head",
+          "start": 3.12
+        },
+        {
+          "w": "of",
+          "start": 3.28
+        },
+        {
+          "w": "Priya.",
+          "start": 3.44
+        },
+        {
+          "w": "Priya",
+          "start": 4.02
+        },
+        {
+          "w": "is",
+          "start": 4.6
+        },
+        {
+          "w": "the",
+          "start": 4.76
+        },
+        {
+          "w": "subject,",
+          "start": 4.92
+        },
+        {
+          "w": "so",
+          "start": 5.44
+        },
+        {
+          "w": "she's",
+          "start": 5.6
+        },
+        {
+          "w": "popped",
+          "start": 5.96
+        },
+        {
+          "w": "off.",
+          "start": 6.32
+        }
+      ],
+      "matchScore": 0.824
+    },
+    "c15": {
+      "segment": "walk",
+      "display": "Step three, RIGHT-ARC: ROOT becomes the head of ate, and ate goes onto the stack.",
+      "spoken": "Step three, right arc: root becomes the head of ate, and ate goes onto the stack.",
+      "textHash": "b49a64fd6cdcb753",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7808d290c17b4ce3.wav",
+      "duration": 4.634,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "three,",
+          "start": 0.4
+        },
+        {
+          "w": "RIGHT-ARC:",
+          "start": 1
+        },
+        {
+          "w": "ROOT",
+          "start": 1.6
+        },
+        {
+          "w": "becomes",
+          "start": 1.96
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "head",
+          "start": 2.52
+        },
+        {
+          "w": "of",
+          "start": 2.68
+        },
+        {
+          "w": "ate,",
+          "start": 2.88
+        },
+        {
+          "w": "and",
+          "start": 3.08
+        },
+        {
+          "w": "ate",
+          "start": 3.32
+        },
+        {
+          "w": "goes",
+          "start": 3.56
+        },
+        {
+          "w": "onto",
+          "start": 3.82
+        },
+        {
+          "w": "the",
+          "start": 4.08
+        },
+        {
+          "w": "stack.",
+          "start": 4.2
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c16": {
+      "segment": "walk",
+      "display": "Step four, RIGHT-ARC: ate becomes the head of pizza, the object. The buffer is empty, and the tree is complete.",
+      "spoken": "Step four, right arc: ate becomes the head of pizza, the object. The buffer is empty, and the tree is complete.",
+      "textHash": "526f8b68b929682c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/409287cba1177ac0.wav",
+      "duration": 6.874,
+      "marks": {},
+      "words": [
+        {
+          "w": "Step",
+          "start": 0
+        },
+        {
+          "w": "four,",
+          "start": 0.36
+        },
+        {
+          "w": "RIGHT-ARC:",
+          "start": 0.853
+        },
+        {
+          "w": "ate",
+          "start": 1.347
+        },
+        {
+          "w": "becomes",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 2.2
+        },
+        {
+          "w": "head",
+          "start": 2.32
+        },
+        {
+          "w": "of",
+          "start": 2.48
+        },
+        {
+          "w": "pizza,",
+          "start": 2.64
+        },
+        {
+          "w": "the",
+          "start": 3.16
+        },
+        {
+          "w": "object.",
+          "start": 3.36
+        },
+        {
+          "w": "The",
+          "start": 4.08
+        },
+        {
+          "w": "buffer",
+          "start": 4.32
+        },
+        {
+          "w": "is",
+          "start": 4.8
+        },
+        {
+          "w": "empty,",
+          "start": 4.96
+        },
+        {
+          "w": "and",
+          "start": 5.44
+        },
+        {
+          "w": "the",
+          "start": 5.6
+        },
+        {
+          "w": "tree",
+          "start": 5.76
+        },
+        {
+          "w": "is",
+          "start": 6.08
+        },
+        {
+          "w": "complete.",
+          "start": 6.32
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c17": {
+      "segment": "choose",
+      "display": "But how does the parser know which move to make? Here's the loop.",
+      "spoken": "But how does the parser know which move to make? Here's the loop.",
+      "textHash": "ede887e0495e69b4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a87039c7969be1db.wav",
+      "duration": 3.182,
+      "marks": {},
+      "words": [
+        {
+          "w": "But",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.08
+        },
+        {
+          "w": "does",
+          "start": 0.24
+        },
+        {
+          "w": "the",
+          "start": 0.48
+        },
+        {
+          "w": "parser",
+          "start": 0.56
+        },
+        {
+          "w": "know",
+          "start": 1
+        },
+        {
+          "w": "which",
+          "start": 1.24
+        },
+        {
+          "w": "move",
+          "start": 1.44
+        },
+        {
+          "w": "to",
+          "start": 1.72
+        },
+        {
+          "w": "make?",
+          "start": 1.88
+        },
+        {
+          "w": "Here's",
+          "start": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.68
+        },
+        {
+          "w": "loop.",
+          "start": 2.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "choose",
+      "display": "Look: check the word on top of the stack, the next words in the buffer, and the links made so far.",
+      "spoken": "Look: check the word on top of the stack, the next words in the buffer, and the links made so far.",
+      "textHash": "2985dcaabd85db85",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/555088a7ec8303c4.wav",
+      "duration": 5.327,
+      "marks": {},
+      "words": [
+        {
+          "w": "Look:",
+          "start": 0
+        },
+        {
+          "w": "check",
+          "start": 0.32
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "word",
+          "start": 0.84
+        },
+        {
+          "w": "on",
+          "start": 1.08
+        },
+        {
+          "w": "top",
+          "start": 1.24
+        },
+        {
+          "w": "of",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "stack,",
+          "start": 1.76
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "next",
+          "start": 2.36
+        },
+        {
+          "w": "words",
+          "start": 2.72
+        },
+        {
+          "w": "in",
+          "start": 3.08
+        },
+        {
+          "w": "the",
+          "start": 3.2
+        },
+        {
+          "w": "buffer,",
+          "start": 3.28
+        },
+        {
+          "w": "and",
+          "start": 3.76
+        },
+        {
+          "w": "the",
+          "start": 3.987
+        },
+        {
+          "w": "links",
+          "start": 4.213
+        },
+        {
+          "w": "made",
+          "start": 4.44
+        },
+        {
+          "w": "so",
+          "start": 4.72
+        },
+        {
+          "w": "far.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c19": {
+      "segment": "choose",
+      "display": "Score: a trained classifier gives a score to each possible move.",
+      "spoken": "Score: a trained classifier gives a score to each possible move.",
+      "textHash": "39cb283fc097e0e5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f457ea56447c1d7e.wav",
+      "duration": 3.847,
+      "marks": {},
+      "words": [
+        {
+          "w": "Score:",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.52
+        },
+        {
+          "w": "trained",
+          "start": 0.68
+        },
+        {
+          "w": "classifier",
+          "start": 1.08
+        },
+        {
+          "w": "gives",
+          "start": 1.84
+        },
+        {
+          "w": "a",
+          "start": 2.04
+        },
+        {
+          "w": "score",
+          "start": 2.16
+        },
+        {
+          "w": "to",
+          "start": 2.52
+        },
+        {
+          "w": "each",
+          "start": 2.68
+        },
+        {
+          "w": "possible",
+          "start": 2.96
+        },
+        {
+          "w": "move.",
+          "start": 3.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "choose",
+      "display": "Act: make the move with the best score.",
+      "spoken": "Act: make the move with the best score.",
+      "textHash": "49691b2e00a7f1f2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/97d0af056c0b82dd.wav",
+      "duration": 2.011,
+      "marks": {},
+      "words": [
+        {
+          "w": "Act:",
+          "start": 0
+        },
+        {
+          "w": "make",
+          "start": 0.4
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "move",
+          "start": 0.8
+        },
+        {
+          "w": "with",
+          "start": 1.04
+        },
+        {
+          "w": "the",
+          "start": 1.16
+        },
+        {
+          "w": "best",
+          "start": 1.28
+        },
+        {
+          "w": "score.",
+          "start": 1.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "choose",
+      "display": "Repeat: keep going until the buffer is empty.",
+      "spoken": "Repeat: keep going until the buffer is empty.",
+      "textHash": "18c0287426b4da19",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3e9c6fc699a729fa.wav",
+      "duration": 2.662,
+      "marks": {},
+      "words": [
+        {
+          "w": "Repeat:",
+          "start": 0
+        },
+        {
+          "w": "keep",
+          "start": 0.56
+        },
+        {
+          "w": "going",
+          "start": 0.88
+        },
+        {
+          "w": "until",
+          "start": 1.24
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "buffer",
+          "start": 1.56
+        },
+        {
+          "w": "is",
+          "start": 1.96
+        },
+        {
+          "w": "empty.",
+          "start": 2.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "train",
+      "display": "And how is that classifier trained?",
+      "spoken": "And how is that classifier trained?",
+      "textHash": "216bbfe3d8c0428e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cc4b5b0ec0331649.wav",
+      "duration": 1.98,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "how",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.36
+        },
+        {
+          "w": "that",
+          "start": 0.56
+        },
+        {
+          "w": "classifier",
+          "start": 0.72
+        },
+        {
+          "w": "trained?",
+          "start": 1.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "train",
+      "display": "Start with a treebank: sentences whose correct trees are already known.",
+      "spoken": "Start with a treebank: sentences whose correct trees are already known.",
+      "textHash": "66a2ffe812599a0b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/994d2c9043ebe436.wav",
+      "duration": 4.088,
+      "marks": {},
+      "words": [
+        {
+          "w": "Start",
+          "start": 0
+        },
+        {
+          "w": "with",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "treebank:",
+          "start": 0.92
+        },
+        {
+          "w": "sentences",
+          "start": 1.36
+        },
+        {
+          "w": "whose",
+          "start": 2.08
+        },
+        {
+          "w": "correct",
+          "start": 2.32
+        },
+        {
+          "w": "trees",
+          "start": 2.76
+        },
+        {
+          "w": "are",
+          "start": 3.08
+        },
+        {
+          "w": "already",
+          "start": 3.24
+        },
+        {
+          "w": "known.",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c24": {
+      "segment": "train",
+      "display": "For each one, work out the sequence of moves that would build that exact tree. The rule that does this is called the oracle.",
+      "spoken": "For each one, work out the sequence of moves that would build that exact tree. The rule that does this is called the oracle.",
+      "textHash": "afaa36f52e3ddeff",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/92207947483b93c6.wav",
+      "duration": 6.827,
+      "marks": {},
+      "words": [
+        {
+          "w": "For",
+          "start": 0
+        },
+        {
+          "w": "each",
+          "start": 0.24
+        },
+        {
+          "w": "one,",
+          "start": 0.52
+        },
+        {
+          "w": "work",
+          "start": 0.84
+        },
+        {
+          "w": "out",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "sequence",
+          "start": 1.44
+        },
+        {
+          "w": "of",
+          "start": 1.84
+        },
+        {
+          "w": "moves",
+          "start": 2
+        },
+        {
+          "w": "that",
+          "start": 2.4
+        },
+        {
+          "w": "would",
+          "start": 2.52
+        },
+        {
+          "w": "build",
+          "start": 2.72
+        },
+        {
+          "w": "that",
+          "start": 3
+        },
+        {
+          "w": "exact",
+          "start": 3.24
+        },
+        {
+          "w": "tree.",
+          "start": 3.76
+        },
+        {
+          "w": "The",
+          "start": 4.24
+        },
+        {
+          "w": "rule",
+          "start": 4.52
+        },
+        {
+          "w": "that",
+          "start": 4.84
+        },
+        {
+          "w": "does",
+          "start": 5.04
+        },
+        {
+          "w": "this",
+          "start": 5.36
+        },
+        {
+          "w": "is",
+          "start": 5.6
+        },
+        {
+          "w": "called",
+          "start": 5.8
+        },
+        {
+          "w": "the",
+          "start": 6.12
+        },
+        {
+          "w": "oracle.",
+          "start": 6.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "train",
+      "display": "Then train a classifier to predict the oracle's move from what it sees at each step.",
+      "spoken": "Then train a classifier to predict the oracle's move from what it sees at each step.",
+      "textHash": "6669101dd79c5ced",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8169a4a8a899e007.wav",
+      "duration": 4.824,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then",
+          "start": 0
+        },
+        {
+          "w": "train",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.52
+        },
+        {
+          "w": "classifier",
+          "start": 0.64
+        },
+        {
+          "w": "to",
+          "start": 1.4
+        },
+        {
+          "w": "predict",
+          "start": 1.6
+        },
+        {
+          "w": "the",
+          "start": 2
+        },
+        {
+          "w": "oracle's",
+          "start": 2.16
+        },
+        {
+          "w": "move",
+          "start": 2.72
+        },
+        {
+          "w": "from",
+          "start": 3.04
+        },
+        {
+          "w": "what",
+          "start": 3.24
+        },
+        {
+          "w": "it",
+          "start": 3.4
+        },
+        {
+          "w": "sees",
+          "start": 3.6
+        },
+        {
+          "w": "at",
+          "start": 3.96
+        },
+        {
+          "w": "each",
+          "start": 4.16
+        },
+        {
+          "w": "step.",
+          "start": 4.44
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "pros",
+      "display": "So what's good about it, and what isn't?",
+      "spoken": "So what's good about it, and what isn't?",
+      "textHash": "6869cf1c54b0fe67",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/029b7941bd29e965.wav",
+      "duration": 2.005,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "what's",
+          "start": 0.16
+        },
+        {
+          "w": "good",
+          "start": 0.48
+        },
+        {
+          "w": "about",
+          "start": 0.72
+        },
+        {
+          "w": "it,",
+          "start": 1
+        },
+        {
+          "w": "and",
+          "start": 1.12
+        },
+        {
+          "w": "what",
+          "start": 1.36
+        },
+        {
+          "w": "isn't?",
+          "start": 1.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c27": {
+      "segment": "pros",
+      "display": "Strengths: it makes one pass from left to right, using about two moves per word, so it's very fast. And it's easy to give the classifier new clues.",
+      "spoken": "Strengths: it makes one pass from left to right, using about two moves per word, so it's very fast. And it's easy to give the classifier new clues.",
+      "textHash": "008e4f66d217fb80",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b68ff3b4338160d6.wav",
+      "duration": 8.729,
+      "marks": {},
+      "words": [
+        {
+          "w": "Strengths:",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.56
+        },
+        {
+          "w": "makes",
+          "start": 0.76
+        },
+        {
+          "w": "one",
+          "start": 1.04
+        },
+        {
+          "w": "pass",
+          "start": 1.36
+        },
+        {
+          "w": "from",
+          "start": 1.64
+        },
+        {
+          "w": "left",
+          "start": 1.84
+        },
+        {
+          "w": "to",
+          "start": 2.08
+        },
+        {
+          "w": "right,",
+          "start": 2.28
+        },
+        {
+          "w": "using",
+          "start": 2.68
+        },
+        {
+          "w": "about",
+          "start": 3.08
+        },
+        {
+          "w": "two",
+          "start": 3.36
+        },
+        {
+          "w": "moves",
+          "start": 3.6
+        },
+        {
+          "w": "per",
+          "start": 4
+        },
+        {
+          "w": "word,",
+          "start": 4.2
+        },
+        {
+          "w": "so",
+          "start": 4.48
+        },
+        {
+          "w": "it's",
+          "start": 4.72
+        },
+        {
+          "w": "very",
+          "start": 5.04
+        },
+        {
+          "w": "fast.",
+          "start": 5.36
+        },
+        {
+          "w": "And",
+          "start": 5.88
+        },
+        {
+          "w": "it's",
+          "start": 6.12
+        },
+        {
+          "w": "easy",
+          "start": 6.48
+        },
+        {
+          "w": "to",
+          "start": 6.8
+        },
+        {
+          "w": "give",
+          "start": 6.96
+        },
+        {
+          "w": "the",
+          "start": 7.08
+        },
+        {
+          "w": "classifier",
+          "start": 7.24
+        },
+        {
+          "w": "new",
+          "start": 8.04
+        },
+        {
+          "w": "clues.",
+          "start": 8.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "pros",
+      "display": "Limits: it never goes back, so an early mistake can't be undone. And the basic version can only build projective trees, the ones without crossing links.",
+      "spoken": "Limits: it never goes back, so an early mistake can't be undone. And the basic version can only build projective trees, the ones without crossing links.",
+      "textHash": "ddb5c50d7fdb476e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/77e4ab970cd56121.wav",
+      "duration": 9.17,
+      "marks": {},
+      "words": [
+        {
+          "w": "Limits:",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.56
+        },
+        {
+          "w": "never",
+          "start": 0.76
+        },
+        {
+          "w": "goes",
+          "start": 1.04
+        },
+        {
+          "w": "back,",
+          "start": 1.36
+        },
+        {
+          "w": "so",
+          "start": 1.6
+        },
+        {
+          "w": "an",
+          "start": 1.84
+        },
+        {
+          "w": "early",
+          "start": 2
+        },
+        {
+          "w": "mistake",
+          "start": 2.36
+        },
+        {
+          "w": "can't",
+          "start": 2.88
+        },
+        {
+          "w": "be",
+          "start": 3.2
+        },
+        {
+          "w": "undone.",
+          "start": 3.4
+        },
+        {
+          "w": "And",
+          "start": 4.08
+        },
+        {
+          "w": "the",
+          "start": 4.28
+        },
+        {
+          "w": "basic",
+          "start": 4.667
+        },
+        {
+          "w": "version",
+          "start": 5.053
+        },
+        {
+          "w": "can",
+          "start": 5.44
+        },
+        {
+          "w": "only",
+          "start": 5.64
+        },
+        {
+          "w": "build",
+          "start": 5.92
+        },
+        {
+          "w": "projective",
+          "start": 6.24
+        },
+        {
+          "w": "trees,",
+          "start": 6.88
+        },
+        {
+          "w": "the",
+          "start": 7.36
+        },
+        {
+          "w": "ones",
+          "start": 7.6
+        },
+        {
+          "w": "without",
+          "start": 7.92
+        },
+        {
+          "w": "crossing",
+          "start": 8.2
+        },
+        {
+          "w": "links.",
+          "start": 8.72
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c29": {
+      "segment": "quiz",
+      "display": "Quick quiz. In arc-eager parsing, which move puts the next word onto the stack without adding any link?",
+      "spoken": "Quick quiz. In arc-eager parsing, which move puts the next word onto the stack without adding any link?",
+      "textHash": "70ab0803ece05fe7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d47ba725ab736672.wav",
+      "duration": 5.963,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.293
+        },
+        {
+          "w": "quiz.",
+          "start": 0.587
+        },
+        {
+          "w": "In",
+          "start": 0.88
+        },
+        {
+          "w": "arc-eager",
+          "start": 1.34
+        },
+        {
+          "w": "parsing,",
+          "start": 1.8
+        },
+        {
+          "w": "which",
+          "start": 2.48
+        },
+        {
+          "w": "move",
+          "start": 2.72
+        },
+        {
+          "w": "puts",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.32
+        },
+        {
+          "w": "next",
+          "start": 3.48
+        },
+        {
+          "w": "word",
+          "start": 3.76
+        },
+        {
+          "w": "onto",
+          "start": 3.96
+        },
+        {
+          "w": "the",
+          "start": 4.16
+        },
+        {
+          "w": "stack",
+          "start": 4.32
+        },
+        {
+          "w": "without",
+          "start": 4.72
+        },
+        {
+          "w": "adding",
+          "start": 5
+        },
+        {
+          "w": "any",
+          "start": 5.4
+        },
+        {
+          "w": "link?",
+          "start": 5.6
+        }
+      ],
+      "matchScore": 0.765
+    },
+    "c30": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c31": {
+      "segment": "quiz",
+      "display": "It's SHIFT. It simply moves the next word from the buffer onto the stack.",
+      "spoken": "It's shift. It simply moves the next word from the buffer onto the stack.",
+      "textHash": "5f64de545edcd2cc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c2fbd9592f5b7acf.wav",
+      "duration": 3.664,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "SHIFT.",
+          "start": 0.28
+        },
+        {
+          "w": "It",
+          "start": 0.68
+        },
+        {
+          "w": "simply",
+          "start": 0.88
+        },
+        {
+          "w": "moves",
+          "start": 1.28
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "next",
+          "start": 1.76
+        },
+        {
+          "w": "word",
+          "start": 2.04
+        },
+        {
+          "w": "from",
+          "start": 2.24
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "buffer",
+          "start": 2.48
+        },
+        {
+          "w": "onto",
+          "start": 2.8
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "stack.",
+          "start": 3.28
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "Let's recap. A transition parser keeps a stack and a buffer, and makes one move at a time.",
+      "spoken": "Let's recap. A transition parser keeps a stack and a buffer, and makes one move at a time.",
+      "textHash": "a6dec65a0ae89200",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/33f0431e67de865f.wav",
+      "duration": 5.453,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "transition",
+          "start": 1.28
+        },
+        {
+          "w": "parser",
+          "start": 1.88
+        },
+        {
+          "w": "keeps",
+          "start": 2.36
+        },
+        {
+          "w": "a",
+          "start": 2.6
+        },
+        {
+          "w": "stack",
+          "start": 2.76
+        },
+        {
+          "w": "and",
+          "start": 3.04
+        },
+        {
+          "w": "a",
+          "start": 3.2
+        },
+        {
+          "w": "buffer,",
+          "start": 3.32
+        },
+        {
+          "w": "and",
+          "start": 3.76
+        },
+        {
+          "w": "makes",
+          "start": 3.92
+        },
+        {
+          "w": "one",
+          "start": 4.24
+        },
+        {
+          "w": "move",
+          "start": 4.48
+        },
+        {
+          "w": "at",
+          "start": 4.8
+        },
+        {
+          "w": "a",
+          "start": 4.96
+        },
+        {
+          "w": "time.",
+          "start": 5.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Arc-eager has four moves: SHIFT, LEFT-ARC, RIGHT-ARC and REDUCE.",
+      "spoken": "Arc-eager has four moves: shift, left arc, right arc and reduce.",
+      "textHash": "190b5f342af6e698",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fb448257f1e6d0aa.wav",
+      "duration": 4.166,
+      "marks": {},
+      "words": [
+        {
+          "w": "Arc-eager",
+          "start": 0.3
+        },
+        {
+          "w": "has",
+          "start": 0.6
+        },
+        {
+          "w": "four",
+          "start": 0.8
+        },
+        {
+          "w": "moves:",
+          "start": 1.04
+        },
+        {
+          "w": "SHIFT,",
+          "start": 1.6
+        },
+        {
+          "w": "LEFT-ARC,",
+          "start": 2.213
+        },
+        {
+          "w": "RIGHT-ARC",
+          "start": 2.827
+        },
+        {
+          "w": "and",
+          "start": 3.44
+        },
+        {
+          "w": "REDUCE.",
+          "start": 3.6
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "A classifier chooses each move, trained by copying an oracle.",
+      "spoken": "A classifier chooses each move, trained by copying an oracle.",
+      "textHash": "8f26aa9636d5cd6d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2bcbd9c5ed242555.wav",
+      "duration": 3.801,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "classifier",
+          "start": 0.12
+        },
+        {
+          "w": "chooses",
+          "start": 0.84
+        },
+        {
+          "w": "each",
+          "start": 1.32
+        },
+        {
+          "w": "move,",
+          "start": 1.6
+        },
+        {
+          "w": "trained",
+          "start": 2
+        },
+        {
+          "w": "by",
+          "start": 2.48
+        },
+        {
+          "w": "copying",
+          "start": 2.68
+        },
+        {
+          "w": "an",
+          "start": 3.16
+        },
+        {
+          "w": "oracle.",
+          "start": 3.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c35": {
+      "segment": "recap",
+      "display": "It's very fast, but it never goes back to fix a mistake.",
+      "spoken": "It's very fast, but it never goes back to fix a mistake.",
+      "textHash": "c2eb3827b7296ad6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c268b35aa7439e7e.wav",
+      "duration": 3.264,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "very",
+          "start": 0.32
+        },
+        {
+          "w": "fast,",
+          "start": 0.64
+        },
+        {
+          "w": "but",
+          "start": 1.04
+        },
+        {
+          "w": "it",
+          "start": 1.28
+        },
+        {
+          "w": "never",
+          "start": 1.44
+        },
+        {
+          "w": "goes",
+          "start": 1.68
+        },
+        {
+          "w": "back",
+          "start": 2
+        },
+        {
+          "w": "to",
+          "start": 2.2
+        },
+        {
+          "w": "fix",
+          "start": 2.36
+        },
+        {
+          "w": "a",
+          "start": 2.64
+        },
+        {
+          "w": "mistake.",
+          "start": 2.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c36": {
+      "segment": "recap",
+      "display": "Next lesson: Word Vectors. How can a computer know that 'rain' is close to 'storm'?",
+      "spoken": "Next lesson: Word Vectors. How can a computer know that 'rain' is close to 'storm'?",
+      "textHash": "7b7d3cbdda0caaeb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/82193eefe73a8aa4.wav",
+      "duration": 4.919,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.416
+        },
+        {
+          "w": "lesson:",
+          "start": 0.832
+        },
+        {
+          "w": "Word",
+          "start": 1.248
+        },
+        {
+          "w": "Vectors.",
+          "start": 1.664
+        },
+        {
+          "w": "How",
+          "start": 2.08
+        },
+        {
+          "w": "can",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.52
+        },
+        {
+          "w": "computer",
+          "start": 2.64
+        },
+        {
+          "w": "know",
+          "start": 3.12
+        },
+        {
+          "w": "that",
+          "start": 3.28
+        },
+        {
+          "w": "'rain'",
+          "start": 3.48
+        },
+        {
+          "w": "is",
+          "start": 3.8
+        },
+        {
+          "w": "close",
+          "start": 3.96
+        },
+        {
+          "w": "to",
+          "start": 4.24
+        },
+        {
+          "w": "'storm'?",
+          "start": 4.44
+        }
+      ],
+      "matchScore": 0.667
+    }
+  }
+}

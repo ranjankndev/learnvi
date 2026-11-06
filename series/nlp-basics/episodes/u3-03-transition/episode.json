@@ -1,0 +1,251 @@
+{
+  "id": "u3-03",
+  "thumbnail": {
+    "headline": "Build a sentence tree in 4 moves",
+    "big": "SHIFT · ARC"
+  },
+  "tags": [
+    "transition based parsing",
+    "arc eager",
+    "dependency parsing",
+    "shift reduce",
+    "syntax"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Transition-Based Parsing",
+        "subtitle": "Building a tree one move at a time"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "Read left to right, and build the tree with a few simple moves.",
+        "highlight": [
+          "few simple moves."
+        ]
+      }
+    },
+    {
+      "id": "parser",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is a transition parser?",
+      "props": {
+        "kicker": "Definition",
+        "term": "Transition parser",
+        "definition": "Reads words from a buffer, keeps unfinished words on a stack, and picks one move at each step.",
+        "example": "stack: [ROOT, ate]  ·  buffer: [pizza]",
+        "analogy": "Sorting post: an in-tray of new letters, and a pile on your desk still being dealt with."
+      }
+    },
+    {
+      "id": "moves",
+      "kind": "core",
+      "component": "Table",
+      "title": "The four moves",
+      "props": {
+        "kicker": "Arc-eager",
+        "title": "The four moves of arc-eager parsing",
+        "columns": [
+          "Move",
+          "What it does"
+        ],
+        "rows": [
+          [
+            "SHIFT",
+            "push the next word onto the stack"
+          ],
+          [
+            "LEFT-ARC",
+            "next word heads the top word; pop it"
+          ],
+          [
+            "RIGHT-ARC",
+            "top word heads the next word; push it"
+          ],
+          [
+            "REDUCE",
+            "pop the top word: it's finished"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "walk",
+      "kind": "core",
+      "component": "Table",
+      "title": "Parsing “Priya ate pizza”",
+      "short": true,
+      "shortTitle": "How a parser builds a sentence tree in 4 moves",
+      "props": {
+        "kicker": "Worked example",
+        "title": "Parsing “Priya ate pizza”",
+        "columns": [
+          "Step",
+          "Move",
+          "Link added"
+        ],
+        "rows": [
+          [
+            "1",
+            "SHIFT",
+            "none: Priya goes on the stack"
+          ],
+          [
+            "2",
+            "LEFT-ARC",
+            "ate → Priya (subject)"
+          ],
+          [
+            "3",
+            "RIGHT-ARC",
+            "ROOT → ate"
+          ],
+          [
+            "4",
+            "RIGHT-ARC",
+            "ate → pizza (object)"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 1,
+            "col": 2
+          },
+          {
+            "row": 3,
+            "col": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "choose",
+      "kind": "core",
+      "component": "Steps",
+      "title": "Choosing each move",
+      "props": {
+        "kicker": "Inside the parser",
+        "title": "How the parser chooses each move",
+        "steps": [
+          {
+            "label": "Look",
+            "detail": "top of the stack, next words"
+          },
+          {
+            "label": "Score",
+            "detail": "a classifier scores each move"
+          },
+          {
+            "label": "Act",
+            "detail": "make the best-scoring move"
+          },
+          {
+            "label": "Repeat",
+            "detail": "until the buffer is empty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "How it learns",
+      "props": {
+        "kicker": "Training",
+        "title": "How the move-chooser learns",
+        "items": [
+          {
+            "text": "Start with sentences whose trees are known"
+          },
+          {
+            "text": "Work out the moves that build each tree: the oracle"
+          },
+          {
+            "text": "Train a classifier to predict those moves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pros",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Strengths and limits",
+      "props": {
+        "kicker": "Pros and cons",
+        "title": "Strengths and limits",
+        "columns": [
+          {
+            "title": "Strengths",
+            "items": [
+              "one pass, left to right",
+              "very fast: about two moves per word",
+              "easy to add new clues"
+            ],
+            "tone": "good"
+          },
+          {
+            "title": "Limits",
+            "items": [
+              "an early mistake can't be undone",
+              "the basic version builds only projective trees"
+            ],
+            "tone": "bad"
+          }
+        ],
+        "verdict": {
+          "text": "Fast, and accurate enough for most uses"
+        }
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: name that parser move",
+      "props": {
+        "question": "In arc-eager parsing, which move puts the next word on the stack without adding a link?",
+        "options": [
+          "SHIFT",
+          "LEFT-ARC",
+          "REDUCE"
+        ],
+        "answer": 0,
+        "explain": "SHIFT just moves a word from the buffer to the stack."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "A stack, a buffer, and one move at a time",
+          "Arc-eager moves: SHIFT, LEFT-ARC, RIGHT-ARC, REDUCE",
+          "A classifier picks each move, trained on an oracle",
+          "Very fast, but no going back"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}

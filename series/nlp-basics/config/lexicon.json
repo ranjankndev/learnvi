@@ -1,4 +1,9 @@
 {
+  "LEFT-ARC": "left arc",
+  "RIGHT-ARC": "right arc",
+  "SHIFT": "shift",
+  "REDUCE": "reduce",
+  "ROOT": "root",
   "PCFGs": "P C F Gs",
   "PCFG": "P C F G",
   "CKY": "C K Y",
