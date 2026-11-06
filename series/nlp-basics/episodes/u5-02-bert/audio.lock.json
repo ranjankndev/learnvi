@@ -1,0 +1,2736 @@
+{
+  "version": 1,
+  "episode": "u5-02",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c37"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 5, lesson 2, our final lesson: BERT.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 5, lesson 2, our final lesson: BERT.",
+      "textHash": "dfa3aea375c126a2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/373606e32f85d0e4.wav",
+      "duration": 6.664,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.16
+        },
+        {
+          "w": "This",
+          "start": 2.96
+        },
+        {
+          "w": "is",
+          "start": 3.28
+        },
+        {
+          "w": "unit",
+          "start": 3.48
+        },
+        {
+          "w": "5,",
+          "start": 3.867
+        },
+        {
+          "w": "lesson",
+          "start": 4.253
+        },
+        {
+          "w": "2,",
+          "start": 4.64
+        },
+        {
+          "w": "our",
+          "start": 4.88
+        },
+        {
+          "w": "final",
+          "start": 5.326
+        },
+        {
+          "w": "lesson:",
+          "start": 5.772
+        },
+        {
+          "w": "BERT.",
+          "start": 6.218
+        }
+      ],
+      "matchScore": 0.571
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "ELMo showed that pretraining on plain text pays off. BERT took that idea and changed NLP almost overnight.",
+      "spoken": "ELMo showed that pretraining on plain text pays off. BERT took that idea and changed N L P almost overnight.",
+      "textHash": "1dda5267bb40b4f4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/38ac3ba70305fd06.wav",
+      "duration": 7.256,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo",
+          "start": 0
+        },
+        {
+          "w": "showed",
+          "start": 0.4
+        },
+        {
+          "w": "that",
+          "start": 0.72
+        },
+        {
+          "w": "pretraining",
+          "start": 0.84
+        },
+        {
+          "w": "on",
+          "start": 1.36
+        },
+        {
+          "w": "plain",
+          "start": 1.52
+        },
+        {
+          "w": "text",
+          "start": 1.84
+        },
+        {
+          "w": "pays",
+          "start": 2.28
+        },
+        {
+          "w": "off.",
+          "start": 2.64
+        },
+        {
+          "w": "BERT",
+          "start": 3.12
+        },
+        {
+          "w": "took",
+          "start": 3.6
+        },
+        {
+          "w": "that",
+          "start": 3.84
+        },
+        {
+          "w": "idea",
+          "start": 4.04
+        },
+        {
+          "w": "and",
+          "start": 4.56
+        },
+        {
+          "w": "changed",
+          "start": 5.08
+        },
+        {
+          "w": "NLP",
+          "start": 5.6
+        },
+        {
+          "w": "almost",
+          "start": 6.12
+        },
+        {
+          "w": "overnight.",
+          "start": 6.6
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. BERT learned language by filling in blanks, millions and millions of times, reading in both directions at once.",
+      "spoken": "Here's the idea. BERT learned language by filling in blanks, millions and millions of times, reading in both directions at once.",
+      "textHash": "96443abe28388acd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9dca36815bc56566.wav",
+      "duration": 7.856,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.36
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "BERT",
+          "start": 1.28
+        },
+        {
+          "w": "learned",
+          "start": 1.76
+        },
+        {
+          "w": "language",
+          "start": 2.12
+        },
+        {
+          "w": "by",
+          "start": 2.6
+        },
+        {
+          "w": "filling",
+          "start": 2.76
+        },
+        {
+          "w": "in",
+          "start": 3.12
+        },
+        {
+          "w": "blanks,",
+          "start": 3.28
+        },
+        {
+          "w": "millions",
+          "start": 3.84
+        },
+        {
+          "w": "and",
+          "start": 4.4
+        },
+        {
+          "w": "millions",
+          "start": 4.56
+        },
+        {
+          "w": "of",
+          "start": 5.04
+        },
+        {
+          "w": "times,",
+          "start": 5.2
+        },
+        {
+          "w": "reading",
+          "start": 5.76
+        },
+        {
+          "w": "in",
+          "start": 6.2
+        },
+        {
+          "w": "both",
+          "start": 6.36
+        },
+        {
+          "w": "directions",
+          "start": 6.64
+        },
+        {
+          "w": "at",
+          "start": 7.28
+        },
+        {
+          "w": "once.",
+          "start": 7.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c04": {
+      "segment": "bert",
+      "display": "BERT, from 2018, stands for bidirectional encoder representations from transformers. It's a model pretrained on lots of text, to understand every word in its full context.",
+      "spoken": "BERT, from 2018, stands for bidirectional encoder representations from transformers. It's a model pretrained on lots of text, to understand every word in its full context.",
+      "textHash": "8230aab286bf2780",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8cee0deb12e9ab41.wav",
+      "duration": 11.713,
+      "marks": {},
+      "words": [
+        {
+          "w": "BERT,",
+          "start": 0
+        },
+        {
+          "w": "from",
+          "start": 0.4
+        },
+        {
+          "w": "2018,",
+          "start": 0.6
+        },
+        {
+          "w": "stands",
+          "start": 2
+        },
+        {
+          "w": "for",
+          "start": 2.44
+        },
+        {
+          "w": "bidirectional",
+          "start": 2.8
+        },
+        {
+          "w": "encoder",
+          "start": 3.36
+        },
+        {
+          "w": "representations",
+          "start": 3.92
+        },
+        {
+          "w": "from",
+          "start": 4.92
+        },
+        {
+          "w": "transformers.",
+          "start": 5.12
+        },
+        {
+          "w": "It's",
+          "start": 6.16
+        },
+        {
+          "w": "a",
+          "start": 6.56
+        },
+        {
+          "w": "model",
+          "start": 6.92
+        },
+        {
+          "w": "pretrained",
+          "start": 7.28
+        },
+        {
+          "w": "on",
+          "start": 7.64
+        },
+        {
+          "w": "lots",
+          "start": 7.88
+        },
+        {
+          "w": "of",
+          "start": 8.2
+        },
+        {
+          "w": "text,",
+          "start": 8.36
+        },
+        {
+          "w": "to",
+          "start": 8.88
+        },
+        {
+          "w": "understand",
+          "start": 9.12
+        },
+        {
+          "w": "every",
+          "start": 9.76
+        },
+        {
+          "w": "word",
+          "start": 10.04
+        },
+        {
+          "w": "in",
+          "start": 10.32
+        },
+        {
+          "w": "its",
+          "start": 10.52
+        },
+        {
+          "w": "full",
+          "start": 10.76
+        },
+        {
+          "w": "context.",
+          "start": 11.04
+        }
+      ],
+      "matchScore": 0.87
+    },
+    "c05": {
+      "segment": "bert",
+      "display": "Show it \"she sat on the blank of the river\", and it fills in: bank.",
+      "spoken": "Show it \"she sat on the blank of the river\", and it fills in: bank.",
+      "textHash": "8d1a3fe645d9b9f4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/22708edf0acf855d.wav",
+      "duration": 3.564,
+      "marks": {},
+      "words": [
+        {
+          "w": "Show",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.24
+        },
+        {
+          "w": "\"she",
+          "start": 0.48
+        },
+        {
+          "w": "sat",
+          "start": 0.64
+        },
+        {
+          "w": "on",
+          "start": 0.88
+        },
+        {
+          "w": "the",
+          "start": 0.96
+        },
+        {
+          "w": "blank",
+          "start": 1.04
+        },
+        {
+          "w": "of",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "river\",",
+          "start": 1.56
+        },
+        {
+          "w": "and",
+          "start": 1.88
+        },
+        {
+          "w": "it",
+          "start": 2.04
+        },
+        {
+          "w": "fills",
+          "start": 2.2
+        },
+        {
+          "w": "in:",
+          "start": 2.6
+        },
+        {
+          "w": "bank.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "bert",
+      "display": "Think of a student who has done millions of fill-in-the-blank exercises, and only then specialises for one particular exam.",
+      "spoken": "Think of a student who has done millions of fill-in-the-blank exercises, and only then specialises for one particular exam.",
+      "textHash": "3f381ea99e3ef389",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e9205595f525b717.wav",
+      "duration": 7.697,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "student",
+          "start": 0.44
+        },
+        {
+          "w": "who",
+          "start": 0.96
+        },
+        {
+          "w": "has",
+          "start": 1.16
+        },
+        {
+          "w": "done",
+          "start": 1.36
+        },
+        {
+          "w": "millions",
+          "start": 1.64
+        },
+        {
+          "w": "of",
+          "start": 2.16
+        },
+        {
+          "w": "fill-in-the-blank",
+          "start": 2.74
+        },
+        {
+          "w": "exercises,",
+          "start": 3.32
+        },
+        {
+          "w": "and",
+          "start": 4.4
+        },
+        {
+          "w": "only",
+          "start": 4.64
+        },
+        {
+          "w": "then",
+          "start": 4.96
+        },
+        {
+          "w": "specialises",
+          "start": 5.28
+        },
+        {
+          "w": "for",
+          "start": 6.12
+        },
+        {
+          "w": "one",
+          "start": 6.32
+        },
+        {
+          "w": "particular",
+          "start": 6.56
+        },
+        {
+          "w": "exam.",
+          "start": 7.2
+        }
+      ],
+      "matchScore": 0.938
+    },
+    "c07": {
+      "segment": "attention",
+      "display": "BERT is built from a Transformer, and its key ingredient is self-attention. Every word looks at every other word in the sentence, and decides which ones matter for its meaning.",
+      "spoken": "BERT is built from a Transformer, and its key ingredient is self-attention. Every word looks at every other word in the sentence, and decides which ones matter for its meaning.",
+      "textHash": "3b1e045b1c34b590",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/91e422fac34ab4c7.wav",
+      "duration": 10.23,
+      "marks": {},
+      "words": [
+        {
+          "w": "BERT",
+          "start": 0.18
+        },
+        {
+          "w": "is",
+          "start": 0.36
+        },
+        {
+          "w": "built",
+          "start": 0.52
+        },
+        {
+          "w": "from",
+          "start": 0.84
+        },
+        {
+          "w": "a",
+          "start": 0.96
+        },
+        {
+          "w": "Transformer,",
+          "start": 1.12
+        },
+        {
+          "w": "and",
+          "start": 1.92
+        },
+        {
+          "w": "its",
+          "start": 2.08
+        },
+        {
+          "w": "key",
+          "start": 2.507
+        },
+        {
+          "w": "ingredient",
+          "start": 2.933
+        },
+        {
+          "w": "is",
+          "start": 3.36
+        },
+        {
+          "w": "self-attention.",
+          "start": 4.08
+        },
+        {
+          "w": "Every",
+          "start": 4.8
+        },
+        {
+          "w": "word",
+          "start": 5.24
+        },
+        {
+          "w": "looks",
+          "start": 5.56
+        },
+        {
+          "w": "at",
+          "start": 5.84
+        },
+        {
+          "w": "every",
+          "start": 6.08
+        },
+        {
+          "w": "other",
+          "start": 6.32
+        },
+        {
+          "w": "word",
+          "start": 6.56
+        },
+        {
+          "w": "in",
+          "start": 6.8
+        },
+        {
+          "w": "the",
+          "start": 6.96
+        },
+        {
+          "w": "sentence,",
+          "start": 7.12
+        },
+        {
+          "w": "and",
+          "start": 7.68
+        },
+        {
+          "w": "decides",
+          "start": 7.92
+        },
+        {
+          "w": "which",
+          "start": 8.56
+        },
+        {
+          "w": "ones",
+          "start": 8.76
+        },
+        {
+          "w": "matter",
+          "start": 9.08
+        },
+        {
+          "w": "for",
+          "start": 9.36
+        },
+        {
+          "w": "its",
+          "start": 9.56
+        },
+        {
+          "w": "meaning.",
+          "start": 9.8
+        }
+      ],
+      "matchScore": 0.84
+    },
+    "c08": {
+      "segment": "attention",
+      "display": "In \"the cat drank the milk because it was hungry\", the word \"it\" pays most attention to \"cat\", because hungry things are cats, not milk.",
+      "spoken": "In \"the cat drank the milk because it was hungry\", the word \"it\" pays most attention to \"cat\", because hungry things are cats, not milk.",
+      "textHash": "0fdc7526cb06d300",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/889d8eb49a5f07a1.wav",
+      "duration": 7.976,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"the",
+          "start": 0.16
+        },
+        {
+          "w": "cat",
+          "start": 0.32
+        },
+        {
+          "w": "drank",
+          "start": 0.6
+        },
+        {
+          "w": "the",
+          "start": 0.96
+        },
+        {
+          "w": "milk",
+          "start": 1.08
+        },
+        {
+          "w": "because",
+          "start": 1.44
+        },
+        {
+          "w": "it",
+          "start": 1.68
+        },
+        {
+          "w": "was",
+          "start": 1.8
+        },
+        {
+          "w": "hungry\",",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.64
+        },
+        {
+          "w": "word",
+          "start": 2.88
+        },
+        {
+          "w": "\"it\"",
+          "start": 3.2
+        },
+        {
+          "w": "pays",
+          "start": 3.44
+        },
+        {
+          "w": "most",
+          "start": 3.84
+        },
+        {
+          "w": "attention",
+          "start": 4.08
+        },
+        {
+          "w": "to",
+          "start": 4.64
+        },
+        {
+          "w": "\"cat\",",
+          "start": 4.88
+        },
+        {
+          "w": "because",
+          "start": 5.36
+        },
+        {
+          "w": "hungry",
+          "start": 5.68
+        },
+        {
+          "w": "things",
+          "start": 6.16
+        },
+        {
+          "w": "are",
+          "start": 6.48
+        },
+        {
+          "w": "cats,",
+          "start": 6.68
+        },
+        {
+          "w": "not",
+          "start": 7.2
+        },
+        {
+          "w": "milk.",
+          "start": 7.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "attention",
+      "display": "Think of a meeting where each person listens most closely to the people who are relevant to them.",
+      "spoken": "Think of a meeting where each person listens most closely to the people who are relevant to them.",
+      "textHash": "01449caf2630473c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/94e30d78d614bc4c.wav",
+      "duration": 5.103,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "a",
+          "start": 0.32
+        },
+        {
+          "w": "meeting",
+          "start": 0.44
+        },
+        {
+          "w": "where",
+          "start": 0.88
+        },
+        {
+          "w": "each",
+          "start": 1.12
+        },
+        {
+          "w": "person",
+          "start": 1.44
+        },
+        {
+          "w": "listens",
+          "start": 1.84
+        },
+        {
+          "w": "most",
+          "start": 2.48
+        },
+        {
+          "w": "closely",
+          "start": 2.8
+        },
+        {
+          "w": "to",
+          "start": 3.28
+        },
+        {
+          "w": "the",
+          "start": 3.4
+        },
+        {
+          "w": "people",
+          "start": 3.52
+        },
+        {
+          "w": "who",
+          "start": 3.84
+        },
+        {
+          "w": "are",
+          "start": 4
+        },
+        {
+          "w": "relevant",
+          "start": 4.2
+        },
+        {
+          "w": "to",
+          "start": 4.72
+        },
+        {
+          "w": "them.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "pretrain",
+      "display": "BERT was pretrained with two simple games, played on books and Wikipedia.",
+      "spoken": "BERT was pretrained with two simple games, played on books and Wikipedia.",
+      "textHash": "0ac1f5d5abf510d2",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ea43ce99c59976f1.wav",
+      "duration": 4.366,
+      "marks": {},
+      "words": [
+        {
+          "w": "BERT",
+          "start": 0
+        },
+        {
+          "w": "was",
+          "start": 0.36
+        },
+        {
+          "w": "pretrained",
+          "start": 0.72
+        },
+        {
+          "w": "with",
+          "start": 1.08
+        },
+        {
+          "w": "two",
+          "start": 1.24
+        },
+        {
+          "w": "simple",
+          "start": 1.48
+        },
+        {
+          "w": "games,",
+          "start": 1.92
+        },
+        {
+          "w": "played",
+          "start": 2.48
+        },
+        {
+          "w": "on",
+          "start": 2.84
+        },
+        {
+          "w": "books",
+          "start": 3.04
+        },
+        {
+          "w": "and",
+          "start": 3.3
+        },
+        {
+          "w": "Wikipedia.",
+          "start": 3.56
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c11": {
+      "segment": "pretrain",
+      "display": "Mask: hide about fifteen percent of the words in each passage.",
+      "spoken": "Mask: hide about fifteen percent of the words in each passage.",
+      "textHash": "0b4ab63645831302",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e773aa560b7a593f.wav",
+      "duration": 3.588,
+      "marks": {},
+      "words": [
+        {
+          "w": "Mask:",
+          "start": 0
+        },
+        {
+          "w": "hide",
+          "start": 0.64
+        },
+        {
+          "w": "about",
+          "start": 1
+        },
+        {
+          "w": "fifteen",
+          "start": 1.24
+        },
+        {
+          "w": "percent",
+          "start": 1.62
+        },
+        {
+          "w": "of",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.12
+        },
+        {
+          "w": "words",
+          "start": 2.24
+        },
+        {
+          "w": "in",
+          "start": 2.56
+        },
+        {
+          "w": "each",
+          "start": 2.72
+        },
+        {
+          "w": "passage.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c12": {
+      "segment": "pretrain",
+      "display": "Predict: guess the hidden words, using the words on both sides. This is called a masked language model.",
+      "spoken": "Predict: guess the hidden words, using the words on both sides. This is called a masked language model.",
+      "textHash": "70e802241022417b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2f398caf5927cd79.wav",
+      "duration": 6.08,
+      "marks": {},
+      "words": [
+        {
+          "w": "Predict:",
+          "start": 0
+        },
+        {
+          "w": "guess",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.84
+        },
+        {
+          "w": "hidden",
+          "start": 1
+        },
+        {
+          "w": "words,",
+          "start": 1.4
+        },
+        {
+          "w": "using",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 2.12
+        },
+        {
+          "w": "words",
+          "start": 2.32
+        },
+        {
+          "w": "on",
+          "start": 2.64
+        },
+        {
+          "w": "both",
+          "start": 3.013
+        },
+        {
+          "w": "sides.",
+          "start": 3.387
+        },
+        {
+          "w": "This",
+          "start": 3.76
+        },
+        {
+          "w": "is",
+          "start": 4
+        },
+        {
+          "w": "called",
+          "start": 4.24
+        },
+        {
+          "w": "a",
+          "start": 4.6
+        },
+        {
+          "w": "masked",
+          "start": 4.76
+        },
+        {
+          "w": "language",
+          "start": 5.2
+        },
+        {
+          "w": "model.",
+          "start": 5.64
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c13": {
+      "segment": "pretrain",
+      "display": "Next sentence: given two sentences, guess whether the second really follows the first.",
+      "spoken": "Next sentence: given two sentences, guess whether the second really follows the first.",
+      "textHash": "0661061e7d0fde95",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e9a1c596f97058ea.wav",
+      "duration": 5.165,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0
+        },
+        {
+          "w": "sentence:",
+          "start": 0.4
+        },
+        {
+          "w": "given",
+          "start": 1.12
+        },
+        {
+          "w": "two",
+          "start": 1.56
+        },
+        {
+          "w": "sentences,",
+          "start": 1.8
+        },
+        {
+          "w": "guess",
+          "start": 2.52
+        },
+        {
+          "w": "whether",
+          "start": 2.88
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "second",
+          "start": 3.28
+        },
+        {
+          "w": "really",
+          "start": 3.68
+        },
+        {
+          "w": "follows",
+          "start": 4.12
+        },
+        {
+          "w": "the",
+          "start": 4.56
+        },
+        {
+          "w": "first.",
+          "start": 4.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c14": {
+      "segment": "masked",
+      "display": "Here are some blanks BERT might fill in.",
+      "spoken": "Here are some blanks BERT might fill in.",
+      "textHash": "34692caba4e92144",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e05e61a61eaed650.wav",
+      "duration": 1.904,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "are",
+          "start": 0.18
+        },
+        {
+          "w": "some",
+          "start": 0.36
+        },
+        {
+          "w": "blanks",
+          "start": 0.52
+        },
+        {
+          "w": "BERT",
+          "start": 0.88
+        },
+        {
+          "w": "might",
+          "start": 1.24
+        },
+        {
+          "w": "fill",
+          "start": 1.44
+        },
+        {
+          "w": "in.",
+          "start": 1.64
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c15": {
+      "segment": "masked",
+      "display": "\"The cat sat on the blank\": probably mat.",
+      "spoken": "\"The cat sat on the blank\": probably mat.",
+      "textHash": "c2f67fad58591e07",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5173a7c46cf1920f.wav",
+      "duration": 2.348,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"The",
+          "start": 0
+        },
+        {
+          "w": "cat",
+          "start": 0.12
+        },
+        {
+          "w": "sat",
+          "start": 0.4
+        },
+        {
+          "w": "on",
+          "start": 0.68
+        },
+        {
+          "w": "the",
+          "start": 0.76
+        },
+        {
+          "w": "blank\":",
+          "start": 0.88
+        },
+        {
+          "w": "probably",
+          "start": 1.32
+        },
+        {
+          "w": "mat.",
+          "start": 1.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "masked",
+      "display": "\"I drank a cup of blank\": tea, or coffee.",
+      "spoken": "\"I drank a cup of blank\": tea, or coffee.",
+      "textHash": "f20c0649acc5876a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d46caaaed65df2d4.wav",
+      "duration": 2.499,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"I",
+          "start": 0
+        },
+        {
+          "w": "drank",
+          "start": 0.12
+        },
+        {
+          "w": "a",
+          "start": 0.44
+        },
+        {
+          "w": "cup",
+          "start": 0.52
+        },
+        {
+          "w": "of",
+          "start": 0.76
+        },
+        {
+          "w": "blank\":",
+          "start": 0.88
+        },
+        {
+          "w": "tea,",
+          "start": 1.4
+        },
+        {
+          "w": "or",
+          "start": 1.68
+        },
+        {
+          "w": "coffee.",
+          "start": 1.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "masked",
+      "display": "\"Paris is the capital of blank\": France. Filling in blanks like these, it picks up grammar, meaning, and a surprising amount of world knowledge.",
+      "spoken": "\"Paris is the capital of blank\": France. Filling in blanks like these, it picks up grammar, meaning, and a surprising amount of world knowledge.",
+      "textHash": "a0d3d5c22bcdfb0c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8a62d06d06910a20.wav",
+      "duration": 8.684,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"Paris",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.44
+        },
+        {
+          "w": "the",
+          "start": 0.6
+        },
+        {
+          "w": "capital",
+          "start": 0.72
+        },
+        {
+          "w": "of",
+          "start": 1.2
+        },
+        {
+          "w": "blank\":",
+          "start": 1.787
+        },
+        {
+          "w": "France.",
+          "start": 2.373
+        },
+        {
+          "w": "Filling",
+          "start": 2.96
+        },
+        {
+          "w": "in",
+          "start": 3.36
+        },
+        {
+          "w": "blanks",
+          "start": 3.56
+        },
+        {
+          "w": "like",
+          "start": 4
+        },
+        {
+          "w": "these,",
+          "start": 4.24
+        },
+        {
+          "w": "it",
+          "start": 4.6
+        },
+        {
+          "w": "picks",
+          "start": 4.8
+        },
+        {
+          "w": "up",
+          "start": 5.12
+        },
+        {
+          "w": "grammar,",
+          "start": 5.36
+        },
+        {
+          "w": "meaning,",
+          "start": 5.92
+        },
+        {
+          "w": "and",
+          "start": 6.32
+        },
+        {
+          "w": "a",
+          "start": 6.52
+        },
+        {
+          "w": "surprising",
+          "start": 6.64
+        },
+        {
+          "w": "amount",
+          "start": 7.24
+        },
+        {
+          "w": "of",
+          "start": 7.64
+        },
+        {
+          "w": "world",
+          "start": 7.8
+        },
+        {
+          "w": "knowledge.",
+          "start": 8.16
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c18": {
+      "segment": "finetune",
+      "display": "How do you use BERT for your own task? Four steps.",
+      "spoken": "How do you use BERT for your own task? Four steps.",
+      "textHash": "775a6c500ad82815",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/33cac51da78f4a74.wav",
+      "duration": 2.761,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "do",
+          "start": 0.08
+        },
+        {
+          "w": "you",
+          "start": 0.24
+        },
+        {
+          "w": "use",
+          "start": 0.4
+        },
+        {
+          "w": "BERT",
+          "start": 0.6
+        },
+        {
+          "w": "for",
+          "start": 0.84
+        },
+        {
+          "w": "your",
+          "start": 1
+        },
+        {
+          "w": "own",
+          "start": 1.12
+        },
+        {
+          "w": "task?",
+          "start": 1.36
+        },
+        {
+          "w": "Four",
+          "start": 1.84
+        },
+        {
+          "w": "steps.",
+          "start": 2.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c19": {
+      "segment": "finetune",
+      "display": "Pretrain once: this expensive part has already been done for you.",
+      "spoken": "Pretrain once: this expensive part has already been done for you.",
+      "textHash": "90fedc75da6c4474",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aa6eafa901293def.wav",
+      "duration": 3.907,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pretrain",
+          "start": 0.24
+        },
+        {
+          "w": "once:",
+          "start": 0.48
+        },
+        {
+          "w": "this",
+          "start": 1.16
+        },
+        {
+          "w": "expensive",
+          "start": 1.48
+        },
+        {
+          "w": "part",
+          "start": 2.24
+        },
+        {
+          "w": "has",
+          "start": 2.48
+        },
+        {
+          "w": "already",
+          "start": 2.68
+        },
+        {
+          "w": "been",
+          "start": 3.08
+        },
+        {
+          "w": "done",
+          "start": 3.28
+        },
+        {
+          "w": "for",
+          "start": 3.48
+        },
+        {
+          "w": "you.",
+          "start": 3.64
+        }
+      ],
+      "matchScore": 0.909
+    },
+    "c20": {
+      "segment": "finetune",
+      "display": "Add a layer: put a small extra layer on top, for your task, like spam or not spam.",
+      "spoken": "Add a layer: put a small extra layer on top, for your task, like spam or not spam.",
+      "textHash": "59ea978454184484",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/34324a2683d5f8f6.wav",
+      "duration": 5.156,
+      "marks": {},
+      "words": [
+        {
+          "w": "Add",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.24
+        },
+        {
+          "w": "layer:",
+          "start": 0.36
+        },
+        {
+          "w": "put",
+          "start": 0.76
+        },
+        {
+          "w": "a",
+          "start": 1.08
+        },
+        {
+          "w": "small",
+          "start": 1.2
+        },
+        {
+          "w": "extra",
+          "start": 1.48
+        },
+        {
+          "w": "layer",
+          "start": 1.84
+        },
+        {
+          "w": "on",
+          "start": 2.2
+        },
+        {
+          "w": "top,",
+          "start": 2.36
+        },
+        {
+          "w": "for",
+          "start": 2.68
+        },
+        {
+          "w": "your",
+          "start": 2.84
+        },
+        {
+          "w": "task,",
+          "start": 3.08
+        },
+        {
+          "w": "like",
+          "start": 3.56
+        },
+        {
+          "w": "spam",
+          "start": 3.8
+        },
+        {
+          "w": "or",
+          "start": 4.24
+        },
+        {
+          "w": "not",
+          "start": 4.44
+        },
+        {
+          "w": "spam.",
+          "start": 4.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "finetune",
+      "display": "Fine-tune: train the whole thing briefly on your labelled examples. A few thousand is often enough.",
+      "spoken": "Fine-tune: train the whole thing briefly on your labelled examples. A few thousand is often enough.",
+      "textHash": "5eebc3c9f11ad2ad",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bbba888ee668db4a.wav",
+      "duration": 5.943,
+      "marks": {},
+      "words": [
+        {
+          "w": "Fine-tune:",
+          "start": 0.4
+        },
+        {
+          "w": "train",
+          "start": 0.8
+        },
+        {
+          "w": "the",
+          "start": 1.16
+        },
+        {
+          "w": "whole",
+          "start": 1.32
+        },
+        {
+          "w": "thing",
+          "start": 1.52
+        },
+        {
+          "w": "briefly",
+          "start": 1.76
+        },
+        {
+          "w": "on",
+          "start": 2.24
+        },
+        {
+          "w": "your",
+          "start": 2.4
+        },
+        {
+          "w": "labelled",
+          "start": 2.56
+        },
+        {
+          "w": "examples.",
+          "start": 3.04
+        },
+        {
+          "w": "A",
+          "start": 3.88
+        },
+        {
+          "w": "few",
+          "start": 4.08
+        },
+        {
+          "w": "thousand",
+          "start": 4.4
+        },
+        {
+          "w": "is",
+          "start": 4.92
+        },
+        {
+          "w": "often",
+          "start": 5.12
+        },
+        {
+          "w": "enough.",
+          "start": 5.52
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c22": {
+      "segment": "finetune",
+      "display": "Use: now it can classify, tag, or answer questions.",
+      "spoken": "Use: now it can classify, tag, or answer questions.",
+      "textHash": "b5fe07560b5131e9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/56fbb270ce5d4baa.wav",
+      "duration": 3.502,
+      "marks": {},
+      "words": [
+        {
+          "w": "Use:",
+          "start": 0
+        },
+        {
+          "w": "now",
+          "start": 0.44
+        },
+        {
+          "w": "it",
+          "start": 0.68
+        },
+        {
+          "w": "can",
+          "start": 0.8
+        },
+        {
+          "w": "classify,",
+          "start": 0.96
+        },
+        {
+          "w": "tag,",
+          "start": 1.76
+        },
+        {
+          "w": "or",
+          "start": 2.24
+        },
+        {
+          "w": "answer",
+          "start": 2.661
+        },
+        {
+          "w": "questions.",
+          "start": 3.081
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c23": {
+      "segment": "vs",
+      "display": "How does BERT compare with ELMo?",
+      "spoken": "How does BERT compare with ELMo?",
+      "textHash": "7fff8e0199811d48",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4d41f90002dd7956.wav",
+      "duration": 1.715,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "does",
+          "start": 0.16
+        },
+        {
+          "w": "BERT",
+          "start": 0.4
+        },
+        {
+          "w": "compare",
+          "start": 0.72
+        },
+        {
+          "w": "with",
+          "start": 1.08
+        },
+        {
+          "w": "ELMo?",
+          "start": 1.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "vs",
+      "display": "ELMo uses LSTMs that read each direction separately, and its vectors are fed into your own model.",
+      "spoken": "ELMo uses L S T ems that read each direction separately, and its vectors are fed into your own model.",
+      "textHash": "753d7779e0b0b3d3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ba6695eb1a160d04.wav",
+      "duration": 6.711,
+      "marks": {},
+      "words": [
+        {
+          "w": "ELMo",
+          "start": 0
+        },
+        {
+          "w": "uses",
+          "start": 0.72
+        },
+        {
+          "w": "LSTMs",
+          "start": 1.44
+        },
+        {
+          "w": "that",
+          "start": 2.16
+        },
+        {
+          "w": "read",
+          "start": 2.4
+        },
+        {
+          "w": "each",
+          "start": 2.72
+        },
+        {
+          "w": "direction",
+          "start": 3
+        },
+        {
+          "w": "separately,",
+          "start": 3.56
+        },
+        {
+          "w": "and",
+          "start": 4.24
+        },
+        {
+          "w": "its",
+          "start": 4.573
+        },
+        {
+          "w": "vectors",
+          "start": 4.907
+        },
+        {
+          "w": "are",
+          "start": 5.24
+        },
+        {
+          "w": "fed",
+          "start": 5.44
+        },
+        {
+          "w": "into",
+          "start": 5.68
+        },
+        {
+          "w": "your",
+          "start": 5.92
+        },
+        {
+          "w": "own",
+          "start": 6.08
+        },
+        {
+          "w": "model.",
+          "start": 6.28
+        }
+      ],
+      "matchScore": 0.765
+    },
+    "c25": {
+      "segment": "vs",
+      "display": "In BERT, every word sees all the others at once, through self-attention, and the whole model is fine-tuned for your task. When it arrived, it set new records on many language tasks.",
+      "spoken": "In BERT, every word sees all the others at once, through self-attention, and the whole model is fine-tuned for your task. When it arrived, it set new records on many language tasks.",
+      "textHash": "50f9b12095fe52ff",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5e25cf09fe83a6bd.wav",
+      "duration": 11.226,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "BERT,",
+          "start": 0.32
+        },
+        {
+          "w": "every",
+          "start": 0.64
+        },
+        {
+          "w": "word",
+          "start": 0.92
+        },
+        {
+          "w": "sees",
+          "start": 1.24
+        },
+        {
+          "w": "all",
+          "start": 1.6
+        },
+        {
+          "w": "the",
+          "start": 1.84
+        },
+        {
+          "w": "others",
+          "start": 2
+        },
+        {
+          "w": "at",
+          "start": 2.36
+        },
+        {
+          "w": "once,",
+          "start": 2.56
+        },
+        {
+          "w": "through",
+          "start": 3.08
+        },
+        {
+          "w": "self-attention,",
+          "start": 3.76
+        },
+        {
+          "w": "and",
+          "start": 4.44
+        },
+        {
+          "w": "the",
+          "start": 4.64
+        },
+        {
+          "w": "whole",
+          "start": 4.84
+        },
+        {
+          "w": "model",
+          "start": 5.12
+        },
+        {
+          "w": "is",
+          "start": 5.52
+        },
+        {
+          "w": "fine-tuned",
+          "start": 5.96
+        },
+        {
+          "w": "for",
+          "start": 6.4
+        },
+        {
+          "w": "your",
+          "start": 6.56
+        },
+        {
+          "w": "task.",
+          "start": 6.8
+        },
+        {
+          "w": "When",
+          "start": 7.44
+        },
+        {
+          "w": "it",
+          "start": 7.68
+        },
+        {
+          "w": "arrived,",
+          "start": 7.92
+        },
+        {
+          "w": "it",
+          "start": 8.52
+        },
+        {
+          "w": "set",
+          "start": 8.76
+        },
+        {
+          "w": "new",
+          "start": 9.12
+        },
+        {
+          "w": "records",
+          "start": 9.32
+        },
+        {
+          "w": "on",
+          "start": 9.8
+        },
+        {
+          "w": "many",
+          "start": 9.96
+        },
+        {
+          "w": "language",
+          "start": 10.24
+        },
+        {
+          "w": "tasks.",
+          "start": 10.68
+        }
+      ],
+      "matchScore": 0.885
+    },
+    "c26": {
+      "segment": "uses",
+      "display": "BERT-style models now do many of the jobs we've met in this course.",
+      "spoken": "BERT-style models now do many of the jobs we've met in this course.",
+      "textHash": "32460b58e7784b82",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/179af00d5515a7d5.wav",
+      "duration": 4.053,
+      "marks": {},
+      "words": [
+        {
+          "w": "BERT-style",
+          "start": 0.32
+        },
+        {
+          "w": "models",
+          "start": 0.64
+        },
+        {
+          "w": "now",
+          "start": 1.24
+        },
+        {
+          "w": "do",
+          "start": 1.52
+        },
+        {
+          "w": "many",
+          "start": 1.76
+        },
+        {
+          "w": "of",
+          "start": 2.08
+        },
+        {
+          "w": "the",
+          "start": 2.2
+        },
+        {
+          "w": "jobs",
+          "start": 2.4
+        },
+        {
+          "w": "we've",
+          "start": 2.76
+        },
+        {
+          "w": "met",
+          "start": 3.04
+        },
+        {
+          "w": "in",
+          "start": 3.28
+        },
+        {
+          "w": "this",
+          "start": 3.4
+        },
+        {
+          "w": "course.",
+          "start": 3.64
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c27": {
+      "segment": "uses",
+      "display": "Classifying text: spam, sentiment, topics.",
+      "spoken": "Classifying text: spam, sentiment, topics.",
+      "textHash": "01eac59c50d8bc88",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5b220491a3896e36.wav",
+      "duration": 3.213,
+      "marks": {},
+      "words": [
+        {
+          "w": "Classifying",
+          "start": 0
+        },
+        {
+          "w": "text:",
+          "start": 0.8
+        },
+        {
+          "w": "spam,",
+          "start": 1.44
+        },
+        {
+          "w": "sentiment,",
+          "start": 1.92
+        },
+        {
+          "w": "topics.",
+          "start": 2.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c28": {
+      "segment": "uses",
+      "display": "Finding the names of people, places and dates.",
+      "spoken": "Finding the names of people, places and dates.",
+      "textHash": "2742215ed3077b7a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0fe03d1cd4592396.wav",
+      "duration": 2.655,
+      "marks": {},
+      "words": [
+        {
+          "w": "Finding",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.4
+        },
+        {
+          "w": "names",
+          "start": 0.56
+        },
+        {
+          "w": "of",
+          "start": 0.88
+        },
+        {
+          "w": "people,",
+          "start": 1.04
+        },
+        {
+          "w": "places",
+          "start": 1.48
+        },
+        {
+          "w": "and",
+          "start": 1.96
+        },
+        {
+          "w": "dates.",
+          "start": 2.2
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "uses",
+      "display": "Answering questions from a passage of text.",
+      "spoken": "Answering questions from a passage of text.",
+      "textHash": "c2ab830704b9a8c7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/69fa20cc8a02e7a1.wav",
+      "duration": 2.549,
+      "marks": {},
+      "words": [
+        {
+          "w": "Answering",
+          "start": 0.387
+        },
+        {
+          "w": "questions",
+          "start": 0.773
+        },
+        {
+          "w": "from",
+          "start": 1.16
+        },
+        {
+          "w": "a",
+          "start": 1.36
+        },
+        {
+          "w": "passage",
+          "start": 1.52
+        },
+        {
+          "w": "of",
+          "start": 1.88
+        },
+        {
+          "w": "text.",
+          "start": 2.04
+        }
+      ],
+      "matchScore": 0.6
+    },
+    "c30": {
+      "segment": "uses",
+      "display": "And improving search. Google announced in 2019 that it was using BERT to better understand search queries.",
+      "spoken": "And improving search. Google announced in 2019 that it was using BERT to better understand search queries.",
+      "textHash": "bb2da84982743768",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9067007c50954059.wav",
+      "duration": 7.296,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0.08
+        },
+        {
+          "w": "improving",
+          "start": 0.16
+        },
+        {
+          "w": "search.",
+          "start": 0.88
+        },
+        {
+          "w": "Google",
+          "start": 1.5
+        },
+        {
+          "w": "announced",
+          "start": 2.12
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "2019",
+          "start": 2.76
+        },
+        {
+          "w": "that",
+          "start": 4
+        },
+        {
+          "w": "it",
+          "start": 4.24
+        },
+        {
+          "w": "was",
+          "start": 4.32
+        },
+        {
+          "w": "using",
+          "start": 4.48
+        },
+        {
+          "w": "BERT",
+          "start": 4.84
+        },
+        {
+          "w": "to",
+          "start": 5.2
+        },
+        {
+          "w": "better",
+          "start": 5.36
+        },
+        {
+          "w": "understand",
+          "start": 5.68
+        },
+        {
+          "w": "search",
+          "start": 6.219
+        },
+        {
+          "w": "queries.",
+          "start": 6.757
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c31": {
+      "segment": "quiz",
+      "display": "Quick quiz. During pretraining, what does BERT's masked language model do?",
+      "spoken": "Quick quiz. During pretraining, what does BERT's masked language model do?",
+      "textHash": "fc504bd0309c59ce",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4cd7ad3337420573.wav",
+      "duration": 4.243,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.384
+        },
+        {
+          "w": "quiz.",
+          "start": 0.768
+        },
+        {
+          "w": "During",
+          "start": 1.152
+        },
+        {
+          "w": "pretraining,",
+          "start": 1.536
+        },
+        {
+          "w": "what",
+          "start": 1.92
+        },
+        {
+          "w": "does",
+          "start": 2.16
+        },
+        {
+          "w": "BERT's",
+          "start": 2.48
+        },
+        {
+          "w": "masked",
+          "start": 2.8
+        },
+        {
+          "w": "language",
+          "start": 3.16
+        },
+        {
+          "w": "model",
+          "start": 3.6
+        },
+        {
+          "w": "do?",
+          "start": 3.96
+        }
+      ],
+      "matchScore": 0.5
+    },
+    "c32": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c33": {
+      "segment": "quiz",
+      "display": "It guesses hidden words, using the words on both sides of the blank.",
+      "spoken": "It guesses hidden words, using the words on both sides of the blank.",
+      "textHash": "3772f7380ad40dd1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/97ef14e36d95b49c.wav",
+      "duration": 3.794,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "guesses",
+          "start": 0.12
+        },
+        {
+          "w": "hidden",
+          "start": 0.6
+        },
+        {
+          "w": "words,",
+          "start": 1.04
+        },
+        {
+          "w": "using",
+          "start": 1.52
+        },
+        {
+          "w": "the",
+          "start": 1.84
+        },
+        {
+          "w": "words",
+          "start": 2
+        },
+        {
+          "w": "on",
+          "start": 2.32
+        },
+        {
+          "w": "both",
+          "start": 2.6
+        },
+        {
+          "w": "sides",
+          "start": 2.88
+        },
+        {
+          "w": "of",
+          "start": 3.16
+        },
+        {
+          "w": "the",
+          "start": 3.24
+        },
+        {
+          "w": "blank.",
+          "start": 3.4
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "Let's recap. BERT learns language by filling in blanks, reading in both directions.",
+      "spoken": "Let's recap. BERT learns language by filling in blanks, reading in both directions.",
+      "textHash": "94c3aaa9e85d66ba",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c5f39b05e3fa28f8.wav",
+      "duration": 5.233,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "BERT",
+          "start": 1.04
+        },
+        {
+          "w": "learns",
+          "start": 1.48
+        },
+        {
+          "w": "language",
+          "start": 1.88
+        },
+        {
+          "w": "by",
+          "start": 2.32
+        },
+        {
+          "w": "filling",
+          "start": 2.52
+        },
+        {
+          "w": "in",
+          "start": 2.84
+        },
+        {
+          "w": "blanks,",
+          "start": 3
+        },
+        {
+          "w": "reading",
+          "start": 3.56
+        },
+        {
+          "w": "in",
+          "start": 3.96
+        },
+        {
+          "w": "both",
+          "start": 4.16
+        },
+        {
+          "w": "directions.",
+          "start": 4.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c35": {
+      "segment": "recap",
+      "display": "Self-attention lets every word look at every other word.",
+      "spoken": "Self-attention lets every word look at every other word.",
+      "textHash": "4e5fabf8ece994f9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4cf16dbf672b5d95.wav",
+      "duration": 3.294,
+      "marks": {},
+      "words": [
+        {
+          "w": "Self-attention",
+          "start": 0.56
+        },
+        {
+          "w": "lets",
+          "start": 1.12
+        },
+        {
+          "w": "every",
+          "start": 1.48
+        },
+        {
+          "w": "word",
+          "start": 1.76
+        },
+        {
+          "w": "look",
+          "start": 2.08
+        },
+        {
+          "w": "at",
+          "start": 2.28
+        },
+        {
+          "w": "every",
+          "start": 2.44
+        },
+        {
+          "w": "other",
+          "start": 2.72
+        },
+        {
+          "w": "word.",
+          "start": 3
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c36": {
+      "segment": "recap",
+      "display": "You pretrain once, then fine-tune for your own task.",
+      "spoken": "You pretrain once, then fine-tune for your own task.",
+      "textHash": "9956671cd3d39574",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8eb0ab40c350e8c5.wav",
+      "duration": 3.091,
+      "marks": {},
+      "words": [
+        {
+          "w": "You",
+          "start": 0.24
+        },
+        {
+          "w": "pretrain",
+          "start": 0.48
+        },
+        {
+          "w": "once,",
+          "start": 0.72
+        },
+        {
+          "w": "then",
+          "start": 1.16
+        },
+        {
+          "w": "fine-tune",
+          "start": 1.64
+        },
+        {
+          "w": "for",
+          "start": 2.12
+        },
+        {
+          "w": "your",
+          "start": 2.24
+        },
+        {
+          "w": "own",
+          "start": 2.44
+        },
+        {
+          "w": "task.",
+          "start": 2.64
+        }
+      ],
+      "matchScore": 0.667
+    },
+    "c37": {
+      "segment": "recap",
+      "display": "And with that, you've climbed the whole staircase, from tokens all the way to BERT. Thanks for learning with NLP, Simply Explained.",
+      "spoken": "And with that, you've climbed the whole staircase, from tokens all the way to BERT. Thanks for learning with N L P, Simply Explained.",
+      "textHash": "2203ea6eb0d0e1bf",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a155e1354944e3a5.wav",
+      "duration": 7.659,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "with",
+          "start": 0.12
+        },
+        {
+          "w": "that,",
+          "start": 0.28
+        },
+        {
+          "w": "you've",
+          "start": 0.52
+        },
+        {
+          "w": "climbed",
+          "start": 0.84
+        },
+        {
+          "w": "the",
+          "start": 1.16
+        },
+        {
+          "w": "whole",
+          "start": 1.28
+        },
+        {
+          "w": "staircase,",
+          "start": 1.52
+        },
+        {
+          "w": "from",
+          "start": 2.2
+        },
+        {
+          "w": "tokens",
+          "start": 2.4
+        },
+        {
+          "w": "all",
+          "start": 2.96
+        },
+        {
+          "w": "the",
+          "start": 3.16
+        },
+        {
+          "w": "way",
+          "start": 3.28
+        },
+        {
+          "w": "to",
+          "start": 3.48
+        },
+        {
+          "w": "BERT.",
+          "start": 3.68
+        },
+        {
+          "w": "Thanks",
+          "start": 4.24
+        },
+        {
+          "w": "for",
+          "start": 4.72
+        },
+        {
+          "w": "learning",
+          "start": 4.88
+        },
+        {
+          "w": "with",
+          "start": 5.333
+        },
+        {
+          "w": "NLP,",
+          "start": 5.787
+        },
+        {
+          "w": "Simply",
+          "start": 6.24
+        },
+        {
+          "w": "Explained.",
+          "start": 6.96
+        }
+      ],
+      "matchScore": 0.905
+    }
+  }
+}

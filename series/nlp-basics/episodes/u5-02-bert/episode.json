@@ -1,0 +1,242 @@
+{
+  "id": "u5-02",
+  "thumbnail": {
+    "headline": "How BERT learned language",
+    "big": "[MASK]"
+  },
+  "tags": [
+    "BERT",
+    "transformers",
+    "self-attention",
+    "masked language model",
+    "fine-tuning"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "BERT",
+        "subtitle": "Reading in both directions"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "BERT learned language by filling in blanks, reading both directions at once.",
+        "highlight": [
+          "blanks,"
+        ]
+      }
+    },
+    {
+      "id": "bert",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is BERT?",
+      "props": {
+        "kicker": "2018",
+        "term": "BERT",
+        "definition": "Bidirectional Encoder Representations from Transformers: a model pretrained on lots of text to understand each word in its full context.",
+        "example": "she sat on the [MASK] of the river → bank",
+        "analogy": "A student who did millions of fill-in-the-blank exercises, then specialises for one exam."
+      }
+    },
+    {
+      "id": "attention",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Self-attention",
+      "props": {
+        "kicker": "Inside the Transformer",
+        "term": "Self-attention",
+        "definition": "Every word looks at every other word in the sentence, and decides which ones matter for its meaning.",
+        "example": "The cat drank the milk because it was hungry: it → cat",
+        "analogy": "In a meeting, each person listens most closely to the people relevant to them."
+      }
+    },
+    {
+      "id": "pretrain",
+      "kind": "core",
+      "component": "Steps",
+      "title": "How BERT was pretrained",
+      "props": {
+        "kicker": "Pretraining",
+        "title": "How BERT learned from plain text",
+        "steps": [
+          {
+            "label": "Mask",
+            "detail": "hide about 15% of the words"
+          },
+          {
+            "label": "Predict",
+            "detail": "guess them from both sides"
+          },
+          {
+            "label": "Next sentence",
+            "detail": "does sentence B follow A?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "masked",
+      "kind": "core",
+      "component": "Table",
+      "title": "Filling in the blanks",
+      "short": true,
+      "shortTitle": "How BERT learned by filling in blanks",
+      "props": {
+        "kicker": "Masked words",
+        "title": "What BERT guesses for [MASK]",
+        "columns": [
+          "Input",
+          "Likely guess"
+        ],
+        "rows": [
+          [
+            "The cat sat on the [MASK].",
+            "mat"
+          ],
+          [
+            "I drank a cup of [MASK].",
+            "tea · coffee"
+          ],
+          [
+            "Paris is the capital of [MASK].",
+            "France"
+          ]
+        ],
+        "highlight": [
+          {
+            "row": 2,
+            "col": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "finetune",
+      "kind": "core",
+      "component": "Steps",
+      "title": "Using BERT",
+      "props": {
+        "kicker": "Fine-tuning",
+        "title": "From pretrained BERT to your task",
+        "steps": [
+          {
+            "label": "Pretrain once",
+            "detail": "on books and Wikipedia"
+          },
+          {
+            "label": "Add a layer",
+            "detail": "small, for your task"
+          },
+          {
+            "label": "Fine-tune",
+            "detail": "briefly, on labelled examples"
+          },
+          {
+            "label": "Use",
+            "detail": "classify, tag, answer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vs",
+      "kind": "core",
+      "component": "Compare",
+      "title": "ELMo versus BERT",
+      "props": {
+        "kicker": "Compare",
+        "title": "ELMo versus BERT",
+        "columns": [
+          {
+            "title": "ELMo",
+            "items": [
+              "LSTMs read each direction separately",
+              "its vectors feed your model"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "BERT",
+            "items": [
+              "every word sees all others at once",
+              "the whole model is fine-tuned"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "BERT set new records on many tasks"
+        }
+      }
+    },
+    {
+      "id": "uses",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Where BERT is used",
+      "props": {
+        "kicker": "In the real world",
+        "title": "What BERT-style models do",
+        "items": [
+          {
+            "text": "Classify text: spam, sentiment, topics"
+          },
+          {
+            "text": "Find names of people, places and dates"
+          },
+          {
+            "text": "Answer questions from a passage"
+          },
+          {
+            "text": "Improve search results"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: how did BERT learn?",
+      "props": {
+        "question": "During pretraining, what does BERT's masked language model do?",
+        "options": [
+          "Guesses hidden words from both sides",
+          "Translates sentences",
+          "Counts how often words appear"
+        ],
+        "answer": 0,
+        "explain": "It hides some words and learns to guess them from the words around them."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and goodbye",
+      "props": {
+        "title": "Recap",
+        "points": [
+          "BERT learns by filling in blanks, reading both ways",
+          "Self-attention lets every word look at every other",
+          "Pretrain once, then fine-tune for your task",
+          "From tokens to BERT: you've climbed the whole staircase"
+        ]
+      }
+    }
+  ]
+}
