@@ -27,7 +27,10 @@ export const TitleCard: React.FC<KitProps<"TitleCard">> = ({ kicker, title, subt
 export const BigIdea: React.FC<KitProps<"BigIdea">> = ({ kicker, text, highlight = [] }) => {
   const frame = useCurrentFrame();
   const words = text.split(/\s+/);
-  const isHl = (w: string) => highlight.some((h) => h.toLowerCase().split(/\s+/).includes(w.toLowerCase().replace(/[^\w'-]/g, "")));
+  // compare words without case or punctuation, so "tokens." in the text matches "tokens" or "tokens." in highlight
+  const bare = (w: string) => w.toLowerCase().replace(/[^\w'-]/g, "");
+  const hl = new Set(highlight.flatMap((h) => h.split(/\s+/).map(bare)).filter(Boolean));
+  const isHl = (w: string) => hl.has(bare(w));
   return (
     <div style={{ position: "absolute", left: 180, right: 180, top: 0, bottom: 140, display: "flex", flexDirection: "column", justifyContent: "center" }}>
       {kicker && <div style={enter(frame, 0)}><Kicker>{kicker}</Kicker></div>}

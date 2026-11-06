@@ -1,0 +1,68 @@
+{
+  "id": "u1-02",
+  "thumbnail": { "headline": "How AI cuts text into pieces", "big": "rain + drops" },
+  "tags": ["tokenization", "tokens", "subword tokenization", "byte pair encoding", "BPE"],
+  "segments": [
+    { "id": "intro", "kind": "intro", "component": "TitleCard", "title": "Welcome",
+      "props": { "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}", "title": "Tokenization", "subtitle": "How text becomes pieces a model can use" } },
+
+    { "id": "idea", "kind": "core", "component": "BigIdea", "title": "The big idea",
+      "props": { "kicker": "Key idea", "text": "A model never reads text. It reads tokens.", "highlight": ["tokens."] } },
+
+    { "id": "token", "kind": "core", "component": "Definition", "title": "What is a token?",
+      "props": { "kicker": "Definition", "term": "Token", "definition": "One unit of text a model works with: a word, a piece of a word, or a punctuation mark.",
+        "example": "I · do · n't · like · rain · !", "analogy": "Chopping vegetables before cooking: the size of the pieces matters." } },
+
+    { "id": "spaces", "kind": "core", "component": "Table", "title": "Why spaces aren't enough",
+      "props": { "kicker": "First attempt", "title": "Just split on spaces?", "columns": ["Text", "Problem"],
+        "rows": [
+          ["traffic!", "punctuation glued on"],
+          ["don't", "two words in one"],
+          ["Dr. Rao", "a dot that doesn't end a sentence"],
+          ["New York", "one name, split in two"] ] } },
+
+    { "id": "sizes", "kind": "core", "component": "Compare", "title": "Characters, words or subwords?", "short": true,
+      "shortTitle": "How AI decides the size of a word piece",
+      "props": { "kicker": "How big is a piece?", "title": "Three ways to cut “raindrops”", "columns": [
+        { "title": "Characters", "items": ["r · a · i · n · d · r · o · p · s", "tiny vocabulary", "very long sequences"], "tone": "neutral" },
+        { "title": "Words", "items": ["raindrops", "unseen words become unknown"], "tone": "bad" },
+        { "title": "Subwords", "items": ["rain · drops", "common words stay whole", "rare words split into pieces"], "tone": "good" } ],
+        "verdict": { "text": "Modern models use subwords", "at": "c15@verdict" } } },
+
+    { "id": "bpe", "kind": "core", "component": "Steps", "title": "Byte Pair Encoding",
+      "props": { "kicker": "Byte Pair Encoding", "title": "How a subword vocabulary is built", "steps": [
+        { "label": "Split", "detail": "every word into characters" },
+        { "label": "Count", "detail": "pairs of neighbours" },
+        { "label": "Merge", "detail": "the most common pair" },
+        { "label": "Repeat", "detail": "until the vocabulary is big enough" } ] } },
+
+    { "id": "worked", "kind": "core", "component": "Table", "title": "BPE, worked example",
+      "props": { "kicker": "Worked example", "title": "rain ×9 · rainy ×4 · raining ×5 · train ×3", "columns": ["Merge", "Seen", "“raining” becomes"],
+        "rows": [
+          ["i + n → in", "26 times", "r a in in g"],
+          ["r + a → ra", "21 times", "ra in in g"],
+          ["ra + in → rain", "21 times", "rain in g"] ],
+        "highlight": [{ "row": 2, "col": 2 }] } },
+
+    { "id": "count", "kind": "core", "component": "BarChart", "title": "How many pieces?",
+      "props": { "kicker": "The trade-off", "title": "How many pieces is “raindrops”?", "unit": "tokens", "bars": [
+        { "label": "Characters", "value": 9 },
+        { "label": "Subwords", "value": 2 },
+        { "label": "Words", "value": 1 } ],
+        "note": "Subwords: short sequences, and no unknown words." } },
+
+    { "id": "quiz", "kind": "quiz", "component": "Quiz", "title": "Quick quiz", "short": true,
+      "shortTitle": "Quick quiz: what does AI do with a brand-new word?",
+      "props": { "question": "A subword tokenizer meets “unfriendliness” for the first time. What happens?",
+        "options": ["It marks it as unknown", "It splits it into known pieces", "It skips the word"], "answer": 1,
+        "explain": "un · friend · li · ness: pieces it has seen many times before." } },
+
+    { "id": "recap", "kind": "recap", "component": "Recap", "title": "Recap and next lesson",
+      "props": { "points": [
+        "A token is one unit of text a model reads",
+        "Splitting on spaces alone is not enough",
+        "Subwords balance characters and whole words",
+        "BPE: split, count, merge, repeat" ],
+        "next": { "title": "{{next.short}}", "question": "{{next.question}}" } } }
+  ]
+}

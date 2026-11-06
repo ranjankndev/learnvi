@@ -116,7 +116,8 @@
       "lesson": 2,
       "short": "Tokenization",
       "title": "Tokenization: How Text Becomes Pieces",
-      "question": "How do we cut text into units a model can use?"
+      "question": "How do we cut text into units a model can use?",
+      "folder": "u1-02-tokenization"
     },
     {
       "id": "u1-03",

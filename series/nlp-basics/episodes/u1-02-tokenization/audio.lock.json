@@ -1,0 +1,3147 @@
+{
+  "version": 1,
+  "episode": "u1-02",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 1, lesson 2: tokenization.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 1, lesson 2: tokenization.",
+      "textHash": "afa77f48fd954b85",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4d9c25688c189ff9.wav",
+      "duration": 5.915,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.813
+        },
+        {
+          "w": "NLP,",
+          "start": 1.147
+        },
+        {
+          "w": "Simply",
+          "start": 1.48
+        },
+        {
+          "w": "Explained.",
+          "start": 2.08
+        },
+        {
+          "w": "This",
+          "start": 2.88
+        },
+        {
+          "w": "is",
+          "start": 3.16
+        },
+        {
+          "w": "unit",
+          "start": 3.36
+        },
+        {
+          "w": "1,",
+          "start": 3.733
+        },
+        {
+          "w": "lesson",
+          "start": 4.107
+        },
+        {
+          "w": "2:",
+          "start": 4.48
+        },
+        {
+          "w": "tokenization.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Last time we climbed the staircase of NLP. Today we stand on the very first step, and look closely at how text gets cut into pieces.",
+      "spoken": "Last time we climbed the staircase of N L P. Today we stand on the very first step, and look closely at how text gets cut into pieces.",
+      "textHash": "bd80159a03158b00",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ee154296bb7f5c6b.wav",
+      "duration": 8.921,
+      "marks": {},
+      "words": [
+        {
+          "w": "Last",
+          "start": 0
+        },
+        {
+          "w": "time",
+          "start": 0.32
+        },
+        {
+          "w": "we",
+          "start": 0.6
+        },
+        {
+          "w": "climbed",
+          "start": 0.86
+        },
+        {
+          "w": "the",
+          "start": 1.12
+        },
+        {
+          "w": "staircase",
+          "start": 1.28
+        },
+        {
+          "w": "of",
+          "start": 1.92
+        },
+        {
+          "w": "NLP.",
+          "start": 2.56
+        },
+        {
+          "w": "Today",
+          "start": 3.2
+        },
+        {
+          "w": "we",
+          "start": 3.84
+        },
+        {
+          "w": "stand",
+          "start": 4.08
+        },
+        {
+          "w": "on",
+          "start": 4.44
+        },
+        {
+          "w": "the",
+          "start": 4.56
+        },
+        {
+          "w": "very",
+          "start": 4.76
+        },
+        {
+          "w": "first",
+          "start": 5.04
+        },
+        {
+          "w": "step,",
+          "start": 5.36
+        },
+        {
+          "w": "and",
+          "start": 5.76
+        },
+        {
+          "w": "look",
+          "start": 6
+        },
+        {
+          "w": "closely",
+          "start": 6.24
+        },
+        {
+          "w": "at",
+          "start": 6.72
+        },
+        {
+          "w": "how",
+          "start": 6.88
+        },
+        {
+          "w": "text",
+          "start": 7.08
+        },
+        {
+          "w": "gets",
+          "start": 7.56
+        },
+        {
+          "w": "cut",
+          "start": 7.84
+        },
+        {
+          "w": "into",
+          "start": 8.12
+        },
+        {
+          "w": "pieces.",
+          "start": 8.32
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here is the idea to hold on to. A model never reads text the way you do. It reads tokens.",
+      "spoken": "Here is the idea to hold on to. A model never reads text the way you do. It reads tokens.",
+      "textHash": "43c4f9d82e0bcb31",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/234d49e28006a122.wav",
+      "duration": 6.059,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.28
+        },
+        {
+          "w": "the",
+          "start": 0.4
+        },
+        {
+          "w": "idea",
+          "start": 0.6
+        },
+        {
+          "w": "to",
+          "start": 1.04
+        },
+        {
+          "w": "hold",
+          "start": 1.2
+        },
+        {
+          "w": "on",
+          "start": 1.52
+        },
+        {
+          "w": "to.",
+          "start": 1.72
+        },
+        {
+          "w": "A",
+          "start": 2.08
+        },
+        {
+          "w": "model",
+          "start": 2.32
+        },
+        {
+          "w": "never",
+          "start": 2.8
+        },
+        {
+          "w": "reads",
+          "start": 3.08
+        },
+        {
+          "w": "text",
+          "start": 3.46
+        },
+        {
+          "w": "the",
+          "start": 3.84
+        },
+        {
+          "w": "way",
+          "start": 4
+        },
+        {
+          "w": "you",
+          "start": 4.16
+        },
+        {
+          "w": "do.",
+          "start": 4.36
+        },
+        {
+          "w": "It",
+          "start": 4.64
+        },
+        {
+          "w": "reads",
+          "start": 4.88
+        },
+        {
+          "w": "tokens.",
+          "start": 5.36
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c04": {
+      "segment": "token",
+      "display": "So what is a token? A token is one unit of text that a model works with. It can be a whole word, a piece of a word, or a punctuation mark.",
+      "spoken": "So what is a token? A token is one unit of text that a model works with. It can be a whole word, a piece of a word, or a punctuation mark.",
+      "textHash": "2658b7c0684901d6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/dff4caa8e8d536cf.wav",
+      "duration": 8.847,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "what",
+          "start": 0.24
+        },
+        {
+          "w": "is",
+          "start": 0.44
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "token?",
+          "start": 0.76
+        },
+        {
+          "w": "A",
+          "start": 1.44
+        },
+        {
+          "w": "token",
+          "start": 1.68
+        },
+        {
+          "w": "is",
+          "start": 2.24
+        },
+        {
+          "w": "one",
+          "start": 2.44
+        },
+        {
+          "w": "unit",
+          "start": 2.72
+        },
+        {
+          "w": "of",
+          "start": 3.04
+        },
+        {
+          "w": "text",
+          "start": 3.2
+        },
+        {
+          "w": "that",
+          "start": 3.6
+        },
+        {
+          "w": "a",
+          "start": 3.72
+        },
+        {
+          "w": "model",
+          "start": 3.84
+        },
+        {
+          "w": "works",
+          "start": 4.24
+        },
+        {
+          "w": "with.",
+          "start": 4.6
+        },
+        {
+          "w": "It",
+          "start": 4.92
+        },
+        {
+          "w": "can",
+          "start": 5.16
+        },
+        {
+          "w": "be",
+          "start": 5.32
+        },
+        {
+          "w": "a",
+          "start": 5.48
+        },
+        {
+          "w": "whole",
+          "start": 5.64
+        },
+        {
+          "w": "word,",
+          "start": 6
+        },
+        {
+          "w": "a",
+          "start": 6.28
+        },
+        {
+          "w": "piece",
+          "start": 6.48
+        },
+        {
+          "w": "of",
+          "start": 6.76
+        },
+        {
+          "w": "a",
+          "start": 6.88
+        },
+        {
+          "w": "word,",
+          "start": 7.04
+        },
+        {
+          "w": "or",
+          "start": 7.36
+        },
+        {
+          "w": "a",
+          "start": 7.56
+        },
+        {
+          "w": "punctuation",
+          "start": 7.68
+        },
+        {
+          "w": "mark.",
+          "start": 8.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c05": {
+      "segment": "token",
+      "display": "Take the sentence \"I don't like rain!\" A typical tokenizer cuts it into six tokens: I, do, n't, like, rain, and the exclamation mark.",
+      "spoken": "Take the sentence \"I don't like rain!\" A typical tokenizer cuts it into six tokens: I, do, n apostrophe t, like, rain, and the exclamation mark.",
+      "textHash": "c02d544f312d58c8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/449799c39fd067c0.wav",
+      "duration": 9.975,
+      "marks": {},
+      "words": [
+        {
+          "w": "Take",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.24
+        },
+        {
+          "w": "sentence",
+          "start": 0.44
+        },
+        {
+          "w": "\"I",
+          "start": 0.96
+        },
+        {
+          "w": "don't",
+          "start": 1.12
+        },
+        {
+          "w": "like",
+          "start": 1.4
+        },
+        {
+          "w": "rain!\"",
+          "start": 1.68
+        },
+        {
+          "w": "A",
+          "start": 2.24
+        },
+        {
+          "w": "typical",
+          "start": 2.48
+        },
+        {
+          "w": "tokenizer",
+          "start": 3.04
+        },
+        {
+          "w": "cuts",
+          "start": 3.76
+        },
+        {
+          "w": "it",
+          "start": 4.04
+        },
+        {
+          "w": "into",
+          "start": 4.2
+        },
+        {
+          "w": "six",
+          "start": 4.4
+        },
+        {
+          "w": "tokens:",
+          "start": 4.68
+        },
+        {
+          "w": "I,",
+          "start": 5.6
+        },
+        {
+          "w": "do,",
+          "start": 5.96
+        },
+        {
+          "w": "n't,",
+          "start": 6.82
+        },
+        {
+          "w": "like,",
+          "start": 7.68
+        },
+        {
+          "w": "rain,",
+          "start": 8.04
+        },
+        {
+          "w": "and",
+          "start": 8.52
+        },
+        {
+          "w": "the",
+          "start": 8.68
+        },
+        {
+          "w": "exclamation",
+          "start": 8.84
+        },
+        {
+          "w": "mark.",
+          "start": 9.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "token",
+      "display": "Think of it like chopping vegetables before you cook. You can't cook a whole pumpkin in one go, and the size you cut the pieces into changes everything.",
+      "spoken": "Think of it like chopping vegetables before you cook. You can't cook a whole pumpkin in one go, and the size you cut the pieces into changes everything.",
+      "textHash": "8de2e032a7a528a8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5e9182145647e65c.wav",
+      "duration": 8.832,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "it",
+          "start": 0.32
+        },
+        {
+          "w": "like",
+          "start": 0.52
+        },
+        {
+          "w": "chopping",
+          "start": 1.013
+        },
+        {
+          "w": "vegetables",
+          "start": 1.507
+        },
+        {
+          "w": "before",
+          "start": 2
+        },
+        {
+          "w": "you",
+          "start": 2.28
+        },
+        {
+          "w": "cook.",
+          "start": 2.52
+        },
+        {
+          "w": "You",
+          "start": 3
+        },
+        {
+          "w": "can't",
+          "start": 3.28
+        },
+        {
+          "w": "cook",
+          "start": 3.6
+        },
+        {
+          "w": "a",
+          "start": 3.84
+        },
+        {
+          "w": "whole",
+          "start": 4
+        },
+        {
+          "w": "pumpkin",
+          "start": 4.24
+        },
+        {
+          "w": "in",
+          "start": 4.8
+        },
+        {
+          "w": "one",
+          "start": 5
+        },
+        {
+          "w": "go,",
+          "start": 5.24
+        },
+        {
+          "w": "and",
+          "start": 5.6
+        },
+        {
+          "w": "the",
+          "start": 5.84
+        },
+        {
+          "w": "size",
+          "start": 6
+        },
+        {
+          "w": "you",
+          "start": 6.36
+        },
+        {
+          "w": "cut",
+          "start": 6.56
+        },
+        {
+          "w": "the",
+          "start": 6.8
+        },
+        {
+          "w": "pieces",
+          "start": 6.96
+        },
+        {
+          "w": "into",
+          "start": 7.36
+        },
+        {
+          "w": "changes",
+          "start": 7.6
+        },
+        {
+          "w": "everything.",
+          "start": 8.24
+        }
+      ],
+      "matchScore": 0.913
+    },
+    "c07": {
+      "segment": "spaces",
+      "display": "The obvious first idea is to split the text wherever there is a space. Let's see where that goes wrong.",
+      "spoken": "The obvious first idea is to split the text wherever there is a space. Let's see where that goes wrong.",
+      "textHash": "b22f7a383a909086",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9fe7dc79ff8ca4e6.wav",
+      "duration": 6.007,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "obvious",
+          "start": 0.16
+        },
+        {
+          "w": "first",
+          "start": 0.68
+        },
+        {
+          "w": "idea",
+          "start": 0.96
+        },
+        {
+          "w": "is",
+          "start": 1.52
+        },
+        {
+          "w": "to",
+          "start": 1.68
+        },
+        {
+          "w": "split",
+          "start": 1.84
+        },
+        {
+          "w": "the",
+          "start": 2.2
+        },
+        {
+          "w": "text",
+          "start": 2.36
+        },
+        {
+          "w": "wherever",
+          "start": 2.8
+        },
+        {
+          "w": "there",
+          "start": 3.2
+        },
+        {
+          "w": "is",
+          "start": 3.4
+        },
+        {
+          "w": "a",
+          "start": 3.56
+        },
+        {
+          "w": "space.",
+          "start": 3.68
+        },
+        {
+          "w": "Let's",
+          "start": 4.32
+        },
+        {
+          "w": "see",
+          "start": 4.72
+        },
+        {
+          "w": "where",
+          "start": 4.92
+        },
+        {
+          "w": "that",
+          "start": 5.08
+        },
+        {
+          "w": "goes",
+          "start": 5.28
+        },
+        {
+          "w": "wrong.",
+          "start": 5.64
+        }
+      ],
+      "matchScore": 1
+    },
+    "c08": {
+      "segment": "spaces",
+      "display": "\"traffic\" with an exclamation mark stays glued together, so the punctuation becomes part of the word.",
+      "spoken": "\"traffic\" with an exclamation mark stays glued together, so the punctuation becomes part of the word.",
+      "textHash": "3e34ff3b517cfed7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/57ed824ea00796d7.wav",
+      "duration": 5.823,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"traffic\"",
+          "start": 0
+        },
+        {
+          "w": "with",
+          "start": 0.56
+        },
+        {
+          "w": "an",
+          "start": 0.76
+        },
+        {
+          "w": "exclamation",
+          "start": 0.88
+        },
+        {
+          "w": "mark",
+          "start": 1.6
+        },
+        {
+          "w": "stays",
+          "start": 1.96
+        },
+        {
+          "w": "glued",
+          "start": 2.34
+        },
+        {
+          "w": "together,",
+          "start": 2.72
+        },
+        {
+          "w": "so",
+          "start": 3.28
+        },
+        {
+          "w": "the",
+          "start": 3.44
+        },
+        {
+          "w": "punctuation",
+          "start": 3.6
+        },
+        {
+          "w": "becomes",
+          "start": 4.48
+        },
+        {
+          "w": "part",
+          "start": 5
+        },
+        {
+          "w": "of",
+          "start": 5.2
+        },
+        {
+          "w": "the",
+          "start": 5.32
+        },
+        {
+          "w": "word.",
+          "start": 5.48
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c09": {
+      "segment": "spaces",
+      "display": "\"don't\" stays as one piece, even though it really means two words: do and not.",
+      "spoken": "\"don't\" stays as one piece, even though it really means two words: do and not.",
+      "textHash": "80ee155e4f2452d3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e6f434c371f8cd6a.wav",
+      "duration": 4.339,
+      "marks": {},
+      "words": [
+        {
+          "w": "\"don't\"",
+          "start": 0
+        },
+        {
+          "w": "stays",
+          "start": 0.36
+        },
+        {
+          "w": "as",
+          "start": 0.76
+        },
+        {
+          "w": "one",
+          "start": 0.96
+        },
+        {
+          "w": "piece,",
+          "start": 1.16
+        },
+        {
+          "w": "even",
+          "start": 1.6
+        },
+        {
+          "w": "though",
+          "start": 1.88
+        },
+        {
+          "w": "it",
+          "start": 2.08
+        },
+        {
+          "w": "really",
+          "start": 2.2
+        },
+        {
+          "w": "means",
+          "start": 2.56
+        },
+        {
+          "w": "two",
+          "start": 2.88
+        },
+        {
+          "w": "words:",
+          "start": 3.12
+        },
+        {
+          "w": "do",
+          "start": 3.6
+        },
+        {
+          "w": "and",
+          "start": 3.8
+        },
+        {
+          "w": "not.",
+          "start": 3.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "spaces",
+      "display": "In \"Doctor Rao\", the dot after \"Dr\" does not end a sentence, but a simple splitter can't tell.",
+      "spoken": "In \"Doctor Rao\", the dot after \"Dr\" does not end a sentence, but a simple splitter can't tell.",
+      "textHash": "3837b01e8c2ac828",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4dd4c0100ed66080.wav",
+      "duration": 5.686,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "\"Doctor",
+          "start": 0.16
+        },
+        {
+          "w": "Rao\",",
+          "start": 0.58
+        },
+        {
+          "w": "the",
+          "start": 1
+        },
+        {
+          "w": "dot",
+          "start": 1.28
+        },
+        {
+          "w": "after",
+          "start": 1.6
+        },
+        {
+          "w": "\"Dr\"",
+          "start": 2
+        },
+        {
+          "w": "does",
+          "start": 2.4
+        },
+        {
+          "w": "not",
+          "start": 2.68
+        },
+        {
+          "w": "end",
+          "start": 2.84
+        },
+        {
+          "w": "a",
+          "start": 3.04
+        },
+        {
+          "w": "sentence,",
+          "start": 3.16
+        },
+        {
+          "w": "but",
+          "start": 3.72
+        },
+        {
+          "w": "a",
+          "start": 3.96
+        },
+        {
+          "w": "simple",
+          "start": 4.08
+        },
+        {
+          "w": "splitter",
+          "start": 4.48
+        },
+        {
+          "w": "can't",
+          "start": 5.04
+        },
+        {
+          "w": "tell.",
+          "start": 5.4
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c11": {
+      "segment": "spaces",
+      "display": "And \"New York\" is one name, but splitting on spaces breaks it into two unrelated words.",
+      "spoken": "And \"New York\" is one name, but splitting on spaces breaks it into two unrelated words.",
+      "textHash": "0e29a995dc9e6336",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/991bf1a56423a7d7.wav",
+      "duration": 5.285,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "\"New",
+          "start": 0.267
+        },
+        {
+          "w": "York\"",
+          "start": 0.533
+        },
+        {
+          "w": "is",
+          "start": 0.8
+        },
+        {
+          "w": "one",
+          "start": 1
+        },
+        {
+          "w": "name,",
+          "start": 1.28
+        },
+        {
+          "w": "but",
+          "start": 1.6
+        },
+        {
+          "w": "splitting",
+          "start": 1.88
+        },
+        {
+          "w": "on",
+          "start": 2.36
+        },
+        {
+          "w": "spaces",
+          "start": 2.56
+        },
+        {
+          "w": "breaks",
+          "start": 3.04
+        },
+        {
+          "w": "it",
+          "start": 3.44
+        },
+        {
+          "w": "into",
+          "start": 3.6
+        },
+        {
+          "w": "two",
+          "start": 3.84
+        },
+        {
+          "w": "unrelated",
+          "start": 4.08
+        },
+        {
+          "w": "words.",
+          "start": 4.8
+        }
+      ],
+      "matchScore": 0.846
+    },
+    "c12": {
+      "segment": "sizes",
+      "display": "Fixing those cases with rules helps, but there is a bigger question: how big should a piece be? Let's cut the word \"raindrops\" three ways.",
+      "spoken": "Fixing those cases with rules helps, but there is a bigger question: how big should a piece be? Let's cut the word \"raindrops\" three ways.",
+      "textHash": "27c1b768c431d482",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/29b0525c779f7a04.wav",
+      "duration": 8.021,
+      "marks": {},
+      "words": [
+        {
+          "w": "Fixing",
+          "start": 0
+        },
+        {
+          "w": "those",
+          "start": 0.4
+        },
+        {
+          "w": "cases",
+          "start": 0.64
+        },
+        {
+          "w": "with",
+          "start": 1.08
+        },
+        {
+          "w": "rules",
+          "start": 1.28
+        },
+        {
+          "w": "helps,",
+          "start": 1.68
+        },
+        {
+          "w": "but",
+          "start": 2.12
+        },
+        {
+          "w": "there",
+          "start": 2.28
+        },
+        {
+          "w": "is",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.6
+        },
+        {
+          "w": "bigger",
+          "start": 2.96
+        },
+        {
+          "w": "question:",
+          "start": 3.32
+        },
+        {
+          "w": "how",
+          "start": 3.68
+        },
+        {
+          "w": "big",
+          "start": 3.96
+        },
+        {
+          "w": "should",
+          "start": 4.32
+        },
+        {
+          "w": "a",
+          "start": 4.48
+        },
+        {
+          "w": "piece",
+          "start": 4.64
+        },
+        {
+          "w": "be?",
+          "start": 4.96
+        },
+        {
+          "w": "Let's",
+          "start": 5.28
+        },
+        {
+          "w": "cut",
+          "start": 5.72
+        },
+        {
+          "w": "the",
+          "start": 6
+        },
+        {
+          "w": "word",
+          "start": 6.16
+        },
+        {
+          "w": "\"raindrops\"",
+          "start": 6.44
+        },
+        {
+          "w": "three",
+          "start": 7.28
+        },
+        {
+          "w": "ways.",
+          "start": 7.6
+        }
+      ],
+      "matchScore": 0.905
+    },
+    "c13": {
+      "segment": "sizes",
+      "display": "Option one: single characters. The vocabulary is tiny, and nothing is ever unknown. But every sentence turns into a very long sequence of letters.",
+      "spoken": "Option one: single characters. The vocabulary is tiny, and nothing is ever unknown. But every sentence turns into a very long sequence of letters.",
+      "textHash": "6c3852aeca17b922",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0f8c828076d29116.wav",
+      "duration": 9.727,
+      "marks": {},
+      "words": [
+        {
+          "w": "Option",
+          "start": 0
+        },
+        {
+          "w": "one:",
+          "start": 0.56
+        },
+        {
+          "w": "single",
+          "start": 0.84
+        },
+        {
+          "w": "characters.",
+          "start": 1.4
+        },
+        {
+          "w": "The",
+          "start": 2.053
+        },
+        {
+          "w": "vocabulary",
+          "start": 2.707
+        },
+        {
+          "w": "is",
+          "start": 3.36
+        },
+        {
+          "w": "tiny,",
+          "start": 3.56
+        },
+        {
+          "w": "and",
+          "start": 4.08
+        },
+        {
+          "w": "nothing",
+          "start": 4.32
+        },
+        {
+          "w": "is",
+          "start": 4.72
+        },
+        {
+          "w": "ever",
+          "start": 4.92
+        },
+        {
+          "w": "unknown.",
+          "start": 5.24
+        },
+        {
+          "w": "But",
+          "start": 6
+        },
+        {
+          "w": "every",
+          "start": 6.24
+        },
+        {
+          "w": "sentence",
+          "start": 6.6
+        },
+        {
+          "w": "turns",
+          "start": 7.2
+        },
+        {
+          "w": "into",
+          "start": 7.6
+        },
+        {
+          "w": "a",
+          "start": 7.8
+        },
+        {
+          "w": "very",
+          "start": 7.96
+        },
+        {
+          "w": "long",
+          "start": 8.24
+        },
+        {
+          "w": "sequence",
+          "start": 8.56
+        },
+        {
+          "w": "of",
+          "start": 9.04
+        },
+        {
+          "w": "letters.",
+          "start": 9.2
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c14": {
+      "segment": "sizes",
+      "display": "Option two: whole words. Each piece has meaning, but there are millions of words, names and typos. Any word missing from the list becomes \"unknown\".",
+      "spoken": "Option two: whole words. Each piece has meaning, but there are millions of words, names and typos. Any word missing from the list becomes \"unknown\".",
+      "textHash": "c9deffe8d5e266a7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/87cc4404a92b35db.wav",
+      "duration": 9.595,
+      "marks": {},
+      "words": [
+        {
+          "w": "Option",
+          "start": 0
+        },
+        {
+          "w": "two:",
+          "start": 0.48
+        },
+        {
+          "w": "whole",
+          "start": 0.92
+        },
+        {
+          "w": "words.",
+          "start": 1.32
+        },
+        {
+          "w": "Each",
+          "start": 1.92
+        },
+        {
+          "w": "piece",
+          "start": 2.32
+        },
+        {
+          "w": "has",
+          "start": 2.68
+        },
+        {
+          "w": "meaning,",
+          "start": 2.92
+        },
+        {
+          "w": "but",
+          "start": 3.36
+        },
+        {
+          "w": "there",
+          "start": 3.56
+        },
+        {
+          "w": "are",
+          "start": 3.76
+        },
+        {
+          "w": "millions",
+          "start": 4
+        },
+        {
+          "w": "of",
+          "start": 4.48
+        },
+        {
+          "w": "words,",
+          "start": 4.64
+        },
+        {
+          "w": "names",
+          "start": 5.2
+        },
+        {
+          "w": "and",
+          "start": 5.6
+        },
+        {
+          "w": "typos.",
+          "start": 5.84
+        },
+        {
+          "w": "Any",
+          "start": 6.64
+        },
+        {
+          "w": "word",
+          "start": 7.04
+        },
+        {
+          "w": "missing",
+          "start": 7.32
+        },
+        {
+          "w": "from",
+          "start": 7.72
+        },
+        {
+          "w": "the",
+          "start": 7.88
+        },
+        {
+          "w": "list",
+          "start": 8
+        },
+        {
+          "w": "becomes",
+          "start": 8.36
+        },
+        {
+          "w": "\"unknown\".",
+          "start": 8.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c15": {
+      "segment": "sizes",
+      "display": "Option three: subwords. \"raindrops\" becomes \"rain\" plus \"drops\". Common words stay whole, and rare words are built from smaller pieces. That balance is why modern models use subwords.",
+      "spoken": "Option three: subwords. \"raindrops\" becomes \"rain\" plus \"drops\". Common words stay whole, and rare words are built from smaller pieces. That balance is why modern models use subwords.",
+      "textHash": "c0b33597d0b17098",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ee16030c15d1e3c9.wav",
+      "duration": 12.152,
+      "marks": {
+        "verdict": 9.28
+      },
+      "words": [
+        {
+          "w": "Option",
+          "start": 0
+        },
+        {
+          "w": "three:",
+          "start": 0.56
+        },
+        {
+          "w": "subwords.",
+          "start": 1.04
+        },
+        {
+          "w": "\"raindrops\"",
+          "start": 1.96
+        },
+        {
+          "w": "becomes",
+          "start": 2.88
+        },
+        {
+          "w": "\"rain\"",
+          "start": 3.4
+        },
+        {
+          "w": "plus",
+          "start": 3.8
+        },
+        {
+          "w": "\"drops\".",
+          "start": 4.24
+        },
+        {
+          "w": "Common",
+          "start": 5.04
+        },
+        {
+          "w": "words",
+          "start": 5.56
+        },
+        {
+          "w": "stay",
+          "start": 5.92
+        },
+        {
+          "w": "whole,",
+          "start": 6.24
+        },
+        {
+          "w": "and",
+          "start": 6.56
+        },
+        {
+          "w": "rare",
+          "start": 6.8
+        },
+        {
+          "w": "words",
+          "start": 7.16
+        },
+        {
+          "w": "are",
+          "start": 7.44
+        },
+        {
+          "w": "built",
+          "start": 7.6
+        },
+        {
+          "w": "from",
+          "start": 7.92
+        },
+        {
+          "w": "smaller",
+          "start": 8.12
+        },
+        {
+          "w": "pieces.",
+          "start": 8.56
+        },
+        {
+          "w": "That",
+          "start": 9.28
+        },
+        {
+          "w": "balance",
+          "start": 9.52
+        },
+        {
+          "w": "is",
+          "start": 10.04
+        },
+        {
+          "w": "why",
+          "start": 10.2
+        },
+        {
+          "w": "modern",
+          "start": 10.4
+        },
+        {
+          "w": "models",
+          "start": 10.84
+        },
+        {
+          "w": "use",
+          "start": 11.24
+        },
+        {
+          "w": "subwords.",
+          "start": 11.48
+        }
+      ],
+      "matchScore": 0.963
+    },
+    "c16": {
+      "segment": "bpe",
+      "display": "The most popular way to build a subword vocabulary is called Byte Pair Encoding, or BPE. It has just four steps.",
+      "spoken": "The most popular way to build a subword vocabulary is called Byte Pair Encoding, or BPE. It has just four steps.",
+      "textHash": "a0b368dc8c48a45c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/da46089956969525.wav",
+      "duration": 7.64,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "most",
+          "start": 0.16
+        },
+        {
+          "w": "popular",
+          "start": 0.4
+        },
+        {
+          "w": "way",
+          "start": 0.88
+        },
+        {
+          "w": "to",
+          "start": 1.04
+        },
+        {
+          "w": "build",
+          "start": 1.2
+        },
+        {
+          "w": "a",
+          "start": 1.44
+        },
+        {
+          "w": "subword",
+          "start": 1.92
+        },
+        {
+          "w": "vocabulary",
+          "start": 2.4
+        },
+        {
+          "w": "is",
+          "start": 2.88
+        },
+        {
+          "w": "called",
+          "start": 3.08
+        },
+        {
+          "w": "Byte",
+          "start": 3.48
+        },
+        {
+          "w": "Pair",
+          "start": 3.88
+        },
+        {
+          "w": "Encoding,",
+          "start": 4.28
+        },
+        {
+          "w": "or",
+          "start": 4.68
+        },
+        {
+          "w": "BPE.",
+          "start": 5.14
+        },
+        {
+          "w": "It",
+          "start": 5.6
+        },
+        {
+          "w": "has",
+          "start": 6.16
+        },
+        {
+          "w": "just",
+          "start": 6.4
+        },
+        {
+          "w": "four",
+          "start": 6.72
+        },
+        {
+          "w": "steps.",
+          "start": 7.04
+        }
+      ],
+      "matchScore": 0.625
+    },
+    "c17": {
+      "segment": "bpe",
+      "display": "Split: start by breaking every word into single characters.",
+      "spoken": "Split: start by breaking every word into single characters.",
+      "textHash": "632303a66b2119f1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/0fd4d379123ac663.wav",
+      "duration": 3.325,
+      "marks": {},
+      "words": [
+        {
+          "w": "Split:",
+          "start": 0
+        },
+        {
+          "w": "start",
+          "start": 0.52
+        },
+        {
+          "w": "by",
+          "start": 0.88
+        },
+        {
+          "w": "breaking",
+          "start": 1.04
+        },
+        {
+          "w": "every",
+          "start": 1.48
+        },
+        {
+          "w": "word",
+          "start": 1.76
+        },
+        {
+          "w": "into",
+          "start": 2.04
+        },
+        {
+          "w": "single",
+          "start": 2.24
+        },
+        {
+          "w": "characters.",
+          "start": 2.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "bpe",
+      "display": "Count: count how often each pair of neighbouring pieces appears.",
+      "spoken": "Count: count how often each pair of neighbouring pieces appears.",
+      "textHash": "482289beae15beab",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a80b8e6869f80b4d.wav",
+      "duration": 3.533,
+      "marks": {},
+      "words": [
+        {
+          "w": "Count:",
+          "start": 0
+        },
+        {
+          "w": "count",
+          "start": 0.4
+        },
+        {
+          "w": "how",
+          "start": 0.8
+        },
+        {
+          "w": "often",
+          "start": 1.04
+        },
+        {
+          "w": "each",
+          "start": 1.44
+        },
+        {
+          "w": "pair",
+          "start": 1.68
+        },
+        {
+          "w": "of",
+          "start": 1.92
+        },
+        {
+          "w": "neighbouring",
+          "start": 2
+        },
+        {
+          "w": "pieces",
+          "start": 2.48
+        },
+        {
+          "w": "appears.",
+          "start": 2.96
+        }
+      ],
+      "matchScore": 0.889
+    },
+    "c19": {
+      "segment": "bpe",
+      "display": "Merge: glue the most common pair together into a new piece.",
+      "spoken": "Merge: glue the most common pair together into a new piece.",
+      "textHash": "a3e3f9062d7126e0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f1fa3e55c9d18458.wav",
+      "duration": 3.279,
+      "marks": {},
+      "words": [
+        {
+          "w": "Merge:",
+          "start": 0
+        },
+        {
+          "w": "glue",
+          "start": 0.56
+        },
+        {
+          "w": "the",
+          "start": 0.92
+        },
+        {
+          "w": "most",
+          "start": 1.04
+        },
+        {
+          "w": "common",
+          "start": 1.28
+        },
+        {
+          "w": "pair",
+          "start": 1.64
+        },
+        {
+          "w": "together",
+          "start": 1.92
+        },
+        {
+          "w": "into",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.52
+        },
+        {
+          "w": "new",
+          "start": 2.64
+        },
+        {
+          "w": "piece.",
+          "start": 2.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c20": {
+      "segment": "bpe",
+      "display": "Repeat: count again and merge again, until the vocabulary is as big as you want.",
+      "spoken": "Repeat: count again and merge again, until the vocabulary is as big as you want.",
+      "textHash": "5e95b2a15892f0eb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/26ecaed0c472b60e.wav",
+      "duration": 4.874,
+      "marks": {},
+      "words": [
+        {
+          "w": "Repeat:",
+          "start": 0
+        },
+        {
+          "w": "count",
+          "start": 0.68
+        },
+        {
+          "w": "again",
+          "start": 1.04
+        },
+        {
+          "w": "and",
+          "start": 1.28
+        },
+        {
+          "w": "merge",
+          "start": 1.52
+        },
+        {
+          "w": "again,",
+          "start": 1.92
+        },
+        {
+          "w": "until",
+          "start": 2.28
+        },
+        {
+          "w": "the",
+          "start": 2.707
+        },
+        {
+          "w": "vocabulary",
+          "start": 3.133
+        },
+        {
+          "w": "is",
+          "start": 3.56
+        },
+        {
+          "w": "as",
+          "start": 3.72
+        },
+        {
+          "w": "big",
+          "start": 3.88
+        },
+        {
+          "w": "as",
+          "start": 4.16
+        },
+        {
+          "w": "you",
+          "start": 4.32
+        },
+        {
+          "w": "want.",
+          "start": 4.52
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c21": {
+      "segment": "worked",
+      "display": "Let's try it on a tiny example. Our text contains \"rain\" nine times, \"rainy\" four times, \"raining\" five times and \"train\" three times.",
+      "spoken": "Let's try it on a tiny example. Our text contains \"rain\" nine times, \"rainy\" four times, \"raining\" five times and \"train\" three times.",
+      "textHash": "ce531e6456a41392",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/de9c331efb3fb9c6.wav",
+      "duration": 9.241,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "try",
+          "start": 0.28
+        },
+        {
+          "w": "it",
+          "start": 0.52
+        },
+        {
+          "w": "on",
+          "start": 0.72
+        },
+        {
+          "w": "a",
+          "start": 0.8
+        },
+        {
+          "w": "tiny",
+          "start": 0.92
+        },
+        {
+          "w": "example.",
+          "start": 1.28
+        },
+        {
+          "w": "Our",
+          "start": 2.04
+        },
+        {
+          "w": "text",
+          "start": 2.24
+        },
+        {
+          "w": "contains",
+          "start": 2.72
+        },
+        {
+          "w": "\"rain\"",
+          "start": 3.28
+        },
+        {
+          "w": "nine",
+          "start": 3.68
+        },
+        {
+          "w": "times,",
+          "start": 4.12
+        },
+        {
+          "w": "\"rainy\"",
+          "start": 4.72
+        },
+        {
+          "w": "four",
+          "start": 5.28
+        },
+        {
+          "w": "times,",
+          "start": 5.6
+        },
+        {
+          "w": "\"raining\"",
+          "start": 6.24
+        },
+        {
+          "w": "five",
+          "start": 6.84
+        },
+        {
+          "w": "times",
+          "start": 7.28
+        },
+        {
+          "w": "and",
+          "start": 7.68
+        },
+        {
+          "w": "\"train\"",
+          "start": 7.92
+        },
+        {
+          "w": "three",
+          "start": 8.4
+        },
+        {
+          "w": "times.",
+          "start": 8.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "worked",
+      "display": "The most common pair is \"i\" followed by \"n\": twenty-six times, because \"raining\" contains it twice. So \"i\" and \"n\" merge into \"in\".",
+      "spoken": "The most common pair is \"i\" followed by \"n\": twenty-six times, because \"raining\" contains it twice. So \"i\" and \"n\" merge into \"in\".",
+      "textHash": "3b307cab12fc6a5c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8d4d1fa482b1b2d5.wav",
+      "duration": 8.657,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "most",
+          "start": 0.12
+        },
+        {
+          "w": "common",
+          "start": 0.36
+        },
+        {
+          "w": "pair",
+          "start": 0.72
+        },
+        {
+          "w": "is",
+          "start": 1.04
+        },
+        {
+          "w": "\"i\"",
+          "start": 1.24
+        },
+        {
+          "w": "followed",
+          "start": 1.6
+        },
+        {
+          "w": "by",
+          "start": 2.09
+        },
+        {
+          "w": "\"n\":",
+          "start": 2.58
+        },
+        {
+          "w": "twenty-six",
+          "start": 3.07
+        },
+        {
+          "w": "times,",
+          "start": 3.56
+        },
+        {
+          "w": "because",
+          "start": 3.96
+        },
+        {
+          "w": "\"raining\"",
+          "start": 4.28
+        },
+        {
+          "w": "contains",
+          "start": 4.8
+        },
+        {
+          "w": "it",
+          "start": 5.32
+        },
+        {
+          "w": "twice.",
+          "start": 5.52
+        },
+        {
+          "w": "So",
+          "start": 6.16
+        },
+        {
+          "w": "\"i\"",
+          "start": 6.56
+        },
+        {
+          "w": "and",
+          "start": 6.893
+        },
+        {
+          "w": "\"n\"",
+          "start": 7.227
+        },
+        {
+          "w": "merge",
+          "start": 7.56
+        },
+        {
+          "w": "into",
+          "start": 7.926
+        },
+        {
+          "w": "\"in\".",
+          "start": 8.291
+        }
+      ],
+      "matchScore": 0.786
+    },
+    "c23": {
+      "segment": "worked",
+      "display": "Next, \"r\" followed by \"a\" appears twenty-one times, so it becomes \"ra\".",
+      "spoken": "Next, \"r\" followed by \"a\" appears twenty-one times, so it becomes \"ra\".",
+      "textHash": "5d3921b40cccbfa7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/09887e7322d61e6f.wav",
+      "duration": 4.289,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next,",
+          "start": 0
+        },
+        {
+          "w": "\"r\"",
+          "start": 0.44
+        },
+        {
+          "w": "followed",
+          "start": 0.88
+        },
+        {
+          "w": "by",
+          "start": 1.32
+        },
+        {
+          "w": "\"a\"",
+          "start": 1.46
+        },
+        {
+          "w": "appears",
+          "start": 1.6
+        },
+        {
+          "w": "twenty-one",
+          "start": 2.12
+        },
+        {
+          "w": "times,",
+          "start": 2.64
+        },
+        {
+          "w": "so",
+          "start": 3.04
+        },
+        {
+          "w": "it",
+          "start": 3.24
+        },
+        {
+          "w": "becomes",
+          "start": 3.4
+        },
+        {
+          "w": "\"ra\".",
+          "start": 3.845
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c24": {
+      "segment": "worked",
+      "display": "Then \"ra\" and \"in\" merge into \"rain\". After just three merges, the whole word \"rain\" is a single token.",
+      "spoken": "Then \"ra\" and \"in\" merge into \"rain\". After just three merges, the whole word \"rain\" is a single token.",
+      "textHash": "f8f61198d763c866",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/91af85965f8702a6.wav",
+      "duration": 6.502,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then",
+          "start": 0
+        },
+        {
+          "w": "\"ra\"",
+          "start": 0.36
+        },
+        {
+          "w": "and",
+          "start": 0.72
+        },
+        {
+          "w": "\"in\"",
+          "start": 0.92
+        },
+        {
+          "w": "merge",
+          "start": 1.24
+        },
+        {
+          "w": "into",
+          "start": 1.64
+        },
+        {
+          "w": "\"rain\".",
+          "start": 1.92
+        },
+        {
+          "w": "After",
+          "start": 2.56
+        },
+        {
+          "w": "just",
+          "start": 3.04
+        },
+        {
+          "w": "three",
+          "start": 3.28
+        },
+        {
+          "w": "merges,",
+          "start": 3.52
+        },
+        {
+          "w": "the",
+          "start": 4.08
+        },
+        {
+          "w": "whole",
+          "start": 4.28
+        },
+        {
+          "w": "word",
+          "start": 4.6
+        },
+        {
+          "w": "\"rain\"",
+          "start": 4.88
+        },
+        {
+          "w": "is",
+          "start": 5.28
+        },
+        {
+          "w": "a",
+          "start": 5.44
+        },
+        {
+          "w": "single",
+          "start": 5.6
+        },
+        {
+          "w": "token.",
+          "start": 6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "count",
+      "display": "Now compare how many pieces each approach needs for \"raindrops\".",
+      "spoken": "Now compare how many pieces each approach needs for \"raindrops\".",
+      "textHash": "0f0ac711d10b48f3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6f3a971bafa9a0ea.wav",
+      "duration": 3.565,
+      "marks": {},
+      "words": [
+        {
+          "w": "Now",
+          "start": 0
+        },
+        {
+          "w": "compare",
+          "start": 0.28
+        },
+        {
+          "w": "how",
+          "start": 0.68
+        },
+        {
+          "w": "many",
+          "start": 0.88
+        },
+        {
+          "w": "pieces",
+          "start": 1.12
+        },
+        {
+          "w": "each",
+          "start": 1.56
+        },
+        {
+          "w": "approach",
+          "start": 1.76
+        },
+        {
+          "w": "needs",
+          "start": 2.24
+        },
+        {
+          "w": "for",
+          "start": 2.56
+        },
+        {
+          "w": "\"raindrops\".",
+          "start": 2.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "count",
+      "display": "As characters, it is nine tokens: long, and each letter means very little.",
+      "spoken": "As characters, it is nine tokens: long, and each letter means very little.",
+      "textHash": "bd1d659df348908b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b318419b4344ca43.wav",
+      "duration": 4.596,
+      "marks": {},
+      "words": [
+        {
+          "w": "As",
+          "start": 0
+        },
+        {
+          "w": "characters,",
+          "start": 0.2
+        },
+        {
+          "w": "it",
+          "start": 0.84
+        },
+        {
+          "w": "is",
+          "start": 1
+        },
+        {
+          "w": "nine",
+          "start": 1.16
+        },
+        {
+          "w": "tokens:",
+          "start": 1.52
+        },
+        {
+          "w": "long,",
+          "start": 2.44
+        },
+        {
+          "w": "and",
+          "start": 2.8
+        },
+        {
+          "w": "each",
+          "start": 3.04
+        },
+        {
+          "w": "letter",
+          "start": 3.32
+        },
+        {
+          "w": "means",
+          "start": 3.64
+        },
+        {
+          "w": "very",
+          "start": 4
+        },
+        {
+          "w": "little.",
+          "start": 4.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c27": {
+      "segment": "count",
+      "display": "As subwords, it is just two: \"rain\" and \"drops\".",
+      "spoken": "As subwords, it is just two: \"rain\" and \"drops\".",
+      "textHash": "52473fa8702c7e4f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/03ffac9492dcfe94.wav",
+      "duration": 3.031,
+      "marks": {},
+      "words": [
+        {
+          "w": "As",
+          "start": 0
+        },
+        {
+          "w": "subwords,",
+          "start": 0.36
+        },
+        {
+          "w": "it",
+          "start": 0.72
+        },
+        {
+          "w": "is",
+          "start": 0.88
+        },
+        {
+          "w": "just",
+          "start": 1.04
+        },
+        {
+          "w": "two:",
+          "start": 1.28
+        },
+        {
+          "w": "\"rain\"",
+          "start": 1.76
+        },
+        {
+          "w": "and",
+          "start": 2.2
+        },
+        {
+          "w": "\"drops\".",
+          "start": 2.4
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c28": {
+      "segment": "count",
+      "display": "As a whole word, it is one, but only if \"raindrops\" happens to be in the vocabulary. Subwords give short sequences, with no unknown words.",
+      "spoken": "As a whole word, it is one, but only if \"raindrops\" happens to be in the vocabulary. Subwords give short sequences, with no unknown words.",
+      "textHash": "4f639dcadf53c827",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c724dfa701c72aa9.wav",
+      "duration": 9.08,
+      "marks": {},
+      "words": [
+        {
+          "w": "As",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.16
+        },
+        {
+          "w": "whole",
+          "start": 0.28
+        },
+        {
+          "w": "word,",
+          "start": 0.6
+        },
+        {
+          "w": "it",
+          "start": 0.88
+        },
+        {
+          "w": "is",
+          "start": 1.12
+        },
+        {
+          "w": "one,",
+          "start": 1.32
+        },
+        {
+          "w": "but",
+          "start": 1.68
+        },
+        {
+          "w": "only",
+          "start": 1.96
+        },
+        {
+          "w": "if",
+          "start": 2.28
+        },
+        {
+          "w": "\"raindrops\"",
+          "start": 2.56
+        },
+        {
+          "w": "happens",
+          "start": 3.36
+        },
+        {
+          "w": "to",
+          "start": 3.76
+        },
+        {
+          "w": "be",
+          "start": 3.88
+        },
+        {
+          "w": "in",
+          "start": 4.04
+        },
+        {
+          "w": "the",
+          "start": 4.59
+        },
+        {
+          "w": "vocabulary.",
+          "start": 5.14
+        },
+        {
+          "w": "Subwords",
+          "start": 5.69
+        },
+        {
+          "w": "give",
+          "start": 6.24
+        },
+        {
+          "w": "short",
+          "start": 6.48
+        },
+        {
+          "w": "sequences,",
+          "start": 6.8
+        },
+        {
+          "w": "with",
+          "start": 7.56
+        },
+        {
+          "w": "no",
+          "start": 7.76
+        },
+        {
+          "w": "unknown",
+          "start": 8.04
+        },
+        {
+          "w": "words.",
+          "start": 8.64
+        }
+      ],
+      "matchScore": 0.813
+    },
+    "c29": {
+      "segment": "quiz",
+      "display": "Time for a quick quiz. A subword tokenizer meets the word \"unfriendliness\" for the first time. What happens?",
+      "spoken": "Time for a quick quiz. A subword tokenizer meets the word \"unfriendliness\" for the first time. What happens?",
+      "textHash": "54a2da4324754bfb",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/072b0661f2f69dbf.wav",
+      "duration": 6.778,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.62
+        },
+        {
+          "w": "quick",
+          "start": 0.92
+        },
+        {
+          "w": "quiz.",
+          "start": 1.22
+        },
+        {
+          "w": "A",
+          "start": 1.52
+        },
+        {
+          "w": "subword",
+          "start": 1.76
+        },
+        {
+          "w": "tokenizer",
+          "start": 2.32
+        },
+        {
+          "w": "meets",
+          "start": 3.04
+        },
+        {
+          "w": "the",
+          "start": 3.36
+        },
+        {
+          "w": "word",
+          "start": 3.52
+        },
+        {
+          "w": "\"unfriendliness\"",
+          "start": 3.8
+        },
+        {
+          "w": "for",
+          "start": 4.72
+        },
+        {
+          "w": "the",
+          "start": 4.84
+        },
+        {
+          "w": "first",
+          "start": 5
+        },
+        {
+          "w": "time.",
+          "start": 5.36
+        },
+        {
+          "w": "What",
+          "start": 5.84
+        },
+        {
+          "w": "happens?",
+          "start": 6.12
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c30": {
+      "segment": "quiz",
+      "display": "Pause the video and choose. Does it mark the word as unknown, split it into known pieces, or skip it?",
+      "spoken": "Pause the video and choose. Does it mark the word as unknown, split it into known pieces, or skip it?",
+      "textHash": "d979df3e42b58fb9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/daa873cb07be49a3.wav",
+      "duration": 5.925,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.32
+        },
+        {
+          "w": "video",
+          "start": 0.6
+        },
+        {
+          "w": "and",
+          "start": 0.88
+        },
+        {
+          "w": "choose.",
+          "start": 1.08
+        },
+        {
+          "w": "Does",
+          "start": 1.6
+        },
+        {
+          "w": "it",
+          "start": 1.92
+        },
+        {
+          "w": "mark",
+          "start": 2.12
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "word",
+          "start": 2.56
+        },
+        {
+          "w": "as",
+          "start": 2.8
+        },
+        {
+          "w": "unknown,",
+          "start": 3.04
+        },
+        {
+          "w": "split",
+          "start": 3.68
+        },
+        {
+          "w": "it",
+          "start": 4.08
+        },
+        {
+          "w": "into",
+          "start": 4.24
+        },
+        {
+          "w": "known",
+          "start": 4.44
+        },
+        {
+          "w": "pieces,",
+          "start": 4.72
+        },
+        {
+          "w": "or",
+          "start": 5.2
+        },
+        {
+          "w": "skip",
+          "start": 5.4
+        },
+        {
+          "w": "it?",
+          "start": 5.76
+        }
+      ],
+      "matchScore": 0.933,
+      "after": 3
+    },
+    "c31": {
+      "segment": "quiz",
+      "display": "It splits it into known pieces: un, friend, li, ness. Pieces it has seen many times before.",
+      "spoken": "It splits it into known pieces: un, friend, li, ness. Pieces it has seen many times before.",
+      "textHash": "4dbbccc8dea185fc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/191549be431242d7.wav",
+      "duration": 5.98,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "splits",
+          "start": 0.12
+        },
+        {
+          "w": "it",
+          "start": 0.48
+        },
+        {
+          "w": "into",
+          "start": 0.64
+        },
+        {
+          "w": "known",
+          "start": 0.84
+        },
+        {
+          "w": "pieces:",
+          "start": 1.12
+        },
+        {
+          "w": "un,",
+          "start": 1.656
+        },
+        {
+          "w": "friend,",
+          "start": 2.192
+        },
+        {
+          "w": "li,",
+          "start": 2.728
+        },
+        {
+          "w": "ness.",
+          "start": 3.264
+        },
+        {
+          "w": "Pieces",
+          "start": 3.8
+        },
+        {
+          "w": "it",
+          "start": 4.32
+        },
+        {
+          "w": "has",
+          "start": 4.48
+        },
+        {
+          "w": "seen",
+          "start": 4.6
+        },
+        {
+          "w": "many",
+          "start": 4.84
+        },
+        {
+          "w": "times",
+          "start": 5.16
+        },
+        {
+          "w": "before.",
+          "start": 5.56
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "Let's recap. A token is one unit of text that a model reads.",
+      "spoken": "Let's recap. A token is one unit of text that a model reads.",
+      "textHash": "761f8cc8bb2d2c8c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/af2db8e9001fe586.wav",
+      "duration": 3.934,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.4
+        },
+        {
+          "w": "A",
+          "start": 1
+        },
+        {
+          "w": "token",
+          "start": 1.24
+        },
+        {
+          "w": "is",
+          "start": 1.72
+        },
+        {
+          "w": "one",
+          "start": 1.92
+        },
+        {
+          "w": "unit",
+          "start": 2.16
+        },
+        {
+          "w": "of",
+          "start": 2.48
+        },
+        {
+          "w": "text",
+          "start": 2.6
+        },
+        {
+          "w": "that",
+          "start": 2.92
+        },
+        {
+          "w": "a",
+          "start": 3
+        },
+        {
+          "w": "model",
+          "start": 3.12
+        },
+        {
+          "w": "reads.",
+          "start": 3.48
+        }
+      ],
+      "matchScore": 1
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Splitting on spaces alone is not enough: punctuation, contractions and names get in the way.",
+      "spoken": "Splitting on spaces alone is not enough: punctuation, contractions and names get in the way.",
+      "textHash": "bc982c5080170bf4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d0847ecf6061a2bd.wav",
+      "duration": 5.858,
+      "marks": {},
+      "words": [
+        {
+          "w": "Splitting",
+          "start": 0
+        },
+        {
+          "w": "on",
+          "start": 0.44
+        },
+        {
+          "w": "spaces",
+          "start": 0.6
+        },
+        {
+          "w": "alone",
+          "start": 1.08
+        },
+        {
+          "w": "is",
+          "start": 1.56
+        },
+        {
+          "w": "not",
+          "start": 1.76
+        },
+        {
+          "w": "enough:",
+          "start": 2
+        },
+        {
+          "w": "punctuation,",
+          "start": 2.52
+        },
+        {
+          "w": "contractions",
+          "start": 3.72
+        },
+        {
+          "w": "and",
+          "start": 4.56
+        },
+        {
+          "w": "names",
+          "start": 4.76
+        },
+        {
+          "w": "get",
+          "start": 5.12
+        },
+        {
+          "w": "in",
+          "start": 5.32
+        },
+        {
+          "w": "the",
+          "start": 5.44
+        },
+        {
+          "w": "way.",
+          "start": 5.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c34": {
+      "segment": "recap",
+      "display": "Subwords balance the two extremes: shorter than characters, and never unknown like whole words.",
+      "spoken": "Subwords balance the two extremes: shorter than characters, and never unknown like whole words.",
+      "textHash": "539e40caea327994",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c231b2800775fc73.wav",
+      "duration": 5.754,
+      "marks": {},
+      "words": [
+        {
+          "w": "Subwords",
+          "start": 0
+        },
+        {
+          "w": "balance",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 1.08
+        },
+        {
+          "w": "two",
+          "start": 1.24
+        },
+        {
+          "w": "extremes:",
+          "start": 1.48
+        },
+        {
+          "w": "shorter",
+          "start": 2.32
+        },
+        {
+          "w": "than",
+          "start": 2.76
+        },
+        {
+          "w": "characters,",
+          "start": 2.96
+        },
+        {
+          "w": "and",
+          "start": 3.68
+        },
+        {
+          "w": "never",
+          "start": 3.88
+        },
+        {
+          "w": "unknown",
+          "start": 4.2
+        },
+        {
+          "w": "like",
+          "start": 4.76
+        },
+        {
+          "w": "whole",
+          "start": 5
+        },
+        {
+          "w": "words.",
+          "start": 5.28
+        }
+      ],
+      "matchScore": 1
+    },
+    "c35": {
+      "segment": "recap",
+      "display": "And BPE builds that vocabulary in four steps: split, count, merge, repeat.",
+      "spoken": "And BPE builds that vocabulary in four steps: split, count, merge, repeat.",
+      "textHash": "e3719fae240cc97d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c61cd5eb67287fc9.wav",
+      "duration": 5.379,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "BPE",
+          "start": 0.32
+        },
+        {
+          "w": "builds",
+          "start": 0.64
+        },
+        {
+          "w": "that",
+          "start": 1.067
+        },
+        {
+          "w": "vocabulary",
+          "start": 1.493
+        },
+        {
+          "w": "in",
+          "start": 1.92
+        },
+        {
+          "w": "four",
+          "start": 2.12
+        },
+        {
+          "w": "steps:",
+          "start": 2.36
+        },
+        {
+          "w": "split,",
+          "start": 3.12
+        },
+        {
+          "w": "count,",
+          "start": 3.8
+        },
+        {
+          "w": "merge,",
+          "start": 4.24
+        },
+        {
+          "w": "repeat.",
+          "start": 4.84
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c36": {
+      "segment": "recap",
+      "display": "Next lesson: Text Classification. How does a spam filter decide?",
+      "spoken": "Next lesson: Text Classification. How does a spam filter decide?",
+      "textHash": "4016cdf473959216",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/004375ffa5a3d2ec.wav",
+      "duration": 4.199,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.267
+        },
+        {
+          "w": "lesson:",
+          "start": 0.533
+        },
+        {
+          "w": "Text",
+          "start": 0.8
+        },
+        {
+          "w": "Classification.",
+          "start": 1.2
+        },
+        {
+          "w": "How",
+          "start": 2.24
+        },
+        {
+          "w": "does",
+          "start": 2.52
+        },
+        {
+          "w": "a",
+          "start": 2.76
+        },
+        {
+          "w": "spam",
+          "start": 3.067
+        },
+        {
+          "w": "filter",
+          "start": 3.373
+        },
+        {
+          "w": "decide?",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 0.556
+    }
+  }
+}
