@@ -1,0 +1,92 @@
+{
+  "id": "press-enter",
+  "title": "What Happens When You Press Enter?",
+  "subtitle": "How ChatGPT, Claude and Gemini Really Work",
+  "runningPrompt": "Write a short poem about the rain",
+  "language": "en",
+  "theme": "travel",
+  "fps": 30,
+  "voice": { "provider": "kokoro", "voice": "af_heart", "speed": 1.0, "lang": "en-us" },
+  "audio": {
+    "sampleRate": 48000,
+    "loudnessLUFS": -16,
+    "truePeak": -1.5,
+    "trimSilence": true,
+    "padSeconds": 0.08,
+    "leadIn": 0.6,
+    "gapAfterCue": 0.4,
+    "gapAfterSegment": 0.9,
+    "tail": 1.5,
+    "staleTakePolicy": "tts-fallback",
+    "minMatchScore": 0.5
+  },
+  "template": [
+    { "kind": "passport" },
+    { "kind": "hook" },
+    { "kind": "routeMap" },
+    { "kind": "core", "repeat": true },
+    { "kind": "tryIt" },
+    { "kind": "blooper", "required": false },
+    { "kind": "myth" },
+    { "kind": "useIt" },
+    { "kind": "recapNext" }
+  ],
+  "episodes": [
+    {
+      "id": "ep01", "number": 1,
+      "title": "What Really Happens When You Input to LLM Prompt?",
+      "stop": "Departure Gate", "stamp": "DEPARTURE GATE", "topic": "The whole journey",
+      "question": "What is the full journey from my prompt to the answer?",
+      "tryIt": "Time how fast the first word appears",
+      "useIt": "Why long chats get slower and costlier"
+    },
+    {
+      "id": "ep02", "number": 2,
+      "title": "How Did the Model Learn to Talk?",
+      "stop": "Library Town", "stamp": "LIBRARY TOWN", "topic": "Training",
+      "question": "Where did the model's knowledge and manners come from?",
+      "tryIt": "Ask about last week's news, with and without web search",
+      "useIt": "Don't trust recent facts unless search is on"
+    },
+    {
+      "id": "ep03", "number": 3, "folder": "ep03-token-city",
+      "title": "Tokenization: How Text Becomes Numbers",
+      "stop": "Token City", "stamp": "TOKEN CITY", "topic": "Tokenization",
+      "question": "How does a computer read my words?",
+      "tryIt": "Count the letters in strawberry; compare English and Hindi token counts",
+      "useIt": "Write shorter prompts to save money on APIs"
+    },
+    {
+      "id": "ep04", "number": 4,
+      "title": "Embeddings: How Numbers Get Meaning",
+      "stop": "Vector Valley", "stamp": "VECTOR VALLEY", "topic": "Embeddings",
+      "question": "How does the model know rain is close to storm?",
+      "tryIt": "A word-maths game: guess which words are closest",
+      "useIt": "Search your notes by meaning, not keywords"
+    },
+    {
+      "id": "ep05", "number": 5,
+      "title": "Attention and Transformers: How the Model Reads Context",
+      "stop": "Attention Junction", "stamp": "ATTENTION JUNCTION", "topic": "Attention",
+      "question": "How does it understand the whole sentence, not just single words?",
+      "tryIt": "A pause-and-guess quiz: what does it mean?",
+      "useIt": "Put key instructions at the start or end of long prompts"
+    },
+    {
+      "id": "ep06", "number": 6,
+      "title": "Next-Token Prediction: How the Answer Is Written",
+      "stop": "Prediction Station", "stamp": "PREDICTION STATION", "topic": "Next-token prediction",
+      "question": "How does it pick each word, and why does it sometimes make things up?",
+      "tryIt": "Write the same poem at low and high creativity settings",
+      "useIt": "Low temperature for facts, high for brainstorming"
+    },
+    {
+      "id": "ep07", "number": 7,
+      "title": "Beyond the Model: What ChatGPT, Claude and Gemini Add",
+      "stop": "Arrivals Hall", "stamp": "ARRIVALS HALL", "topic": "Beyond the model",
+      "question": "Why is a chat app more than just the model?",
+      "tryIt": "Tell it 'You are a pirate' and watch its personality change",
+      "useIt": "Write your own custom instructions"
+    }
+  ]
+}

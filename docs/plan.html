@@ -1,0 +1,365 @@
+<title>Press Enter Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column (~70ch) with full-width breakouts for the route strip and the architecture diagram */
+:root{
+  --bg:#f5f7f9; --surface:#ffffff; --fg:#14202b; --mute:#566472; --line:#d9e0e6;
+  --accent:#0f7c86;        /* route / signal teal */
+  --stamp:#c2410c;         /* passport-stamp ink */
+  --audio:#7c3aed; --visual:#0f7c86; --join:#b45309;
+  --audio-bg:#f3eefe; --visual-bg:#e8f5f6; --join-bg:#fdf3e4; --code-bg:#eef2f5;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e151c; --surface:#151f29; --fg:#e4ebf1; --mute:#93a3b2; --line:#283643;
+  --accent:#3cc2cc; --stamp:#fb8a4f; --audio:#b59bff; --visual:#3cc2cc; --join:#f2b04e;
+  --audio-bg:#221c38; --visual-bg:#12292d; --join-bg:#2c2214; --code-bg:#0a1016; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e151c; --surface:#151f29; --fg:#e4ebf1; --mute:#93a3b2; --line:#283643;
+  --accent:#3cc2cc; --stamp:#fb8a4f; --audio:#b59bff; --visual:#3cc2cc; --join:#f2b04e;
+  --audio-bg:#221c38; --visual-bg:#12292d; --join-bg:#2c2214; --code-bg:#0a1016; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 var(--f-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 80px}
+.col{max-width:760px;margin:0 auto}
+.wide{max-width:1180px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15}
+h1{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-.02em;margin:0 0 10px}
+h2{font-size:28px;font-weight:800;margin:56px 0 10px;letter-spacing:-.01em}
+h3{font-size:19px;font-weight:600;margin:26px 0 6px}
+p{margin:0 0 14px}
+.eyebrow{font:600 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.meta{color:var(--mute);font-size:15px}
+.lede{font-size:20px;color:var(--mute);max-width:62ch}
+header{padding-top:44px}
+code,pre{font-family:var(--f-mono);font-size:13.5px}
+code{background:var(--code-bg);padding:1px 5px;border-radius:4px}
+pre{background:var(--code-bg);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow-x:auto;line-height:1.55;margin:10px 0 18px}
+pre .c{color:var(--mute)} pre .k{color:var(--accent)} pre .s{color:var(--stamp)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:15.5px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+th{font:600 12px/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+td.n{font-family:var(--f-mono);color:var(--mute);white-space:nowrap}
+/* route strip */
+.route{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;margin:26px 0 6px;position:relative}
+.route::before{content:"";position:absolute;left:7%;right:7%;top:23px;border-top:3px dashed var(--accent);opacity:.55}
+.stop{text-align:center;position:relative;padding:0 4px}
+.stop .pin{width:48px;height:48px;margin:0 auto 8px;border-radius:50%;border:3px solid var(--stamp);background:var(--surface);display:flex;align-items:center;justify-content:center;font:800 18px var(--f-display);color:var(--stamp);transform:rotate(-8deg)}
+.stop b{display:block;font:600 14px/1.25 var(--f-display)}
+.stop span{display:block;font-size:13px;color:var(--mute);line-height:1.3;margin-top:2px}
+@media(max-width:720px){.route{grid-template-columns:1fr;gap:10px}.route::before{left:23px;right:auto;top:10px;bottom:10px;border-top:none;border-left:3px dashed var(--accent)}.stop{display:grid;grid-template-columns:48px 1fr;gap:12px;text-align:left;align-items:center}.stop .pin{margin:0}}
+/* template timeline */
+.tmpl{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.seg{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 10px;font-size:14px}
+.seg small{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--mute)}
+.seg.new{border-color:var(--stamp)} .seg.new small{color:var(--stamp)}
+.seg.core{flex:1 1 220px;border-color:var(--accent)}
+/* diagram */
+.diagram{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px;margin:18px 0 8px}
+.diagram svg{display:block;width:100%;min-width:940px;height:auto}
+svg text{font-family:var(--f-body);fill:var(--fg)}
+svg .t-mono{font-family:var(--f-mono)}
+svg .lane-a{fill:var(--audio-bg)} svg .lane-v{fill:var(--visual-bg)} svg .lane-j{fill:var(--join-bg)}
+svg .box{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+svg .box-a{fill:var(--surface);stroke:var(--audio);stroke-width:1.8}
+svg .box-v{fill:var(--surface);stroke:var(--visual);stroke-width:1.8}
+svg .box-j{fill:var(--join-bg);stroke:var(--join);stroke-width:2.2}
+svg .box-o{fill:var(--surface);stroke:var(--stamp);stroke-width:1.5}
+svg .lbl{font:600 11.5px var(--f-mono);letter-spacing:.08em;fill:var(--mute)}
+svg .lbl-a{fill:var(--audio)} svg .lbl-v{fill:var(--visual)} svg .lbl-o{fill:var(--stamp)}
+svg .h{font-weight:700;font-size:13.5px} svg .s{font-size:11.5px;fill:var(--mute)}
+svg .ar{fill:none;stroke:var(--mute);stroke-width:1.6}
+svg .ar-a{stroke:var(--audio)} svg .ar-v{stroke:var(--visual)} svg .ar-j{stroke:var(--join);stroke-width:2.2} svg .ar-r{stroke:var(--stamp);stroke-dasharray:6 5}
+svg .dash{stroke-dasharray:4 4}
+svg .mk{fill:var(--mute)} svg .mk-a{fill:var(--audio)} svg .mk-v{fill:var(--visual)} svg .mk-j{fill:var(--join)} svg .mk-r{fill:var(--stamp)}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;color:var(--mute);margin:6px 2px 0}
+.legend i{display:inline-block;width:22px;height:0;border-top:3px solid;vertical-align:middle;margin-right:6px}
+/* misc */
+.key{border-left:4px solid var(--join);background:var(--join-bg);padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+.key b{font-family:var(--f-display)}
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid var(--line)}
+ol.steps li::before{content:counter(s);width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--surface);font:700 14px var(--f-display);display:flex;align-items:center;justify-content:center}
+ol.steps li div{min-width:0}
+.cmp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0}
+@media(max-width:860px){.cmp{grid-template-columns:1fr}}
+.opt{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.opt.pick{border:2px solid var(--accent)}
+.opt h3{margin:0 0 4px}
+.opt .tag{font:600 11px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.opt ul{margin:8px 0 0;padding-left:18px;font-size:15px}
+.phases{display:grid;gap:10px;margin:14px 0}
+.ph{display:grid;grid-template-columns:96px 1fr;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.ph .p{font:800 15px var(--f-display);color:var(--accent)}
+.ph div{min-width:0}
+.ph .rv{font-size:14px;color:var(--mute);margin-top:4px}
+.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+.q b{font-family:var(--f-display)}
+.q .rec{font-size:14.5px;color:var(--mute);margin-top:4px}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="col">
+<header>
+  <div class="eyebrow">Production plan · draft for review · 6 Nov 2026</div>
+  <h1>Press Enter Studio</h1>
+  <p class="lede">A config-driven framework for producing the 7-video series <i>What Happens When You Press Enter?</i> Visuals and narration are separate components, joined only by cue IDs, so you can change a title in JSON or re-record one paragraph and rebuild without touching anything else.</p>
+  <p class="meta">Builds on the series roadmap (6 Nov) and the travel-theme guidelines. Nothing here is built yet; this is the plan to agree on first.</p>
+</header>
+
+<h2>The series as a journey</h2>
+<p>The running prompt <i>"Write a short poem about the rain"</i> is the traveller. Each video is a stop, stamped on its passport, and every video opens with "Next stop: …!". The journey diagram from the roadmap becomes the route map, with the current stop highlighted. Stop names and stamps live in config, so you can rename them freely.</p>
+</div>
+
+<div class="wide">
+<div class="route" aria-label="Series route, 7 stops">
+  <div class="stop"><div class="pin">1</div><div><b>Departure Gate</b><span>The whole journey</span></div></div>
+  <div class="stop"><div class="pin">2</div><div><b>Library Town</b><span>Training</span></div></div>
+  <div class="stop"><div class="pin">3</div><div><b>Token City</b><span>Tokenization</span></div></div>
+  <div class="stop"><div class="pin">4</div><div><b>Vector Valley</b><span>Embeddings</span></div></div>
+  <div class="stop"><div class="pin">5</div><div><b>Attention Junction</b><span>Transformers</span></div></div>
+  <div class="stop"><div class="pin">6</div><div><b>Prediction Station</b><span>Next-token prediction</span></div></div>
+  <div class="stop"><div class="pin">7</div><div><b>Arrivals Hall</b><span>Beyond the model</span></div></div>
+</div>
+</div>
+
+<div class="col">
+<h3>Standard episode template</h3>
+<p>Every episode follows the same segment order, defined once in <code>series.json</code>. Red-outlined segments are new from the guidelines. The checker fails the build if a required segment is missing, which automates the roadmap's per-video checklist.</p>
+<div class="tmpl">
+  <div class="seg new">Passport stamp<small>“Next stop: …!” · 0:10</small></div>
+  <div class="seg">Hook<small>word-for-word · 0:45</small></div>
+  <div class="seg">Route map<small>where we are · 0:20</small></div>
+  <div class="seg core">Core sections<small>2–4 per video, with “Pause and predict” moments inside</small></div>
+  <div class="seg new">Try it yourself<small>phone experiment · 1:00</small></div>
+  <div class="seg new">AI blooper<small>optional · 0:45</small></div>
+  <div class="seg">Myth vs reality<small>Shorts-ready · 1:00</small></div>
+  <div class="seg new">Use it tomorrow<small>work tip · 0:45</small></div>
+  <div class="seg">Recap + next-stop question<small>0:30</small></div>
+</div>
+
+<div class="scroll"><table>
+<tr><th>#</th><th>Stop</th><th>Try it yourself</th><th>Use it tomorrow</th></tr>
+<tr><td class="n">1</td><td>Departure Gate</td><td>Time how fast the first word appears</td><td>Why long chats get slower and costlier</td></tr>
+<tr><td class="n">2</td><td>Library Town</td><td>Ask about last week's news, with and without web search</td><td>Don't trust recent facts unless search is on</td></tr>
+<tr><td class="n">3</td><td>Token City</td><td>Count the letters in “strawberry”; compare English vs Hindi token counts</td><td>Write shorter prompts to save money on APIs</td></tr>
+<tr><td class="n">4</td><td>Vector Valley</td><td>Word-maths game: guess which words are closest</td><td>Search your notes by meaning, not keywords</td></tr>
+<tr><td class="n">5</td><td>Attention Junction</td><td>Pause-and-guess: what does “it” mean?</td><td>Put key instructions at the start or end of long prompts</td></tr>
+<tr><td class="n">6</td><td>Prediction Station</td><td>Same poem at low and high creativity</td><td>Low temperature for facts, high for brainstorming</td></tr>
+<tr><td class="n">7</td><td>Arrivals Hall</td><td>“You are a pirate”: watch the personality change</td><td>Write your own custom instructions</td></tr>
+</table></div>
+
+<h2>What the framework must do</h2>
+<table>
+<tr><th>Requirement</th><th>How the design meets it</th></tr>
+<tr><td>Change a title or any text in JSON and rebuild</td><td>All series and episode content lives in validated JSON and Markdown. Components only receive props and never hold text.</td></tr>
+<tr><td>Visuals and audio are separate components</td><td>Two independent tracks. Visuals point at <b>cue IDs</b>, never at seconds. A timeline resolver joins them at build time.</td></tr>
+<tr><td>Retake one paragraph and inject it</td><td>Each paragraph is a cue with its own audio take. Drop in a new take and only that cue, and the one segment that uses it, are reprocessed.</td></tr>
+<tr><td>Change the script and stay in sync</td><td>Each cue stores a hash of its text. Edited cues are flagged <i>stale</i>, then re-voiced (TTS) or queued for you to re-record.</td></tr>
+<tr><td>Programmatic and semi-automated</td><td>One CLI (<code>press …</code>) runs every step. Every artifact is cached by content hash, so a rebuild redoes only what changed.</td></tr>
+</table>
+</div>
+
+<div class="wide">
+<h2 class="col" style="max-width:760px">Architecture</h2>
+<div class="col"><p>Read left to right: you author files in a Git repo, the audio and visual tracks build in parallel, the timeline resolver joins them, and the assembler produces every output format. The review studio at the bottom closes the loop.</p></div>
+<div class="diagram scroll" role="img" aria-label="Architecture: authoring files feed an audio track and a visual track, joined by a timeline resolver, then assembled into outputs, with a review studio feeding retakes back.">
+<svg viewBox="0 0 1200 780" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk"/></marker>
+ <marker id="ma" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-a"/></marker>
+ <marker id="mv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-v"/></marker>
+ <marker id="mj" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-j"/></marker>
+ <marker id="mr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="mk-r"/></marker>
+</defs>
+
+<!-- column 1: authoring -->
+<text x="20" y="34" class="lbl">1 · AUTHOR (GIT REPO)</text>
+<rect x="20" y="48" width="210" height="50" rx="8" class="box"/><text x="34" y="70" class="h t-mono">series.json</text><text x="34" y="88" class="s">title, stops, theme, voice, template</text>
+<rect x="20" y="108" width="210" height="50" rx="8" class="box"/><text x="34" y="130" class="h t-mono">episodes/*/episode.json</text><text x="34" y="148" class="s">segments → components + props</text>
+<rect x="20" y="168" width="210" height="50" rx="8" class="box"/><text x="34" y="190" class="h t-mono">episodes/*/script.md</text><text x="34" y="208" class="s">paragraph cues [c07] + marks {@x}</text>
+<rect x="20" y="228" width="210" height="50" rx="8" class="box"/><text x="34" y="250" class="h t-mono">lexicon.json</text><text x="34" y="268" class="s">how to pronounce BPE, GPT…</text>
+<rect x="20" y="288" width="210" height="50" rx="8" class="box"/><text x="34" y="310" class="h t-mono">takes/</text><text x="34" y="328" class="s">your recordings, per cue</text>
+<rect x="20" y="348" width="210" height="50" rx="8" class="box"/><text x="34" y="370" class="h t-mono">assets/</text><text x="34" y="388" class="s">images, music, SFX, screen demos</text>
+
+<!-- check -->
+<rect x="262" y="190" width="120" height="68" rx="8" class="box"/><text x="276" y="214" class="h">Validate</text><text x="276" y="232" class="s t-mono">press check</text><text x="276" y="248" class="s">schema + checklist</text>
+<path d="M230,223 L258,223" class="ar" marker-end="url(#m)"/>
+
+<!-- audio lane -->
+<rect x="404" y="20" width="580" height="236" rx="14" class="lane-a"/>
+<text x="420" y="44" class="lbl lbl-a">2A · AUDIO TRACK — DECIDES THE TIMING</text>
+<rect x="420" y="62" width="128" height="62" rx="8" class="box-a"/><text x="432" y="86" class="h">Cue extractor</text><text x="432" y="104" class="s">text → cue + hash</text><text x="432" y="118" class="s">applies lexicon</text>
+<rect x="570" y="62" width="128" height="62" rx="8" class="box-a"/><text x="582" y="86" class="h">Take resolver</text><text x="582" y="104" class="s">your take &gt; TTS</text><text x="582" y="118" class="s">flags stale cues</text>
+<rect x="720" y="62" width="120" height="62" rx="8" class="box-a"/><text x="732" y="86" class="h">Post-process</text><text x="732" y="104" class="s">trim, de-noise</text><text x="732" y="118" class="s">−16 LUFS</text>
+<rect x="858" y="62" width="112" height="62" rx="8" class="box-a"/><text x="870" y="86" class="h">Aligner</text><text x="870" y="104" class="s">word timings</text><text x="870" y="118" class="s">→ marks, captions</text>
+<rect x="570" y="160" width="128" height="74" rx="8" class="box-a"/><text x="582" y="184" class="h">TTS adapters</text><text x="582" y="202" class="s">Kokoro (offline)</text><text x="582" y="216" class="s">ElevenLabs · OpenAI</text><text x="582" y="230" class="s">Azure · …</text>
+<rect x="858" y="160" width="112" height="74" rx="8" class="box-a"/><text x="870" y="184" class="h t-mono">audio.lock</text><text x="870" y="202" class="s">per cue: take,</text><text x="870" y="216" class="s">duration, words,</text><text x="870" y="230" class="s">hash, status</text>
+<path d="M548,93 L566,93" class="ar ar-a" marker-end="url(#ma)"/>
+<path d="M698,93 L716,93" class="ar ar-a" marker-end="url(#ma)"/>
+<path d="M840,93 L854,93" class="ar ar-a" marker-end="url(#ma)"/>
+<path d="M634,124 L634,156" class="ar ar-a" marker-end="url(#ma)" marker-start="url(#ma)"/>
+<path d="M914,124 L914,156" class="ar ar-a" marker-end="url(#ma)"/>
+<path d="M382,210 C395,210 395,93 416,93" class="ar" marker-end="url(#m)"/>
+
+<!-- join -->
+<rect x="590" y="282" width="250" height="70" rx="10" class="box-j"/>
+<text x="606" y="306" class="h">Timeline resolver</text>
+<text x="606" y="324" class="s">segments + cue durations → frames</text>
+<text x="606" y="340" class="s t-mono">timeline.json</text>
+<text x="850" y="346" class="s" style="fill:var(--join)">the only place the</text>
+<text x="850" y="360" class="s" style="fill:var(--join)">two tracks meet</text>
+<path d="M914,234 C914,262 860,300 844,306" class="ar ar-j" marker-end="url(#mj)"/>
+<path d="M382,236 C470,260 520,317 586,317" class="ar" marker-end="url(#m)"/>
+
+<!-- visual lane -->
+<rect x="404" y="378" width="580" height="200" rx="14" class="lane-v"/>
+<text x="420" y="402" class="lbl lbl-v">2B · VISUAL TRACK — FOLLOWS CUES, NEVER SECONDS</text>
+<rect x="420" y="420" width="120" height="70" rx="8" class="box-v"/><text x="432" y="444" class="h">Theme</text><text x="432" y="462" class="s">travel tokens:</text><text x="432" y="476" class="s">colour, type, motion</text>
+<rect x="556" y="420" width="196" height="140" rx="8" class="box-v"/><text x="568" y="444" class="h">Component library</text>
+<text x="568" y="464" class="s t-mono" style="font-size:10.4px">PassportStamp · RouteMap</text><text x="568" y="480" class="s t-mono" style="font-size:10.4px">TokenBlocks · VectorMap</text><text x="568" y="496" class="s t-mono" style="font-size:10.4px">AttentionLines · ChatStream</text><text x="568" y="512" class="s t-mono" style="font-size:10.4px">ProbabilityBars · TryIt</text><text x="568" y="528" class="s t-mono" style="font-size:10.4px">UseIt · MythVsReality</text><text x="568" y="544" class="s t-mono" style="font-size:10.4px">PauseAndPredict · Blooper</text>
+<rect x="768" y="420" width="96" height="70" rx="8" class="box-v"/><text x="780" y="444" class="h">Scenes</text><text x="780" y="462" class="s">one per</text><text x="780" y="476" class="s">segment</text>
+<rect x="878" y="420" width="94" height="70" rx="8" class="box-v"/><text x="890" y="444" class="h">Renderer</text><text x="890" y="462" class="s">per segment,</text><text x="890" y="476" class="s">cached</text>
+<path d="M540,455 L552,455" class="ar ar-v" marker-end="url(#mv)"/>
+<path d="M752,455 L764,455" class="ar ar-v" marker-end="url(#mv)"/>
+<path d="M864,455 L874,455" class="ar ar-v" marker-end="url(#mv)"/>
+<path d="M715,352 C715,385 816,385 816,416" class="ar ar-j" marker-end="url(#mj)"/>
+<rect x="878" y="508" width="94" height="52" rx="8" class="box"/><text x="890" y="530" class="h">Build cache</text><text x="890" y="547" class="s">content hash</text>
+<path d="M925,490 L925,504" class="ar dash" marker-end="url(#m)"/>
+
+<!-- assembler + outputs -->
+<rect x="1006" y="282" width="176" height="70" rx="10" class="box-o"/><text x="1020" y="306" class="h">Assembler</text><text x="1020" y="324" class="s">concat segments, mix voice</text><text x="1020" y="340" class="s">+ music (auto-ducked)</text>
+<path d="M970,197 C1050,197 1094,230 1094,278" class="ar ar-a" marker-end="url(#ma)"/>
+<path d="M972,440 C1050,440 1094,400 1094,356" class="ar ar-v" marker-end="url(#mv)"/>
+<text x="1006" y="390" class="lbl lbl-o">3 · OUTPUTS</text>
+<rect x="1006" y="402" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="421" class="s" style="fill:var(--fg)">YouTube 16:9 master</text>
+<rect x="1006" y="436" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="455" class="s" style="fill:var(--fg)">Shorts / LinkedIn 9:16</text>
+<rect x="1006" y="470" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="489" class="s" style="fill:var(--fg)">Audio-only, with chapters</text>
+<rect x="1006" y="504" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="523" class="s" style="fill:var(--fg)">Captions SRT / VTT</text>
+<rect x="1006" y="538" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="557" class="s" style="fill:var(--fg)">Description + timestamps</text>
+<rect x="1006" y="572" width="176" height="28" rx="6" class="box-o"/><text x="1018" y="591" class="s" style="fill:var(--fg)">Thumbnail</text>
+<path d="M1190,317 L1196,317 L1196,586 L1186,586" class="ar" style="stroke:var(--stamp)"/>
+
+<!-- review studio -->
+<rect x="20" y="628" width="1162" height="132" rx="14" class="lane-j" style="fill:var(--surface);stroke:var(--line);stroke-width:1.5"/>
+<text x="38" y="654" class="lbl lbl-o">4 · REVIEW STUDIO (LOCAL WEB APP)</text>
+<rect x="38" y="668" width="250" height="74" rx="8" class="box"/><text x="52" y="692" class="h">Preview &amp; scrub</text><text x="52" y="710" class="s">live preview of any segment</text><text x="52" y="726" class="s">edits in JSON hot-reload</text>
+<rect x="306" y="668" width="250" height="74" rx="8" class="box"/><text x="320" y="692" class="h">Cue board</text><text x="320" y="710" class="s">every paragraph: play, status</text><text x="320" y="726" class="s">ok · stale · needs retake</text>
+<rect x="574" y="668" width="250" height="74" rx="8" class="box"/><text x="588" y="692" class="h">Record / import retake</text><text x="588" y="710" class="s">mic in browser, or drop a file</text><text x="588" y="726" class="s">→ takes/c07/v3.wav</text>
+<rect x="842" y="668" width="322" height="74" rx="8" class="box"/><text x="856" y="692" class="h">Comment &amp; approve</text><text x="856" y="710" class="s">notes pinned to a cue or time range</text><text x="856" y="726" class="s">approve → publish package</text>
+<path d="M700,664 L700,616 L252,616 L252,313 L236,313" class="ar ar-r" marker-end="url(#mr)"/>
+<text x="560" y="610" class="s" style="fill:var(--stamp)">retake → takes/</text>
+<path d="M430,664 L430,600 L243,600 L243,193 L236,193" class="ar ar-r" marker-end="url(#mr)"/>
+<text x="300" y="594" class="s" style="fill:var(--stamp)">script fix → script.md</text>
+</svg>
+</div>
+<div class="legend col" style="max-width:760px"><span><i style="border-color:var(--audio)"></i>audio flow</span><span><i style="border-color:var(--visual)"></i>visual flow</span><span><i style="border-color:var(--join)"></i>timing join</span><span><i style="border-color:var(--stamp);border-top-style:dashed"></i>review feedback</span></div>
+</div>
+
+<div class="col">
+<div class="key"><b>The key idea: audio decides time, visuals follow cues.</b> No animation is ever placed at "2:41". It is placed at <code>c07</code>, or at a word inside it (<code>c07@ids</code>). The resolver turns cue durations into frames on every build. Re-record a paragraph 3 seconds longer, and everything after it moves automatically. Because each segment renders separately with its own relative timing, only the changed segment is re-rendered.</div>
+
+<h2>The config files</h2>
+<p>Four kinds of file, all plain text in Git, so every change has a history and can be reverted.</p>
+
+<h3>series.json: written once, used by every video</h3>
+<pre>{
+  <span class="k">"title"</span>: <span class="s">"What Happens When You Press Enter?"</span>,
+  <span class="k">"subtitle"</span>: <span class="s">"How ChatGPT, Claude and Gemini Really Work"</span>,
+  <span class="k">"runningPrompt"</span>: <span class="s">"Write a short poem about the rain"</span>,
+  <span class="k">"theme"</span>: <span class="s">"travel"</span>,
+  <span class="k">"voice"</span>: { <span class="k">"provider"</span>: <span class="s">"kokoro"</span>, <span class="k">"voice"</span>: <span class="s">"af_heart"</span>, <span class="k">"speed"</span>: 1.0 },
+  <span class="k">"stops"</span>: [
+    { <span class="k">"ep"</span>: 3, <span class="k">"name"</span>: <span class="s">"Token City"</span>, <span class="k">"stamp"</span>: <span class="s">"TOKEN CITY · STAMPED"</span> }, <span class="c">…</span>
+  ],
+  <span class="k">"template"</span>: [<span class="s">"passport"</span>, <span class="s">"hook"</span>, <span class="s">"routeMap"</span>, <span class="s">"core+"</span>, <span class="s">"tryIt"</span>,
+               <span class="s">"blooper?"</span>, <span class="s">"myth"</span>, <span class="s">"useIt"</span>, <span class="s">"recapNext"</span>]   <span class="c">// + = one or more, ? = optional</span>
+}</pre>
+
+<h3>episode.json: which segments, which components, which props</h3>
+<pre>{
+  <span class="k">"id"</span>: <span class="s">"ep03"</span>, <span class="k">"title"</span>: <span class="s">"Tokenization: How Text Becomes Numbers"</span>,
+  <span class="k">"question"</span>: <span class="s">"How does a computer read my words?"</span>,
+  <span class="k">"segments"</span>: [
+    { <span class="k">"id"</span>: <span class="s">"passport"</span>, <span class="k">"component"</span>: <span class="s">"PassportStamp"</span> },
+    { <span class="k">"id"</span>: <span class="s">"subwords"</span>, <span class="k">"component"</span>: <span class="s">"TokenBlocks"</span>,
+      <span class="k">"props"</span>: { <span class="k">"text"</span>: <span class="s">"$runningPrompt"</span>, <span class="k">"showIdsAt"</span>: <span class="s">"c07@ids"</span> } },
+    { <span class="k">"id"</span>: <span class="s">"tryIt"</span>, <span class="k">"component"</span>: <span class="s">"TryIt"</span>,
+      <span class="k">"props"</span>: { <span class="k">"task"</span>: <span class="s">"Ask it to count the r's in strawberry"</span> }, <span class="k">"short"</span>: true }
+  ]
+}</pre>
+
+<h3>script.md: the narration, one cue per paragraph</h3>
+<p>Written as normal prose. A cue ID tags each paragraph, a heading names the segment it belongs to, and <code>{@name}</code> marks a word an animation can wait for.</p>
+<pre><span class="k">## subwords</span>
+<span class="s">[c06]</span> On the left is our prompt. On the right, its tokens.
+<span class="s">[c07]</span> The model never sees the word rain. It only sees numbers, like {@ids}4,812.
+<span class="s">[c08]</span> Pause here and guess: how many tokens is "strawberry"?</pre>
+
+<h3>audio.lock.json: generated, never hand-edited</h3>
+<pre><span class="s">"c07"</span>: { <span class="k">"textHash"</span>: <span class="s">"9f2c…"</span>, <span class="k">"take"</span>: <span class="s">"takes/c07/v3.wav"</span>, <span class="k">"source"</span>: <span class="s">"human"</span>,
+         <span class="k">"duration"</span>: 5.84, <span class="k">"marks"</span>: { <span class="k">"ids"</span>: 4.12 }, <span class="k">"status"</span>: <span class="s">"ok"</span> }</pre>
+
+<h2>Retaking one paragraph</h2>
+<p>The workflow you asked for, step by step:</p>
+<ol class="steps">
+  <li><div>You change the wording of paragraph <code>c07</code> in <code>script.md</code>, or decide you dislike how it sounds.</div></li>
+  <li><div><code>press status ep03</code> shows <code>c07</code> as <b>stale</b>: its text hash no longer matches its take.</div></li>
+  <li><div>Either let TTS re-voice it (<code>press voice ep03 c07</code>), or record yourself in the cue board, or drop a file: <code>press take ep03 c07 my-retake.wav</code>.</div></li>
+  <li><div>The take is trimmed and loudness-matched to −16 LUFS so it sounds like its neighbours, then aligned to find the <code>{@ids}</code> word time.</div></li>
+  <li><div><code>press render ep03</code>: the resolver recomputes the timeline, only the <code>subwords</code> segment re-renders, and the rest comes from cache.</div></li>
+  <li><div>The new master, captions, Shorts and description timestamps are regenerated. Old takes stay in <code>takes/c07/</code>, so you can switch back.</div></li>
+</ol>
+
+<h3>The command line</h3>
+<div class="scroll"><table>
+<tr><th>Command</th><th>What it does</th></tr>
+<tr><td><code>press new ep08</code></td><td>Create an episode from the template, with placeholder segments</td></tr>
+<tr><td><code>press check [ep]</code></td><td>Validate JSON and script; enforce the episode checklist</td></tr>
+<tr><td><code>press status ep03</code></td><td>List every cue: ok, stale, missing, TTS or human</td></tr>
+<tr><td><code>press voice ep03 [cue]</code></td><td>Generate TTS for missing or stale cues</td></tr>
+<tr><td><code>press take ep03 c07 file.wav</code></td><td>Import a recorded retake for one cue</td></tr>
+<tr><td><code>press studio</code></td><td>Open the review studio (preview, cue board, recorder)</td></tr>
+<tr><td><code>press render ep03 --format long,short,audio</code></td><td>Build the outputs; only changed parts are redone</td></tr>
+<tr><td><code>press package ep03</code></td><td>Write description, timestamps, captions and thumbnail</td></tr>
+</table></div>
+
+<h2>Choosing the video engine</h2>
+<p>The visual track needs an engine that renders deterministic frames from code. Three realistic options:</p>
+</div>
+<div class="wide" style="max-width:1000px">
+<div class="cmp">
+  <div class="opt pick"><div class="tag">Recommended</div><h3>Remotion</h3><p style="font-size:15px;margin:0">React components rendered to video, frame by frame.</p>
+    <ul><li>Props validated by schema and editable in its preview studio</li><li>Composition length can be computed from audio, which matches our timing model</li><li>Mature: CLI, Node API, parallel and cloud rendering</li><li>License: free for individuals and companies of up to 3 people; larger companies need a paid license</li></ul></div>
+  <div class="opt"><div class="tag">Alternative</div><h3>Motion Canvas</h3><p style="font-size:15px;margin:0">TypeScript animation library built around voice-over sync.</p>
+    <ul><li>MIT licensed, free for any use</li><li>Good editor for syncing to a voice track</li><li>Smaller ecosystem; headless batch rendering is less mature</li></ul></div>
+  <div class="opt"><div class="tag">Already built</div><h3>Our GSAP engine</h3><p style="font-size:15px;margin:0">What rendered the Unit 1 NLP video: GSAP scenes captured by a headless browser.</p>
+    <ul><li>Works today, fully ours, no license question</li><li>Already audio-driven per beat</li><li>No preview studio; we would build all the tooling</li></ul></div>
+</div>
+</div>
+<div class="col">
+<p>The audio track is independent of this choice. The Kokoro voice pipeline, take management and lock file work the same with any engine.</p>
+
+<h2>Build phases</h2>
+<p>Each phase ends with something you review before the next one starts.</p>
+<div class="phases">
+  <div class="ph"><div class="p">Phase 1</div><div><b>Foundation.</b> Repo layout, JSON schemas, <code>press check</code>, and the full audio track: cue extraction, TTS, takes, loudness, alignment, lock file.<div class="rv">You review: the config files for episode 3, and a retake drill run from the command line.</div></div></div>
+  <div class="ph"><div class="p">Phase 2</div><div><b>Visual engine.</b> Travel theme, the timeline resolver, segment caching, and the first components: PassportStamp, RouteMap, TokenBlocks, TryIt, UseIt, MythVsReality, PauseAndPredict, Recap.<div class="rv">You review: each component in isolation, driven by sample JSON.</div></div></div>
+  <div class="ph"><div class="p">Phase 3</div><div><b>Pilot episode.</b> Video 3 (Token City) end to end, reusing the BPE material already built. Includes one real retake to prove the loop.<div class="rv">You review: the finished video, a Short and the audio-only version.</div></div></div>
+  <div class="ph"><div class="p">Phase 4</div><div><b>Review studio and packaging.</b> Cue board, in-browser recorder, comments, description and thumbnail generation.<div class="rv">You review: the studio, used on the pilot.</div></div></div>
+  <div class="ph"><div class="p">Phase 5</div><div><b>Series production.</b> Videos 1, 2 and 4–7, adding the components each needs (ChatStream, VectorMap, AttentionLines, ProbabilityBars).<div class="rv">You review: one episode at a time.</div></div></div>
+</div>
+
+<h2>Decisions needed from you</h2>
+<div class="q"><b>1. Video engine.</b> Remotion, Motion Canvas, or extend our own engine?<div class="rec">Recommendation: Remotion, if its license fits your situation (company size). Otherwise our own engine.</div></div>
+<div class="q"><b>2. Voice.</b> Will the final narration be your own voice, TTS, or TTS drafts that you replace over time?<div class="rec">Recommendation: TTS drafts first (free, offline Kokoro), replaced cue by cue with your recordings. The framework treats both equally.</div></div>
+<div class="q"><b>3. Video 1 title.</b> The current title is <i>What Really Happens When You Press Enter?</i> Options that fit the travel theme: <i>Press Enter: Your Prompt's Journey Begins</i> · <i>Departure Gate: Follow Your Prompt</i> · keep the current one. It is one field in <code>series.json</code>, so it can change later.</div>
+<div class="q"><b>4. Pilot episode.</b> Video 3 (Token City) reuses existing material and exercises most components. Or start with Video 1, which introduces the route map every later video reuses.<div class="rec">Recommendation: Video 3 first.</div></div>
+<div class="q"><b>5. Where it runs.</b> Your Windows laptop (needs Node, Python and ffmpeg), this cloud workspace, or both? Should the project live in a GitHub repo?<div class="rec">Recommendation: a GitHub repo, so work survives this temporary workspace and runs on your laptop too.</div></div>
+<div class="q"><b>6. Hindi version.</b> The Token City episode compares English and Hindi token counts. Do you want full Hindi versions later? The design supports a second <code>script.hi.md</code> with the same visuals.</div>
+</div>

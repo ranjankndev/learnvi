@@ -1,0 +1,54 @@
+{
+  "id": "ep03",
+  "segments": [
+    { "id": "passport", "kind": "passport", "component": "PassportStamp",
+      "props": { "stop": "{{stop.name}}", "stamp": "{{stop.stamp}}", "number": "{{episode.number}}", "stampAt": "c01@stamp" } },
+
+    { "id": "hook", "kind": "hook", "component": "TitleHook",
+      "props": { "title": "{{episode.title}}", "word": "rain", "id": "4,812", "revealAt": "c03@number" } },
+
+    { "id": "route", "kind": "routeMap", "component": "RouteMap",
+      "props": { "current": "{{episode.id}}", "highlightAt": "c05@here" } },
+
+    { "id": "numbers", "kind": "core", "component": "TextToNumbers",
+      "props": { "text": "{{series.runningPrompt}}", "bytesAt": "c07@bytes", "lookupAt": "c08@lookup" } },
+
+    { "id": "options", "kind": "core", "component": "ThreeOptions",
+      "props": { "word": "raindrops", "charsAt": "c10@chars", "wordsAt": "c11@words", "subwordsAt": "c13@subwords" } },
+
+    { "id": "bpe", "kind": "core", "component": "BpeMerge",
+      "props": {
+        "corpus": [["rain", 9], ["rainy", 4], ["raining", 5], ["train", 3]],
+        "merges": 3,
+        "pauseAt": "c17@pause", "firstMergeAt": "c18@merge", "repeatAt": "c19@repeat"
+      } },
+
+    { "id": "demo", "kind": "core", "component": "TokenBlocks", "short": true,
+      "props": {
+        "examples": [
+          { "text": "{{series.runningPrompt}}", "tokens": ["Write", " a", " short", " poem", " about", " the", " rain"] },
+          { "text": "tokenization", "tokens": ["token", "ization"] },
+          { "text": "strawberry", "tokens": ["str", "aw", "berry"] }
+        ],
+        "promptAt": "c21@prompt", "longWordAt": "c22@long", "strawberryAt": "c23@straw"
+      } },
+
+    { "id": "matters", "kind": "core", "component": "WhyItMatters",
+      "props": { "cards": ["Price", "Memory", "Languages", "Spelling"], "priceAt": "c25", "memoryAt": "c26", "languagesAt": "c27", "spellingAt": "c28" } },
+
+    { "id": "tryIt", "kind": "tryIt", "component": "TryIt", "short": true,
+      "props": { "task": "{{stop.tryIt}}", "timer": 60 } },
+
+    { "id": "blooper", "kind": "blooper", "component": "Blooper",
+      "props": { "token": " SolidGoldMagikarp", "year": 2023 } },
+
+    { "id": "myth", "kind": "myth", "component": "MythVsReality", "short": true,
+      "props": { "myth": "1 token = 1 word", "reality": "In English, 1 token ≈ ¾ of a word ≈ 4 characters", "revealAt": "c36@reality" } },
+
+    { "id": "useIt", "kind": "useIt", "component": "UseIt",
+      "props": { "tip": "{{stop.useIt}}" } },
+
+    { "id": "recap", "kind": "recapNext", "component": "RecapNext",
+      "props": { "nextStop": "{{next.stop}}", "nextQuestion": "{{next.question}}", "questionAt": "c41@question" } }
+  ]
+}

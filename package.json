@@ -1,0 +1,31 @@
+{
+  "name": "learnvi",
+  "version": "1.0.0",
+  "description": "learnvi.in video studio: config-driven production framework (first series: What Happens When You Press Enter?)",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "press": "node bin/press.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "private": true,
+  "type": "module",
+  "bin": {
+    "press": "./bin/press.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ranjankndev/learnvi.git"
+  },
+  "homepage": "https://learnvi.in"
+}
