@@ -1,4 +1,6 @@
 {
+  "RNNs": "R N ens",
+  "LSTMs": "L S T ems",
   "CBOW": "C BOW",
   "LEFT-ARC": "left arc",
   "RIGHT-ARC": "right arc",

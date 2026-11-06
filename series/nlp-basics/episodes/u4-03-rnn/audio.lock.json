@@ -1,0 +1,2648 @@
+{
+  "version": 1,
+  "episode": "u4-03",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "intro",
+      "display": "Welcome back to NLP, Simply Explained. This is unit 4, lesson 3: recurrent neural networks, or RNNs.",
+      "spoken": "Welcome back to N L P, Simply Explained. This is unit 4, lesson 3: recurrent neural networks, or R N ens.",
+      "textHash": "ca52f79e77c4398e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/86724eda331fae2e.wav",
+      "duration": 7.641,
+      "marks": {},
+      "words": [
+        {
+          "w": "Welcome",
+          "start": 0
+        },
+        {
+          "w": "back",
+          "start": 0.48
+        },
+        {
+          "w": "to",
+          "start": 0.827
+        },
+        {
+          "w": "NLP,",
+          "start": 1.173
+        },
+        {
+          "w": "Simply",
+          "start": 1.52
+        },
+        {
+          "w": "Explained.",
+          "start": 2.12
+        },
+        {
+          "w": "This",
+          "start": 2.96
+        },
+        {
+          "w": "is",
+          "start": 3.24
+        },
+        {
+          "w": "unit",
+          "start": 3.44
+        },
+        {
+          "w": "4,",
+          "start": 3.84
+        },
+        {
+          "w": "lesson",
+          "start": 4.24
+        },
+        {
+          "w": "3:",
+          "start": 4.64
+        },
+        {
+          "w": "recurrent",
+          "start": 5.04
+        },
+        {
+          "w": "neural",
+          "start": 5.6
+        },
+        {
+          "w": "networks,",
+          "start": 6.11
+        },
+        {
+          "w": "or",
+          "start": 6.62
+        },
+        {
+          "w": "RNNs.",
+          "start": 7.131
+        }
+      ],
+      "matchScore": 0.643
+    },
+    "c02": {
+      "segment": "intro",
+      "display": "Word vectors give each word a meaning. But a sentence is more than a bag of words: order matters. Today we meet a network that reads in order.",
+      "spoken": "Word vectors give each word a meaning. But a sentence is more than a bag of words: order matters. Today we meet a network that reads in order.",
+      "textHash": "2296ab0520dc5850",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/bad79c0735489fe6.wav",
+      "duration": 8.375,
+      "marks": {},
+      "words": [
+        {
+          "w": "Word",
+          "start": 0.28
+        },
+        {
+          "w": "vectors",
+          "start": 0.56
+        },
+        {
+          "w": "give",
+          "start": 0.84
+        },
+        {
+          "w": "each",
+          "start": 1.04
+        },
+        {
+          "w": "word",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.52
+        },
+        {
+          "w": "meaning.",
+          "start": 1.68
+        },
+        {
+          "w": "But",
+          "start": 2.2
+        },
+        {
+          "w": "a",
+          "start": 2.4
+        },
+        {
+          "w": "sentence",
+          "start": 2.6
+        },
+        {
+          "w": "is",
+          "start": 3.16
+        },
+        {
+          "w": "more",
+          "start": 3.4
+        },
+        {
+          "w": "than",
+          "start": 3.6
+        },
+        {
+          "w": "a",
+          "start": 3.76
+        },
+        {
+          "w": "bag",
+          "start": 3.92
+        },
+        {
+          "w": "of",
+          "start": 4.16
+        },
+        {
+          "w": "words:",
+          "start": 4.32
+        },
+        {
+          "w": "order",
+          "start": 4.84
+        },
+        {
+          "w": "matters.",
+          "start": 5.28
+        },
+        {
+          "w": "Today",
+          "start": 5.82
+        },
+        {
+          "w": "we",
+          "start": 6.36
+        },
+        {
+          "w": "meet",
+          "start": 6.56
+        },
+        {
+          "w": "a",
+          "start": 6.76
+        },
+        {
+          "w": "network",
+          "start": 6.84
+        },
+        {
+          "w": "that",
+          "start": 7.28
+        },
+        {
+          "w": "reads",
+          "start": 7.44
+        },
+        {
+          "w": "in",
+          "start": 7.8
+        },
+        {
+          "w": "order.",
+          "start": 8
+        }
+      ],
+      "matchScore": 0.85
+    },
+    "c03": {
+      "segment": "idea",
+      "display": "Here's the idea. A recurrent neural network reads one word at a time, and carries a memory forward from each word to the next.",
+      "spoken": "Here's the idea. A recurrent neural network reads one word at a time, and carries a memory forward from each word to the next.",
+      "textHash": "832101606802d475",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/71f6a53976f4173e.wav",
+      "duration": 7.565,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.4
+        },
+        {
+          "w": "idea.",
+          "start": 0.56
+        },
+        {
+          "w": "A",
+          "start": 1.28
+        },
+        {
+          "w": "recurrent",
+          "start": 1.48
+        },
+        {
+          "w": "neural",
+          "start": 1.94
+        },
+        {
+          "w": "network",
+          "start": 2.4
+        },
+        {
+          "w": "reads",
+          "start": 2.88
+        },
+        {
+          "w": "one",
+          "start": 3.28
+        },
+        {
+          "w": "word",
+          "start": 3.52
+        },
+        {
+          "w": "at",
+          "start": 3.76
+        },
+        {
+          "w": "a",
+          "start": 3.92
+        },
+        {
+          "w": "time,",
+          "start": 4.08
+        },
+        {
+          "w": "and",
+          "start": 4.44
+        },
+        {
+          "w": "carries",
+          "start": 4.64
+        },
+        {
+          "w": "a",
+          "start": 5.12
+        },
+        {
+          "w": "memory",
+          "start": 5.24
+        },
+        {
+          "w": "forward",
+          "start": 5.72
+        },
+        {
+          "w": "from",
+          "start": 6.12
+        },
+        {
+          "w": "each",
+          "start": 6.32
+        },
+        {
+          "w": "word",
+          "start": 6.64
+        },
+        {
+          "w": "to",
+          "start": 6.84
+        },
+        {
+          "w": "the",
+          "start": 7
+        },
+        {
+          "w": "next.",
+          "start": 7.12
+        }
+      ],
+      "matchScore": 0.947
+    },
+    "c04": {
+      "segment": "rnn",
+      "display": "RNN stands for recurrent neural network. It reads a sequence step by step, and passes a hidden state, a kind of memory, from each step to the next.",
+      "spoken": "RNN stands for recurrent neural network. It reads a sequence step by step, and passes a hidden state, a kind of memory, from each step to the next.",
+      "textHash": "f013c1031ac87057",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/39e697b7a69de36e.wav",
+      "duration": 9.485,
+      "marks": {},
+      "words": [
+        {
+          "w": "RNN",
+          "start": 0.36
+        },
+        {
+          "w": "stands",
+          "start": 0.72
+        },
+        {
+          "w": "for",
+          "start": 1.08
+        },
+        {
+          "w": "recurrent",
+          "start": 1.28
+        },
+        {
+          "w": "neural",
+          "start": 1.76
+        },
+        {
+          "w": "network.",
+          "start": 2.12
+        },
+        {
+          "w": "It",
+          "start": 2.84
+        },
+        {
+          "w": "reads",
+          "start": 3.04
+        },
+        {
+          "w": "a",
+          "start": 3.44
+        },
+        {
+          "w": "sequence",
+          "start": 3.6
+        },
+        {
+          "w": "step",
+          "start": 4.08
+        },
+        {
+          "w": "by",
+          "start": 4.44
+        },
+        {
+          "w": "step,",
+          "start": 4.64
+        },
+        {
+          "w": "and",
+          "start": 5.04
+        },
+        {
+          "w": "passes",
+          "start": 5.28
+        },
+        {
+          "w": "a",
+          "start": 5.76
+        },
+        {
+          "w": "hidden",
+          "start": 5.92
+        },
+        {
+          "w": "state,",
+          "start": 6.32
+        },
+        {
+          "w": "a",
+          "start": 6.72
+        },
+        {
+          "w": "kind",
+          "start": 6.96
+        },
+        {
+          "w": "of",
+          "start": 7.16
+        },
+        {
+          "w": "memory,",
+          "start": 7.32
+        },
+        {
+          "w": "from",
+          "start": 7.88
+        },
+        {
+          "w": "each",
+          "start": 8.08
+        },
+        {
+          "w": "step",
+          "start": 8.44
+        },
+        {
+          "w": "to",
+          "start": 8.76
+        },
+        {
+          "w": "the",
+          "start": 8.92
+        },
+        {
+          "w": "next.",
+          "start": 9.04
+        }
+      ],
+      "matchScore": 0.952
+    },
+    "c05": {
+      "segment": "rnn",
+      "display": "Reading \"the cat sat\", it updates its memory after the, again after cat, and again after sat.",
+      "spoken": "Reading \"the cat sat\", it updates its memory after the, again after cat, and again after sat.",
+      "textHash": "5c59e449563c3ccd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/45bcf2f4c1c5f4d3.wav",
+      "duration": 5.576,
+      "marks": {},
+      "words": [
+        {
+          "w": "Reading",
+          "start": 0
+        },
+        {
+          "w": "\"the",
+          "start": 0.4
+        },
+        {
+          "w": "cat",
+          "start": 0.56
+        },
+        {
+          "w": "sat\",",
+          "start": 0.84
+        },
+        {
+          "w": "it",
+          "start": 1.24
+        },
+        {
+          "w": "updates",
+          "start": 1.44
+        },
+        {
+          "w": "its",
+          "start": 1.96
+        },
+        {
+          "w": "memory",
+          "start": 2.2
+        },
+        {
+          "w": "after",
+          "start": 2.64
+        },
+        {
+          "w": "the,",
+          "start": 2.96
+        },
+        {
+          "w": "again",
+          "start": 3.28
+        },
+        {
+          "w": "after",
+          "start": 3.64
+        },
+        {
+          "w": "cat,",
+          "start": 3.96
+        },
+        {
+          "w": "and",
+          "start": 4.28
+        },
+        {
+          "w": "again",
+          "start": 4.48
+        },
+        {
+          "w": "after",
+          "start": 4.84
+        },
+        {
+          "w": "sat.",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "rnn",
+      "display": "Think of reading a book while keeping a running summary in your head. Each new sentence updates the summary.",
+      "spoken": "Think of reading a book while keeping a running summary in your head. Each new sentence updates the summary.",
+      "textHash": "5685c1a541a55604",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/10986eda649126e7.wav",
+      "duration": 5.745,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.16
+        },
+        {
+          "w": "reading",
+          "start": 0.32
+        },
+        {
+          "w": "a",
+          "start": 0.64
+        },
+        {
+          "w": "book",
+          "start": 0.8
+        },
+        {
+          "w": "while",
+          "start": 1.08
+        },
+        {
+          "w": "keeping",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.6
+        },
+        {
+          "w": "running",
+          "start": 1.76
+        },
+        {
+          "w": "summary",
+          "start": 2.16
+        },
+        {
+          "w": "in",
+          "start": 2.6
+        },
+        {
+          "w": "your",
+          "start": 2.76
+        },
+        {
+          "w": "head.",
+          "start": 3
+        },
+        {
+          "w": "Each",
+          "start": 3.44
+        },
+        {
+          "w": "new",
+          "start": 3.8
+        },
+        {
+          "w": "sentence",
+          "start": 4.04
+        },
+        {
+          "w": "updates",
+          "start": 4.56
+        },
+        {
+          "w": "the",
+          "start": 5.12
+        },
+        {
+          "w": "summary.",
+          "start": 5.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c07": {
+      "segment": "step",
+      "display": "Here's what happens at every single word.",
+      "spoken": "Here's what happens at every single word.",
+      "textHash": "63f761fc9fcd79d9",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e1b00fc4de7efd03.wav",
+      "duration": 2.202,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0.16
+        },
+        {
+          "w": "what",
+          "start": 0.32
+        },
+        {
+          "w": "happens",
+          "start": 0.52
+        },
+        {
+          "w": "at",
+          "start": 0.96
+        },
+        {
+          "w": "every",
+          "start": 1.12
+        },
+        {
+          "w": "single",
+          "start": 1.36
+        },
+        {
+          "w": "word.",
+          "start": 1.88
+        }
+      ],
+      "matchScore": 0.833
+    },
+    "c08": {
+      "segment": "step",
+      "display": "Read: take the vector for the next word.",
+      "spoken": "Read: take the vector for the next word.",
+      "textHash": "72d7a5616b23b00f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6e824f254e26067f.wav",
+      "duration": 2.268,
+      "marks": {},
+      "words": [
+        {
+          "w": "Read:",
+          "start": 0
+        },
+        {
+          "w": "take",
+          "start": 0.48
+        },
+        {
+          "w": "the",
+          "start": 0.76
+        },
+        {
+          "w": "vector",
+          "start": 1.04
+        },
+        {
+          "w": "for",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "next",
+          "start": 1.6
+        },
+        {
+          "w": "word.",
+          "start": 1.96
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c09": {
+      "segment": "step",
+      "display": "Combine: mix it with the memory carried over from the previous step.",
+      "spoken": "Combine: mix it with the memory carried over from the previous step.",
+      "textHash": "27bf88e5f562fafc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/03ff22128ecd6b2e.wav",
+      "duration": 3.718,
+      "marks": {},
+      "words": [
+        {
+          "w": "Combine:",
+          "start": 0
+        },
+        {
+          "w": "mix",
+          "start": 0.72
+        },
+        {
+          "w": "it",
+          "start": 1.08
+        },
+        {
+          "w": "with",
+          "start": 1.24
+        },
+        {
+          "w": "the",
+          "start": 1.4
+        },
+        {
+          "w": "memory",
+          "start": 1.52
+        },
+        {
+          "w": "carried",
+          "start": 2
+        },
+        {
+          "w": "over",
+          "start": 2.36
+        },
+        {
+          "w": "from",
+          "start": 2.56
+        },
+        {
+          "w": "the",
+          "start": 2.72
+        },
+        {
+          "w": "previous",
+          "start": 2.84
+        },
+        {
+          "w": "step.",
+          "start": 3.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c10": {
+      "segment": "step",
+      "display": "Update: that mix becomes the new memory.",
+      "spoken": "Update: that mix becomes the new memory.",
+      "textHash": "ff2ee30f9220b1b0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9e016a42f9f4c138.wav",
+      "duration": 2.318,
+      "marks": {},
+      "words": [
+        {
+          "w": "Update:",
+          "start": 0.3
+        },
+        {
+          "w": "that",
+          "start": 0.6
+        },
+        {
+          "w": "mix",
+          "start": 0.84
+        },
+        {
+          "w": "becomes",
+          "start": 1.12
+        },
+        {
+          "w": "the",
+          "start": 1.56
+        },
+        {
+          "w": "new",
+          "start": 1.68
+        },
+        {
+          "w": "memory.",
+          "start": 1.84
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c11": {
+      "segment": "step",
+      "display": "Output: if needed, use the memory to produce something, like a guess for the next word. Then move on, and do it all again.",
+      "spoken": "Output: if needed, use the memory to produce something, like a guess for the next word. Then move on, and do it all again.",
+      "textHash": "3ed2a5ff18c7d54f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fd6694b6e9e22a7f.wav",
+      "duration": 7.378,
+      "marks": {},
+      "words": [
+        {
+          "w": "Output:",
+          "start": 0
+        },
+        {
+          "w": "if",
+          "start": 0.56
+        },
+        {
+          "w": "needed,",
+          "start": 0.8
+        },
+        {
+          "w": "use",
+          "start": 1.32
+        },
+        {
+          "w": "the",
+          "start": 1.6
+        },
+        {
+          "w": "memory",
+          "start": 1.76
+        },
+        {
+          "w": "to",
+          "start": 2.16
+        },
+        {
+          "w": "produce",
+          "start": 2.28
+        },
+        {
+          "w": "something,",
+          "start": 2.76
+        },
+        {
+          "w": "like",
+          "start": 3.12
+        },
+        {
+          "w": "a",
+          "start": 3.36
+        },
+        {
+          "w": "guess",
+          "start": 3.48
+        },
+        {
+          "w": "for",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 3.96
+        },
+        {
+          "w": "next",
+          "start": 4.12
+        },
+        {
+          "w": "word.",
+          "start": 4.52
+        },
+        {
+          "w": "Then",
+          "start": 5
+        },
+        {
+          "w": "move",
+          "start": 5.36
+        },
+        {
+          "w": "on,",
+          "start": 5.76
+        },
+        {
+          "w": "and",
+          "start": 6
+        },
+        {
+          "w": "do",
+          "start": 6.24
+        },
+        {
+          "w": "it",
+          "start": 6.48
+        },
+        {
+          "w": "all",
+          "start": 6.72
+        },
+        {
+          "w": "again.",
+          "start": 6.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c12": {
+      "segment": "vs",
+      "display": "Why is this better than the n-gram language models from unit one?",
+      "spoken": "Why is this better than the n-gram language models from unit one?",
+      "textHash": "e7e2c8f5f25d3e7d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c9461148c55ba7b3.wav",
+      "duration": 3.618,
+      "marks": {},
+      "words": [
+        {
+          "w": "Why",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.24
+        },
+        {
+          "w": "this",
+          "start": 0.48
+        },
+        {
+          "w": "better",
+          "start": 0.76
+        },
+        {
+          "w": "than",
+          "start": 1.08
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "n-gram",
+          "start": 1.44
+        },
+        {
+          "w": "language",
+          "start": 1.96
+        },
+        {
+          "w": "models",
+          "start": 2.4
+        },
+        {
+          "w": "from",
+          "start": 2.8
+        },
+        {
+          "w": "unit",
+          "start": 2.96
+        },
+        {
+          "w": "one?",
+          "start": 3.32
+        }
+      ],
+      "matchScore": 1
+    },
+    "c13": {
+      "segment": "vs",
+      "display": "An n-gram model only looks back a fixed few words, and counts exact sequences, so it knows nothing about phrases it never saw.",
+      "spoken": "An n-gram model only looks back a fixed few words, and counts exact sequences, so it knows nothing about phrases it never saw.",
+      "textHash": "ab3c4e403cc903cc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/da55a65f28489a39.wav",
+      "duration": 7.931,
+      "marks": {},
+      "words": [
+        {
+          "w": "An",
+          "start": 0
+        },
+        {
+          "w": "n-gram",
+          "start": 0.16
+        },
+        {
+          "w": "model",
+          "start": 0.72
+        },
+        {
+          "w": "only",
+          "start": 1.2
+        },
+        {
+          "w": "looks",
+          "start": 1.48
+        },
+        {
+          "w": "back",
+          "start": 1.76
+        },
+        {
+          "w": "a",
+          "start": 2
+        },
+        {
+          "w": "fixed",
+          "start": 2.16
+        },
+        {
+          "w": "few",
+          "start": 2.52
+        },
+        {
+          "w": "words,",
+          "start": 2.84
+        },
+        {
+          "w": "and",
+          "start": 3.28
+        },
+        {
+          "w": "counts",
+          "start": 3.56
+        },
+        {
+          "w": "exact",
+          "start": 4
+        },
+        {
+          "w": "sequences,",
+          "start": 4.48
+        },
+        {
+          "w": "so",
+          "start": 5.24
+        },
+        {
+          "w": "it",
+          "start": 5.44
+        },
+        {
+          "w": "knows",
+          "start": 5.68
+        },
+        {
+          "w": "nothing",
+          "start": 6
+        },
+        {
+          "w": "about",
+          "start": 6.32
+        },
+        {
+          "w": "phrases",
+          "start": 6.56
+        },
+        {
+          "w": "it",
+          "start": 7.12
+        },
+        {
+          "w": "never",
+          "start": 7.32
+        },
+        {
+          "w": "saw.",
+          "start": 7.6
+        }
+      ],
+      "matchScore": 1
+    },
+    "c14": {
+      "segment": "vs",
+      "display": "An RNN's memory can, in principle, hold the whole sentence so far. And because it works with word vectors, what it learns about rain also helps with storm.",
+      "spoken": "An RNN's memory can, in principle, hold the whole sentence so far. And because it works with word vectors, what it learns about rain also helps with storm.",
+      "textHash": "de9e5db6dc9fb65a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e8e1f33195d6218f.wav",
+      "duration": 9.594,
+      "marks": {},
+      "words": [
+        {
+          "w": "An",
+          "start": 0.307
+        },
+        {
+          "w": "RNN's",
+          "start": 0.613
+        },
+        {
+          "w": "memory",
+          "start": 0.92
+        },
+        {
+          "w": "can,",
+          "start": 1.4
+        },
+        {
+          "w": "in",
+          "start": 1.68
+        },
+        {
+          "w": "principle,",
+          "start": 1.84
+        },
+        {
+          "w": "hold",
+          "start": 2.56
+        },
+        {
+          "w": "the",
+          "start": 2.88
+        },
+        {
+          "w": "whole",
+          "start": 3.04
+        },
+        {
+          "w": "sentence",
+          "start": 3.28
+        },
+        {
+          "w": "so",
+          "start": 3.84
+        },
+        {
+          "w": "far.",
+          "start": 4.08
+        },
+        {
+          "w": "And",
+          "start": 4.48
+        },
+        {
+          "w": "because",
+          "start": 4.8
+        },
+        {
+          "w": "it",
+          "start": 5.12
+        },
+        {
+          "w": "works",
+          "start": 5.28
+        },
+        {
+          "w": "with",
+          "start": 5.64
+        },
+        {
+          "w": "word",
+          "start": 6.013
+        },
+        {
+          "w": "vectors,",
+          "start": 6.387
+        },
+        {
+          "w": "what",
+          "start": 6.76
+        },
+        {
+          "w": "it",
+          "start": 6.96
+        },
+        {
+          "w": "learns",
+          "start": 7.12
+        },
+        {
+          "w": "about",
+          "start": 7.48
+        },
+        {
+          "w": "rain",
+          "start": 7.72
+        },
+        {
+          "w": "also",
+          "start": 8.16
+        },
+        {
+          "w": "helps",
+          "start": 8.48
+        },
+        {
+          "w": "with",
+          "start": 8.92
+        },
+        {
+          "w": "storm.",
+          "start": 9.08
+        }
+      ],
+      "matchScore": 0.87
+    },
+    "c15": {
+      "segment": "uses",
+      "display": "Before today's models arrived, RNNs powered much of NLP.",
+      "spoken": "Before today's models arrived, R N ens powered much of N L P.",
+      "textHash": "9f5f01c3b6f909ca",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/50951eb6fe362021.wav",
+      "duration": 4.234,
+      "marks": {},
+      "words": [
+        {
+          "w": "Before",
+          "start": 0
+        },
+        {
+          "w": "today's",
+          "start": 0.36
+        },
+        {
+          "w": "models",
+          "start": 0.72
+        },
+        {
+          "w": "arrived,",
+          "start": 1.4
+        },
+        {
+          "w": "RNNs",
+          "start": 2.08
+        },
+        {
+          "w": "powered",
+          "start": 2.76
+        },
+        {
+          "w": "much",
+          "start": 3.16
+        },
+        {
+          "w": "of",
+          "start": 3.518
+        },
+        {
+          "w": "NLP.",
+          "start": 3.876
+        }
+      ],
+      "matchScore": 0.5
+    },
+    "c16": {
+      "segment": "uses",
+      "display": "Language models, guessing the next word.",
+      "spoken": "Language models, guessing the next word.",
+      "textHash": "7a2a7a9c758e4e4c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2109f33e37ce0760.wav",
+      "duration": 2.23,
+      "marks": {},
+      "words": [
+        {
+          "w": "Language",
+          "start": 0
+        },
+        {
+          "w": "models,",
+          "start": 0.48
+        },
+        {
+          "w": "guessing",
+          "start": 1
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "next",
+          "start": 1.56
+        },
+        {
+          "w": "word.",
+          "start": 1.92
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "uses",
+      "display": "Tagging, giving every word a label, like a part of speech.",
+      "spoken": "Tagging, giving every word a label, like a part of speech.",
+      "textHash": "6d065ce57a3f0b19",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/850da30d959df20c.wav",
+      "duration": 3.345,
+      "marks": {},
+      "words": [
+        {
+          "w": "Tagging,",
+          "start": 0
+        },
+        {
+          "w": "giving",
+          "start": 0.56
+        },
+        {
+          "w": "every",
+          "start": 0.96
+        },
+        {
+          "w": "word",
+          "start": 1.2
+        },
+        {
+          "w": "a",
+          "start": 1.48
+        },
+        {
+          "w": "label,",
+          "start": 1.64
+        },
+        {
+          "w": "like",
+          "start": 2.12
+        },
+        {
+          "w": "a",
+          "start": 2.32
+        },
+        {
+          "w": "part",
+          "start": 2.48
+        },
+        {
+          "w": "of",
+          "start": 2.68
+        },
+        {
+          "w": "speech.",
+          "start": 2.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c18": {
+      "segment": "uses",
+      "display": "And translation: one RNN reads a sentence in one language, and another writes it out in a different language.",
+      "spoken": "And translation: one RNN reads a sentence in one language, and another writes it out in a different language.",
+      "textHash": "c10b44ed51818c9d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/8dd17aceba05d16e.wav",
+      "duration": 6.848,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "translation:",
+          "start": 0.2
+        },
+        {
+          "w": "one",
+          "start": 0.947
+        },
+        {
+          "w": "RNN",
+          "start": 1.693
+        },
+        {
+          "w": "reads",
+          "start": 2.44
+        },
+        {
+          "w": "a",
+          "start": 2.76
+        },
+        {
+          "w": "sentence",
+          "start": 2.88
+        },
+        {
+          "w": "in",
+          "start": 3.36
+        },
+        {
+          "w": "one",
+          "start": 3.56
+        },
+        {
+          "w": "language,",
+          "start": 3.76
+        },
+        {
+          "w": "and",
+          "start": 4.32
+        },
+        {
+          "w": "another",
+          "start": 4.56
+        },
+        {
+          "w": "writes",
+          "start": 4.96
+        },
+        {
+          "w": "it",
+          "start": 5.4
+        },
+        {
+          "w": "out",
+          "start": 5.56
+        },
+        {
+          "w": "in",
+          "start": 5.72
+        },
+        {
+          "w": "a",
+          "start": 5.84
+        },
+        {
+          "w": "different",
+          "start": 5.92
+        },
+        {
+          "w": "language.",
+          "start": 6.32
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c19": {
+      "segment": "train",
+      "display": "How does an RNN learn? With a method called backpropagation through time. Picture the network unrolled across all the words. We measure its error, then send that error backwards through every step, adjusting the weights a little.",
+      "spoken": "How does an RNN learn? With a method called backpropagation through time. Picture the network unrolled across all the words. We measure its error, then send that error backwards through every step, adjusting the weights a little.",
+      "textHash": "d796e31056d5ba5d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b3f5020c02335a63.wav",
+      "duration": 13.313,
+      "marks": {},
+      "words": [
+        {
+          "w": "How",
+          "start": 0
+        },
+        {
+          "w": "does",
+          "start": 0.16
+        },
+        {
+          "w": "an",
+          "start": 0.36
+        },
+        {
+          "w": "RNN",
+          "start": 0.76
+        },
+        {
+          "w": "learn?",
+          "start": 1.16
+        },
+        {
+          "w": "With",
+          "start": 1.52
+        },
+        {
+          "w": "a",
+          "start": 1.76
+        },
+        {
+          "w": "method",
+          "start": 1.88
+        },
+        {
+          "w": "called",
+          "start": 2.28
+        },
+        {
+          "w": "backpropagation",
+          "start": 2.98
+        },
+        {
+          "w": "through",
+          "start": 3.68
+        },
+        {
+          "w": "time.",
+          "start": 4
+        },
+        {
+          "w": "Picture",
+          "start": 4.6
+        },
+        {
+          "w": "the",
+          "start": 5.16
+        },
+        {
+          "w": "network",
+          "start": 5.36
+        },
+        {
+          "w": "unrolled",
+          "start": 5.88
+        },
+        {
+          "w": "across",
+          "start": 6.44
+        },
+        {
+          "w": "all",
+          "start": 6.88
+        },
+        {
+          "w": "the",
+          "start": 7.08
+        },
+        {
+          "w": "words.",
+          "start": 7.24
+        },
+        {
+          "w": "We",
+          "start": 7.76
+        },
+        {
+          "w": "measure",
+          "start": 8
+        },
+        {
+          "w": "its",
+          "start": 8.347
+        },
+        {
+          "w": "error,",
+          "start": 8.693
+        },
+        {
+          "w": "then",
+          "start": 9.04
+        },
+        {
+          "w": "send",
+          "start": 9.28
+        },
+        {
+          "w": "that",
+          "start": 9.6
+        },
+        {
+          "w": "error",
+          "start": 9.92
+        },
+        {
+          "w": "backwards",
+          "start": 10.24
+        },
+        {
+          "w": "through",
+          "start": 10.8
+        },
+        {
+          "w": "every",
+          "start": 11.04
+        },
+        {
+          "w": "step,",
+          "start": 11.36
+        },
+        {
+          "w": "adjusting",
+          "start": 11.8
+        },
+        {
+          "w": "the",
+          "start": 12.4
+        },
+        {
+          "w": "weights",
+          "start": 12.56
+        },
+        {
+          "w": "a",
+          "start": 12.92
+        },
+        {
+          "w": "little.",
+          "start": 13.08
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c20": {
+      "segment": "train",
+      "display": "So a mistake at word ten can send blame all the way back to word one.",
+      "spoken": "So a mistake at word ten can send blame all the way back to word one.",
+      "textHash": "5a8c8d47793d6d2c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/16415b78980c855a.wav",
+      "duration": 4.194,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.12
+        },
+        {
+          "w": "mistake",
+          "start": 0.24
+        },
+        {
+          "w": "at",
+          "start": 0.68
+        },
+        {
+          "w": "word",
+          "start": 0.84
+        },
+        {
+          "w": "ten",
+          "start": 1.12
+        },
+        {
+          "w": "can",
+          "start": 1.6
+        },
+        {
+          "w": "send",
+          "start": 1.84
+        },
+        {
+          "w": "blame",
+          "start": 2.16
+        },
+        {
+          "w": "all",
+          "start": 2.6
+        },
+        {
+          "w": "the",
+          "start": 2.76
+        },
+        {
+          "w": "way",
+          "start": 2.88
+        },
+        {
+          "w": "back",
+          "start": 3.12
+        },
+        {
+          "w": "to",
+          "start": 3.4
+        },
+        {
+          "w": "word",
+          "start": 3.6
+        },
+        {
+          "w": "one.",
+          "start": 3.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c21": {
+      "segment": "train",
+      "display": "It's like replaying a chess game move by move, to find which early move really cost you the game.",
+      "spoken": "It's like replaying a chess game move by move, to find which early move really cost you the game.",
+      "textHash": "03585f9eafef1e43",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/db906f5b12dfcc96.wav",
+      "duration": 5.487,
+      "marks": {},
+      "words": [
+        {
+          "w": "It's",
+          "start": 0
+        },
+        {
+          "w": "like",
+          "start": 0.2
+        },
+        {
+          "w": "replaying",
+          "start": 0.36
+        },
+        {
+          "w": "a",
+          "start": 0.92
+        },
+        {
+          "w": "chess",
+          "start": 1.04
+        },
+        {
+          "w": "game",
+          "start": 1.4
+        },
+        {
+          "w": "move",
+          "start": 1.72
+        },
+        {
+          "w": "by",
+          "start": 2.04
+        },
+        {
+          "w": "move,",
+          "start": 2.24
+        },
+        {
+          "w": "to",
+          "start": 2.64
+        },
+        {
+          "w": "find",
+          "start": 2.88
+        },
+        {
+          "w": "which",
+          "start": 3.2
+        },
+        {
+          "w": "early",
+          "start": 3.44
+        },
+        {
+          "w": "move",
+          "start": 3.84
+        },
+        {
+          "w": "really",
+          "start": 4.16
+        },
+        {
+          "w": "cost",
+          "start": 4.52
+        },
+        {
+          "w": "you",
+          "start": 4.88
+        },
+        {
+          "w": "the",
+          "start": 5
+        },
+        {
+          "w": "game.",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c22": {
+      "segment": "forget",
+      "display": "But there's a catch, known as the vanishing gradient problem. Take: \"The keys that I left on the kitchen table yesterday are missing.\" To choose \"are\" rather than \"is\", the network must remember \"keys\" from far back.",
+      "spoken": "But there's a catch, known as the vanishing gradient problem. Take: \"The keys that I left on the kitchen table yesterday are missing.\" To choose \"are\" rather than \"is\", the network must remember \"keys\" from far back.",
+      "textHash": "e385555cb4cf027e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aa0580be5d22a4a1.wav",
+      "duration": 13.225,
+      "marks": {},
+      "words": [
+        {
+          "w": "But",
+          "start": 0
+        },
+        {
+          "w": "there's",
+          "start": 0.12
+        },
+        {
+          "w": "a",
+          "start": 0.4
+        },
+        {
+          "w": "catch,",
+          "start": 0.56
+        },
+        {
+          "w": "known",
+          "start": 0.96
+        },
+        {
+          "w": "as",
+          "start": 1.36
+        },
+        {
+          "w": "the",
+          "start": 1.56
+        },
+        {
+          "w": "vanishing",
+          "start": 1.68
+        },
+        {
+          "w": "gradient",
+          "start": 2.32
+        },
+        {
+          "w": "problem.",
+          "start": 2.88
+        },
+        {
+          "w": "Take:",
+          "start": 3.68
+        },
+        {
+          "w": "\"The",
+          "start": 4.12
+        },
+        {
+          "w": "keys",
+          "start": 4.48
+        },
+        {
+          "w": "that",
+          "start": 4.92
+        },
+        {
+          "w": "I",
+          "start": 5.08
+        },
+        {
+          "w": "left",
+          "start": 5.28
+        },
+        {
+          "w": "on",
+          "start": 5.48
+        },
+        {
+          "w": "the",
+          "start": 5.6
+        },
+        {
+          "w": "kitchen",
+          "start": 5.72
+        },
+        {
+          "w": "table",
+          "start": 6.12
+        },
+        {
+          "w": "yesterday",
+          "start": 6.48
+        },
+        {
+          "w": "are",
+          "start": 7.08
+        },
+        {
+          "w": "missing.\"",
+          "start": 7.24
+        },
+        {
+          "w": "To",
+          "start": 7.96
+        },
+        {
+          "w": "choose",
+          "start": 8.28
+        },
+        {
+          "w": "\"are\"",
+          "start": 8.84
+        },
+        {
+          "w": "rather",
+          "start": 9.12
+        },
+        {
+          "w": "than",
+          "start": 9.48
+        },
+        {
+          "w": "\"is\",",
+          "start": 9.72
+        },
+        {
+          "w": "the",
+          "start": 10.08
+        },
+        {
+          "w": "network",
+          "start": 10.28
+        },
+        {
+          "w": "must",
+          "start": 10.88
+        },
+        {
+          "w": "remember",
+          "start": 11.08
+        },
+        {
+          "w": "\"keys\"",
+          "start": 11.68
+        },
+        {
+          "w": "from",
+          "start": 12.2
+        },
+        {
+          "w": "far",
+          "start": 12.44
+        },
+        {
+          "w": "back.",
+          "start": 12.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c23": {
+      "segment": "forget",
+      "display": "The trouble is that the learning signal fades a little at every step it travels back.",
+      "spoken": "The trouble is that the learning signal fades a little at every step it travels back.",
+      "textHash": "0fcbbff551a6465f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/15e13e6efbac5ada.wav",
+      "duration": 4.392,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "trouble",
+          "start": 0.12
+        },
+        {
+          "w": "is",
+          "start": 0.48
+        },
+        {
+          "w": "that",
+          "start": 0.68
+        },
+        {
+          "w": "the",
+          "start": 0.8
+        },
+        {
+          "w": "learning",
+          "start": 0.96
+        },
+        {
+          "w": "signal",
+          "start": 1.36
+        },
+        {
+          "w": "fades",
+          "start": 1.84
+        },
+        {
+          "w": "a",
+          "start": 2.24
+        },
+        {
+          "w": "little",
+          "start": 2.4
+        },
+        {
+          "w": "at",
+          "start": 2.64
+        },
+        {
+          "w": "every",
+          "start": 2.8
+        },
+        {
+          "w": "step",
+          "start": 3.04
+        },
+        {
+          "w": "it",
+          "start": 3.4
+        },
+        {
+          "w": "travels",
+          "start": 3.56
+        },
+        {
+          "w": "back.",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c24": {
+      "segment": "forget",
+      "display": "After many words, it has almost vanished.",
+      "spoken": "After many words, it has almost vanished.",
+      "textHash": "e740f09486de6934",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e28c213febe35314.wav",
+      "duration": 2.35,
+      "marks": {},
+      "words": [
+        {
+          "w": "After",
+          "start": 0
+        },
+        {
+          "w": "many",
+          "start": 0.32
+        },
+        {
+          "w": "words,",
+          "start": 0.64
+        },
+        {
+          "w": "it",
+          "start": 1.04
+        },
+        {
+          "w": "has",
+          "start": 1.2
+        },
+        {
+          "w": "almost",
+          "start": 1.4
+        },
+        {
+          "w": "vanished.",
+          "start": 1.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "forget",
+      "display": "So plain RNNs struggle to remember the start of long sentences. Next lesson fixes this.",
+      "spoken": "So plain R N ens struggle to remember the start of long sentences. Next lesson fixes this.",
+      "textHash": "db9d35681e3c5ee1",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2f63f5778654f1cb.wav",
+      "duration": 6.083,
+      "marks": {},
+      "words": [
+        {
+          "w": "So",
+          "start": 0
+        },
+        {
+          "w": "plain",
+          "start": 0.24
+        },
+        {
+          "w": "RNNs",
+          "start": 0.92
+        },
+        {
+          "w": "struggle",
+          "start": 1.6
+        },
+        {
+          "w": "to",
+          "start": 2.04
+        },
+        {
+          "w": "remember",
+          "start": 2.16
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "start",
+          "start": 2.72
+        },
+        {
+          "w": "of",
+          "start": 3.04
+        },
+        {
+          "w": "long",
+          "start": 3.2
+        },
+        {
+          "w": "sentences.",
+          "start": 3.48
+        },
+        {
+          "w": "Next",
+          "start": 4.067
+        },
+        {
+          "w": "lesson",
+          "start": 4.653
+        },
+        {
+          "w": "fixes",
+          "start": 5.24
+        },
+        {
+          "w": "this.",
+          "start": 5.8
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c26": {
+      "segment": "quiz",
+      "display": "Quick quiz. What does an RNN pass from one word to the next?",
+      "spoken": "Quick quiz. What does an RNN pass from one word to the next?",
+      "textHash": "a71535575d456e8d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/ead825cacbc10ad8.wav",
+      "duration": 3.413,
+      "marks": {},
+      "words": [
+        {
+          "w": "Quick",
+          "start": 0.24
+        },
+        {
+          "w": "quiz.",
+          "start": 0.48
+        },
+        {
+          "w": "What",
+          "start": 0.72
+        },
+        {
+          "w": "does",
+          "start": 0.88
+        },
+        {
+          "w": "an",
+          "start": 1.08
+        },
+        {
+          "w": "RNN",
+          "start": 1.44
+        },
+        {
+          "w": "pass",
+          "start": 1.8
+        },
+        {
+          "w": "from",
+          "start": 2.04
+        },
+        {
+          "w": "one",
+          "start": 2.24
+        },
+        {
+          "w": "word",
+          "start": 2.48
+        },
+        {
+          "w": "to",
+          "start": 2.68
+        },
+        {
+          "w": "the",
+          "start": 2.84
+        },
+        {
+          "w": "next?",
+          "start": 2.96
+        }
+      ],
+      "matchScore": 0.727
+    },
+    "c27": {
+      "segment": "quiz",
+      "display": "Pause the video and choose.",
+      "spoken": "Pause the video and choose.",
+      "textHash": "fb893bacc3dd557b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/aaa8b88bc51dbfd5.wav",
+      "duration": 1.52,
+      "marks": {},
+      "words": [
+        {
+          "w": "Pause",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "video",
+          "start": 0.54
+        },
+        {
+          "w": "and",
+          "start": 0.8
+        },
+        {
+          "w": "choose.",
+          "start": 1
+        }
+      ],
+      "matchScore": 0.8,
+      "after": 3
+    },
+    "c28": {
+      "segment": "quiz",
+      "display": "Its hidden state: a kind of memory that carries what it has read so far.",
+      "spoken": "Its hidden state: a kind of memory that carries what it has read so far.",
+      "textHash": "a411938465c0ad0a",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/9f6bf46b09245b05.wav",
+      "duration": 4.074,
+      "marks": {},
+      "words": [
+        {
+          "w": "Its",
+          "start": 0
+        },
+        {
+          "w": "hidden",
+          "start": 0.24
+        },
+        {
+          "w": "state:",
+          "start": 0.68
+        },
+        {
+          "w": "a",
+          "start": 1.12
+        },
+        {
+          "w": "kind",
+          "start": 1.36
+        },
+        {
+          "w": "of",
+          "start": 1.56
+        },
+        {
+          "w": "memory",
+          "start": 1.72
+        },
+        {
+          "w": "that",
+          "start": 2.16
+        },
+        {
+          "w": "carries",
+          "start": 2.32
+        },
+        {
+          "w": "what",
+          "start": 2.72
+        },
+        {
+          "w": "it",
+          "start": 2.88
+        },
+        {
+          "w": "has",
+          "start": 3
+        },
+        {
+          "w": "read",
+          "start": 3.16
+        },
+        {
+          "w": "so",
+          "start": 3.44
+        },
+        {
+          "w": "far.",
+          "start": 3.68
+        }
+      ],
+      "matchScore": 1
+    },
+    "c29": {
+      "segment": "recap",
+      "display": "Let's recap. An RNN reads a sentence one word at a time.",
+      "spoken": "Let's recap. An RNN reads a sentence one word at a time.",
+      "textHash": "b5464b9e4933fbe0",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c85514b6e3da5aa3.wav",
+      "duration": 3.813,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "recap.",
+          "start": 0.36
+        },
+        {
+          "w": "An",
+          "start": 0.827
+        },
+        {
+          "w": "RNN",
+          "start": 1.293
+        },
+        {
+          "w": "reads",
+          "start": 1.76
+        },
+        {
+          "w": "a",
+          "start": 2.08
+        },
+        {
+          "w": "sentence",
+          "start": 2.16
+        },
+        {
+          "w": "one",
+          "start": 2.64
+        },
+        {
+          "w": "word",
+          "start": 2.88
+        },
+        {
+          "w": "at",
+          "start": 3.12
+        },
+        {
+          "w": "a",
+          "start": 3.32
+        },
+        {
+          "w": "time.",
+          "start": 3.48
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c30": {
+      "segment": "recap",
+      "display": "It carries a hidden state, its memory, from each word to the next.",
+      "spoken": "It carries a hidden state, its memory, from each word to the next.",
+      "textHash": "a8a43e0a83eecc01",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3f2e8c33d5300fe4.wav",
+      "duration": 3.882,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "carries",
+          "start": 0.16
+        },
+        {
+          "w": "a",
+          "start": 0.48
+        },
+        {
+          "w": "hidden",
+          "start": 0.64
+        },
+        {
+          "w": "state,",
+          "start": 1.04
+        },
+        {
+          "w": "its",
+          "start": 1.44
+        },
+        {
+          "w": "memory,",
+          "start": 1.76
+        },
+        {
+          "w": "from",
+          "start": 2.32
+        },
+        {
+          "w": "each",
+          "start": 2.56
+        },
+        {
+          "w": "word",
+          "start": 2.88
+        },
+        {
+          "w": "to",
+          "start": 3.12
+        },
+        {
+          "w": "the",
+          "start": 3.28
+        },
+        {
+          "w": "next.",
+          "start": 3.44
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "recap",
+      "display": "It learns by backpropagation through time.",
+      "spoken": "It learns by backpropagation through time.",
+      "textHash": "3cdbeb1c62589e43",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5e71aa651fca98bf.wav",
+      "duration": 2.337,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "learns",
+          "start": 0.16
+        },
+        {
+          "w": "by",
+          "start": 0.56
+        },
+        {
+          "w": "backpropagation",
+          "start": 1.1
+        },
+        {
+          "w": "through",
+          "start": 1.64
+        },
+        {
+          "w": "time.",
+          "start": 1.96
+        }
+      ],
+      "matchScore": 0.75
+    },
+    "c32": {
+      "segment": "recap",
+      "display": "But plain RNNs tend to forget the start of long sentences.",
+      "spoken": "But plain R N ens tend to forget the start of long sentences.",
+      "textHash": "979f37264a3ad069",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1061ded18d7ea991.wav",
+      "duration": 4.142,
+      "marks": {},
+      "words": [
+        {
+          "w": "But",
+          "start": 0
+        },
+        {
+          "w": "plain",
+          "start": 0.533
+        },
+        {
+          "w": "RNNs",
+          "start": 1.067
+        },
+        {
+          "w": "tend",
+          "start": 1.6
+        },
+        {
+          "w": "to",
+          "start": 1.92
+        },
+        {
+          "w": "forget",
+          "start": 2.08
+        },
+        {
+          "w": "the",
+          "start": 2.44
+        },
+        {
+          "w": "start",
+          "start": 2.56
+        },
+        {
+          "w": "of",
+          "start": 2.92
+        },
+        {
+          "w": "long",
+          "start": 3.08
+        },
+        {
+          "w": "sentences.",
+          "start": 3.36
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c33": {
+      "segment": "recap",
+      "display": "Next lesson: LSTMs. How can a network remember something from far back in a sentence?",
+      "spoken": "Next lesson: L S T ems. How can a network remember something from far back in a sentence?",
+      "textHash": "46d9589f3134d348",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eea73c76eb31ef43.wav",
+      "duration": 5.738,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next",
+          "start": 0.6
+        },
+        {
+          "w": "lesson:",
+          "start": 1.2
+        },
+        {
+          "w": "LSTMs.",
+          "start": 1.8
+        },
+        {
+          "w": "How",
+          "start": 2.4
+        },
+        {
+          "w": "can",
+          "start": 2.68
+        },
+        {
+          "w": "a",
+          "start": 2.84
+        },
+        {
+          "w": "network",
+          "start": 2.96
+        },
+        {
+          "w": "remember",
+          "start": 3.44
+        },
+        {
+          "w": "something",
+          "start": 3.84
+        },
+        {
+          "w": "from",
+          "start": 4.16
+        },
+        {
+          "w": "far",
+          "start": 4.36
+        },
+        {
+          "w": "back",
+          "start": 4.64
+        },
+        {
+          "w": "in",
+          "start": 4.88
+        },
+        {
+          "w": "a",
+          "start": 5.04
+        },
+        {
+          "w": "sentence?",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 0.75
+    }
+  }
+}

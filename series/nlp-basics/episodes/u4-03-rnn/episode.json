@@ -1,0 +1,205 @@
+{
+  "id": "u4-03",
+  "thumbnail": {
+    "headline": "How AI reads with memory",
+    "big": "the → cat → sat"
+  },
+  "tags": [
+    "RNN",
+    "recurrent neural network",
+    "vanishing gradient",
+    "sequence models",
+    "deep learning"
+  ],
+  "segments": [
+    {
+      "id": "intro",
+      "kind": "intro",
+      "component": "TitleCard",
+      "title": "Welcome",
+      "props": {
+        "kicker": "Unit {{episode.unit}} · Lesson {{episode.lesson}}",
+        "title": "Recurrent Neural Networks",
+        "subtitle": "Reading with memory"
+      }
+    },
+    {
+      "id": "idea",
+      "kind": "core",
+      "component": "BigIdea",
+      "title": "The big idea",
+      "props": {
+        "kicker": "Key idea",
+        "text": "An RNN reads one word at a time, and carries a memory forward.",
+        "highlight": [
+          "memory"
+        ]
+      }
+    },
+    {
+      "id": "rnn",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What is an RNN?",
+      "props": {
+        "kicker": "Definition",
+        "term": "RNN",
+        "definition": "Recurrent neural network: reads a sequence step by step, passing a hidden state, its memory, from each step to the next.",
+        "example": "the → cat → sat: memory updated at every word",
+        "analogy": "Reading a book while keeping a running summary in your head."
+      }
+    },
+    {
+      "id": "step",
+      "kind": "core",
+      "component": "Steps",
+      "title": "One step of an RNN",
+      "props": {
+        "kicker": "Inside one step",
+        "title": "What happens at every word",
+        "steps": [
+          {
+            "label": "Read",
+            "detail": "the next word's vector"
+          },
+          {
+            "label": "Combine",
+            "detail": "it with the memory so far"
+          },
+          {
+            "label": "Update",
+            "detail": "write the new memory"
+          },
+          {
+            "label": "Output",
+            "detail": "e.g. a guess for the next word"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vs",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Why not n-grams?",
+      "props": {
+        "kicker": "A step up",
+        "title": "N-gram model versus RNN",
+        "columns": [
+          {
+            "title": "N-gram model",
+            "items": [
+              "looks back a fixed few words",
+              "counts exact word sequences"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "RNN",
+            "items": [
+              "memory can hold the whole sentence so far",
+              "uses word vectors: similar words help each other"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "No fixed window: the memory decides"
+        }
+      }
+    },
+    {
+      "id": "uses",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "What RNNs are used for",
+      "props": {
+        "kicker": "Uses",
+        "title": "What RNNs were used for",
+        "items": [
+          {
+            "text": "Language models: guess the next word"
+          },
+          {
+            "text": "Tagging: a label for every word"
+          },
+          {
+            "text": "Translation: read one language, write another"
+          }
+        ]
+      }
+    },
+    {
+      "id": "train",
+      "kind": "core",
+      "component": "Definition",
+      "title": "How an RNN learns",
+      "props": {
+        "kicker": "Training",
+        "term": "Backpropagation through time",
+        "definition": "Unroll the network across the words, measure the error, then send it backwards through every step to adjust the weights.",
+        "example": "a mistake at word 10 → blame flows back to word 1",
+        "analogy": "Replaying a game move by move, to find which early move cost you."
+      }
+    },
+    {
+      "id": "forget",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "The forgetting problem",
+      "short": true,
+      "shortTitle": "Why early AI forgot the start of sentences",
+      "props": {
+        "kicker": "The catch",
+        "title": "The forgetting problem",
+        "items": [
+          {
+            "text": "The learning signal fades at every step back"
+          },
+          {
+            "text": "After many words, it has almost vanished"
+          },
+          {
+            "text": "So plain RNNs forget the start of long sentences"
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "quiz",
+      "component": "Quiz",
+      "title": "Quick quiz",
+      "short": true,
+      "shortTitle": "Quick quiz: what does an RNN remember?",
+      "props": {
+        "question": "What does an RNN pass from one word to the next?",
+        "options": [
+          "The whole dictionary",
+          "Its hidden state, a kind of memory",
+          "Nothing at all"
+        ],
+        "answer": 1,
+        "explain": "The hidden state carries what it has read so far."
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recap",
+      "component": "Recap",
+      "title": "Recap and next lesson",
+      "props": {
+        "points": [
+          "An RNN reads one word at a time",
+          "It carries a hidden state, its memory, forward",
+          "It learns by backpropagation through time",
+          "Plain RNNs forget the start of long sentences"
+        ],
+        "next": {
+          "title": "{{next.short}}",
+          "question": "{{next.question}}"
+        }
+      }
+    }
+  ]
+}
