@@ -1,7 +1,7 @@
 /** A 2D "map of meaning": groups of words appear on cue, and distance lines compare pairs. */
 import React from "react";
 import { useCurrentFrame } from "remotion";
-import { C, F, Heading, TOK, progress, useTimes } from "../ui";
+import { C, F, Heading, TOK, enter, progress, useTimes } from "../ui";
 import type { SegProps } from "../types";
 
 type Pt = { word: string; x: number; y: number };
@@ -71,6 +71,64 @@ export const MeaningMap: React.FC<SegProps> = ({ kicker, title, groups = [], lin
           <div key={"t" + i} style={{ position: "absolute", left: (A.x + B.x) / 2 + nx * 46, top: (A.y + B.y) / 2 + ny * 46, transform: "translate(-50%, -50%)", opacity: progress(frame, lAt[i] + 12, 10), padding: "4px 14px", borderRadius: 10, background: C.night, border: `2px solid ${col}`, fontFamily: F.mono, fontWeight: 700, fontSize: 28, color: col, whiteSpace: "nowrap" }}>{l.label}</div>
         );
       })}
+    </>
+  );
+};
+
+type Sent = { words: string[]; focus: number; weights: number[]; at?: string; note?: string };
+
+/** One sentence in a row; arcs from the focus word to the others, thickness = attention weight. */
+export const AttentionArcs: React.FC<SegProps> = ({ kicker, title, sentences = [] }) => {
+  const frame = useCurrentFrame();
+  const list = sentences as Sent[];
+  const ats = useTimes(list.map((s) => s.at));
+  let cur = 0;
+  ats.forEach((a, i) => { if (a !== undefined && frame >= a) cur = i; });
+  const s = list[cur];
+  if (!s) return <Heading kicker={kicker}>{title}</Heading>;
+  const start = ats[cur] ?? 0;
+  const unit = s.words.reduce((t, w) => t + w.length * 0.52 + 1.1, 0) + (s.words.length - 1) * 0.35;
+  const fs = Math.min(50, 1700 / unit);
+  const widths = s.words.map((w) => fs * (w.length * 0.52 + 1.1));
+  const total = widths.reduce((a, b) => a + b, 0) + fs * 0.35 * (s.words.length - 1);
+  const xs: number[] = [];
+  let x = (1920 - total) / 2;
+  widths.forEach((w) => { xs.push(x + w / 2); x += w + fs * 0.35; });
+  const rowY = 700, baseY = rowY - fs * 0.9;
+  const fx = xs[s.focus];
+  const max = Math.max(...s.weights.filter((_, i) => i !== s.focus), 0.01);
+  return (
+    <>
+      <Heading kicker={kicker}>{title}</Heading>
+      <div key={cur} style={{ position: "absolute", inset: 0, opacity: progress(frame, start, 12) }}>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          {s.weights.map((w, i) => {
+            if (i === s.focus || w <= 0) return null;
+            const dx = xs[i] - fx, h = Math.min(330, 70 + Math.abs(dx) * 0.4);
+            const p = progress(frame, start + 18 + i * 3, 20);
+            const strong = w >= max - 1e-9;
+            const col = strong ? C.sun : C.sky;
+            const mx = (fx + xs[i]) / 2;
+            return (
+              <g key={i} opacity={p * (0.3 + 0.7 * (w / max))}>
+                <path d={`M ${fx} ${baseY} Q ${mx} ${baseY - 2 * h} ${xs[i]} ${baseY}`} fill="none" stroke={col} strokeWidth={3 + 15 * w} strokeLinecap="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - p} />
+              </g>
+            );
+          })}
+        </svg>
+        {s.words.map((w, i) => {
+          const focus = i === s.focus;
+          const wt = s.weights[i] ?? 0, strong = !focus && wt >= max - 1e-9;
+          const col = focus ? C.teal : strong ? C.sun : C.line;
+          return (
+            <React.Fragment key={i}>
+            {!focus && wt >= 0.08 && <div style={{ position: "absolute", left: xs[i], top: rowY + fs * 0.95, transform: "translateX(-50%)", fontFamily: F.mono, fontWeight: 700, fontSize: 26, color: strong ? C.sun : C.sky, opacity: progress(frame, start + 34 + i * 3, 10) }}>{Math.round(wt * 100)}%</div>}
+            <div style={{ position: "absolute", left: xs[i], top: rowY, transform: "translate(-50%, -50%)", padding: `${fs * 0.15}px ${fs * 0.3}px`, borderRadius: fs * 0.25, border: `3px solid ${col}`, background: focus ? `${C.teal}33` : strong ? `${C.sun}26` : C.night2, fontFamily: F.body, fontWeight: 700, fontSize: fs, color: C.text, whiteSpace: "nowrap" }}>{w}</div>
+            </React.Fragment>
+          );
+        })}
+        {s.note && <div style={{ position: "absolute", left: 160, right: 160, top: 820, textAlign: "center", fontFamily: F.body, fontSize: 38, color: C.mute, ...enter(frame, start + 45) }}>{s.note}</div>}
+      </div>
     </>
   );
 };

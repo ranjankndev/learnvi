@@ -3,5 +3,5 @@
 export const CUSTOM_COMPONENTS = [
   "PassportStamp", "TitleHook", "RouteMap", "RecapNext",
   "TextToNumbers", "ThreeOptions", "BpeMerge", "TokenBlocks", "WhyItMatters",
-  "TryIt", "Blooper", "MythVsReality", "UseIt", "ChatStream", "MeaningMap",
+  "TryIt", "Blooper", "MythVsReality", "UseIt", "ChatStream", "MeaningMap", "AttentionArcs",
 ];

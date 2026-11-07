@@ -46,7 +46,10 @@ let bundled: Promise<string> | null = null;
 export function getBundle(root: string, log: (s: string) => void) {
   if (!bundled) {
     log("bundling the visual code…");
-    bundled = bundle({ entryPoint: path.join(root, "remotion", "index.ts"), publicDir: path.join(root, ".cache", "public") });
+    // one bundle dir per process, removed on exit, so repeated runs don't pile up copies in /tmp
+    const bundleDir = path.join(root, ".cache", "bundles", String(process.pid));
+    process.on("exit", () => { try { fs.rmSync(bundleDir, { recursive: true, force: true }); } catch { /* best effort */ } });
+    bundled = bundle({ entryPoint: path.join(root, "remotion", "index.ts"), publicDir: path.join(root, ".cache", "public"), outDir: bundleDir });
   }
   return bundled;
 }

@@ -1,0 +1,429 @@
+{
+  "id": "ep05",
+  "thumbnail": {
+    "headline": "How AI knows what “it” means",
+    "big": "it → animal"
+  },
+  "tags": [
+    "attention",
+    "transformers",
+    "context window",
+    "how LLMs work",
+    "self-attention"
+  ],
+  "segments": [
+    {
+      "id": "passport",
+      "kind": "passport",
+      "component": "PassportStamp",
+      "title": "Next stop: Attention Junction",
+      "props": {
+        "stop": "{{stop.name}}",
+        "stamp": "{{stop.stamp}}",
+        "number": "{{episode.number}}",
+        "stampAt": "c01@stamp"
+      }
+    },
+    {
+      "id": "hook",
+      "kind": "hook",
+      "component": "BigIdea",
+      "title": "Same word, two meanings",
+      "props": {
+        "kicker": "Episode {{episode.number}}",
+        "text": "“Bank” has two meanings. The words around it decide which one you get.",
+        "highlight": [
+          "words",
+          "around"
+        ]
+      }
+    },
+    {
+      "id": "route",
+      "kind": "routeMap",
+      "component": "RouteMap",
+      "title": "Route map",
+      "props": {
+        "current": "{{episode.id}}",
+        "highlightAt": "c05@here"
+      }
+    },
+    {
+      "id": "bank",
+      "kind": "core",
+      "component": "AttentionArcs",
+      "title": "Which bank?",
+      "props": {
+        "kicker": "The problem",
+        "title": "One word, two meanings",
+        "sentences": [
+          {
+            "words": [
+              "I",
+              "sat",
+              "on",
+              "the",
+              "bank",
+              "of",
+              "the",
+              "river"
+            ],
+            "focus": 4,
+            "weights": [
+              0.04,
+              0.16,
+              0.08,
+              0.03,
+              0,
+              0.1,
+              0.04,
+              0.55
+            ],
+            "at": "c07",
+            "note": "“bank” looks hardest at “river”: the riverside"
+          },
+          {
+            "words": [
+              "I",
+              "paid",
+              "cash",
+              "into",
+              "the",
+              "bank"
+            ],
+            "focus": 5,
+            "weights": [
+              0.06,
+              0.28,
+              0.46,
+              0.14,
+              0.06,
+              0
+            ],
+            "at": "c08",
+            "note": "Now it looks at “cash” and “paid”: the money kind"
+          }
+        ]
+      }
+    },
+    {
+      "id": "attention",
+      "kind": "core",
+      "component": "Definition",
+      "title": "What attention is",
+      "props": {
+        "kicker": "The big idea",
+        "term": "Attention",
+        "definition": "Each word looks at every other word in the prompt, decides how much each one matters to it, and blends in their meaning.",
+        "example": "“bank” + a lot of “river” = riverbank",
+        "analogy": "At a busy junction, every traveller listens only for the announcements that matter to them."
+      }
+    },
+    {
+      "id": "prompt",
+      "kind": "core",
+      "component": "AttentionArcs",
+      "title": "Our prompt, with attention",
+      "props": {
+        "kicker": "Our running prompt",
+        "title": "What does “poem” pay attention to?",
+        "sentences": [
+          {
+            "words": [
+              "Write",
+              "a",
+              "short",
+              "poem",
+              "about",
+              "the",
+              "rain"
+            ],
+            "focus": 3,
+            "weights": [
+              0.18,
+              0.04,
+              0.34,
+              0,
+              0.1,
+              0.04,
+              0.3
+            ],
+            "at": "c13",
+            "note": "What kind of poem? Short. About what? Rain."
+          }
+        ]
+      }
+    },
+    {
+      "id": "quiz",
+      "kind": "core",
+      "component": "Quiz",
+      "title": "Pause and predict: what is “it”?",
+      "props": {
+        "question": "“The animal didn't cross the street because it was too tired.” What is “it”?",
+        "options": [
+          "the animal",
+          "the street",
+          "the crossing"
+        ],
+        "answer": 0,
+        "revealAt": "c17@answer",
+        "explain": "Streets don't get tired. Animals do."
+      }
+    },
+    {
+      "id": "it",
+      "kind": "core",
+      "component": "AttentionArcs",
+      "title": "How the model finds “it”",
+      "short": true,
+      "shortTitle": "How AI works out what “it” means",
+      "props": {
+        "kicker": "Following “it”",
+        "title": "One word changes where “it” looks",
+        "sentences": [
+          {
+            "words": [
+              "The",
+              "animal",
+              "didn't",
+              "cross",
+              "the",
+              "street",
+              "because",
+              "it",
+              "was",
+              "too",
+              "tired"
+            ],
+            "focus": 7,
+            "weights": [
+              0.03,
+              0.5,
+              0.04,
+              0.05,
+              0.02,
+              0.1,
+              0.04,
+              0,
+              0.04,
+              0.03,
+              0.15
+            ],
+            "at": "c18",
+            "note": "“tired” pulls “it” towards “animal”"
+          },
+          {
+            "words": [
+              "The",
+              "animal",
+              "didn't",
+              "cross",
+              "the",
+              "street",
+              "because",
+              "it",
+              "was",
+              "too",
+              "wide"
+            ],
+            "focus": 7,
+            "weights": [
+              0.03,
+              0.1,
+              0.04,
+              0.05,
+              0.02,
+              0.5,
+              0.04,
+              0,
+              0.04,
+              0.03,
+              0.15
+            ],
+            "at": "c19",
+            "note": "“wide” pulls “it” towards “street”"
+          }
+        ]
+      }
+    },
+    {
+      "id": "how",
+      "kind": "core",
+      "component": "Steps",
+      "title": "How attention works",
+      "props": {
+        "kicker": "Under the hood, gently",
+        "title": "Four small steps, for every word",
+        "steps": [
+          {
+            "label": "Ask",
+            "detail": "query: what am I looking for?",
+            "at": "c22"
+          },
+          {
+            "label": "Match",
+            "detail": "key: compare with every word's label",
+            "at": "c23"
+          },
+          {
+            "label": "Weigh",
+            "detail": "turn the matches into percentages",
+            "at": "c24"
+          },
+          {
+            "label": "Blend",
+            "detail": "value: mix in their meanings",
+            "at": "c25"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heads",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Many heads at once",
+      "props": {
+        "kicker": "Attention heads",
+        "title": "Many heads look at the same sentence at once",
+        "items": [
+          {
+            "text": "One head may follow grammar: who did what"
+          },
+          {
+            "text": "Another may link “it” to the thing it refers to"
+          },
+          {
+            "text": "Another may just watch the neighbouring words"
+          }
+        ]
+      }
+    },
+    {
+      "id": "transformer",
+      "kind": "core",
+      "component": "Steps",
+      "title": "A transformer",
+      "props": {
+        "kicker": "The transformer",
+        "title": "A transformer is a stack of layers",
+        "steps": [
+          {
+            "label": "Vectors in",
+            "detail": "from Vector Valley"
+          },
+          {
+            "label": "Attention",
+            "detail": "words look at each other"
+          },
+          {
+            "label": "Feed-forward",
+            "detail": "each word thinks on its own"
+          },
+          {
+            "label": "Repeat",
+            "detail": "dozens of layers deep"
+          }
+        ]
+      }
+    },
+    {
+      "id": "context",
+      "kind": "core",
+      "component": "Definition",
+      "title": "The context window",
+      "props": {
+        "kicker": "How far it can see",
+        "term": "Context window",
+        "definition": "The most tokens the model can look at in one go: your prompt, the chat so far, and its own answer.",
+        "example": "Early chatbots: a few thousand tokens. Today: often hundreds of thousands.",
+        "analogy": "A desk: only what fits on the desk can be read at once."
+      }
+    },
+    {
+      "id": "middle",
+      "kind": "core",
+      "component": "BarChart",
+      "title": "Lost in the middle",
+      "props": {
+        "kicker": "Lost in the middle",
+        "title": "Facts in the middle of long prompts get missed more",
+        "unit": "% found",
+        "bars": [
+          {
+            "label": "At the start",
+            "value": 75
+          },
+          {
+            "label": "In the middle",
+            "value": 55
+          },
+          {
+            "label": "At the end",
+            "value": 70
+          }
+        ],
+        "note": "Illustrative, after a 2023 study; newer models do better"
+      }
+    },
+    {
+      "id": "tryIt",
+      "kind": "tryIt",
+      "component": "TryIt",
+      "title": "Try it yourself",
+      "props": {
+        "steps": [
+          {
+            "text": "Ask a chatbot: “I saw her duck. What does that mean?”",
+            "at": "c42"
+          },
+          {
+            "text": "Now add context: “I saw her duck behind the wall.” Ask again.",
+            "at": "c43"
+          }
+        ],
+        "chat": "I saw her duck. What does that mean?"
+      }
+    },
+    {
+      "id": "myth",
+      "kind": "myth",
+      "component": "MythVsReality",
+      "title": "Myth vs reality: does it read word by word?",
+      "short": true,
+      "shortTitle": "Does AI read your prompt word by word?",
+      "props": {
+        "myth": "It reads your prompt one word at a time, left to right",
+        "reality": "It reads the whole prompt at once, in parallel. Only the answer is written one token at a time.",
+        "revealAt": "c46@reality"
+      }
+    },
+    {
+      "id": "useIt",
+      "kind": "useIt",
+      "component": "UseIt",
+      "title": "Use it tomorrow",
+      "props": {
+        "tip": "{{stop.useIt}}",
+        "bullets": [
+          "Put the main instruction first",
+          "Repeat it at the end of very long prompts",
+          "Keep long reference text in the middle"
+        ],
+        "bulletsAt": "c48"
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recapNext",
+      "component": "RecapNext",
+      "title": "Recap and next stop",
+      "props": {
+        "nextStop": "{{next.stop}}",
+        "nextQuestion": "{{next.question}}",
+        "questionAt": "c51@question"
+      }
+    }
+  ]
+}

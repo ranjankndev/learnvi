@@ -161,7 +161,8 @@
       "topic": "Attention",
       "question": "How does it understand the whole sentence, not just single words?",
       "tryIt": "A pause-and-guess quiz: what does it mean?",
-      "useIt": "Put key instructions at the start or end of long prompts"
+      "useIt": "Put key instructions at the start or end of long prompts",
+      "folder": "ep05-attention-junction"
     },
     {
       "id": "ep06",
