@@ -9,6 +9,7 @@ import { PassportStamp, RecapNext, RouteMap, TitleHook } from "./journey";
 import { BpeMerge, TextToNumbers, ThreeOptions, TokenBlocks, WhyItMatters } from "./teach";
 import { Blooper, ChatStream, MythVsReality, TryIt, UseIt } from "./recurring";
 import { KIT_COMPONENTS } from "../kit/scenes";
+import { MeaningMap } from "./maps";
 
 export const COMPONENTS: Record<string, React.FC<SegProps>> = {
   // general-purpose scene kit (remotion/kit): usable by any series, validated by kit/specs.ts
@@ -16,7 +17,7 @@ export const COMPONENTS: Record<string, React.FC<SegProps>> = {
   // custom scenes for the press-enter series
   PassportStamp, TitleHook, RouteMap, RecapNext,
   TextToNumbers, ThreeOptions, BpeMerge, TokenBlocks, WhyItMatters,
-  TryIt, Blooper, MythVsReality, UseIt, ChatStream,
+  TryIt, Blooper, MythVsReality, UseIt, ChatStream, MeaningMap,
 };
 
 /** Shown for a component name that isn't registered yet, so a new episode still previews. */

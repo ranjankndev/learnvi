@@ -64,7 +64,8 @@ const Step: React.FC<{ s: { text: string; at: string }; i: number; frame: number
 };
 
 /** A funny model mistake, replayed as a chat, with a glitch on the strange reply. */
-export const Blooper: React.FC<SegProps> = ({ prompt, reply, replyAt, year, token }) => {
+export const Blooper: React.FC<SegProps> = ({ prompt, reply, replyAt, year, token,
+  label = "A GLITCH TOKEN", explain = "In the vocabulary, but almost never seen in training. The model had no idea what it meant.", quoted = true }) => {
   const frame = useCurrentFrame();
   const at = useMark(replyAt);
   const glitch = at !== undefined && frame >= at && frame < at + 18;
@@ -73,9 +74,9 @@ export const Blooper: React.FC<SegProps> = ({ prompt, reply, replyAt, year, toke
     <>
       <div style={{ position: "absolute", left: 110, top: 110, ...enter(frame, 0) }}><Ribbon color={C.stamp} style={{ color: C.text }}>AI BLOOPER</Ribbon></div>
       <div style={{ position: "absolute", left: 110, top: 290, width: 860, ...enter(frame, 10) }}>
-        <div style={{ fontFamily: F.mono, fontSize: 26, color: C.mute, letterSpacing: 3 }}>{year} · A GLITCH TOKEN</div>
-        <div style={{ fontFamily: F.mono, fontWeight: 700, fontSize: 64, color: C.sun, margin: "16px 0 26px" }}>“{String(token).replace(/^ /, "␣")}”</div>
-        <div style={{ fontFamily: F.body, fontSize: 38, color: C.text, lineHeight: 1.35 }}>In the vocabulary, but almost never seen in training. The model had no idea what it meant.</div>
+        <div style={{ fontFamily: F.mono, fontSize: 26, color: C.mute, letterSpacing: 3 }}>{year} · {label}</div>
+        <div style={{ fontFamily: F.mono, fontWeight: 700, fontSize: String(token).length > 22 ? 48 : 64, color: C.sun, margin: "16px 0 26px", lineHeight: 1.2 }}>{quoted ? `“${String(token).replace(/^ /, "␣")}”` : token}</div>
+        <div style={{ fontFamily: F.body, fontSize: 38, color: C.text, lineHeight: 1.35 }}>{explain}</div>
       </div>
       <div style={{ position: "absolute", right: 170, top: 150, ...enter(frame, 14, 20, 80) }}>
         <Phone>

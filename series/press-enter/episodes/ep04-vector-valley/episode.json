@@ -1,0 +1,342 @@
+{
+  "id": "ep04",
+  "thumbnail": {
+    "headline": "How AI knows rain is like storm",
+    "big": "king − man + woman"
+  },
+  "tags": [
+    "embeddings",
+    "word vectors",
+    "semantic search",
+    "how LLMs work",
+    "meaning space"
+  ],
+  "segments": [
+    {
+      "id": "passport",
+      "kind": "passport",
+      "component": "PassportStamp",
+      "title": "Next stop: Vector Valley",
+      "props": {
+        "stop": "{{stop.name}}",
+        "stamp": "{{stop.stamp}}",
+        "number": "{{episode.number}}",
+        "stampAt": "c01@stamp"
+      }
+    },
+    {
+      "id": "hook",
+      "kind": "hook",
+      "component": "BigIdea",
+      "title": "King minus man plus woman",
+      "props": {
+        "kicker": "Episode {{episode.number}}",
+        "text": "King − man + woman = queen. Meaning can live inside numbers.",
+        "highlight": [
+          "queen.",
+          "numbers."
+        ]
+      }
+    },
+    {
+      "id": "route",
+      "kind": "routeMap",
+      "component": "RouteMap",
+      "title": "Route map",
+      "props": {
+        "current": "{{episode.id}}",
+        "highlightAt": "c05@here"
+      }
+    },
+    {
+      "id": "idtovec",
+      "kind": "core",
+      "component": "Steps",
+      "title": "From ID to vector",
+      "props": {
+        "kicker": "From Token City",
+        "title": "From a token ID to a vector",
+        "steps": [
+          {
+            "label": "Token",
+            "detail": "“ rain”"
+          },
+          {
+            "label": "ID",
+            "detail": "a number, like 4,812"
+          },
+          {
+            "label": "Look up",
+            "detail": "row 4,812 of a giant table"
+          },
+          {
+            "label": "Vector",
+            "detail": "hundreds of numbers"
+          }
+        ]
+      }
+    },
+    {
+      "id": "map",
+      "kind": "core",
+      "component": "MeaningMap",
+      "title": "A map of meaning",
+      "short": true,
+      "shortTitle": "How AI puts words on a map of meaning",
+      "props": {
+        "kicker": "Meaning space",
+        "title": "Imagine every word on a map",
+        "groups": [
+          {
+            "label": "Animals",
+            "at": "c12",
+            "points": [
+              {
+                "word": "cat",
+                "x": 10,
+                "y": 30
+              },
+              {
+                "word": "dog",
+                "x": 24,
+                "y": 18
+              },
+              {
+                "word": "horse",
+                "x": 18,
+                "y": 46
+              }
+            ]
+          },
+          {
+            "label": "Weather",
+            "at": "c13",
+            "points": [
+              {
+                "word": "rain",
+                "x": 68,
+                "y": 34
+              },
+              {
+                "word": "storm",
+                "x": 88,
+                "y": 16
+              },
+              {
+                "word": "cloud",
+                "x": 84,
+                "y": 50
+              }
+            ]
+          },
+          {
+            "label": "Food",
+            "at": "c14",
+            "points": [
+              {
+                "word": "banana",
+                "x": 38,
+                "y": 84
+              },
+              {
+                "word": "apple",
+                "x": 52,
+                "y": 92
+              },
+              {
+                "word": "bread",
+                "x": 60,
+                "y": 76
+              }
+            ]
+          }
+        ],
+        "links": [
+          {
+            "from": "rain",
+            "to": "storm",
+            "label": "close",
+            "at": "c15"
+          },
+          {
+            "from": "rain",
+            "to": "banana",
+            "label": "far",
+            "good": false,
+            "at": "c16"
+          }
+        ]
+      }
+    },
+    {
+      "id": "similar",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Measuring closeness",
+      "props": {
+        "kicker": "Similarity",
+        "term": "Similarity",
+        "definition": "How close two word vectors are, usually measured by the angle between them. This is called cosine similarity.",
+        "example": "rain · storm: high   rain · banana: low",
+        "analogy": "Two arrows pointing almost the same way, or in very different directions."
+      }
+    },
+    {
+      "id": "learned",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "How the map is learned",
+      "props": {
+        "kicker": "Learned, not written",
+        "title": "Nobody draws this map by hand",
+        "items": [
+          {
+            "text": "Words used in similar sentences get nudged closer"
+          },
+          {
+            "text": "“rain” and “storm” share neighbours: wet, cloud, umbrella"
+          },
+          {
+            "text": "After billions of examples, the map organises itself"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maths",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Word maths",
+      "props": {
+        "kicker": "Word maths",
+        "title": "Directions on the map carry meaning",
+        "items": [
+          {
+            "text": "king − man + woman ≈ queen"
+          },
+          {
+            "text": "Paris − France + Italy ≈ Rome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "position",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Knowing word order",
+      "props": {
+        "kicker": "Word order",
+        "term": "Position",
+        "definition": "Extra numbers mixed into each token's vector, saying where it sits in the sentence.",
+        "example": "“dog bites man” ≠ “man bites dog”",
+        "analogy": "Seat numbers on a train ticket: same passengers, different seats, different trip."
+      }
+    },
+    {
+      "id": "search",
+      "kind": "core",
+      "component": "Compare",
+      "title": "Search by meaning",
+      "props": {
+        "kicker": "Where else you'll meet them",
+        "title": "Keyword search versus meaning search",
+        "columns": [
+          {
+            "title": "Keyword search",
+            "items": [
+              "finds the exact words",
+              "“car” misses “vehicle”"
+            ],
+            "tone": "neutral"
+          },
+          {
+            "title": "Meaning search",
+            "items": [
+              "finds similar meanings",
+              "“car” finds “vehicle”, “sedan”"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Embeddings power meaning search, and RAG at our final stop"
+        }
+      }
+    },
+    {
+      "id": "tryIt",
+      "kind": "tryIt",
+      "component": "TryIt",
+      "title": "Try it yourself",
+      "props": {
+        "steps": [
+          {
+            "text": "Guess: which is closest in meaning to “rain”: umbrella, storm or Tuesday?",
+            "at": "c34"
+          },
+          {
+            "text": "Ask a chatbot to rank them, and to explain why.",
+            "at": "c35"
+          }
+        ],
+        "chat": "Rank by closeness to “rain”: umbrella, storm, Tuesday"
+      }
+    },
+    {
+      "id": "blooper",
+      "kind": "blooper",
+      "component": "Blooper",
+      "title": "AI blooper: word maths gone wrong",
+      "props": {
+        "year": 2016,
+        "label": "WORD MATHS GONE WRONG",
+        "quoted": false,
+        "token": "man : programmer :: woman : ?",
+        "explain": "Researchers found word vectors had learned stereotypes from the text they were trained on.",
+        "prompt": "man is to computer programmer as woman is to…",
+        "reply": "\"homemaker\"",
+        "replyAt": "c38@reply"
+      }
+    },
+    {
+      "id": "myth",
+      "kind": "myth",
+      "component": "MythVsReality",
+      "title": "Myth vs reality: does each number mean something?",
+      "short": true,
+      "shortTitle": "Does each number in an AI's brain mean one thing?",
+      "props": {
+        "myth": "Each number means one thing, like “is it wet?”",
+        "reality": "Meaning is spread across many numbers at once. A single number rarely means anything you could name.",
+        "revealAt": "c41@reality"
+      }
+    },
+    {
+      "id": "useIt",
+      "kind": "useIt",
+      "component": "UseIt",
+      "title": "Use it tomorrow",
+      "props": {
+        "tip": "{{stop.useIt}}",
+        "bullets": [
+          "Look for “AI search” in your notes app",
+          "Describe what you mean, not exact words",
+          "Try: “that article about saving electricity”"
+        ],
+        "bulletsAt": "c43"
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recapNext",
+      "component": "RecapNext",
+      "title": "Recap and next stop",
+      "props": {
+        "nextStop": "{{next.stop}}",
+        "nextQuestion": "{{next.question}}",
+        "questionAt": "c46@question"
+      }
+    }
+  ]
+}

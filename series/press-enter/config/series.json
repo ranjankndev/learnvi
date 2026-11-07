@@ -149,7 +149,8 @@
       "topic": "Embeddings",
       "question": "How does the model know rain is close to storm?",
       "tryIt": "A word-maths game: guess which words are closest",
-      "useIt": "Search your notes by meaning, not keywords"
+      "useIt": "Search your notes by meaning, not keywords",
+      "folder": "ep04-vector-valley"
     },
     {
       "id": "ep05",
