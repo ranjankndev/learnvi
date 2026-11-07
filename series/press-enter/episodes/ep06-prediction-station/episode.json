@@ -1,0 +1,374 @@
+{
+  "id": "ep06",
+  "thumbnail": {
+    "headline": "How AI picks every word",
+    "big": "next token?"
+  },
+  "tags": [
+    "next-token prediction",
+    "temperature",
+    "hallucination",
+    "how LLMs work",
+    "sampling"
+  ],
+  "segments": [
+    {
+      "id": "passport",
+      "kind": "passport",
+      "component": "PassportStamp",
+      "title": "Next stop: Prediction Station",
+      "props": {
+        "stop": "{{stop.name}}",
+        "stamp": "{{stop.stamp}}",
+        "number": "{{episode.number}}",
+        "stampAt": "c01@stamp"
+      }
+    },
+    {
+      "id": "hook",
+      "kind": "hook",
+      "component": "BigIdea",
+      "title": "One token at a time",
+      "props": {
+        "kicker": "Episode {{episode.number}}",
+        "text": "Every answer is written one token at a time, by guessing what comes next.",
+        "highlight": [
+          "one",
+          "token",
+          "guessing"
+        ]
+      }
+    },
+    {
+      "id": "route",
+      "kind": "routeMap",
+      "component": "RouteMap",
+      "title": "Route map",
+      "props": {
+        "current": "{{episode.id}}",
+        "highlightAt": "c05@here"
+      }
+    },
+    {
+      "id": "guess",
+      "kind": "core",
+      "component": "Quiz",
+      "title": "Pause and predict: the next word",
+      "props": {
+        "question": "“The cat sat on the …” What word comes next?",
+        "options": [
+          "mat",
+          "moon",
+          "piano"
+        ],
+        "answer": 0,
+        "revealAt": "c07@answer",
+        "explain": "You just did next-token prediction."
+      }
+    },
+    {
+      "id": "predict",
+      "kind": "core",
+      "component": "NextToken",
+      "title": "Writing the rain poem",
+      "short": true,
+      "shortTitle": "Watch AI write a poem, one token at a time",
+      "props": {
+        "kicker": "Our running prompt",
+        "title": "Writing the poem, one token at a time",
+        "prompt": "Write a short poem about the rain",
+        "steps": [
+          {
+            "options": [
+              {
+                "token": "Soft",
+                "p": 0.22
+              },
+              {
+                "token": "The",
+                "p": 0.18
+              },
+              {
+                "token": "Rain",
+                "p": 0.15
+              },
+              {
+                "token": "Silver",
+                "p": 0.09
+              },
+              {
+                "token": "Drops",
+                "p": 0.07
+              }
+            ],
+            "pick": 0,
+            "at": "c09"
+          },
+          {
+            "options": [
+              {
+                "token": " drops",
+                "p": 0.31
+              },
+              {
+                "token": " rain",
+                "p": 0.24
+              },
+              {
+                "token": " whispers",
+                "p": 0.12
+              },
+              {
+                "token": " grey",
+                "p": 0.05
+              }
+            ],
+            "pick": 0,
+            "at": "c10"
+          },
+          {
+            "options": [
+              {
+                "token": " on",
+                "p": 0.28
+              },
+              {
+                "token": " fall",
+                "p": 0.22
+              },
+              {
+                "token": " tap",
+                "p": 0.17
+              },
+              {
+                "token": " of",
+                "p": 0.1
+              }
+            ],
+            "pick": 2,
+            "at": "c11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "loop",
+      "kind": "core",
+      "component": "Steps",
+      "title": "The writing loop",
+      "props": {
+        "kicker": "The loop",
+        "title": "The same four steps, for every single token",
+        "steps": [
+          {
+            "label": "Read",
+            "detail": "the prompt and the answer so far"
+          },
+          {
+            "label": "Score",
+            "detail": "a chance for every token it knows"
+          },
+          {
+            "label": "Pick",
+            "detail": "choose one token"
+          },
+          {
+            "label": "Add & repeat",
+            "detail": "until it picks a stop token"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sampling",
+      "kind": "core",
+      "component": "Definition",
+      "title": "Sampling",
+      "props": {
+        "kicker": "Why not always the top one?",
+        "term": "Sampling",
+        "definition": "Picking the next token at random, weighted by its chance, instead of always taking the top choice.",
+        "example": "“drops” 31%, “rain” 24%: either one could be picked",
+        "analogy": "Rolling a weighted die: the big faces come up most often, but not every time."
+      }
+    },
+    {
+      "id": "temperature",
+      "kind": "core",
+      "component": "Temperature",
+      "title": "Temperature",
+      "props": {
+        "kicker": "The creativity dial",
+        "title": "Temperature reshapes the chances",
+        "context": "Soft drops",
+        "options": [
+          {
+            "token": " on",
+            "p": 0.28
+          },
+          {
+            "token": " fall",
+            "p": 0.22
+          },
+          {
+            "token": " tap",
+            "p": 0.17
+          },
+          {
+            "token": " of",
+            "p": 0.1
+          },
+          {
+            "token": " dance",
+            "p": 0.04
+          }
+        ],
+        "settings": [
+          {
+            "t": 1.0,
+            "label": "normal",
+            "at": "c21"
+          },
+          {
+            "t": 0.3,
+            "label": "low: safe",
+            "at": "c22"
+          },
+          {
+            "t": 1.8,
+            "label": "high: wild",
+            "at": "c23"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hallucinate",
+      "kind": "core",
+      "component": "Bullets",
+      "title": "Why it makes things up",
+      "props": {
+        "kicker": "Hallucinations",
+        "title": "Why it sometimes makes things up",
+        "items": [
+          {
+            "text": "It predicts what sounds right, not what is true"
+          },
+          {
+            "text": "It only says “I don't know” if it learned to"
+          },
+          {
+            "text": "Rare facts get blurry: dates, numbers, citations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "safer",
+      "kind": "core",
+      "component": "Compare",
+      "title": "When to double-check",
+      "props": {
+        "kicker": "Staying safe",
+        "title": "Where made-up answers hide",
+        "columns": [
+          {
+            "title": "Riskier",
+            "items": [
+              "exact dates and numbers",
+              "quotes and citations",
+              "very recent or niche facts"
+            ],
+            "tone": "bad"
+          },
+          {
+            "title": "Safer",
+            "items": [
+              "give it the source text",
+              "ask it to quote the source",
+              "turn on web search"
+            ],
+            "tone": "good"
+          }
+        ],
+        "verdict": {
+          "text": "Fluent is not the same as true: check anything that matters"
+        }
+      }
+    },
+    {
+      "id": "tryIt",
+      "kind": "tryIt",
+      "component": "TryIt",
+      "title": "Try it yourself",
+      "props": {
+        "steps": [
+          {
+            "text": "Ask for the rain poem three times, saying “be very predictable”.",
+            "at": "c38"
+          },
+          {
+            "text": "Now ask three times with “be wildly creative”. Compare.",
+            "at": "c39"
+          }
+        ],
+        "chat": "Write a short poem about the rain. Be very predictable."
+      }
+    },
+    {
+      "id": "blooper",
+      "kind": "blooper",
+      "component": "Blooper",
+      "title": "AI blooper: cases that never existed",
+      "props": {
+        "year": 2023,
+        "label": "MADE-UP COURT CASES",
+        "quoted": false,
+        "token": "Varghese v. China Southern Airlines",
+        "explain": "Lawyers filed a brief citing cases a chatbot invented. The court fined them $5,000.",
+        "prompt": "Find past cases that support my client's claim…",
+        "reply": "Varghese v. China Southern Airlines, 2019…",
+        "replyAt": "c32@reply"
+      }
+    },
+    {
+      "id": "myth",
+      "kind": "myth",
+      "component": "MythVsReality",
+      "title": "Myth vs reality: does it look answers up?",
+      "short": true,
+      "shortTitle": "Does ChatGPT look up answers in a database?",
+      "props": {
+        "myth": "It looks the answer up in a giant database",
+        "reality": "There is no database of answers. Each token is predicted fresh, from patterns learned in training.",
+        "revealAt": "c42@reality"
+      }
+    },
+    {
+      "id": "useIt",
+      "kind": "useIt",
+      "component": "UseIt",
+      "title": "Use it tomorrow",
+      "props": {
+        "tip": "{{stop.useIt}}",
+        "bullets": [
+          "Facts, code, summaries: low",
+          "Ideas, names, stories: high",
+          "No dial? Ask for “precise” or “wild”"
+        ],
+        "bulletsAt": "c44"
+      }
+    },
+    {
+      "id": "recap",
+      "kind": "recapNext",
+      "component": "RecapNext",
+      "title": "Recap and next stop",
+      "props": {
+        "nextStop": "{{next.stop}}",
+        "nextQuestion": "{{next.question}}",
+        "questionAt": "c47@question"
+      }
+    }
+  ]
+}

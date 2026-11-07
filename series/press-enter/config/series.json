@@ -173,7 +173,8 @@
       "topic": "Next-token prediction",
       "question": "How does it pick each word, and why does it sometimes make things up?",
       "tryIt": "Write the same poem at low and high creativity settings",
-      "useIt": "Low temperature for facts, high for brainstorming"
+      "useIt": "Low temperature for facts, high for brainstorming",
+      "folder": "ep06-prediction-station"
     },
     {
       "id": "ep07",
