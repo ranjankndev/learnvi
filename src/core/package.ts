@@ -7,7 +7,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import { captionLines } from "../../remotion/captions.js";
-import { fillTemplate, sha, templateContext, type EpisodeCtx } from "./project.js";
+import { fillTemplate, missingOptional, sha, templateContext, type EpisodeCtx } from "./project.js";
 import { readLock } from "./audio/pipeline.js";
 import { mixAt } from "./audio/tools.js";
 import { outDir, type Timeline } from "./timeline.js";
@@ -53,7 +53,8 @@ export function writeYoutube(ctx: EpisodeCtx, tl: Timeline) {
   const vars = templateContext(ctx);
   const ch = chapters(tl).map((c) => `${clock(c.t)} ${c.title}`).join("\n");
   const title = fillTemplate(y.title, vars, "youtube.title");
-  const description = y.description.map((l) => (l.trim() === "{{chapters}}" ? ch : fillTemplate(l, vars, "youtube.description"))).join("\n");
+  // a line with a missing optional value ({{next.name?}}) is dropped entirely
+  const description = y.description.filter((l) => !missingOptional(l, vars)).map((l) => (l.trim() === "{{chapters}}" ? ch : fillTemplate(l, vars, "youtube.description"))).join("\n");
   const tags = [...new Set([...y.tags, ...ctx.episode.tags])];
   const warn = title.length > 100 ? `\n[!] title is ${title.length} characters; YouTube allows 100\n` : "";
   const file = path.join(outDir(ctx), "youtube.txt");

@@ -39,7 +39,7 @@
       "Chapters",
       "{{chapters}}",
       "",
-      "Next stop: {{next.name}}. {{next.question}}",
+      "Next stop: {{next.name?}}. {{next.question?}}",
       "",
       "More at https://learnvi.in"
     ],

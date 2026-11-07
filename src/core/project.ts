@@ -120,10 +120,19 @@ export function templateContext(ctx: EpisodeCtx) {
 const FILTERS: Record<string, (s: string) => string> = {
   upper: (s) => s.toUpperCase(), lower: (s) => s.toLowerCase(), pad2: (s) => s.padStart(2, "0"),
 };
-/** {{a.b}} values, with optional filters: {{episode.number|pad2}}, {{stop.name|upper}} */
+const lookup = (p: string, vars: Record<string, unknown>) => p.split(".").reduce<any>((o, k) => (o == null ? undefined : o[k]), vars);
+
+/** True if the text uses an optional value ({{next.name?}}) that is missing, e.g. "next" on the last episode. */
+export function missingOptional(text: string, vars: Record<string, unknown>): boolean {
+  return [...text.matchAll(/\{\{\s*([\w.]+)\?((?:\|\w+)*)\s*\}\}/g)].some((m) => lookup(m[1], vars) == null);
+}
+
+/** {{a.b}} values, with optional filters: {{episode.number|pad2}}, {{stop.name|upper}}.
+ *  {{a.b?}} marks a value that may be missing: it fills as empty text instead of failing. */
 export function fillTemplate(text: string, vars: Record<string, unknown>, where: string): string {
-  return text.replace(/\{\{\s*([\w.]+)((?:\|\w+)*)\s*\}\}/g, (_, p: string, f: string) => {
-    const v = p.split(".").reduce<any>((o, k) => (o == null ? undefined : o[k]), vars);
+  return text.replace(/\{\{\s*([\w.]+)(\?)?((?:\|\w+)*)\s*\}\}/g, (_, p: string, opt: string | undefined, f: string) => {
+    const v = lookup(p, vars);
+    if (v == null && opt) return "";
     if (v == null) throw new ConfigError(`${where}: unknown template value {{${p}}}`);
     return f.split("|").filter(Boolean).reduce((s, name) => {
       if (!FILTERS[name]) throw new ConfigError(`${where}: unknown filter |${name} (known: ${Object.keys(FILTERS).join(", ")})`);
