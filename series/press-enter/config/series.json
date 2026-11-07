@@ -125,7 +125,8 @@
       "topic": "Training",
       "question": "Where did the model's knowledge and manners come from?",
       "tryIt": "Ask about last week's news, with and without web search",
-      "useIt": "Don't trust recent facts unless search is on"
+      "useIt": "Don't trust recent facts unless search is on",
+      "folder": "ep02-library-town"
     },
     {
       "id": "ep03",

@@ -1,0 +1,70 @@
+{
+  "id": "ep02",
+  "thumbnail": { "headline": "How AI learned to talk", "big": "read · practise · feedback" },
+  "tags": ["how LLMs are trained", "pre-training", "instruction tuning", "RLHF", "knowledge cutoff"],
+  "segments": [
+    { "id": "passport", "kind": "passport", "component": "PassportStamp", "title": "Next stop: Library Town",
+      "props": { "stop": "{{stop.name}}", "stamp": "{{stop.stamp}}", "number": "{{episode.number}}", "stampAt": "c01@stamp" } },
+
+    { "id": "hook", "kind": "hook", "component": "BigIdea", "title": "A strange autocomplete",
+      "props": { "kicker": "Episode {{episode.number}}", "text": "Reading the internet made it a strange autocomplete, not a helpful assistant.", "highlight": ["strange", "autocomplete,"] } },
+
+    { "id": "route", "kind": "routeMap", "component": "RouteMap", "title": "Route map",
+      "props": { "current": "{{episode.id}}", "highlightAt": "c05@here" } },
+
+    { "id": "school", "kind": "core", "component": "Steps", "title": "Three stages of school",
+      "props": { "kicker": "The model's school", "title": "Three stages of training", "steps": [
+        { "label": "Reading", "detail": "pre-training on huge amounts of text" },
+        { "label": "Practice", "detail": "instruction tuning on worked examples" },
+        { "label": "Feedback", "detail": "learning which answers people prefer" } ] } },
+
+    { "id": "pretrain", "kind": "core", "component": "Definition", "title": "Pre-training",
+      "props": { "kicker": "Stage 1 · Reading", "term": "Pre-training", "definition": "Reading a huge amount of text while playing one game, over and over: predict the next word.",
+        "example": "The capital of France is … → Paris", "analogy": "A student who reads every book in the library." } },
+
+    { "id": "stores", "kind": "core", "component": "Compare", "title": "What the model keeps",
+      "props": { "kicker": "What it keeps", "title": "Patterns, not pages", "columns": [
+        { "title": "Not a copy", "items": ["no saved web pages", "can't look up what it read"], "tone": "bad" },
+        { "title": "Patterns", "items": ["billions of numbers, tuned while reading", "grammar, facts, styles, ways of reasoning"], "tone": "good" } ],
+        "verdict": { "text": "Patterns, not pages" } } },
+
+    { "id": "base", "kind": "core", "component": "Chat", "title": "A base model's answer", "short": true,
+      "shortTitle": "Why raw AI answers questions with more questions",
+      "props": { "kicker": "Before practice", "title": "A base model just continues the text", "messages": [
+        { "role": "user", "text": "What is the capital of France?" },
+        { "role": "ai", "text": "What is the capital of Germany? What is the capital of Italy? What is the capital of Spain?" } ] } },
+
+    { "id": "instruct", "kind": "core", "component": "Definition", "title": "Instruction tuning",
+      "props": { "kicker": "Stage 2 · Practice", "term": "Instruction tuning", "definition": "More training on many examples of instructions paired with good answers, so the model learns to respond like an assistant.",
+        "example": "“Summarise this…” → a clear, short summary", "analogy": "Practising past exam papers, with model answers to copy." } },
+
+    { "id": "feedback", "kind": "core", "component": "Steps", "title": "Learning from feedback",
+      "props": { "kicker": "Stage 3 · Feedback", "title": "Learning which answers people prefer", "steps": [
+        { "label": "Generate", "detail": "two answers to the same prompt" },
+        { "label": "Compare", "detail": "people pick the better one" },
+        { "label": "Learn", "detail": "a scorer learns their taste" },
+        { "label": "Improve", "detail": "the model aims for higher scores" } ] } },
+
+    { "id": "cutoff", "kind": "core", "component": "Bullets", "title": "The knowledge cutoff",
+      "props": { "kicker": "A catch", "title": "Why it doesn't know yesterday's news", "items": [
+        { "text": "Its reading stops at a cutoff date" },
+        { "text": "Anything newer was never in its library" },
+        { "text": "Unless the app adds a web search" } ] } },
+
+    { "id": "tryIt", "kind": "tryIt", "component": "TryIt", "title": "Try it yourself",
+      "props": { "steps": [
+        { "text": "With web search off, ask: what happened in the news last week?", "at": "c32" },
+        { "text": "Turn search on and ask again. Compare the two answers.", "at": "c33" } ],
+        "chat": "What happened in the news last week?" } },
+
+    { "id": "myth", "kind": "myth", "component": "MythVsReality", "title": "Myth vs reality: does it learn from my chats?", "short": true,
+      "shortTitle": "Does AI learn from your chats in real time?",
+      "props": { "myth": "It learns from my chats in real time", "reality": "Its knowledge is fixed after training. Your chat is only short-term memory for that conversation.", "revealAt": "c36@reality" } },
+
+    { "id": "useIt", "kind": "useIt", "component": "UseIt", "title": "Use it tomorrow",
+      "props": { "tip": "{{stop.useIt}}", "bullets": ["Recent events? Turn search on", "Ask for sources and dates", "Double-check anything that changes fast"], "bulletsAt": "c38" } },
+
+    { "id": "recap", "kind": "recapNext", "component": "RecapNext", "title": "Recap and next stop",
+      "props": { "nextStop": "{{next.stop}}", "nextQuestion": "{{next.question}}", "questionAt": "c41@question" } }
+  ]
+}
