@@ -185,7 +185,8 @@
       "topic": "Beyond the model",
       "question": "Why is a chat app more than just the model?",
       "tryIt": "Tell it 'You are a pirate' and watch its personality change",
-      "useIt": "Write your own custom instructions"
+      "useIt": "Write your own custom instructions",
+      "folder": "ep07-arrivals-hall"
     }
   ]
 }

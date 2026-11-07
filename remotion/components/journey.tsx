@@ -30,13 +30,13 @@ export const PassportStamp: React.FC<SegProps> = ({ stop, stamp, number, stampAt
           <div style={{ fontFamily: F.body, fontSize: 24, color: C.inkSoft, marginTop: 18 }}>Carrying</div>
           <div style={{ fontFamily: F.display, fontWeight: 700, fontSize: 32, color: C.ink }}>“{tl.series.runningPrompt}”</div>
           <div style={{ borderTop: `2px dashed ${C.paperEdge}`, margin: "24px 0" }} />
-          <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: visited.length > 4 ? 8 : 14, flexWrap: "wrap" }}>
             {visited.map((s, i) => (
-              <div key={s.id} style={{ opacity: 0.55 }}><Stamp title={s.name.toUpperCase()} sub={`STOP ${String(s.number).padStart(2, "0")}`} size={0.55} rotate={i % 2 ? 8 : -6} color={i % 2 ? "#2d6f8c" : "#7a4fa0"} /></div>
+              <div key={s.id} style={{ opacity: 0.55 }}><Stamp title={s.name.toUpperCase()} sub={`STOP ${String(s.number).padStart(2, "0")}`} size={visited.length > 4 ? 0.42 : 0.55} rotate={i % 2 ? 8 : -6} color={i % 2 ? "#2d6f8c" : "#7a4fa0"} /></div>
             ))}
           </div>
           {at !== undefined && frame >= at - 1 && (
-            <div style={{ position: "absolute", left: 150, bottom: 70 }}>
+            <div style={{ position: "absolute", left: 150, bottom: visited.length > 4 ? 30 : 70 }}>
               <Stamp title={stamp} sub={`STOP ${String(n).padStart(2, "0")}`} p={p} size={String(stamp).length > 11 ? 0.95 : 1.25} />
             </div>
           )}
@@ -142,7 +142,7 @@ export const RecapNext: React.FC<SegProps> = ({ nextStop, nextQuestion, question
         <Paper style={{ width: 700, minHeight: 420, display: "flex", flexWrap: "wrap", gap: 18, alignContent: "flex-start" }}>
           {stamped.map((s, i) => (
             <div key={s.id} style={{ opacity: s.number === tl.stop.number ? 1 : 0.6 }}>
-              <Stamp title={s.name.toUpperCase()} sub={`STOP ${String(s.number).padStart(2, "0")}`} size={0.7} p={s.number === tl.stop.number ? p : 1} rotate={[-8, 6, -4, 9, -10, 5, -6][i % 7]} color={s.number === tl.stop.number ? C.stamp : ["#2d6f8c", "#7a4fa0"][i % 2]} />
+              <Stamp title={s.name.toUpperCase()} sub={`STOP ${String(s.number).padStart(2, "0")}`} size={stamped.length > 5 ? 0.56 : 0.7} p={s.number === tl.stop.number ? p : 1} rotate={[-8, 6, -4, 9, -10, 5, -6][i % 7]} color={s.number === tl.stop.number ? C.stamp : ["#2d6f8c", "#7a4fa0"][i % 2]} />
             </div>
           ))}
         </Paper>

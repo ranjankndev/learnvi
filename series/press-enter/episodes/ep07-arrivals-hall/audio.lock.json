@@ -1,0 +1,5202 @@
+{
+  "version": 1,
+  "episode": "ep07",
+  "order": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10",
+    "c11",
+    "c12",
+    "c13",
+    "c14",
+    "c15",
+    "c16",
+    "c17",
+    "c18",
+    "c19",
+    "c20",
+    "c21",
+    "c22",
+    "c23",
+    "c24",
+    "c25",
+    "c26",
+    "c27",
+    "c28",
+    "c29",
+    "c30",
+    "c31",
+    "c32",
+    "c33",
+    "c34",
+    "c35",
+    "c36",
+    "c37",
+    "c38",
+    "c39",
+    "c40",
+    "c41",
+    "c42",
+    "c43",
+    "c44",
+    "c45",
+    "c46",
+    "c47",
+    "c48",
+    "c49",
+    "c50",
+    "c51",
+    "c52",
+    "c53"
+  ],
+  "cues": {
+    "c01": {
+      "segment": "passport",
+      "display": "Final stop: Arrivals Hall! Passport out, one last time. Stamped.",
+      "spoken": "Final stop: Arrivals Hall! Passport out, one last time. Stamped.",
+      "textHash": "38eecc17a2db37bf",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a9c31dd5d2c1e40f.wav",
+      "duration": 4.215,
+      "marks": {
+        "stamp": 3.6
+      },
+      "words": [
+        {
+          "w": "Final",
+          "start": 0
+        },
+        {
+          "w": "stop:",
+          "start": 0.48
+        },
+        {
+          "w": "Arrivals",
+          "start": 0.92
+        },
+        {
+          "w": "Hall!",
+          "start": 1.6
+        },
+        {
+          "w": "Passport",
+          "start": 2
+        },
+        {
+          "w": "out,",
+          "start": 2.6
+        },
+        {
+          "w": "one",
+          "start": 2.78
+        },
+        {
+          "w": "last",
+          "start": 2.96
+        },
+        {
+          "w": "time.",
+          "start": 3.24
+        },
+        {
+          "w": "Stamped.",
+          "start": 3.6
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c02": {
+      "segment": "passport",
+      "display": "This is stop number 7 of seven. At Prediction Station, we watched the model write its answer one token at a time. Today, we step out of the model, into the app around it.",
+      "spoken": "This is stop number 7 of seven. At Prediction Station, we watched the model write its answer one token at a time. Today, we step out of the model, into the app around it.",
+      "textHash": "d754f8ab95806ee6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3b90ea2d6f0c47fb.wav",
+      "duration": 10.709,
+      "marks": {},
+      "words": [
+        {
+          "w": "This",
+          "start": 0
+        },
+        {
+          "w": "is",
+          "start": 0.24
+        },
+        {
+          "w": "stop",
+          "start": 0.547
+        },
+        {
+          "w": "number",
+          "start": 0.853
+        },
+        {
+          "w": "7",
+          "start": 1.16
+        },
+        {
+          "w": "of",
+          "start": 1.48
+        },
+        {
+          "w": "seven.",
+          "start": 1.68
+        },
+        {
+          "w": "At",
+          "start": 2.28
+        },
+        {
+          "w": "Prediction",
+          "start": 2.56
+        },
+        {
+          "w": "Station,",
+          "start": 3.16
+        },
+        {
+          "w": "we",
+          "start": 3.68
+        },
+        {
+          "w": "watched",
+          "start": 3.96
+        },
+        {
+          "w": "the",
+          "start": 4.24
+        },
+        {
+          "w": "model",
+          "start": 4.4
+        },
+        {
+          "w": "write",
+          "start": 4.8
+        },
+        {
+          "w": "its",
+          "start": 5.08
+        },
+        {
+          "w": "answer",
+          "start": 5.36
+        },
+        {
+          "w": "one",
+          "start": 5.72
+        },
+        {
+          "w": "token",
+          "start": 5.96
+        },
+        {
+          "w": "at",
+          "start": 6.44
+        },
+        {
+          "w": "a",
+          "start": 6.6
+        },
+        {
+          "w": "time.",
+          "start": 6.8
+        },
+        {
+          "w": "Today,",
+          "start": 7.4
+        },
+        {
+          "w": "we",
+          "start": 8
+        },
+        {
+          "w": "step",
+          "start": 8.28
+        },
+        {
+          "w": "out",
+          "start": 8.64
+        },
+        {
+          "w": "of",
+          "start": 8.76
+        },
+        {
+          "w": "the",
+          "start": 8.84
+        },
+        {
+          "w": "model,",
+          "start": 8.96
+        },
+        {
+          "w": "into",
+          "start": 9.44
+        },
+        {
+          "w": "the",
+          "start": 9.68
+        },
+        {
+          "w": "app",
+          "start": 9.88
+        },
+        {
+          "w": "around",
+          "start": 10.08
+        },
+        {
+          "w": "it.",
+          "start": 10.48
+        }
+      ],
+      "matchScore": 0.8
+    },
+    "c03": {
+      "segment": "hook",
+      "display": "Here's the last big idea of our trip. When you use ChatGPT, Claude, or Gemini, you're not talking to a bare model.",
+      "spoken": "Here's the last big idea of our trip. When you use ChatGPT, Claude, or Gemini, you're not talking to a bare model.",
+      "textHash": "408b217f12a87b07",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/34e7a95875298a8b.wav",
+      "duration": 7.457,
+      "marks": {},
+      "words": [
+        {
+          "w": "Here's",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.32
+        },
+        {
+          "w": "last",
+          "start": 0.48
+        },
+        {
+          "w": "big",
+          "start": 0.76
+        },
+        {
+          "w": "idea",
+          "start": 1.08
+        },
+        {
+          "w": "of",
+          "start": 1.48
+        },
+        {
+          "w": "our",
+          "start": 1.64
+        },
+        {
+          "w": "trip.",
+          "start": 1.84
+        },
+        {
+          "w": "When",
+          "start": 2.28
+        },
+        {
+          "w": "you",
+          "start": 2.48
+        },
+        {
+          "w": "use",
+          "start": 2.72
+        },
+        {
+          "w": "ChatGPT,",
+          "start": 3.5
+        },
+        {
+          "w": "Claude,",
+          "start": 4.28
+        },
+        {
+          "w": "or",
+          "start": 4.84
+        },
+        {
+          "w": "Gemini,",
+          "start": 5.04
+        },
+        {
+          "w": "you're",
+          "start": 5.68
+        },
+        {
+          "w": "not",
+          "start": 6
+        },
+        {
+          "w": "talking",
+          "start": 6.2
+        },
+        {
+          "w": "to",
+          "start": 6.52
+        },
+        {
+          "w": "a",
+          "start": 6.64
+        },
+        {
+          "w": "bare",
+          "start": 6.8
+        },
+        {
+          "w": "model.",
+          "start": 7.04
+        }
+      ],
+      "matchScore": 0.944
+    },
+    "c04": {
+      "segment": "hook",
+      "display": "The model is the engine. The chat app is the whole car built around it: the steering, the mirrors, the seatbelts, and the satnav.",
+      "spoken": "The model is the engine. The chat app is the whole car built around it: the steering, the mirrors, the seatbelts, and the satnav.",
+      "textHash": "008d1552e91ee077",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c91bcf9b9b0dc88d.wav",
+      "duration": 7.472,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "model",
+          "start": 0.16
+        },
+        {
+          "w": "is",
+          "start": 0.6
+        },
+        {
+          "w": "the",
+          "start": 0.76
+        },
+        {
+          "w": "engine.",
+          "start": 0.92
+        },
+        {
+          "w": "The",
+          "start": 1.6
+        },
+        {
+          "w": "chat",
+          "start": 1.92
+        },
+        {
+          "w": "app",
+          "start": 2.22
+        },
+        {
+          "w": "is",
+          "start": 2.52
+        },
+        {
+          "w": "the",
+          "start": 2.64
+        },
+        {
+          "w": "whole",
+          "start": 2.8
+        },
+        {
+          "w": "car",
+          "start": 3.04
+        },
+        {
+          "w": "built",
+          "start": 3.32
+        },
+        {
+          "w": "around",
+          "start": 3.64
+        },
+        {
+          "w": "it:",
+          "start": 4.04
+        },
+        {
+          "w": "the",
+          "start": 4.28
+        },
+        {
+          "w": "steering,",
+          "start": 4.48
+        },
+        {
+          "w": "the",
+          "start": 5.04
+        },
+        {
+          "w": "mirrors,",
+          "start": 5.28
+        },
+        {
+          "w": "the",
+          "start": 5.76
+        },
+        {
+          "w": "seatbelts,",
+          "start": 6.18
+        },
+        {
+          "w": "and",
+          "start": 6.6
+        },
+        {
+          "w": "the",
+          "start": 6.72
+        },
+        {
+          "w": "satnav.",
+          "start": 7.096
+        }
+      ],
+      "matchScore": 0.857
+    },
+    "c05": {
+      "segment": "route",
+      "display": "On the route map, we've passed every stop, and we're here, at Arrivals Hall, where we finally see the whole journey.",
+      "spoken": "On the route map, we've passed every stop, and we're here, at Arrivals Hall, where we finally see the whole journey.",
+      "textHash": "8ef70502fcd8f041",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1bcfcb7bdf386b3e.wav",
+      "duration": 6.211,
+      "marks": {
+        "here": 2.84
+      },
+      "words": [
+        {
+          "w": "On",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "route",
+          "start": 0.24
+        },
+        {
+          "w": "map,",
+          "start": 0.6
+        },
+        {
+          "w": "we've",
+          "start": 0.96
+        },
+        {
+          "w": "passed",
+          "start": 1.28
+        },
+        {
+          "w": "every",
+          "start": 1.68
+        },
+        {
+          "w": "stop,",
+          "start": 2
+        },
+        {
+          "w": "and",
+          "start": 2.44
+        },
+        {
+          "w": "we're",
+          "start": 2.64
+        },
+        {
+          "w": "here,",
+          "start": 2.84
+        },
+        {
+          "w": "at",
+          "start": 3.16
+        },
+        {
+          "w": "Arrivals",
+          "start": 3.44
+        },
+        {
+          "w": "Hall,",
+          "start": 4
+        },
+        {
+          "w": "where",
+          "start": 4.32
+        },
+        {
+          "w": "we",
+          "start": 4.52
+        },
+        {
+          "w": "finally",
+          "start": 4.68
+        },
+        {
+          "w": "see",
+          "start": 5.2
+        },
+        {
+          "w": "the",
+          "start": 5.36
+        },
+        {
+          "w": "whole",
+          "start": 5.52
+        },
+        {
+          "w": "journey.",
+          "start": 5.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c06": {
+      "segment": "stack",
+      "display": "Let's start with a surprise. When you type a message and press Enter, the app doesn't just send your message. It builds a whole package. Here's what the model actually sees.",
+      "spoken": "Let's start with a surprise. When you type a message and press Enter, the app doesn't just send your message. It builds a whole package. Here's what the model actually sees.",
+      "textHash": "80cb08834b0488a6",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/03f2bc69990ca74c.wav",
+      "duration": 9.884,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "start",
+          "start": 0.32
+        },
+        {
+          "w": "with",
+          "start": 0.64
+        },
+        {
+          "w": "a",
+          "start": 0.8
+        },
+        {
+          "w": "surprise.",
+          "start": 0.88
+        },
+        {
+          "w": "When",
+          "start": 1.64
+        },
+        {
+          "w": "you",
+          "start": 1.88
+        },
+        {
+          "w": "type",
+          "start": 2.08
+        },
+        {
+          "w": "a",
+          "start": 2.44
+        },
+        {
+          "w": "message",
+          "start": 2.56
+        },
+        {
+          "w": "and",
+          "start": 3.04
+        },
+        {
+          "w": "press",
+          "start": 3.2
+        },
+        {
+          "w": "Enter,",
+          "start": 3.48
+        },
+        {
+          "w": "the",
+          "start": 3.96
+        },
+        {
+          "w": "app",
+          "start": 4.18
+        },
+        {
+          "w": "doesn't",
+          "start": 4.4
+        },
+        {
+          "w": "just",
+          "start": 4.76
+        },
+        {
+          "w": "send",
+          "start": 4.96
+        },
+        {
+          "w": "your",
+          "start": 5.2
+        },
+        {
+          "w": "message.",
+          "start": 5.36
+        },
+        {
+          "w": "It",
+          "start": 5.92
+        },
+        {
+          "w": "builds",
+          "start": 6.16
+        },
+        {
+          "w": "a",
+          "start": 6.56
+        },
+        {
+          "w": "whole",
+          "start": 6.72
+        },
+        {
+          "w": "package.",
+          "start": 7.04
+        },
+        {
+          "w": "Here's",
+          "start": 7.6
+        },
+        {
+          "w": "what",
+          "start": 8.12
+        },
+        {
+          "w": "the",
+          "start": 8.28
+        },
+        {
+          "w": "model",
+          "start": 8.4
+        },
+        {
+          "w": "actually",
+          "start": 8.84
+        },
+        {
+          "w": "sees.",
+          "start": 9.44
+        }
+      ],
+      "matchScore": 0.963
+    },
+    "c07": {
+      "segment": "stack",
+      "display": "First, a system prompt: hidden instructions from the app, like \"you are a helpful assistant\", and today's date.",
+      "spoken": "First, a system prompt: hidden instructions from the app, like \"you are a helpful assistant\", and today's date.",
+      "textHash": "efebd918dfadf36e",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/6425a0a43317de3f.wav",
+      "duration": 6.433,
+      "marks": {},
+      "words": [
+        {
+          "w": "First,",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.36
+        },
+        {
+          "w": "system",
+          "start": 0.52
+        },
+        {
+          "w": "prompt:",
+          "start": 1.04
+        },
+        {
+          "w": "hidden",
+          "start": 1.6
+        },
+        {
+          "w": "instructions",
+          "start": 2.08
+        },
+        {
+          "w": "from",
+          "start": 2.8
+        },
+        {
+          "w": "the",
+          "start": 2.96
+        },
+        {
+          "w": "app,",
+          "start": 3.2
+        },
+        {
+          "w": "like",
+          "start": 3.44
+        },
+        {
+          "w": "\"you",
+          "start": 3.72
+        },
+        {
+          "w": "are",
+          "start": 3.92
+        },
+        {
+          "w": "a",
+          "start": 4.08
+        },
+        {
+          "w": "helpful",
+          "start": 4.2
+        },
+        {
+          "w": "assistant\",",
+          "start": 4.68
+        },
+        {
+          "w": "and",
+          "start": 5.28
+        },
+        {
+          "w": "today's",
+          "start": 5.68
+        },
+        {
+          "w": "date.",
+          "start": 6.08
+        }
+      ],
+      "matchScore": 0.875
+    },
+    "c08": {
+      "segment": "stack",
+      "display": "Then, your own custom instructions, if you've set any. Like \"I'm a student. Keep answers short.\"",
+      "spoken": "Then, your own custom instructions, if you've set any. Like \"I'm a student. Keep answers short.\"",
+      "textHash": "d47b35a2e08137de",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/de2200e8907a695f.wav",
+      "duration": 5.303,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then,",
+          "start": 0
+        },
+        {
+          "w": "your",
+          "start": 0.24
+        },
+        {
+          "w": "own",
+          "start": 0.48
+        },
+        {
+          "w": "custom",
+          "start": 0.68
+        },
+        {
+          "w": "instructions,",
+          "start": 1.08
+        },
+        {
+          "w": "if",
+          "start": 1.76
+        },
+        {
+          "w": "you've",
+          "start": 1.88
+        },
+        {
+          "w": "set",
+          "start": 2.08
+        },
+        {
+          "w": "any.",
+          "start": 2.32
+        },
+        {
+          "w": "Like",
+          "start": 2.64
+        },
+        {
+          "w": "\"I'm",
+          "start": 2.92
+        },
+        {
+          "w": "a",
+          "start": 3.24
+        },
+        {
+          "w": "student.",
+          "start": 3.36
+        },
+        {
+          "w": "Keep",
+          "start": 4
+        },
+        {
+          "w": "answers",
+          "start": 4.32
+        },
+        {
+          "w": "short.\"",
+          "start": 4.88
+        }
+      ],
+      "matchScore": 1
+    },
+    "c09": {
+      "segment": "stack",
+      "display": "Then, any documents the app found for you: passages from a file you uploaded, or results from a web search.",
+      "spoken": "Then, any documents the app found for you: passages from a file you uploaded, or results from a web search.",
+      "textHash": "59b036ebd94159d7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/91a461841acf602c.wav",
+      "duration": 6.617,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then,",
+          "start": 0.16
+        },
+        {
+          "w": "any",
+          "start": 0.32
+        },
+        {
+          "w": "documents",
+          "start": 0.64
+        },
+        {
+          "w": "the",
+          "start": 1.28
+        },
+        {
+          "w": "app",
+          "start": 1.5
+        },
+        {
+          "w": "found",
+          "start": 1.72
+        },
+        {
+          "w": "for",
+          "start": 2
+        },
+        {
+          "w": "you:",
+          "start": 2.2
+        },
+        {
+          "w": "passages",
+          "start": 2.64
+        },
+        {
+          "w": "from",
+          "start": 3.32
+        },
+        {
+          "w": "a",
+          "start": 3.48
+        },
+        {
+          "w": "file",
+          "start": 3.6
+        },
+        {
+          "w": "you",
+          "start": 3.96
+        },
+        {
+          "w": "uploaded,",
+          "start": 4.4
+        },
+        {
+          "w": "or",
+          "start": 4.88
+        },
+        {
+          "w": "results",
+          "start": 5.12
+        },
+        {
+          "w": "from",
+          "start": 5.64
+        },
+        {
+          "w": "a",
+          "start": 5.76
+        },
+        {
+          "w": "web",
+          "start": 5.88
+        },
+        {
+          "w": "search.",
+          "start": 6.16
+        }
+      ],
+      "matchScore": 0.882
+    },
+    "c10": {
+      "segment": "stack",
+      "display": "Then, the whole chat so far: every earlier message, from you and from the model.",
+      "spoken": "Then, the whole chat so far: every earlier message, from you and from the model.",
+      "textHash": "8fb65c801656430f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/415ed6b5499db0cd.wav",
+      "duration": 4.582,
+      "marks": {},
+      "words": [
+        {
+          "w": "Then,",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.24
+        },
+        {
+          "w": "whole",
+          "start": 0.4
+        },
+        {
+          "w": "chat",
+          "start": 0.64
+        },
+        {
+          "w": "so",
+          "start": 1
+        },
+        {
+          "w": "far:",
+          "start": 1.28
+        },
+        {
+          "w": "every",
+          "start": 1.68
+        },
+        {
+          "w": "earlier",
+          "start": 2.04
+        },
+        {
+          "w": "message,",
+          "start": 2.52
+        },
+        {
+          "w": "from",
+          "start": 3.12
+        },
+        {
+          "w": "you",
+          "start": 3.36
+        },
+        {
+          "w": "and",
+          "start": 3.64
+        },
+        {
+          "w": "from",
+          "start": 3.84
+        },
+        {
+          "w": "the",
+          "start": 4.04
+        },
+        {
+          "w": "model.",
+          "start": 4.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c11": {
+      "segment": "stack",
+      "display": "And finally, at the very bottom, your actual message: \"Write a short poem about the rain\".",
+      "spoken": "And finally, at the very bottom, your actual message: \"Write a short poem about the rain\".",
+      "textHash": "36c1bc4c2e6dc360",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/4acfb29744a7be9e.wav",
+      "duration": 5.196,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "finally,",
+          "start": 0.16
+        },
+        {
+          "w": "at",
+          "start": 0.76
+        },
+        {
+          "w": "the",
+          "start": 0.96
+        },
+        {
+          "w": "very",
+          "start": 1.04
+        },
+        {
+          "w": "bottom,",
+          "start": 1.36
+        },
+        {
+          "w": "your",
+          "start": 1.84
+        },
+        {
+          "w": "actual",
+          "start": 2.12
+        },
+        {
+          "w": "message:",
+          "start": 2.6
+        },
+        {
+          "w": "\"Write",
+          "start": 3.24
+        },
+        {
+          "w": "a",
+          "start": 3.6
+        },
+        {
+          "w": "short",
+          "start": 3.76
+        },
+        {
+          "w": "poem",
+          "start": 4.08
+        },
+        {
+          "w": "about",
+          "start": 4.48
+        },
+        {
+          "w": "the",
+          "start": 4.68
+        },
+        {
+          "w": "rain\".",
+          "start": 4.8
+        }
+      ],
+      "matchScore": 1
+    },
+    "c12": {
+      "segment": "stack",
+      "display": "The app builds this whole package, every single turn. Your message is often the smallest part of it.",
+      "spoken": "The app builds this whole package, every single turn. Your message is often the smallest part of it.",
+      "textHash": "b10b2c96f1145bcc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eca4ca6d6049a028.wav",
+      "duration": 5.866,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "app",
+          "start": 0.16
+        },
+        {
+          "w": "builds",
+          "start": 0.4
+        },
+        {
+          "w": "this",
+          "start": 0.8
+        },
+        {
+          "w": "whole",
+          "start": 1
+        },
+        {
+          "w": "package,",
+          "start": 1.28
+        },
+        {
+          "w": "every",
+          "start": 1.92
+        },
+        {
+          "w": "single",
+          "start": 2.24
+        },
+        {
+          "w": "turn.",
+          "start": 2.8
+        },
+        {
+          "w": "Your",
+          "start": 3.32
+        },
+        {
+          "w": "message",
+          "start": 3.68
+        },
+        {
+          "w": "is",
+          "start": 4.16
+        },
+        {
+          "w": "often",
+          "start": 4.32
+        },
+        {
+          "w": "the",
+          "start": 4.68
+        },
+        {
+          "w": "smallest",
+          "start": 4.88
+        },
+        {
+          "w": "part",
+          "start": 5.36
+        },
+        {
+          "w": "of",
+          "start": 5.6
+        },
+        {
+          "w": "it.",
+          "start": 5.72
+        }
+      ],
+      "matchScore": 1
+    },
+    "c13": {
+      "segment": "system",
+      "display": "Let's look closer at that first block: the system prompt. It's instructions the app adds before your message: who the assistant is, how it should behave, and useful facts like today's date.",
+      "spoken": "Let's look closer at that first block: the system prompt. It's instructions the app adds before your message: who the assistant is, how it should behave, and useful facts like today's date.",
+      "textHash": "2e239154b27e4cce",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2ea48ec33dd30f10.wav",
+      "duration": 11.426,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "look",
+          "start": 0.32
+        },
+        {
+          "w": "closer",
+          "start": 0.56
+        },
+        {
+          "w": "at",
+          "start": 1
+        },
+        {
+          "w": "that",
+          "start": 1.16
+        },
+        {
+          "w": "first",
+          "start": 1.4
+        },
+        {
+          "w": "block:",
+          "start": 1.68
+        },
+        {
+          "w": "the",
+          "start": 2.16
+        },
+        {
+          "w": "system",
+          "start": 2.36
+        },
+        {
+          "w": "prompt.",
+          "start": 2.96
+        },
+        {
+          "w": "It's",
+          "start": 3.6
+        },
+        {
+          "w": "instructions",
+          "start": 4
+        },
+        {
+          "w": "the",
+          "start": 4.76
+        },
+        {
+          "w": "app",
+          "start": 4.98
+        },
+        {
+          "w": "adds",
+          "start": 5.2
+        },
+        {
+          "w": "before",
+          "start": 5.64
+        },
+        {
+          "w": "your",
+          "start": 5.92
+        },
+        {
+          "w": "message:",
+          "start": 6.16
+        },
+        {
+          "w": "who",
+          "start": 6.72
+        },
+        {
+          "w": "the",
+          "start": 6.88
+        },
+        {
+          "w": "assistant",
+          "start": 7.12
+        },
+        {
+          "w": "is,",
+          "start": 7.76
+        },
+        {
+          "w": "how",
+          "start": 8.08
+        },
+        {
+          "w": "it",
+          "start": 8.32
+        },
+        {
+          "w": "should",
+          "start": 8.48
+        },
+        {
+          "w": "behave,",
+          "start": 8.72
+        },
+        {
+          "w": "and",
+          "start": 9.08
+        },
+        {
+          "w": "useful",
+          "start": 9.44
+        },
+        {
+          "w": "facts",
+          "start": 9.92
+        },
+        {
+          "w": "like",
+          "start": 10.32
+        },
+        {
+          "w": "today's",
+          "start": 10.7
+        },
+        {
+          "w": "date.",
+          "start": 11.08
+        }
+      ],
+      "matchScore": 0.897
+    },
+    "c14": {
+      "segment": "system",
+      "display": "It might say: \"You are a helpful assistant. Answer clearly. Today is...\" and often much more.",
+      "spoken": "It might say: \"You are a helpful assistant. Answer clearly. Today is...\" and often much more.",
+      "textHash": "3f5b55987c417afa",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/7cb53c7c983c0478.wav",
+      "duration": 5.544,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "might",
+          "start": 0.16
+        },
+        {
+          "w": "say:",
+          "start": 0.48
+        },
+        {
+          "w": "\"You",
+          "start": 0.72
+        },
+        {
+          "w": "are",
+          "start": 0.96
+        },
+        {
+          "w": "a",
+          "start": 1.12
+        },
+        {
+          "w": "helpful",
+          "start": 1.28
+        },
+        {
+          "w": "assistant.",
+          "start": 1.72
+        },
+        {
+          "w": "Answer",
+          "start": 2.48
+        },
+        {
+          "w": "clearly.",
+          "start": 2.8
+        },
+        {
+          "w": "Today",
+          "start": 3.34
+        },
+        {
+          "w": "is...\"",
+          "start": 3.88
+        },
+        {
+          "w": "and",
+          "start": 4.2
+        },
+        {
+          "w": "often",
+          "start": 4.52
+        },
+        {
+          "w": "much",
+          "start": 4.96
+        },
+        {
+          "w": "more.",
+          "start": 5.24
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c15": {
+      "segment": "system",
+      "display": "Think of the crew briefing before passengers board. You never see it, but it shapes the whole flight.",
+      "spoken": "Think of the crew briefing before passengers board. You never see it, but it shapes the whole flight.",
+      "textHash": "af9e97b802a960d7",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b1d7a75ba28c19c7.wav",
+      "duration": 5.393,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.2
+        },
+        {
+          "w": "the",
+          "start": 0.28
+        },
+        {
+          "w": "crew",
+          "start": 0.4
+        },
+        {
+          "w": "briefing",
+          "start": 0.76
+        },
+        {
+          "w": "before",
+          "start": 1.28
+        },
+        {
+          "w": "passengers",
+          "start": 1.56
+        },
+        {
+          "w": "board.",
+          "start": 2.24
+        },
+        {
+          "w": "You",
+          "start": 2.8
+        },
+        {
+          "w": "never",
+          "start": 3.04
+        },
+        {
+          "w": "see",
+          "start": 3.36
+        },
+        {
+          "w": "it,",
+          "start": 3.6
+        },
+        {
+          "w": "but",
+          "start": 3.8
+        },
+        {
+          "w": "it",
+          "start": 3.96
+        },
+        {
+          "w": "shapes",
+          "start": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.56
+        },
+        {
+          "w": "whole",
+          "start": 4.72
+        },
+        {
+          "w": "flight.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 1
+    },
+    "c16": {
+      "segment": "memory",
+      "display": "Now, here's a question. If the model doesn't change while you chat, how does it remember things?",
+      "spoken": "Now, here's a question. If the model doesn't change while you chat, how does it remember things?",
+      "textHash": "49ed80a40af23794",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f97e4a772abad4b1.wav",
+      "duration": 5.192,
+      "marks": {},
+      "words": [
+        {
+          "w": "Now,",
+          "start": 0
+        },
+        {
+          "w": "here's",
+          "start": 0.28
+        },
+        {
+          "w": "a",
+          "start": 0.5
+        },
+        {
+          "w": "question.",
+          "start": 0.72
+        },
+        {
+          "w": "If",
+          "start": 1.48
+        },
+        {
+          "w": "the",
+          "start": 1.72
+        },
+        {
+          "w": "model",
+          "start": 1.92
+        },
+        {
+          "w": "doesn't",
+          "start": 2.28
+        },
+        {
+          "w": "change",
+          "start": 2.64
+        },
+        {
+          "w": "while",
+          "start": 3
+        },
+        {
+          "w": "you",
+          "start": 3.16
+        },
+        {
+          "w": "chat,",
+          "start": 3.36
+        },
+        {
+          "w": "how",
+          "start": 3.68
+        },
+        {
+          "w": "does",
+          "start": 3.92
+        },
+        {
+          "w": "it",
+          "start": 4.16
+        },
+        {
+          "w": "remember",
+          "start": 4.28
+        },
+        {
+          "w": "things?",
+          "start": 4.76
+        }
+      ],
+      "matchScore": 1
+    },
+    "c17": {
+      "segment": "memory",
+      "display": "Say you start with: \"Hi! My name is Asha.\" It replies, \"Nice to meet you, Asha!\"",
+      "spoken": "Say you start with: \"Hi! My name is Asha.\" It replies, \"Nice to meet you, Asha!\"",
+      "textHash": "dddc7b941759c5b8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/14f78e501b6722b2.wav",
+      "duration": 4.747,
+      "marks": {
+        "greet": 3.44
+      },
+      "words": [
+        {
+          "w": "Say",
+          "start": 0
+        },
+        {
+          "w": "you",
+          "start": 0.24
+        },
+        {
+          "w": "start",
+          "start": 0.4
+        },
+        {
+          "w": "with:",
+          "start": 0.8
+        },
+        {
+          "w": "\"Hi!",
+          "start": 1.04
+        },
+        {
+          "w": "My",
+          "start": 1.4
+        },
+        {
+          "w": "name",
+          "start": 1.68
+        },
+        {
+          "w": "is",
+          "start": 1.88
+        },
+        {
+          "w": "Asha.\"",
+          "start": 2.26
+        },
+        {
+          "w": "It",
+          "start": 2.64
+        },
+        {
+          "w": "replies,",
+          "start": 2.88
+        },
+        {
+          "w": "\"Nice",
+          "start": 3.44
+        },
+        {
+          "w": "to",
+          "start": 3.76
+        },
+        {
+          "w": "meet",
+          "start": 3.88
+        },
+        {
+          "w": "you,",
+          "start": 4.12
+        },
+        {
+          "w": "Asha!\"",
+          "start": 4.434
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c18": {
+      "segment": "memory",
+      "display": "Twenty messages later, you ask, \"What's my name?\" And it says, \"Your name is Asha.\"",
+      "spoken": "Twenty messages later, you ask, \"What's my name?\" And it says, \"Your name is Asha.\"",
+      "textHash": "c848d27028a6a4ee",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/902b5b494ff66570.wav",
+      "duration": 4.617,
+      "marks": {
+        "answer": 3.04
+      },
+      "words": [
+        {
+          "w": "Twenty",
+          "start": 0
+        },
+        {
+          "w": "messages",
+          "start": 0.32
+        },
+        {
+          "w": "later,",
+          "start": 0.88
+        },
+        {
+          "w": "you",
+          "start": 1.16
+        },
+        {
+          "w": "ask,",
+          "start": 1.36
+        },
+        {
+          "w": "\"What's",
+          "start": 1.72
+        },
+        {
+          "w": "my",
+          "start": 2
+        },
+        {
+          "w": "name?\"",
+          "start": 2.24
+        },
+        {
+          "w": "And",
+          "start": 2.6
+        },
+        {
+          "w": "it",
+          "start": 2.84
+        },
+        {
+          "w": "says,",
+          "start": 3.04
+        },
+        {
+          "w": "\"Your",
+          "start": 3.4
+        },
+        {
+          "w": "name",
+          "start": 3.64
+        },
+        {
+          "w": "is",
+          "start": 3.92
+        },
+        {
+          "w": "Asha.\"",
+          "start": 4.268
+        }
+      ],
+      "matchScore": 0.917
+    },
+    "c19": {
+      "segment": "memory",
+      "display": "It didn't memorise anything. Remember the package? The app simply sent the whole chat again, including that first message. The model read it fresh, like it was the first time.",
+      "spoken": "It didn't memorise anything. Remember the package? The app simply sent the whole chat again, including that first message. The model read it fresh, like it was the first time.",
+      "textHash": "beb7bc6630f8153d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f1da6cff91f8dbcd.wav",
+      "duration": 10.28,
+      "marks": {},
+      "words": [
+        {
+          "w": "It",
+          "start": 0
+        },
+        {
+          "w": "didn't",
+          "start": 0.12
+        },
+        {
+          "w": "memorise",
+          "start": 0.44
+        },
+        {
+          "w": "anything.",
+          "start": 1.04
+        },
+        {
+          "w": "Remember",
+          "start": 1.6
+        },
+        {
+          "w": "the",
+          "start": 2.24
+        },
+        {
+          "w": "package?",
+          "start": 2.48
+        },
+        {
+          "w": "The",
+          "start": 3.16
+        },
+        {
+          "w": "app",
+          "start": 3.44
+        },
+        {
+          "w": "simply",
+          "start": 3.72
+        },
+        {
+          "w": "sent",
+          "start": 4.12
+        },
+        {
+          "w": "the",
+          "start": 4.36
+        },
+        {
+          "w": "whole",
+          "start": 4.52
+        },
+        {
+          "w": "chat",
+          "start": 4.76
+        },
+        {
+          "w": "again,",
+          "start": 5.08
+        },
+        {
+          "w": "including",
+          "start": 5.4
+        },
+        {
+          "w": "that",
+          "start": 6.04
+        },
+        {
+          "w": "first",
+          "start": 6.24
+        },
+        {
+          "w": "message.",
+          "start": 6.56
+        },
+        {
+          "w": "The",
+          "start": 7.28
+        },
+        {
+          "w": "model",
+          "start": 7.52
+        },
+        {
+          "w": "read",
+          "start": 8
+        },
+        {
+          "w": "it",
+          "start": 8.28
+        },
+        {
+          "w": "fresh,",
+          "start": 8.44
+        },
+        {
+          "w": "like",
+          "start": 8.88
+        },
+        {
+          "w": "it",
+          "start": 9.12
+        },
+        {
+          "w": "was",
+          "start": 9.24
+        },
+        {
+          "w": "the",
+          "start": 9.4
+        },
+        {
+          "w": "first",
+          "start": 9.56
+        },
+        {
+          "w": "time.",
+          "start": 9.92
+        }
+      ],
+      "matchScore": 0.963
+    },
+    "c20": {
+      "segment": "memory",
+      "display": "That's why long chats get slower and costlier, as we saw at the Departure Gate. Some apps now also save short notes about you between chats, and quietly add them to the package too.",
+      "spoken": "That's why long chats get slower and costlier, as we saw at the Departure Gate. Some apps now also save short notes about you between chats, and quietly add them to the package too.",
+      "textHash": "519c2140f901068d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/2e71c0fcc0f1b3f7.wav",
+      "duration": 11.016,
+      "marks": {},
+      "words": [
+        {
+          "w": "That's",
+          "start": 0
+        },
+        {
+          "w": "why",
+          "start": 0.28
+        },
+        {
+          "w": "long",
+          "start": 0.56
+        },
+        {
+          "w": "chats",
+          "start": 0.84
+        },
+        {
+          "w": "get",
+          "start": 1.28
+        },
+        {
+          "w": "slower",
+          "start": 1.52
+        },
+        {
+          "w": "and",
+          "start": 2
+        },
+        {
+          "w": "costlier,",
+          "start": 2.16
+        },
+        {
+          "w": "as",
+          "start": 2.96
+        },
+        {
+          "w": "we",
+          "start": 3.2
+        },
+        {
+          "w": "saw",
+          "start": 3.4
+        },
+        {
+          "w": "at",
+          "start": 3.68
+        },
+        {
+          "w": "the",
+          "start": 3.8
+        },
+        {
+          "w": "Departure",
+          "start": 3.96
+        },
+        {
+          "w": "Gate.",
+          "start": 4.56
+        },
+        {
+          "w": "Some",
+          "start": 5.12
+        },
+        {
+          "w": "apps",
+          "start": 5.5
+        },
+        {
+          "w": "now",
+          "start": 5.88
+        },
+        {
+          "w": "also",
+          "start": 6.16
+        },
+        {
+          "w": "save",
+          "start": 6.48
+        },
+        {
+          "w": "short",
+          "start": 6.76
+        },
+        {
+          "w": "notes",
+          "start": 7.08
+        },
+        {
+          "w": "about",
+          "start": 7.4
+        },
+        {
+          "w": "you",
+          "start": 7.6
+        },
+        {
+          "w": "between",
+          "start": 7.8
+        },
+        {
+          "w": "chats,",
+          "start": 8.16
+        },
+        {
+          "w": "and",
+          "start": 8.6
+        },
+        {
+          "w": "quietly",
+          "start": 9.04
+        },
+        {
+          "w": "add",
+          "start": 9.48
+        },
+        {
+          "w": "them",
+          "start": 9.76
+        },
+        {
+          "w": "to",
+          "start": 9.92
+        },
+        {
+          "w": "the",
+          "start": 10.04
+        },
+        {
+          "w": "package",
+          "start": 10.2
+        },
+        {
+          "w": "too.",
+          "start": 10.68
+        }
+      ],
+      "matchScore": 0.9
+    },
+    "c21": {
+      "segment": "tools",
+      "display": "Next: tools. A model on its own can't browse the web or check today's weather. So the app lends it a hand.",
+      "spoken": "Next: tools. A model on its own can't browse the web or check today's weather. So the app lends it a hand.",
+      "textHash": "c819a313e4d1546c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/392748c4b4ccc9a3.wav",
+      "duration": 6.659,
+      "marks": {},
+      "words": [
+        {
+          "w": "Next:",
+          "start": 0
+        },
+        {
+          "w": "tools.",
+          "start": 0.6
+        },
+        {
+          "w": "A",
+          "start": 1.36
+        },
+        {
+          "w": "model",
+          "start": 1.56
+        },
+        {
+          "w": "on",
+          "start": 2
+        },
+        {
+          "w": "its",
+          "start": 2.12
+        },
+        {
+          "w": "own",
+          "start": 2.32
+        },
+        {
+          "w": "can't",
+          "start": 2.52
+        },
+        {
+          "w": "browse",
+          "start": 2.84
+        },
+        {
+          "w": "the",
+          "start": 3.24
+        },
+        {
+          "w": "web",
+          "start": 3.4
+        },
+        {
+          "w": "or",
+          "start": 3.72
+        },
+        {
+          "w": "check",
+          "start": 3.88
+        },
+        {
+          "w": "today's",
+          "start": 4.28
+        },
+        {
+          "w": "weather.",
+          "start": 4.68
+        },
+        {
+          "w": "So",
+          "start": 5.12
+        },
+        {
+          "w": "the",
+          "start": 5.32
+        },
+        {
+          "w": "app",
+          "start": 5.56
+        },
+        {
+          "w": "lends",
+          "start": 5.8
+        },
+        {
+          "w": "it",
+          "start": 6.04
+        },
+        {
+          "w": "a",
+          "start": 6.16
+        },
+        {
+          "w": "hand.",
+          "start": 6.36
+        }
+      ],
+      "matchScore": 0.813
+    },
+    "c22": {
+      "segment": "tools",
+      "display": "First, the model asks for a tool. It writes a special request, like \"search for rain today\".",
+      "spoken": "First, the model asks for a tool. It writes a special request, like \"search for rain today\".",
+      "textHash": "b2e0aa9d3d7fa085",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e0e26d56e917ba38.wav",
+      "duration": 5.499,
+      "marks": {},
+      "words": [
+        {
+          "w": "First,",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.32
+        },
+        {
+          "w": "model",
+          "start": 0.56
+        },
+        {
+          "w": "asks",
+          "start": 1
+        },
+        {
+          "w": "for",
+          "start": 1.36
+        },
+        {
+          "w": "a",
+          "start": 1.52
+        },
+        {
+          "w": "tool.",
+          "start": 1.64
+        },
+        {
+          "w": "It",
+          "start": 2.12
+        },
+        {
+          "w": "writes",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.72
+        },
+        {
+          "w": "special",
+          "start": 2.84
+        },
+        {
+          "w": "request,",
+          "start": 3.28
+        },
+        {
+          "w": "like",
+          "start": 3.88
+        },
+        {
+          "w": "\"search",
+          "start": 4.12
+        },
+        {
+          "w": "for",
+          "start": 4.52
+        },
+        {
+          "w": "rain",
+          "start": 4.72
+        },
+        {
+          "w": "today\".",
+          "start": 5.109
+        }
+      ],
+      "matchScore": 0.929
+    },
+    "c23": {
+      "segment": "tools",
+      "display": "The app sees the request, and runs it: a web search, or a bit of code, or a calculator.",
+      "spoken": "The app sees the request, and runs it: a web search, or a bit of code, or a calculator.",
+      "textHash": "878b2b19b1edae2f",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d0615d37ed88cc0a.wav",
+      "duration": 5.276,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "app",
+          "start": 0.2
+        },
+        {
+          "w": "sees",
+          "start": 0.4
+        },
+        {
+          "w": "the",
+          "start": 0.68
+        },
+        {
+          "w": "request,",
+          "start": 0.8
+        },
+        {
+          "w": "and",
+          "start": 1.28
+        },
+        {
+          "w": "runs",
+          "start": 1.48
+        },
+        {
+          "w": "it:",
+          "start": 1.92
+        },
+        {
+          "w": "a",
+          "start": 2.24
+        },
+        {
+          "w": "web",
+          "start": 2.48
+        },
+        {
+          "w": "search,",
+          "start": 2.8
+        },
+        {
+          "w": "or",
+          "start": 3.16
+        },
+        {
+          "w": "a",
+          "start": 3.32
+        },
+        {
+          "w": "bit",
+          "start": 3.44
+        },
+        {
+          "w": "of",
+          "start": 3.6
+        },
+        {
+          "w": "code,",
+          "start": 3.8
+        },
+        {
+          "w": "or",
+          "start": 4.16
+        },
+        {
+          "w": "a",
+          "start": 4.36
+        },
+        {
+          "w": "calculator.",
+          "start": 4.48
+        }
+      ],
+      "matchScore": 0.917
+    },
+    "c24": {
+      "segment": "tools",
+      "display": "The results are fed back, added to the package.",
+      "spoken": "The results are fed back, added to the package.",
+      "textHash": "5e2ff31a263c06f4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e22f6f51fe58ac2e.wav",
+      "duration": 2.696,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "results",
+          "start": 0.12
+        },
+        {
+          "w": "are",
+          "start": 0.56
+        },
+        {
+          "w": "fed",
+          "start": 0.72
+        },
+        {
+          "w": "back,",
+          "start": 1.04
+        },
+        {
+          "w": "added",
+          "start": 1.36
+        },
+        {
+          "w": "to",
+          "start": 1.8
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "package.",
+          "start": 2.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c25": {
+      "segment": "tools",
+      "display": "And the model writes its answer, now using fresh facts it could never have learned in training.",
+      "spoken": "And the model writes its answer, now using fresh facts it could never have learned in training.",
+      "textHash": "edf5323bf69b797b",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/439f6135392141f5.wav",
+      "duration": 5.054,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "model",
+          "start": 0.24
+        },
+        {
+          "w": "writes",
+          "start": 0.64
+        },
+        {
+          "w": "its",
+          "start": 0.96
+        },
+        {
+          "w": "answer,",
+          "start": 1.28
+        },
+        {
+          "w": "now",
+          "start": 1.8
+        },
+        {
+          "w": "using",
+          "start": 2.16
+        },
+        {
+          "w": "fresh",
+          "start": 2.64
+        },
+        {
+          "w": "facts",
+          "start": 2.96
+        },
+        {
+          "w": "it",
+          "start": 3.36
+        },
+        {
+          "w": "could",
+          "start": 3.52
+        },
+        {
+          "w": "never",
+          "start": 3.68
+        },
+        {
+          "w": "have",
+          "start": 3.92
+        },
+        {
+          "w": "learned",
+          "start": 4.08
+        },
+        {
+          "w": "in",
+          "start": 4.4
+        },
+        {
+          "w": "training.",
+          "start": 4.56
+        }
+      ],
+      "matchScore": 1
+    },
+    "c26": {
+      "segment": "rag",
+      "display": "A close cousin of tools is RAG, short for retrieval-augmented generation. When you chat with your own documents, the app finds the most relevant passages and adds them to the prompt before the model answers.",
+      "spoken": "A close cousin of tools is rag, short for retrieval-augmented generation. When you chat with your own documents, the app finds the most relevant passages and adds them to the prompt before the model answers.",
+      "textHash": "240ed522b2dc17d3",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/324c043bae2bec88.wav",
+      "duration": 12.433,
+      "marks": {},
+      "words": [
+        {
+          "w": "A",
+          "start": 0
+        },
+        {
+          "w": "close",
+          "start": 0.12
+        },
+        {
+          "w": "cousin",
+          "start": 0.4
+        },
+        {
+          "w": "of",
+          "start": 0.76
+        },
+        {
+          "w": "tools",
+          "start": 0.92
+        },
+        {
+          "w": "is",
+          "start": 1.4
+        },
+        {
+          "w": "RAG,",
+          "start": 1.6
+        },
+        {
+          "w": "short",
+          "start": 2.08
+        },
+        {
+          "w": "for",
+          "start": 2.56
+        },
+        {
+          "w": "retrieval-augmented",
+          "start": 3.22
+        },
+        {
+          "w": "generation.",
+          "start": 3.88
+        },
+        {
+          "w": "When",
+          "start": 4.84
+        },
+        {
+          "w": "you",
+          "start": 5.12
+        },
+        {
+          "w": "chat",
+          "start": 5.32
+        },
+        {
+          "w": "with",
+          "start": 5.6
+        },
+        {
+          "w": "your",
+          "start": 5.76
+        },
+        {
+          "w": "own",
+          "start": 5.96
+        },
+        {
+          "w": "documents,",
+          "start": 6.16
+        },
+        {
+          "w": "the",
+          "start": 6.96
+        },
+        {
+          "w": "app",
+          "start": 7.2
+        },
+        {
+          "w": "finds",
+          "start": 7.52
+        },
+        {
+          "w": "the",
+          "start": 7.88
+        },
+        {
+          "w": "most",
+          "start": 8.04
+        },
+        {
+          "w": "relevant",
+          "start": 8.28
+        },
+        {
+          "w": "passages",
+          "start": 8.88
+        },
+        {
+          "w": "and",
+          "start": 9.52
+        },
+        {
+          "w": "adds",
+          "start": 9.76
+        },
+        {
+          "w": "them",
+          "start": 10.2
+        },
+        {
+          "w": "to",
+          "start": 10.4
+        },
+        {
+          "w": "the",
+          "start": 10.52
+        },
+        {
+          "w": "prompt",
+          "start": 10.64
+        },
+        {
+          "w": "before",
+          "start": 11.08
+        },
+        {
+          "w": "the",
+          "start": 11.32
+        },
+        {
+          "w": "model",
+          "start": 11.44
+        },
+        {
+          "w": "answers.",
+          "start": 11.88
+        }
+      ],
+      "matchScore": 0.968
+    },
+    "c27": {
+      "segment": "rag",
+      "display": "Your PDF goes in, the app picks the best few passages using meaning search, the same embeddings we met in Vector Valley, and the model answers, often with sources.",
+      "spoken": "Your PDF goes in, the app picks the best few passages using meaning search, the same embeddings we met in Vector Valley, and the model answers, often with sources.",
+      "textHash": "eb89927344b0c688",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/fc0f4e8af30fe2e6.wav",
+      "duration": 10.312,
+      "marks": {},
+      "words": [
+        {
+          "w": "Your",
+          "start": 0
+        },
+        {
+          "w": "PDF",
+          "start": 0.44
+        },
+        {
+          "w": "goes",
+          "start": 0.88
+        },
+        {
+          "w": "in,",
+          "start": 1.28
+        },
+        {
+          "w": "the",
+          "start": 1.56
+        },
+        {
+          "w": "app",
+          "start": 1.8
+        },
+        {
+          "w": "picks",
+          "start": 2.04
+        },
+        {
+          "w": "the",
+          "start": 2.36
+        },
+        {
+          "w": "best",
+          "start": 2.52
+        },
+        {
+          "w": "few",
+          "start": 2.8
+        },
+        {
+          "w": "passages",
+          "start": 3.08
+        },
+        {
+          "w": "using",
+          "start": 3.68
+        },
+        {
+          "w": "meaning",
+          "start": 4.04
+        },
+        {
+          "w": "search,",
+          "start": 4.44
+        },
+        {
+          "w": "the",
+          "start": 5.04
+        },
+        {
+          "w": "same",
+          "start": 5.28
+        },
+        {
+          "w": "embeddings",
+          "start": 5.56
+        },
+        {
+          "w": "we",
+          "start": 6.28
+        },
+        {
+          "w": "met",
+          "start": 6.4
+        },
+        {
+          "w": "in",
+          "start": 6.68
+        },
+        {
+          "w": "Vector",
+          "start": 6.96
+        },
+        {
+          "w": "Valley,",
+          "start": 7.24
+        },
+        {
+          "w": "and",
+          "start": 7.68
+        },
+        {
+          "w": "the",
+          "start": 7.84
+        },
+        {
+          "w": "model",
+          "start": 8
+        },
+        {
+          "w": "answers,",
+          "start": 8.44
+        },
+        {
+          "w": "often",
+          "start": 9.04
+        },
+        {
+          "w": "with",
+          "start": 9.44
+        },
+        {
+          "w": "sources.",
+          "start": 9.64
+        }
+      ],
+      "matchScore": 0.885
+    },
+    "c28": {
+      "segment": "rag",
+      "display": "Think of an open-book exam. The model gets to look things up before it answers, which makes made-up answers much less likely.",
+      "spoken": "Think of an open-book exam. The model gets to look things up before it answers, which makes made-up answers much less likely.",
+      "textHash": "b28d208502a6fadc",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/70ea0943d8fdcb9e.wav",
+      "duration": 7.431,
+      "marks": {},
+      "words": [
+        {
+          "w": "Think",
+          "start": 0
+        },
+        {
+          "w": "of",
+          "start": 0.24
+        },
+        {
+          "w": "an",
+          "start": 0.4
+        },
+        {
+          "w": "open-book",
+          "start": 0.82
+        },
+        {
+          "w": "exam.",
+          "start": 1.24
+        },
+        {
+          "w": "The",
+          "start": 1.88
+        },
+        {
+          "w": "model",
+          "start": 2.16
+        },
+        {
+          "w": "gets",
+          "start": 2.6
+        },
+        {
+          "w": "to",
+          "start": 2.88
+        },
+        {
+          "w": "look",
+          "start": 3.04
+        },
+        {
+          "w": "things",
+          "start": 3.24
+        },
+        {
+          "w": "up",
+          "start": 3.56
+        },
+        {
+          "w": "before",
+          "start": 3.76
+        },
+        {
+          "w": "it",
+          "start": 4
+        },
+        {
+          "w": "answers,",
+          "start": 4.24
+        },
+        {
+          "w": "which",
+          "start": 4.8
+        },
+        {
+          "w": "makes",
+          "start": 5.04
+        },
+        {
+          "w": "made-up",
+          "start": 5.44
+        },
+        {
+          "w": "answers",
+          "start": 5.84
+        },
+        {
+          "w": "much",
+          "start": 6.213
+        },
+        {
+          "w": "less",
+          "start": 6.587
+        },
+        {
+          "w": "likely.",
+          "start": 6.96
+        }
+      ],
+      "matchScore": 0.765
+    },
+    "c29": {
+      "segment": "safety",
+      "display": "And finally, safety. It isn't one switch. It's built in at several layers.",
+      "spoken": "And finally, safety. It isn't one switch. It's built in at several layers.",
+      "textHash": "dacdcc0411e8fc13",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c933a847a4321719.wav",
+      "duration": 4.663,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "finally,",
+          "start": 0.16
+        },
+        {
+          "w": "safety.",
+          "start": 0.8
+        },
+        {
+          "w": "It",
+          "start": 1.4
+        },
+        {
+          "w": "isn't",
+          "start": 1.6
+        },
+        {
+          "w": "one",
+          "start": 1.96
+        },
+        {
+          "w": "switch.",
+          "start": 2.2
+        },
+        {
+          "w": "It's",
+          "start": 2.72
+        },
+        {
+          "w": "built",
+          "start": 3.04
+        },
+        {
+          "w": "in",
+          "start": 3.36
+        },
+        {
+          "w": "at",
+          "start": 3.52
+        },
+        {
+          "w": "several",
+          "start": 3.72
+        },
+        {
+          "w": "layers.",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c30": {
+      "segment": "safety",
+      "display": "Training teaches the model to refuse clearly harmful requests.",
+      "spoken": "Training teaches the model to refuse clearly harmful requests.",
+      "textHash": "b1f7d389b14796ae",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/3bb231565ce23b1c.wav",
+      "duration": 3.905,
+      "marks": {},
+      "words": [
+        {
+          "w": "Training",
+          "start": 0
+        },
+        {
+          "w": "teaches",
+          "start": 0.52
+        },
+        {
+          "w": "the",
+          "start": 0.96
+        },
+        {
+          "w": "model",
+          "start": 1.12
+        },
+        {
+          "w": "to",
+          "start": 1.52
+        },
+        {
+          "w": "refuse",
+          "start": 1.76
+        },
+        {
+          "w": "clearly",
+          "start": 2.24
+        },
+        {
+          "w": "harmful",
+          "start": 2.72
+        },
+        {
+          "w": "requests.",
+          "start": 3.24
+        }
+      ],
+      "matchScore": 1
+    },
+    "c31": {
+      "segment": "safety",
+      "display": "Extra checks can screen what goes into the model, and what comes out.",
+      "spoken": "Extra checks can screen what goes into the model, and what comes out.",
+      "textHash": "56d7b75e0d8e40a5",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/d7fcd07da639ba4c.wav",
+      "duration": 3.813,
+      "marks": {},
+      "words": [
+        {
+          "w": "Extra",
+          "start": 0
+        },
+        {
+          "w": "checks",
+          "start": 0.42
+        },
+        {
+          "w": "can",
+          "start": 0.84
+        },
+        {
+          "w": "screen",
+          "start": 1.04
+        },
+        {
+          "w": "what",
+          "start": 1.44
+        },
+        {
+          "w": "goes",
+          "start": 1.6
+        },
+        {
+          "w": "into",
+          "start": 1.92
+        },
+        {
+          "w": "the",
+          "start": 2.08
+        },
+        {
+          "w": "model,",
+          "start": 2.24
+        },
+        {
+          "w": "and",
+          "start": 2.68
+        },
+        {
+          "w": "what",
+          "start": 2.92
+        },
+        {
+          "w": "comes",
+          "start": 3.2
+        },
+        {
+          "w": "out.",
+          "start": 3.56
+        }
+      ],
+      "matchScore": 0.923
+    },
+    "c32": {
+      "segment": "safety",
+      "display": "And the rules differ between apps. So the same question can get a different answer in a different app.",
+      "spoken": "And the rules differ between apps. So the same question can get a different answer in a different app.",
+      "textHash": "7f81500f915821d8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e538738ffee5ce05.wav",
+      "duration": 5.434,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "rules",
+          "start": 0.24
+        },
+        {
+          "w": "differ",
+          "start": 0.68
+        },
+        {
+          "w": "between",
+          "start": 1.12
+        },
+        {
+          "w": "apps.",
+          "start": 1.56
+        },
+        {
+          "w": "So",
+          "start": 2
+        },
+        {
+          "w": "the",
+          "start": 2.24
+        },
+        {
+          "w": "same",
+          "start": 2.573
+        },
+        {
+          "w": "question",
+          "start": 2.907
+        },
+        {
+          "w": "can",
+          "start": 3.24
+        },
+        {
+          "w": "get",
+          "start": 3.44
+        },
+        {
+          "w": "a",
+          "start": 3.6
+        },
+        {
+          "w": "different",
+          "start": 3.72
+        },
+        {
+          "w": "answer",
+          "start": 4.12
+        },
+        {
+          "w": "in",
+          "start": 4.44
+        },
+        {
+          "w": "a",
+          "start": 4.6
+        },
+        {
+          "w": "different",
+          "start": 4.72
+        },
+        {
+          "w": "app.",
+          "start": 5.077
+        }
+      ],
+      "matchScore": 0.733
+    },
+    "c33": {
+      "segment": "journey",
+      "display": "Let's put the whole journey together. Here's everything that happens when you press Enter.",
+      "spoken": "Let's put the whole journey together. Here's everything that happens when you press Enter.",
+      "textHash": "40175a194b14c7d8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a9f1d020dbc28f2e.wav",
+      "duration": 4.519,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0
+        },
+        {
+          "w": "put",
+          "start": 0.32
+        },
+        {
+          "w": "the",
+          "start": 0.52
+        },
+        {
+          "w": "whole",
+          "start": 0.64
+        },
+        {
+          "w": "journey",
+          "start": 0.92
+        },
+        {
+          "w": "together.",
+          "start": 1.28
+        },
+        {
+          "w": "Here's",
+          "start": 1.92
+        },
+        {
+          "w": "everything",
+          "start": 2.4
+        },
+        {
+          "w": "that",
+          "start": 2.8
+        },
+        {
+          "w": "happens",
+          "start": 3
+        },
+        {
+          "w": "when",
+          "start": 3.44
+        },
+        {
+          "w": "you",
+          "start": 3.6
+        },
+        {
+          "w": "press",
+          "start": 3.8
+        },
+        {
+          "w": "Enter.",
+          "start": 4.08
+        }
+      ],
+      "matchScore": 1
+    },
+    "c34": {
+      "segment": "journey",
+      "display": "Training: long before you typed, the model learned from a vast library of text.",
+      "spoken": "Training: long before you typed, the model learned from a vast library of text.",
+      "textHash": "4dd6101e66221afe",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/064fbc6eb48dac2d.wav",
+      "duration": 4.621,
+      "marks": {},
+      "words": [
+        {
+          "w": "Training:",
+          "start": 0
+        },
+        {
+          "w": "long",
+          "start": 0.64
+        },
+        {
+          "w": "before",
+          "start": 0.96
+        },
+        {
+          "w": "you",
+          "start": 1.24
+        },
+        {
+          "w": "typed,",
+          "start": 1.44
+        },
+        {
+          "w": "the",
+          "start": 1.92
+        },
+        {
+          "w": "model",
+          "start": 2.12
+        },
+        {
+          "w": "learned",
+          "start": 2.56
+        },
+        {
+          "w": "from",
+          "start": 2.88
+        },
+        {
+          "w": "a",
+          "start": 3
+        },
+        {
+          "w": "vast",
+          "start": 3.12
+        },
+        {
+          "w": "library",
+          "start": 3.44
+        },
+        {
+          "w": "of",
+          "start": 4
+        },
+        {
+          "w": "text.",
+          "start": 4.12
+        }
+      ],
+      "matchScore": 1
+    },
+    "c35": {
+      "segment": "journey",
+      "display": "Tokens: your words are chopped into pieces, and turned into numbers.",
+      "spoken": "Tokens: your words are chopped into pieces, and turned into numbers.",
+      "textHash": "cce1ebcad0d56af4",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/b875dda77c0d0efd.wav",
+      "duration": 4.07,
+      "marks": {},
+      "words": [
+        {
+          "w": "Tokens:",
+          "start": 0
+        },
+        {
+          "w": "your",
+          "start": 0.72
+        },
+        {
+          "w": "words",
+          "start": 0.96
+        },
+        {
+          "w": "are",
+          "start": 1.28
+        },
+        {
+          "w": "chopped",
+          "start": 1.44
+        },
+        {
+          "w": "into",
+          "start": 1.84
+        },
+        {
+          "w": "pieces,",
+          "start": 2.08
+        },
+        {
+          "w": "and",
+          "start": 2.64
+        },
+        {
+          "w": "turned",
+          "start": 2.88
+        },
+        {
+          "w": "into",
+          "start": 3.277
+        },
+        {
+          "w": "numbers.",
+          "start": 3.673
+        }
+      ],
+      "matchScore": 0.818
+    },
+    "c36": {
+      "segment": "journey",
+      "display": "Vectors: those numbers get meaning, a place on a map.",
+      "spoken": "Vectors: those numbers get meaning, a place on a map.",
+      "textHash": "f0fb4fff2c016828",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/42139e7a22c1a0e1.wav",
+      "duration": 3.137,
+      "marks": {},
+      "words": [
+        {
+          "w": "Vectors:",
+          "start": 0.04
+        },
+        {
+          "w": "those",
+          "start": 0.493
+        },
+        {
+          "w": "numbers",
+          "start": 0.947
+        },
+        {
+          "w": "get",
+          "start": 1.4
+        },
+        {
+          "w": "meaning,",
+          "start": 1.64
+        },
+        {
+          "w": "a",
+          "start": 2.04
+        },
+        {
+          "w": "place",
+          "start": 2.24
+        },
+        {
+          "w": "on",
+          "start": 2.48
+        },
+        {
+          "w": "a",
+          "start": 2.64
+        },
+        {
+          "w": "map.",
+          "start": 2.76
+        }
+      ],
+      "matchScore": 0.714
+    },
+    "c37": {
+      "segment": "journey",
+      "display": "Attention: the words read each other, so bank finds river.",
+      "spoken": "Attention: the words read each other, so bank finds river.",
+      "textHash": "14752ae9405e70cd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f4aa8727bae55b11.wav",
+      "duration": 3.475,
+      "marks": {},
+      "words": [
+        {
+          "w": "Attention:",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.76
+        },
+        {
+          "w": "words",
+          "start": 1.04
+        },
+        {
+          "w": "read",
+          "start": 1.4
+        },
+        {
+          "w": "each",
+          "start": 1.68
+        },
+        {
+          "w": "other,",
+          "start": 1.88
+        },
+        {
+          "w": "so",
+          "start": 2.08
+        },
+        {
+          "w": "bank",
+          "start": 2.32
+        },
+        {
+          "w": "finds",
+          "start": 2.64
+        },
+        {
+          "w": "river.",
+          "start": 3.04
+        }
+      ],
+      "matchScore": 1
+    },
+    "c38": {
+      "segment": "journey",
+      "display": "Prediction: the answer is written one token at a time.",
+      "spoken": "Prediction: the answer is written one token at a time.",
+      "textHash": "cf538c90bb196a37",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5ca5b447c4df848a.wav",
+      "duration": 3.172,
+      "marks": {},
+      "words": [
+        {
+          "w": "Prediction:",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.72
+        },
+        {
+          "w": "answer",
+          "start": 0.96
+        },
+        {
+          "w": "is",
+          "start": 1.28
+        },
+        {
+          "w": "written",
+          "start": 1.48
+        },
+        {
+          "w": "one",
+          "start": 1.84
+        },
+        {
+          "w": "token",
+          "start": 2.08
+        },
+        {
+          "w": "at",
+          "start": 2.52
+        },
+        {
+          "w": "a",
+          "start": 2.68
+        },
+        {
+          "w": "time.",
+          "start": 2.84
+        }
+      ],
+      "matchScore": 1
+    },
+    "c39": {
+      "segment": "journey",
+      "display": "And the app wraps it all: system prompts, memory, tools, and safety. That's the whole trip.",
+      "spoken": "And the app wraps it all: system prompts, memory, tools, and safety. That's the whole trip.",
+      "textHash": "193e75c42ff56eb8",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/eecbc054dcc81158.wav",
+      "duration": 5.369,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "the",
+          "start": 0.12
+        },
+        {
+          "w": "app",
+          "start": 0.373
+        },
+        {
+          "w": "wraps",
+          "start": 0.627
+        },
+        {
+          "w": "it",
+          "start": 0.88
+        },
+        {
+          "w": "all:",
+          "start": 1.04
+        },
+        {
+          "w": "system",
+          "start": 1.32
+        },
+        {
+          "w": "prompts,",
+          "start": 1.88
+        },
+        {
+          "w": "memory,",
+          "start": 2.36
+        },
+        {
+          "w": "tools,",
+          "start": 2.8
+        },
+        {
+          "w": "and",
+          "start": 3.32
+        },
+        {
+          "w": "safety.",
+          "start": 3.48
+        },
+        {
+          "w": "That's",
+          "start": 4.16
+        },
+        {
+          "w": "the",
+          "start": 4.56
+        },
+        {
+          "w": "whole",
+          "start": 4.72
+        },
+        {
+          "w": "trip.",
+          "start": 4.96
+        }
+      ],
+      "matchScore": 0.867
+    },
+    "c40": {
+      "segment": "tryIt",
+      "display": "Time for one last \"Try it yourself\". Let's see how much a few words of instruction can change.",
+      "spoken": "Time for one last \"Try it yourself\". Let's see how much a few words of instruction can change.",
+      "textHash": "c8f0edc38c146043",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/373c9e5886a7f564.wav",
+      "duration": 5.634,
+      "marks": {},
+      "words": [
+        {
+          "w": "Time",
+          "start": 0
+        },
+        {
+          "w": "for",
+          "start": 0.32
+        },
+        {
+          "w": "one",
+          "start": 0.56
+        },
+        {
+          "w": "last",
+          "start": 0.84
+        },
+        {
+          "w": "\"Try",
+          "start": 1.28
+        },
+        {
+          "w": "it",
+          "start": 1.64
+        },
+        {
+          "w": "yourself\".",
+          "start": 1.84
+        },
+        {
+          "w": "Let's",
+          "start": 2.56
+        },
+        {
+          "w": "see",
+          "start": 2.88
+        },
+        {
+          "w": "how",
+          "start": 3.08
+        },
+        {
+          "w": "much",
+          "start": 3.28
+        },
+        {
+          "w": "a",
+          "start": 3.52
+        },
+        {
+          "w": "few",
+          "start": 3.6
+        },
+        {
+          "w": "words",
+          "start": 3.84
+        },
+        {
+          "w": "of",
+          "start": 4.12
+        },
+        {
+          "w": "instruction",
+          "start": 4.24
+        },
+        {
+          "w": "can",
+          "start": 4.92
+        },
+        {
+          "w": "change.",
+          "start": 5.16
+        }
+      ],
+      "matchScore": 1
+    },
+    "c41": {
+      "segment": "tryIt",
+      "display": "Start a new chat, and say: \"For this chat, you are a friendly pirate.\"",
+      "spoken": "Start a new chat, and say: \"For this chat, you are a friendly pirate.\"",
+      "textHash": "34a88cdd164c6b33",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5a0a1e49b7eaff32.wav",
+      "duration": 3.921,
+      "marks": {},
+      "words": [
+        {
+          "w": "Start",
+          "start": 0
+        },
+        {
+          "w": "a",
+          "start": 0.28
+        },
+        {
+          "w": "new",
+          "start": 0.4
+        },
+        {
+          "w": "chat,",
+          "start": 0.56
+        },
+        {
+          "w": "and",
+          "start": 0.88
+        },
+        {
+          "w": "say:",
+          "start": 1.12
+        },
+        {
+          "w": "\"For",
+          "start": 1.52
+        },
+        {
+          "w": "this",
+          "start": 1.76
+        },
+        {
+          "w": "chat,",
+          "start": 2.04
+        },
+        {
+          "w": "you",
+          "start": 2.4
+        },
+        {
+          "w": "are",
+          "start": 2.64
+        },
+        {
+          "w": "a",
+          "start": 2.76
+        },
+        {
+          "w": "friendly",
+          "start": 2.92
+        },
+        {
+          "w": "pirate.\"",
+          "start": 3.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c42": {
+      "segment": "tryIt",
+      "display": "Now ask for our rain poem. Enjoy the pirate rain. Then ask it to stop being a pirate, and see how quickly its whole personality changes, just from a few words in the package.",
+      "spoken": "Now ask for our rain poem. Enjoy the pirate rain. Then ask it to stop being a pirate, and see how quickly its whole personality changes, just from a few words in the package.",
+      "textHash": "dd82e208cf1bc1bd",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e615d1e21009dff5.wav",
+      "duration": 11.066,
+      "marks": {},
+      "words": [
+        {
+          "w": "Now",
+          "start": 0
+        },
+        {
+          "w": "ask",
+          "start": 0.32
+        },
+        {
+          "w": "for",
+          "start": 0.72
+        },
+        {
+          "w": "our",
+          "start": 0.86
+        },
+        {
+          "w": "rain",
+          "start": 1
+        },
+        {
+          "w": "poem.",
+          "start": 1.36
+        },
+        {
+          "w": "Enjoy",
+          "start": 1.96
+        },
+        {
+          "w": "the",
+          "start": 2.56
+        },
+        {
+          "w": "pirate",
+          "start": 2.72
+        },
+        {
+          "w": "rain.",
+          "start": 3.16
+        },
+        {
+          "w": "Then",
+          "start": 3.76
+        },
+        {
+          "w": "ask",
+          "start": 4.16
+        },
+        {
+          "w": "it",
+          "start": 4.48
+        },
+        {
+          "w": "to",
+          "start": 4.64
+        },
+        {
+          "w": "stop",
+          "start": 4.8
+        },
+        {
+          "w": "being",
+          "start": 5.12
+        },
+        {
+          "w": "a",
+          "start": 5.36
+        },
+        {
+          "w": "pirate,",
+          "start": 5.44
+        },
+        {
+          "w": "and",
+          "start": 5.92
+        },
+        {
+          "w": "see",
+          "start": 6.12
+        },
+        {
+          "w": "how",
+          "start": 6.427
+        },
+        {
+          "w": "quickly",
+          "start": 6.733
+        },
+        {
+          "w": "its",
+          "start": 7.04
+        },
+        {
+          "w": "whole",
+          "start": 7.28
+        },
+        {
+          "w": "personality",
+          "start": 7.6
+        },
+        {
+          "w": "changes,",
+          "start": 8.4
+        },
+        {
+          "w": "just",
+          "start": 9.08
+        },
+        {
+          "w": "from",
+          "start": 9.32
+        },
+        {
+          "w": "a",
+          "start": 9.52
+        },
+        {
+          "w": "few",
+          "start": 9.64
+        },
+        {
+          "w": "words",
+          "start": 9.92
+        },
+        {
+          "w": "in",
+          "start": 10.24
+        },
+        {
+          "w": "the",
+          "start": 10.36
+        },
+        {
+          "w": "package.",
+          "start": 10.48
+        }
+      ],
+      "matchScore": 0.897,
+      "after": 10
+    },
+    "c43": {
+      "segment": "blooper",
+      "display": "AI blooper time. One last one, and it's a good one.",
+      "spoken": "AI blooper time. One last one, and it's a good one.",
+      "textHash": "0e58602b6129733d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/5bcefced080079c9.wav",
+      "duration": 3.35,
+      "marks": {},
+      "words": [
+        {
+          "w": "AI",
+          "start": 0.38
+        },
+        {
+          "w": "blooper",
+          "start": 0.76
+        },
+        {
+          "w": "time.",
+          "start": 1.14
+        },
+        {
+          "w": "One",
+          "start": 1.52
+        },
+        {
+          "w": "last",
+          "start": 1.84
+        },
+        {
+          "w": "one,",
+          "start": 2.2
+        },
+        {
+          "w": "and",
+          "start": 2.4
+        },
+        {
+          "w": "it's",
+          "start": 2.56
+        },
+        {
+          "w": "a",
+          "start": 2.8
+        },
+        {
+          "w": "good",
+          "start": 2.92
+        },
+        {
+          "w": "one.",
+          "start": 3.12
+        }
+      ],
+      "matchScore": 0.778
+    },
+    "c44": {
+      "segment": "blooper",
+      "display": "In 2023, a car dealership in California put a chatbot on its website. A visitor told it to agree with everything the customer says, and to end every reply with a special phrase. Then he asked for a brand new SUV, with a budget of one dollar.",
+      "spoken": "In 2023, a car dealership in California put a chatbot on its website. A visitor told it to agree with everything the customer says, and to end every reply with a special phrase. Then he asked for a brand new SUV, with a budget of one dollar.",
+      "textHash": "257dd791a90e450c",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cff3610d6a9789f5.wav",
+      "duration": 16.66,
+      "marks": {},
+      "words": [
+        {
+          "w": "In",
+          "start": 0
+        },
+        {
+          "w": "2023,",
+          "start": 0.16
+        },
+        {
+          "w": "a",
+          "start": 1.68
+        },
+        {
+          "w": "car",
+          "start": 1.84
+        },
+        {
+          "w": "dealership",
+          "start": 2.16
+        },
+        {
+          "w": "in",
+          "start": 2.76
+        },
+        {
+          "w": "California",
+          "start": 2.96
+        },
+        {
+          "w": "put",
+          "start": 3.72
+        },
+        {
+          "w": "a",
+          "start": 3.92
+        },
+        {
+          "w": "chatbot",
+          "start": 4.24
+        },
+        {
+          "w": "on",
+          "start": 4.56
+        },
+        {
+          "w": "its",
+          "start": 4.72
+        },
+        {
+          "w": "website.",
+          "start": 4.88
+        },
+        {
+          "w": "A",
+          "start": 5.64
+        },
+        {
+          "w": "visitor",
+          "start": 5.88
+        },
+        {
+          "w": "told",
+          "start": 6.44
+        },
+        {
+          "w": "it",
+          "start": 6.72
+        },
+        {
+          "w": "to",
+          "start": 6.84
+        },
+        {
+          "w": "agree",
+          "start": 6.96
+        },
+        {
+          "w": "with",
+          "start": 7.36
+        },
+        {
+          "w": "everything",
+          "start": 7.56
+        },
+        {
+          "w": "the",
+          "start": 7.96
+        },
+        {
+          "w": "customer",
+          "start": 8.16
+        },
+        {
+          "w": "says,",
+          "start": 8.8
+        },
+        {
+          "w": "and",
+          "start": 9.16
+        },
+        {
+          "w": "to",
+          "start": 9.36
+        },
+        {
+          "w": "end",
+          "start": 9.56
+        },
+        {
+          "w": "every",
+          "start": 9.92
+        },
+        {
+          "w": "reply",
+          "start": 10.24
+        },
+        {
+          "w": "with",
+          "start": 10.72
+        },
+        {
+          "w": "a",
+          "start": 10.92
+        },
+        {
+          "w": "special",
+          "start": 11.04
+        },
+        {
+          "w": "phrase.",
+          "start": 11.52
+        },
+        {
+          "w": "Then",
+          "start": 12.24
+        },
+        {
+          "w": "he",
+          "start": 12.6
+        },
+        {
+          "w": "asked",
+          "start": 12.88
+        },
+        {
+          "w": "for",
+          "start": 13.24
+        },
+        {
+          "w": "a",
+          "start": 13.4
+        },
+        {
+          "w": "brand",
+          "start": 13.48
+        },
+        {
+          "w": "new",
+          "start": 13.88
+        },
+        {
+          "w": "SUV,",
+          "start": 14.2
+        },
+        {
+          "w": "with",
+          "start": 15
+        },
+        {
+          "w": "a",
+          "start": 15.12
+        },
+        {
+          "w": "budget",
+          "start": 15.28
+        },
+        {
+          "w": "of",
+          "start": 15.76
+        },
+        {
+          "w": "one",
+          "start": 15.92
+        },
+        {
+          "w": "dollar.",
+          "start": 16.16
+        }
+      ],
+      "matchScore": 0.972
+    },
+    "c45": {
+      "segment": "blooper",
+      "display": "The chatbot replied: \"That's a deal, and that's a legally binding offer: no takesies backsies.\" No car was actually handed over. But it's a perfect reminder: a chatbot follows the instructions in its package, even the ones it shouldn't.",
+      "spoken": "The chatbot replied: \"That's a deal, and that's a legally binding offer: no takesies backsies.\" No car was actually handed over. But it's a perfect reminder: a chatbot follows the instructions in its package, even the ones it shouldn't.",
+      "textHash": "d5f1c8cc1e44de93",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/c48d494848d8b123.wav",
+      "duration": 14.718,
+      "marks": {
+        "reply": 4.08
+      },
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "chatbot",
+          "start": 0.36
+        },
+        {
+          "w": "replied:",
+          "start": 0.72
+        },
+        {
+          "w": "\"That's",
+          "start": 1.28
+        },
+        {
+          "w": "a",
+          "start": 1.68
+        },
+        {
+          "w": "deal,",
+          "start": 1.84
+        },
+        {
+          "w": "and",
+          "start": 2.16
+        },
+        {
+          "w": "that's",
+          "start": 2.32
+        },
+        {
+          "w": "a",
+          "start": 2.56
+        },
+        {
+          "w": "legally",
+          "start": 2.68
+        },
+        {
+          "w": "binding",
+          "start": 3.16
+        },
+        {
+          "w": "offer:",
+          "start": 3.64
+        },
+        {
+          "w": "no",
+          "start": 4.08
+        },
+        {
+          "w": "takesies",
+          "start": 4.693
+        },
+        {
+          "w": "backsies.\"",
+          "start": 5.307
+        },
+        {
+          "w": "No",
+          "start": 5.92
+        },
+        {
+          "w": "car",
+          "start": 6.32
+        },
+        {
+          "w": "was",
+          "start": 6.64
+        },
+        {
+          "w": "actually",
+          "start": 6.92
+        },
+        {
+          "w": "handed",
+          "start": 7.48
+        },
+        {
+          "w": "over.",
+          "start": 7.88
+        },
+        {
+          "w": "But",
+          "start": 8.24
+        },
+        {
+          "w": "it's",
+          "start": 8.44
+        },
+        {
+          "w": "a",
+          "start": 8.68
+        },
+        {
+          "w": "perfect",
+          "start": 8.8
+        },
+        {
+          "w": "reminder:",
+          "start": 9.28
+        },
+        {
+          "w": "a",
+          "start": 10.12
+        },
+        {
+          "w": "chatbot",
+          "start": 10.54
+        },
+        {
+          "w": "follows",
+          "start": 10.96
+        },
+        {
+          "w": "the",
+          "start": 11.36
+        },
+        {
+          "w": "instructions",
+          "start": 11.52
+        },
+        {
+          "w": "in",
+          "start": 12.24
+        },
+        {
+          "w": "its",
+          "start": 12.4
+        },
+        {
+          "w": "package,",
+          "start": 12.64
+        },
+        {
+          "w": "even",
+          "start": 13.24
+        },
+        {
+          "w": "the",
+          "start": 13.52
+        },
+        {
+          "w": "ones",
+          "start": 13.72
+        },
+        {
+          "w": "it",
+          "start": 14.04
+        },
+        {
+          "w": "shouldn't.",
+          "start": 14.24
+        }
+      ],
+      "matchScore": 0.871
+    },
+    "c46": {
+      "segment": "myth",
+      "display": "Myth versus reality.",
+      "spoken": "Myth versus reality.",
+      "textHash": "29b84adf7e99f080",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/76ddee203a2bcfdc.wav",
+      "duration": 1.51,
+      "marks": {},
+      "words": [
+        {
+          "w": "Myth",
+          "start": 0.293
+        },
+        {
+          "w": "versus",
+          "start": 0.587
+        },
+        {
+          "w": "reality.",
+          "start": 0.88
+        }
+      ],
+      "matchScore": 0.333
+    },
+    "c47": {
+      "segment": "myth",
+      "display": "The myth: the model learns from our chat while we talk.",
+      "spoken": "The myth: the model learns from our chat while we talk.",
+      "textHash": "f07ff1b139f01405",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/f358e9a9da3f2526.wav",
+      "duration": 2.838,
+      "marks": {},
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "myth:",
+          "start": 0.2
+        },
+        {
+          "w": "the",
+          "start": 0.56
+        },
+        {
+          "w": "model",
+          "start": 0.76
+        },
+        {
+          "w": "learns",
+          "start": 1.16
+        },
+        {
+          "w": "from",
+          "start": 1.48
+        },
+        {
+          "w": "our",
+          "start": 1.64
+        },
+        {
+          "w": "chat",
+          "start": 1.8
+        },
+        {
+          "w": "while",
+          "start": 2.08
+        },
+        {
+          "w": "we",
+          "start": 2.28
+        },
+        {
+          "w": "talk.",
+          "start": 2.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c48": {
+      "segment": "myth",
+      "display": "The reality: the model doesn't change while you chat. The app re-sends the conversation every turn, and may save a few notes. Any real learning happens much later, if ever, when a new version is trained.",
+      "spoken": "The reality: the model doesn't change while you chat. The app re-sends the conversation every turn, and may save a few notes. Any real learning happens much later, if ever, when a new version is trained.",
+      "textHash": "3b64985000659d18",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/279627ff88d07498.wav",
+      "duration": 12.475,
+      "marks": {
+        "reality": 0.16
+      },
+      "words": [
+        {
+          "w": "The",
+          "start": 0
+        },
+        {
+          "w": "reality:",
+          "start": 0.16
+        },
+        {
+          "w": "the",
+          "start": 0.8
+        },
+        {
+          "w": "model",
+          "start": 1
+        },
+        {
+          "w": "doesn't",
+          "start": 1.4
+        },
+        {
+          "w": "change",
+          "start": 1.76
+        },
+        {
+          "w": "while",
+          "start": 2.16
+        },
+        {
+          "w": "you",
+          "start": 2.36
+        },
+        {
+          "w": "chat.",
+          "start": 2.6
+        },
+        {
+          "w": "The",
+          "start": 3.12
+        },
+        {
+          "w": "app",
+          "start": 3.44
+        },
+        {
+          "w": "re-sends",
+          "start": 3.92
+        },
+        {
+          "w": "the",
+          "start": 4.4
+        },
+        {
+          "w": "conversation",
+          "start": 4.56
+        },
+        {
+          "w": "every",
+          "start": 5.28
+        },
+        {
+          "w": "turn,",
+          "start": 5.64
+        },
+        {
+          "w": "and",
+          "start": 6.08
+        },
+        {
+          "w": "may",
+          "start": 6.32
+        },
+        {
+          "w": "save",
+          "start": 6.56
+        },
+        {
+          "w": "a",
+          "start": 6.84
+        },
+        {
+          "w": "few",
+          "start": 6.96
+        },
+        {
+          "w": "notes.",
+          "start": 7.24
+        },
+        {
+          "w": "Any",
+          "start": 7.88
+        },
+        {
+          "w": "real",
+          "start": 8.2
+        },
+        {
+          "w": "learning",
+          "start": 8.56
+        },
+        {
+          "w": "happens",
+          "start": 9
+        },
+        {
+          "w": "much",
+          "start": 9.48
+        },
+        {
+          "w": "later,",
+          "start": 9.76
+        },
+        {
+          "w": "if",
+          "start": 10.16
+        },
+        {
+          "w": "ever,",
+          "start": 10.4
+        },
+        {
+          "w": "when",
+          "start": 10.72
+        },
+        {
+          "w": "a",
+          "start": 10.88
+        },
+        {
+          "w": "new",
+          "start": 11.187
+        },
+        {
+          "w": "version",
+          "start": 11.493
+        },
+        {
+          "w": "is",
+          "start": 11.8
+        },
+        {
+          "w": "trained.",
+          "start": 11.96
+        }
+      ],
+      "matchScore": 0.906
+    },
+    "c49": {
+      "segment": "useIt",
+      "display": "And here's your final \"Use it tomorrow\" tip: write your own custom instructions. Most chat apps have a settings page for this.",
+      "spoken": "And here's your final \"Use it tomorrow\" tip: write your own custom instructions. Most chat apps have a settings page for this.",
+      "textHash": "6b03c6c37e21b148",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/e993d474120389b2.wav",
+      "duration": 7.419,
+      "marks": {},
+      "words": [
+        {
+          "w": "And",
+          "start": 0
+        },
+        {
+          "w": "here's",
+          "start": 0.08
+        },
+        {
+          "w": "your",
+          "start": 0.44
+        },
+        {
+          "w": "final",
+          "start": 0.64
+        },
+        {
+          "w": "\"Use",
+          "start": 1.12
+        },
+        {
+          "w": "it",
+          "start": 1.44
+        },
+        {
+          "w": "tomorrow\"",
+          "start": 1.76
+        },
+        {
+          "w": "tip:",
+          "start": 2.16
+        },
+        {
+          "w": "write",
+          "start": 2.6
+        },
+        {
+          "w": "your",
+          "start": 2.92
+        },
+        {
+          "w": "own",
+          "start": 3.12
+        },
+        {
+          "w": "custom",
+          "start": 3.36
+        },
+        {
+          "w": "instructions.",
+          "start": 3.76
+        },
+        {
+          "w": "Most",
+          "start": 4.8
+        },
+        {
+          "w": "chat",
+          "start": 5.2
+        },
+        {
+          "w": "apps",
+          "start": 5.48
+        },
+        {
+          "w": "have",
+          "start": 5.76
+        },
+        {
+          "w": "a",
+          "start": 5.92
+        },
+        {
+          "w": "settings",
+          "start": 6.04
+        },
+        {
+          "w": "page",
+          "start": 6.52
+        },
+        {
+          "w": "for",
+          "start": 6.88
+        },
+        {
+          "w": "this.",
+          "start": 7.08
+        }
+      ],
+      "matchScore": 0.95
+    },
+    "c50": {
+      "segment": "useIt",
+      "display": "Tell it who you are, like \"I'm a student in India\". Tell it how to answer: \"short, with examples\". And what to avoid: \"no jargon, please\". It's added to your package every time, so you only have to say it once.",
+      "spoken": "Tell it who you are, like \"I'm a student in India\". Tell it how to answer: \"short, with examples\". And what to avoid: \"no jargon, please\". It's added to your package every time, so you only have to say it once.",
+      "textHash": "0bd912694d3a2917",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/a5508fa3af368d1c.wav",
+      "duration": 12.75,
+      "marks": {},
+      "words": [
+        {
+          "w": "Tell",
+          "start": 0
+        },
+        {
+          "w": "it",
+          "start": 0.2
+        },
+        {
+          "w": "who",
+          "start": 0.4
+        },
+        {
+          "w": "you",
+          "start": 0.56
+        },
+        {
+          "w": "are,",
+          "start": 0.84
+        },
+        {
+          "w": "like",
+          "start": 1.08
+        },
+        {
+          "w": "\"I'm",
+          "start": 1.36
+        },
+        {
+          "w": "a",
+          "start": 1.68
+        },
+        {
+          "w": "student",
+          "start": 1.8
+        },
+        {
+          "w": "in",
+          "start": 2.32
+        },
+        {
+          "w": "India\".",
+          "start": 2.48
+        },
+        {
+          "w": "Tell",
+          "start": 3.08
+        },
+        {
+          "w": "it",
+          "start": 3.36
+        },
+        {
+          "w": "how",
+          "start": 3.56
+        },
+        {
+          "w": "to",
+          "start": 3.76
+        },
+        {
+          "w": "answer:",
+          "start": 3.96
+        },
+        {
+          "w": "\"short,",
+          "start": 4.56
+        },
+        {
+          "w": "with",
+          "start": 5.04
+        },
+        {
+          "w": "examples\".",
+          "start": 5.28
+        },
+        {
+          "w": "And",
+          "start": 6.08
+        },
+        {
+          "w": "what",
+          "start": 6.32
+        },
+        {
+          "w": "to",
+          "start": 6.56
+        },
+        {
+          "w": "avoid:",
+          "start": 6.72
+        },
+        {
+          "w": "\"no",
+          "start": 7.36
+        },
+        {
+          "w": "jargon,",
+          "start": 7.68
+        },
+        {
+          "w": "please\".",
+          "start": 8.28
+        },
+        {
+          "w": "It's",
+          "start": 8.88
+        },
+        {
+          "w": "added",
+          "start": 9.2
+        },
+        {
+          "w": "to",
+          "start": 9.6
+        },
+        {
+          "w": "your",
+          "start": 9.68
+        },
+        {
+          "w": "package",
+          "start": 9.88
+        },
+        {
+          "w": "every",
+          "start": 10.32
+        },
+        {
+          "w": "time,",
+          "start": 10.64
+        },
+        {
+          "w": "so",
+          "start": 10.96
+        },
+        {
+          "w": "you",
+          "start": 11.16
+        },
+        {
+          "w": "only",
+          "start": 11.36
+        },
+        {
+          "w": "have",
+          "start": 11.64
+        },
+        {
+          "w": "to",
+          "start": 11.8
+        },
+        {
+          "w": "say",
+          "start": 11.96
+        },
+        {
+          "w": "it",
+          "start": 12.16
+        },
+        {
+          "w": "once.",
+          "start": 12.36
+        }
+      ],
+      "matchScore": 1
+    },
+    "c51": {
+      "segment": "recap",
+      "display": "Let's stamp the passport, for the last time. The model is the engine. The app builds a package around your message: a system prompt, your instructions, documents, and the chat so far.",
+      "spoken": "Let's stamp the passport, for the last time. The model is the engine. The app builds a package around your message: a system prompt, your instructions, documents, and the chat so far.",
+      "textHash": "0e12763a2ae7f45d",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/44b25da1fec8c278.wav",
+      "duration": 10.951,
+      "marks": {},
+      "words": [
+        {
+          "w": "Let's",
+          "start": 0.12
+        },
+        {
+          "w": "stamp",
+          "start": 0.24
+        },
+        {
+          "w": "the",
+          "start": 0.64
+        },
+        {
+          "w": "passport,",
+          "start": 0.76
+        },
+        {
+          "w": "for",
+          "start": 1.28
+        },
+        {
+          "w": "the",
+          "start": 1.44
+        },
+        {
+          "w": "last",
+          "start": 1.56
+        },
+        {
+          "w": "time.",
+          "start": 1.88
+        },
+        {
+          "w": "The",
+          "start": 2.24
+        },
+        {
+          "w": "model",
+          "start": 2.48
+        },
+        {
+          "w": "is",
+          "start": 2.96
+        },
+        {
+          "w": "the",
+          "start": 3.12
+        },
+        {
+          "w": "engine.",
+          "start": 3.32
+        },
+        {
+          "w": "The",
+          "start": 4.04
+        },
+        {
+          "w": "app",
+          "start": 4.32
+        },
+        {
+          "w": "builds",
+          "start": 4.64
+        },
+        {
+          "w": "a",
+          "start": 4.96
+        },
+        {
+          "w": "package",
+          "start": 5.08
+        },
+        {
+          "w": "around",
+          "start": 5.48
+        },
+        {
+          "w": "your",
+          "start": 5.8
+        },
+        {
+          "w": "message:",
+          "start": 6
+        },
+        {
+          "w": "a",
+          "start": 6.64
+        },
+        {
+          "w": "system",
+          "start": 6.8
+        },
+        {
+          "w": "prompt,",
+          "start": 7.32
+        },
+        {
+          "w": "your",
+          "start": 7.8
+        },
+        {
+          "w": "instructions,",
+          "start": 8
+        },
+        {
+          "w": "documents,",
+          "start": 8.88
+        },
+        {
+          "w": "and",
+          "start": 9.6
+        },
+        {
+          "w": "the",
+          "start": 9.72
+        },
+        {
+          "w": "chat",
+          "start": 9.88
+        },
+        {
+          "w": "so",
+          "start": 10.24
+        },
+        {
+          "w": "far.",
+          "start": 10.56
+        }
+      ],
+      "matchScore": 0.964
+    },
+    "c52": {
+      "segment": "recap",
+      "display": "Tools fetch fresh facts, RAG lets it read your documents, and safety is built in at several layers. All seven stamps, collected.",
+      "spoken": "Tools fetch fresh facts, rag lets it read your documents, and safety is built in at several layers. All seven stamps, collected.",
+      "textHash": "557b7a7c9e406878",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/cc46b13f14b1577c.wav",
+      "duration": 8.109,
+      "marks": {},
+      "words": [
+        {
+          "w": "Tools",
+          "start": 0
+        },
+        {
+          "w": "fetch",
+          "start": 0.44
+        },
+        {
+          "w": "fresh",
+          "start": 0.72
+        },
+        {
+          "w": "facts,",
+          "start": 1.08
+        },
+        {
+          "w": "RAG",
+          "start": 1.68
+        },
+        {
+          "w": "lets",
+          "start": 2.08
+        },
+        {
+          "w": "it",
+          "start": 2.32
+        },
+        {
+          "w": "read",
+          "start": 2.44
+        },
+        {
+          "w": "your",
+          "start": 2.68
+        },
+        {
+          "w": "documents,",
+          "start": 2.84
+        },
+        {
+          "w": "and",
+          "start": 3.48
+        },
+        {
+          "w": "safety",
+          "start": 3.68
+        },
+        {
+          "w": "is",
+          "start": 4.16
+        },
+        {
+          "w": "built",
+          "start": 4.32
+        },
+        {
+          "w": "in",
+          "start": 4.64
+        },
+        {
+          "w": "at",
+          "start": 4.84
+        },
+        {
+          "w": "several",
+          "start": 5.04
+        },
+        {
+          "w": "layers.",
+          "start": 5.48
+        },
+        {
+          "w": "All",
+          "start": 6.24
+        },
+        {
+          "w": "seven",
+          "start": 6.52
+        },
+        {
+          "w": "stamps,",
+          "start": 6.96
+        },
+        {
+          "w": "collected.",
+          "start": 7.52
+        }
+      ],
+      "matchScore": 1
+    },
+    "c53": {
+      "segment": "recap",
+      "display": "From your keyboard to an answer, you've seen the whole journey. So now you know what really happens when you press Enter. Where will your next prompt take you? Thanks for travelling with us.",
+      "spoken": "From your keyboard to an answer, you've seen the whole journey. So now you know what really happens when you press Enter. Where will your next prompt take you? Thanks for travelling with us.",
+      "textHash": "8d0557ca4aa89125",
+      "source": "tts",
+      "take": "tts",
+      "audio": ".cache/proc/1899e9292e144ea6.wav",
+      "duration": 9.868,
+      "marks": {
+        "question": 3.08
+      },
+      "words": [
+        {
+          "w": "From",
+          "start": 0
+        },
+        {
+          "w": "your",
+          "start": 0.16
+        },
+        {
+          "w": "keyboard",
+          "start": 0.32
+        },
+        {
+          "w": "to",
+          "start": 0.8
+        },
+        {
+          "w": "an",
+          "start": 0.92
+        },
+        {
+          "w": "answer,",
+          "start": 1.08
+        },
+        {
+          "w": "you've",
+          "start": 1.44
+        },
+        {
+          "w": "seen",
+          "start": 1.8
+        },
+        {
+          "w": "the",
+          "start": 2.04
+        },
+        {
+          "w": "whole",
+          "start": 2.2
+        },
+        {
+          "w": "journey.",
+          "start": 2.52
+        },
+        {
+          "w": "So",
+          "start": 3.08
+        },
+        {
+          "w": "now",
+          "start": 3.36
+        },
+        {
+          "w": "you",
+          "start": 3.6
+        },
+        {
+          "w": "know",
+          "start": 3.84
+        },
+        {
+          "w": "what",
+          "start": 4.08
+        },
+        {
+          "w": "really",
+          "start": 4.28
+        },
+        {
+          "w": "happens",
+          "start": 4.64
+        },
+        {
+          "w": "when",
+          "start": 5.08
+        },
+        {
+          "w": "you",
+          "start": 5.2
+        },
+        {
+          "w": "press",
+          "start": 5.4
+        },
+        {
+          "w": "Enter.",
+          "start": 5.68
+        },
+        {
+          "w": "Where",
+          "start": 6.24
+        },
+        {
+          "w": "will",
+          "start": 6.52
+        },
+        {
+          "w": "your",
+          "start": 6.72
+        },
+        {
+          "w": "next",
+          "start": 6.88
+        },
+        {
+          "w": "prompt",
+          "start": 7.24
+        },
+        {
+          "w": "take",
+          "start": 7.64
+        },
+        {
+          "w": "you?",
+          "start": 7.84
+        },
+        {
+          "w": "Thanks",
+          "start": 8.16
+        },
+        {
+          "w": "for",
+          "start": 8.64
+        },
+        {
+          "w": "travelling",
+          "start": 8.88
+        },
+        {
+          "w": "with",
+          "start": 9.36
+        },
+        {
+          "w": "us.",
+          "start": 9.6
+        }
+      ],
+      "matchScore": 1
+    }
+  }
+}
