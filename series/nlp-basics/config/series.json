@@ -3,6 +3,13 @@
   "title": "NLP, Simply Explained",
   "subtitle": "University NLP, one idea at a time, no heavy maths",
   "runningPrompt": "",
+  "units": {
+    "1": "Foundations of NLP",
+    "2": "Words, Tags and Sequence Models",
+    "3": "Sentence Structure and Parsing",
+    "4": "Word Meaning and Neural Networks",
+    "5": "Contextual Embeddings"
+  },
   "language": "en",
   "theme": "learnvi",
   "fps": 30,

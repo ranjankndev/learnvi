@@ -15,6 +15,8 @@ export const SeriesSchema = z.object({
   title: z.string(),
   subtitle: z.string().default(""),
   runningPrompt: z.string(),
+  /** optional unit names for courses, e.g. {"1": "Foundations"}: used by the HTML tutorials */
+  units: z.record(z.string()).default({}),
   language: z.string().default("en"),
   theme: z.string().default("travel"),
   fps: z.number().int().positive().default(30),

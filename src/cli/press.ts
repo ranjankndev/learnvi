@@ -13,6 +13,7 @@ import { clock, packageEpisode } from "../core/package.js";
 import { startReviewServer } from "../review/server.js";
 import { KIT } from "../../remotion/kit/specs.js";
 import { draftEpisode, importDraft } from "../core/draft.js";
+import { buildTutorials } from "../core/html.js";
 
 const C = process.stdout.isTTY ? { r: "\x1b[31m", g: "\x1b[32m", y: "\x1b[33m", b: "\x1b[36m", d: "\x1b[2m", x: "\x1b[0m", B: "\x1b[1m" } : { r: "", g: "", y: "", b: "", d: "", x: "", B: "" };
 /** the series folder this command works on (see `press series`) */
@@ -184,6 +185,16 @@ program.command("package <episode>").description("everything to publish: video, 
     console.log(`  audio-only  ${rel(r.audio.file)}  ${clock(r.audio.seconds)} with ${r.audio.chapters} chapters (${r.audio.saved.toFixed(0)}s of silence trimmed)`);
     console.log(`  captions    ${r.captions.map(rel).join(", ")}`);
     console.log(`  youtube     ${rel(r.youtube)}  (title, description with ${r.chapters.length} chapters, tags)`);
+  });
+
+program.command("html").description("animated HTML tutorials: one page per episode + a course index with a memory map")
+  .option("--out <dir>", "output folder (default: out/<series>/tutorials)")
+  .option("--no-video", "don't embed the local lesson videos (e.g. when publishing the pages on their own)")
+  .option("--fragment-index", "write index.html without <html>/<head> wrappers (for hosts that add their own)")
+  .action((o: { out?: string; video: boolean; fragmentIndex?: boolean }) => {
+    const project = loadProject(findRoot(program.opts().series));
+    const r = buildTutorials(project, { outDir: o.out && path.resolve(o.out), video: o.video, fragmentIndex: o.fragmentIndex });
+    console.log(`${C.g}✓${C.x} ${r.lessons} lesson pages + index → ${path.relative(process.cwd(), r.outDir)}/index.html`);
   });
 
 program.command("review [episode]").description("open the review studio: listen, record retakes, edit text, comment, approve")

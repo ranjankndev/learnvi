@@ -52,6 +52,11 @@ function resolveProps(v: unknown, vars: Record<string, unknown>, where: string, 
   return v;
 }
 
+/** A segment's props with templates filled and kit defaults applied, exactly as the video sees them. */
+export function segmentProps(ctx: EpisodeCtx, seg: { id: string; component: string; props: unknown }) {
+  return withKitDefaults(seg.component, resolveProps(seg.props, templateContext(ctx), `${seg.id}.props`, []) as Record<string, unknown>);
+}
+
 export function buildTimeline(ctx: EpisodeCtx, lock: Lock): Timeline {
   const { series } = ctx.project, a = series.audio, fps = series.fps;
   const vars = templateContext(ctx);
